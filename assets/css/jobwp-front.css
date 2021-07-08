@@ -1,0 +1,33 @@
+.margin-bottom-0 {
+    margin-bottom: 0 !important;
+}
+
+b,
+strong {
+    font-weight: 500 !important;
+}
+
+.job-item h1 a {
+    font-size: 26px;
+    color: #247c26;
+    font-weight: 900;
+}
+
+
+/* Apply Now Started */
+
+.error-message {
+    color: #f00;
+    font-size: 14px;
+}
+
+.custom-file-field {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: none !important;
+    display: block;
+    height: auto;
+    padding: 0!important;
+}
+
+
+/* Apply Now Ended */

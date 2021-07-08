@@ -1,0 +1,53 @@
+table.jobwp-general-style-settings-table tr th,
+table.jobwp-general-style-settings-table tr td {
+    border: 0px solid #000;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+table.jobwp-general-style-settings-table tr th {
+    font-weight: 600;
+}
+
+
+/* Alert Bar Started */
+
+.jobwp-alert {
+    padding: 20px !important;
+    color: white;
+}
+
+.jobwp-alert.success {
+    background-color: #6ABD6E;
+}
+
+.jobwp-alert.error {
+    background-color: #F66358;
+}
+
+.jobwp-alert.warning {
+    background-color: #FFAA2B;
+}
+
+.jobwp-alert.info {
+    background-color: #47A8F5;
+}
+
+.jobwp-closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.jobwp-closebtn:hover {
+    color: black;
+}
+
+
+/* Alert Bar Ended */
