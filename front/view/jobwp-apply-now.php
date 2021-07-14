@@ -1,13 +1,7 @@
 <?php
 if ( ! defined('ABSPATH') ) exit;
-
-if ( isset( $_POST['Submit'] ) ) {
-    ?>
-    <script>alert('Yes, we got something!');</script>
-    <?php
-}
 ?>
-<form id="upload_form" action="<?php echo esc_attr( get_permalink() ); ?>" enctype="multipart/form-data" method="POST">
+<form id="upload_form" action="<?php esc_attr_e( get_permalink() ); ?>" enctype="multipart/form-data" method="POST">
     <?php if( function_exists('wp_nonce_field') ) { wp_nonce_field('binate_job_submit_nonce_field'); } ?>
     <div class="dialog-content">
         <div class="field-row">
@@ -53,7 +47,7 @@ if ( isset( $_POST['Submit'] ) ) {
         <div class="field-row">
             <div class="col-md-12 ">
                 <!-- ngIf: isSubmitButtonDisabled -->
-                <input type="submit" id="submitBtn" class="primary-button pull-right" value="Submit">
+                <input type="submit" name="submitBtn" id="submitBtn" class="primary-button pull-right" value="Submit">
             </div>
             <div class="clear"></div>
         </div>

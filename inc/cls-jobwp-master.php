@@ -52,4 +52,34 @@ class JobWp_Master {
 
 		return $this->jobwp_version;
 	}
+
+	function jobwp_create_tables() {
+		
+		global $wpdb;
+		
+		$table_name = $wpdb->prefix . 'jobwp_applied';
+		
+		$sqlTblExist = "DROP TABLE IF EXISTS $table_name";
+		$wpdb->query( $sqlTblExist );
+		
+		if ($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name) {
+			//table not in database. Create new table
+			$charset_collate = $wpdb->get_charset_collate();
+			$sql = "CREATE TABLE $table_name (
+					bs_job_id INT(11) NOT NULL AUTO_INCREMENT,
+					bs_job_post_id INT(11) NOT NULL,
+					bs_job_applied_for VARCHAR(155),
+					bs_job_name VARCHAR(155) NOT NULL,
+					bs_job_email VARCHAR(155) NOT NULL,
+					bs_job_phone VARCHAR(55),
+					bs_job_message TEXT,
+					bs_job_resume_name VARCHAR(155) NOT NULL,
+					bs_job_resume_path VARCHAR(255) NOT NULL,
+					bs_job_datetime DATETIME,
+					PRIMARY KEY (`bs_job_id`)
+			) $charset_collate;";
+			require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+			dbDelta($sql);
+		}
+	}
 }

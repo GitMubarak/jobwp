@@ -2,6 +2,12 @@
 get_header();
 
 global $post;
+
+if ( isset( $_POST['fullName'] ) ) {
+    
+    $resumeUploadMsg = 'Hello';
+
+}
 ?>
 <div class="body-container">
 	
