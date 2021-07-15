@@ -1,7 +1,9 @@
 <?php
 if ( ! defined('ABSPATH') ) exit;
 
-
+/**
+ * Master Class Plugin
+ */
 class JobWp_Master {
 
 	protected $jobwp_loader;
@@ -66,17 +68,16 @@ class JobWp_Master {
 			//table not in database. Create new table
 			$charset_collate = $wpdb->get_charset_collate();
 			$sql = "CREATE TABLE $table_name (
-					bs_job_id INT(11) NOT NULL AUTO_INCREMENT,
-					bs_job_post_id INT(11) NOT NULL,
-					bs_job_applied_for VARCHAR(155),
-					bs_job_name VARCHAR(155) NOT NULL,
-					bs_job_email VARCHAR(155) NOT NULL,
-					bs_job_phone VARCHAR(55),
-					bs_job_message TEXT,
-					bs_job_resume_name VARCHAR(155) NOT NULL,
-					bs_job_resume_path VARCHAR(255) NOT NULL,
-					bs_job_datetime DATETIME,
-					PRIMARY KEY (`bs_job_id`)
+					job_id INT(11) NOT NULL AUTO_INCREMENT,
+					job_post_id INT(11) NOT NULL,
+					applied_for VARCHAR(155),
+					applicant_name VARCHAR(155) NOT NULL,
+					applicant_email VARCHAR(155) NOT NULL,
+					applicant_phone VARCHAR(55),
+					applicant_message TEXT,
+					resume_name VARCHAR(155) NOT NULL,
+					applied_on DATETIME,
+					PRIMARY KEY (`job_id`)
 			) $charset_collate;";
 			require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 			dbDelta($sql);

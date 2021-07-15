@@ -1,3 +1,10 @@
+#jobwp-wrap-all>h2.jobwp-admin-page-title {
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
 table.jobwp-general-style-settings-table tr th,
 table.jobwp-general-style-settings-table tr td {
     border: 0px solid #000;

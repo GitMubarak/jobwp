@@ -22,4 +22,5 @@ define('JOBWP_VERSION', '1.0');
 
 require_once JOBWP_PATH . 'inc/' . JOBWP_CLS_PRFX . 'master.php';
 $jobwp = new JobWp_Master();
+register_activation_hook(__FILE__, array($jobwp, JOBWP_PRFX . 'create_tables'));
 $jobwp->jobwp_run();

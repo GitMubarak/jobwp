@@ -13,6 +13,16 @@ strong {
     font-weight: 900;
 }
 
+h2.jobwp-application-message {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #247c26;
+}
+
 
 /* Apply Now Started */
 

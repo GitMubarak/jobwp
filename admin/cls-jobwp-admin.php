@@ -58,13 +58,21 @@ class JobWp_Admin {
 		$jobwp_cpt_menu = 'edit.php?post_type=jobs';
 
 		add_submenu_page(
-
 			$jobwp_cpt_menu,
 			__('General Settings', JOBWP_TXT_DOMAIN),
 			__('General Settings', JOBWP_TXT_DOMAIN),
 			'manage_options',
 			'jobwp-general-settings',
-			array($this, JOBWP_PRFX . 'general_settings')
+			array($this, JOBWP_PRFX . 'general_settings'),
+		);
+
+		add_submenu_page(
+			$jobwp_cpt_menu,
+			__('Application List', JOBWP_TXT_DOMAIN),
+			__('Application List', JOBWP_TXT_DOMAIN),
+			'manage_options',
+			'jobwp-application-list',
+			array($this, JOBWP_PRFX . 'application_list'),
 		);
 	}
 
@@ -80,6 +88,70 @@ class JobWp_Admin {
 		$jobwpTab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : null;
 
 		require_once JOBWP_PATH . 'admin/view/' . $this->jobwp_assets_prefix . 'general-settings.php';
+	}
+
+	/**
+	 *	Function For Loading General Settings Page
+	 */
+	function jobwp_application_list() {
+
+		$jobwpColumns = array(
+			'jobwp_list_sl'				=> __('#', JOBWP_TXT_DOMAIN),
+			'jobwp_applied_for' 		=> __('Applied For', JOBWP_TXT_DOMAIN),
+			'jobwp_applicant_name'		=> __('Name', JOBWP_TXT_DOMAIN),
+			'jobwp_applicant_email'		=> __('Email', JOBWP_TXT_DOMAIN),
+			'jobwp_applicant_phone'		=> __('Phone', JOBWP_TXT_DOMAIN),
+			'jobwp_applicant_message'	=> __('Message', JOBWP_TXT_DOMAIN),
+			'jobwp_applicant_resume'	=> __('Resume', JOBWP_TXT_DOMAIN),
+			'jobwp_applied_on'			=> __('Date', JOBWP_TXT_DOMAIN),
+		);
+
+		register_column_headers('jobwp-allication-table-column', $jobwpColumns);
+
+		$applications = $this->jobwp_get_all_applications();
+
+		$jobwpDir = wp_upload_dir();
+		$jobwpDir = $jobwpDir['baseurl'] . '/jobwp-resume';
+		?>
+		<div id="jobwp-wrap-all" class="wrap">
+			<h2 class="jobwp-admin-page-title"><?php _e('Application Lists', JOBWP_TXT_DOMAIN); ?></h2>
+			<table class="wp-list-table widefat fixed striped posts" cellspacing="0" id="wpc_data_table">
+				<thead>
+					<tr>
+						<?php print_column_headers('jobwp-allication-table-column'); ?>
+					</tr>
+				</thead>
+				<tbody id="the-list">
+					<?php
+					$jL = 1;
+					if ( count( $applications ) > 0 ) {
+						foreach ( $applications as $application ) {
+							?>
+							<tr>
+								<td><?php printf('%d', $jL); ?></td>
+								<td><?php printf('%s', $application->applied_for); ?></td>
+								<td><?php printf('%s', $application->applicant_name); ?></td>
+								<td><?php printf('%s', $application->applicant_email); ?></td>
+								<td><?php printf('%s', $application->applicant_phone); ?></td>
+								<td><?php printf('%s', $application->applicant_message); ?></td>
+								<td><a href="<?php printf('%s/%s', $jobwpDir, $application->resume_name); ?>"><?php esc_html_e( $application->resume_name ); ?></a></td>
+								<td><?php printf('%s', date('D d M Y - h:i A', strtotime($application->applied_on))); ?>
+								</td>
+							</tr>
+							<?php 
+							$jL++;
+						}
+					}
+					?>
+				</tbody>
+				<tfoot>
+					<tr>
+						<?php print_column_headers('jobwp-allication-table-column', false); ?>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<?php
 	}
 
 	/**
@@ -370,6 +442,16 @@ class JobWp_Admin {
 			<?php esc_html_e( $msg, JOBWP_TXT_DOMAIN ); ?>
 		</div>
 		<?php 
+	}
+
+	/**
+	 * 
+	 */
+	private function jobwp_get_all_applications() {
+		
+		global $wpdb;
+    	$table_name     = $wpdb->prefix . 'jobwp_applied';
+		return $wpdb->get_results($wpdb->prepare("SELECT * FROM $table_name WHERE %d ORDER BY job_id DESC", 1));
 	}
 }
 ?>

@@ -1,6 +1,4 @@
-<?php
-if ( ! defined('ABSPATH') ) exit;
-?>
+<?php if ( ! defined('ABSPATH') ) exit; ?>
 <form id="upload_form" action="<?php esc_attr_e( get_permalink() ); ?>" enctype="multipart/form-data" method="POST">
     <?php if( function_exists('wp_nonce_field') ) { wp_nonce_field('binate_job_submit_nonce_field'); } ?>
     <div class="dialog-content">
