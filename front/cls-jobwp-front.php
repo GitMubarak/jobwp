@@ -41,7 +41,7 @@ class JobWp_Front {
 	*/
 	function jobwp_load_shortcode() {
 
-		add_shortcode( 'jobwp_display_jobs', array( $this, 'jobwp_load_shortcode_view' ) );
+		add_shortcode( 'jobwp_listing', array( $this, 'jobwp_load_shortcode_view' ) );
 		add_shortcode( 'jobwp_apply_now', array( $this, 'jobwp_load_shortcode_apply_now' ) );
 	}
 
@@ -52,7 +52,7 @@ class JobWp_Front {
 
 		$output = '';
 		ob_start();
-		include_once JOBWP_PATH . 'front/view/' . $this->jobwp_assets_prefix . 'front-view.php';
+		include_once JOBWP_PATH . 'front/view/listing.php';
 		$output .= ob_get_clean();
 		return $output;
 	}
@@ -64,7 +64,7 @@ class JobWp_Front {
 
 		$output = '';
 		ob_start();
-		include_once JOBWP_PATH . 'front/view/' . $this->jobwp_assets_prefix . 'apply-now.php';
+		include_once JOBWP_PATH . 'front/view/apply.php';
 		$output .= ob_get_clean();
 		return $output;
 	}
@@ -77,7 +77,7 @@ class JobWp_Front {
 		global $post;
 		
 		if ( 'jobs' === $post->post_type  ) {
-			return JOBWP_PATH . 'front/view/jobwp-single.php';
+			return JOBWP_PATH . 'front/view/single.php';
 		}
 
 		return $template;

@@ -1,17 +1,72 @@
-.margin-bottom-0 {
-    margin-bottom: 0 !important;
+.clear {
+    clear: both;
 }
 
-b,
-strong {
-    font-weight: 500 !important;
+.jobwp-body-container {
+    margin: 20px 0;
+    border: 1px solid #000;
+    width: 100%;
 }
 
-.job-item h1 a {
+
+/* Listing Started */
+
+.jobwp-item {
+    padding: 20px;
+    background: #f7f8f7;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.jobwp-item:hover {
+    background: #dff4df;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-tr ansition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.jobwp-item h1.jobwp-job-title {
+    margin-bottom: 10px;
+}
+
+.jobwp-item h1.jobwp-job-title a {
     font-size: 26px;
-    color: #247c26;
+    color: #242424;
     font-weight: 900;
+    text-decoration: none;
 }
+
+p.jobwp-overview-excerpt,
+p.jobwp-list-bottom-item {
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+/* Listing Ended */
+
+
+/* Details Started */
+
+
+/* Details Ended */
 
 h2.jobwp-application-message {
     width: 100%;
@@ -20,7 +75,7 @@ h2.jobwp-application-message {
     padding: 10px 0;
     font-size: 18px;
     font-weight: 600;
-    color: #247c26;
+    color: #242424;
 }
 
 

@@ -1,4 +1,4 @@
-=== JobWP: Job Manager Plugin ===
+=== JobWP - A Recruitment Plugin ===
 Contributors: mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: faqs, accordion, woocommerce faq, faq plugin, toggle

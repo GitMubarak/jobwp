@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name:     JobWP: Job Manager Plugin
+ * Plugin Name:     JobWP - A Recruitment Plugin
  * Plugin URI:		http://wordpress.org/plugins/jobwp/
- * Description: 	A job manager plugin to display job listing in a career page.
+ * Description: 	Best Recruitment Plugin for WordPress to display job listing in a career page.
  * Version:         1.0
  * Author:		    Hossni Mubarak
  * Author URI:	    https://hossnimubarak.com

@@ -85,10 +85,12 @@ if (
     $resumeUploadMsg = $_FILES['upload']['error'];
 }
 ?>
-<div class="body-container">
+<div class="jobwp-body-container">
 	
 	<?php 
-    if( have_posts() ): while( have_posts() ): 
+    if( have_posts() ) { 
+        
+        while( have_posts() ) {
         the_post();
 
         $bo_experience      = get_post_meta( $post->ID, 'jobwp_experience', true );
@@ -280,7 +282,7 @@ if (
                         <div class="side-nav-right">
                             <h5 class="heading-05 margin-bottom-10"><?php _e('Few more position', JOBWP_TXT_DOMAIN); ?></h5>
                             <?php
-                                get_few_more_positions();
+                                //get_few_more_positions();
                             ?>
                         </div>
                     </div>
@@ -288,7 +290,7 @@ if (
             </article>
         </section>
 
-	<?php endwhile; endif; ?>
+	<?php } } ?>
     
     <section class="circulr-detaels-bottom padding-50-0" style="clear: both;">
         <article>
