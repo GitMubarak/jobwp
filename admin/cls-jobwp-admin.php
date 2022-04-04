@@ -59,11 +59,11 @@ class JobWp_Admin {
 
 		add_submenu_page(
 			$jobwp_cpt_menu,
-			__('General Settings', JOBWP_TXT_DOMAIN),
-			__('General Settings', JOBWP_TXT_DOMAIN),
+			__('Listing Settings', JOBWP_TXT_DOMAIN),
+			__('Listing Settings', JOBWP_TXT_DOMAIN),
 			'manage_options',
-			'jobwp-general-settings',
-			array($this, JOBWP_PRFX . 'general_settings'),
+			'jobwp-listing-settings',
+			array($this, JOBWP_PRFX . 'listing_settings'),
 		);
 
 		add_submenu_page(
@@ -79,7 +79,7 @@ class JobWp_Admin {
 	/**
 	 *	Function For Loading General Settings Page
 	 */
-	function jobwp_general_settings() {
+	function jobwp_listing_settings() {
 
 		if ( ! current_user_can( 'manage_options' ) ) {
 			return;
@@ -87,7 +87,7 @@ class JobWp_Admin {
 	
 		$jobwpTab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : null;
 
-		require_once JOBWP_PATH . 'admin/view/' . $this->jobwp_assets_prefix . 'general-settings.php';
+		require_once JOBWP_PATH . 'admin/view/listing-settings.php';
 	}
 
 	/**
@@ -305,7 +305,7 @@ class JobWp_Admin {
 		$jobwp_deadline 	= get_post_meta( $post->ID, 'jobwp_deadline', true );
 		$jobwp_status		= get_post_meta( $post->ID, 'jobwp_status', true );
 
-		include_once JOBWP_PATH . 'admin/view/partial/' . $this->jobwp_assets_prefix . 'meta-content.php';
+		include_once JOBWP_PATH . 'admin/view/partial/job-info.php';
 	}
 
 	function jobwp_metabox_responsibilities() {

@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name:     JobWP - A Recruitment Plugin
- * Plugin URI:		http://wordpress.org/plugins/jobwp/
+ * Plugin Name:     JobWP - Best Recruitment Plugin for WordPress
+ * Plugin URI:		https://wordpress.org/plugins/jobwp/
  * Description: 	Best Recruitment Plugin for WordPress to display job listing in a career page.
  * Version:         1.0
- * Author:		    Hossni Mubarak
- * Author URI:	    https://hossnimubarak.com
+ * Author:		    HM Plugin
+ * Author URI:	    https://hmplugin.com
  * License:         GPL-2.0+
  * License URI:     http://www.gnu.org/licenses/gpl-2.0.txt
 */

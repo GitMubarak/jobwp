@@ -1,19 +1,19 @@
-=== JobWP - A Recruitment Plugin ===
-Contributors: mhmrajib
+=== JobWP - Best Recruitment Plugin for WordPress ===
+Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: faqs, accordion, woocommerce faq, faq plugin, toggle
-Requires at least: 4.6
-Tested up to: 5.7.2
+Requires at least: 5.0
+Tested up to: 5.9.2
 Stable tag: 1.0
-Requires PHP: 5.6
+Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A job manager plugin to display job listing in a career page.
+Best Recruitment Plugin for WordPress to display job listing in a career page.
 
 == Description ==
 
-This [Display FAQs](http://www.hossnimubarak.com) plugin will display display job listing in a career page.
+Best Recruitment Plugin for WordPress to display job listing in a career page.
 
 
 **🌟 Plugin Features:**
@@ -24,26 +24,25 @@ This [Display FAQs](http://www.hossnimubarak.com) plugin will display display jo
 * Shortcoded
 * Simple but effective
 * Custom Post Type
-* Unlimited FAQs
 
 
 ➡️ Useage of Shortcode:⬅️
 
 <strong> Use the below Shortcode to display FAQs </strong>
 
-<pre> [wp_display_faq] </pre>
-
+<pre> [jobwp_listing] </pre>
 
 
 **Demo/ Support/ Live Chat**
-[Display FAQs: See Demo](http://plugin.hossnimubarak.com/wp-display-faq/)
+[Knock Us Here](https://hmplugin.com/)
 
 
-**📋 Feedback/Rating:**
+**👍 Feedback/Rating:**
 If you find this plugin helpful, feel free to give us your valuable review. Rate us and share this plugin with your friends and others. This will motivate us and help us to grow.
+[Rate Us](https://wordpress.org/support/plugin/jobwp/reviews/#new-post)
 
 
-**🔥 Other Plugins from [HM Plugin](http://www.hossnimubarak.com)**
+**🔥 Other Plugins from [HM Plugin](https://hmplugin.com)**
 
 👉 [Worldwide Breaking News Headlines](https://wordpress.org/plugins/worldwide-breaking-news-headlines/) Breaking News, Headlines Widget Plugin
 👉 [WP Top News](https://wordpress.org/plugins/wp-top-news/) Top News, Breaking News, Headlines Shortcoded Plugin
@@ -63,51 +62,38 @@ If you find this plugin helpful, feel free to give us your valuable review. Rate
 
 == Installation ==
 
-Install Display FAQs as a regular WordPress plugin. Here are different ways to install plugin:
+Install JobWp as a regular WordPress plugin. Here are different ways to install plugin:
 
 **Install by search plugin:**
 
 1. In your Admin, go to menu Plugins > Add New
-2. Search Display FAQs
+2. Search Display jobwp
 3. Click to install
 4. Activate the plugin
-5. Setup the proper settings in WP FAQs menu
+5. Setup the proper settings in WP Jobs menu
 
 **Install by upload plugin:**
 
-1. Download the latest version of Display FAQs (.zip file)
+1. Download the latest version of JobWp (.zip file)
 2. In your Admin, go to menu Plugins > Add New
 3. Select "Upload Plugin"
 4. Click on "Choose File"
-5. Select downloaded wp-display-faq.zip and click on "Install Now" button
+5. Select downloaded jobwp.zip and click on "Install Now" button
 6. Activate the plugin
 
 == Frequently Asked Questions ==
 
 = I have installed the plugin. What next? =
 
-Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_display_faq] and use it in any page.
+Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shorcode [jobwp_listing] and use it in any page.
 
 
 == Screenshots ==
 
-1. Showing FAQs in a demo page
+1. Showing Jobs in a demo page
 
 
 == Changelog ==
-
-= 1.1 =
-* Category wise FAQs display added (Shortcoded)
-* Display limit option added to Shortcode
-* Change Post status from dropdown to radio
-* Page-attributes metabox added
-* FAQs sort by post order
-* FAQs title font color option added
-* FAQs title font size option added
-* FAQs title Background color
-* FAQs title Border color
-* Code optimized
-* CSS issue fixed
 
 = 1.0 =
 * Initial release
