@@ -1,10 +1,14 @@
 <?php
-if ( ! defined('ABSPATH') ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 /**
- * Class Front Master
+ * Master Class: Front
 */
-class JobWp_Front {
+class JobWp_Front 
+{
+	use Jobwp_Core, Jobwp_Single_Content_Settings;
 
 	private $jobwp_version;
 

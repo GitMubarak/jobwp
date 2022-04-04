@@ -1,8 +1,13 @@
 <?php
-if ( ! defined('ABSPATH') ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+require_once JOBWP_PATH . 'core/core.php';
+include_once JOBWP_PATH . 'core/single-content.php';
 
 /**
- * Master Class Plugin
+ * Class: Main
  */
 class JobWp_Master {
 

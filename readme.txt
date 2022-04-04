@@ -2,7 +2,7 @@
 Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: faqs, accordion, woocommerce faq, faq plugin, toggle
-Requires at least: 5.0
+Requires at least: 5.2
 Tested up to: 5.9.2
 Stable tag: 1.0
 Requires PHP: 7.2

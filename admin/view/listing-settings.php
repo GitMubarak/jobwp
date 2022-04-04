@@ -44,42 +44,13 @@ $jobwp_title_font_size        = isset( $jobwpListingStyles['jobwp_title_font_siz
                 case 'styles':
                     ?>
                     <h3><?php _e('Styles:', JOBWP_TXT_DOMAIN); ?></h3>
-
-                    <form name="jobwp_listing_style_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-listing-style-form">
-                        <table class="jobwp-listing-style-settings-table">
-                            <tr class="jobwp_btn_color">
-                                <th scope="row" colspan="2">
-                                    <label><?php _e('Job Title', JOBWP_TXT_DOMAIN); ?></label>
-                                    <hr>
-                                </th>
-                            </tr>
-                            <tr class="jobwp_title_font_color">
-                                <th scope="row">
-                                    <label for="jobwp_title_font_color"><?php esc_html_e('Font Color:', JOBWP_TXT_DOMAIN); ?></label>
-                                </th>
-                                <td>
-                                    <input class="jobwp-wp-color" type="text" name="jobwp_title_font_color" id="jobwp_title_font_color" value="<?php esc_attr_e( $jobwp_title_font_color ); ?>">
-                                    <div id="colorpicker"></div>
-                                </td>
-                            </tr>
-                            <tr class="jobwp_title_font_size">
-                                <th scope="row">
-                                    <label for="jobwp_title_font_size"><?php esc_html_e('Font Size:', JOBWP_TXT_DOMAIN); ?></label>
-                                </th>
-                                <td>
-                                    <input class="medium-textr" type="number" min="12" max="46" step="1" name="jobwp_title_font_size" id="jobwp_title_font_size" value="<?php esc_attr_e( $jobwp_title_font_size ); ?>">
-                                    <code>px</code>
-                                </td>
-                            </tr>
-                        </table>
-                        <p class="submit"><button id="updateListingStyles" name="updateListingStyles" class="button button-primary"><?php esc_attr_e('Save Settings', JOBWP_TXT_DOMAIN); ?></button></p>
-                    </form>
+                    <?php _e('Coming Soon', JOBWP_TXT_DOMAIN); ?>
                     <?php
                     break;
                 default:
                     ?>
                     <h3><?php _e('Content:', JOBWP_TXT_DOMAIN); ?></h3>
-                    <?php _e('Please go to Content Settings', JOBWP_TXT_DOMAIN); ?>
+                    <?php _e('Coming Soon', JOBWP_TXT_DOMAIN); ?>
                     <?php
                     break;
             } 

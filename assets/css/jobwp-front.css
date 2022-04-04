@@ -34,7 +34,7 @@
 .jobwp-item:hover {
     background: #dff4df;
     -webkit-transition: all 0.2s ease-in-out;
-    -moz-tr ansition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -168,6 +168,39 @@ p.jobwp-job-title {
     background: none !important;
 }
 
+.circulr-details-bottom-email {
+    background: #eeeeee;
+    width: 100%;
+    line-height: 10px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+h3.wpsd-read-before-apply {
+    font-size: 24px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+span.wpsd-read-before-apply-border {
+    border-bottom: 3px solid #CCC;
+    display: block;
+    line-height: 10px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.circulr-details-bottom-email p.apply-to-email {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 20px;
+}
+
 
 /* Details Ended */
 
@@ -199,3 +232,18 @@ h2.jobwp-application-message {
 
 
 /* Apply Now Ended */
+
+@media only screen and (max-width: 890px) {
+    .circulr-details-top {
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
+    p.jobwp-job-title {
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .jobwp-single-area {
+        display: block;
+    }
+}

@@ -1,10 +1,14 @@
 <?php
-if ( ! defined('ABSPATH') ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 /**
- * Class Admin Master
+ * Master Class: Admin
 */
-class JobWp_Admin {
+class JobWp_Admin 
+{
+	use Jobwp_Core, Jobwp_Single_Content_Settings;
 
 	private $jobwp_version;
 	private $jobwp_assets_prefix;
@@ -68,6 +72,15 @@ class JobWp_Admin {
 
 		add_submenu_page(
 			$jobwp_cpt_menu,
+			__('Detail Page Settings', JOBWP_TXT_DOMAIN),
+			__('Detail Page Settings', JOBWP_TXT_DOMAIN),
+			'manage_options',
+			'jobwp-single-settings',
+			array($this, JOBWP_PRFX . 'single_settings'),
+		);
+
+		add_submenu_page(
+			$jobwp_cpt_menu,
 			__('Application List', JOBWP_TXT_DOMAIN),
 			__('Application List', JOBWP_TXT_DOMAIN),
 			'manage_options',
@@ -77,7 +90,7 @@ class JobWp_Admin {
 	}
 
 	/**
-	 *	Function For Loading General Settings Page
+	 *	Function For Loading Listing Settings Page
 	 */
 	function jobwp_listing_settings() {
 
@@ -88,6 +101,27 @@ class JobWp_Admin {
 		$jobwpTab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : null;
 
 		require_once JOBWP_PATH . 'admin/view/listing-settings.php';
+	}
+
+	function jobwp_single_settings() {
+
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+	
+		$jobwpTab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : null;
+
+		$jobwpSingleMessage = false;
+
+		if ( isset( $_POST['updateSingleContent'] ) ) {
+
+			$jobwpSingleMessage = $this->jobwp_set_single_content_settings( $_POST );
+
+		}
+
+		$jobwpSingleContent = $this->jobwp_get_single_content_settings();
+
+		require_once JOBWP_PATH . 'admin/view/single-settings.php';
 	}
 
 	/**
@@ -436,7 +470,7 @@ class JobWp_Admin {
 	 */
 	function jobwp_display_notification( $type, $msg ) { 
 		?>
-		<div class="jobwp-alert <?php printf('%s', $type); ?>">
+		<div class="jobwp-alert <?php esc_attr_e( $type ); ?>">
 			<span class="jobwp-closebtn">&times;</span>
 			<strong><?php esc_html_e( ucfirst( $type ), JOBWP_TXT_DOMAIN ); ?>!</strong>
 			<?php esc_html_e( $msg, JOBWP_TXT_DOMAIN ); ?>

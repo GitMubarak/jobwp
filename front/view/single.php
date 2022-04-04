@@ -4,87 +4,18 @@ get_header();
 global $post;
 
 $resumeUploadMsg = null;
-/*
-if (
-    ! empty( $_FILES['upload']['name'] ) 
-    && ! empty( $_POST['fullName'] ) 
-    && ! empty( $_POST['email'] ) 
-) {
-    if( ! $_FILES['upload']['error'] ) {
-        
-        //can't be larger than 300 KB
-        if ( $_FILES['upload']['size'] > ( 300000 ) ) {
-            
-            $resumeUploadMsg = 'Your file size is to large.';
-        
-        } else {
-            
-            $jobwpDir = wp_upload_dir();
-            $jobwpDir = $jobwpDir['basedir'];
-            wp_mkdir_p($jobwpDir . '/jobwp-resume');
 
-            if ( ! is_writable($jobwpDir . '/jobwp-resume') ) {
+require_once JOBWP_PATH . 'front/' . JOBWP_CLS_PRFX . 'front.php';
+$jobwp_front_new = new JobWp_Front(JOBWP_VERSION);
 
-                $resumeUploadMsg = 'The folder ' . esc_html($jobwpDir . '/jobwp-resume') . ' cannot be created or is not writable. Ask for support to your hosting provider.';
-            
-            } else {
+// Gallery Settings Content
+$jobwpSingleContent = $jobwp_front_new->jobwp_get_single_content_settings();
 
-                if ( is_uploaded_file( $_FILES['upload']['tmp_name'] ) ) {
-
-                    unlink($jobwpDir . '/jobwp-resume/' . $_FILES['upload']['name']);
-                    
-                    $r = move_uploaded_file($_FILES['upload']['tmp_name'], $jobwpDir . '/jobwp-resume/' . $_FILES['upload']['name']);
-                    
-                    if ( $r === false)  {
-
-                        $resumeUploadMsg = 'The file cannor be copied in the folder ' . $jobwpDir . '/jobwp-resume. Check if it exists and is writeable. You can also ask for support to your hosting provider.';
-                    
-                    } else {
-
-                        global $wpdb;
-                
-                        $table_name     = $wpdb->prefix . 'jobwp_applied';
-
-                        $fullName       = isset( $_POST['fullName'] ) ? sanitize_text_field( $_POST['fullName'] ) : null;
-                        $applyFor       = isset( $_POST['applyFor'] ) ? sanitize_text_field( $_POST['applyFor'] ) : null;
-                        $email 		    = isset( $_POST['email'] ) ? sanitize_email( $_POST['email'] ) : null;
-                        $phoneNumber    = isset( $_POST['phoneNumber'] ) ? sanitize_text_field( $_POST['phoneNumber'] ) : null;
-                        $message        = isset( $_POST['message'] ) ? sanitize_textarea_field( $_POST['message'] ) : null;
-
-                        $wpdb->query('INSERT INTO ' . $table_name . '(
-                            job_post_id,
-                            applied_for,
-                            applicant_name,
-                            applicant_email,
-                            applicant_phone,
-                            applicant_message,
-                            resume_name,
-                            applied_on
-                        ) VALUES (
-                            ' . get_the_ID() . ',
-                            "' . $applyFor . '",
-                            "' . $fullName . '",
-                            "' . $email . '",
-                            "' . $phoneNumber . '",
-                            "' . $message . '",
-                            "' . $_FILES['upload']['name'] . '",
-                            "' . date('Y-m-d h:i:s') . '"
-                        )');
-
-                        $resumeUploadMsg = 'Thank you for your application!';
-
-                    }
-                
-                } // if ( is_uploaded_file( $_FILES['upload']['tmp_name'] ) ) {
-
-            }
-        }
+foreach ( $jobwpSingleContent as $option_name => $option_value ) {
+    if ( isset( $jobwpSingleContent[$option_name] ) ) {
+        ${"" . $option_name} = $option_value;
     }
-} else {
-    //set that to be the returned message
-    $resumeUploadMsg = $_FILES['upload']['error'];
 }
-*/
 ?>
 <div class="jobwp-single-body-container">
 	
@@ -278,13 +209,12 @@ if (
     } 
     ?>
     
-    <div class="circulr-details-bottom padding-50-0">
-        <div class="apply-now">
-            <p class="heading-04"><?php _e('Lets shape your ideas from here', JOBWP_TXT_DOMAIN); ?>.</p>
-        </div>
-        <div class="apply-now">
-            <a href="javascript:void(0)" class="primary-button apply-now"><?php _e('Apply Now', JOBWP_TXT_DOMAIN); ?></a>
-        </div>
+    <div class="circulr-details-bottom-email">
+        <h3 class="wpsd-read-before-apply"><?php esc_html_e( $jobwp_apply_procedure_title ); ?></h3>
+        <span class="wpsd-read-before-apply-border">&nbsp;</span>
+        <p class="apply-to-email">
+            <?php esc_html_e( $jobwp_apply_procedure_content ); ?>
+        </p>
     </div>
 
 </div>

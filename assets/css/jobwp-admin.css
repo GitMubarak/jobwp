@@ -6,14 +6,17 @@
 }
 
 table.jobwp-listing-style-settings-table tr th,
-table.jobwp-listing-style-settings-table tr td {
+table.jobwp-listing-style-settings-table tr td,
+table.jobwp-single-settings-table tr th,
+table.jobwp-single-settings-table tr td {
     border: 0px solid #000;
     padding: 10px;
     text-align: left;
     vertical-align: top;
 }
 
-table.jobwp-listing-style-settings-table tr th {
+table.jobwp-listing-style-settings-table tr th,
+table.jobwp-single-settings-table tr th {
     font-weight: 600;
 }
 
