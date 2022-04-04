@@ -1,30 +1,30 @@
 <?php
 if ( ! defined('ABSPATH') ) exit;
 
-$jobwpGeneralMessage = false;
+$jobwpListingMessage = false;
 
-if ( isset( $_POST['updateGeneralStyles'] ) ) {
+if ( isset( $_POST['updateListingStyles'] ) ) {
     
-    $jobwpGeneralStylesInfo = array(
+    $jobwpListingStylesInfo = array(
         'jobwp_title_font_color'      => isset( $_POST['jobwp_title_font_color'] ) ? sanitize_text_field( $_POST['jobwp_title_font_color'] ) : '#212121',
         'jobwp_title_font_size'       => isset( $_POST['jobwp_title_font_size'] ) ? sanitize_text_field( $_POST['jobwp_title_font_size'] ) : 12,
     );
     
-    $jobwpGeneralMessage = update_option( 'jobwp_search_styles', serialize( $jobwpGeneralStylesInfo ) );
+    $jobwpListingMessage = update_option( 'jobwp_search_styles', serialize( $jobwpListingStylesInfo ) );
 }
 
-$jobwpGeneralStyles           = stripslashes_deep( unserialize( get_option('jobwp_search_styles') ) );
-$jobwp_title_font_color       = isset( $jobwpGeneralStyles['jobwp_title_font_color'] ) ? $jobwpGeneralStyles['jobwp_title_font_color'] : '#212121';
-$jobwp_title_font_size        = isset( $jobwpGeneralStyles['jobwp_title_font_size'] ) ? $jobwpGeneralStyles['jobwp_title_font_size'] : 12;
+$jobwpListingStyles           = stripslashes_deep( unserialize( get_option('jobwp_search_styles') ) );
+$jobwp_title_font_color       = isset( $jobwpListingStyles['jobwp_title_font_color'] ) ? $jobwpListingStyles['jobwp_title_font_color'] : '#212121';
+$jobwp_title_font_size        = isset( $jobwpListingStyles['jobwp_title_font_size'] ) ? $jobwpListingStyles['jobwp_title_font_size'] : 12;
 ?>
-<div id="wph-wrap-all" class="wrap jobwp-general-settings-page">
+<div id="wph-wrap-all" class="wrap jobwp-listing-settings-page">
 
     <div class="settings-banner">
-        <h2><?php _e('General Settings', JOBWP_TXT_DOMAIN); ?></h2>
+        <h2><?php _e('Listing Settings', JOBWP_TXT_DOMAIN); ?></h2>
     </div>
 
     <?php 
-        if ( $jobwpGeneralMessage ) {
+        if ( $jobwpListingMessage ) {
             $this->jobwp_display_notification('success', 'Your information updated successfully.');
         }
     ?>
@@ -32,8 +32,8 @@ $jobwp_title_font_size        = isset( $jobwpGeneralStyles['jobwp_title_font_siz
     <div class="hmacs-wrap">
 
     <nav class="nav-tab-wrapper">
-        <a href="?post_type=jobs&page=jobwp-general-settings&tab=settings" class="nav-tab <?php if ( $jobwpTab !== 'styles' ) { ?>nav-tab-active<?php } ?>"><?php _e('Content Settings', JOBWP_TXT_DOMAIN); ?></a>
-        <a href="?post_type=jobs&page=jobwp-general-settings&tab=styles" class="nav-tab <?php if ( $jobwpTab === 'styles' ) { ?>nav-tab-active<?php } ?>"><?php _e('Styles Settings', JOBWP_TXT_DOMAIN); ?></a>
+        <a href="?post_type=jobs&page=jobwp-listing-settings&tab=settings" class="nav-tab <?php if ( $jobwpTab !== 'styles' ) { ?>nav-tab-active<?php } ?>"><?php _e('Content', JOBWP_TXT_DOMAIN); ?></a>
+        <a href="?post_type=jobs&page=jobwp-listing-settings&tab=styles" class="nav-tab <?php if ( $jobwpTab === 'styles' ) { ?>nav-tab-active<?php } ?>"><?php _e('Styles', JOBWP_TXT_DOMAIN); ?></a>
     </nav>
 
     <div class="hmacs_personal_wrap hmacs_personal_help" style="width: 895px; float: left; margin-top: 5px;">
@@ -43,10 +43,10 @@ $jobwp_title_font_size        = isset( $jobwpGeneralStyles['jobwp_title_font_siz
             switch ( $jobwpTab ) {
                 case 'styles':
                     ?>
-                    <h3><?php _e('Styles Settings::', JOBWP_TXT_DOMAIN); ?></h3>
+                    <h3><?php _e('Styles:', JOBWP_TXT_DOMAIN); ?></h3>
 
-                    <form name="jobwp_general_style_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-general-style-form">
-                        <table class="jobwp-general-style-settings-table">
+                    <form name="jobwp_listing_style_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-listing-style-form">
+                        <table class="jobwp-listing-style-settings-table">
                             <tr class="jobwp_btn_color">
                                 <th scope="row" colspan="2">
                                     <label><?php _e('Job Title', JOBWP_TXT_DOMAIN); ?></label>
@@ -72,13 +72,13 @@ $jobwp_title_font_size        = isset( $jobwpGeneralStyles['jobwp_title_font_siz
                                 </td>
                             </tr>
                         </table>
-                        <p class="submit"><button id="updateGeneralStyles" name="updateGeneralStyles" class="button button-primary"><?php esc_attr_e('Save Settings', JOBWP_TXT_DOMAIN); ?></button></p>
+                        <p class="submit"><button id="updateListingStyles" name="updateListingStyles" class="button button-primary"><?php esc_attr_e('Save Settings', JOBWP_TXT_DOMAIN); ?></button></p>
                     </form>
                     <?php
                     break;
                 default:
                     ?>
-                    <h3><?php _e('Content Settings:', JOBWP_TXT_DOMAIN); ?></h3>
+                    <h3><?php _e('Content:', JOBWP_TXT_DOMAIN); ?></h3>
                     <?php _e('Please go to Content Settings', JOBWP_TXT_DOMAIN); ?>
                     <?php
                     break;

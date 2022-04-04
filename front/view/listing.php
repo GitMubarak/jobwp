@@ -3,7 +3,7 @@ if ( ! defined('ABSPATH') ) exit;
 
 global $post;
 ?>
-<div class="jobwp-body-container">
+<div class="jobwp-listing-body-container">
 
     <?php
     // Main Query Arguments
@@ -44,7 +44,7 @@ global $post;
             }
             ?>
             <div class="jobwp-item">
-                <h1 class="jobwp-job-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                <h1 class="jobwp-job-title"><a href="<?php the_permalink(); ?>" class="primary-color"><?php the_title(); ?></a></h1>
                 <p class="jobwp-overview-excerpt">
                     <?php echo wp_trim_words( get_the_content(), 45, '...' ); ?>
                 </p>

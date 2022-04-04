@@ -2,10 +2,18 @@
     clear: both;
 }
 
-.jobwp-body-container {
+.padding-top-50 {
+    padding-top: 50px;
+}
+
+.jobwp-listing-body-container {
     margin: 20px 0;
-    border: 1px solid #000;
+    border: 0px solid #000;
     width: 100%;
+}
+
+.primary-color {
+    color: #247c26;
 }
 
 
@@ -38,7 +46,6 @@
 
 .jobwp-item h1.jobwp-job-title a {
     font-size: 26px;
-    color: #242424;
     font-weight: 900;
     text-decoration: none;
 }
@@ -65,12 +72,100 @@ p.jobwp-list-bottom-item {
 
 /* Details Started */
 
+.jobwp-single-body-container {
+    margin: 20px 0;
+    border: 0px solid #000;
+    width: 100%;
+}
+
 .jobwp-single-area {
-    border: 1px solid #000;
+    border: 0px solid #000;
     width: 100%;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 70% 1fr;
+}
+
+.jobwp-single-left {
+    border: 0px solid #009900;
+}
+
+.left-cell {
+    float: left;
+    text-align: right;
+    padding-bottom: 20px;
+    width: 36%;
+}
+
+.right-cell {
+    float: right;
+    width: 60%;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    border-left: 1px solid #247c26;
+}
+
+.circulr-details-top {
+    background: #eee;
+    border: 0px solid #000;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 70% 1fr;
+}
+
+p.jobwp-job-title {
+    border: 0px solid #000;
+    font-size: 36px;
+    line-height: 100px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.circulr-details-bottom {
+    background: #eee;
+    border: 0px solid #000;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 70% 1fr;
+}
+
+.padding-50-0 {
+    padding: 50px 0;
+}
+
+.apply-now {
+    text-align: center;
+}
+
+.apply-now p {
+    line-height: 60px;
+    margin: 0;
+}
+
+.heading-04 {
+    font-size: 36px;
+}
+
+.primary-button {
+    background: rgba(36, 124, 38, 1) !important;
+    border: 1px solid #247c26 !important;
+    border-radius: 3px !important;
+    font-family: "catamaranlight" !important;
+    font-size: 22px !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    padding: 10px 30px !important;
+    display: inline-block !important;
+    line-height: 36px !important;
+    height: 60px !important;
+}
+
+.primary-button:hover {
+    color: #247c26 !important;
+    background: none !important;
 }
 
 

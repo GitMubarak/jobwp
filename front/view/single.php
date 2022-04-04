@@ -4,7 +4,7 @@ get_header();
 global $post;
 
 $resumeUploadMsg = null;
-
+/*
 if (
     ! empty( $_FILES['upload']['name'] ) 
     && ! empty( $_POST['fullName'] ) 
@@ -84,8 +84,9 @@ if (
     //set that to be the returned message
     $resumeUploadMsg = $_FILES['upload']['error'];
 }
+*/
 ?>
-<div class="jobwp-body-container">
+<div class="jobwp-single-body-container">
 	
 	<?php 
     if ( have_posts() ) { 
@@ -107,9 +108,8 @@ if (
             $bo_other_benefits              = get_post_meta( $post->ID, 'jobwp_other_benefits', true );
             $bo_job_salary                  = get_post_meta( $post->ID, 'jobwp_salary', true );
             ?>
-            <div class="col-md-12 center-align">
-                <h3 class="heading-03 margin-bottom-30"><?php the_title(); ?></h3>
-                <h5 class="heading-05 color-white margin-bottom-30"><?php _e('Department: Human Resource', JOBWP_TXT_DOMAIN); ?></h5>
+            <div class="circulr-details-top">
+                <p class="jobwp-job-title primary-color"><?php the_title(); ?></p>
             </div>
             <?php
             if ( null !== $resumeUploadMsg ) {
@@ -119,13 +119,15 @@ if (
             }
             ?>
             <div class="jobwp-single-area">
+
                 <div class="jobwp-single-left">
+                    
                     <div class="content-row">
                         <div class="left-cell padding-top-50">
                             <h5 class="primary-color"><?php _e('Overview', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell padding-top-50">
-                            <p class="margin-bottom-p"><?php the_content(); ?></p>
+                            <?php the_content(); ?>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -135,7 +137,7 @@ if (
                             <h5 class="primary-color"><?php _e('No. of Vacancies', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
-                            <h5 class="primary-color"><?php esc_html_e( $bo_vacancies ); ?></h5>
+                            <h5><?php esc_html_e( $bo_vacancies ); ?></h5>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -193,7 +195,7 @@ if (
                             <h5 class="primary-color"><?php _e('Job Nature', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
-                            <h5 class="primary-color"><?php esc_html_e( $bo_job_nature ); ?></h5>
+                            <h5><?php esc_html_e( $bo_job_nature ); ?></h5>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -213,7 +215,7 @@ if (
                             <h5 class="primary-color"><?php _e('Experience Requirements', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
-                            <h5 class="primary-color"><?php esc_html_e( $bo_experience ); ?></h5>
+                            <h5><?php esc_html_e( $bo_experience ); ?></h5>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -223,7 +225,7 @@ if (
                             <h5 class="primary-color"><?php _e('Job Location', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
-                            <h5 class="primary-color"><?php esc_html_e( $bo_job_location ); ?></h5>
+                            <h5><?php esc_html_e( $bo_job_location ); ?></h5>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -265,17 +267,9 @@ if (
                             <h5 class="primary-color"><?php _e('Job Level', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
-                            <h5 class="primary-color"><?php esc_html_e( $bo_job_level ); ?></h5>
+                            <h5><?php esc_html_e( $bo_job_level ); ?></h5>
                         </div>
                         <div class="clear"></div>
-                    </div>
-                </div>
-                <div class="jobwp-single-left">
-                    <div class="side-nav-right">
-                        <h5 class="heading-05 margin-bottom-10"><?php _e('Few more position', JOBWP_TXT_DOMAIN); ?></h5>
-                        <?php
-                            //get_few_more_positions();
-                        ?>
                     </div>
                 </div>
             </div>
@@ -284,11 +278,11 @@ if (
     } 
     ?>
     
-    <div class="container">
-        <div class="col-md-8 apply-now">
+    <div class="circulr-details-bottom padding-50-0">
+        <div class="apply-now">
             <p class="heading-04"><?php _e('Lets shape your ideas from here', JOBWP_TXT_DOMAIN); ?>.</p>
         </div>
-        <div class="col-md-4 apply-now">
+        <div class="apply-now">
             <a href="javascript:void(0)" class="primary-button apply-now"><?php _e('Apply Now', JOBWP_TXT_DOMAIN); ?></a>
         </div>
     </div>

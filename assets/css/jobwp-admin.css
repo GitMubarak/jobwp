@@ -5,15 +5,15 @@
     margin-bottom: 20px;
 }
 
-table.jobwp-general-style-settings-table tr th,
-table.jobwp-general-style-settings-table tr td {
+table.jobwp-listing-style-settings-table tr th,
+table.jobwp-listing-style-settings-table tr td {
     border: 0px solid #000;
     padding: 10px;
     text-align: left;
     vertical-align: top;
 }
 
-table.jobwp-general-style-settings-table tr th {
+table.jobwp-listing-style-settings-table tr th {
     font-weight: 600;
 }
 
