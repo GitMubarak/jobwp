@@ -78,7 +78,7 @@ class JobWp_Admin
 			'jobwp-single-settings',
 			array($this, JOBWP_PRFX . 'single_settings'),
 		);
-
+		/*
 		add_submenu_page(
 			$jobwp_cpt_menu,
 			__('Application List', JOBWP_TXT_DOMAIN),
@@ -87,6 +87,7 @@ class JobWp_Admin
 			'jobwp-application-list',
 			array($this, JOBWP_PRFX . 'application_list'),
 		);
+		*/
 	}
 
 	/**
@@ -194,23 +195,23 @@ class JobWp_Admin
 	function jobwp_custom_post_type() {
 
 		$labels = array(
-							'name'                => __('All Jobs'),
-							'singular_name'       => __('WP Jobs'),
-							'menu_name'           => __('WP Jobs'),
-							'parent_item_colon'   => __('Parent Job'),
-							'all_items'           => __('All Jobs'),
-							'view_item'           => __('View Job'),
-							'add_new_item'        => __('Add New Job'),
-							'add_new'             => __('Add New'),
-							'edit_item'           => __('Edit Job'),
-							'update_item'         => __('Update Job'),
-							'search_items'        => __('Search Job'),
-							'not_found'           => __('Not Found'),
-							'not_found_in_trash'  => __('Not found in Trash')
+							'name'                => __('All Jobs', JOBWP_TXT_DOMAIN),
+							'singular_name'       => __('WP Jobs', JOBWP_TXT_DOMAIN),
+							'menu_name'           => __('WP Jobs', JOBWP_TXT_DOMAIN),
+							'parent_item_colon'   => __('Parent Job', JOBWP_TXT_DOMAIN),
+							'all_items'           => __('All Jobs', JOBWP_TXT_DOMAIN),
+							'view_item'           => __('View Job', JOBWP_TXT_DOMAIN),
+							'add_new_item'        => __('Add New Job', JOBWP_TXT_DOMAIN),
+							'add_new'             => __('Add New', JOBWP_TXT_DOMAIN),
+							'edit_item'           => __('Edit Job', JOBWP_TXT_DOMAIN),
+							'update_item'         => __('Update Job', JOBWP_TXT_DOMAIN),
+							'search_items'        => __('Search Job', JOBWP_TXT_DOMAIN),
+							'not_found'           => __('Not Found', JOBWP_TXT_DOMAIN),
+							'not_found_in_trash'  => __('Not found in Trash', JOBWP_TXT_DOMAIN)
 						);
 		$args = array(
-						'label'               => __('jobs'),
-						'description'         => __('Description For Job'),
+						'label'               => __('jobs', JOBWP_TXT_DOMAIN),
+						'description'         => __('Description For Job', JOBWP_TXT_DOMAIN),
 						'labels'              => $labels,
 						'supports'            => array('title', 'editor', 'page-attributes'),
 						'public'              => true,
