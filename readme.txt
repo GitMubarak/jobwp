@@ -1,4 +1,4 @@
-=== JobWP - Best Recruitment Plugin for WordPress ===
+=== JobWP ===
 Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: faqs, accordion, woocommerce faq, faq plugin, toggle

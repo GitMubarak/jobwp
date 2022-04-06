@@ -35,14 +35,18 @@ class JobWp_Admin
 			FALSE
 		);
 
+		wp_enqueue_style(
+			'jquery-ui',
+			JOBWP_ASSETS . 'css/jquery-ui.css',
+			array(),
+			$this->jobwp_version,
+			FALSE
+		);
+
 		if ( ! wp_script_is('jquery') ) {
 			wp_enqueue_script('jquery');
 		}
-
-		// You need styling for the datepicker. For simplicity I've linked to Google's hosted jQuery UI CSS.
-		wp_register_style('jquery-ui', '//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css');
-		wp_enqueue_style('jquery-ui');
-		// Load the datepicker script (pre-registered in WordPress).
+		
 		wp_enqueue_script('jquery-ui-datepicker');
 		
 		wp_enqueue_script(
@@ -413,8 +417,6 @@ class JobWp_Admin
 			return $post_id;
 		}
 
-		$jobwp_meta_posts = $_POST;
-
 		$jobwp_meta_params = array(
 
 			'jobwp_experience'			=> isset( $_POST['jobwp_experience'] ) ? sanitize_text_field( $_POST['jobwp_experience'] ) : null,
@@ -432,9 +434,7 @@ class JobWp_Admin
 			'jobwp_other_benefits'		=> isset( $_POST['jobwp_other_benefits'] ) ? wp_kses_post( $_POST['jobwp_other_benefits'] ) : null,
 		);
 
-		$jobwp_meta = apply_filters( 'jobwp_meta_arr', $jobwp_meta_params, $jobwp_meta_posts );
-
-		foreach( $jobwp_meta as $key => $value ) {
+		foreach( $jobwp_meta_params as $key => $value ) {
 
 			if ( 'revision' === $post->post_type ) {
 				return;

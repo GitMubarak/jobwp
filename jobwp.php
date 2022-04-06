@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:         JobWP - Best Recruitment Plugin for WordPress
+ * Plugin Name:         JobWP
  * Plugin URI:		    https://wordpress.org/plugins/jobwp/
  * Description: 	    Best Recruitment Plugin for WordPress to display job listing in a career page.
  * Version:             1.0
