@@ -23,11 +23,21 @@ class JobWp_Front
 	*/
 	function jobwp_front_assets() {
 		
-		wp_enqueue_style(	'jobwp-front',
-							JOBWP_ASSETS . 'css/' . $this->jobwp_assets_prefix . 'front.css',
-							array(),
-							$this->jobwp_version,
-							FALSE );
+		wp_enqueue_style(
+            $this->jobwp_assets_prefix . 'font-awesome',
+            JOBWP_ASSETS . 'css/font-awesome/css/font-awesome.min.css',
+            array(),
+            $this->jobwp_version,
+            FALSE
+        );
+
+		wp_enqueue_style(	
+			'jobwp-front',
+			JOBWP_ASSETS . 'css/' . $this->jobwp_assets_prefix . 'front.css',
+			array(),
+			$this->jobwp_version,
+			FALSE 
+		);
 		
 		if ( ! wp_script_is( 'jquery' ) ) {
 			wp_enqueue_script('jquery');

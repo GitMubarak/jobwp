@@ -109,6 +109,9 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shorcode [jobwp_l
 
 = 1.1 =
 * Primary color changed
+* Job listing hover color changed
+* Font Awesome 4 integrated
+* Css changed
 
 = 1.0 =
 * Initial release

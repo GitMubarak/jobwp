@@ -45,14 +45,14 @@
 }
 
 .jobwp-item h1.jobwp-job-title a {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     text-decoration: none;
 }
 
 p.jobwp-overview-excerpt,
 p.jobwp-list-bottom-item {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 30px;
     font-weight: normal;
     margin: 0 0 10px;

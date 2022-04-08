@@ -47,8 +47,12 @@ global $post;
                     <?php echo wp_trim_words( get_the_content(), 45, '...' ); ?>
                 </p>
                 <div class="jobwp-bottom">
-                    <p class="jobwp-list-bottom-item pull-left"><strong class="primary-color"><?php _e('Experience', JOBWP_TXT_DOMAIN); ?> :</strong> <span class="ng-binding"><?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?></span></p>
-                    <p class="jobwp-list-bottom-item pull-right"><strong class="primary-color"><?php _e('Deadline', JOBWP_TXT_DOMAIN); ?> :</strong> <span class="ng-binding"><?php esc_html_e( $jobwpDeadline ); ?></span></p>
+                    <p class="jobwp-list-bottom-item pull-left">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <strong class="primary-color"><?php _e('Experience', JOBWP_TXT_DOMAIN); ?> :</strong> <span class="ng-binding"><?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?></span></p>
+                    <p class="jobwp-list-bottom-item pull-right">
+                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                        <strong class="primary-color"><?php _e('Deadline', JOBWP_TXT_DOMAIN); ?> :</strong> <span class="ng-binding"><?php esc_html_e( $jobwpDeadline ); ?></span></p>
                 </div>
                 <div class="clear"></div>
             </div>

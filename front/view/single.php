@@ -55,7 +55,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
                     
                     <div class="content-row">
                         <div class="left-cell padding-top-50">
-                            <h5 class="primary-color"><?php _e('Overview', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;<?php _e('Overview', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell padding-top-50">
                             <?php the_content(); ?>
@@ -65,7 +65,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><?php _e('No. of Vacancies', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;<?php _e('No. of Vacancies', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <h5><?php esc_html_e( $bo_vacancies ); ?></h5>
@@ -75,7 +75,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><?php _e('Specific Skills', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;<?php _e('Specific Skills', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <div class="custom-list">
@@ -91,7 +91,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><?php _e('Responsible For', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;<?php _e('Responsible For', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <div class="custom-list">
@@ -107,7 +107,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><?php _e('Additional Requirements', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;<?php _e('Additional Requirements', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <div class="custom-list">
@@ -123,7 +123,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><?php _e('Job Nature', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;<?php _e('Job Nature', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <h5><?php esc_html_e( $bo_job_nature ); ?></h5>
@@ -133,7 +133,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><?php _e('Educational Requirements', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;<?php _e('Educational Requirements', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <p><?php esc_html_e( $jobwp_edu_req ); ?></p>
@@ -143,7 +143,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><?php _e('Experience Requirements', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;<?php _e('Experience Requirements', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <h5><?php esc_html_e( $bo_experience ); ?></h5>
@@ -153,7 +153,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><?php _e('Job Location', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<?php _e('Job Location', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <h5><?php esc_html_e( $bo_job_location ); ?></h5>
@@ -163,7 +163,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><?php _e('Salary', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;<?php _e('Salary', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <div class="custom-list">
@@ -179,7 +179,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><?php _e('Other Benefits', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;<?php _e('Other Benefits', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <div class="custom-list">
@@ -195,7 +195,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 
                     <div class="content-row">
                         <div class="left-cell padding-bottom-50">
-                            <h5 class="primary-color"><?php _e('Job Level', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><i class="fa fa-level-up" aria-hidden="true"></i>&nbsp;<?php _e('Job Level', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <h5><?php esc_html_e( $bo_job_level ); ?></h5>
