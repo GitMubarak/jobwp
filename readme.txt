@@ -1,10 +1,10 @@
-=== JobWP ===
+=== JobWP - Easiest Job Manager, Career and Recruitment Plugin ===
 Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
-Tags: faqs, accordion, woocommerce faq, faq plugin, toggle
+Tags: Job, Jobs, Career, Job Listing, Recruitment, Job Board
 Requires at least: 5.2
 Tested up to: 5.9.2
-Stable tag: 1.0
+Stable tag: 1.1
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,11 @@ Best Recruitment Plugin for WordPress to display job listing in a career page.
 
 == Description ==
 
-Best Recruitment Plugin for WordPress to display job listing in a career page.
+[__Live Demo__](https://hmplugin.com/demo/jobwp/) | [__More Info__](https://hmplugin.com/) | [__Live Chat__](https://hmplugin.com/) | [__Support__](https://hmplugin.com/contact/)
+
+= Overview =
+
+**JobWP** is the **Best Job Listing, Career and Recruitment Plugin for WordPress** to display job listing in a career page.
 
 
 **🌟 Plugin Features:**
@@ -24,17 +28,24 @@ Best Recruitment Plugin for WordPress to display job listing in a career page.
 * Shortcoded
 * Simple but effective
 * Custom Post Type
+* Job Listing in a Career Page
+* Details Job single page
+* Apply procedure title option
+* Apply procedure content option
 
 
 ➡️ Useage of Shortcode:⬅️
 
-<strong> Use the below Shortcode to display FAQs </strong>
+<strong> Use the below Shortcode to display Jobs </strong>
 
 <pre> [jobwp_listing] </pre>
 
 
-**Demo/ Support/ Live Chat**
-[Knock Us Here](https://hmplugin.com/)
+**📋 Translation Ready:**
+
+* POT file included (/languages/)
+* English (United States) (Default)
+* Bengoli (Bangladesh)
 
 
 **👍 Feedback/Rating:**
@@ -90,10 +101,14 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shorcode [jobwp_l
 
 == Screenshots ==
 
-1. Showing Jobs in a demo page
+1. Showing Job Listing in a career page
+2. Showing Jeb Detail Page
 
 
 == Changelog ==
+
+= 1.1 =
+* Primary color changed
 
 = 1.0 =
 * Initial release
