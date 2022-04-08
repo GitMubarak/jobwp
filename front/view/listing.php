@@ -4,7 +4,6 @@ if ( ! defined('ABSPATH') ) exit;
 global $post;
 ?>
 <div class="jobwp-listing-body-container">
-
     <?php
     // Main Query Arguments
     $jobwpQueryArrParams = array(
@@ -33,8 +32,7 @@ global $post;
 
             $jobwp_experience       = get_post_meta( $post->ID, 'jobwp_experience', true );
             $jobwp_deadline         = get_post_meta( $post->ID, 'jobwp_deadline', true );
-            $jobwpCurrDate          = date('Y-m-d');
-            $jobwpDateDiff          = date_diff( date_create( $jobwpCurrDate ), date_create( $jobwp_deadline ) );
+            $jobwpDateDiff          = date_diff( date_create( date('Y-m-d') ), date_create( $jobwp_deadline ) );
             $jobwpDateDiffNumber    = $jobwpDateDiff->format("%R%a");
 
             if ( $jobwpDateDiffNumber > -1 ) {
@@ -59,5 +57,4 @@ global $post;
         wp_reset_postdata();
     }
     ?>
-
 </div>

@@ -13,7 +13,7 @@
 }
 
 .primary-color {
-    color: #247c26;
+    color: #555555;
 }
 
 
@@ -32,7 +32,7 @@
 }
 
 .jobwp-item:hover {
-    background: #dff4df;
+    background: #EAEAEA;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -46,7 +46,7 @@
 
 .jobwp-item h1.jobwp-job-title a {
     font-size: 26px;
-    font-weight: 900;
+    font-weight: 600;
     text-decoration: none;
 }
 
