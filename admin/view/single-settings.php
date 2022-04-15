@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div id="wph-wrap-all" class="wrap jobwp-single-settings-page">
 
     <div class="settings-banner">
-        <h2><?php _e('Detail Page Settings', JOBWP_TXT_DOMAIN); ?></h2>
+        <h2><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;<?php _e('Detail Page Settings', JOBWP_TXT_DOMAIN); ?></h2>
     </div>
 
     <?php 
@@ -15,14 +15,18 @@ if ( ! defined( 'ABSPATH' ) ) {
         }
     ?>
 
-    <div class="hmacs-wrap">
+    <div class="jobwp-wrap">
 
     <nav class="nav-tab-wrapper">
-        <a href="?post_type=jobs&page=jobwp-single-settings&tab=settings" class="nav-tab <?php if ( $jobwpTab !== 'styles' ) { ?>nav-tab-active<?php } ?>"><?php _e('Content', JOBWP_TXT_DOMAIN); ?></a>
-        <a href="?post_type=jobs&page=jobwp-single-settings&tab=styles" class="nav-tab <?php if ( $jobwpTab === 'styles' ) { ?>nav-tab-active<?php } ?>"><?php _e('Styles', JOBWP_TXT_DOMAIN); ?></a>
+        <a href="?post_type=jobs&page=jobwp-single-settings&tab=settings" class="nav-tab jobwp-tab <?php if ( $jobwpTab !== 'styles' ) { ?>jobwp-tab-active<?php } ?>">
+            <i class="fa fa-cog" aria-hidden="true">&nbsp;</i><?php _e('Content', JOBWP_TXT_DOMAIN); ?>
+        </a>
+        <a href="?post_type=jobs&page=jobwp-single-settings&tab=styles" class="nav-tab jobwp-tab <?php if ( $jobwpTab === 'styles' ) { ?>jobwp-tab-active<?php } ?>">
+            <i class="fa fa-paint-brush" aria-hidden="true"></i>&nbsp;<?php _e('Styles', JOBWP_TXT_DOMAIN); ?>
+        </a>
     </nav>
 
-    <div class="hmacs_personal_wrap hmacs_personal_help" style="width: 895px; float: left; margin-top: 5px;">
+    <div class="jobwp_personal_wrap jobwp_personal_help" style="width: 76%; float: left;">
         
         <div class="tab-content">
             <?php 
@@ -41,5 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
     
     </div>
+
+    <?php include_once('partial/admin-sidebar.php'); ?>
 
 </div>

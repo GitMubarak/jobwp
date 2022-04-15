@@ -1,26 +1,12 @@
 <?php
-if ( ! defined('ABSPATH') ) exit;
-
-$jobwpListingMessage = false;
-
-if ( isset( $_POST['updateListingStyles'] ) ) {
-    
-    $jobwpListingStylesInfo = array(
-        'jobwp_title_font_color'      => isset( $_POST['jobwp_title_font_color'] ) ? sanitize_text_field( $_POST['jobwp_title_font_color'] ) : '#212121',
-        'jobwp_title_font_size'       => isset( $_POST['jobwp_title_font_size'] ) ? sanitize_text_field( $_POST['jobwp_title_font_size'] ) : 12,
-    );
-    
-    $jobwpListingMessage = update_option( 'jobwp_search_styles', serialize( $jobwpListingStylesInfo ) );
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
-
-$jobwpListingStyles           = stripslashes_deep( unserialize( get_option('jobwp_search_styles') ) );
-$jobwp_title_font_color       = isset( $jobwpListingStyles['jobwp_title_font_color'] ) ? $jobwpListingStyles['jobwp_title_font_color'] : '#212121';
-$jobwp_title_font_size        = isset( $jobwpListingStyles['jobwp_title_font_size'] ) ? $jobwpListingStyles['jobwp_title_font_size'] : 12;
 ?>
 <div id="wph-wrap-all" class="wrap jobwp-listing-settings-page">
 
     <div class="settings-banner">
-        <h2><?php _e('Listing Settings', JOBWP_TXT_DOMAIN); ?></h2>
+        <h2><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;<?php _e('Listing Settings', JOBWP_TXT_DOMAIN); ?></h2>
     </div>
 
     <?php 
@@ -29,33 +15,38 @@ $jobwp_title_font_size        = isset( $jobwpListingStyles['jobwp_title_font_siz
         }
     ?>
 
-    <div class="hmacs-wrap">
+    <div class="jobwp-wrap">
 
-    <nav class="nav-tab-wrapper">
-        <a href="?post_type=jobs&page=jobwp-listing-settings&tab=settings" class="nav-tab <?php if ( $jobwpTab !== 'styles' ) { ?>nav-tab-active<?php } ?>"><?php _e('Content', JOBWP_TXT_DOMAIN); ?></a>
-        <a href="?post_type=jobs&page=jobwp-listing-settings&tab=styles" class="nav-tab <?php if ( $jobwpTab === 'styles' ) { ?>nav-tab-active<?php } ?>"><?php _e('Styles', JOBWP_TXT_DOMAIN); ?></a>
-    </nav>
+        <nav class="nav-tab-wrapper">
+            <a href="?post_type=jobs&page=jobwp-listing-settings&tab=settings" class="nav-tab jobwp-tab <?php if ( $jobwpTab !== 'styles' ) { ?> jobwp-tab-active<?php } ?>">
+                <i class="fa fa-cog" aria-hidden="true">&nbsp;</i><?php _e('Content', JOBWP_TXT_DOMAIN); ?>
+            </a>
+            <a href="?post_type=jobs&page=jobwp-listing-settings&tab=styles" class="nav-tab jobwp-tab <?php if ( $jobwpTab === 'styles' ) { ?> jobwp-tab-active<?php } ?>">
+                <i class="fa fa-paint-brush" aria-hidden="true"></i>&nbsp;<?php _e('Styles', JOBWP_TXT_DOMAIN); ?>
+            </a>
+        </nav>
 
-    <div class="hmacs_personal_wrap hmacs_personal_help" style="width: 895px; float: left; margin-top: 5px;">
+        <div class="jobwp_personal_wrap jobwp_personal_help" style="width: 76%; float: left;">
+            
+            <div class="tab-content">
+                <?php 
+                switch ( $jobwpTab ) {
+                    case 'styles':
+                        ?>
+                        <h3><?php _e('Styles:', JOBWP_TXT_DOMAIN); ?></h3>
+                        <?php _e('Coming Soon', JOBWP_TXT_DOMAIN); ?>
+                        <?php
+                        break;
+                    default:
+                        include_once JOBWP_PATH . 'admin/view/partial/listing-content.php';
+                        break;
+                } 
+                ?>
+            </div>
         
-        <div class="tab-content">
-            <?php 
-            switch ( $jobwpTab ) {
-                case 'styles':
-                    ?>
-                    <h3><?php _e('Styles:', JOBWP_TXT_DOMAIN); ?></h3>
-                    <?php _e('Coming Soon', JOBWP_TXT_DOMAIN); ?>
-                    <?php
-                    break;
-                default:
-                    ?>
-                    <h3><?php _e('Content:', JOBWP_TXT_DOMAIN); ?></h3>
-                    <?php _e('Coming Soon', JOBWP_TXT_DOMAIN); ?>
-                    <?php
-                    break;
-            } 
-            ?>
         </div>
+
+        <?php include_once('partial/admin-sidebar.php'); ?>
     
     </div>
 

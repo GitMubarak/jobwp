@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 */
 class JobWp_Admin 
 {
-	use Jobwp_Core, Jobwp_Single_Content_Settings;
+	use Jobwp_Core, Jobwp_Listing_Content_Settings, Jobwp_Single_Content_Settings;
 
 	private $jobwp_version;
 	private $jobwp_assets_prefix;
@@ -23,6 +23,14 @@ class JobWp_Admin
 	 *	Function For Loading Admin Assets
 	 */
 	function jobwp_enqueue_assets() {
+
+		wp_enqueue_style(
+            $this->jobwp_assets_prefix . 'font-awesome',
+            JOBWP_ASSETS . 'css/font-awesome/css/font-awesome.min.css',
+            array(),
+            $this->jobwp_version,
+            FALSE
+        );
 
 		wp_enqueue_style( 'wp-color-picker');
 		wp_enqueue_script( 'wp-color-picker');
@@ -67,8 +75,8 @@ class JobWp_Admin
 
 		add_submenu_page(
 			$jobwp_cpt_menu,
-			__('Listing Settings', JOBWP_TXT_DOMAIN),
-			__('Listing Settings', JOBWP_TXT_DOMAIN),
+			__('Listing Page Settings', JOBWP_TXT_DOMAIN),
+			__('Listing page Settings', JOBWP_TXT_DOMAIN),
 			'manage_options',
 			'jobwp-listing-settings',
 			array($this, JOBWP_PRFX . 'listing_settings'),
@@ -104,6 +112,16 @@ class JobWp_Admin
 		}
 	
 		$jobwpTab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : null;
+
+		$jobwpListingMessage = false;
+
+		if ( isset( $_POST['updateListingContent'] ) ) {
+
+			$jobwpListingMessage = $this->jobwp_set_listing_content_settings( $_POST );
+
+		}
+
+		$jobwpListingContent = $this->jobwp_get_listing_content_settings();
 
 		require_once JOBWP_PATH . 'admin/view/listing-settings.php';
 	}

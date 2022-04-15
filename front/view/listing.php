@@ -2,6 +2,14 @@
 if ( ! defined('ABSPATH') ) exit;
 
 global $post;
+
+$jobwpListingContent = $this->jobwp_get_listing_content_settings();
+//print_r( $jobwpListingContent );
+foreach ( $jobwpListingContent as $option_name => $option_value ) {
+    if ( isset( $jobwpListingContent[$option_name] ) ) {
+        ${"" . $option_name} = $option_value;
+    }
+}
 ?>
 <div class="jobwp-listing-body-container">
     <?php
@@ -49,7 +57,7 @@ global $post;
                 <div class="jobwp-bottom">
                     <p class="jobwp-list-bottom-item pull-left">
                         <i class="fa fa-briefcase" aria-hidden="true"></i>
-                        <strong class="primary-color"><?php _e('Experience', JOBWP_TXT_DOMAIN); ?> :</strong> <span class="ng-binding"><?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?></span></p>
+                        <strong class="primary-color"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?> :</strong> <span class="ng-binding"><?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?></span></p>
                     <p class="jobwp-list-bottom-item pull-right">
                         <i class="fa fa-calendar-o" aria-hidden="true"></i>
                         <strong class="primary-color"><?php _e('Deadline', JOBWP_TXT_DOMAIN); ?> :</strong> <span class="ng-binding"><?php esc_html_e( $jobwpDeadline ); ?></span></p>

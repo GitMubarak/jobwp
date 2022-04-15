@@ -1,4 +1,4 @@
-=== JobWP - Easiest Job Manager, Career and Recruitment Plugin ===
+=== JobWP - Easiest Job Listing, Career and Recruitment Plugin ===
 Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: Job, Jobs, Career, Job Listing, Recruitment, Job Board
@@ -17,7 +17,7 @@ Best Recruitment Plugin for WordPress to display job listing in a career page.
 
 = Overview =
 
-**JobWP** is the **Best Job Listing, Career and Recruitment Plugin for WordPress** to display job listing in a career page.
+**JobWP** is the **Easiest Job Listing, Career and Recruitment Plugin for WordPress** to display job listing in a career page.
 
 
 **🌟 Plugin Features:**

@@ -33,7 +33,11 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
             </td>
         </tr>
     </table>
-    
-    <p class="submit"><button id="updateSingleContent" name="updateSingleContent" class="button button-primary jobwp-button"><?php _e('Save Settings', JOBWP_TXT_DOMAIN); ?></button></p>
+    <hr>
+    <p class="submit">
+        <button id="updateSingleContent" name="updateSingleContent" class="button button-primary jobwp-button">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;<?php _e('Save Settings', JOBWP_TXT_DOMAIN); ?>
+        </button>
+    </p>
 
 </form>
