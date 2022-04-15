@@ -9,4 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     color: <?php esc_html_e( $jobwp_listing_title_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_listing_title_font_size ); ?>px;
   }
+  /* Job overview */
+  .jobwp-item p.jobwp-overview-excerpt {
+    color: <?php esc_html_e( $jobwp_listing_overview_font_color ); ?>;
+    font-size: <?php esc_html_e( $jobwp_listing_overview_font_size ); ?>px;
+  }
 </style>

@@ -36,12 +36,22 @@ trait Jobwp_Listing_Styles_Settings
             [
                 'name'      => 'jobwp_listing_title_font_color',
                 'type'      => 'text',
-                'default'   => '#009900',
+                'default'   => '#242424',
             ],
             [
                 'name'      => 'jobwp_listing_title_font_size',
                 'type'      => 'number',
                 'default'   => '18',
+            ],
+            [
+                'name'      => 'jobwp_listing_overview_font_color',
+                'type'      => 'text',
+                'default'   => '#333333',
+            ],
+            [
+                'name'      => 'jobwp_listing_overview_font_size',
+                'type'      => 'number',
+                'default'   => '14',
             ],
         ];
     }
