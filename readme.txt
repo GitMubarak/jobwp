@@ -3,8 +3,8 @@ Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: Job, Jobs, Career, Job Listing, Recruitment, Job Board
 Requires at least: 5.2
-Tested up to: 5.9.2
-Stable tag: 1.1
+Tested up to: 5.9.3
+Stable tag: 1.2
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -106,6 +106,9 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shorcode [jobwp_l
 
 
 == Changelog ==
+
+= 1.2 =
+* Primary color changed
 
 = 1.1 =
 * Primary color changed
