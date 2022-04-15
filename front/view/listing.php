@@ -1,5 +1,7 @@
 <?php
-if ( ! defined('ABSPATH') ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 global $post;
 
@@ -10,6 +12,16 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
         ${"" . $option_name} = $option_value;
     }
 }
+
+$jobwpListingStyles = $this->jobwp_get_listing_styles_settings();
+foreach ( $jobwpListingStyles as $option_name => $option_value ) {
+    if ( isset( $jobwpListingStyles[$option_name] ) ) {
+        ${"" . $option_name} = $option_value;
+    }
+}
+
+// Load Styling
+include JOBWP_PATH . 'assets/css/listing.php';
 ?>
 <div class="jobwp-listing-body-container">
     <?php
@@ -50,7 +62,7 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             }
             ?>
             <div class="jobwp-item">
-                <h1 class="jobwp-job-title"><a href="<?php the_permalink(); ?>" class="primary-color"><?php the_title(); ?></a></h1>
+                <h3 class="jobwp-job-title"><a href="<?php the_permalink(); ?>" class="jobwp-job-title-a"><?php the_title(); ?></a></h3>
                 <?php
                 if ( $jobwp_list_display_overview ) {
                     ?>

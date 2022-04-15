@@ -5,6 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once JOBWP_PATH . 'core/core.php';
 include_once JOBWP_PATH . 'core/listing-content.php';
+include_once JOBWP_PATH . 'core/listing-styles.php';
 include_once JOBWP_PATH . 'core/single-content.php';
 
 /**

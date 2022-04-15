@@ -40,11 +40,11 @@
     transition: all 0.2s ease-in-out;
 }
 
-.jobwp-item h1.jobwp-job-title {
+.jobwp-item .jobwp-job-title {
     margin-bottom: 10px;
 }
 
-.jobwp-item h1.jobwp-job-title a {
+.jobwp-item .jobwp-job-title a.jobwp-job-title-a {
     font-size: 22px;
     font-weight: 600;
     text-decoration: none;

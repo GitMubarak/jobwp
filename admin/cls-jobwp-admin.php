@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 */
 class JobWp_Admin 
 {
-	use Jobwp_Core, Jobwp_Listing_Content_Settings, Jobwp_Single_Content_Settings;
+	use Jobwp_Core, Jobwp_Listing_Content_Settings, Jobwp_Listing_Styles_Settings, Jobwp_Single_Content_Settings;
 
 	private $jobwp_version;
 	private $jobwp_assets_prefix;
@@ -115,6 +115,7 @@ class JobWp_Admin
 
 		$jobwpListingMessage = false;
 
+		// Content
 		if ( isset( $_POST['updateListingContent'] ) ) {
 
 			$jobwpListingMessage = $this->jobwp_set_listing_content_settings( $_POST );
@@ -122,6 +123,14 @@ class JobWp_Admin
 		}
 
 		$jobwpListingContent = $this->jobwp_get_listing_content_settings();
+
+		// Style
+		if ( isset( $_POST['updateListingStyles'] ) ) {
+
+            $jobwpListingMessage = $this->jobwp_set_listing_styles_settings( $_POST );
+        }
+
+        $jobwpListingStyles = $this->jobwp_get_listing_styles_settings();
 
 		require_once JOBWP_PATH . 'admin/view/listing-settings.php';
 	}
@@ -136,6 +145,7 @@ class JobWp_Admin
 
 		$jobwpSingleMessage = false;
 
+		// Content
 		if ( isset( $_POST['updateSingleContent'] ) ) {
 
 			$jobwpSingleMessage = $this->jobwp_set_single_content_settings( $_POST );
