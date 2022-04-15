@@ -114,13 +114,14 @@ p.jobwp-list-bottom-item {
     grid-template-columns: 70% 1fr;
 }
 
-p.jobwp-job-title {
+.circulr-details-top .jobwp-job-title {
     border: 0px solid #000;
     font-size: 36px;
     line-height: 100px;
     text-align: center;
     margin: 0;
     padding: 0;
+    font-weight: 600;
 }
 
 .circulr-details-bottom {

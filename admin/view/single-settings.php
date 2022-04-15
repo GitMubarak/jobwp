@@ -32,10 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <?php 
             switch ( $jobwpTab ) {
                 case 'styles':
-                    ?>
-                    <h3><?php _e('Styles:', JOBWP_TXT_DOMAIN); ?></h3>
-                    <?php _e('Coming Soon', JOBWP_TXT_DOMAIN); ?>
-                    <?php
+                    include_once JOBWP_PATH . 'admin/view/partial/single-style.php';
                     break;
                 default:
                     include_once JOBWP_PATH . 'admin/view/partial/single-content.php';

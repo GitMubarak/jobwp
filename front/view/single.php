@@ -8,7 +8,7 @@ $resumeUploadMsg = null;
 require_once JOBWP_PATH . 'front/' . JOBWP_CLS_PRFX . 'front.php';
 $jobwp_front_new = new JobWp_Front(JOBWP_VERSION);
 
-// Gallery Settings Content
+// Single Settings Content
 $jobwpSingleContent = $jobwp_front_new->jobwp_get_single_content_settings();
 
 foreach ( $jobwpSingleContent as $option_name => $option_value ) {
@@ -16,6 +16,18 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
         ${"" . $option_name} = $option_value;
     }
 }
+
+// Single Settings Styles
+$jobwpSingleStyles = $jobwp_front_new->jobwp_get_single_styles_settings();
+
+foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
+    if ( isset( $jobwpSingleStyles[$option_name] ) ) {
+        ${"" . $option_name} = $option_value;
+    }
+}
+
+// Load Styling
+include JOBWP_PATH . 'assets/css/single.php';
 ?>
 <div class="jobwp-single-body-container">
 	
@@ -40,7 +52,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
             $bo_job_salary                  = get_post_meta( $post->ID, 'jobwp_salary', true );
             ?>
             <div class="circulr-details-top">
-                <p class="jobwp-job-title primary-color"><?php the_title(); ?></p>
+                <p class="jobwp-job-title"><?php the_title(); ?></p>
             </div>
             <?php
             if ( null !== $resumeUploadMsg ) {

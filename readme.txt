@@ -39,6 +39,8 @@ Best Recruitment Plugin for WordPress to display job listing in a career page.
 * List page title font size option
 * List page overview font color option
 * List page overview font size option
+* Single page title font color option
+* Single page title font size option
 
 
 ➡️ Useage of Shortcode:⬅️
@@ -123,6 +125,8 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shorcode [jobwp_l
 * List page title font size option added
 * List page overview font color option added
 * List page overview font size option added
+* Single page title font color option added
+* Single page title font size option added
 * Admin design improved
 
 = 1.1 =

@@ -5,7 +5,8 @@
 
     var jobwpColorPicker = [
         '#jobwp_listing_title_font_color',
-        '#jobwp_listing_overview_font_color'
+        '#jobwp_listing_overview_font_color',
+        '#jobwp_single_title_font_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {

@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 */
 class JobWp_Admin 
 {
-	use Jobwp_Core, Jobwp_Listing_Content_Settings, Jobwp_Listing_Styles_Settings, Jobwp_Single_Content_Settings;
+	use Jobwp_Core, Jobwp_Listing_Content_Settings, Jobwp_Listing_Styles_Settings, Jobwp_Single_Content_Settings, Jobwp_Single_Styles_Settings;
 
 	private $jobwp_version;
 	private $jobwp_assets_prefix;
@@ -76,7 +76,7 @@ class JobWp_Admin
 		add_submenu_page(
 			$jobwp_cpt_menu,
 			__('Listing Page Settings', JOBWP_TXT_DOMAIN),
-			__('Listing page Settings', JOBWP_TXT_DOMAIN),
+			__('Listing Page Settings', JOBWP_TXT_DOMAIN),
 			'manage_options',
 			'jobwp-listing-settings',
 			array($this, JOBWP_PRFX . 'listing_settings'),
@@ -153,6 +153,14 @@ class JobWp_Admin
 		}
 
 		$jobwpSingleContent = $this->jobwp_get_single_content_settings();
+
+		// Style
+		if ( isset( $_POST['updateSingleStyles'] ) ) {
+
+            $jobwpSingleMessage = $this->jobwp_set_single_styles_settings( $_POST );
+        }
+
+        $jobwpSingleStyles = $this->jobwp_get_single_styles_settings();
 
 		require_once JOBWP_PATH . 'admin/view/single-settings.php';
 	}
