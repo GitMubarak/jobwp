@@ -51,9 +51,15 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             ?>
             <div class="jobwp-item">
                 <h1 class="jobwp-job-title"><a href="<?php the_permalink(); ?>" class="primary-color"><?php the_title(); ?></a></h1>
-                <p class="jobwp-overview-excerpt">
-                    <?php echo wp_trim_words( get_the_content(), esc_html( $jobwp_list_overview_length ), '...' ); ?>
-                </p>
+                <?php
+                if ( $jobwp_list_display_overview ) {
+                    ?>
+                    <p class="jobwp-overview-excerpt">
+                        <?php echo wp_trim_words( get_the_content(), esc_html( $jobwp_list_overview_length ), '...' ); ?>
+                    </p>
+                    <?php
+                }
+                ?>
                 <div class="jobwp-bottom">
                     <p class="jobwp-list-bottom-item pull-left">
                         <i class="fa fa-briefcase" aria-hidden="true"></i>

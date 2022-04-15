@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-print_r( $jobwpListingContent );
+//print_r( $jobwpListingContent );
 foreach ( $jobwpListingContent as $option_name => $option_value ) {
     if ( isset( $jobwpListingContent[$option_name] ) ) {
         ${"" . $option_name} = $option_value;
@@ -14,7 +14,7 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
     <table class="jobwp-listing-content-settings-table">
         <tr>
             <th scope="row">
-                <label for="jobwp_list_display_overview"><?php _e('Display Overview', JOBWP_TXT_DOMAIN); ?>?</label>
+                <label for="jobwp_list_display_overview"><?php _e('Hide Overview', JOBWP_TXT_DOMAIN); ?>?</label>
             </th>
             <td>
                 <input type="checkbox" name="jobwp_list_display_overview" class="jobwp_list_display_overview" id="jobwp_list_display_overview" value="1"

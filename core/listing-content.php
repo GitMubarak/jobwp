@@ -36,7 +36,7 @@ trait Jobwp_Listing_Content_Settings
             [
                 'name'      => 'jobwp_list_display_overview',
                 'type'      => 'boolean',
-                'default'   => true,
+                'default'   => false,
             ],
             [
                 'name'      => 'jobwp_list_overview_length',
