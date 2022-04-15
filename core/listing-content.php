@@ -34,9 +34,24 @@ trait Jobwp_Listing_Content_Settings
 
         return [
             [
+                'name'      => 'jobwp_list_display_overview',
+                'type'      => 'boolean',
+                'default'   => true,
+            ],
+            [
+                'name'      => 'jobwp_list_overview_length',
+                'type'      => 'number',
+                'default'   => 30,
+            ],
+            [
                 'name'      => 'jobwp_list_exp_lbl_txt',
                 'type'      => 'text',
                 'default'   => 'Experience',
+            ],
+            [
+                'name'      => 'jobwp_list_deadline_lbl_txt',
+                'type'      => 'text',
+                'default'   => 'Deadline',
             ],
         ];
     }

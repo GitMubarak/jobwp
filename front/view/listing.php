@@ -52,15 +52,15 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             <div class="jobwp-item">
                 <h1 class="jobwp-job-title"><a href="<?php the_permalink(); ?>" class="primary-color"><?php the_title(); ?></a></h1>
                 <p class="jobwp-overview-excerpt">
-                    <?php echo wp_trim_words( get_the_content(), 45, '...' ); ?>
+                    <?php echo wp_trim_words( get_the_content(), esc_html( $jobwp_list_overview_length ), '...' ); ?>
                 </p>
                 <div class="jobwp-bottom">
                     <p class="jobwp-list-bottom-item pull-left">
                         <i class="fa fa-briefcase" aria-hidden="true"></i>
-                        <strong class="primary-color"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?> :</strong> <span class="ng-binding"><?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?></span></p>
+                        <strong class="primary-color"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?>:</strong> <span class="ng-binding"><?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?></span></p>
                     <p class="jobwp-list-bottom-item pull-right">
                         <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                        <strong class="primary-color"><?php _e('Deadline', JOBWP_TXT_DOMAIN); ?> :</strong> <span class="ng-binding"><?php esc_html_e( $jobwpDeadline ); ?></span></p>
+                        <strong class="primary-color"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?>:</strong> <span class="ng-binding"><?php esc_html_e( $jobwpDeadline ); ?></span></p>
                 </div>
                 <div class="clear"></div>
             </div>

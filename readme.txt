@@ -22,16 +22,18 @@ Best Recruitment Plugin for WordPress to display job listing in a career page.
 
 **🌟 Plugin Features:**
 
-* Easy to install
+* Easy to install and use
 * Fully integrated in WordPress
 * Fully responsive for any device
 * Shortcoded
-* Simple but effective
 * Custom Post Type
-* Job Listing in a Career Page
-* Details Job single page
-* Apply procedure title option
-* Apply procedure content option
+* Display job listing in a career page
+* Details job single page
+* Apply procedure title option in single page
+* Apply procedure content option in single page
+* List page overview word length option
+* List page deadline label text option
+* List page experience label text option
 
 
 ➡️ Useage of Shortcode:⬅️
@@ -108,7 +110,10 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shorcode [jobwp_l
 == Changelog ==
 
 = 1.2 =
-* Primary color changed
+* List page overview word length option added
+* List page experience label text option added
+* List page deadline label text option added
+* Admin design improved
 
 = 1.1 =
 * Primary color changed
