@@ -29,8 +29,8 @@ include JOBWP_PATH . 'assets/css/listing.php';
     $jobwpQueryArrParams = array(
         'post_type'   => 'jobs',
         'post_status' => 'publish',
-        'orderby'     => 'menu_order',
-        'order'       => 'ASC',
+        'orderby'     => 'date',
+        'order'       => 'DESC',
         'meta_query'  => array(
             array(
                 'key'     => 'jobwp_status',
@@ -64,7 +64,7 @@ include JOBWP_PATH . 'assets/css/listing.php';
             <div class="jobwp-item">
                 <h3 class="jobwp-job-title"><a href="<?php the_permalink(); ?>" class="jobwp-job-title-a"><?php the_title(); ?></a></h3>
                 <?php
-                if ( $jobwp_list_display_overview ) {
+                if ( ! $jobwp_list_display_overview ) {
                     ?>
                     <p class="jobwp-overview-excerpt">
                         <?php echo wp_trim_words( get_the_content(), esc_html( $jobwp_list_overview_length ), '...' ); ?>

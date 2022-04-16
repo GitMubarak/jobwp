@@ -17,7 +17,9 @@ Best Recruitment Plugin for WordPress to display job listing in a career page.
 
 = Overview =
 
-**JobWP** is the **Easiest Job Listing, Career and Recruitment Plugin for WordPress** to display job listing in a career page.
+**JobWP** is the **Easiest Job Listing, Career and Recruitment Plugin for WordPress** to display job listing in a career page. 
+
+You can add multiple job listings and can show them on any page by inserting [jobwp_listing] shortcode.
 
 
 **🌟 Plugin Features:**
@@ -27,20 +29,45 @@ Best Recruitment Plugin for WordPress to display job listing in a career page.
 * Fully responsive for any device
 * Shortcoded
 * Custom Post Type
+* Translation Ready
 * Display job listing in a career page
 * Details job single page
-* Apply procedure title option in single page
-* Apply procedure content option in single page
-* List page overview show-hide option
-* List page overview word length option
-* List page deadline label text option
-* List page experience label text option
-* List page title font color option
-* List page title font size option
-* List page overview font color option
-* List page overview font size option
-* Single page title font color option
-* Single page title font size option
+* Job overview
+* Year of Experience
+* Number of Vacancies
+* Job Deadline
+* Job Status - Active / Inactive a job
+* Job Categories - Sales / Marketing / IT etc.
+* Job Nature - Full time / part time etc.
+* Job Level - Sr. / Jr. Position
+* Job Location
+* Job Responsibilities - Allows multiple
+* Skills Required - Allows multiple
+* Educational Requirements - Allows multiple
+* Additional Requirements - Allows multiple
+* Salary - Allows multiple
+* Other Benefits - Allows multiple
+
+
+**✅ Options In Listing Page Settings**
+
+* Overview show-hide option
+* Overview word length option
+* Deadline label text option
+* Experience label text option
+* Title font color option
+* Title font size option
+* Overview font color option
+* Overview font size option
+
+
+**✅ Options In Details Page Settings**
+
+* Apply procedure title option
+* Apply procedure content option
+* Title font color option
+* Title font size option
+
 
 
 ➡️ Useage of Shortcode:⬅️

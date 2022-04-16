@@ -38,13 +38,15 @@ include JOBWP_PATH . 'assets/css/single.php';
             
             the_post();
 
-            $bo_experience      = get_post_meta( $post->ID, 'jobwp_experience', true );
-            $bo_vacancies       = get_post_meta( $post->ID, 'jobwp_vacancies', true );
-            $bo_job_nature      = get_post_meta( $post->ID, 'jobwp_nature', true );
-            $bo_job_level       = get_post_meta( $post->ID, 'jobwp_level', true );
-            $bo_job_location    = get_post_meta( $post->ID, 'jobwp_location', true );
-            $jobwp_edu_req      = get_post_meta( $post->ID, 'jobwp_edu_req', true );
-
+            $jobs_nature                    = wp_get_post_terms( $post->ID, 'jobs_nature', array('fields' => 'all') );
+            $jobs_level                     = wp_get_post_terms( $post->ID, 'jobs_level', array('fields' => 'all') );
+            $jobs_location                  = wp_get_post_terms( $post->ID, 'jobs_location', array('fields' => 'all') );
+            $bo_experience                  = get_post_meta( $post->ID, 'jobwp_experience', true );
+            $bo_vacancies                   = get_post_meta( $post->ID, 'jobwp_vacancies', true );
+            $bo_job_nature                  = get_post_meta( $post->ID, 'jobwp_nature', true );
+            $bo_job_level                   = get_post_meta( $post->ID, 'jobwp_level', true );
+            $bo_job_location                = get_post_meta( $post->ID, 'jobwp_location', true );
+            $jobwp_edu_req                  = get_post_meta( $post->ID, 'jobwp_edu_req', true );
             $bo_career_skills               = get_post_meta( $post->ID, 'jobwp_skills', true );
             $bo_job_responsibilities        = get_post_meta( $post->ID, 'jobwp_responsibilities', true );
             $bo_job_additional_requirements = get_post_meta( $post->ID, 'jobwp_add_req', true );
@@ -67,7 +69,7 @@ include JOBWP_PATH . 'assets/css/single.php';
                     
                     <div class="content-row">
                         <div class="left-cell padding-top-50">
-                            <h5 class="primary-color"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;<?php _e('Overview', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><?php _e('Overview', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell padding-top-50">
                             <?php the_content(); ?>
@@ -77,17 +79,17 @@ include JOBWP_PATH . 'assets/css/single.php';
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;<?php _e('No. of Vacancies', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><?php _e('No. of Vacancies', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
-                            <h5><?php esc_html_e( $bo_vacancies ); ?></h5>
+                            <?php esc_html_e( $bo_vacancies ); ?>
                         </div>
                         <div class="clear"></div>
                     </div>
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;<?php _e('Specific Skills', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><?php _e('Specific Skills', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <div class="custom-list">
@@ -103,7 +105,7 @@ include JOBWP_PATH . 'assets/css/single.php';
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;<?php _e('Responsible For', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><?php _e('Responsible For', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <div class="custom-list">
@@ -119,7 +121,7 @@ include JOBWP_PATH . 'assets/css/single.php';
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;<?php _e('Additional Requirements', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><?php _e('Additional Requirements', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <div class="custom-list">
@@ -138,7 +140,16 @@ include JOBWP_PATH . 'assets/css/single.php';
                             <h5 class="primary-color"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;<?php _e('Job Nature', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
-                            <h5><?php esc_html_e( $bo_job_nature ); ?></h5>
+                            <?php
+                            // Job Nature
+                            if ( ! empty( $jobs_nature ) ) {
+                                $jobs_nature_arr = array();
+                                foreach( $jobs_nature as $nature ) {
+                                    $jobs_nature_arr[] = $nature->name . '';
+                                }
+                                echo implode( ', ', $jobs_nature_arr );   
+                            }
+                            ?>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -158,7 +169,7 @@ include JOBWP_PATH . 'assets/css/single.php';
                             <h5 class="primary-color"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;<?php _e('Experience Requirements', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
-                            <h5><?php esc_html_e( $bo_experience ); ?></h5>
+                            <?php esc_html_e( $bo_experience ); ?>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -168,7 +179,16 @@ include JOBWP_PATH . 'assets/css/single.php';
                             <h5 class="primary-color"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<?php _e('Job Location', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
-                            <h5><?php esc_html_e( $bo_job_location ); ?></h5>
+                            <?php
+                            // Job Location
+                            if ( ! empty( $jobs_location ) ) {
+                                $jobs_location_arr = array();
+                                foreach( $jobs_location as $location ) {
+                                    $jobs_location_arr[] = $location->name . '';
+                                }
+                                echo implode( ', ', $jobs_location_arr );   
+                            }
+                            ?>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -191,7 +211,7 @@ include JOBWP_PATH . 'assets/css/single.php';
 
                     <div class="content-row">
                         <div class="left-cell">
-                            <h5 class="primary-color"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;<?php _e('Other Benefits', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><?php _e('Other Benefits', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
                             <div class="custom-list">
@@ -207,10 +227,19 @@ include JOBWP_PATH . 'assets/css/single.php';
 
                     <div class="content-row">
                         <div class="left-cell padding-bottom-50">
-                            <h5 class="primary-color"><i class="fa fa-level-up" aria-hidden="true"></i>&nbsp;<?php _e('Job Level', JOBWP_TXT_DOMAIN); ?></h5>
+                            <h5 class="primary-color"><?php _e('Job Level', JOBWP_TXT_DOMAIN); ?></h5>
                         </div>
                         <div class="right-cell">
-                            <h5><?php esc_html_e( $bo_job_level ); ?></h5>
+                            <?php
+                            // Job Location
+                            if ( ! empty( $jobs_level ) ) {
+                                $jobs_level_arr = array();
+                                foreach( $jobs_level as $pos ) {
+                                    $jobs_level_arr[] = $pos->name . '';
+                                }
+                                echo implode( ', ', $jobs_level_arr );   
+                            }
+                            ?>
                         </div>
                         <div class="clear"></div>
                     </div>

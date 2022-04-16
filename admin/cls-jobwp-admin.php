@@ -278,7 +278,7 @@ class JobWp_Admin
 	 */
 	function jobwp_taxonomy() {
 
-		$labels = array(
+		$category = array(
 			'name' 				=> __('Job Categories', JOBWP_TXT_DOMAIN),
 			'singular_name' 	=> __('Job Category', JOBWP_TXT_DOMAIN),
 			'search_items' 		=> __('Search Job Categories', JOBWP_TXT_DOMAIN),
@@ -294,11 +294,84 @@ class JobWp_Admin
 
 		register_taxonomy('jobs_category', array('jobs'), array(
 			'hierarchical' 		=> true,
-			'labels' 			=> $labels,
+			'labels' 			=> $category,
 			'show_ui' 			=> true,
 			'show_admin_column' => true,
 			'query_var' 		=> true,
+			'sort'				=> true,
 			'rewrite' 			=> array('slug' => 'job-category'),
+		));
+
+		$nature = array(
+			'name' 				=> __('Job Nature', JOBWP_TXT_DOMAIN),
+			'singular_name' 	=> __('Job Nature', JOBWP_TXT_DOMAIN),
+			'search_items' 		=> __('Search Job Nature', JOBWP_TXT_DOMAIN),
+			'all_items' 		=> __('All Job Nature', JOBWP_TXT_DOMAIN),
+			'parent_item' 		=> __('Parent Job Nature', JOBWP_TXT_DOMAIN),
+			'parent_item_colon'	=> __('Parent Job Nature:', JOBWP_TXT_DOMAIN),
+			'edit_item' 		=> __('Edit Job Nature', JOBWP_TXT_DOMAIN),
+			'update_item' 		=> __('Update Job Nature', JOBWP_TXT_DOMAIN),
+			'add_new_item' 		=> __('Add New Job Nature', JOBWP_TXT_DOMAIN),
+			'new_item_name' 	=> __('New Job Nature Name', JOBWP_TXT_DOMAIN),
+			'menu_name' 		=> __('Job Nature', JOBWP_TXT_DOMAIN),
+		);
+
+		register_taxonomy('jobs_nature', array('jobs'), array(
+			'hierarchical' 		=> true,
+			'labels' 			=> $nature,
+			'show_ui' 			=> true,
+			'show_admin_column' => true,
+			'query_var' 		=> true,
+			'sort'				=> true,
+			'rewrite' 			=> array('slug' => 'job-nature'),
+		));
+
+		$position = array(
+			'name' 				=> __('Job Level', JOBWP_TXT_DOMAIN),
+			'singular_name' 	=> __('Job Level', JOBWP_TXT_DOMAIN),
+			'search_items' 		=> __('Search Job Level', JOBWP_TXT_DOMAIN),
+			'all_items' 		=> __('All Job Level', JOBWP_TXT_DOMAIN),
+			'parent_item' 		=> __('Parent Job Level', JOBWP_TXT_DOMAIN),
+			'parent_item_colon'	=> __('Parent Job Level:', JOBWP_TXT_DOMAIN),
+			'edit_item' 		=> __('Edit Job Level', JOBWP_TXT_DOMAIN),
+			'update_item' 		=> __('Update Job Level', JOBWP_TXT_DOMAIN),
+			'add_new_item' 		=> __('Add New Job Level', JOBWP_TXT_DOMAIN),
+			'new_item_name' 	=> __('New Job Level Name', JOBWP_TXT_DOMAIN),
+			'menu_name' 		=> __('Job Level', JOBWP_TXT_DOMAIN),
+		);
+
+		register_taxonomy('jobs_level', array('jobs'), array(
+			'hierarchical' 		=> true,
+			'labels' 			=> $position,
+			'show_ui' 			=> true,
+			'show_admin_column' => true,
+			'query_var' 		=> true,
+			'sort'				=> true,
+			'rewrite' 			=> array('slug' => 'job-level'),
+		));
+
+		$location = array(
+			'name' 				=> __('Job Location', JOBWP_TXT_DOMAIN),
+			'singular_name' 	=> __('Job Location', JOBWP_TXT_DOMAIN),
+			'search_items' 		=> __('Search Job Location', JOBWP_TXT_DOMAIN),
+			'all_items' 		=> __('All Job Location', JOBWP_TXT_DOMAIN),
+			'parent_item' 		=> __('Parent Job Location', JOBWP_TXT_DOMAIN),
+			'parent_item_colon'	=> __('Parent Job Location:', JOBWP_TXT_DOMAIN),
+			'edit_item' 		=> __('Edit Job Location', JOBWP_TXT_DOMAIN),
+			'update_item' 		=> __('Update Job Location', JOBWP_TXT_DOMAIN),
+			'add_new_item' 		=> __('Add New Job Location', JOBWP_TXT_DOMAIN),
+			'new_item_name' 	=> __('New Job Location Name', JOBWP_TXT_DOMAIN),
+			'menu_name' 		=> __('Job Location', JOBWP_TXT_DOMAIN),
+		);
+
+		register_taxonomy('jobs_location', array('jobs'), array(
+			'hierarchical' 		=> true,
+			'labels' 			=> $location,
+			'show_ui' 			=> true,
+			'show_admin_column' => true,
+			'query_var' 		=> true,
+			'sort'				=> true,
+			'rewrite' 			=> array('slug' => 'job-location'),
 		));
 	}
 
@@ -329,6 +402,15 @@ class JobWp_Admin
 			'jobwp-metabox-skills',
 			__( 'Skills Required:', JOBWP_TXT_DOMAIN ),
 			array( $this, 'jobwp_metabox_skills' ),
+			'jobs',
+			'normal',
+			'high'
+		);
+
+		add_meta_box(
+			'jobwp-metabox-educational-requirements',
+			__( 'Educational Requirements:', JOBWP_TXT_DOMAIN ),
+			array( $this, 'jobwp_metabox_educational_requirements' ),
 			'jobs',
 			'normal',
 			'high'
@@ -402,6 +484,17 @@ class JobWp_Admin
 		$settings 		= array('media_buttons' => false, 'editor_height' => 200,);
 		$content 		= wp_kses_post( $jobwp_skills);
 		$editor_id 		= 'jobwp_skills';
+		wp_editor( $content, $editor_id, $settings );
+	}
+
+	function jobwp_metabox_educational_requirements() {
+
+		global $post;
+			
+		$jobwp_edu_req	= get_post_meta( $post->ID, 'jobwp_edu_req', true );
+		$settings 		= array('media_buttons' => false, 'editor_height' => 200,);
+		$content 		= wp_kses_post( $jobwp_edu_req);
+		$editor_id 		= 'jobwp_edu_req';
 		wp_editor( $content, $editor_id, $settings );
 	}
 	
