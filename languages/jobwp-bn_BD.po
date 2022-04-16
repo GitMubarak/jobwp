@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: JobWP - Best Recruitment Plugin for WordPress\n"
-"POT-Creation-Date: 2022-04-05 03:18+0600\n"
-"PO-Revision-Date: 2022-04-04 21:28+0000\n"
+"Project-Id-Version: JobWP\n"
+"POT-Creation-Date: 2022-04-16 18:01+0600\n"
+"PO-Revision-Date: 2022-04-16 12:07+0000\n"
 "Last-Translator: \n"
 "Language-Team: বাংলা\n"
 "Language: bn_BD\n"
@@ -12,283 +12,413 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(\n"
+"X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: admin/cls-jobwp-admin.php\n"
 "Report-Msgid-Bugs-To: \n"
-"X-Loco-Version: 2.6.1; wp-5.9.2"
+"X-Loco-Version: 2.6.1; wp-5.9.3"
 
-#: admin/cls-jobwp-admin.php:134
+#: admin/cls-jobwp-admin.php:78 admin/cls-jobwp-admin.php:79
+#: admin/view/listing-settings.php:9
+msgid "Listing Page Settings"
+msgstr "তালিকা পৃষ্ঠা সেটিংস"
+
+#: admin/cls-jobwp-admin.php:87 admin/cls-jobwp-admin.php:88
+#: admin/view/single-settings.php:9
+msgid "Detail Page Settings"
+msgstr "বিস্তারিত পৃষ্ঠা সেটিংস"
+
+#: admin/cls-jobwp-admin.php:174
 msgid "#"
 msgstr ""
 
-#: admin/view/partial/job-info.php:65
-msgid "Active"
-msgstr "সক্রিয়"
-
-#: admin/cls-jobwp-admin.php:205
-msgid "Add New"
-msgstr "নতুন যুক্ত করুন"
-
-#: admin/cls-jobwp-admin.php:204
-msgid "Add New Job"
-msgstr "যোগ নতুন কাজ"
-
-#: admin/cls-jobwp-admin.php:250
-msgid "Add New Job Category"
-msgstr "যোগ নতুন চাকরী বিভাগ"
-
-#: front/view/single.php:110
-msgid "Additional Requirements"
-msgstr "অতিরিক্ত প্রয়োজনীয়তা"
-
-#: admin/cls-jobwp-admin.php:299
-msgid "Additional Requirements:"
-msgstr "অতিরিক্ত প্রয়োজনীয়তা:"
-
-#: admin/cls-jobwp-admin.php:245
-msgid "All Job Categories"
-msgstr "সব কাজের বিভাগ"
-
-#: admin/cls-jobwp-admin.php:198 admin/cls-jobwp-admin.php:202
-msgid "All Jobs"
-msgstr "সব কাজ"
-
-#: admin/cls-jobwp-admin.php:152
-msgid "Application Lists"
-msgstr "অ্যাপ্লিকেশন তালিকা"
-
-#: admin/cls-jobwp-admin.php:135
+#: admin/cls-jobwp-admin.php:175
 msgid "Applied For"
 msgstr "জন্য প্রয়োগ করা"
 
-#: admin/view/partial/single-content.php:29
-msgid "Apply Procedure Content"
-msgstr "আবেদন পদ্ধতি কন্টেন্ট"
+#: admin/cls-jobwp-admin.php:176
+msgid "Name"
+msgstr "নাম"
+
+#: admin/cls-jobwp-admin.php:177
+msgid "Email"
+msgstr "ইমেইল"
+
+#: admin/cls-jobwp-admin.php:178
+msgid "Phone"
+msgstr "ফোন"
+
+#: admin/cls-jobwp-admin.php:179
+msgid "Message"
+msgstr "বার্তা"
+
+#: admin/cls-jobwp-admin.php:180
+msgid "Resume"
+msgstr "সারসংকলন"
+
+#: admin/cls-jobwp-admin.php:181
+msgid "Date"
+msgstr "আপলোড"
+
+#: admin/cls-jobwp-admin.php:192
+msgid "Application Lists"
+msgstr "অ্যাপ্লিকেশন তালিকা"
+
+#: admin/cls-jobwp-admin.php:238 admin/cls-jobwp-admin.php:242
+msgid "All Jobs"
+msgstr "সব কাজ"
+
+#: admin/cls-jobwp-admin.php:239 admin/cls-jobwp-admin.php:240
+msgid "WP Jobs"
+msgstr "ডাব্লু চাকরি"
+
+#: admin/cls-jobwp-admin.php:241
+msgid "Parent Job"
+msgstr "মূল কাজ"
+
+#: admin/cls-jobwp-admin.php:243
+msgid "View Job"
+msgstr "দেখুন কাজ"
+
+#: admin/cls-jobwp-admin.php:244
+msgid "Add New Job"
+msgstr "যোগ নতুন কাজ"
+
+#: admin/cls-jobwp-admin.php:245
+msgid "Add New"
+msgstr "নতুন যুক্ত করুন"
+
+#: admin/cls-jobwp-admin.php:246
+msgid "Edit Job"
+msgstr "সম্পাদনা কাজ"
+
+#: admin/cls-jobwp-admin.php:247
+msgid "Update Job"
+msgstr "আপডেট কাজ"
+
+#: admin/cls-jobwp-admin.php:248
+msgid "Search Job"
+msgstr "অনুসন্ধান কাজ"
+
+#: admin/cls-jobwp-admin.php:249
+msgid "Not Found"
+msgstr "না পাওয়া"
+
+#: admin/cls-jobwp-admin.php:250
+msgid "Not found in Trash"
+msgstr "না পাওয়া যায়, ট্র্যাশ"
+
+#: admin/cls-jobwp-admin.php:253
+msgid "jobs"
+msgstr "চাকরি"
+
+#: admin/cls-jobwp-admin.php:254
+msgid "Description For Job"
+msgstr "বিবরণ: কাজের জন্য"
+
+#: admin/cls-jobwp-admin.php:282 admin/cls-jobwp-admin.php:292
+msgid "Job Categories"
+msgstr "কাজের ধরন"
+
+#: admin/cls-jobwp-admin.php:283
+msgid "Job Category"
+msgstr "কাজের বিভাগ"
+
+#: admin/cls-jobwp-admin.php:284
+msgid "Search Job Categories"
+msgstr "অনুসন্ধান কাজ আরও"
+
+#: admin/cls-jobwp-admin.php:285
+msgid "All Job Categories"
+msgstr "সব কাজের বিভাগ"
+
+#: admin/cls-jobwp-admin.php:286
+msgid "Parent Job Category"
+msgstr "মূল পেশা বিভাগ"
+
+#: admin/cls-jobwp-admin.php:287
+msgid "Parent Job Category:"
+msgstr "ঊর্ধ্বতন Job Category:"
+
+#: admin/cls-jobwp-admin.php:288
+msgid "Edit Job Category"
+msgstr "সম্পাদনা কাজ বিভাগ"
+
+#: admin/cls-jobwp-admin.php:289
+msgid "Update Job Category"
+msgstr "আপডেট কাজ বিভাগ"
+
+#: admin/cls-jobwp-admin.php:290
+msgid "Add New Job Category"
+msgstr "যোগ নতুন চাকরী বিভাগ"
+
+#: admin/cls-jobwp-admin.php:291
+msgid "New Job Category Name"
+msgstr "নতুন চাকরী বিষয়শ্রেণীতে নাম"
+
+#: admin/cls-jobwp-admin.php:306 admin/cls-jobwp-admin.php:307
+#: admin/cls-jobwp-admin.php:316 front/view/single.php:140
+msgid "Job Nature"
+msgstr "কাজের প্রকৃতি"
+
+#: admin/cls-jobwp-admin.php:308
+msgid "Search Job Nature"
+msgstr "অনুসন্ধান কাজের প্রকৃতি"
+
+#: admin/cls-jobwp-admin.php:309
+msgid "All Job Nature"
+msgstr "সব কাজের প্রকৃতি"
+
+#: admin/cls-jobwp-admin.php:310
+msgid "Parent Job Nature"
+msgstr "মূল কাজের প্রকৃতি"
+
+#: admin/cls-jobwp-admin.php:311
+msgid "Parent Job Nature:"
+msgstr "মূল কাজের প্রকৃতি:"
+
+#: admin/cls-jobwp-admin.php:312
+msgid "Edit Job Nature"
+msgstr "সম্পাদনা কাজের প্রকৃতি"
+
+#: admin/cls-jobwp-admin.php:313
+msgid "Update Job Nature"
+msgstr "আপডেট কাজের প্রকৃতি"
+
+#: admin/cls-jobwp-admin.php:314
+msgid "Add New Job Nature"
+msgstr "যোগ নতুন কাজের প্রকৃতি"
+
+#: admin/cls-jobwp-admin.php:315
+msgid "New Job Nature Name"
+msgstr "নতুন কাজের প্রকৃতি নাম"
+
+#: admin/cls-jobwp-admin.php:330 admin/cls-jobwp-admin.php:331
+#: admin/cls-jobwp-admin.php:340 front/view/single.php:230
+msgid "Job Level"
+msgstr "কাজের স্তর"
+
+#: admin/cls-jobwp-admin.php:332
+msgid "Search Job Level"
+msgstr "অনুসন্ধান কাজ স্তর"
+
+#: admin/cls-jobwp-admin.php:333
+msgid "All Job Level"
+msgstr "সব কাজ স্তরে"
+
+#: admin/cls-jobwp-admin.php:334
+msgid "Parent Job Level"
+msgstr "মূল পেশা স্তর"
+
+#: admin/cls-jobwp-admin.php:335
+msgid "Parent Job Level:"
+msgstr "মূল কাজের স্তর:"
+
+#: admin/cls-jobwp-admin.php:336
+msgid "Edit Job Level"
+msgstr "সম্পাদনা পেশা স্তর"
+
+#: admin/cls-jobwp-admin.php:337
+msgid "Update Job Level"
+msgstr "আপডেট কাজ স্তর"
+
+#: admin/cls-jobwp-admin.php:338
+msgid "Add New Job Level"
+msgstr "যোগ নতুন কাজ স্তর"
+
+#: admin/cls-jobwp-admin.php:339
+msgid "New Job Level Name"
+msgstr "নতুন পেশা স্তরের নাম"
+
+#: admin/cls-jobwp-admin.php:354 admin/cls-jobwp-admin.php:355
+#: admin/cls-jobwp-admin.php:364 front/view/single.php:179
+msgid "Job Location"
+msgstr "কাজের অবস্থান"
+
+#: admin/cls-jobwp-admin.php:356
+msgid "Search Job Location"
+msgstr "অনুসন্ধান কাজ অবস্থান"
+
+#: admin/cls-jobwp-admin.php:357
+msgid "All Job Location"
+msgstr "সব কাজ, অবস্থান"
+
+#: admin/cls-jobwp-admin.php:358
+msgid "Parent Job Location"
+msgstr "মূল কাজ, অবস্থান"
+
+#: admin/cls-jobwp-admin.php:359
+msgid "Parent Job Location:"
+msgstr "মূল কাজের অবস্থান:"
+
+#: admin/cls-jobwp-admin.php:360
+msgid "Edit Job Location"
+msgstr "সম্পাদনা কাজ, অবস্থান"
+
+#: admin/cls-jobwp-admin.php:361
+msgid "Update Job Location"
+msgstr "আপডেট কাজ, অবস্থান"
+
+#: admin/cls-jobwp-admin.php:362
+msgid "Add New Job Location"
+msgstr "যোগ নতুন কাজ, অবস্থান"
+
+#: admin/cls-jobwp-admin.php:363
+msgid "New Job Location Name"
+msgstr "নতুন কাজ অবস্থান নাম"
+
+#: admin/cls-jobwp-admin.php:385
+msgid "Job Details:"
+msgstr "কাজের বিবরণ:"
+
+#: admin/cls-jobwp-admin.php:394
+msgid "Responsibilities:"
+msgstr "দায়িত্ব:"
+
+#: admin/cls-jobwp-admin.php:403
+msgid "Skills Required:"
+msgstr "প্রয়োজনীয় দক্ষতা:"
+
+#: admin/cls-jobwp-admin.php:412
+msgid "Educational Requirements:"
+msgstr "শিক্ষাগত প্রয়োজনীয়তা:"
+
+#: admin/cls-jobwp-admin.php:421
+msgid "Additional Requirements:"
+msgstr "অতিরিক্ত প্রয়োজনীয়তা:"
+
+#: admin/cls-jobwp-admin.php:430
+msgid "Salary:"
+msgstr "বেতন:"
+
+#: admin/cls-jobwp-admin.php:439
+msgid "Other Benefits:"
+msgstr "অন্যান্য সুবিধা:"
+
+#: admin/view/listing-settings.php:22 admin/view/single-settings.php:22
+msgid "Content"
+msgstr "কন্টেন্ট"
+
+#: admin/view/listing-settings.php:25 admin/view/single-settings.php:25
+msgid "Styles"
+msgstr "শৈলী"
+
+#: admin/view/partial/job-info.php:9
+msgid "Year of Experience"
+msgstr "বছর এর অভিজ্ঞতা"
+
+#: admin/view/partial/job-info.php:17 front/view/single.php:82
+msgid "No. of Vacancies"
+msgstr "কোন. এর খালি"
+
+#: admin/view/partial/job-info.php:25
+msgid "Deadline"
+msgstr "নির্দিষ্ট সময়সীমা"
+
+#: admin/view/partial/job-info.php:33
+msgid "Status"
+msgstr "অবস্থা"
+
+#: admin/view/partial/job-info.php:37
+msgid "Active"
+msgstr "সক্রিয়"
+
+#: admin/view/partial/job-info.php:40
+msgid "Inactive"
+msgstr "নিষ্ক্রিয়"
+
+#: admin/view/partial/listing-content.php:17
+msgid "Hide Overview"
+msgstr "আড়াল সংক্ষিপ্ত বিবরণ"
+
+#: admin/view/partial/listing-content.php:26
+msgid "Overview Word Lengtht"
+msgstr "সংক্ষিপ্ত শব্দ Lengtht"
+
+#: admin/view/partial/listing-content.php:34
+msgid "Experience Label Text"
+msgstr "অভিজ্ঞতা লেবেল টেক্সট"
+
+#: admin/view/partial/listing-content.php:42
+msgid "Deadline Label Text"
+msgstr "নির্দিষ্ট সময়সীমা লেবেল টেক্সট"
+
+#: admin/view/partial/listing-content.php:52
+#: admin/view/partial/listing-style.php:65
+#: admin/view/partial/single-content.php:39
+#: admin/view/partial/single-style.php:41
+msgid "Save Settings"
+msgstr "সেটিংস সংরক্ষণ করুন"
+
+#: admin/view/partial/listing-style.php:18
+#: admin/view/partial/single-style.php:18
+msgid "Job Title"
+msgstr "কাজের শিরোনাম"
+
+#: admin/view/partial/listing-style.php:23
+#: admin/view/partial/listing-style.php:47
+#: admin/view/partial/single-style.php:23
+msgid "Font Color"
+msgstr "ফন্ট রঙ"
+
+#: admin/view/partial/listing-style.php:32
+#: admin/view/partial/listing-style.php:56
+#: admin/view/partial/single-style.php:32
+msgid "Font Size"
+msgstr "ফন্টের আকার"
+
+#: admin/view/partial/listing-style.php:42
+msgid "Job Overview"
+msgstr "কাজের সংক্ষিপ্ত বিবরণ"
 
 #: admin/view/partial/single-content.php:21
 msgid "Apply Procedure Title"
 msgstr "আবেদন পদ্ধতি শিরোনাম"
 
-#: front/view/listing.php:43
+#: admin/view/partial/single-content.php:29
+msgid "Apply Procedure Content"
+msgstr "আবেদন পদ্ধতি কন্টেন্ট"
+
+#: freemius/templates/account/partials/site.php:337
+msgid " "
+msgstr " "
+
+#: front/view/listing.php:61
 msgid "Closed"
 msgstr "বন্ধ"
 
-#: admin/view/listing-settings.php:47 admin/view/listing-settings.php:53
-#: admin/view/single-settings.php:33
-msgid "Coming Soon"
-msgstr "শীঘ্রই আসছে"
+#: front/view/listing.php:78
+msgid "Years"
+msgstr "বছর"
 
-#: admin/view/listing-settings.php:35 admin/view/single-settings.php:21
-msgid "Content"
-msgstr "কন্টেন্ট"
-
-#: admin/view/listing-settings.php:52
-msgid "Content:"
-msgstr "বিষয়বস্তু:"
-
-#: admin/cls-jobwp-admin.php:141
-msgid "Date"
-msgstr "আপলোড"
-
-#: admin/view/partial/job-info.php:53 front/view/listing.php:53
-msgid "Deadline"
-msgstr "নির্দিষ্ট সময়সীমা"
-
-#: admin/cls-jobwp-admin.php:214
-msgid "Description For Job"
-msgstr "বিবরণ: কাজের জন্য"
-
-#: admin/cls-jobwp-admin.php:75 admin/cls-jobwp-admin.php:76
-#: admin/view/single-settings.php:9
-msgid "Detail Page Settings"
-msgstr "বিস্তারিত পৃষ্ঠা সেটিংস"
-
-#: admin/cls-jobwp-admin.php:206
-msgid "Edit Job"
-msgstr "সম্পাদনা কাজ"
-
-#: admin/cls-jobwp-admin.php:248
-msgid "Edit Job Category"
-msgstr "সম্পাদনা কাজ বিভাগ"
-
-#: admin/view/partial/job-info.php:45 front/view/single.php:136
-msgid "Educational Requirements"
-msgstr "শিক্ষাগত প্রয়োজনীয়তা"
-
-#: admin/cls-jobwp-admin.php:137
-msgid "Email"
-msgstr "ইমেইল"
-
-#: front/view/listing.php:52
-msgid "Experience"
-msgstr "অভিজ্ঞতা"
-
-#: front/view/single.php:146
-msgid "Experience Requirements"
-msgstr "অভিজ্ঞতা আবশ্যক"
-
-#: admin/view/partial/job-info.php:68
-msgid "Inactive"
-msgstr "নিষ্ক্রিয়"
-
-#: admin/cls-jobwp-admin.php:242 admin/cls-jobwp-admin.php:252
-msgid "Job Categories"
-msgstr "কাজের ধরন"
-
-#: admin/cls-jobwp-admin.php:243
-msgid "Job Category"
-msgstr "কাজের বিভাগ"
-
-#: admin/cls-jobwp-admin.php:272
-msgid "Job Details:"
-msgstr "কাজের বিবরণ:"
-
-#: admin/view/partial/job-info.php:29 front/view/single.php:198
-msgid "Job Level"
-msgstr "কাজের স্তর"
-
-#: admin/view/partial/job-info.php:37 front/view/single.php:156
-msgid "Job Location"
-msgstr "কাজের অবস্থান"
-
-#: admin/view/partial/job-info.php:21 front/view/single.php:126
-msgid "Job Nature"
-msgstr "কাজের প্রকৃতি"
-
-#: admin/cls-jobwp-admin.php:213
-msgid "jobs"
-msgstr "চাকরি"
-
-#: admin/cls-jobwp-admin.php:66 admin/cls-jobwp-admin.php:67
-#: admin/view/listing-settings.php:23
-msgid "Listing Settings"
-msgstr "তালিকা সেটিংস"
-
-#: admin/cls-jobwp-admin.php:139
-msgid "Message"
-msgstr "বার্তা"
-
-#: admin/cls-jobwp-admin.php:136
-msgid "Name"
-msgstr "নাম"
-
-#: admin/cls-jobwp-admin.php:251
-msgid "New Job Category Name"
-msgstr "নতুন চাকরী বিষয়শ্রেণীতে নাম"
-
-#: admin/view/partial/job-info.php:13 front/view/single.php:68
-msgid "No. of Vacancies"
-msgstr "কোন. এর খালি"
-
-#: admin/cls-jobwp-admin.php:209
-msgid "Not Found"
-msgstr "না পাওয়া"
-
-#: admin/cls-jobwp-admin.php:210
-msgid "Not found in Trash"
-msgstr "না পাওয়া যায়, ট্র্যাশ"
-
-#: front/view/single.php:182
-msgid "Other Benefits"
-msgstr "অন্যান্য সুবিধা"
-
-#: admin/cls-jobwp-admin.php:317
-msgid "Other Benefits:"
-msgstr "অন্যান্য সুবিধা:"
-
-#: front/view/single.php:58
+#: front/view/single.php:72
 msgid "Overview"
 msgstr "সংক্ষিপ্ত বিবরণ"
 
-#: admin/cls-jobwp-admin.php:201
-msgid "Parent Job"
-msgstr "মূল কাজ"
-
-#: admin/cls-jobwp-admin.php:246
-msgid "Parent Job Category"
-msgstr "মূল পেশা বিভাগ"
-
-#: admin/cls-jobwp-admin.php:247
-msgid "Parent Job Category:"
-msgstr "ঊর্ধ্বতন Job Category:"
-
-#: admin/cls-jobwp-admin.php:138
-msgid "Phone"
-msgstr "ফোন"
-
-#: admin/cls-jobwp-admin.php:281
-msgid "Responsibilities:"
-msgstr "দায়িত্ব:"
-
-#: front/view/single.php:94
-msgid "Responsible For"
-msgstr "জন্য দায়ী"
-
-#: admin/cls-jobwp-admin.php:140
-msgid "Resume"
-msgstr "সারসংকলন"
-
-#: front/view/single.php:166
-msgid "Salary"
-msgstr "বেতন"
-
-#: admin/cls-jobwp-admin.php:308
-msgid "Salary:"
-msgstr "বেতন:"
-
-#: admin/view/partial/single-content.php:37
-msgid "Save Settings"
-msgstr "সেটিংস সংরক্ষণ করুন"
-
-#: admin/cls-jobwp-admin.php:208
-msgid "Search Job"
-msgstr "অনুসন্ধান কাজ"
-
-#: admin/cls-jobwp-admin.php:244
-msgid "Search Job Categories"
-msgstr "অনুসন্ধান কাজ আরও"
-
-#: admin/cls-jobwp-admin.php:290
-msgid "Skills Required:"
-msgstr "প্রয়োজনীয় দক্ষতা:"
-
-#: front/view/single.php:78
+#: front/view/single.php:92
 msgid "Specific Skills"
 msgstr "নির্দিষ্ট দক্ষতা"
 
-#: admin/view/partial/job-info.php:61
-msgid "Status"
-msgstr "অবস্থা"
+#: front/view/single.php:108
+msgid "Responsible For"
+msgstr "জন্য দায়ী"
 
-#: admin/view/listing-settings.php:36 admin/view/single-settings.php:22
-msgid "Styles"
-msgstr "শৈলী"
+#: front/view/single.php:124
+msgid "Additional Requirements"
+msgstr "অতিরিক্ত প্রয়োজনীয়তা"
 
-#: admin/view/listing-settings.php:46 admin/view/single-settings.php:32
-msgid "Styles:"
-msgstr "শৈলী:"
+#: front/view/single.php:159
+msgid "Educational Requirements"
+msgstr "শিক্ষাগত প্রয়োজনীয়তা"
 
-#: admin/cls-jobwp-admin.php:207
-msgid "Update Job"
-msgstr "আপডেট কাজ"
+#: front/view/single.php:169
+msgid "Experience Requirements"
+msgstr "অভিজ্ঞতা আবশ্যক"
 
-#: admin/cls-jobwp-admin.php:249
-msgid "Update Job Category"
-msgstr "আপডেট কাজ বিভাগ"
+#: front/view/single.php:198
+msgid "Salary"
+msgstr "বেতন"
 
-#: admin/cls-jobwp-admin.php:203
-msgid "View Job"
-msgstr "দেখুন কাজ"
-
-#: admin/cls-jobwp-admin.php:199 admin/cls-jobwp-admin.php:200
-msgid "WP Jobs"
-msgstr "ডাব্লু চাকরি"
-
-#: admin/view/partial/job-info.php:5
-msgid "Year of Experience"
-msgstr "বছর এর অভিজ্ঞতা"
-
-#: front/view/listing.php:52
-msgid "Years"
-msgstr "বছর"
+#: front/view/single.php:214
+msgid "Other Benefits"
+msgstr "অন্যান্য সুবিধা"
