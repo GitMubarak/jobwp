@@ -70,6 +70,102 @@ p.jobwp-list-bottom-item {
 /* Listing Ended */
 
 
+/* Search Started */
+
+.jobwp-search-container {
+    border: 1px solid #ddd;
+    width: 100%;
+    display: grid;
+    grid-gap: 0px;
+    padding: 10px;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
+    margin-bottom: 10px;
+    background: #F2F2F2;
+}
+
+.jobwp-search-container .jobwp-search-item {
+    border: 0px solid #DDD;
+    min-height: 40px;
+    text-align: center;
+}
+
+.jobwp-search-container .jobwp-search-item input,
+.jobwp-search-container .jobwp-search-item select {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat scroll right 15px center;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    color: #333333;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s linear;
+    margin: 0px;
+}
+
+.jobwp-search-container .jobwp-search-item input[type='text'] {
+    background: #FFF;
+    padding: 15px 13px;
+    line-height: 30px;
+    height: 45px;
+    color: #333!important;
+}
+
+.jobwp-search-container .jobwp-search-item .submit-btn {
+    width: 150px;
+    height: 45px;
+    background: #269FC6;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    transform: translateY(0);
+    display: inline-block;
+}
+
+.jobwp-search-container .jobwp-search-item .submit-btn:hover {
+    background: #6fa0df;
+    border: 1px solid #6fa0df;
+    color: #242424;
+}
+
+.jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
+    background: #FFF;
+    color: #666666;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    display: block;
+    width: 50px;
+    height: 45px;
+    border: 1px solid #666666;
+}
+
+.jobwp-search-container .jobwp-search-item a#jobwp-search-refresh:hover {
+    background: #6fa0df;
+    border: 1px solid #6fa0df;
+    color: #FFF;
+}
+
+
+/* Search Ended */
+
+
 /* Details Started */
 
 .jobwp-single-body-container {
@@ -246,5 +342,12 @@ h2.jobwp-application-message {
     }
     .jobwp-single-area {
         display: block;
+    }
+    .jobwp-search-container {
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
+        margin: auto;
     }
 }

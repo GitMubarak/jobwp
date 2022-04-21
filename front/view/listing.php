@@ -20,30 +20,40 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
     }
 }
 
+// Search Items
+$jobwp_title    =  isset( $_GET['jobwp_title'] ) ? sanitize_text_field( $_GET['jobwp_title'] ) : '';
+
+// Main Query Arguments
+$jobwpQueryArrParams = array(
+    'post_type'   => 'jobs',
+    'post_status' => 'publish',
+    'orderby'     => 'date',
+    'order'       => 'DESC',
+    'meta_query'  => array(
+        array(
+            'key'     => 'jobwp_status',
+            'value'   => 'active',
+            'compare' => '='
+        ),
+    ),
+);
+
+// Search Query Ttitle
+if ( '' != $jobwp_title ) {
+    $jobwpQueryArrParams['s'] = $jobwp_title;
+}
+
+$jobwpQueryArr = apply_filters( 'jobwp_front_main_query_array', $jobwpQueryArrParams );
+
+$jobwpJobs = new WP_Query( $jobwpQueryArr );
+
 // Load Styling
 include JOBWP_PATH . 'assets/css/listing.php';
+// Load Search Panel
+include JOBWP_PATH . 'front/view/search.php';
 ?>
 <div class="jobwp-listing-body-container">
     <?php
-    // Main Query Arguments
-    $jobwpQueryArrParams = array(
-        'post_type'   => 'jobs',
-        'post_status' => 'publish',
-        'orderby'     => 'date',
-        'order'       => 'DESC',
-        'meta_query'  => array(
-            array(
-                'key'     => 'jobwp_status',
-                'value'   => 'active',
-                'compare' => '='
-            ),
-        ),
-    );
-    
-    $jobwpQueryArr = apply_filters( 'jobwp_front_main_query_array', $jobwpQueryArrParams );
-
-    $jobwpJobs = new WP_Query( $jobwpQueryArr );
-
     if ( $jobwpJobs->have_posts() ) {
 
         while ( $jobwpJobs->have_posts() ) {
