@@ -20,9 +20,6 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
     }
 }
 
-// Search Items
-$jobwp_title    =  isset( $_GET['jobwp_title'] ) ? sanitize_text_field( $_GET['jobwp_title'] ) : '';
-
 // Main Query Arguments
 $jobwpQueryArrParams = array(
     'post_type'   => 'jobs',
@@ -38,19 +35,14 @@ $jobwpQueryArrParams = array(
     ),
 );
 
-// Search Query Ttitle
-if ( '' != $jobwp_title ) {
-    $jobwpQueryArrParams['s'] = $jobwp_title;
-}
-
-$jobwpQueryArr = apply_filters( 'jobwp_front_main_query_array', $jobwpQueryArrParams );
-
-$jobwpJobs = new WP_Query( $jobwpQueryArr );
-
 // Load Styling
 include JOBWP_PATH . 'assets/css/listing.php';
 // Load Search Panel
 include JOBWP_PATH . 'front/view/search.php';
+
+$jobwpQueryArr = apply_filters( 'jobwp_front_main_query_array', $jobwpQueryArrParams );
+
+$jobwpJobs = new WP_Query( $jobwpQueryArr );
 ?>
 <div class="jobwp-listing-body-container">
     <?php
@@ -94,7 +86,14 @@ include JOBWP_PATH . 'front/view/search.php';
             </div>
             <?php
         }
-        wp_reset_postdata();
+    }   
+    else {
+        ?>
+        <p class="jobwp-no-jobs-found"><?php _e('No Jobs found', JOBWP_TXT_DOMAIN); ?></p>
+        <?php
     }
+      
+    // Reset Post Data
+    wp_reset_postdata();
     ?>
 </div>

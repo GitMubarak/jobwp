@@ -76,7 +76,7 @@ p.jobwp-list-bottom-item {
     border: 1px solid #ddd;
     width: 100%;
     display: grid;
-    grid-gap: 0px;
+    grid-gap: 10px;
     padding: 10px;
     grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
     margin-bottom: 10px;
@@ -136,7 +136,7 @@ p.jobwp-list-bottom-item {
 .jobwp-search-container .jobwp-search-item .submit-btn:hover {
     background: #6fa0df;
     border: 1px solid #6fa0df;
-    color: #242424;
+    color: #FFF;
 }
 
 .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
@@ -346,6 +346,9 @@ h2.jobwp-application-message {
     .jobwp-search-container {
         display: inline-block;
         padding-bottom: 10px;
+    }
+    .jobwp-search-container .jobwp-search-item {
+        margin-bottom: 10px;
     }
     .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
         margin: auto;

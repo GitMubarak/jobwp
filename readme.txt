@@ -48,6 +48,7 @@ You can add multiple job listings and can show them on any page by inserting [jo
 * Salary - Allows multiple
 * Other Benefits - Allows multiple
 * Search by Job Title
+* Search by Job Category
 
 
 **✅ Options In Listing Page Settings**
@@ -150,6 +151,7 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shorcode [jobwp_l
 
 = 1.3 =
 * Search by Job Title item added
+* Search by Job Category item added
 
 = 1.2 =
 * List page overview show-hide option added
