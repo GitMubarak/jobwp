@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/mhmrajib
 Tags: Job, Jobs, Career, Job Listing, Recruitment, Job Board
 Requires at least: 5.2
 Tested up to: 5.9.3
-Stable tag: 1.2
+Stable tag: 1.3
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,7 @@ Best Recruitment Plugin for WordPress to display job listing in a career page.
 
 == Description ==
 
-[__Live Demo__](https://hmplugin.com/demo/jobwp/) | [__More Info__](https://hmplugin.com/) | [__Live Chat__](https://hmplugin.com/) | [__Support__](https://hmplugin.com/contact/)
+[__Live Demo__](https://hmplugin.com/demo/jobwp-demo/) | [__More Info__](https://hmplugin.com/) | [__Live Chat__](https://hmplugin.com/demo/jobwp-demo/) | [__Support__](https://hmplugin.com/contact/)
 
 = Overview =
 
@@ -139,9 +139,16 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shorcode [jobwp_l
 
 1. Showing Job Listing in a career page
 2. Showing Jeb Detail Page
+3. Listing page content settings
+4. Listing page styles settings
+5. Details page content settings
+6. Details page styles settings
 
 
 == Changelog ==
+
+= 1.3 =
+* List page overview show-hide option added
 
 = 1.2 =
 * List page overview show-hide option added
