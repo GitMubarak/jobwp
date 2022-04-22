@@ -246,8 +246,8 @@ p.jobwp-list-bottom-item {
     font-size: 36px;
 }
 
-.primary-button {
-    background: rgba(36, 124, 38, 1) !important;
+.jobwp-primary-button {
+    background: #008b8b;
     border: 1px solid #247c26 !important;
     border-radius: 3px !important;
     font-family: "catamaranlight" !important;
@@ -260,7 +260,7 @@ p.jobwp-list-bottom-item {
     height: 60px !important;
 }
 
-.primary-button:hover {
+.jobwp-primary-button:hover {
     color: #247c26 !important;
     background: none !important;
 }
@@ -301,14 +301,14 @@ span.wpsd-read-before-apply-border {
 
 /* Details Ended */
 
-h2.jobwp-application-message {
+.jobwp-application-message {
     width: 100%;
     text-align: center;
     margin: 20px 0;
     padding: 10px 0;
     font-size: 18px;
     font-weight: 600;
-    color: #242424;
+    color: #CC0000;
 }
 
 
@@ -317,14 +317,69 @@ h2.jobwp-application-message {
 .error-message {
     color: #f00;
     font-size: 14px;
+    display: block;
 }
 
-.custom-file-field {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: none !important;
+.jobwp-apply-title {
+    border: 0px;
+    font-size: 30px;
+    width: 100%;
+    padding: 20px 0 0 30px;
+    font-weight: 600;
+}
+
+.jobwp-apply-form {
+    border: 0px solid #000;
+    width: 100%;
+    padding: 20px;
+}
+
+.jobwp-field-row {
+    border: 0px solid #000;
+    width: 100%;
+    padding: 10px;
+}
+
+.jobwp-field-row span {
+    padding: 0;
+    margin: 0;
     display: block;
+    font-size: 12px;
+}
+
+.jobwp-field-row label {
+    font-weight: 600;
+}
+
+.jobwp-field-row span.required {
+    display: inline;
+    color: #cc0000;
+    padding-left: 5px;
+}
+
+.jobwp-field-row input[type="email"],
+.jobwp-field-row input[type="text"],
+.jobwp-field-row textarea {
+    color: #666;
+    padding: .75em;
     height: auto;
-    padding: 0!important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-radius: 2px;
+    background: #fafafa;
+    box-shadow: none;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    min-width: 70%;
+    display: block;
+    margin-top: 8px;
+}
+
+.jobwp-field-row input[type="email"]:focus,
+.jobwp-field-row input[type="text"]:focus,
+.jobwp-field-row textarea:focus {
+    border-color: #009900;
 }
 
 

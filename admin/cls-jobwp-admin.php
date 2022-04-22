@@ -90,7 +90,7 @@ class JobWp_Admin
 			'jobwp-single-settings',
 			array($this, JOBWP_PRFX . 'single_settings'),
 		);
-		/*
+		
 		add_submenu_page(
 			$jobwp_cpt_menu,
 			__('Application List', JOBWP_TXT_DOMAIN),
@@ -99,7 +99,6 @@ class JobWp_Admin
 			'jobwp-application-list',
 			array($this, JOBWP_PRFX . 'application_list'),
 		);
-		*/
 	}
 
 	/**
@@ -175,8 +174,7 @@ class JobWp_Admin
 			'jobwp_applied_for' 		=> __('Applied For', JOBWP_TXT_DOMAIN),
 			'jobwp_applicant_name'		=> __('Name', JOBWP_TXT_DOMAIN),
 			'jobwp_applicant_email'		=> __('Email', JOBWP_TXT_DOMAIN),
-			'jobwp_applicant_phone'		=> __('Phone', JOBWP_TXT_DOMAIN),
-			'jobwp_applicant_message'	=> __('Message', JOBWP_TXT_DOMAIN),
+			'jobwp_applicant_message'	=> __('Cover Letter', JOBWP_TXT_DOMAIN),
 			'jobwp_applicant_resume'	=> __('Resume', JOBWP_TXT_DOMAIN),
 			'jobwp_applied_on'			=> __('Date', JOBWP_TXT_DOMAIN),
 		);
@@ -203,11 +201,10 @@ class JobWp_Admin
 						foreach ( $applications as $application ) {
 							?>
 							<tr>
-								<td><?php printf('%d', $jL); ?></td>
+								<td style="max-width: 50px;"><?php printf('%d', $jL); ?></td>
 								<td><?php printf('%s', $application->applied_for); ?></td>
 								<td><?php printf('%s', $application->applicant_name); ?></td>
 								<td><?php printf('%s', $application->applicant_email); ?></td>
-								<td><?php printf('%s', $application->applicant_phone); ?></td>
 								<td><?php printf('%s', $application->applicant_message); ?></td>
 								<td><a href="<?php printf('%s/%s', $jobwpDir, $application->resume_name); ?>"><?php esc_html_e( $application->resume_name ); ?></a></td>
 								<td><?php printf('%s', date('D d M Y - h:i A', strtotime($application->applied_on))); ?>

@@ -3,20 +3,34 @@
     // USE STRICT
     "use strict";
 
-    var frm = document.getElementById('upload_form');
-    var msg = '';
+    $(document).on('click', '.jobwp-trigger-link', function(event) {
+        event.preventDefault();
+        $('#jobwp-apply-form-modal').iziModal('open');
+        $('input#jobwp_full_name').val('');
+        $('input#jobwp_email').val('');
+        $('textarea#jobwp_cover_letter').val('');
+        $('input#jobwp_upload_resume').val('');
+        $('span.error-message').html('');
+    });
 
-    $('#submitBtn').on('click', function(e) {
+    $("#jobwp-apply-form-modal").iziModal({
+        // options here
+    });
+
+    $('#jobwp_apply_btn').on('click', function(e) {
 
         e.preventDefault();
 
+        var frm = document.getElementById('jobwp_upload_form');
+        var msg = '';
+
         $('span.error-message').hide();
 
-        var fullName = $('input#fullName');
-        var email = $('input#email');
-        var fileElt = jQuery('input#upload');
+        var fullName = $('input#jobwp_full_name');
+        var email = $('input#jobwp_email');
+        var fileElt = $('input#jobwp_upload_resume');
         var fileName = fileElt.val();
-        var maxSize = 300000;
+        var maxSize = 2000000;
 
         if (fullName.val() == '') {
             fail('This field is required', fullName);
@@ -25,6 +39,11 @@
 
         if (email.val() == '') {
             fail('This field is required', email);
+            return false;
+        }
+
+        if (!jobwp_validate_email(email.val())) {
+            fail('Please Enter Valid Email', email);
             return false;
         }
 
@@ -50,5 +69,10 @@
         $('<span class="error-message">' + msg + '</span>').insertAfter(field);
         field.focus();
     };
+
+    function jobwp_validate_email($email) {
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+        return emailReg.test($email);
+    }
 
 })(window, jQuery);

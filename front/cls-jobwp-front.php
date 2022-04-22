@@ -3,12 +3,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+include_once JOBWP_PATH . 'core/job_application.php';
+
 /**
  * Master Class: Front
 */
 class JobWp_Front 
 {
-	use Jobwp_Core, Jobwp_Listing_Content_Settings, Jobwp_Listing_Styles_Settings, Jobwp_Single_Content_Settings, Jobwp_Single_Styles_Settings;
+	use Jobwp_Core, Jobwp_Listing_Content_Settings, Jobwp_Listing_Styles_Settings, Jobwp_Single_Content_Settings, Jobwp_Single_Styles_Settings, Jobwp_Applicaiton;
 
 	private $jobwp_version;
 
@@ -32,6 +34,14 @@ class JobWp_Front
         );
 
 		wp_enqueue_style(	
+			'izi-modal',
+			JOBWP_ASSETS . 'css/iziModal.min.css',
+			array(),
+			$this->jobwp_version,
+			FALSE 
+		);
+
+		wp_enqueue_style(	
 			'jobwp-front',
 			JOBWP_ASSETS . 'css/' . $this->jobwp_assets_prefix . 'front.css',
 			array(),
@@ -43,11 +53,21 @@ class JobWp_Front
 			wp_enqueue_script('jquery');
 		}
 
-		wp_enqueue_script(  'jobwp-front',
-							JOBWP_ASSETS . 'js/' . $this->jobwp_assets_prefix . 'front.js',
-							array('jquery'),
-							$this->jobwp_version,
-							TRUE );
+		wp_enqueue_script(  
+			'izi-modal',
+			JOBWP_ASSETS . 'js/iziModal.min.js',
+			array('jquery'),
+			$this->jobwp_version,
+			TRUE 
+		);
+
+		wp_enqueue_script(  
+			'jobwp-front',
+			JOBWP_ASSETS . 'js/' . $this->jobwp_assets_prefix . 'front.js',
+			array('jquery'),
+			$this->jobwp_version,
+			TRUE 
+		);
 	}
 
 	/**

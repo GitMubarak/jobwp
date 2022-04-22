@@ -26,11 +26,15 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
     }
 }
 
+// Upload Resume
+if ( isset( $_FILES['jobwp_upload_resume']['name'] ) ) {
+    $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume($_POST, $_FILES);
+}
+
 // Load Styling
 include JOBWP_PATH . 'assets/css/single.php';
 ?>
 <div class="jobwp-single-body-container">
-	
 	<?php 
     if ( have_posts() ) { 
         
@@ -59,7 +63,7 @@ include JOBWP_PATH . 'assets/css/single.php';
             <?php
             if ( null !== $resumeUploadMsg ) {
                 ?>
-                <h2 class="jobwp-application-message"><?php esc_html_e( $resumeUploadMsg ); ?></h2>
+                <div class="jobwp-application-message"><?php esc_html_e( $resumeUploadMsg ); ?></div>
                 <?php
             }
             ?>
@@ -256,8 +260,14 @@ include JOBWP_PATH . 'assets/css/single.php';
         <p class="apply-to-email">
             <?php esc_html_e( $jobwp_apply_procedure_content ); ?>
         </p>
+        <br><br>
+        <a href="#" class="jobwp-trigger-link jobwp-primary-button"><?php _e('Apply Online', JOBWP_TXT_DOMAIN); ?></a>
     </div>
 
 </div>
+<?php
+// Load Search Panel
+include JOBWP_PATH . 'front/view/apply-form.php';
 
-<?php get_footer(); ?>
+get_footer(); 
+?>
