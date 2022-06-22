@@ -27,7 +27,7 @@ class JobWp_Front
 		
 		wp_enqueue_style(
             $this->jobwp_assets_prefix . 'font-awesome',
-            JOBWP_ASSETS . 'css/font-awesome/css/font-awesome.min.css',
+            JOBWP_ASSETS . 'css/fontawesome/css/all.min.css',
             array(),
             $this->jobwp_version,
             FALSE

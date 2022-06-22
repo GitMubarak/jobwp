@@ -35,7 +35,7 @@ $jobwp_categories  = get_terms( array( 'taxonomy' => 'jobs_category', 'hide_empt
 
         <div class="jobwp-search-item">
             <select id="jobwp_category_s" name="jobwp_category_s">
-                <option value=""><?php _e( 'Select Category', JOBWP_TXT_DOMAIN ); ?></option>
+                <option value=""><?php _e( 'All Job Category', JOBWP_TXT_DOMAIN ); ?></option>
                 <?php
                 foreach ( $jobwp_categories as $job_category ) {
                     ?>

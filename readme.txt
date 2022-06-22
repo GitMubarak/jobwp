@@ -157,6 +157,7 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shortcode [jobwp_
 
 
 = 1.4 =
+* Font Awesome Free 6.1.1 integrated
 * Css fixed
 
 = 1.3 =

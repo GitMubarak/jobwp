@@ -79,7 +79,7 @@ $jobwpJobs = new WP_Query( $jobwpQueryArr );
                         <i class="fa fa-briefcase" aria-hidden="true"></i>
                         <strong class="primary-color"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?>:</strong> <span class="ng-binding"><?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?></span></p>
                     <p class="jobwp-list-bottom-item pull-right">
-                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                        <i class="fa fa-calendar-days" aria-hidden="true"></i>
                         <strong class="primary-color"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?>:</strong> <span class="ng-binding"><?php esc_html_e( $jobwpDeadline ); ?></span></p>
                 </div>
                 <div class="clear"></div>
