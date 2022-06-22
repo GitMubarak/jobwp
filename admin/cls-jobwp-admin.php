@@ -26,7 +26,7 @@ class JobWp_Admin
 
 		wp_enqueue_style(
             $this->jobwp_assets_prefix . 'font-awesome',
-            JOBWP_ASSETS . 'css/font-awesome/css/font-awesome.min.css',
+            JOBWP_ASSETS . 'css/fontawesome/css/all.min.css',
             array(),
             $this->jobwp_version,
             FALSE
@@ -297,6 +297,11 @@ class JobWp_Admin
 			'query_var' 		=> true,
 			'sort'				=> true,
 			'rewrite' 			=> array('slug' => 'job-category'),
+			'default_term'      => [ 
+				'name' => 'Accounting & Finance',
+				'slug' => 'accounting-finance',
+				'description' => 'Accounting & Finance Jobs',
+			],
 		));
 
 		$nature = array(
@@ -321,6 +326,11 @@ class JobWp_Admin
 			'query_var' 		=> true,
 			'sort'				=> true,
 			'rewrite' 			=> array('slug' => 'job-nature'),
+			'default_term'      => [ 
+				'name' => 'Full Time',
+				'slug' => 'full-time',
+				'description' => 'Full Time Jobs',
+			],
 		));
 
 		$position = array(
@@ -345,6 +355,11 @@ class JobWp_Admin
 			'query_var' 		=> true,
 			'sort'				=> true,
 			'rewrite' 			=> array('slug' => 'job-level'),
+			'default_term'      => [ 
+				'name' => 'Sr. Position',
+				'slug' => 'sr-position',
+				'description' => 'Sr. Position Jobs',
+			],
 		));
 
 		$location = array(

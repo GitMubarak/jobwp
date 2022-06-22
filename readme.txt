@@ -51,6 +51,7 @@ After an applicant apply for a job, employer can see that application instantly 
 * Other Benefits - Allows multiple
 * Search by Job Title
 * Search by Job Category
+* Search by Job Type
 * Apply Job Online
 * Job Application Panel
 
@@ -158,6 +159,7 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shortcode [jobwp_
 
 = 1.4 =
 * Font Awesome Free 6.1.1 integrated
+* Search by Job Type Feature added
 * Css fixed
 
 = 1.3 =

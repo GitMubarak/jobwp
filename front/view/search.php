@@ -5,7 +5,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Search Items
 $jobwp_title        =  isset( $_GET['jobwp_title'] ) ? sanitize_text_field( $_GET['jobwp_title'] ) : '';
-$jobwp_category_s     =  isset( $_GET['jobwp_category_s'] ) ? sanitize_text_field( $_GET['jobwp_category_s'] ) : '';
+$jobwp_category_s   =  isset( $_GET['jobwp_category_s'] ) ? sanitize_text_field( $_GET['jobwp_category_s'] ) : '';
+$jobwp_type_s       =  isset( $_GET['jobwp_type_s'] ) ? sanitize_text_field( $_GET['jobwp_type_s'] ) : '';
 
 // Search Query Ttitle
 if ( '' != $jobwp_title ) {
@@ -23,7 +24,19 @@ if ( '' !== $jobwp_category_s ) {
     );
 }
 
-$jobwp_categories  = get_terms( array( 'taxonomy' => 'jobs_category', 'hide_empty' => true, 'order' => 'ASC',  'parent' => 0 ) );
+// Search Query Job Type
+if ( '' !== $jobwp_type_s ) {
+    $jobwpQueryArrParams['tax_query'] = array(
+        array(
+            'taxonomy' => 'jobs_nature',
+            'field' => 'name',
+            'terms' => urldecode ( $jobwp_type_s )
+        )
+    );
+}
+
+$jobwp_categories   = get_terms( array( 'taxonomy' => 'jobs_category', 'hide_empty' => true, 'order' => 'ASC',  'parent' => 0 ) );
+$jobwp_types        = get_terms( array( 'taxonomy' => 'jobs_nature', 'hide_empty' => true, 'order' => 'ASC',  'parent' => 0 ) );
 ?>
 <form method="GET" action="<?php echo get_permalink( $post->ID ); ?>" id="jobwp-search-form">
 
@@ -40,6 +53,19 @@ $jobwp_categories  = get_terms( array( 'taxonomy' => 'jobs_category', 'hide_empt
                 foreach ( $jobwp_categories as $job_category ) {
                     ?>
                     <option value="<?php esc_attr_e( $job_category->name ); ?>" <?php echo ( $jobwp_category_s == $job_category->name ) ? 'Selected' : ''; ?>><?php esc_html_e( $job_category->name ); ?></option>
+                    <?php 
+                } 
+                ?>
+            </select>
+        </div>
+
+        <div class="jobwp-search-item">
+            <select id="jobwp_type_s" name="jobwp_type_s">
+                <option value=""><?php _e( 'All Job Type', JOBWP_TXT_DOMAIN ); ?></option>
+                <?php
+                foreach ( $jobwp_types as $jobwp_type ) {
+                    ?>
+                    <option value="<?php esc_attr_e( $jobwp_type->name ); ?>" <?php echo ( $jobwp_type_s == $jobwp_type->name ) ? 'Selected' : ''; ?>><?php esc_html_e( $jobwp_type->name ); ?></option>
                     <?php 
                 } 
                 ?>
