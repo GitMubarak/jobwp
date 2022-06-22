@@ -3,8 +3,8 @@ Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: Job, Jobs, Career, Job Listing, Recruitment, Job Board
 Requires at least: 5.2
-Tested up to: 5.9.3
-Stable tag: 1.3
+Tested up to: 6.0
+Stable tag: 1.4
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,14 +13,14 @@ Best Recruitment Plugin for WordPress to display job listing in a career page.
 
 == Description ==
 
-[__Live Demo__](https://hmplugin.com/demo/jobwp-demo/) | [__More Info__](https://hmplugin.com/) | [__Live Chat__](https://hmplugin.com/demo/jobwp-demo/) | [__Support__](https://hmplugin.com/contact/)
+[__Live Demo__](https://hmplugin.com/demo/jobwp-demo/) | [__More Info__](https://hmplugin.com/wordpress-plugins/jobwp/) | [__Live Chat__](https://hmplugin.com/wordpress-plugins/jobwp/) | [__Support__](https://hmplugin.com/contact/)
 
 = Overview =
 
 **JobWP** is the **Easiest Job Listing, Career and Recruitment Plugin for WordPress** to display job listing in a career page. 
 
 Employer can add multiple job listings and can show them on any page by inserting [jobwp_listing] shortcode. 
-Applicants can see their jobs, serch by catewgries or job keywords. And if they find any suitable job they can apply directly via the job application form.
+Applicants can see their jobs, serch by category or job keywords/title. If they find any suitable job they can apply directly via the job application form.
 After an applicant apply for a job, employer can see that application instantly in the Application List page.
 
 
@@ -138,13 +138,15 @@ Install JobWp as a regular WordPress plugin. Here are different ways to install 
 
 = I have installed the plugin. What next? =
 
-Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shorcode [jobwp_listing] and use it in any page.
+Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shortcode [jobwp_listing] and use it in any page.
 
 
 == Screenshots ==
 
 1. Showing Job Listing in a career page
 2. Showing Jeb Detail Page
+3. Job Application Form
+4. Application list panel in admin
 3. Listing page content settings
 4. Listing page styles settings
 5. Details page content settings
@@ -152,6 +154,10 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shorcode [jobwp_l
 
 
 == Changelog ==
+
+
+= 1.4 =
+* Css fixed
 
 = 1.3 =
 * Search by Job Title item added
