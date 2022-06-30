@@ -13,9 +13,13 @@
         $('span.error-message').html('');
     });
 
-    $("#jobwp-apply-form-modal").iziModal({
-        // options here
-    });
+    var applyFormId = document.getElementById('jobwp-apply-form-modal');
+
+    if (applyFormId != null) {
+        $(applyFormId).iziModal({});
+    }
+
+
 
     $('#jobwp_apply_btn').on('click', function(e) {
 
