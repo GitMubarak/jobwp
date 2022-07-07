@@ -31,6 +31,8 @@
     transition: all 0.2s ease-in-out;
 }
 
+
+/*
 .jobwp-item:hover {
     background: #EAEAEA;
     -webkit-transition: all 0.2s ease-in-out;
@@ -39,6 +41,7 @@
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+*/
 
 .jobwp-item .jobwp-job-title {
     margin-bottom: 10px;

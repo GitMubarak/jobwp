@@ -18,7 +18,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
+/*
 if ( ! function_exists( 'job_fs' ) ) {
     // Create a helper function for easy SDK access.
     function job_fs() {
@@ -50,7 +50,7 @@ if ( ! function_exists( 'job_fs' ) ) {
     // Signal that SDK was initiated.
     do_action( 'job_fs_loaded' );
 }
-
+*/
 define('JOBWP_PATH', plugin_dir_path(__FILE__));
 define('JOBWP_ASSETS', plugins_url('/assets/', __FILE__));
 define('JOBWP_SLUG', plugin_basename(__FILE__));
