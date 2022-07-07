@@ -53,12 +53,17 @@
     text-decoration: none;
 }
 
-p.jobwp-overview-excerpt,
-p.jobwp-list-bottom-item {
+div.jobwp-overview-excerpt,
+div.jobwp-list-bottom-item {
     font-size: 16px;
     line-height: 30px;
     font-weight: normal;
-    margin: 0 0 10px;
+}
+
+.jobwp-bottom {
+    border: 0px solid #000;
+    display: block;
+    min-height: 30px;
 }
 
 .pull-left {
@@ -388,7 +393,7 @@ span.wpsd-read-before-apply-border {
 
 /* Apply Now Ended */
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 500px) {
     .circulr-details-top {
         width: 100%;
         display: block;
@@ -410,5 +415,17 @@ span.wpsd-read-before-apply-border {
     }
     .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
         margin: auto;
+    }
+    .jobwp-bottom {
+        border: 1px solid #000;
+        display: inline-block;
+        width: 100%;
+    }
+    .jobwp-list-bottom-item {
+        display: block;
+        width: 100%;
+    }
+    .pull-right {
+        float: left;
     }
 }

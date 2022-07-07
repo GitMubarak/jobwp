@@ -54,6 +54,7 @@ $jobwpJobs = new WP_Query( $jobwpQueryArr );
 
             $jobwp_experience       = get_post_meta( $post->ID, 'jobwp_experience', true );
             $jobwp_deadline         = get_post_meta( $post->ID, 'jobwp_deadline', true );
+            $jobs_location          = wp_get_post_terms( $post->ID, 'jobs_location', array('fields' => 'all') );
             $jobwpDateDiff          = date_diff( date_create( date('Y-m-d') ), date_create( $jobwp_deadline ) );
             $jobwpDateDiffNumber    = $jobwpDateDiff->format("%R%a");
 
@@ -75,24 +76,36 @@ $jobwpJobs = new WP_Query( $jobwpQueryArr );
                 }
                 ?>
                 <div class="jobwp-bottom">
-                    <p class="jobwp-list-bottom-item pull-left">
+                    <div class="jobwp-list-bottom-item pull-left">
                         <i class="fa fa-briefcase" aria-hidden="true"></i>
                         <strong class="primary-color"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?>:</strong> <span class="ng-binding"><?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?></span>
-                    </p>
-                    <p class="jobwp-list-bottom-item pull-right">
+                    </div>
+                    <div class="jobwp-list-bottom-item pull-right">
                         <i class="fa fa-calendar-days" aria-hidden="true"></i>
                         <strong class="primary-color"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?>:</strong> <span class="ng-binding"><?php esc_html_e( $jobwpDeadline ); ?></span>
-                    </p>
+                    </div>
                 </div>
-                <div class="jobwp-bottom">
-                    <p class="jobwp-list-bottom-item pull-left">
-                        <i class="fa fa-briefcase" aria-hidden="true"></i>
-                        <strong class="primary-color"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?>:</strong> <span class="ng-binding"><?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?></span>
-                    </p>
-                    <p class="jobwp-list-bottom-item pull-right">
+                <div class="jobwp-bottom clear">
+                    <div class="jobwp-list-bottom-item pull-left">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <strong class="primary-color">
+                            <?php _e( 'Location', JOBWP_TXT_DOMAIN ); ?>:</strong> <span class="ng-binding">
+                            <?php
+                            // Job Location
+                            if ( ! empty( $jobs_location ) ) {
+                                $jobs_location_arr = array();
+                                foreach( $jobs_location as $location ) {
+                                    $jobs_location_arr[] = $location->name . '';
+                                }
+                                echo implode( ', ', $jobs_location_arr );   
+                            }
+                            ?>
+                        </span>
+                    </div>
+                    <div class="jobwp-list-bottom-item pull-right">
                         <i class="fa fa-calendar-days" aria-hidden="true"></i>
                         <strong class="primary-color"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?>:</strong> <span class="ng-binding"><?php esc_html_e( $jobwpDeadline ); ?></span>
-                    </p>
+                    </div>
                 </div>
             </div>
             <?php

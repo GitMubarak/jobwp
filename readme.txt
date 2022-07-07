@@ -164,6 +164,7 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shortcode [jobwp_
 * Search by Job Location Feature added
 * Css fixed
 * js console error fixed
+* Job location added in listing
 
 = 1.3 =
 * Search by Job Title item added
