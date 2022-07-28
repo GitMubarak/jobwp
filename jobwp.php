@@ -18,39 +18,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-/*
-if ( ! function_exists( 'job_fs' ) ) {
-    // Create a helper function for easy SDK access.
-    function job_fs() {
-        global $job_fs;
 
-        if ( ! isset( $job_fs ) ) {
-            // Include Freemius SDK.
-            require_once dirname(__FILE__) . '/freemius/start.php';
-
-            $job_fs = fs_dynamic_init( array(
-                'id'                  => '10190',
-                'slug'                => 'jobwp',
-                'type'                => 'plugin',
-                'public_key'          => 'pk_e2d8d8f3056789d2b63d655f5f710',
-                'is_premium'          => false,
-                'has_addons'          => false,
-                'has_paid_plans'      => false,
-                'menu'                => array(
-                    'slug'           => 'edit.php?post_type=jobs',
-                ),
-            ) );
-        }
-
-        return $job_fs;
-    }
-
-    // Init Freemius.
-    job_fs();
-    // Signal that SDK was initiated.
-    do_action( 'job_fs_loaded' );
-}
-*/
 define('JOBWP_PATH', plugin_dir_path(__FILE__));
 define('JOBWP_ASSETS', plugins_url('/assets/', __FILE__));
 define('JOBWP_SLUG', plugin_basename(__FILE__));
