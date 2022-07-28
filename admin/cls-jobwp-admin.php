@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 */
 class JobWp_Admin 
 {
-	use Jobwp_Core, Jobwp_Listing_Content_Settings, Jobwp_Listing_Styles_Settings, Jobwp_Single_Content_Settings, Jobwp_Single_Styles_Settings;
+	use Jobwp_Core, JobwpGeneralSettings, Jobwp_Listing_Content_Settings, Jobwp_Listing_Styles_Settings, Jobwp_Single_Content_Settings, Jobwp_Single_Styles_Settings;
 
 	private $jobwp_version;
 	private $jobwp_assets_prefix;
@@ -75,6 +75,15 @@ class JobWp_Admin
 
 		add_submenu_page(
 			$jobwp_cpt_menu,
+			__('General Settings', JOBWP_TXT_DOMAIN),
+			__('General Settings', JOBWP_TXT_DOMAIN),
+			'manage_options',
+			'jobwp-general-settings',
+			array($this, JOBWP_PRFX . 'general_settings'),
+		);
+
+		add_submenu_page(
+			$jobwp_cpt_menu,
 			__('Listing Page Settings', JOBWP_TXT_DOMAIN),
 			__('Listing Page Settings', JOBWP_TXT_DOMAIN),
 			'manage_options',
@@ -99,6 +108,29 @@ class JobWp_Admin
 			'jobwp-application-list',
 			array($this, JOBWP_PRFX . 'application_list'),
 		);
+	}
+
+	/**
+	 *	Function For Loading Listing Settings Page
+	 */
+	function jobwp_general_settings() {
+
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+
+		$jobwpGeneralMessage = false;
+
+		// Content
+		if ( isset( $_POST['updateGeneralSettings'] ) ) {
+
+			$jobwpGeneralMessage = $this->jobwp_set_general_settings( $_POST );
+
+		}
+
+		$jobwpGeneralSettings = $this->jobwp_get_general_settings();
+
+		require_once JOBWP_PATH . 'admin/view/general-settings.php';
 	}
 
 	/**

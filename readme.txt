@@ -55,6 +55,7 @@ After an applicant apply for a job, employer can see that application instantly 
 * Search by Job Location
 * Apply Job Online
 * Job Application Panel
+* Admin notification email
 
 
 **✅ Options In Listing Page Settings**
@@ -166,6 +167,7 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shortcode [jobwp_
 * js console error fixed
 * Job location added in listing
 * Job type added in listing
+* Admin notification email features added
 
 = 1.3 =
 * Search by Job Title item added

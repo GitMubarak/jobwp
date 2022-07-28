@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 */
 trait Jobwp_Applicaiton 
 {
-    function jobwp_upload_resume($post, $file) {
+    function jobwp_upload_resume($post, $file, $admin_email) {
         
         if ( ! empty( $file['jobwp_upload_resume']['name'] ) && ! empty( $post['jobwp_full_name'] )  && ! empty( $post['jobwp_email'] ) ) {
 
@@ -74,6 +74,26 @@ trait Jobwp_Applicaiton
                                     "' . $_FILES['jobwp_upload_resume']['name'] . '",
                                     "' . date('Y-m-d h:i:s') . '"
                                 )');
+
+                                $attachments = array($jobwpDir . '/jobwp-resume/' . $_FILES['jobwp_upload_resume']['name']);
+						
+                                $headers = "MIME-Version: 1.0" . "\r\n";
+                                $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                                $headers .= 'From: Career <myname@mydomain.com>' . "\r\n";
+                                
+                                $subject = __('Career - New Application');
+                                $emailMessage = __( 'Applicant: ' ) . $fullName;
+                                $emailMessage .= '<br>' . __( 'Applied For: ' ) . $applyFor;
+                                $emailMessage .= '<br>' . __( 'Email: ' ) . $email;
+                                //$emailMessage .= '<br>' . __( 'Phone: ' ) . $phoneNumber;
+                                $emailMessage .= '<br>' . __( 'Cover Letter: ' ) . $message;
+                                wp_mail(
+                                    esc_html( $admin_email ),
+                                    $subject,
+                                    $emailMessage,
+                                    $headers,
+                                    $attachments
+                                );
         
                                 return __('Thank you for your application', JOBWP_TXT_DOMAIN);
                             }

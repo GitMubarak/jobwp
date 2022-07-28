@@ -26,9 +26,17 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
     }
 }
 
+// General Settings
+$jobwpGeneralSettings = $jobwp_front_new->jobwp_get_general_settings();
+foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
+    if ( isset( $jobwpGeneralSettings[$option_name] ) ) {
+        ${"" . $option_name} = $option_value;
+    }
+}
+
 // Upload Resume
 if ( isset( $_FILES['jobwp_upload_resume']['name'] ) ) {
-    $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume($_POST, $_FILES);
+    $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume($_POST, $_FILES, $jobwp_admin_noti_email);
 }
 
 // Load Styling

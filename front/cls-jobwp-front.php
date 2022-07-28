@@ -10,7 +10,7 @@ include_once JOBWP_PATH . 'core/job_application.php';
 */
 class JobWp_Front 
 {
-	use Jobwp_Core, Jobwp_Listing_Content_Settings, Jobwp_Listing_Styles_Settings, Jobwp_Single_Content_Settings, Jobwp_Single_Styles_Settings, Jobwp_Applicaiton;
+	use Jobwp_Core, JobwpGeneralSettings, Jobwp_Listing_Content_Settings, Jobwp_Listing_Styles_Settings, Jobwp_Single_Content_Settings, Jobwp_Single_Styles_Settings, Jobwp_Applicaiton;
 
 	private $jobwp_version;
 
