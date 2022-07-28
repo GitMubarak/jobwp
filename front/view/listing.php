@@ -55,6 +55,7 @@ $jobwpJobs = new WP_Query( $jobwpQueryArr );
             $jobwp_experience       = get_post_meta( $post->ID, 'jobwp_experience', true );
             $jobwp_deadline         = get_post_meta( $post->ID, 'jobwp_deadline', true );
             $jobs_location          = wp_get_post_terms( $post->ID, 'jobs_location', array('fields' => 'all') );
+            $jobs_nature            = wp_get_post_terms( $post->ID, 'jobs_nature', array('fields' => 'all') );
             $jobwpDateDiff          = date_diff( date_create( date('Y-m-d') ), date_create( $jobwp_deadline ) );
             $jobwpDateDiffNumber    = $jobwpDateDiff->format("%R%a");
 
@@ -103,8 +104,20 @@ $jobwpJobs = new WP_Query( $jobwpQueryArr );
                         </span>
                     </div>
                     <div class="jobwp-list-bottom-item pull-right">
-                        <i class="fa fa-calendar-days" aria-hidden="true"></i>
-                        <strong class="primary-color"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?>:</strong> <span class="ng-binding"><?php esc_html_e( $jobwpDeadline ); ?></span>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <strong class="primary-color">
+                            <?php _e( 'Job Type', JOBWP_TXT_DOMAIN ); ?>:</strong> <span class="ng-binding">
+                            <?php
+                            // Job Location
+                            if ( ! empty( $jobs_nature ) ) {
+                                $jobs_nature_arr = array();
+                                foreach( $jobs_nature as $type ) {
+                                    $jobs_nature_arr[] = $type->name . '';
+                                }
+                                echo implode( ', ', $jobs_nature_arr );   
+                            }
+                            ?>
+                        </span>
                     </div>
                 </div>
             </div>
