@@ -218,8 +218,10 @@ class JobWp_Admin
 		$jobwpDir = wp_upload_dir();
 		$jobwpDir = $jobwpDir['baseurl'] . '/jobwp-resume';
 		?>
+		<div class="settings-banner">
+			<h2><i class="fa-solid fa-list-check"></i>&nbsp;<?php _e('Application Lists', JOBWP_TXT_DOMAIN); ?></h2>
+		</div>
 		<div id="jobwp-wrap-all" class="wrap">
-			<h2 class="jobwp-admin-page-title"><?php _e('Application Lists', JOBWP_TXT_DOMAIN); ?></h2>
 			<table class="wp-list-table widefat fixed striped posts" cellspacing="0" id="wpc_data_table">
 				<thead>
 					<tr>
