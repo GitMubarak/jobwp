@@ -8,13 +8,13 @@ if ( ! defined( 'ABSPATH' ) ) {
         <h3 class="hndle"><span>Support / Bug / Customization</span></h3>
         <div class="inside centered">
             <p>Please feel free to let us know if you have any bugs to report. Your report / suggestion can make the plugin awesome!</p>
-            <p style="margin-bottom: 1px! important;"><a href="https://hmplugin.com/contact/" target="_blank" class="button button-primary">Get Support</a></p>
+            <p style="margin-bottom: 1px! important;"><a href="https://hmplugin.com/contact/" target="_blank" class="button button-primary jobwp-button">Get Support</a></p>
         </div>
     </div>
     <div class="postbox">
         <h3 class="hndle"><span>More About JobWP</span></h3>
         <div class="inside centered">
-            <p style="margin-bottom: 1px! important;"><a href="https://hmplugin.com/demo/jobwp/" target="_blank" class="button button-primary">Live Chat</a></p>
+            <p style="margin-bottom: 1px! important;"><a href="https://hmplugin.com/demo/jobwp/" target="_blank" class="button button-primary jobwp-button">Live Chat</a></p>
         </div>
     </div>
     <div class="postbox">

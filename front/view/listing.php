@@ -87,12 +87,11 @@ $jobwpJobs = new WP_Query( $jobwpQueryArr );
                     </div>
                 </div>
                 <div class="jobwp-bottom clear">
+                    <!-- Location -->
                     <div class="jobwp-list-bottom-item pull-left">
                         <i class="fa-solid fa-location-dot"></i>
-                        <strong class="primary-color">
-                            <?php _e( 'Location', JOBWP_TXT_DOMAIN ); ?>:</strong> <span class="ng-binding">
+                            <strong class="primary-color"><?php esc_html_e( $jobwp_list_loc_lbl_txt ); ?>:</strong>
                             <?php
-                            // Job Location
                             if ( ! empty( $jobs_location ) ) {
                                 $jobs_location_arr = array();
                                 foreach( $jobs_location as $location ) {
@@ -103,12 +102,11 @@ $jobwpJobs = new WP_Query( $jobwpQueryArr );
                             ?>
                         </span>
                     </div>
+                    <!-- Job Type -->
                     <div class="jobwp-list-bottom-item pull-right">
                         <i class="fa-solid fa-graduation-cap"></i>
-                        <strong class="primary-color">
-                            <?php _e( 'Job Type', JOBWP_TXT_DOMAIN ); ?>:</strong> <span class="ng-binding">
+                            <strong class="primary-color"><?php esc_html_e( $jobwp_list_job_type_lbl_txt ); ?>:</strong>
                             <?php
-                            // Job Location
                             if ( ! empty( $jobs_nature ) ) {
                                 $jobs_nature_arr = array();
                                 foreach( $jobs_nature as $type ) {

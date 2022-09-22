@@ -130,7 +130,7 @@ class JobWp_Admin
 
 		$jobwpGeneralSettings = $this->jobwp_get_general_settings();
 
-		require_once JOBWP_PATH . 'admin/view/general-settings.php';
+		require_once JOBWP_PATH . 'admin/view/general.php';
 	}
 
 	/**
@@ -163,7 +163,7 @@ class JobWp_Admin
 
         $jobwpListingStyles = $this->jobwp_get_listing_styles_settings();
 
-		require_once JOBWP_PATH . 'admin/view/listing-settings.php';
+		require_once JOBWP_PATH . 'admin/view/listing.php';
 	}
 
 	function jobwp_single_settings() {
@@ -193,7 +193,7 @@ class JobWp_Admin
 
         $jobwpSingleStyles = $this->jobwp_get_single_styles_settings();
 
-		require_once JOBWP_PATH . 'admin/view/single-settings.php';
+		require_once JOBWP_PATH . 'admin/view/single.php';
 	}
 
 	/**

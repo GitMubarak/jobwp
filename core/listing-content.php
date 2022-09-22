@@ -53,6 +53,16 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Deadline',
             ],
+            [
+                'name'      => 'jobwp_list_loc_lbl_txt',
+                'type'      => 'text',
+                'default'   => 'Location',
+            ],
+            [
+                'name'      => 'jobwp_list_job_type_lbl_txt',
+                'type'      => 'text',
+                'default'   => 'Job Type',
+            ],
         ];
     }
 }

@@ -159,7 +159,8 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shortcode [jobwp_
 == Changelog ==
 
 = 1.5 =
-* Font
+* Location label text option added
+* Job type label text option added
 
 = 1.4 =
 * Font Awesome Free 6.1.1 integrated
