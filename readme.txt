@@ -1,15 +1,15 @@
-=== JobWP - Easiest Job Listing, Career and Recruitment Plugin ===
+=== WordPress Job Board and Recruitment Plugin - JobWP ===
 Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
-Tags: Job, Jobs, Career, Job Listing, Recruitment, Job Board
+Tags: Jobs, Job Board, Recruitment, Job Listing, Career, 
 Requires at least: 5.2
-Tested up to: 6.0
-Stable tag: 1.4
+Tested up to: 6.0.2
+Stable tag: 1.5
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Best Recruitment Plugin for WordPress to display job listing in a career page.
+WordPress Job Listing, Career and Recruitment Plugin to display job listing in a career page.
 
 == Description ==
 
@@ -17,9 +17,9 @@ Best Recruitment Plugin for WordPress to display job listing in a career page.
 
 = Overview =
 
-**JobWP** is the **Easiest Job Listing, Career and Recruitment Plugin for WordPress** to display job listing in a career page. 
+**JobWP** is the **Easiest Job Board, Career and Recruitment Plugin for WordPress** to display job listing in a career page.
 
-Employer can add multiple job listings and can show them on any page by inserting [jobwp_listing] shortcode. 
+Employer can add multiple job listings and can show them on a career page by inserting [jobwp_listing] shortcode.
 Applicants can see their jobs, serch by category or job keywords/title. If they find any suitable job they can apply directly via the job application form.
 After an applicant apply for a job, employer can see that application instantly in the Application List page.
 
@@ -158,6 +158,8 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shortcode [jobwp_
 
 == Changelog ==
 
+= 1.5 =
+* Font
 
 = 1.4 =
 * Font Awesome Free 6.1.1 integrated
