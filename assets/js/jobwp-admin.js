@@ -4,6 +4,7 @@
     "use strict";
 
     var jobwpColorPicker = [
+        '#jobwp_single_container_bg_color',
         '#jobwp_listing_title_font_color',
         '#jobwp_listing_overview_font_color',
         '#jobwp_single_title_font_color'

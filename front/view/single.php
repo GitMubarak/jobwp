@@ -92,9 +92,9 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
-                                <h5 class="primary-color"><?php esc_html_e( $jobwp_single_overview_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_overview_text ); ?></h5>
                             </div>
-                            <div class="right-cell">
+                            <div class="right-cell text">
                                 <?php the_content(); ?>
                             </div>
                             <div class="clear"></div>

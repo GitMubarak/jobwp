@@ -34,6 +34,11 @@ trait Jobwp_Single_Styles_Settings
 
         return [
             [
+                'name'      => 'jobwp_single_container_bg_color',
+                'type'      => 'text',
+                'default'   => '#FFFFFF',
+            ],
+            [
                 'name'      => 'jobwp_single_title_font_color',
                 'type'      => 'text',
                 'default'   => '#242424',
