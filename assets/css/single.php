@@ -15,4 +15,12 @@ if ( ! defined( 'ABSPATH' ) ) {
   .jobwp-single-left .text {
     color: <?php esc_html_e( $jobwp_single_info_font_color ); ?>;
   }
+  .circulr-details-bottom-email .jobwp-primary-button {
+    background: <?php esc_html_e( $jobwp_single_apply_btn_bg_color ); ?>;
+    border: 1px solid <?php esc_html_e( $jobwp_single_apply_btn_bg_color ); ?>;
+  }
+  .circulr-details-bottom-email .jobwp-primary-button:hover {
+    color: <?php esc_html_e( $jobwp_single_apply_btn_bg_color ); ?>!important;
+    background: #FFFFFF!important;
+  }
 </style>

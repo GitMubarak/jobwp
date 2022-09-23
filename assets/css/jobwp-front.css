@@ -257,9 +257,8 @@ div.jobwp-list-bottom-item {
 
 .jobwp-primary-button {
     background: #008b8b;
-    border: 1px solid #247c26 !important;
+    border: 1px solid #247c26;
     border-radius: 3px !important;
-    font-family: "catamaranlight" !important;
     font-size: 22px !important;
     text-transform: uppercase !important;
     color: #fff !important;
@@ -270,8 +269,8 @@ div.jobwp-list-bottom-item {
 }
 
 .jobwp-primary-button:hover {
-    color: #247c26 !important;
-    background: none !important;
+    color: #247c26;
+    background: none;
 }
 
 .circulr-details-bottom-email {

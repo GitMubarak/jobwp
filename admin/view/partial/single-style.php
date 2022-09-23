@@ -64,6 +64,21 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
                 <div id="colorpicker"></div>
             </td>
         </tr>
+        <!-- Apply Button -->
+        <tr>
+            <th scope="row" colspan="4">
+                <hr><span><?php _e('Apply Button', JOBWP_TXT_DOMAIN); ?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Button Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_single_apply_btn_bg_color" id="jobwp_single_apply_btn_bg_color" value="<?php esc_attr_e( $jobwp_single_apply_btn_bg_color ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit"><button id="updateSingleStyles" name="updateSingleStyles" class="button button-primary jobwp-button"><?php _e('Save Settings', JOBWP_TXT_DOMAIN); ?></button></p>

@@ -39,11 +39,6 @@ trait Jobwp_Single_Styles_Settings
                 'default'   => '#FFFFFF',
             ],
             [
-                'name'      => 'jobwp_single_info_font_color',
-                'type'      => 'text',
-                'default'   => '#555555',
-            ],
-            [
                 'name'      => 'jobwp_single_title_font_color',
                 'type'      => 'text',
                 'default'   => '#242424',
@@ -52,6 +47,16 @@ trait Jobwp_Single_Styles_Settings
                 'name'      => 'jobwp_single_title_font_size',
                 'type'      => 'number',
                 'default'   => '28',
+            ],
+            [
+                'name'      => 'jobwp_single_info_font_color',
+                'type'      => 'text',
+                'default'   => '#555555',
+            ],
+            [
+                'name'      => 'jobwp_single_apply_btn_bg_color',
+                'type'      => 'text',
+                'default'   => '#008b8b',
             ],
         ];
     }
