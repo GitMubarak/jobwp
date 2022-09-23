@@ -177,9 +177,10 @@ div.jobwp-list-bottom-item {
 /* Details Started */
 
 .jobwp-single-body-container {
-    margin: 20px 0;
     border: 0px solid #000;
     width: 100%;
+    max-width: 1150px;
+    margin: 40px auto;
 }
 
 .jobwp-single-area {
@@ -277,10 +278,9 @@ div.jobwp-list-bottom-item {
     background: #eeeeee;
     width: 100%;
     line-height: 10px;
-    padding: 20px;
+    padding: 20px 0;
     display: block;
     text-align: center;
-    padding-bottom: 40px;
 }
 
 h3.wpsd-read-before-apply {
@@ -296,11 +296,10 @@ span.wpsd-read-before-apply-border {
     line-height: 10px;
     width: 200px;
     margin: 0 auto;
-    margin-bottom: 20px;
 }
 
 .circulr-details-bottom-email p.apply-to-email {
-    margin: 0;
+    margin: 20px 0;
     padding: 0;
     font-size: 13px;
     line-height: 20px;
