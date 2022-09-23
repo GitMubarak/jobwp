@@ -10,6 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   .circulr-details-top .jobwp-job-title {
     color: <?php esc_html_e( $jobwp_single_title_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_single_title_font_size ); ?>px;
+    line-height: <?php esc_html_e( $jobwp_single_title_font_size+10 ); ?>px;
   }
   .jobwp-single-left .label,
   .jobwp-single-left .text {

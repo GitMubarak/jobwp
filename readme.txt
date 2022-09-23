@@ -166,6 +166,7 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shortcode [jobwp_
 * Detail container bg color option added
 * Detail job info font color option added
 * Detail apply online button bg color option added
+* Mobile responsive improved
 
 = 1.4 =
 * Font Awesome Free 6.1.1 integrated
