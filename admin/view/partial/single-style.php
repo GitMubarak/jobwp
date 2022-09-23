@@ -49,6 +49,21 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
                 <code>px</code>
             </td>
         </tr>
+        <!-- Job Info -->
+        <tr>
+            <th scope="row" colspan="4">
+                <hr><span><?php _e('Job Info', JOBWP_TXT_DOMAIN); ?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_single_info_font_color" id="jobwp_single_info_font_color" value="<?php esc_attr_e( $jobwp_single_info_font_color ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit"><button id="updateSingleStyles" name="updateSingleStyles" class="button button-primary jobwp-button"><?php _e('Save Settings', JOBWP_TXT_DOMAIN); ?></button></p>

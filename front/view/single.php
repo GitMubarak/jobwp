@@ -108,9 +108,9 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
-                                <h5 class="primary-color"><?php esc_html_e( $jobwp_single_vacancies_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_vacancies_text ); ?></h5>
                             </div>
-                            <div class="right-cell">
+                            <div class="right-cell text">
                                 <?php esc_html_e( $bo_vacancies ); ?>
                             </div>
                             <div class="clear"></div>
@@ -124,10 +124,10 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
-                                <h5 class="primary-color"><?php esc_html_e( $jobwp_single_skills_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_skills_text ); ?></h5>
                             </div>
                             <div class="right-cell">
-                                <div class="custom-list">
+                                <div class="custom-list text">
                                 <?php
                                     if ( ! empty( $bo_career_skills ) ) {
                                         echo wp_kses_post( $bo_career_skills );
@@ -146,10 +146,10 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
-                                <h5 class="primary-color"><?php esc_html_e( $jobwp_single_responsible_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_responsible_text ); ?></h5>
                             </div>
                             <div class="right-cell">
-                                <div class="custom-list">
+                                <div class="custom-list text">
                                 <?php
                                     if ( ! empty( $bo_job_responsibilities ) ) {
                                         echo wp_kses_post( $bo_job_responsibilities );
@@ -168,10 +168,10 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
-                                <h5 class="primary-color"><?php esc_html_e( $jobwp_single_requirements_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_requirements_text ); ?></h5>
                             </div>
                             <div class="right-cell">
-                                <div class="custom-list">
+                                <div class="custom-list text">
                                 <?php
                                     if ( ! empty( $bo_job_additional_requirements ) ) {
                                         echo wp_kses_post( $bo_job_additional_requirements );
@@ -190,9 +190,9 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
-                                <h5 class="primary-color"><i class="fa fa-clock" aria-hidden="true"></i>&nbsp;<?php esc_html_e( $jobwp_single_job_type_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_job_type_text ); ?></h5>
                             </div>
-                            <div class="right-cell">
+                            <div class="right-cell text">
                                 <?php
                                 // Job Nature
                                 if ( ! empty( $jobs_nature ) ) {
@@ -215,9 +215,9 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
-                                <h5 class="primary-color"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;<?php esc_html_e( $jobwp_single_education_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_education_text ); ?></h5>
                             </div>
-                            <div class="right-cell">
+                            <div class="right-cell text">
                                 <p><?php esc_html_e( $jobwp_edu_req ); ?></p>
                             </div>
                             <div class="clear"></div>
@@ -231,9 +231,9 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
-                                <h5 class="primary-color"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;<?php esc_html_e( $jobwp_single_experience_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_experience_text ); ?></h5>
                             </div>
-                            <div class="right-cell">
+                            <div class="right-cell text">
                                 <?php esc_html_e( $bo_experience ); ?>
                             </div>
                             <div class="clear"></div>
@@ -247,9 +247,9 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
-                                <h5 class="primary-color"><?php esc_html_e( $jobwp_single_loc_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_loc_text ); ?></h5>
                             </div>
-                            <div class="right-cell">
+                            <div class="right-cell text">
                                 <?php
                                 // Job Location
                                 if ( ! empty( $jobs_location ) ) {
@@ -272,10 +272,10 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
-                                <h5 class="primary-color"><?php esc_html_e( $jobwp_single_salary_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_salary_text ); ?></h5>
                             </div>
                             <div class="right-cell">
-                                <div class="custom-list">
+                                <div class="custom-list text">
                                 <?php
                                     if ( ! empty( $bo_job_salary ) ) {
                                         echo wp_kses_post( $bo_job_salary );
@@ -294,10 +294,10 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
-                                <h5 class="primary-color"><?php esc_html_e( $jobwp_single_benefit_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_benefit_text ); ?></h5>
                             </div>
                             <div class="right-cell">
-                                <div class="custom-list">
+                                <div class="custom-list text">
                                 <?php
                                     if ( ! empty( $bo_other_benefits ) ) {
                                         echo wp_kses_post( $bo_other_benefits );
@@ -316,9 +316,9 @@ include JOBWP_PATH . 'assets/css/single.php';
                         ?>
                         <div class="content-row">
                             <div class="left-cell padding-bottom-50">
-                                <h5 class="primary-color"><?php esc_html_e( $jobwp_single_level_text ); ?></h5>
+                                <h5 class="label"><?php esc_html_e( $jobwp_single_level_text ); ?></h5>
                             </div>
-                            <div class="right-cell">
+                            <div class="right-cell text">
                                 <?php
                                 if ( ! empty( $jobs_level ) ) {
                                     $jobs_level_arr = array();

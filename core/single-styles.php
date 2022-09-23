@@ -39,6 +39,11 @@ trait Jobwp_Single_Styles_Settings
                 'default'   => '#FFFFFF',
             ],
             [
+                'name'      => 'jobwp_single_info_font_color',
+                'type'      => 'text',
+                'default'   => '#555555',
+            ],
+            [
                 'name'      => 'jobwp_single_title_font_color',
                 'type'      => 'text',
                 'default'   => '#242424',
