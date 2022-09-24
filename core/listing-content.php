@@ -44,9 +44,19 @@ trait Jobwp_Listing_Content_Settings
                 'default'   => 30,
             ],
             [
+                'name'      => 'jobwp_list_display_experience',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
                 'name'      => 'jobwp_list_exp_lbl_txt',
                 'type'      => 'text',
                 'default'   => 'Experience',
+            ],
+            [
+                'name'      => 'jobwp_list_display_deadline',
+                'type'      => 'boolean',
+                'default'   => false,
             ],
             [
                 'name'      => 'jobwp_list_deadline_lbl_txt',
@@ -54,9 +64,19 @@ trait Jobwp_Listing_Content_Settings
                 'default'   => 'Deadline',
             ],
             [
+                'name'      => 'jobwp_list_display_location',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
                 'name'      => 'jobwp_list_loc_lbl_txt',
                 'type'      => 'text',
                 'default'   => 'Location',
+            ],
+            [
+                'name'      => 'jobwp_list_display_jtype',
+                'type'      => 'boolean',
+                'default'   => false,
             ],
             [
                 'name'      => 'jobwp_list_job_type_lbl_txt',

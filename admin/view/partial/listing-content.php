@@ -17,13 +17,11 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 <label for="jobwp_list_display_overview"><?php _e('Hide Overview', JOBWP_TXT_DOMAIN); ?>?</label>
             </th>
             <td>
-                <input type="checkbox" name="jobwp_list_display_overview" class="jobwp_list_display_overview" id="jobwp_list_display_overview" value="1"
+                <input type="checkbox" name="jobwp_list_display_overview" class="jobwp_list_display_overview" id="jobwp_list_display_overview"
                     <?php echo $jobwp_list_display_overview ? 'checked' : ''; ?> >
             </td>
-        </tr>
-        <tr>
             <th scope="row">
-                <label for="wbg_cat_label_txt"><?php _e('Overview Word Lengtht', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label for="wbg_cat_label_txt"><?php _e('Word Lengtht', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
             <td>
                 <input type="number" name="jobwp_list_overview_length" class="medium-text" min="1" max="150" step="1" value="<?php esc_attr_e( $jobwp_list_overview_length ); ?>">
@@ -31,7 +29,14 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Experience Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                <label for="jobwp_list_display_experience"><?php _e('Hide Experience', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="jobwp_list_display_experience" class="jobwp_list_display_experience" id="jobwp_list_display_experience"
+                    <?php echo $jobwp_list_display_experience ? 'checked' : ''; ?> >
+            </td>
+            <th scope="row">
+                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="text" name="jobwp_list_exp_lbl_txt" id="jobwp_list_exp_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_exp_lbl_txt ); ?>" />
@@ -39,7 +44,14 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Deadline Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                <label for="jobwp_list_display_deadline"><?php _e('Hide Deadline', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="jobwp_list_display_deadline" class="jobwp_list_display_deadline" id="jobwp_list_display_deadline"
+                    <?php echo $jobwp_list_display_deadline ? 'checked' : ''; ?> >
+            </td>
+            <th scope="row">
+                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="text" name="jobwp_list_deadline_lbl_txt" id="jobwp_list_deadline_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_deadline_lbl_txt ); ?>" />
@@ -47,7 +59,14 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Location Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                <label for="jobwp_list_display_location"><?php _e('Hide Location', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="jobwp_list_display_location" class="jobwp_list_display_location" id="jobwp_list_display_location"
+                    <?php echo $jobwp_list_display_location ? 'checked' : ''; ?> >
+            </td>
+            <th scope="row">
+                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="text" name="jobwp_list_loc_lbl_txt" id="jobwp_list_loc_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_loc_lbl_txt ); ?>" />
@@ -55,7 +74,14 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Job Type Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                <label for="jobwp_list_display_jtype"><?php _e('Hide Job Type', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="jobwp_list_display_jtype" class="jobwp_list_display_jtype" id="jobwp_list_display_jtype"
+                    <?php echo $jobwp_list_display_jtype ? 'checked' : ''; ?> >
+            </td>
+            <th scope="row">
+                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="text" name="jobwp_list_job_type_lbl_txt" id="jobwp_list_job_type_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_job_type_lbl_txt ); ?>" />

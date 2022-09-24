@@ -20,10 +20,12 @@
 /* Listing Started */
 
 .jobwp-item {
-    padding: 20px;
-    background: #f7f8f7;
+    padding: 10px 20px;
+    background: transparent;
     border: 1px solid #ddd;
     margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -44,7 +46,7 @@
 */
 
 .jobwp-item .jobwp-job-title {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .jobwp-item .jobwp-job-title a.jobwp-job-title-a {
@@ -53,9 +55,13 @@
     text-decoration: none;
 }
 
+.jobwp-item p.jobwp-overview-excerpt {
+    margin: 10px 0;
+}
+
 div.jobwp-overview-excerpt,
 div.jobwp-list-bottom-item {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     font-weight: normal;
 }
@@ -63,7 +69,7 @@ div.jobwp-list-bottom-item {
 .jobwp-bottom {
     border: 0px solid #000;
     display: block;
-    min-height: 30px;
+    min-height: 3px;
 }
 
 .pull-left {
