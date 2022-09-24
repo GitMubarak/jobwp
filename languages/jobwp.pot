@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-07-28 23:40+0600\n"
+"POT-Creation-Date: 2022-09-24 22:03+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,17 +18,17 @@ msgstr ""
 "X-Poedit-SearchPath-1: admin/cls-jobwp-admin.php\n"
 
 #: admin/cls-jobwp-admin.php:78 admin/cls-jobwp-admin.php:79
-#: admin/view/general-settings.php:16
+#: admin/view/general.php:16
 msgid "General Settings"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:87 admin/cls-jobwp-admin.php:88
-#: admin/view/listing-settings.php:9
+#: admin/view/listing.php:9
 msgid "Listing Page Settings"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:96 admin/cls-jobwp-admin.php:97
-#: admin/view/single-settings.php:9
+#: admin/view/single.php:9
 msgid "Detail Page Settings"
 msgstr ""
 
@@ -163,7 +163,7 @@ msgid "New Job Category Name"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:342 admin/cls-jobwp-admin.php:343
-#: admin/cls-jobwp-admin.php:352 front/view/single.php:152
+#: admin/cls-jobwp-admin.php:352
 msgid "Job Nature"
 msgstr ""
 
@@ -200,7 +200,7 @@ msgid "New Job Nature Name"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:371 admin/cls-jobwp-admin.php:372
-#: admin/cls-jobwp-admin.php:381 front/view/single.php:242
+#: admin/cls-jobwp-admin.php:381
 msgid "Job Level"
 msgstr ""
 
@@ -237,7 +237,7 @@ msgid "New Job Level Name"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:400 admin/cls-jobwp-admin.php:401
-#: admin/cls-jobwp-admin.php:410 front/view/single.php:191
+#: admin/cls-jobwp-admin.php:410
 msgid "Job Location"
 msgstr ""
 
@@ -301,26 +301,38 @@ msgstr ""
 msgid "Other Benefits:"
 msgstr ""
 
-#: admin/view/general-settings.php:35
+#: admin/view/general.php:35
 msgid "Admin Notification Email"
 msgstr ""
 
-#: admin/view/general-settings.php:39
+#: admin/view/general.php:39
 msgid "An email will sent to this email when a candidate submit an applicaiton."
 msgstr ""
 
-#: admin/view/general-settings.php:46 admin/view/partial/listing-content.php:52
+#: admin/view/general.php:44
+msgid "Job List Layout"
+msgstr ""
+
+#: admin/view/general.php:48
+msgid "List"
+msgstr ""
+
+#: admin/view/general.php:51
+msgid "Grid"
+msgstr ""
+
+#: admin/view/general.php:58 admin/view/partial/listing-content.php:94
 #: admin/view/partial/listing-style.php:65
-#: admin/view/partial/single-content.php:39
-#: admin/view/partial/single-style.php:41
+#: admin/view/partial/single-content.php:238
+#: admin/view/partial/single-style.php:84
 msgid "Save Settings"
 msgstr ""
 
-#: admin/view/listing-settings.php:22 admin/view/single-settings.php:22
+#: admin/view/listing.php:22 admin/view/single.php:22
 msgid "Content"
 msgstr ""
 
-#: admin/view/listing-settings.php:25 admin/view/single-settings.php:25
+#: admin/view/listing.php:25 admin/view/single.php:25
 msgid "Styles"
 msgstr ""
 
@@ -328,7 +340,7 @@ msgstr ""
 msgid "Year of Experience"
 msgstr ""
 
-#: admin/view/partial/job-info.php:17 front/view/single.php:94
+#: admin/view/partial/job-info.php:17
 msgid "No. of Vacancies"
 msgstr ""
 
@@ -349,35 +361,64 @@ msgid "Inactive"
 msgstr ""
 
 #: admin/view/partial/listing-content.php:17
+#: admin/view/partial/single-content.php:17
 msgid "Hide Overview"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:26
-msgid "Overview Word Lengtht"
+#: admin/view/partial/listing-content.php:24
+msgid "Word Lengtht"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:34
-msgid "Experience Label Text"
+#: admin/view/partial/listing-content.php:32
+msgid "Hide Experience"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:42
-msgid "Deadline Label Text"
+#: admin/view/partial/listing-content.php:39
+#: admin/view/partial/listing-content.php:54
+#: admin/view/partial/listing-content.php:69
+#: admin/view/partial/listing-content.php:84
+#: admin/view/partial/single-content.php:24
+#: admin/view/partial/single-content.php:39
+#: admin/view/partial/single-content.php:54
+#: admin/view/partial/single-content.php:69
+#: admin/view/partial/single-content.php:84
+#: admin/view/partial/single-content.php:99
+#: admin/view/partial/single-content.php:114
+#: admin/view/partial/single-content.php:129
+#: admin/view/partial/single-content.php:144
+#: admin/view/partial/single-content.php:159
+#: admin/view/partial/single-content.php:174
+#: admin/view/partial/single-content.php:189
+msgid "Label Text"
+msgstr ""
+
+#: admin/view/partial/listing-content.php:47
+msgid "Hide Deadline"
+msgstr ""
+
+#: admin/view/partial/listing-content.php:62
+msgid "Hide Location"
+msgstr ""
+
+#: admin/view/partial/listing-content.php:77
+msgid "Hide Job Type"
 msgstr ""
 
 #: admin/view/partial/listing-style.php:18
-#: admin/view/partial/single-style.php:18
+#: admin/view/partial/single-style.php:33
 msgid "Job Title"
 msgstr ""
 
 #: admin/view/partial/listing-style.php:23
 #: admin/view/partial/listing-style.php:47
-#: admin/view/partial/single-style.php:23
+#: admin/view/partial/single-style.php:38
+#: admin/view/partial/single-style.php:60
 msgid "Font Color"
 msgstr ""
 
 #: admin/view/partial/listing-style.php:32
 #: admin/view/partial/listing-style.php:56
-#: admin/view/partial/single-style.php:32
+#: admin/view/partial/single-style.php:45
 msgid "Font Size"
 msgstr ""
 
@@ -385,12 +426,88 @@ msgstr ""
 msgid "Job Overview"
 msgstr ""
 
-#: admin/view/partial/single-content.php:21
+#: admin/view/partial/single-content.php:32
+msgid "Hide No. of Vacancies"
+msgstr ""
+
+#: admin/view/partial/single-content.php:47
+msgid "Hide Specific Skills"
+msgstr ""
+
+#: admin/view/partial/single-content.php:62
+msgid "Hide Responsible For"
+msgstr ""
+
+#: admin/view/partial/single-content.php:77
+msgid "Hide Additional Requirements"
+msgstr ""
+
+#: admin/view/partial/single-content.php:92
+msgid "Hide Job Nature"
+msgstr ""
+
+#: admin/view/partial/single-content.php:107
+msgid "Hide Educational Requirements"
+msgstr ""
+
+#: admin/view/partial/single-content.php:122
+msgid "Hide Experience Requirements"
+msgstr ""
+
+#: admin/view/partial/single-content.php:137
+msgid "Hide Job Location"
+msgstr ""
+
+#: admin/view/partial/single-content.php:152
+msgid "Hide Salary"
+msgstr ""
+
+#: admin/view/partial/single-content.php:167
+msgid "Hide Other Benefits"
+msgstr ""
+
+#: admin/view/partial/single-content.php:182
+msgid "Hide Job Level"
+msgstr ""
+
+#: admin/view/partial/single-content.php:198
+msgid "Hide Apply Procedure"
+msgstr ""
+
+#: admin/view/partial/single-content.php:205
 msgid "Apply Procedure Title"
 msgstr ""
 
-#: admin/view/partial/single-content.php:29
+#: admin/view/partial/single-content.php:213
 msgid "Apply Procedure Content"
+msgstr ""
+
+#: admin/view/partial/single-content.php:221
+msgid "Hide Apply Button"
+msgstr ""
+
+#: admin/view/partial/single-content.php:228
+msgid "Apply Button Text"
+msgstr ""
+
+#: admin/view/partial/single-style.php:18
+msgid "Container"
+msgstr ""
+
+#: admin/view/partial/single-style.php:23
+msgid "Background Color"
+msgstr ""
+
+#: admin/view/partial/single-style.php:55
+msgid "Job Info"
+msgstr ""
+
+#: admin/view/partial/single-style.php:70
+msgid "Apply Button"
+msgstr ""
+
+#: admin/view/partial/single-style.php:75
+msgid "Button Color"
 msgstr ""
 
 #: core/job_application.php:20
@@ -453,23 +570,15 @@ msgstr ""
 msgid "Apply Now"
 msgstr ""
 
-#: front/view/listing.php:65
+#: front/view/listing.php:76
 msgid "Closed"
 msgstr ""
 
-#: front/view/listing.php:82
+#: front/view/listing.php:98
 msgid "Years"
 msgstr ""
 
-#: front/view/listing.php:93
-msgid "Location"
-msgstr ""
-
-#: front/view/listing.php:109
-msgid "Job Type"
-msgstr ""
-
-#: front/view/listing.php:129
+#: front/view/listing.php:166
 msgid "No Jobs found"
 msgstr ""
 
@@ -483,40 +592,4 @@ msgstr ""
 
 #: front/view/search.php:77
 msgid "All Job Type"
-msgstr ""
-
-#: front/view/single.php:84
-msgid "Overview"
-msgstr ""
-
-#: front/view/single.php:104
-msgid "Specific Skills"
-msgstr ""
-
-#: front/view/single.php:120
-msgid "Responsible For"
-msgstr ""
-
-#: front/view/single.php:136
-msgid "Additional Requirements"
-msgstr ""
-
-#: front/view/single.php:171
-msgid "Educational Requirements"
-msgstr ""
-
-#: front/view/single.php:181
-msgid "Experience Requirements"
-msgstr ""
-
-#: front/view/single.php:210
-msgid "Salary"
-msgstr ""
-
-#: front/view/single.php:226
-msgid "Other Benefits"
-msgstr ""
-
-#: front/view/single.php:272
-msgid "Apply Online"
 msgstr ""
