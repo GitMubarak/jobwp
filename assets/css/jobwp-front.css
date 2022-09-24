@@ -7,9 +7,10 @@
 }
 
 .jobwp-listing-body-container {
-    margin: 20px 0;
+    margin: 20px auto;
     border: 0px solid #000;
     width: 100%;
+    max-width: 1150px;
 }
 
 .primary-color {
@@ -81,6 +82,37 @@ div.jobwp-list-bottom-item {
 }
 
 
+/* Grid Layout Started */
+
+.jobwp-listing-body-container.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.jobwp-listing-body-container.grid .jobwp-item {
+    margin-bottom: 0;
+}
+
+.jobwp-listing-body-container.grid .jobwp-item .jobwp-bottom {
+    border: 0px solid #000;
+    display: inline-block;
+    width: 100%;
+}
+
+.jobwp-listing-body-container.grid .jobwp-item .jobwp-list-bottom-item {
+    display: block;
+    width: 100%;
+}
+
+.jobwp-listing-body-container.grid .jobwp-item .pull-right {
+    float: left;
+}
+
+
+/* Grid Layout Ended */
+
+
 /* Listing Ended */
 
 
@@ -89,11 +121,12 @@ div.jobwp-list-bottom-item {
 .jobwp-search-container {
     border: 1px solid #ddd;
     width: 100%;
+    max-width: 1150px;
     display: grid;
     grid-gap: 10px;
     padding: 10px;
     grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
-    margin-bottom: 10px;
+    margin: 10px auto;
     background: #F2F2F2;
 }
 
@@ -420,8 +453,17 @@ span.wpsd-read-before-apply-border {
     .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
         margin: auto;
     }
+    .jobwp-listing-body-container.grid {
+        display: block;
+    }
+    .jobwp-item {
+        margin-bottom: 10px;
+    }
+    .jobwp-item .jobwp-job-title a.jobwp-job-title-a {
+        font-size: 18px;
+    }
     .jobwp-bottom {
-        border: 1px solid #000;
+        border: 0px solid #000;
         display: inline-block;
         width: 100%;
     }

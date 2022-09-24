@@ -44,7 +44,7 @@ $jobwpQueryArr = apply_filters( 'jobwp_front_main_query_array', $jobwpQueryArrPa
 
 $jobwpJobs = new WP_Query( $jobwpQueryArr );
 ?>
-<div class="jobwp-listing-body-container">
+<div class="jobwp-listing-body-container grid1">
     <?php
     if ( $jobwpJobs->have_posts() ) {
 
@@ -82,7 +82,10 @@ $jobwpJobs = new WP_Query( $jobwpQueryArr );
                         ?>
                         <div class="jobwp-list-bottom-item pull-left">
                             <i class="fa fa-briefcase" aria-hidden="true"></i>
-                            <strong class="primary-color"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?>:</strong> <span class="ng-binding"><?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?></span>
+                            <strong class="primary-color"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?>:</strong>
+                            <span class="ng-binding">
+                                <?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?>
+                            </span>
                         </div>
                         <?php
                     }
@@ -91,7 +94,10 @@ $jobwpJobs = new WP_Query( $jobwpQueryArr );
                         ?>
                         <div class="jobwp-list-bottom-item pull-right">
                             <i class="fa fa-calendar-days" aria-hidden="true"></i>
-                            <strong class="primary-color"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?>:</strong> <span class="ng-binding"><?php esc_html_e( $jobwpDeadline ); ?></span>
+                            <strong class="primary-color"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?>:</strong>
+                            <span class="ng-binding">
+                                <?php esc_html_e( $jobwpDeadline ); ?>
+                            </span>
                         </div>
                         <?php
                     }
@@ -103,16 +109,17 @@ $jobwpJobs = new WP_Query( $jobwpQueryArr );
                         ?>
                         <div class="jobwp-list-bottom-item pull-left">
                             <i class="fa-solid fa-location-dot"></i>
-                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_loc_lbl_txt ); ?>:</strong>
-                                <?php
-                                if ( ! empty( $jobs_location ) ) {
-                                    $jobs_location_arr = array();
-                                    foreach( $jobs_location as $location ) {
-                                        $jobs_location_arr[] = $location->name . '';
-                                    }
-                                    echo implode( ', ', $jobs_location_arr );   
+                            <strong class="primary-color"><?php esc_html_e( $jobwp_list_loc_lbl_txt ); ?>:</strong>
+                            <span>
+                            <?php
+                            if ( ! empty( $jobs_location ) ) {
+                                $jobs_location_arr = array();
+                                foreach( $jobs_location as $location ) {
+                                    $jobs_location_arr[] = $location->name . '';
                                 }
-                                ?>
+                                echo implode( ', ', $jobs_location_arr );   
+                            }
+                            ?>
                             </span>
                         </div>
                         <?php
@@ -121,17 +128,18 @@ $jobwpJobs = new WP_Query( $jobwpQueryArr );
                     if ( ! $jobwp_list_display_jtype ) {
                         ?>
                         <div class="jobwp-list-bottom-item pull-right">
-                            <i class="fa-solid fa-typr-cap"></i>
-                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_job_type_lbl_txt ); ?>:</strong>
-                                <?php
-                                if ( ! empty( $jobs_nature ) ) {
-                                    $jobs_nature_arr = array();
-                                    foreach( $jobs_nature as $type ) {
-                                        $jobs_nature_arr[] = $type->name . '';
-                                    }
-                                    echo implode( ', ', $jobs_nature_arr );   
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <strong class="primary-color"><?php esc_html_e( $jobwp_list_job_type_lbl_txt ); ?>:</strong>
+                            <span>
+                            <?php
+                            if ( ! empty( $jobs_nature ) ) {
+                                $jobs_nature_arr = array();
+                                foreach( $jobs_nature as $type ) {
+                                    $jobs_nature_arr[] = $type->name . '';
                                 }
-                                ?>
+                                echo implode( ', ', $jobs_nature_arr );   
+                            }
+                            ?>
                             </span>
                         </div>
                         <?php
