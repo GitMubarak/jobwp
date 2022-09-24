@@ -28,6 +28,9 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
     }
 }
 
+
+$jobwp_list_layout = isset( $jobwpAttr['layout'] ) ? $jobwpAttr['layout'] : $jobwp_list_layout;
+
 // Main Query Arguments
 $jobwpQueryArrParams = array(
     'post_type'   => 'jobs',
