@@ -5,6 +5,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post;
 
+$jobwpGeneralSettings = $this->jobwp_get_general_settings();
+//print_r( $jobwpGeneralSettings );
+foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
+    if ( isset( $jobwpGeneralSettings[$option_name] ) ) {
+        ${"" . $option_name} = $option_value;
+    }
+}
+
 $jobwpListingContent = $this->jobwp_get_listing_content_settings();
 //print_r( $jobwpListingContent );
 foreach ( $jobwpListingContent as $option_name => $option_value ) {
@@ -44,7 +52,7 @@ $jobwpQueryArr = apply_filters( 'jobwp_front_main_query_array', $jobwpQueryArrPa
 
 $jobwpJobs = new WP_Query( $jobwpQueryArr );
 ?>
-<div class="jobwp-listing-body-container grid1">
+<div class="jobwp-listing-body-container <?php esc_attr_e( $jobwp_list_layout ) ?>">
     <?php
     if ( $jobwpJobs->have_posts() ) {
 

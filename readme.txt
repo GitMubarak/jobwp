@@ -56,6 +56,7 @@ After an applicant apply for a job, employer can see that application instantly 
 * Apply Job Online
 * Job Application Panel
 * Admin notification email
+* Two layouts added - List/Grid
 
 
 **✅ Options In Listing Page Settings**
@@ -169,6 +170,7 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shortcode [jobwp_
 * Detail mobile responsive improved
 * List job info item show hide option added
 * List mobile responsive improved
+* Two layouts added - List/Grid
 
 = 1.4 =
 * Font Awesome Free 6.1.1 integrated

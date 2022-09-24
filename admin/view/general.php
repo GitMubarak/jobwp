@@ -16,7 +16,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
         <h2><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;<?php _e('General Settings', JOBWP_TXT_DOMAIN); ?></h2>
     </div>
 
-    <?php 
+    <?php
     if ( $jobwpGeneralMessage ) {
         $this->jobwp_display_notification('success', 'Your information updated successfully.');
         echo '<br>';
@@ -37,6 +37,18 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                             <td>
                                 <input type="text" name="jobwp_admin_noti_email" id="jobwp_admin_noti_email" class="regular-text" value="<?php esc_attr_e( $jobwp_admin_noti_email ); ?>" />
                                 <code><?php _e('An email will sent to this email when a candidate submit an applicaiton.', JOBWP_TXT_DOMAIN); ?></code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label><?php _e('Job List Layout', JOBWP_TXT_DOMAIN); ?></label>
+                            </th>
+                            <td>
+                                <input type="radio" name="jobwp_list_layout" id="jobwp_list_layout_list" value="list" <?php echo ( 'list' === $jobwp_list_layout ) ? 'checked' : ''; ?> >
+                                <label for="jobwp_list_layout_list"><span></span><?php _e('List', JOBWP_TXT_DOMAIN); ?></label>
+                                &nbsp;&nbsp;
+                                <input type="radio" name="jobwp_list_layout" id="jobwp_list_layout_grid" value="grid" <?php echo ( 'grid' === $jobwp_list_layout ) ? 'checked' : ''; ?> >
+                                <label for="jobwp_list_layout_grid"><span></span><?php _e('Grid', JOBWP_TXT_DOMAIN); ?></label>
                             </td>
                         </tr>
                     </table>

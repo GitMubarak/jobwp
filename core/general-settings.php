@@ -38,6 +38,11 @@ trait JobwpGeneralSettings
                 'type'      => 'email',
                 'default'   => '',
             ],
+            [
+                'name'      => 'jobwp_list_layout',
+                'type'      => 'string',
+                'default'   => 'list',
+            ],
         ];
     }
 }

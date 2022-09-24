@@ -456,7 +456,8 @@ span.wpsd-read-before-apply-border {
     .jobwp-listing-body-container.grid {
         display: block;
     }
-    .jobwp-item {
+    .jobwp-item,
+    .jobwp-listing-body-container.grid .jobwp-item {
         margin-bottom: 10px;
     }
     .jobwp-item .jobwp-job-title a.jobwp-job-title-a {
