@@ -43,7 +43,7 @@ There are multiple layouts available where you can display jobs with a list or g
 **🌟 Key Features:**
 
 * Easy to install and use
-* Fully integrated in WordPress
+* Option to use external form in the application form
 * Fully responsive for any device
 * Translation Ready
 * Display job listing in a career page

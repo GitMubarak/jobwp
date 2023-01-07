@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-09-24 22:03+0600\n"
+"POT-Creation-Date: 2023-01-08 03:39+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -48,13 +48,13 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:208 front/view/apply-form.php:23
-#: front/view/apply-form.php:24
+#: admin/cls-jobwp-admin.php:208 front/view/apply.php:22
+#: front/view/apply.php:23
 msgid "Email"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:209 front/view/apply-form.php:28
-#: front/view/apply-form.php:29
+#: admin/cls-jobwp-admin.php:209 front/view/apply.php:27
+#: front/view/apply.php:28
 msgid "Cover Letter"
 msgstr ""
 
@@ -305,23 +305,35 @@ msgstr ""
 msgid "Admin Notification Email"
 msgstr ""
 
-#: admin/view/general.php:39
+#: admin/view/general.php:40
 msgid "An email will sent to this email when a candidate submit an applicaiton."
 msgstr ""
 
-#: admin/view/general.php:44
+#: admin/view/general.php:45
 msgid "Job List Layout"
 msgstr ""
 
-#: admin/view/general.php:48
+#: admin/view/general.php:49
 msgid "List"
 msgstr ""
 
-#: admin/view/general.php:51
+#: admin/view/general.php:52
 msgid "Grid"
 msgstr ""
 
-#: admin/view/general.php:58 admin/view/partial/listing-content.php:94
+#: admin/view/general.php:57
+msgid "Use External Apply Form"
+msgstr ""
+
+#: admin/view/general.php:66
+msgid "External Apply Form Shortcode"
+msgstr ""
+
+#: admin/view/general.php:71
+msgid "You can use external form instead of default application form. Like WPForms, Contact Form etc."
+msgstr ""
+
+#: admin/view/general.php:78 admin/view/partial/listing-content.php:94
 #: admin/view/partial/listing-style.php:65
 #: admin/view/partial/single-content.php:238
 #: admin/view/partial/single-style.php:84
@@ -546,27 +558,31 @@ msgstr ""
 msgid "Thank you for your application"
 msgstr ""
 
-#: front/view/apply-form.php:8
+#: freemius/templates/account/partials/site.php:339
+msgid " "
+msgstr ""
+
+#: front/view/apply.php:6
 msgid "Apply for this position"
 msgstr ""
 
-#: front/view/apply-form.php:18 front/view/apply-form.php:19
+#: front/view/apply.php:17 front/view/apply.php:18
 msgid "Full Name"
 msgstr ""
 
-#: front/view/apply-form.php:33
+#: front/view/apply.php:32
 msgid "Upload CV/Resume"
 msgstr ""
 
-#: front/view/apply-form.php:34
+#: front/view/apply.php:33
 msgid "Attach your resume. Max size 2mb"
 msgstr ""
 
-#: front/view/apply-form.php:36
+#: front/view/apply.php:35
 msgid "Allowed Type(s): .pdf"
 msgstr ""
 
-#: front/view/apply-form.php:40
+#: front/view/apply.php:39
 msgid "Apply Now"
 msgstr ""
 
@@ -592,4 +608,8 @@ msgstr ""
 
 #: front/view/search.php:77
 msgid "All Job Type"
+msgstr ""
+
+#: front/view/single.php:42
+msgid "Sorry, your nonce did not verify."
 msgstr ""
