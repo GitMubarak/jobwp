@@ -43,6 +43,16 @@ trait JobwpGeneralSettings
                 'type'      => 'string',
                 'default'   => 'list',
             ],
+            [
+                'name'      => 'jobwp_ext_application_form',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_ext_application_form_shortcode',
+                'type'      => 'text',
+                'default'   => '',
+            ],
         ];
     }
 }

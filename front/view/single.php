@@ -373,10 +373,18 @@ include JOBWP_PATH . 'assets/css/single.php';
     ?>
 
 </div>
-<?php
-// Load Apply Form
-//include JOBWP_PATH . 'front/view/apply-form.php';
-echo do_shortcode( '[jobwp_apply_form]' );
 
-get_footer(); 
+<!-- Application form modal -->
+<div id="jobwp-apply-form-modal" class="jobwp-apply-form-modal">
+    <?php
+    if ( $jobwp_ext_application_form ) {
+        echo do_shortcode( stripslashes( $jobwp_ext_application_form_shortcode ) );
+    } else {
+        echo do_shortcode( '[jobwp_apply_form]' );
+    }
+    ?>
+</div>
+
+<?php
+    get_footer(); 
 ?>

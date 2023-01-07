@@ -305,6 +305,7 @@ div.jobwp-list-bottom-item {
     display: inline-block !important;
     line-height: 36px !important;
     height: 60px !important;
+    text-decoration: none;
 }
 
 .jobwp-primary-button:hover {
@@ -359,6 +360,12 @@ span.wpsd-read-before-apply-border {
 
 /* Apply Now Started */
 
+#jobwp-apply-form-modal {
+    padding: 20px;
+    overflow-y: scroll;
+    height: 650px!important;
+}
+
 .error-message {
     color: #f00;
     font-size: 14px;
@@ -369,14 +376,13 @@ span.wpsd-read-before-apply-border {
     border: 0px;
     font-size: 30px;
     width: 100%;
-    padding: 20px 0 0 30px;
+    padding: 20px 0 0 10px;
     font-weight: 600;
 }
 
 .jobwp-apply-form {
     border: 0px solid #000;
     width: 100%;
-    padding: 20px;
 }
 
 .jobwp-field-row {

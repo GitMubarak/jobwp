@@ -201,6 +201,8 @@ Now go to your detail page and refresh it.
 * Apply form nonce field verified
 * Application table drop issue fixed
 * Freemius sdk updated
+* Modal css fixed
+* Option to use external form in the application form
 
 = 1.5 =
 * Location label text option added
