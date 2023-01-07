@@ -1,7 +1,7 @@
 === WordPress Job Board and Recruitment Plugin - JobWP ===
 Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
-Tags: Jobs, Job Board, Recruitment, Job Listing, Career, 
+Tags: job manager, job listing, job board, job management, job lists, job list, job, jobs, company, hiring, employment, employer, employees, candidate, freelance, internship, job listings, positions, board, application, hiring, listing, manager, recruiting, recruitment, talent
 Requires at least: 5.2
 Tested up to: 6.0.2
 Stable tag: 1.5
@@ -9,31 +9,55 @@ Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WordPress Job Listing, Career and Recruitment Plugin to display job listing in a career page.
+Display job listings in multiple layouts, and allow users to apply directly directly to your site.
 
 == Description ==
-
-[__Live Demo__](https://hmplugin.com/demo/jobwp-demo/) | [__More Info__](https://hmplugin.com/wordpress-plugins/jobwp/) | [__Live Chat__](https://hmplugin.com/wordpress-plugins/jobwp/) | [__Support__](https://hmplugin.com/contact/)
-
-= Overview =
 
 **JobWP** is the **Easiest Job Board, Career and Recruitment Plugin for WordPress** to display job listing in a career page.
 
 Employer can add multiple job listings and can show them on a career page by inserting [jobwp_listing] shortcode.
-Applicants can see their jobs, serch by category or job keywords/title. If they find any suitable job they can apply directly via the job application form.
+Applicants can apply directly via the job application form.
 After an applicant apply for a job, employer can see that application instantly in the Application List page.
 
+**How It Works!**
 
-**🌟 Plugin Features:**
+[youtube https://youtu.be/ZtbjdFyas90]
+
+
+= ✅ Fully Customizable =
+
+With this job board plugin you can customize your job listing very easily and extensively. You active, inactive a job, you can show hide and change colors and font size of your job info.
+
+= ✅ Accept Online Application =
+
+Job seeker can see their jobs, serch by category or job keywords or title. If they find any suitable job they can apply directly to a specific job. An apply online button is available in the job detail page which will open an application form where applicants can apply easily.
+
+= ✅ Multiple Layouts =
+
+There are multiple layouts available where you can display jobs with a list or grid view. You can display the layouts in different pages via shortcoded option. 
+
+[__Live Demo__](http://jobwp.hmplugin.com/demo/)
+
+[Read more about JobWP](http://jobwp.hmplugin.com/).
+
+**🌟 Key Features:**
 
 * Easy to install and use
 * Fully integrated in WordPress
 * Fully responsive for any device
-* Shortcoded
-* Custom Post Type
 * Translation Ready
 * Display job listing in a career page
-* Details job single page
+* Two layouts - List and Grid view
+* Display job details in a single page
+* Lots of job informations
+* Job search panel
+* Applicants can apply directly to a job
+* Instant notification email when an application is submitted
+* Admin application list panel
+
+
+**✅ Available Job Information**
+
 * Job overview
 * Year of Experience
 * Number of Vacancies
@@ -43,20 +67,20 @@ After an applicant apply for a job, employer can see that application instantly 
 * Job Nature - Full time / part time etc.
 * Job Level - Sr. / Jr. Position
 * Job Location
-* Job Responsibilities - Allows multiple
-* Skills Required - Allows multiple
-* Educational Requirements - Allows multiple
-* Additional Requirements - Allows multiple
-* Salary - Allows multiple
-* Other Benefits - Allows multiple
+* Job Responsibilities
+* Skills Required
+* Educational Requirements
+* Additional Requirements
+* Salary
+* Other Benefits
+
+**✅ Search Panel Items**
+
 * Search by Job Title
 * Search by Job Category
 * Search by Job Type
 * Search by Job Location
-* Apply Job Online
-* Job Application Panel
-* Admin notification email
-* Two layouts added - List/Grid
+
 
 
 **✅ Options In Listing Page Settings**
@@ -101,20 +125,18 @@ If you find this plugin helpful, feel free to give us your valuable review. Rate
 
 **🔥 Other Plugins from [HM Plugin](https://hmplugin.com)**
 
-👉 [Worldwide Breaking News Headlines](https://wordpress.org/plugins/worldwide-breaking-news-headlines/) Breaking News, Headlines Widget Plugin
-👉 [WP Top News](https://wordpress.org/plugins/wp-top-news/) Top News, Breaking News, Headlines Shortcoded Plugin
-👉 [Tiny Bar](https://wordpress.org/plugins/tiny-bar/) Display a bar with a message and button at the Top or Bottom of your page
-👉 [WP Books Gallery](https://wordpress.org/plugins/wp-books-gallery/) Display Books Gallery with shortcoded
-👉 [WordPress Stripe Donation](https://wordpress.org/plugins/wp-stripe-donation/) This plugin allows you to collect donations via Stripe
-👉 [HM – Cool Author Box](https://wordpress.org/plugins/hm-cool-author-box-widget/) Author Box plugin widget to display author info
-👉 [HM Resume Manager](https://wordpress.org/plugins/hm-resume-manager/) A resume manager plugin
-👉 [HM Product Catalog](https://wordpress.org/plugins/hm-product-catalog/) A product catalog plugin
-👉 [HM Wc Product Advertiser](https://wordpress.org/plugins/hm-wc-product-advertiser/) Wocommerce Product Advertiser
-👉 [WP Scroll To Post](https://wordpress.org/plugins/wp-scroll-to-post/) Display random post(Single) at the bottom right corner
-👉 [HM Recent Posts Widget](https://wordpress.org/plugins/hm-recent-posts-widget/) Ticker Post plugin
-👉 [WP Alert Bars](https://wordpress.org/plugins/wp-alert-bars/) Notification/Alert box Plugin in Post/Page
-👉 [FaceBook LikeBox](https://wordpress.org/plugins/hm-simple-facebook-page/) A FaceBook LikeBox Widget
-👉 [Display FAQs](https://wordpress.org/plugins/wp-display-faq/) Display FAQs in your page
+👉 [WordPress Books Showcase Plugin](https://wordpress.org/plugins/wp-books-gallery/) Create an online digital library to sell and affiliate books
+👉 [WordPress Donation Plugin](https://wordpress.org/plugins/wp-stripe-donation/) Create a form to collect donation and payment via Stripe payment gateway
+👉 [WordPress News Plugin](https://wordpress.org/plugins/wp-top-news/) Display internal and external news in various layouts
+👉 [WordPress Notification Bar Plugin](https://wordpress.org/plugins/tiny-bar/) Dsiplay message and a button at the top or bottom of your webpage
+👉 [WordPress Author Bio Box Plugin](https://wordpress.org/plugins/hm-cool-author-box-widget/) Displays an author box / author info / auhor bio to your website
+👉 [WordPress Logo Showcase Plugin](https://wordpress.org/plugins/hm-logo-showcase/) Easiest client, brand logo showcase plugin to display logos on your website
+👉 [WordPress Resume Manager Plugin](https://wordpress.org/plugins/hm-resume-manager/) Display and manage personal resume or CV at your WordPress webpage
+👉 [WordPress Restaurant Menu Plugin](https://wordpress.org/plugins/menukaart/) Simplest plugin that displays food items, menus in your webpage
+👉 [WordPress Job Board and Recruitment Plugin](https://wordpress.org/plugins/jobwp/) Easiest Job Board, Career and Recruitment Plugin to display job listing in a career page
+👉 [WordPress Product Showcase Plugin](https://wordpress.org/plugins/hm-product-catalog/) Display products with various informations on your website
+👉 [WordPress Testimonial Plugin](https://wordpress.org/plugins/hm-testimonial/) Displays client’s testimonial, review or quote in multiple ways
+👉 [WordPress FAQ Plugin](https://wordpress.org/plugins/wp-display-faq/) WordPress FAQ Plugin which will display various FAQs in your website
 
 
 == Installation ==
@@ -140,9 +162,22 @@ Install JobWp as a regular WordPress plugin. Here are different ways to install 
 
 == Frequently Asked Questions ==
 
-= I have installed the plugin. What next? =
+= How can I Display Job? =
 
-Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shortcode [jobwp_listing] and use it in any page.
+After activating the plugin, you will see “WP Jobs” in WordPress Admin Dashboard.
+
+Firstly, Go to “Add New” and add your Job there.
+
+Next, create a page and in the page editor put the shortcode [jobwp_listing] and Update it.
+You will see a Job Listing on that page.
+
+= Job detail page is not working! Showing 404 not found! =
+
+Please go to your admin panel settings -> Permalinks.
+
+After that just press Save Changes button.
+
+Now go to your detail page and refresh it.
 
 
 == Screenshots ==
@@ -151,10 +186,12 @@ Please go to Admin -> WP Jobs menu and Add your Jobs. Copy the Shortcode [jobwp_
 2. Showing Jeb Detail Page
 3. Job Application Form
 4. Application list panel in admin
-3. Listing page content settings
-4. Listing page styles settings
-5. Details page content settings
-6. Details page styles settings
+5. Listing page content settings
+6. Listing page styles settings
+7. Details page content settings
+8. Details page styles settings
+9. Job listing grid view
+10. Job listing minimal view
 
 
 == Changelog ==
