@@ -9,7 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
     <form id="jobwp_upload_form" action="<?php echo get_permalink(); ?>" enctype="multipart/form-data" method="POST" autocomplete="off">
 
-        <?php if( function_exists('wp_nonce_field') ) { wp_nonce_field('jobwp_apply_nonce_field'); } ?>
+        <?php //if ( function_exists('wp_nonce_field') ) { wp_nonce_field('jobwp_apply_nonce_field'); } ?>
+        <?php wp_nonce_field( 'jobwp_apply_form_action', 'jobwp_apply_form_nonce_field' ); ?>
         <input type="hidden" value="<?php echo the_title(); ?>" id="jobwp_apply_for" name="jobwp_apply_for">
 
         <div class="jobwp-apply-form">

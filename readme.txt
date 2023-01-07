@@ -198,6 +198,7 @@ Now go to your detail page and refresh it.
 
 = 1.6 =
 * Job detail page not found issue fixed
+* Apply form nonce field verified
 * Freemius sdk updated
 
 = 1.5 =

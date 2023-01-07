@@ -76,7 +76,7 @@ class JobWp_Front
 	function jobwp_load_shortcode() {
 
 		add_shortcode( 'jobwp_listing', array( $this, 'jobwp_load_shortcode_view' ) );
-		add_shortcode( 'jobwp_apply_now', array( $this, 'jobwp_load_shortcode_apply_now' ) );
+		add_shortcode( 'jobwp_apply_form', array( $this, 'jobwp_load_shortcode_apply_now' ) );
 	}
 
 	/**
@@ -94,7 +94,7 @@ class JobWp_Front
 	/**
 	 * Function for loading shortcode apply now view
 	*/
-	function jobwp_load_shortcode_apply_now( $jobwpAttr ) {
+	function jobwp_load_shortcode_apply_now( $applyFrmAttr ) {
 
 		$output = '';
 		ob_start();

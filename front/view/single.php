@@ -36,7 +36,14 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
 
 // Upload Resume
 if ( isset( $_FILES['jobwp_upload_resume']['name'] ) ) {
-    $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume($_POST, $_FILES, $jobwp_admin_noti_email);
+    
+    if ( ! isset( $_POST['jobwp_apply_form_nonce_field'] ) 
+        || ! wp_verify_nonce( $_POST['jobwp_apply_form_nonce_field'], 'jobwp_apply_form_action' ) ) {
+        $resumeUploadMsg = __('Sorry, your nonce did not verify.', JOBWP_TXT_DOMAIN);
+    } else {
+        $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume($_POST, $_FILES, $jobwp_admin_noti_email);
+    }
+    
 }
 
 // Load Styling
@@ -367,8 +374,9 @@ include JOBWP_PATH . 'assets/css/single.php';
 
 </div>
 <?php
-// Load Search Panel
-include JOBWP_PATH . 'front/view/apply-form.php';
+// Load Apply Form
+//include JOBWP_PATH . 'front/view/apply-form.php';
+echo do_shortcode( '[jobwp_apply_form]' );
 
 get_footer(); 
 ?>
