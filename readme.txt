@@ -3,13 +3,13 @@ Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: job manager, job listing, job board, job management, job lists, job list, job, jobs, company, hiring, employment, employer, employees, candidate, freelance, internship, job listings, positions, board, application, hiring, listing, manager, recruiting, recruitment, talent
 Requires at least: 5.2
-Tested up to: 6.0.2
-Stable tag: 1.5
+Tested up to: 6.1.1
+Stable tag: 1.6
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Display job listings in multiple layouts, and allow users to apply directly directly to your site.
+Display job listings in a career page and allow users to apply directly to your site.
 
 == Description ==
 
@@ -195,6 +195,10 @@ Now go to your detail page and refresh it.
 
 
 == Changelog ==
+
+= 1.6 =
+* Job detail page not found issue fixed
+* Freemius sdk updated
 
 = 1.5 =
 * Location label text option added
