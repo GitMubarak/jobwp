@@ -75,8 +75,8 @@ class JobWp_Master {
 		
 		$table_name = $wpdb->prefix . 'jobwp_applied';
 		
-		$sqlTblExist = "DROP TABLE IF EXISTS $table_name";
-		$wpdb->query( $sqlTblExist );
+		//$sqlTblExist = "DROP TABLE IF EXISTS $table_name";
+		//$wpdb->query( $sqlTblExist );
 		
 		if ($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name) {
 			//table not in database. Create new table
