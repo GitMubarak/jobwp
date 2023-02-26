@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/mhmrajib
 Tags: job manager, job listing, job board, job management, job lists, job list, job, jobs, company, hiring, employment, employer, employees, candidate, freelance, internship, job listings, positions, board, application, hiring, listing, manager, recruiting, recruitment, talent
 Requires at least: 5.2
 Tested up to: 6.1.1
-Stable tag: 1.6
+Stable tag: 1.7
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -36,9 +36,9 @@ Job seeker can see their jobs, serch by category or job keywords or title. If th
 
 There are multiple layouts available where you can display jobs with a list or grid view. You can display the layouts in different pages via shortcoded option. 
 
-[__Live Demo__](http://jobwp.hmplugin.com/demo/)
+[__Live Demo__](https://wpjoblisting.com/demo/)
 
-[Read more about JobWP](http://jobwp.hmplugin.com/).
+[Read more about JobWP](https://wpjoblisting.com/)
 
 **🌟 Key Features:**
 
@@ -195,6 +195,9 @@ Now go to your detail page and refresh it.
 
 
 == Changelog ==
+
+= 1.7 =
+* Job detail
 
 = 1.6 =
 * Job detail page not found issue fixed
