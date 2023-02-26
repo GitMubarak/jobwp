@@ -197,7 +197,7 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 1.7 =
-* Job detail
+* Listing and detail settings bug fixed
 
 = 1.6 =
 * Job detail page not found issue fixed
