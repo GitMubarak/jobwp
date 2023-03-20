@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/mhmrajib
 Tags: job manager, job listing, job board, job management, job lists, job list, job, jobs, company, hiring, employment, employer, employees, candidate, freelance, internship, job listings, positions, board, application, hiring, listing, manager, recruiting, recruitment, talent
 Requires at least: 5.2
 Tested up to: 6.1.1
-Stable tag: 1.7
+Stable tag: 1.8
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -195,6 +195,9 @@ Now go to your detail page and refresh it.
 
 
 == Changelog ==
+
+= 1.8 =
+* Listing
 
 = 1.7 =
 * Listing and detail settings bug fixed
