@@ -33,8 +33,9 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 
 
 // Shortcoded Options
-$jobwp_list_layout = isset( $jobwpAttr['layout'] ) ? $jobwpAttr['layout'] : $jobwp_list_layout;
-$jobwp_limit = isset( $jobwpAttr['limit'] ) ? $jobwpAttr['limit'] : 10;
+$jobwp_list_layout  = isset( $jobwpAttr['layout'] ) ? $jobwpAttr['layout'] : $jobwp_list_layout;
+$jobwp_limit        = isset( $jobwpAttr['limit'] ) ? $jobwpAttr['limit'] : 10;
+$jobwp_category     = isset( $jobwpAttr['category'] ) ? $jobwpAttr['category'] : '';
 
 // Main Query Arguments
 $jobwpQueryArrParams = array(
@@ -54,7 +55,18 @@ $jobwpQueryArrParams = array(
 // If limit params found in shortcode
 if ( $jobwp_limit != '' ) {
     $jobwpQueryArrParams['posts_per_page'] = $jobwp_limit;
-  }
+}
+
+// If Category params found in shortcode
+if( $jobwp_category != '' ) {
+    $jobwpQueryArrParams['tax_query'] = array(
+        array(
+            'taxonomy'  => 'jobs_category',
+            'field'     => 'name',
+            'terms'     => $jobwp_category
+        )
+    );
+}
 
 
 // Load Search Panel
