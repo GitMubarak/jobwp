@@ -116,6 +116,53 @@ div.jobwp-list-bottom-item {
 /* Listing Ended */
 
 
+/* Pagination Started */
+
+.jobwp-pagination {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.jobwp-pagination .page-numbers li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    margin: 0 2px 0 0;
+    border: 1px solid #DDD;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.jobwp-pagination .page-numbers li a {
+    color: #333;
+}
+
+.jobwp-pagination .page-numbers li a.page-numbers {
+    width: 48px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+div.jobwp-pagination>ul.page-numbers>li>span.page-numbers.current {
+    display: block;
+    background: #DDD;
+    color: #CC0000;
+}
+
+div.jobwp-pagination>ul.page-numbers>li:hover,
+div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
+    background: #DDD;
+}
+
+
+/* Pagination Ended */
+
+
 /* Search Started */
 
 .jobwp-search-container {

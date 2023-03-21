@@ -199,6 +199,7 @@ Now go to your detail page and refresh it.
 = 1.8 =
 * Limit shortcoded option added
 * Category shortcoded option added
+* Paginantion added
 
 = 1.7 =
 * Listing and detail settings bug fixed
