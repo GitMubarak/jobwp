@@ -201,6 +201,7 @@ div.jobwp-list-bottom-item {
     width: 50px;
     height: 45px;
     border: 1px solid #666666;
+    text-decoration: none;
 }
 
 .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh:hover {

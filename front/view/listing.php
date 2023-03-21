@@ -3,6 +3,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+// Load Styling
+include JOBWP_PATH . 'assets/css/listing.php';
+
 global $post;
 
 $jobwpGeneralSettings = $this->jobwp_get_general_settings();
@@ -29,7 +32,9 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 }
 
 
+// Shortcoded Options
 $jobwp_list_layout = isset( $jobwpAttr['layout'] ) ? $jobwpAttr['layout'] : $jobwp_list_layout;
+$jobwp_limit = isset( $jobwpAttr['limit'] ) ? $jobwpAttr['limit'] : 10;
 
 // Main Query Arguments
 $jobwpQueryArrParams = array(
@@ -46,8 +51,12 @@ $jobwpQueryArrParams = array(
     ),
 );
 
-// Load Styling
-include JOBWP_PATH . 'assets/css/listing.php';
+// If limit params found in shortcode
+if ( $jobwp_limit != '' ) {
+    $jobwpQueryArrParams['posts_per_page'] = $jobwp_limit;
+  }
+
+
 // Load Search Panel
 include JOBWP_PATH . 'front/view/search.php';
 

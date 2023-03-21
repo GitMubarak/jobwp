@@ -197,7 +197,7 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 1.8 =
-* Listing
+* Display limit shortcoded option added
 
 = 1.7 =
 * Listing and detail settings bug fixed
