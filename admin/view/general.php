@@ -42,7 +42,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                         </tr>
                         <tr>
                             <th scope="row">
-                                <label><?php _e('Job List Layout', JOBWP_TXT_DOMAIN); ?></label>
+                                <label><?php _e('Job Page Layout', JOBWP_TXT_DOMAIN); ?></label>
                             </th>
                             <td>
                                 <input type="radio" name="jobwp_list_layout" id="jobwp_list_layout_list" value="list" <?php echo ( 'list' === $jobwp_list_layout ) ? 'checked' : ''; ?> >
@@ -54,7 +54,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                         </tr>
                         <tr>
                             <th scope="row">
-                                <label for="jobwp_ext_application_form"><?php _e('Use External Apply Form', JOBWP_TXT_DOMAIN); ?>?</label>
+                                <label for="jobwp_ext_application_form"><?php _e('Use External Application Form', JOBWP_TXT_DOMAIN); ?>?</label>
                             </th>
                             <td>
                                 <input type="checkbox" name="jobwp_ext_application_form" class="jobwp_ext_application_form" id="jobwp_ext_application_form"
@@ -63,7 +63,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                         </tr>
                         <tr>
                             <th scope="row">
-                                <label><?php _e('External Apply Form Shortcode', JOBWP_TXT_DOMAIN); ?></label>
+                                <label><?php _e('External Application Form Shortcode', JOBWP_TXT_DOMAIN); ?></label>
                             </th>
                             <td>
                                 <input type="text" name="jobwp_ext_application_form_shortcode" id="jobwp_ext_application_form_shortcode" class="regular-text" value="<?php esc_attr_e( stripslashes( $jobwp_ext_application_form_shortcode ) ); ?>" />

@@ -21,7 +21,7 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                     <?php echo $jobwp_list_display_overview ? 'checked' : ''; ?> >
             </td>
             <th scope="row">
-                <label for="wbg_cat_label_txt"><?php _e('Word Lengtht', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label for="wbg_cat_label_txt"><?php _e('Word Lengtht', JOBWP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="number" name="jobwp_list_overview_length" class="medium-text" min="1" max="150" step="1" value="<?php esc_attr_e( $jobwp_list_overview_length ); ?>">
