@@ -8,7 +8,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 */
 class JobWp_Admin 
 {
-	use Jobwp_Core, JobwpGeneralSettings, Jobwp_Listing_Content_Settings, Jobwp_Listing_Styles_Settings, Jobwp_Single_Content_Settings, Jobwp_Single_Styles_Settings;
+	use Jobwp_Core, JobwpGeneralSettings, 
+	Jobwp_Listing_Content_Settings, 
+	Jobwp_Listing_Styles_Settings,
+	Jobwp_Search_Content_Settings,
+	Jobwp_Single_Content_Settings, 
+	Jobwp_Single_Styles_Settings;
 
 	private $jobwp_version;
 	private $jobwp_assets_prefix;
@@ -93,6 +98,15 @@ class JobWp_Admin
 
 		add_submenu_page(
 			$jobwp_cpt_menu,
+			__('Search Panel Settings', JOBWP_TXT_DOMAIN),
+			__('Search Panel Settings', JOBWP_TXT_DOMAIN),
+			'manage_options',
+			'jobwp-search-settings',
+			array($this, JOBWP_PRFX . 'search_settings'),
+		);
+
+		add_submenu_page(
+			$jobwp_cpt_menu,
 			__('Detail Page Settings', JOBWP_TXT_DOMAIN),
 			__('Detail Page Settings', JOBWP_TXT_DOMAIN),
 			'manage_options',
@@ -164,6 +178,31 @@ class JobWp_Admin
         $jobwpListingStyles = $this->jobwp_get_listing_styles_settings();
 
 		require_once JOBWP_PATH . 'admin/view/listing.php';
+	}
+
+	/**
+	 *	Search Settings Page
+	 */
+	function jobwp_search_settings() {
+
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+	
+		$jobwpTab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : null;
+
+		$jobwpSearchMessage = false;
+
+		// Content
+		if ( isset( $_POST['updateSearchContent'] ) ) {
+
+			$jobwpSearchMessage = $this->jobwp_set_search_content_settings( $_POST );
+
+		}
+
+		$jobwpSearchContent = $this->jobwp_get_search_content_settings();
+
+		require_once JOBWP_PATH . 'admin/view/search.php';
 	}
 
 	function jobwp_single_settings() {

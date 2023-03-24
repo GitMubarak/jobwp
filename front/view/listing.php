@@ -31,6 +31,14 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
     }
 }
 
+// Seaarch Content
+$jobwpSearchContent = $this->jobwp_get_search_content_settings();
+foreach ( $jobwpSearchContent as $sc_name => $sc_value ) {
+    if ( isset( $jobwpSearchContent[$sc_name] ) ) {
+        ${"" . $sc_name} = $sc_value;
+    }
+}
+
 // For Pagination
 if ( is_front_page() ) {
     $jobwp_paged   = ( get_query_var('page') ) ? get_query_var('page') : 1;
@@ -42,7 +50,7 @@ if ( is_front_page() ) {
 $jobwp_list_layout  = isset( $jobwpAttr['layout'] ) ? $jobwpAttr['layout'] : $jobwp_list_layout;
 $jobwp_limit        = isset( $jobwpAttr['limit'] ) ? $jobwpAttr['limit'] : 10;
 $jobwp_category     = isset( $jobwpAttr['category'] ) ? $jobwpAttr['category'] : '';
-$jobwp_search       = isset( $jobwpAttr['search'] ) ? $jobwpAttr['search'] : 'yes';
+$jobwp_search       = isset( $jobwpAttr['hide_search'] ) ? $jobwpAttr['hide_search'] : $jobwp_hide_search_panel; // on to hide
 
 // Main Query Arguments
 $jobwpQueryArrParams = array(
@@ -75,7 +83,7 @@ if( $jobwp_category != '' ) {
 
 
 // Load Search Panel
-if ( 'yes' === $jobwp_search ) {
+if ( 'on' !== $jobwp_search ) {
     include JOBWP_PATH . 'front/view/search.php';
 }
 
