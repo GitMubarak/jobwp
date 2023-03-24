@@ -39,14 +39,24 @@ trait Jobwp_Search_Content_Settings
                 'default'   => false,
             ],
             [
-                'name'      => 'jobwp_list_display_experience',
+                'name'      => 'jobwp_hide_search_keyword',
                 'type'      => 'boolean',
                 'default'   => false,
             ],
             [
-                'name'      => 'jobwp_list_exp_lbl_txt',
+                'name'      => 'jobwp_search_keyword_ph',
                 'type'      => 'text',
-                'default'   => 'Experience',
+                'default'   => 'Keyword',
+            ],
+            [
+                'name'      => 'jobwp_hide_search_category',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_search_category_ph',
+                'type'      => 'text',
+                'default'   => 'All Job Category',
             ],
         ];
     }

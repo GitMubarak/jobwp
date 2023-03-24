@@ -4,14 +4,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Search Items
-$jobwp_title        =  isset( $_GET['jobwp_title'] ) ? sanitize_text_field( $_GET['jobwp_title'] ) : '';
+$jobwp_title_s      =  isset( $_GET['jobwp_title_s'] ) ? sanitize_text_field( $_GET['jobwp_title_s'] ) : '';
 $jobwp_category_s   =  isset( $_GET['jobwp_category_s'] ) ? sanitize_text_field( $_GET['jobwp_category_s'] ) : '';
 $jobwp_type_s       =  isset( $_GET['jobwp_type_s'] ) ? sanitize_text_field( $_GET['jobwp_type_s'] ) : '';
 $jobwp_location_s   =  isset( $_GET['jobwp_location_s'] ) ? sanitize_text_field( $_GET['jobwp_location_s'] ) : '';
 
 // Search Query Ttitle
-if ( '' != $jobwp_title ) {
-    $jobwpQueryArrParams['s'] = $jobwp_title;
+if ( '' != $jobwp_title_s ) {
+    $jobwpQueryArrParams['s'] = $jobwp_title_s;
 }
 
 // Search Query Category
@@ -55,23 +55,32 @@ $jobwp_locations    = get_terms( array( 'taxonomy' => 'jobs_location', 'hide_emp
 
     <div class="jobwp-search-container">
         
-        <div class="jobwp-search-item">
-            <input type="text" name="jobwp_title" placeholder="<?php _e( 'Keyword', JOBWP_TXT_DOMAIN ); ?>" value="<?php esc_attr_e( $jobwp_title ); ?>">
-        </div>
-
-        <div class="jobwp-search-item">
-            <select id="jobwp_category_s" name="jobwp_category_s">
-                <option value=""><?php _e( 'All Job Category', JOBWP_TXT_DOMAIN ); ?></option>
-                <?php
-                foreach ( $jobwp_categories as $job_category ) {
+        <?php
+        if ( ! $jobwp_hide_search_keyword ) {
+            ?>
+            <div class="jobwp-search-item">
+                <input type="text" name="jobwp_title_s" placeholder="<?php esc_attr_e( $jobwp_search_keyword_ph ); ?>" value="<?php esc_attr_e( $jobwp_title_s ); ?>">
+            </div>
+            <?php
+        }
+        
+        if ( ! $jobwp_hide_search_category ) {
+            ?>
+            <div class="jobwp-search-item">
+                <select id="jobwp_category_s" name="jobwp_category_s">
+                    <option value=""><?php esc_attr_e( $jobwp_search_category_ph ); ?></option>
+                    <?php
+                    foreach ( $jobwp_categories as $job_category ) {
+                        ?>
+                        <option value="<?php esc_attr_e( $job_category->name ); ?>" <?php echo ( $jobwp_category_s == $job_category->name ) ? 'Selected' : ''; ?>><?php esc_html_e( $job_category->name ); ?></option>
+                        <?php 
+                    } 
                     ?>
-                    <option value="<?php esc_attr_e( $job_category->name ); ?>" <?php echo ( $jobwp_category_s == $job_category->name ) ? 'Selected' : ''; ?>><?php esc_html_e( $job_category->name ); ?></option>
-                    <?php 
-                } 
-                ?>
-            </select>
-        </div>
-
+                </select>
+            </div>
+            <?php
+        }
+        ?>
         <div class="jobwp-search-item">
             <select id="jobwp_type_s" name="jobwp_type_s">
                 <option value=""><?php _e( 'All Job Type', JOBWP_TXT_DOMAIN ); ?></option>

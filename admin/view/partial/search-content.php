@@ -22,17 +22,30 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label for="jobwp_list_display_experience"><?php _e('Hide Experience', JOBWP_TXT_DOMAIN); ?>?</label>
+                <label for="jobwp_hide_search_keyword"><?php _e('Hide Search Keyword', JOBWP_TXT_DOMAIN); ?>?</label>
             </th>
             <td>
-                <input type="checkbox" name="jobwp_list_display_experience" class="jobwp_list_display_experience" id="jobwp_list_display_experience"
-                    <?php echo $jobwp_list_display_experience ? 'checked' : ''; ?> >
+                <input type="checkbox" name="jobwp_hide_search_keyword" id="jobwp_hide_search_keyword" <?php echo $jobwp_hide_search_keyword ? 'checked' : ''; ?> >
             </td>
             <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Placeholder Text', JOBWP_TXT_DOMAIN); ?></label>
             </th>
             <td>
-                <input type="text" name="jobwp_list_exp_lbl_txt" id="jobwp_list_exp_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_exp_lbl_txt ); ?>" />
+                <input type="text" name="jobwp_search_keyword_ph" id="jobwp_search_keyword_ph" class="regular-text" value="<?php esc_attr_e( $jobwp_search_keyword_ph ); ?>" />
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label for="jobwp_hide_search_category"><?php _e('Hide Search Category', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="jobwp_hide_search_category" id="jobwp_hide_search_category" <?php echo $jobwp_hide_search_category ? 'checked' : ''; ?> >
+            </td>
+            <th scope="row">
+                <label><?php _e('Placeholder Text', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input type="text" name="jobwp_search_category_ph" id="jobwp_search_category_ph" class="regular-text" value="<?php esc_attr_e( $jobwp_search_category_ph ); ?>" />
             </td>
         </tr>
     </table>
