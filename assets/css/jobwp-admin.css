@@ -26,6 +26,11 @@ table.jobwp-single-style-settings-table tr th {
     font-weight: 600;
 }
 
+.manage-column.column-jobwp_list_sl {
+    width: 30px;
+    font-weight: 600;
+}
+
 
 /* Alert Bar Started */
 

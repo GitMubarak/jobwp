@@ -202,6 +202,7 @@ class JobWp_Admin
 	function jobwp_application_list() {
 
 		$jobwpColumns = array(
+			'cb'                		=> __('Select All', JOBWP_TXT_DOMAIN),
 			'jobwp_list_sl'				=> __('#', JOBWP_TXT_DOMAIN),
 			'jobwp_applied_for' 		=> __('Applied For', JOBWP_TXT_DOMAIN),
 			'jobwp_applicant_name'		=> __('Name', JOBWP_TXT_DOMAIN),
@@ -209,55 +210,12 @@ class JobWp_Admin
 			'jobwp_applicant_message'	=> __('Cover Letter', JOBWP_TXT_DOMAIN),
 			'jobwp_applicant_resume'	=> __('Resume', JOBWP_TXT_DOMAIN),
 			'jobwp_applied_on'			=> __('Date', JOBWP_TXT_DOMAIN),
+			'action'					=> __('Action', JOBWP_TXT_DOMAIN)
 		);
 
 		register_column_headers('jobwp-allication-table-column', $jobwpColumns);
 
-		$applications = $this->jobwp_get_all_applications();
-
-		$jobwpDir = wp_upload_dir();
-		$jobwpDir = $jobwpDir['baseurl'] . '/jobwp-resume';
-		?>
-		<div class="settings-banner">
-			<h2><i class="fa-solid fa-list-check"></i>&nbsp;<?php _e('Application Lists', JOBWP_TXT_DOMAIN); ?></h2>
-		</div>
-		<div id="jobwp-wrap-all" class="wrap">
-			<table class="wp-list-table widefat fixed striped posts" cellspacing="0" id="wpc_data_table">
-				<thead>
-					<tr>
-						<?php print_column_headers('jobwp-allication-table-column'); ?>
-					</tr>
-				</thead>
-				<tbody id="the-list">
-					<?php
-					$jL = 1;
-					if ( count( $applications ) > 0 ) {
-						foreach ( $applications as $application ) {
-							?>
-							<tr>
-								<td style="max-width: 50px;"><?php printf('%d', $jL); ?></td>
-								<td><?php printf('%s', $application->applied_for); ?></td>
-								<td><?php printf('%s', $application->applicant_name); ?></td>
-								<td><?php printf('%s', $application->applicant_email); ?></td>
-								<td><?php printf('%s', $application->applicant_message); ?></td>
-								<td><a href="<?php printf('%s/%s', $jobwpDir, $application->resume_name); ?>"><?php esc_html_e( $application->resume_name ); ?></a></td>
-								<td><?php printf('%s', date('D d M Y - h:i A', strtotime($application->applied_on))); ?>
-								</td>
-							</tr>
-							<?php 
-							$jL++;
-						}
-					}
-					?>
-				</tbody>
-				<tfoot>
-					<tr>
-						<?php print_column_headers('jobwp-allication-table-column', false); ?>
-					</tr>
-				</tfoot>
-			</table>
-		</div>
-		<?php
+		include_once JOBWP_PATH . 'admin/view/application_list.php';
 	}
 
 	/**
@@ -662,6 +620,18 @@ class JobWp_Admin
 		global $wpdb;
     	$table_name     = $wpdb->prefix . 'jobwp_applied';
 		return $wpdb->get_results($wpdb->prepare("SELECT * FROM $table_name WHERE %d ORDER BY job_id DESC", 1));
+	}
+
+	protected function jobwp_delete_single_application( $id ) {
+
+		global $wpdb;
+		$table_name = $wpdb->prefix . 'jobwp_applied';
+		
+		$success = $wpdb->query( $wpdb->prepare("DELETE FROM $table_name WHERE job_id = %d", $id) );
+
+		if ( $success ) {
+        	return __("Application has been deleted.", JOBWP_TXT_DOMAIN);
+		}
 	}
 }
 ?>
