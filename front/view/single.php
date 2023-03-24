@@ -128,6 +128,7 @@ include JOBWP_PATH . 'assets/css/single.php';
                     <!-- Skills -->
                     <?php
                     if ( ! $jobwp_single_hide_skills ) {
+                        if ( ! empty( $bo_career_skills ) ) {
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
@@ -135,21 +136,19 @@ include JOBWP_PATH . 'assets/css/single.php';
                             </div>
                             <div class="right-cell">
                                 <div class="custom-list text">
-                                <?php
-                                    if ( ! empty( $bo_career_skills ) ) {
-                                        echo wp_kses_post( $bo_career_skills );
-                                    }
-                                ?>
+                                    <?php echo wp_kses_post( $bo_career_skills ); ?>
                                 </div>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <?php
+                        }
                     }
                     ?>
                     <!-- Responsible -->
                     <?php
                     if ( ! $jobwp_single_hide_responsible ) {
+                        if ( ! empty( $bo_job_responsibilities ) ) {
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
@@ -157,21 +156,19 @@ include JOBWP_PATH . 'assets/css/single.php';
                             </div>
                             <div class="right-cell">
                                 <div class="custom-list text">
-                                <?php
-                                    if ( ! empty( $bo_job_responsibilities ) ) {
-                                        echo wp_kses_post( $bo_job_responsibilities );
-                                    }
-                                ?>
+                                    <?php echo wp_kses_post( $bo_job_responsibilities ); ?>
                                 </div>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <?php
+                        }
                     }
                     ?>
                     <!-- Additional -->
                     <?php
                     if ( ! $jobwp_single_hide_requirements ) {
+                        if ( ! empty( $bo_job_additional_requirements ) ) {
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
@@ -179,16 +176,13 @@ include JOBWP_PATH . 'assets/css/single.php';
                             </div>
                             <div class="right-cell">
                                 <div class="custom-list text">
-                                <?php
-                                    if ( ! empty( $bo_job_additional_requirements ) ) {
-                                        echo wp_kses_post( $bo_job_additional_requirements );
-                                    }
-                                ?>
+                                    <?php echo wp_kses_post( $bo_job_additional_requirements ); ?>
                                 </div>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <?php
+                        }
                     }
                     ?>
                     <!-- Job Nature -->
@@ -219,17 +213,19 @@ include JOBWP_PATH . 'assets/css/single.php';
                     <!-- Educational -->
                     <?php
                     if ( ! $jobwp_single_hide_education ) {
+                        if ( ! empty( $jobwp_edu_req ) ) {
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
                                 <h5 class="label"><?php esc_html_e( $jobwp_single_education_text ); ?></h5>
                             </div>
                             <div class="right-cell text">
-                                <p><?php esc_html_e( $jobwp_edu_req ); ?></p>
+                                <p><?php echo wp_kses_post( $jobwp_edu_req ); ?></p>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <?php
+                        }
                     }
                     ?>
                     <!-- Experience -->
@@ -251,6 +247,7 @@ include JOBWP_PATH . 'assets/css/single.php';
                     <!-- Location -->
                     <?php
                     if ( ! $jobwp_single_hide_loc ) {
+                        if ( ! empty( $jobs_location ) ) {
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
@@ -258,24 +255,23 @@ include JOBWP_PATH . 'assets/css/single.php';
                             </div>
                             <div class="right-cell text">
                                 <?php
-                                // Job Location
-                                if ( ! empty( $jobs_location ) ) {
                                     $jobs_location_arr = array();
                                     foreach( $jobs_location as $location ) {
                                         $jobs_location_arr[] = $location->name . '';
                                     }
-                                    echo implode( ', ', $jobs_location_arr );   
-                                }
+                                    echo implode( ', ', $jobs_location_arr );
                                 ?>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <?php
+                        }
                     }
                     ?>
                     <!-- Salary -->
                     <?php
                     if ( ! $jobwp_single_hide_salary ) {
+                        if ( ! empty( $bo_job_salary ) ) {
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
@@ -283,21 +279,19 @@ include JOBWP_PATH . 'assets/css/single.php';
                             </div>
                             <div class="right-cell">
                                 <div class="custom-list text">
-                                <?php
-                                    if ( ! empty( $bo_job_salary ) ) {
-                                        echo wp_kses_post( $bo_job_salary );
-                                    }
-                                ?>
+                                    <?php echo wp_kses_post( $bo_job_salary ); ?>
                                 </div>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <?php
+                        }
                     }
                     ?>
                     <!-- Other Benefits -->
                     <?php
                     if ( ! $jobwp_single_hide_benefit ) {
+                        if ( ! empty( $bo_other_benefits ) ) {
                         ?>
                         <div class="content-row">
                             <div class="left-cell">
@@ -305,16 +299,13 @@ include JOBWP_PATH . 'assets/css/single.php';
                             </div>
                             <div class="right-cell">
                                 <div class="custom-list text">
-                                <?php
-                                    if ( ! empty( $bo_other_benefits ) ) {
-                                        echo wp_kses_post( $bo_other_benefits );
-                                    }
-                                ?>
+                                    <?php echo wp_kses_post( $bo_other_benefits ); ?>
                                 </div>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <?php
+                        }
                     }
                     ?>
                     <!-- Job Level -->

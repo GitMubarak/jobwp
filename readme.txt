@@ -202,6 +202,7 @@ Now go to your detail page and refresh it.
 * Search shortcoded option added
 * Pagination added
 * Job application delete feature added
+* Made content hidden if they are empty in detail page
 
 = 1.7 =
 * Listing and detail settings bug fixed

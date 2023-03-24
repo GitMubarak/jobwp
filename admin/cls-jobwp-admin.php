@@ -557,7 +557,7 @@ class JobWp_Admin
 			'jobwp_nature' 				=> isset( $_POST['jobwp_nature'] ) ? sanitize_text_field( $_POST['jobwp_nature'] ) : null,
 			'jobwp_level' 				=> isset( $_POST['jobwp_level'] ) ? sanitize_text_field( $_POST['jobwp_level'] ) : null,
 			'jobwp_location' 			=> isset( $_POST['jobwp_location'] ) ? sanitize_text_field( $_POST['jobwp_location'] ) : null,
-			'jobwp_edu_req' 			=> isset( $_POST['jobwp_edu_req'] ) ? sanitize_text_field( $_POST['jobwp_edu_req'] ) : null,
+			'jobwp_edu_req' 			=> isset( $_POST['jobwp_edu_req'] ) ? wp_kses_post( $_POST['jobwp_edu_req'] ) : null,
 			'jobwp_deadline'			=> isset( $_POST['jobwp_deadline'] ) ? sanitize_text_field($_POST['jobwp_deadline']) : null,
 			'jobwp_status'				=> isset( $_POST['jobwp_status'] ) ? sanitize_text_field( $_POST['jobwp_status'] ) : null,
 			'jobwp_responsibilities'	=> isset( $_POST['jobwp_responsibilities'] ) ? wp_kses_post( $_POST['jobwp_responsibilities'] ) : null,
