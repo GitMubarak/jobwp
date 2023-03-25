@@ -58,6 +58,31 @@ trait Jobwp_Search_Content_Settings
                 'type'      => 'text',
                 'default'   => 'All Job Category',
             ],
+            [
+                'name'      => 'jobwp_hide_search_jobtype',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_search_jobtype_ph',
+                'type'      => 'text',
+                'default'   => 'All Job Type',
+            ],
+            [
+                'name'      => 'jobwp_hide_search_location',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_search_location_ph',
+                'type'      => 'text',
+                'default'   => 'All Job Location',
+            ],
+            [
+                'name'      => 'jobwp_search_button_txt',
+                'type'      => 'text',
+                'default'   => 'Search Job',
+            ],
         ];
     }
 }

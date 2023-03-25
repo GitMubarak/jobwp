@@ -20,9 +20,10 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <input type="checkbox" name="jobwp_hide_search_panel" id="jobwp_hide_search_panel" <?php echo $jobwp_hide_search_panel ? 'checked' : ''; ?>>
             </td>
         </tr>
+        <tr><td colspan="4"><hr></td></tr>
         <tr>
             <th scope="row">
-                <label for="jobwp_hide_search_keyword"><?php _e('Hide Search Keyword', JOBWP_TXT_DOMAIN); ?>?</label>
+                <label for="jobwp_hide_search_keyword"><?php _e('Hide Keyword', JOBWP_TXT_DOMAIN); ?>?</label>
             </th>
             <td>
                 <input type="checkbox" name="jobwp_hide_search_keyword" id="jobwp_hide_search_keyword" <?php echo $jobwp_hide_search_keyword ? 'checked' : ''; ?> >
@@ -36,7 +37,7 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label for="jobwp_hide_search_category"><?php _e('Hide Search Category', JOBWP_TXT_DOMAIN); ?>?</label>
+                <label for="jobwp_hide_search_category"><?php _e('Hide Category', JOBWP_TXT_DOMAIN); ?>?</label>
             </th>
             <td>
                 <input type="checkbox" name="jobwp_hide_search_category" id="jobwp_hide_search_category" <?php echo $jobwp_hide_search_category ? 'checked' : ''; ?> >
@@ -46,6 +47,43 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
             </th>
             <td>
                 <input type="text" name="jobwp_search_category_ph" id="jobwp_search_category_ph" class="regular-text" value="<?php esc_attr_e( $jobwp_search_category_ph ); ?>" />
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label for="jobwp_hide_search_jobtype"><?php _e('Hide Job Type', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="jobwp_hide_search_jobtype" id="jobwp_hide_search_jobtype" <?php echo $jobwp_hide_search_jobtype ? 'checked' : ''; ?> >
+            </td>
+            <th scope="row">
+                <label><?php _e('Placeholder Text', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input type="text" name="jobwp_search_jobtype_ph" id="jobwp_search_jobtype_ph" class="regular-text" value="<?php esc_attr_e( $jobwp_search_jobtype_ph ); ?>" />
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label for="jobwp_hide_search_location"><?php _e('Hide Job Location', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="jobwp_hide_search_location" id="jobwp_hide_search_location" <?php echo $jobwp_hide_search_location ? 'checked' : ''; ?> >
+            </td>
+            <th scope="row">
+                <label><?php _e('Placeholder Text', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input type="text" name="jobwp_search_location_ph" id="jobwp_search_location_ph" class="regular-text" value="<?php esc_attr_e( $jobwp_search_location_ph ); ?>" />
+            </td>
+        </tr>
+        <tr><td colspan="4"><hr></td></tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Search Button Text', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td colspan="3">
+                <input type="text" name="jobwp_search_button_txt" id="jobwp_search_button_txt" class="normal-text" value="<?php esc_attr_e( $jobwp_search_button_txt ); ?>" />
             </td>
         </tr>
     </table>

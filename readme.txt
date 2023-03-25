@@ -54,6 +54,8 @@ There are multiple layouts available where you can display jobs with a list or g
 * Applicants can apply directly to a job
 * Instant notification email when an application is submitted
 * Admin application list panel
+* Delete jobs in Job Application Panel
+* Pagination in Job listing page
 
 
 **✅ Available Job Information**
@@ -95,6 +97,16 @@ There are multiple layouts available where you can display jobs with a list or g
 * Overview font size option
 
 
+**✅ Options In Search Panel Settings**
+
+* Hide search panel option
+* Search keyword show hide option
+* Search category show hide option
+* Search job type show hide option
+* Search location show hide option
+* Search button text option
+
+
 **✅ Options In Details Page Settings**
 
 * Apply procedure title option
@@ -109,6 +121,18 @@ There are multiple layouts available where you can display jobs with a list or g
 <strong> Use the below Shortcode to display Jobs </strong>
 
 <pre> [jobwp_listing] </pre>
+
+<strong> Shortcode to limit Jobs </strong>
+
+<pre> [jobwp_listing limit=5] </pre>
+
+<strong> Shortcode to display Jobs of a Category </strong>
+
+<pre> [jobwp_listing category="Category Name"] </pre>
+
+<strong> Shortcode to display Layout </strong>
+
+<pre> [jobwp_listing layout="grid/list"] </pre>
 
 
 **📋 Translation Ready:**
@@ -206,6 +230,9 @@ Now go to your detail page and refresh it.
 * Hide search panel option added
 * Search keyword show hide option added
 * Search category show hide option added
+* Search job type show hide option added
+* Search location show hide option added
+* Search button text option added
 
 = 1.7 =
 * Listing and detail settings bug fixed
