@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2023-02-27 03:04+0600\n"
+"POT-Creation-Date: 2023-03-26 05:11+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,288 +17,325 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: admin/cls-jobwp-admin.php\n"
 
-#: admin/cls-jobwp-admin.php:78 admin/cls-jobwp-admin.php:79
+#: admin/cls-jobwp-admin.php:84 admin/cls-jobwp-admin.php:85
 #: admin/view/general.php:16
 msgid "General Settings"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:87 admin/cls-jobwp-admin.php:88
+#: admin/cls-jobwp-admin.php:93 admin/cls-jobwp-admin.php:94
 #: admin/view/listing.php:9
 msgid "Listing Page Settings"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:96 admin/cls-jobwp-admin.php:97
+#: admin/cls-jobwp-admin.php:102 admin/cls-jobwp-admin.php:103
+#: admin/view/search.php:9
+msgid "Search Panel Settings"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:111 admin/cls-jobwp-admin.php:112
 #: admin/view/single.php:9
 msgid "Detail Page Settings"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:105 admin/cls-jobwp-admin.php:106
+#: admin/cls-jobwp-admin.php:120 admin/cls-jobwp-admin.php:121
+msgid "Apply Form"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:129 admin/cls-jobwp-admin.php:130
 msgid "Application List"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:205
-msgid "#"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:206
-msgid "Applied For"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:207
-msgid "Name"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:208 front/view/apply.php:22
-#: front/view/apply.php:23
-msgid "Email"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:209 front/view/apply.php:27
-#: front/view/apply.php:28
-msgid "Cover Letter"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:210
-msgid "Resume"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:211
-msgid "Date"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:222
-msgid "Application Lists"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:269 admin/cls-jobwp-admin.php:273
-msgid "All Jobs"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:270 admin/cls-jobwp-admin.php:271
-msgid "WP Jobs"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:272
-msgid "Parent Job"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:274
-msgid "View Job"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:275
-msgid "Add New Job"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:276
-msgid "Add New"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:277
-msgid "Edit Job"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:278
-msgid "Update Job"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:279 front/view/search.php:102
-msgid "Search Job"
+#: admin/cls-jobwp-admin.php:279
+msgid "Select All"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:280
-msgid "Not Found"
+msgid "#"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:281
-msgid "Not found in Trash"
+msgid "Applied For"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:282
+msgid "Name"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:283
+msgid "Email"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:284
-msgid "jobs"
+msgid "Cover Letter"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:285
-msgid "Description For Job"
+msgid "Resume"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:313 admin/cls-jobwp-admin.php:323
-msgid "Job Categories"
+#: admin/cls-jobwp-admin.php:286
+msgid "Date"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:314
-msgid "Job Category"
+#: admin/cls-jobwp-admin.php:287
+msgid "Action"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:315
-msgid "Search Job Categories"
+#: admin/cls-jobwp-admin.php:301 admin/cls-jobwp-admin.php:305
+msgid "All Jobs"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:302 admin/cls-jobwp-admin.php:303
+msgid "WP Jobs"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:304
+msgid "Parent Job"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:306
+msgid "View Job"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:307
+msgid "Add New Job"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:308
+msgid "Add New"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:309
+msgid "Edit Job"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:310
+msgid "Update Job"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:311
+msgid "Search Job"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:312
+msgid "Not Found"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:313
+msgid "Not found in Trash"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:316
-msgid "All Job Categories"
+msgid "jobs"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:317
-msgid "Parent Job Category"
+msgid "Description For Job"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:318
-msgid "Parent Job Category:"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:319
-msgid "Edit Job Category"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:320
-msgid "Update Job Category"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:321
-msgid "Add New Job Category"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:322
-msgid "New Job Category Name"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:342 admin/cls-jobwp-admin.php:343
-#: admin/cls-jobwp-admin.php:352
-msgid "Job Nature"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:344
-msgid "Search Job Nature"
-msgstr ""
-
-#: admin/cls-jobwp-admin.php:345
-msgid "All Job Nature"
+#: admin/cls-jobwp-admin.php:345 admin/cls-jobwp-admin.php:355
+msgid "Job Categories"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:346
-msgid "Parent Job Nature"
+msgid "Job Category"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:347
-msgid "Parent Job Nature:"
+msgid "Search Job Categories"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:348
-msgid "Edit Job Nature"
+msgid "All Job Categories"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:349
-msgid "Update Job Nature"
+msgid "Parent Job Category"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:350
-msgid "Add New Job Nature"
+msgid "Parent Job Category:"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:351
-msgid "New Job Nature Name"
+msgid "Edit Job Category"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:371 admin/cls-jobwp-admin.php:372
-#: admin/cls-jobwp-admin.php:381
-msgid "Job Level"
+#: admin/cls-jobwp-admin.php:352
+msgid "Update Job Category"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:373
-msgid "Search Job Level"
+#: admin/cls-jobwp-admin.php:353
+msgid "Add New Job Category"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:374
-msgid "All Job Level"
+#: admin/cls-jobwp-admin.php:354
+msgid "New Job Category Name"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:375
-msgid "Parent Job Level"
+#: admin/cls-jobwp-admin.php:374 admin/cls-jobwp-admin.php:375
+#: admin/cls-jobwp-admin.php:384
+msgid "Job Nature"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:376
-msgid "Parent Job Level:"
+msgid "Search Job Nature"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:377
-msgid "Edit Job Level"
+msgid "All Job Nature"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:378
-msgid "Update Job Level"
+msgid "Parent Job Nature"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:379
-msgid "Add New Job Level"
+msgid "Parent Job Nature:"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:380
-msgid "New Job Level Name"
+msgid "Edit Job Nature"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:400 admin/cls-jobwp-admin.php:401
-#: admin/cls-jobwp-admin.php:410
-msgid "Job Location"
+#: admin/cls-jobwp-admin.php:381
+msgid "Update Job Nature"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:402
-msgid "Search Job Location"
+#: admin/cls-jobwp-admin.php:382
+msgid "Add New Job Nature"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:403 front/view/search.php:90
-msgid "All Job Location"
+#: admin/cls-jobwp-admin.php:383
+msgid "New Job Nature Name"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:404
-msgid "Parent Job Location"
+#: admin/cls-jobwp-admin.php:403 admin/cls-jobwp-admin.php:404
+#: admin/cls-jobwp-admin.php:413
+msgid "Job Level"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:405
-msgid "Parent Job Location:"
+msgid "Search Job Level"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:406
-msgid "Edit Job Location"
+msgid "All Job Level"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:407
-msgid "Update Job Location"
+msgid "Parent Job Level"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:408
-msgid "Add New Job Location"
+msgid "Parent Job Level:"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:409
-msgid "New Job Location Name"
+msgid "Edit Job Level"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:431
-msgid "Job Details:"
+#: admin/cls-jobwp-admin.php:410
+msgid "Update Job Level"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:411
+msgid "Add New Job Level"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:412
+msgid "New Job Level Name"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:432 admin/cls-jobwp-admin.php:433
+#: admin/cls-jobwp-admin.php:442
+msgid "Job Location"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:434
+msgid "Search Job Location"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:435
+msgid "All Job Location"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:436
+msgid "Parent Job Location"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:437
+msgid "Parent Job Location:"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:438
+msgid "Edit Job Location"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:439
+msgid "Update Job Location"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:440
+msgid "Add New Job Location"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:441
+msgid "New Job Location Name"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:463
+msgid "Job Details:"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:472
 msgid "Responsibilities:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:449
+#: admin/cls-jobwp-admin.php:481
 msgid "Skills Required:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:458
+#: admin/cls-jobwp-admin.php:490
 msgid "Educational Requirements:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:467
+#: admin/cls-jobwp-admin.php:499
 msgid "Additional Requirements:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:476
+#: admin/cls-jobwp-admin.php:508
 msgid "Salary:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:485
+#: admin/cls-jobwp-admin.php:517
 msgid "Other Benefits:"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:707
+msgid "Application has been deleted."
+msgstr ""
+
+#: admin/view/application_list.php:16
+msgid "Application Lists"
+msgstr ""
+
+#: admin/view/application_list.php:50
+msgid "DELETE"
+msgstr ""
+
+#: admin/view/apply-form.php:9
+msgid "Apply Form Settings"
+msgstr ""
+
+#: admin/view/apply-form.php:22 admin/view/listing.php:22
+#: admin/view/search.php:22 admin/view/single.php:22
+msgid "Content"
+msgstr ""
+
+#: admin/view/apply-form.php:25 admin/view/listing.php:25
+#: admin/view/search.php:25 admin/view/single.php:25
+msgid "Styles"
 msgstr ""
 
 #: admin/view/general.php:35
@@ -310,7 +347,7 @@ msgid "An email will sent to this email when a candidate submit an applicaiton."
 msgstr ""
 
 #: admin/view/general.php:45
-msgid "Job List Layout"
+msgid "Job Page Layout"
 msgstr ""
 
 #: admin/view/general.php:49
@@ -322,30 +359,48 @@ msgid "Grid"
 msgstr ""
 
 #: admin/view/general.php:57
-msgid "Use External Apply Form"
+msgid "Use External Application Form"
 msgstr ""
 
 #: admin/view/general.php:66
-msgid "External Apply Form Shortcode"
+msgid "External Application Form Shortcode"
 msgstr ""
 
 #: admin/view/general.php:71
 msgid "You can use external form instead of default application form. Like WPForms, Contact Form etc."
 msgstr ""
 
-#: admin/view/general.php:78 admin/view/partial/listing-content.php:94
+#: admin/view/general.php:78 admin/view/partial/apply-form-content.php:66
+#: admin/view/partial/listing-content.php:94
 #: admin/view/partial/listing-style.php:65
+#: admin/view/partial/search-content.php:93
 #: admin/view/partial/single-content.php:238
 #: admin/view/partial/single-style.php:84
 msgid "Save Settings"
 msgstr ""
 
-#: admin/view/listing.php:22 admin/view/single.php:22
-msgid "Content"
+#: admin/view/partial/apply-form-content.php:17
+msgid "Hide Form Title"
 msgstr ""
 
-#: admin/view/listing.php:25 admin/view/single.php:25
-msgid "Styles"
+#: admin/view/partial/apply-form-content.php:23
+msgid "Title Text"
+msgstr ""
+
+#: admin/view/partial/apply-form-content.php:31
+msgid "Name Label"
+msgstr ""
+
+#: admin/view/partial/apply-form-content.php:39
+msgid "Email Label"
+msgstr ""
+
+#: admin/view/partial/apply-form-content.php:47
+msgid "Cover Letter Label"
+msgstr ""
+
+#: admin/view/partial/apply-form-content.php:56
+msgid "Submit Button Text"
 msgstr ""
 
 #: admin/view/partial/job-info.php:9
@@ -413,6 +468,7 @@ msgid "Hide Location"
 msgstr ""
 
 #: admin/view/partial/listing-content.php:77
+#: admin/view/partial/search-content.php:54
 msgid "Hide Job Type"
 msgstr ""
 
@@ -436,6 +492,34 @@ msgstr ""
 
 #: admin/view/partial/listing-style.php:42
 msgid "Job Overview"
+msgstr ""
+
+#: admin/view/partial/search-content.php:17
+msgid "Hide Search Panel"
+msgstr ""
+
+#: admin/view/partial/search-content.php:26
+msgid "Hide Keyword"
+msgstr ""
+
+#: admin/view/partial/search-content.php:32
+#: admin/view/partial/search-content.php:46
+#: admin/view/partial/search-content.php:60
+#: admin/view/partial/search-content.php:74
+msgid "Placeholder Text"
+msgstr ""
+
+#: admin/view/partial/search-content.php:40
+msgid "Hide Category"
+msgstr ""
+
+#: admin/view/partial/search-content.php:68
+#: admin/view/partial/single-content.php:137
+msgid "Hide Job Location"
+msgstr ""
+
+#: admin/view/partial/search-content.php:83
+msgid "Search Button Text"
 msgstr ""
 
 #: admin/view/partial/single-content.php:32
@@ -464,10 +548,6 @@ msgstr ""
 
 #: admin/view/partial/single-content.php:122
 msgid "Hide Experience Requirements"
-msgstr ""
-
-#: admin/view/partial/single-content.php:137
-msgid "Hide Job Location"
 msgstr ""
 
 #: admin/view/partial/single-content.php:152
@@ -562,52 +642,36 @@ msgstr ""
 msgid " "
 msgstr ""
 
-#: front/view/apply.php:6
-msgid "Apply for this position"
-msgstr ""
-
-#: front/view/apply.php:17 front/view/apply.php:18
-msgid "Full Name"
-msgstr ""
-
-#: front/view/apply.php:32
+#: front/view/apply.php:44
 msgid "Upload CV/Resume"
 msgstr ""
 
-#: front/view/apply.php:33
+#: front/view/apply.php:45
 msgid "Attach your resume. Max size 2mb"
 msgstr ""
 
-#: front/view/apply.php:35
+#: front/view/apply.php:47
 msgid "Allowed Type(s): .pdf"
 msgstr ""
 
-#: front/view/apply.php:39
-msgid "Apply Now"
-msgstr ""
-
-#: front/view/listing.php:76
+#: front/view/listing.php:112
 msgid "Closed"
 msgstr ""
 
-#: front/view/listing.php:98
+#: front/view/listing.php:134
 msgid "Years"
 msgstr ""
 
-#: front/view/listing.php:166
+#: front/view/listing.php:211
+msgid "« "
+msgstr ""
+
+#: front/view/listing.php:212
+msgid " »"
+msgstr ""
+
+#: front/view/listing.php:224
 msgid "No Jobs found"
-msgstr ""
-
-#: front/view/search.php:59
-msgid "Keyword"
-msgstr ""
-
-#: front/view/search.php:64
-msgid "All Job Category"
-msgstr ""
-
-#: front/view/search.php:77
-msgid "All Job Type"
 msgstr ""
 
 #: front/view/single.php:42
