@@ -13,7 +13,8 @@ class JobWp_Admin
 	Jobwp_Listing_Styles_Settings,
 	Jobwp_Search_Content_Settings,
 	Jobwp_Single_Content_Settings, 
-	Jobwp_Single_Styles_Settings;
+	Jobwp_Single_Styles_Settings,
+	Jobwp_ApplyForm_Content_Settings;
 
 	private $jobwp_version;
 	private $jobwp_assets_prefix;
@@ -114,6 +115,15 @@ class JobWp_Admin
 			array($this, JOBWP_PRFX . 'single_settings'),
 		);
 		
+		add_submenu_page(
+			$jobwp_cpt_menu,
+			__('Apply Form', JOBWP_TXT_DOMAIN),
+			__('Apply Form', JOBWP_TXT_DOMAIN),
+			'manage_options',
+			'jobwp-apply-form-settings',
+			array($this, JOBWP_PRFX . 'apply_form'),
+		);
+
 		add_submenu_page(
 			$jobwp_cpt_menu,
 			__('Application List', JOBWP_TXT_DOMAIN),
@@ -233,6 +243,31 @@ class JobWp_Admin
         $jobwpSingleStyles = $this->jobwp_get_single_styles_settings();
 
 		require_once JOBWP_PATH . 'admin/view/single.php';
+	}
+
+	/**
+	 *	Apply Form Settings Page
+	 */
+	function jobwp_apply_form() {
+
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+	
+		$jobwpTab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : null;
+
+		$jobwpApplyFormMessage = false;
+
+		// Content
+		if ( isset( $_POST['updateApplyFormContent'] ) ) {
+
+			$jobwpApplyFormMessage = $this->jobwp_set_apply_form_content_settings( $_POST );
+
+		}
+
+		$jobwpApplyFormContent = $this->jobwp_get_apply_form_content_settings();
+
+		require_once JOBWP_PATH . 'admin/view/apply-form.php';
 	}
 
 	/**

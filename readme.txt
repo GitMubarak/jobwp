@@ -115,6 +115,16 @@ There are multiple layouts available where you can display jobs with a list or g
 * Title font size option
 
 
+**✅ Application Form Settings**
+
+* Application form title show-hide option
+* Application form title text option
+* Applicant name label text option
+* Applicant email label text option
+* Cover letter label text option
+* Application form submit button text option
+
+
 
 ➡️ Useage of Shortcode:⬅️
 
@@ -130,9 +140,9 @@ There are multiple layouts available where you can display jobs with a list or g
 
 <pre> [jobwp_listing category="Category Name"] </pre>
 
-<strong> Shortcode to display Layout </strong>
+<strong> Shortcode to display Layout: list or grid </strong>
 
-<pre> [jobwp_listing layout="grid/list"] </pre>
+<pre> [jobwp_listing layout="list"] </pre>
 
 
 **📋 Translation Ready:**
@@ -233,6 +243,7 @@ Now go to your detail page and refresh it.
 * Search job type show hide option added
 * Search location show hide option added
 * Search button text option added
+* Application form settings added
 
 = 1.7 =
 * Listing and detail settings bug fixed
