@@ -3,9 +3,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-// Load Styling
-include JOBWP_PATH . 'assets/css/listing.php';
-
 global $post;
 
 $jobwpGeneralSettings = $this->jobwp_get_general_settings();
@@ -90,6 +87,9 @@ if ( 'on' !== $jobwp_search ) {
 $jobwpQueryArr = apply_filters( 'jobwp_front_main_query_array', $jobwpQueryArrParams );
 
 $jobwpJobs = new WP_Query( $jobwpQueryArr );
+
+// Load Styling
+include JOBWP_PATH . 'assets/css/listing.php';
 ?>
 <div class="jobwp-listing-body-container <?php esc_attr_e( $jobwp_list_layout ) ?>">
 <?php

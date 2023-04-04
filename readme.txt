@@ -232,6 +232,7 @@ Now go to your detail page and refresh it.
 
 = 1.9 =
 * Parsing bug fixed
+* Listing page styling issue fixed
 
 = 1.8 =
 * Limit shortcoded option added
