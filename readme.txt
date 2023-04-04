@@ -231,7 +231,7 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 1.9 =
-* Limit
+* Parsing bug fixed
 
 = 1.8 =
 * Limit shortcoded option added

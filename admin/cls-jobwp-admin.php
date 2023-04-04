@@ -85,7 +85,7 @@ class JobWp_Admin
 			__('General Settings', JOBWP_TXT_DOMAIN),
 			'manage_options',
 			'jobwp-general-settings',
-			array($this, JOBWP_PRFX . 'general_settings'),
+			array($this, JOBWP_PRFX . 'general_settings')
 		);
 
 		add_submenu_page(
@@ -94,7 +94,7 @@ class JobWp_Admin
 			__('Listing Page Settings', JOBWP_TXT_DOMAIN),
 			'manage_options',
 			'jobwp-listing-settings',
-			array($this, JOBWP_PRFX . 'listing_settings'),
+			array($this, JOBWP_PRFX . 'listing_settings')
 		);
 
 		add_submenu_page(
@@ -103,7 +103,7 @@ class JobWp_Admin
 			__('Search Panel Settings', JOBWP_TXT_DOMAIN),
 			'manage_options',
 			'jobwp-search-settings',
-			array($this, JOBWP_PRFX . 'search_settings'),
+			array($this, JOBWP_PRFX . 'search_settings')
 		);
 
 		add_submenu_page(
@@ -112,7 +112,7 @@ class JobWp_Admin
 			__('Detail Page Settings', JOBWP_TXT_DOMAIN),
 			'manage_options',
 			'jobwp-single-settings',
-			array($this, JOBWP_PRFX . 'single_settings'),
+			array($this, JOBWP_PRFX . 'single_settings')
 		);
 		
 		add_submenu_page(
@@ -121,7 +121,7 @@ class JobWp_Admin
 			__('Apply Form', JOBWP_TXT_DOMAIN),
 			'manage_options',
 			'jobwp-apply-form-settings',
-			array($this, JOBWP_PRFX . 'apply_form'),
+			array($this, JOBWP_PRFX . 'apply_form')
 		);
 
 		add_submenu_page(
@@ -130,7 +130,7 @@ class JobWp_Admin
 			__('Application List', JOBWP_TXT_DOMAIN),
 			'manage_options',
 			'jobwp-application-list',
-			array($this, JOBWP_PRFX . 'application_list'),
+			array($this, JOBWP_PRFX . 'application_list')
 		);
 	}
 
