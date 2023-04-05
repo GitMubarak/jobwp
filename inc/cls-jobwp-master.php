@@ -30,6 +30,7 @@ class JobWp_Master {
 	}
 
 	function jobwp_load_plugin_textdomain() {
+
 		load_plugin_textdomain( JOBWP_TXT_DOMAIN, FALSE, JOBWP_TXT_DOMAIN . '/languages/' );
 	}
 
@@ -97,6 +98,23 @@ class JobWp_Master {
 			) $charset_collate;";
 			require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 			dbDelta($sql);
+		}
+
+		// Creating Directory for Applicants resume
+		$jobwpDir = wp_upload_dir();
+		$jobwpDir = $jobwpDir['basedir'];
+		$jobwpResumeDir = $jobwpDir . '/jobwp-resume';
+
+		if ( ! is_dir( $jobwpResumeDir) ) {
+			wp_mkdir_p( $jobwpResumeDir );
+		}
+
+		if ( ! file_exists( $jobwpResumeDir . '/index.php' ) ) {
+			$idxFl = fopen( $jobwpResumeDir . '/index.php', "w" );
+			$txt = "<?php\n";
+			$txt .= "# Silence is golden.\n";
+			fwrite($idxFl, $txt);
+			fclose($idxFl);
 		}
 	}
 }

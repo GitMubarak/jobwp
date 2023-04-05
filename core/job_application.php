@@ -23,7 +23,7 @@ trait Jobwp_Applicaiton
 
                     $jobwpDir = wp_upload_dir();
                     $jobwpDir = $jobwpDir['basedir'];
-                    wp_mkdir_p( $jobwpDir . '/jobwp-resume' );
+                    $fileName = $jobwpDir . '/jobwp-resume/' . $_FILES['jobwp_upload_resume']['name'];
 
                     if ( ! is_writable( $jobwpDir . '/jobwp-resume' ) ) {
 
@@ -33,11 +33,11 @@ trait Jobwp_Applicaiton
 
                         if ( is_uploaded_file( $_FILES['jobwp_upload_resume']['tmp_name'] ) ) {
 
-                            if ( file_exists( $jobwpDir . '/jobwp-resume/' . $_FILES['jobwp_upload_resume']['name'] ) ) {
-                                unlink( $jobwpDir . '/jobwp-resume/' . $_FILES['jobwp_upload_resume']['name'] );
+                            if ( file_exists( $fileName ) ) {
+                                unlink( $fileName );
                             }
 
-                            $r = move_uploaded_file( $_FILES['jobwp_upload_resume']['tmp_name'], $jobwpDir . '/jobwp-resume/' . $_FILES['jobwp_upload_resume']['name']);
+                            $r = move_uploaded_file( $_FILES['jobwp_upload_resume']['tmp_name'], $fileName );
 
                             if ( $r === false)  {
                                 
@@ -75,7 +75,7 @@ trait Jobwp_Applicaiton
                                     "' . date('Y-m-d h:i:s') . '"
                                 )');
 
-                                $attachments = array($jobwpDir . '/jobwp-resume/' . $_FILES['jobwp_upload_resume']['name']);
+                                $attachments = array($fileName);
 						
                                 $headers = "MIME-Version: 1.0" . "\r\n";
                                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
