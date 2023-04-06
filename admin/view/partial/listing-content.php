@@ -15,6 +15,8 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
         <tr>
             <th scope="row">
                 <label for="jobwp_list_display_overview"><?php _e('Hide Overview', JOBWP_TXT_DOMAIN); ?>?</label>
+                <span class="dashicons dashicons-info-outline jobwp-admin-icon"></span>
+                <img src="<?php echo esc_attr( JOBWP_ASSETS . 'img/jobwp-list-hide-overview.webp' ); ?>" class="jobwp-admin-help-img">
             </th>
             <td>
                 <input type="checkbox" name="jobwp_list_display_overview" class="jobwp_list_display_overview" id="jobwp_list_display_overview"

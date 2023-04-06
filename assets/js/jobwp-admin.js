@@ -26,4 +26,12 @@
         this.parentElement.style.display = 'none';
     });
 
+    $("span.jobwp-admin-icon")
+        .mouseover(function() {
+            $(this).next().css('display', 'block');
+        })
+        .mouseout(function() {
+            $(this).next().css('display', 'none');
+        });
+
 })(jQuery);

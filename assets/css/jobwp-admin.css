@@ -215,3 +215,21 @@ table.jobwp-single-style-settings-table tr th {
 
 
 /* Common Admin Styles Ended */
+
+span.jobwp-admin-icon {
+    color: #8fa5e0;
+    cursor: pointer;
+}
+
+span.jobwp-admin-icon:hover {
+    color: #CC0000;
+}
+
+img.jobwp-admin-help-img {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
