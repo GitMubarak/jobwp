@@ -14,7 +14,8 @@ class JobWp_Admin
 	Jobwp_Search_Content_Settings,
 	Jobwp_Single_Content_Settings, 
 	Jobwp_Single_Styles_Settings,
-	Jobwp_ApplyForm_Content_Settings;
+	Jobwp_ApplyForm_Content_Settings,
+	Jobwp_ApplyForm_Style_Settings;
 
 	private $jobwp_version;
 	private $jobwp_assets_prefix;
@@ -266,6 +267,15 @@ class JobWp_Admin
 		}
 
 		$jobwpApplyFormContent = $this->jobwp_get_apply_form_content_settings();
+
+		// Style
+		if ( isset( $_POST['updateApplyFormStyle'] ) ) {
+
+			$jobwpApplyFormMessage = $this->jobwp_set_apply_form_style_settings( $_POST );
+
+		}
+
+		$jobwpApplyFormStyle = $this->jobwp_get_apply_form_style_settings();
 
 		require_once JOBWP_PATH . 'admin/view/apply-form.php';
 	}

@@ -16,7 +16,8 @@ class JobWp_Front
 	Jobwp_Search_Content_Settings,
 	Jobwp_Single_Content_Settings, 
 	Jobwp_Single_Styles_Settings,
-	Jobwp_ApplyForm_Content_Settings, 
+	Jobwp_ApplyForm_Content_Settings,
+	Jobwp_ApplyForm_Style_Settings,
 	Jobwp_Applicaiton;
 
 	private $jobwp_version;

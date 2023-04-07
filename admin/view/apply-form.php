@@ -32,8 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <?php 
                 switch ( $jobwpTab ) {
                     case 'styles':
-                        //include_once JOBWP_PATH . 'admin/view/partial/apply-form-style.php';
-                        echo 'TBA';
+                        include_once JOBWP_PATH . 'admin/view/partial/apply-form-style.php';
                         break;
                     default:
                         include_once JOBWP_PATH . 'admin/view/partial/apply-form-content.php';

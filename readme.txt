@@ -231,9 +231,13 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 1.9 =
+[//]: # fs_premium_only_begin
+* Form styling added - Pro
+[//]: # fs_premium_only_end
 * Parsing bug fixed
 * Listing page styling issue fixed
-* File security issue fixed 
+* File security issue fixed
+* Css fixed
 
 = 1.8 =
 * Limit shortcoded option added

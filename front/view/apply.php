@@ -11,6 +11,17 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
     }
 }
 
+$jobwpApplyFormStyle = $this->jobwp_get_apply_form_style_settings();
+//print_r( $jobwpApplyFormStyle );
+foreach ( $jobwpApplyFormStyle as $fs_name => $fs_value ) {
+    if ( isset( $jobwpApplyFormStyle[$fs_name] ) ) {
+        ${"" . $fs_name} = $fs_value;
+    }
+}
+
+// Load Styling
+include JOBWP_PATH . 'assets/css/apply-form.php';
+
 if ( ! $jobwp_hide_apply_form_title ) {
     ?>
     <h3 class="jobwp-apply-title"><?php esc_html_e( $jobwp_apply_form_title ); ?></h3>

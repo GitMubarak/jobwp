@@ -61,6 +61,7 @@ if ( ! function_exists( 'job_fs' ) ) {
             $freemius_link
         );
     }
+
     job_fs()->add_filter('connect_message_on_update', 'job_fs_custom_connect_message_on_update', 10, 6);
 
     function job_fs_support_forum_url( $wp_support_url ) {
