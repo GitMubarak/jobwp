@@ -12,6 +12,7 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
   .jobwp-apply-title {
     color: <?php esc_html_e( $jobwp_apply_form_title_color ); ?>;
+    font-size: <?php esc_html_e( $jobwp_apply_form_title_font_size ); ?>px;
   }
 </style>
 <?php

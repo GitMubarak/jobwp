@@ -48,7 +48,7 @@ foreach ( $jobwpApplyFormStyle as $fs_name => $fs_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Form Title Color', 'jobwp'); ?>:</label>
+                <label><?php _e('Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <?php
@@ -62,6 +62,24 @@ foreach ( $jobwpApplyFormStyle as $fs_name => $fs_value ) {
 					?>
                     <input class="jobwp-wp-color" type="text" name="jobwp_apply_form_title_color" id="jobwp_apply_form_title_color" value="<?php esc_attr_e( $jobwp_apply_form_title_color ); ?>">
                     <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Font Size', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input type="number" min="11" max="60" step="1" name="jobwp_apply_form_title_font_size" value="<?php esc_attr_e( $jobwp_apply_form_title_font_size ); ?>">
 					<?php
 				}
 				?>

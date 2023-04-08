@@ -43,6 +43,11 @@ trait Jobwp_ApplyForm_Style_Settings
                 'type'      => 'text',
                 'default'   => '#222',
             ],
+            [
+                'name'      => 'jobwp_apply_form_title_font_size',
+                'type'      => 'number',
+                'default'   => '30',
+            ],
         ];
     }
 }
