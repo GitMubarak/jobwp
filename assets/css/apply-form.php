@@ -14,6 +14,11 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
     color: <?php esc_html_e( $jobwp_apply_form_title_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_apply_form_title_font_size ); ?>px;
   }
+
+  .jobwp-field-row label {
+    color: <?php esc_html_e( $jobwp_apply_form_label_color ); ?>;
+    font-size: <?php esc_html_e( $jobwp_apply_form_label_font_size ); ?>px;
+  }
 </style>
 <?php
 }

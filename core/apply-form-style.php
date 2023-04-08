@@ -48,6 +48,16 @@ trait Jobwp_ApplyForm_Style_Settings
                 'type'      => 'number',
                 'default'   => '30',
             ],
+            [
+                'name'      => 'jobwp_apply_form_label_color',
+                'type'      => 'text',
+                'default'   => '#333',
+            ],
+            [
+                'name'      => 'jobwp_apply_form_label_font_size',
+                'type'      => 'number',
+                'default'   => '14',
+            ],
         ];
     }
 }
