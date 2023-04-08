@@ -466,9 +466,7 @@ span.wpsd-read-before-apply-border {
     color: #666;
     padding: .75em;
     height: auto;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #eaeaea;
+    border: 1px solid #DDD;
     border-radius: 2px;
     background: #fafafa;
     box-shadow: none;
@@ -482,7 +480,7 @@ span.wpsd-read-before-apply-border {
 .jobwp-field-row input[type="text"]::placeholder,
 .jobwp-field-row input[type="email"]::placeholder,
 .jobwp-field-row textarea::placeholder {
-    color: #DDD;
+    color: #666;
 }
 
 .jobwp-field-row input[type="email"]:focus,

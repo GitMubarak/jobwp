@@ -13,7 +13,8 @@
         '#jobwp_apply_form_bg_color',
         '#jobwp_apply_form_title_color',
         '#jobwp_apply_form_label_color',
-        '#jobwp_apply_form_input_color'
+        '#jobwp_apply_form_input_color',
+        '#jobwp_apply_form_input_bg_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {

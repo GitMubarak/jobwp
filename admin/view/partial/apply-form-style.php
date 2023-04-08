@@ -175,6 +175,27 @@ foreach ( $jobwpApplyFormStyle as $fs_name => $fs_value ) {
 				?>
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Background Color', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_apply_form_input_bg_color" id="jobwp_apply_form_input_bg_color" value="<?php esc_attr_e( $jobwp_apply_form_input_bg_color ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit"><button id="updateApplyFormStyle" name="updateApplyFormStyle" class="button button-primary jobwp-button"><?php _e('Save Settings', 'jobwp'); ?></button></p>
