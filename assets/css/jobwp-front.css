@@ -479,6 +479,12 @@ span.wpsd-read-before-apply-border {
     margin-top: 8px;
 }
 
+.jobwp-field-row input[type="text"]::placeholder,
+.jobwp-field-row input[type="email"]::placeholder,
+.jobwp-field-row textarea::placeholder {
+    color: #DDD;
+}
+
 .jobwp-field-row input[type="email"]:focus,
 .jobwp-field-row input[type="text"]:focus,
 .jobwp-field-row textarea:focus {

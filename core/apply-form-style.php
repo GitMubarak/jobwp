@@ -58,6 +58,16 @@ trait Jobwp_ApplyForm_Style_Settings
                 'type'      => 'number',
                 'default'   => '14',
             ],
+            [
+                'name'      => 'jobwp_apply_form_input_color',
+                'type'      => 'text',
+                'default'   => '#666',
+            ],
+            [
+                'name'      => 'jobwp_apply_form_input_font_size',
+                'type'      => 'number',
+                'default'   => '14',
+            ],
         ];
     }
 }

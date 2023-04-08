@@ -85,7 +85,7 @@ foreach ( $jobwpApplyFormStyle as $fs_name => $fs_value ) {
 				?>
             </td>
         </tr>
-        <!-- Form label -->
+        <!-- Form Label -->
         <tr>
             <th scope="row" colspan="4">
                 <hr><span><?php _e('Form Label', 'jobwp'); ?></span><hr>
@@ -125,6 +125,51 @@ foreach ( $jobwpApplyFormStyle as $fs_name => $fs_value ) {
 				if ( job_fs()->is_plan__premium_only('pro', true) ) {
 					?>
                     <input type="number" min="11" max="30" step="1" name="jobwp_apply_form_label_font_size" value="<?php esc_attr_e( $jobwp_apply_form_label_font_size ); ?>">
+					<?php
+				}
+				?>
+            </td>
+        </tr>
+        <!-- Form Inputs -->
+        <tr>
+            <th scope="row" colspan="4">
+                <hr><span><?php _e('Form Inputs', 'jobwp'); ?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Color', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_apply_form_input_color" id="jobwp_apply_form_input_color" value="<?php esc_attr_e( $jobwp_apply_form_input_color ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Font Size', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input type="number" min="11" max="30" step="1" name="jobwp_apply_form_input_font_size" value="<?php esc_attr_e( $jobwp_apply_form_input_font_size ); ?>">
 					<?php
 				}
 				?>
