@@ -345,14 +345,14 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
 .jobwp-primary-button {
     background: #008b8b;
     border: 1px solid #247c26;
-    border-radius: 3px !important;
-    font-size: 22px !important;
-    text-transform: uppercase !important;
-    color: #fff !important;
-    padding: 10px 30px !important;
-    display: inline-block !important;
-    line-height: 36px !important;
-    height: 60px !important;
+    border-radius: 3px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    line-height: 36px;
+    height: 60px;
     text-decoration: none;
 }
 
@@ -414,7 +414,7 @@ span.wpsd-read-before-apply-border {
     height: 650px!important;
 }
 
-.error-message {
+.jobwp-field-row span.error-message {
     color: #f00;
     font-size: 14px;
     display: block;
@@ -445,6 +445,7 @@ span.wpsd-read-before-apply-border {
     margin: 0;
     display: block;
     font-size: 12px;
+    color: #333;
 }
 
 .jobwp-field-row label {
@@ -486,7 +487,7 @@ span.wpsd-read-before-apply-border {
 .jobwp-field-row input[type="email"]:focus,
 .jobwp-field-row input[type="text"]:focus,
 .jobwp-field-row textarea:focus {
-    border-color: #009900;
+    border-color: #666;
 }
 
 

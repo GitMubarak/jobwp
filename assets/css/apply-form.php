@@ -26,6 +26,12 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
     color: <?php esc_html_e( $jobwp_apply_form_input_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_apply_form_input_font_size ); ?>px;
     background: <?php esc_html_e( $jobwp_apply_form_input_bg_color ); ?>;
+    border: 1px solid <?php esc_html_e( $jobwp_apply_form_input_border_color ); ?>;
+  }
+
+  #jobwp_apply_btn {
+    background: <?php esc_html_e( $jobwp_apply_form_btn_bg_color ); ?>;
+    color: <?php esc_html_e( $jobwp_apply_form_btn_font_color ); ?>;
   }
 </style>
 <?php
