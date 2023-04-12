@@ -32,6 +32,12 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
   #jobwp_apply_btn {
     background: <?php esc_html_e( $jobwp_apply_form_btn_bg_color ); ?>;
     color: <?php esc_html_e( $jobwp_apply_form_btn_font_color ); ?>;
+    font-size: <?php esc_html_e( $jobwp_apply_form_btn_font_size ); ?>px;
+  }
+
+  #jobwp_apply_btn:hover {
+    background: <?php esc_html_e( $jobwp_apply_form_btn_hvr_bg_color ); ?>;
+    color: <?php esc_html_e( $jobwp_apply_form_btn_hvr_font_color ); ?>;
   }
 </style>
 <?php

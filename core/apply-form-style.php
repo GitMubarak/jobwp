@@ -81,10 +81,25 @@ trait Jobwp_ApplyForm_Style_Settings
             [
                 'name'      => 'jobwp_apply_form_btn_bg_color',
                 'type'      => 'text',
-                'default'   => '#009900',
+                'default'   => '#0274be;',
             ],
             [
                 'name'      => 'jobwp_apply_form_btn_font_color',
+                'type'      => 'text',
+                'default'   => '#FFF',
+            ],
+            [
+                'name'      => 'jobwp_apply_form_btn_font_size',
+                'type'      => 'number',
+                'default'   => '22',
+            ],
+            [
+                'name'      => 'jobwp_apply_form_btn_hvr_bg_color',
+                'type'      => 'text',
+                'default'   => '#0274be;',
+            ],
+            [
+                'name'      => 'jobwp_apply_form_btn_hvr_font_color',
                 'type'      => 'text',
                 'default'   => '#FFF',
             ],
