@@ -17,6 +17,27 @@
     color: #555555;
 }
 
+.jobwp-total-jobs-found {
+    border: 0px solid #000;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.jobwp-total-jobs-found .jobwp-total-jobs-found-total {
+    display: block;
+    font-size: 18px;
+    color: #111;
+    font-weight: 600;
+}
+
+.jobwp-total-jobs-found .jobwp-total-jobs-found-per-page {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    font-weight: 600;
+}
+
 
 /* Listing Started */
 

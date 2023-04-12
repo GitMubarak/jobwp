@@ -234,6 +234,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Form styling added - Pro
 [//]: # fs_premium_only_end
+* Total job found message added
 * Parsing bug fixed
 * Listing page styling issue fixed
 * File security issue fixed

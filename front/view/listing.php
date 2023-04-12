@@ -95,6 +95,19 @@ include JOBWP_PATH . 'assets/css/listing.php';
 <?php
 if ( $jobwpJobs->have_posts() ) {
 
+    $jobwp_prev_posts = ( $jobwp_paged - 1 ) * $jobwpJobs->query_vars['posts_per_page'];
+    $jobwp_from       = 1 + $jobwp_prev_posts;
+    $jobwp_to         = count( $jobwpJobs->posts ) + $jobwp_prev_posts;
+    $jobwp_of         = $jobwpJobs->found_posts;
+
+    ?>
+    <div class="jobwp-total-jobs-found">
+        <div class="jobwp-total-jobs-found-total"><?php echo esc_html( $jobwp_of ) . '&nbsp;' . __('Jobs Found', JOBWP_TXT_DOMAIN); ?></div>
+        <div class="jobwp-total-jobs-found-per-page">    
+            <?php _e('Displayed Here', JOBWP_TXT_DOMAIN); ?>: <span><?php printf( '%s - %s', $jobwp_from, $jobwp_to ); ?></span> <?php _e('Jobs', JOBWP_TXT_DOMAIN); ?>
+        </div>
+    </div>
+    <?php
     while ( $jobwpJobs->have_posts() ) {
 
         $jobwpJobs->the_post();
