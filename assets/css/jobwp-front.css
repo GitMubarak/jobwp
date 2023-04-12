@@ -153,17 +153,20 @@ div.jobwp-list-bottom-item {
     height: 50px;
     line-height: 48px;
     margin: 0 2px 0 0;
-    border: 1px solid #DDD;
     text-decoration: none;
     border-radius: 2px;
 }
 
 .jobwp-pagination .page-numbers li a {
-    color: #333;
+    color: #13b5ea;
+    font-size: 14px;
+    border: 1px solid #13b5ea;
+    height: 50px;
+    width: 50px;
 }
 
 .jobwp-pagination .page-numbers li a.page-numbers {
-    width: 48px;
+    width: 50px;
     display: inline-block;
     text-decoration: none;
     font-weight: 700;
@@ -172,13 +175,18 @@ div.jobwp-list-bottom-item {
 
 div.jobwp-pagination>ul.page-numbers>li>span.page-numbers.current {
     display: block;
-    background: #DDD;
-    color: #CC0000;
+    background: #13b5ea;
+    border: 1px solid #13b5ea;
+    color: #FFF;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
 }
 
 div.jobwp-pagination>ul.page-numbers>li:hover,
 div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
-    background: #DDD;
+    background: #13b5ea;
+    color: #FFF;
 }
 
 
@@ -196,7 +204,7 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
     padding: 10px;
     grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
     margin: 10px auto;
-    background: #F2F2F2;
+    background: #FFF;
 }
 
 .jobwp-search-container .jobwp-search-item {
@@ -236,7 +244,7 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
 .jobwp-search-container .jobwp-search-item .submit-btn {
     width: 150px;
     height: 45px;
-    background: #269FC6;
+    background: #13b5ea;
     color: #ffffff;
     font-size: 14px;
     border: none;
@@ -274,8 +282,8 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
 }
 
 .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh:hover {
-    background: #6fa0df;
-    border: 1px solid #6fa0df;
+    background: #13b5ea;
+    border: 1px solid #13b5ea;
     color: #FFF;
 }
 
