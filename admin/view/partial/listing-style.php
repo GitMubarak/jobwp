@@ -14,7 +14,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
     <table class="jobwp-listing-style-settings-table">
         <!-- Title -->
         <tr>
-            <th scope="row" colspan="2">
+            <th scope="row" colspan="4">
                 <hr><span><?php _e('Job Title', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -26,8 +26,6 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
                 <input class="jobwp-wp-color" type="text" name="jobwp_listing_title_font_color" id="jobwp_listing_title_font_color" value="<?php esc_attr_e( $jobwp_listing_title_font_color ); ?>">
                 <div id="colorpicker"></div>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
@@ -38,7 +36,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <!-- Overview -->
         <tr>
-            <th scope="row" colspan="2">
+            <th scope="row" colspan="4">
                 <hr><span><?php _e('Job Overview', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -50,14 +48,58 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
                 <input class="jobwp-wp-color" type="text" name="jobwp_listing_overview_font_color" id="jobwp_listing_overview_font_color" value="<?php esc_attr_e( $jobwp_listing_overview_font_color ); ?>">
                 <div id="colorpicker"></div>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
             <td>
                 <input type="number" class="small-text" min="11" max="50" name="jobwp_listing_overview_font_size" id="jobwp_listing_overview_font_size" value="<?php esc_attr_e( $jobwp_listing_overview_font_size ); ?>">
                 <code>px</code>
+            </td>
+        </tr>
+        <!-- Job Info -->
+        <tr>
+            <th scope="row" colspan="4">
+                <hr><span><?php _e('Job Information', JOBWP_TXT_DOMAIN); ?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_listing_info_font_color" id="jobwp_listing_info_font_color" value="<?php esc_attr_e( $jobwp_listing_info_font_color ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+            <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input type="number" class="small-text" min="11" max="30" step="1" name="jobwp_listing_info_font_size" id="jobwp_listing_info_font_size" value="<?php esc_attr_e( $jobwp_listing_info_font_size ); ?>">
+                    <code>px</code>
+					<?php
+				}
+				?>
             </td>
         </tr>
     </table>
