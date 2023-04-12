@@ -239,6 +239,7 @@ Now go to your detail page and refresh it.
 * Listing page styling issue fixed
 * File security issue fixed
 * Css fixed
+* Grid layout issue fixed
 
 = 1.8 =
 * Limit shortcoded option added
