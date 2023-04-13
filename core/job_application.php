@@ -74,25 +74,39 @@ trait Jobwp_Applicaiton
                                     "' . $_FILES['jobwp_upload_resume']['name'] . '",
                                     "' . date('Y-m-d h:i:s') . '"
                                 )');
-
+                                
+                                // Admin Notification Email
                                 $attachments = array($fileName);
 						
                                 $headers = "MIME-Version: 1.0" . "\r\n";
                                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
                                 $headers .= 'From: Career <myname@mydomain.com>' . "\r\n";
                                 
-                                $subject = __('Career - New Application');
-                                $emailMessage = __( 'Applicant: ' ) . $fullName;
-                                $emailMessage .= '<br>' . __( 'Applied For: ' ) . $applyFor;
-                                $emailMessage .= '<br>' . __( 'Email: ' ) . $email;
+                                $subject = __('Career - New Application', 'jobwp');
+                                $emailMessage = __('Applicant: ', 'jobwp') . $fullName;
+                                $emailMessage .= '<br>' . __( 'Applied For: ', 'jobwp' ) . $applyFor;
+                                $emailMessage .= '<br>' . __( 'Email: ', 'jobwp' ) . $email;
                                 //$emailMessage .= '<br>' . __( 'Phone: ' ) . $phoneNumber;
-                                $emailMessage .= '<br>' . __( 'Cover Letter: ' ) . $message;
+                                $emailMessage .= '<br>' . __( 'Cover Letter: ', 'jobwp' ) . $message;
                                 wp_mail(
                                     esc_html( $admin_email ),
                                     $subject,
                                     $emailMessage,
                                     $headers,
                                     $attachments
+                                );
+
+                                // Applicant Notificaton Email
+                                $subjectRec = "Thank you for applying!";
+
+                                $recMessage = __('Hi', 'jobwp') . '&nbsp; ' . $fullName . ',';
+                                $recMessage .= '<br>' . __('Thanks for applying to our', 'jobwp') . '&nbsp;' . $applyFor;
+
+                                wp_mail(
+                                    esc_html( $email ),
+                                    $subjectRec,
+                                    $recMessage,
+                                    $headers
                                 );
         
                                 return __('Thank you for your application', JOBWP_TXT_DOMAIN);

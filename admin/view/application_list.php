@@ -66,6 +66,13 @@ if ( '' !== $showMessage ) {
 </form>
 </div>
 <?php
+if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+    ?>
+    <a href="#" class="button button-primary jobwp-button"><?php _e('EXPORT TO CSV', JOBWP_TXT_DOMAIN); ?></a><br>
+    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+    <?php
+}
+
 if ( job_fs()->is_plan__premium_only('pro', true) ) {
     ?>
     <form method="post" id="jobwp-download-to-csv-form" action="">
