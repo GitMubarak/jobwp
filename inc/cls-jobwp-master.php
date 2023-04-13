@@ -12,6 +12,7 @@ include_once JOBWP_PATH . 'core/single-styles.php';
 include_once JOBWP_PATH . 'core/search-content.php';
 include_once JOBWP_PATH . 'core/apply-form-content.php';
 include_once JOBWP_PATH . 'core/apply-form-style.php';
+include_once JOBWP_PATH . 'core/applications.php';
 
 /**
  * Class: Main
@@ -53,6 +54,10 @@ class JobWp_Master {
 		$this->jobwp_loader->add_action('add_meta_boxes', $jobwp_admin, JOBWP_PRFX . 'metaboxes');
 		$this->jobwp_loader->add_action('save_post', $jobwp_admin, JOBWP_PRFX . 'save_meta_value', 1, 1);
 		$this->jobwp_loader->add_action('admin_init', $jobwp_admin, JOBWP_PRFX . 'flush_rewrite');
+
+		if ( job_fs()->is_plan__premium_only('pro', true) ) {
+			$this->jobwp_loader->add_action('admin_init', $jobwp_admin, 'jobwp_export_applications_to_csv');
+		}
 	}
 
 	function jobwp_trigger_front_hooks() {

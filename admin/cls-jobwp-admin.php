@@ -717,5 +717,52 @@ class JobWp_Admin
         	return __("Application has been deleted.", JOBWP_TXT_DOMAIN);
 		}
 	}
+
+	function jobwp_export_applications_to_csv() {
+
+		if ( ! current_user_can( 'manage_options' ) ) {
+            return;
+        }
+
+		if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
+			if ( isset( $_POST['jobwp_download_csv'] ) ) {
+				
+				$applications = $this->jobwp_get_all_applications();
+
+				$filename = 'applications-' . time() . '.csv';
+				$data_rows = [];
+				$row = [];
+				$asl = 1;
+				foreach ( $applications as $application ) {
+					$row[0] = $asl;
+					$row[1] = $application->applied_for;
+					$row[2] = $application->applicant_name;
+					$row[3] = $application->applicant_email;
+					$row[4] = '"' . $application->applicant_message .'"';
+					$row[5] = date( 'D d M Y - h:i A', strtotime( $application->applied_on ) );
+					$row[6] = $application->resume_name;
+					$data_rows[] = $row;
+					$asl++;
+				}
+
+				header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+				header('Content-Description: File Transfer');
+				header("Content-type: text/csv");
+				header("Content-Disposition: attachment; filename={$filename}");
+				header("Expires: 0");
+				header("Pragma: public");
+				printf( "%s,%s,%s,%s,%s,%s,%s", "SL", "Applied For", "Name", "Email", "Cover Letter", "Applied On", "Resume Link" );
+				_e("\n");
+				
+				foreach ( $data_rows as $data ) {
+					printf( "%d,%s,%s,%s,%s,%s,%s", $data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6] );
+					_e("\n");
+				}
+				
+				exit;
+			}
+		}
+	}
 }
 ?>
