@@ -63,6 +63,16 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'number',
                 'default'   => '16',
             ],
+            [
+                'name'      => 'jobwp_listing_item_bg_color',
+                'type'      => 'text',
+                'default'   => '#FFF',
+            ],
+            [
+                'name'      => 'jobwp_listing_item_border_color',
+                'type'      => 'text',
+                'default'   => '#DDD',
+            ],
         ];
     }
 }

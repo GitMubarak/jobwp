@@ -233,6 +233,7 @@ Now go to your detail page and refresh it.
 = 1.9 =
 [//]: # fs_premium_only_begin
 * Form styling added - Pro
+* Job listing styling added - Pro
 [//]: # fs_premium_only_end
 * Total job found message added
 * Parsing bug fixed

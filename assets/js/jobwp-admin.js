@@ -20,7 +20,9 @@
         '#jobwp_apply_form_btn_bg_color',
         '#jobwp_apply_form_btn_font_color',
         '#jobwp_apply_form_btn_hvr_bg_color',
-        '#jobwp_apply_form_btn_hvr_font_color'
+        '#jobwp_apply_form_btn_hvr_font_color',
+        '#jobwp_listing_item_border_color',
+        '#jobwp_listing_item_bg_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {

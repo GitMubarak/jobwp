@@ -44,7 +44,7 @@
 
 .jobwp-item {
     padding: 10px 20px;
-    background: transparent;
+    background: #FFF;
     border: 1px solid #ddd;
     margin-bottom: 30px;
     display: inline-block;
@@ -87,6 +87,7 @@ div.jobwp-list-bottom-item {
     font-size: 14px;
     line-height: 30px;
     font-weight: normal;
+    color: #555;
 }
 
 .jobwp-bottom {
@@ -181,6 +182,7 @@ div.jobwp-pagination>ul.page-numbers>li>span.page-numbers.current {
     width: 50px;
     height: 50px;
     line-height: 48px;
+    font-size: 14px;
 }
 
 div.jobwp-pagination>ul.page-numbers>li:hover,
