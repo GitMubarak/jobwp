@@ -16,16 +16,16 @@ trait JobwpGeneralSettings
 
         $this->options  = $this->jobwp_build_set_settings_options( $this->fields, $post );
 
-        $this->settings = apply_filters( 'jobwp_single_styles', $this->options, $post );
+        $this->settings = apply_filters( 'jobwp_general_settings', $this->options, $post );
 
-        return update_option( 'jobwp_single_styles', $this->settings );
+        return update_option( 'jobwp_general_settings', $this->settings );
 
     }
 
     function jobwp_get_general_settings() {
 
         $this->fields   = $this->jobwp_general_settings_option_fileds();
-		$this->settings = get_option('jobwp_single_styles');
+		$this->settings = get_option('jobwp_general_settings');
         
         return $this->jobwp_build_get_settings_options( $this->fields, $this->settings );
 	}

@@ -80,7 +80,7 @@ trait Jobwp_Applicaiton
 						
                                 $headers = "MIME-Version: 1.0" . "\r\n";
                                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-                                $headers .= 'From: Career <myname@mydomain.com>' . "\r\n";
+                                $headers .= 'From: Career' . "\r\n";
                                 
                                 $subject = __('Career - New Application', 'jobwp');
                                 $emailMessage = __('Applicant: ', 'jobwp') . $fullName;
@@ -96,11 +96,13 @@ trait Jobwp_Applicaiton
                                     $attachments
                                 );
 
-                                // Applicant Notificaton Email
+                                // Applicant Notificaton Email Started
                                 $subjectRec = "Thank you for applying!";
 
                                 $recMessage = __('Hi', 'jobwp') . '&nbsp; ' . $fullName . ',';
-                                $recMessage .= '<br>' . __('Thanks for applying to our', 'jobwp') . '&nbsp;' . $applyFor;
+                                $recMessage .= '<br><br>' . __('Thanks for applying to our', 'jobwp') . '&nbsp;' . $applyFor . '&nbsp;' . __('position', 'jobwp') . '.';
+                                $recMessage .= '&nbsp;' . __("We'll review your application and be sure to get back to you if there might be a fit!", "jobwp");
+                                $recMessage .= '<br><br>' . __('Best', 'jobwp') . ',';
 
                                 wp_mail(
                                     esc_html( $email ),
@@ -108,6 +110,7 @@ trait Jobwp_Applicaiton
                                     $recMessage,
                                     $headers
                                 );
+                                // Applicant Notificaton Email Ended
         
                                 return __('Thank you for your application', JOBWP_TXT_DOMAIN);
                             }

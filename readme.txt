@@ -242,6 +242,7 @@ Now go to your detail page and refresh it.
 * File security issue fixed
 * Css fixed
 * Grid layout issue fixed
+* General and Details page styling conflict issue fixed
 
 = 1.8 =
 * Limit shortcoded option added
