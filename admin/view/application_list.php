@@ -69,7 +69,7 @@ if ( '' !== $showMessage ) {
 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
     ?>
     <a href="#" class="button button-primary jobwp-button"><?php _e('EXPORT TO CSV', JOBWP_TXT_DOMAIN); ?></a><br>
-    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now to Export', 'jobwp') . '</a>'; ?></span>
     <?php
 }
 
