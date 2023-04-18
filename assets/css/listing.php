@@ -13,6 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   .jobwp-item .jobwp-job-title a.jobwp-job-title-a {
     color: <?php esc_html_e( $jobwp_listing_title_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_listing_title_font_size ); ?>px;
+    line-height: <?php esc_html_e( $jobwp_listing_title_font_size + 10 ); ?>px;
   }
   /* Job overview */
   .jobwp-item p.jobwp-overview-excerpt {

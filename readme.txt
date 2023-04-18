@@ -235,6 +235,7 @@ Now go to your detail page and refresh it.
 * Form styling added - Pro
 * Job listing styling added - Pro
 * Export to csv feature added - Pro
+* Applicant Notification Email feature added - Pro
 [//]: # fs_premium_only_end
 * Total job found message added
 * Parsing bug fixed
