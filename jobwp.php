@@ -3,12 +3,12 @@
  * Plugin Name:         JobWP
  * Plugin URI:		    https://wordpress.org/plugins/jobwp/
  * Description: 	    Display job listings in a career page and allow users to apply directly to your site.
- * Version:             1.9
+ * Version:             2.0
  * Author:		        HM Plugin
  * Author URI:	        https://hmplugin.com
  * Requires at least:   5.2
  * Requires PHP:        7.2
- * Tested up to:        6.2
+ * Tested up to:        6.2.2
  * Text Domain:         jobwp
  * Domain Path:         /languages/
  * License:             GPL-2.0+
@@ -33,7 +33,7 @@ if ( function_exists( 'job_fs' ) ) {
         define('JOBWP_PRFX', 'jobwp_');
         define('JOBWP_CLS_PRFX', 'cls-jobwp-');
         define('JOBWP_TXT_DOMAIN', 'jobwp');
-        define('JOBWP_VERSION', '1.8');
+        define('JOBWP_VERSION', '2.0');
 
         require_once JOBWP_PATH . '/lib/freemius-integrator.php';
         require_once JOBWP_PATH . 'inc/' . JOBWP_CLS_PRFX . 'master.php';
