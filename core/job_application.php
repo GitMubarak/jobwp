@@ -14,11 +14,15 @@ trait Jobwp_Applicaiton
 
             if ( ! $file['jobwp_upload_resume']['error'] ) {
 
+                $ext = pathinfo( $file['jobwp_upload_resume']['name'], PATHINFO_EXTENSION );
+                
+                // Checking the file type
+                if ( 'pdf' !== $ext ) {
+                    return __('Only Pdf file is permitted', JOBWP_TXT_DOMAIN);
+                }
                 //can't be larger than 2mb
-                if ( $file['jobwp_upload_resume']['size'] > ( 2000000 ) ) {
-
+                else if ( $file['jobwp_upload_resume']['size'] > ( 2000000 ) ) {
                     return __('Your file size is to large', JOBWP_TXT_DOMAIN);
-
                 } else {
 
                     $jobwpDir = wp_upload_dir();
