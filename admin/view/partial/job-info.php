@@ -28,6 +28,26 @@ if ( ! defined( 'ABSPATH' ) ) {
             <input type="text" name="jobwp_deadline" id="jobwp_deadline" value="<?php esc_attr_e( $jobwp_deadline ); ?>" class="medium-text" readonly>
         </td>
     </tr>
+    <tr class="jobwp_application_url">
+        <th scope="row">
+            <label for="jobwp_application_url"><?php _e('Application URL', JOBWP_TXT_DOMAIN); ?></label>
+        </th>
+        <td>
+            <?php
+            if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                ?>
+                <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                <?php
+            }
+
+            if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                ?>
+                <input type="text" name="jobwp_application_url" id="jobwp_application_url" value="<?php esc_attr_e( $jobwp_application_url ); ?>" class="large-text">
+                <?php
+            }
+            ?>
+        </td>
+    </tr>
     <tr class="jobwp_status">
         <th scope="row">
             <label for="jobwp_status"><?php _e('Status', JOBWP_TXT_DOMAIN); ?></label>

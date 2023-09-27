@@ -541,14 +541,15 @@ class JobWp_Admin
 
 		wp_nonce_field( basename(__FILE__), 'jobwp_fields' );
 
-		$jobwp_experience 	= get_post_meta( $post->ID, 'jobwp_experience', true );
-		$jobwp_vacancies	= get_post_meta( $post->ID, 'jobwp_vacancies', true );
-		$jobwp_nature 		= get_post_meta( $post->ID, 'jobwp_nature', true );
-		$jobwp_level 		= get_post_meta( $post->ID, 'jobwp_level', true );
-		$jobwp_location 	= get_post_meta( $post->ID, 'jobwp_location', true );
-		$jobwp_edu_req 		= get_post_meta( $post->ID, 'jobwp_edu_req', true );
-		$jobwp_deadline 	= get_post_meta( $post->ID, 'jobwp_deadline', true );
-		$jobwp_status		= get_post_meta( $post->ID, 'jobwp_status', true );
+		$jobwp_experience 		= get_post_meta( $post->ID, 'jobwp_experience', true );
+		$jobwp_vacancies		= get_post_meta( $post->ID, 'jobwp_vacancies', true );
+		$jobwp_nature 			= get_post_meta( $post->ID, 'jobwp_nature', true );
+		$jobwp_level 			= get_post_meta( $post->ID, 'jobwp_level', true );
+		$jobwp_location 		= get_post_meta( $post->ID, 'jobwp_location', true );
+		$jobwp_edu_req 			= get_post_meta( $post->ID, 'jobwp_edu_req', true );
+		$jobwp_deadline 		= get_post_meta( $post->ID, 'jobwp_deadline', true );
+		$jobwp_status			= get_post_meta( $post->ID, 'jobwp_status', true );
+		$jobwp_application_url	= get_post_meta( $post->ID, 'jobwp_application_url', true );
 
 		include_once JOBWP_PATH . 'admin/view/partial/job-info.php';
 	}
@@ -649,6 +650,7 @@ class JobWp_Admin
 			'jobwp_add_req'				=> isset( $_POST['jobwp_add_req'] ) ? wp_kses_post( $_POST['jobwp_add_req'] ) : null,
 			'jobwp_salary'				=> isset( $_POST['jobwp_salary'] ) ? wp_kses_post( $_POST['jobwp_salary'] ) : null,
 			'jobwp_other_benefits'		=> isset( $_POST['jobwp_other_benefits'] ) ? wp_kses_post( $_POST['jobwp_other_benefits'] ) : null,
+			'jobwp_application_url'		=> isset( $_POST['jobwp_application_url'] ) ? sanitize_url( $_POST['jobwp_application_url'] ) : '',
 		);
 
 		foreach( $jobwp_meta_params as $key => $value ) {

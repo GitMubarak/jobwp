@@ -231,6 +231,9 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 2.2 =
+[//]: # fs_premium_only_begin
+* Application URL field added to job details panel - Pro
+[//]: # fs_premium_only_end
 * UniqueId added to filename to make it more secured
 * Freemius SDK upgraded
 
