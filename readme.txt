@@ -231,7 +231,7 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 2.2 =
-* Security
+* Freemius SDK upgreaded
 
 = 2.1 =
 * Security fix at server side
