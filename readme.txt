@@ -3,8 +3,8 @@ Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: career, job board, job listing, jobs, job manager
 Requires at least: 5.2
-Tested up to: 6.2.2
-Stable tag: 2.1
+Tested up to: 6.3.1
+Stable tag: 2.2
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -229,6 +229,9 @@ Now go to your detail page and refresh it.
 
 
 == Changelog ==
+
+= 2.2 =
+* Security
 
 = 2.1 =
 * Security fix at server side
