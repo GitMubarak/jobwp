@@ -27,7 +27,8 @@ trait Jobwp_Applicaiton
 
                     $jobwpDir = wp_upload_dir();
                     $jobwpDir = $jobwpDir['basedir'];
-                    $fileName = $jobwpDir . '/jobwp-resume/' . $_FILES['jobwp_upload_resume']['name'];
+                    $uniqueFile = uniqid() . '-' . $_FILES['jobwp_upload_resume']['name'];
+                    $fileName = $jobwpDir . '/jobwp-resume/' . $uniqueFile;
 
                     if ( ! is_writable( $jobwpDir . '/jobwp-resume' ) ) {
 
@@ -75,7 +76,7 @@ trait Jobwp_Applicaiton
                                     "' . $email . '",
                                     "' . $phoneNumber . '",
                                     "' . $message . '",
-                                    "' . $_FILES['jobwp_upload_resume']['name'] . '",
+                                    "' . $uniqueFile . '",
                                     "' . date('Y-m-d h:i:s') . '"
                                 )');
                                 

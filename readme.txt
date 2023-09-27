@@ -231,7 +231,8 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 2.2 =
-* Freemius SDK upgreaded
+* UniqueId added to filename to make it more secured
+* Freemius SDK upgraded
 
 = 2.1 =
 * Security fix at server side
