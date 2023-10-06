@@ -7,6 +7,9 @@ if ( ! defined( 'ABSPATH' ) ) {
   .jobwp-single-body-container {
     background: <?php esc_html_e( $jobwp_single_container_bg_color ); ?>;
   }
+  .jobwp-single-body-container .circulr-details-top {
+    background: <?php esc_html_e( $jobwp_single_title_bg_color ); ?>;
+  }
   .circulr-details-top .jobwp-job-title {
     color: <?php esc_html_e( $jobwp_single_title_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_single_title_font_size ); ?>px;

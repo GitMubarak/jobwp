@@ -35,6 +35,27 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
+                <label><?php _e('Background Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td colspan="3">
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_single_title_bg_color" id="jobwp_single_title_bg_color" value="<?php esc_attr_e( $jobwp_single_title_bg_color ); ?>">
+                    <div id="colorpicker"></div>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
                 <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
             <td>

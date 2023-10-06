@@ -58,6 +58,11 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#008b8b',
             ],
+            [
+                'name'      => 'jobwp_single_title_bg_color',
+                'type'      => 'text',
+                'default'   => '#EEEEEE',
+            ],
         ];
     }
 }
