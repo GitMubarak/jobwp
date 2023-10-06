@@ -4,17 +4,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <div class="jobwp-admin-sidebar" style="width: 20%; float: left;">
+    <div class="postbox pro-features">
+        <h3 class="hndle"><span>Pro Features</span></h3>
+        <div class="inside centered">
+            <ul>
+                <li>&#10003; Application Form Styling</li>
+                <li>&#10003; Job Listing Styling</li>
+                <li>&#10003; Application List Export to CSV</li>
+                <li>&#10003; Notification Email to the Job Applicants</li>
+                <li>&#10003; External Application URL</li>
+            </ul>
+            <p style="margin-bottom: 1px! important;"><a href="https://wpjoblisting.com/" target="_blank" class="button button-primary jobwp-button" style="background: #F5653E;">Upgrade Now!</a></p>
+        </div>
+    </div>
     <div class="postbox">
         <h3 class="hndle"><span>Support / Bug / Customization</span></h3>
         <div class="inside centered">
             <p>Please feel free to let us know if you have any bugs to report. Your report / suggestion can make the plugin awesome!</p>
-            <p style="margin-bottom: 1px! important;"><a href="https://wpjoblisting.com/contact/" target="_blank" class="button button-primary jobwp-button">Get Support</a></p>
-        </div>
-    </div>
-    <div class="postbox">
-        <h3 class="hndle"><span>More About JobWP</span></h3>
-        <div class="inside centered">
-            <p style="margin-bottom: 1px! important;"><a href="https://wpjoblisting.com/" target="_blank" class="button button-primary jobwp-button">Live Chat</a></p>
+            <p style="margin-bottom: 1px! important;"><a href="https://wpjoblisting.com/" target="_blank" class="button button-primary jobwp-button">Get Support</a></p>
         </div>
     </div>
     <div class="postbox">

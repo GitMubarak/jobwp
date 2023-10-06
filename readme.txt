@@ -237,6 +237,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_end
 * UniqueId added to filename to make it more secured
 * Freemius SDK upgraded
+* Pro features panel added to admin sidebar
 
 = 2.1 =
 * Security fix at server side
