@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <label for="jobwp_experience"><?php _e('Year of Experience', JOBWP_TXT_DOMAIN); ?></label>
         </th>
         <td>
-            <input type="text" name="jobwp_experience" value="<?php echo esc_attr( $jobwp_experience ); ?>" class="regular-text">
+            <input type="text" name="jobwp_experience" value="<?php esc_attr_e( $jobwp_experience ); ?>" class="regular-text">
         </td>
     </tr>
     <tr class="jobwp_vacancies">
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     </tr>
     <tr class="jobwp_application_url">
         <th scope="row">
-            <label for="jobwp_application_url"><?php _e('Application URL', JOBWP_TXT_DOMAIN); ?></label>
+            <label for="jobwp_application_url"><?php _e('External Apply Now URL', JOBWP_TXT_DOMAIN); ?></label>
         </th>
         <td>
             <?php

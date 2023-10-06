@@ -53,6 +53,11 @@ trait JobwpGeneralSettings
                 'type'      => 'text',
                 'default'   => '',
             ],
+            [
+                'name'      => 'jobwp_ext_apply_now_url',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

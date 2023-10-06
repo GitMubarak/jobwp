@@ -233,6 +233,7 @@ Now go to your detail page and refresh it.
 = 2.2 =
 [//]: # fs_premium_only_begin
 * Application URL field added to job details panel - Pro
+* Allow application URL option added to general settings panel - Pro
 [//]: # fs_premium_only_end
 * UniqueId added to filename to make it more secured
 * Freemius SDK upgraded

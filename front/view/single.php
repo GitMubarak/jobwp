@@ -71,6 +71,7 @@ include JOBWP_PATH . 'assets/css/single.php';
             $bo_job_additional_requirements = get_post_meta( $post->ID, 'jobwp_add_req', true );
             $bo_other_benefits              = get_post_meta( $post->ID, 'jobwp_other_benefits', true );
             $bo_job_salary                  = get_post_meta( $post->ID, 'jobwp_salary', true );
+            $jobwp_application_url          = get_post_meta( $post->ID, 'jobwp_application_url', true );
             ?>
             <div class="circulr-details-top">
                 <p class="jobwp-job-title"><?php the_title(); ?></p>
@@ -353,9 +354,16 @@ include JOBWP_PATH . 'assets/css/single.php';
             }
 
             if ( ! $jobwp_hide_apply_button ) {
-                ?>
-                <a href="#" class="jobwp-trigger-link jobwp-primary-button"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
-                <?php
+
+                if ( 'on' === $jobwp_ext_apply_now_url ) {
+                    ?>
+                    <a href="<?php echo esc_url( $jobwp_application_url ); ?>" class="jobwp-primary-button" target="_blank"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
+                    <?php
+                } else {
+                    ?>
+                    <a href="#" class="jobwp-trigger-link jobwp-primary-button"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
+                    <?php
+                }
             }
             ?>
         </div>

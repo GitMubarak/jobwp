@@ -71,6 +71,26 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <code><?php _e('You can use external form instead of default application form. Like WPForms, Contact Form etc.', JOBWP_TXT_DOMAIN); ?></code>
                             </td>
                         </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="jobwp_ext_apply_now_url"><?php _e('Allow External Application URL', JOBWP_TXT_DOMAIN); ?>?</label>
+                            </th>
+                            <td>
+                                <?php
+                                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                                    ?>
+                                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                                    <?php
+                                }
+
+                                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                                    ?>
+                                    <input type="checkbox" name="jobwp_ext_apply_now_url" class="jobwp_ext_apply_now_url" id="jobwp_ext_apply_now_url" <?php echo $jobwp_ext_apply_now_url ? 'checked' : ''; ?>>
+                                    <?php
+                                }
+                                ?>
+                            </td>
+                        </tr>
                     </table>
                     <hr>
                     <p class="submit">
