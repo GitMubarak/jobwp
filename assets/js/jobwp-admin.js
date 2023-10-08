@@ -23,7 +23,8 @@
         '#jobwp_apply_form_btn_hvr_font_color',
         '#jobwp_listing_item_border_color',
         '#jobwp_listing_item_bg_color',
-        '#jobwp_single_title_bg_color'
+        '#jobwp_single_title_bg_color',
+        '#jobwp_single_how_to_apply_bg_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {

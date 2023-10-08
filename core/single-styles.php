@@ -63,6 +63,11 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#EEEEEE',
             ],
+            [
+                'name'      => 'jobwp_single_how_to_apply_bg_color',
+                'type'      => 'text',
+                'default'   => '#EEEEEE',
+            ],
         ];
     }
 }
