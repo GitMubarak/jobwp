@@ -9,7 +9,7 @@ Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Display job listings in a career page and allow users to apply directly to your site.
+Easiest job board plugin to display job listings in a career page and allow users to apply directly to your site.
 
 == Description ==
 
@@ -76,13 +76,13 @@ There are multiple layouts available where you can display jobs with a list or g
 * Salary
 * Other Benefits
 
+
 **✅ Search Panel Items**
 
 * Search by Job Title
 * Search by Job Category
 * Search by Job Type
 * Search by Job Location
-
 
 
 **✅ Options In Listing Page Settings**
@@ -145,11 +145,25 @@ There are multiple layouts available where you can display jobs with a list or g
 <pre> [jobwp_listing layout="list"] </pre>
 
 
+**✅ Pro Features**
+
+* Application List Export to CSV
+* Notification Email to the Job Applicants
+* External Application URL
+* More Style Options for Job Details Page
+* Application Form Styling
+* More Style Options for Job Listing Page
+* Third Party Application Form Supported
+* User Consent Checkbox to Handle Personal Data
+
+[Get the Pro](https://wpjoblisting.com/pricing-faq/)
+
+
 **📋 Translation Ready:**
 
 * POT file included (/languages/)
 * English (United States) (Default)
-* Bengoli (Bangladesh)
+* Bengoli (Bangla)
 
 
 **👍 Feedback/Rating:**
