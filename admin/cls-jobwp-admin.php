@@ -293,9 +293,14 @@ class JobWp_Admin
 			'jobwp_applicant_email'		=> __('Email', JOBWP_TXT_DOMAIN),
 			'jobwp_applicant_message'	=> __('Cover Letter', JOBWP_TXT_DOMAIN),
 			'jobwp_applicant_resume'	=> __('Resume', JOBWP_TXT_DOMAIN),
-			'jobwp_applied_on'			=> __('Date', JOBWP_TXT_DOMAIN),
-			'action'					=> __('Action', JOBWP_TXT_DOMAIN)
+			'jobwp_applied_on'			=> __('Date', JOBWP_TXT_DOMAIN)
 		);
+
+		if ( job_fs()->is_plan__premium_only('pro', true) ) {
+			$jobwpColumns['jobwp_user_consent']	= __('User Consent', JOBWP_TXT_DOMAIN);
+		}
+
+		$jobwpColumns['action']	= __('Action', JOBWP_TXT_DOMAIN);
 
 		register_column_headers('jobwp-allication-table-column', $jobwpColumns);
 
@@ -744,6 +749,7 @@ class JobWp_Admin
 					$row[4] = '"' . $application->applicant_message .'"';
 					$row[5] = date( 'D d M Y - h:i A', strtotime( $application->applied_on ) );
 					$row[6] = $application->resume_name;
+					$row[7] = $application->user_consent;
 					$data_rows[] = $row;
 					$asl++;
 				}
@@ -754,11 +760,11 @@ class JobWp_Admin
 				header("Content-Disposition: attachment; filename={$filename}");
 				header("Expires: 0");
 				header("Pragma: public");
-				printf( "%s,%s,%s,%s,%s,%s,%s", "SL", "Applied For", "Name", "Email", "Cover Letter", "Applied On", "Resume Link" );
+				printf( "%s,%s,%s,%s,%s,%s,%s,%s", "SL", "Applied For", "Name", "Email", "Cover Letter", "Applied On", "Resume Link", "User Consent" );
 				_e("\n");
 				
 				foreach ( $data_rows as $data ) {
-					printf( "%d,%s,%s,%s,%s,%s,%s", $data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6] );
+					printf( "%d,%s,%s,%s,%s,%s,%s,%s", $data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6], $data[7] );
 					_e("\n");
 				}
 				

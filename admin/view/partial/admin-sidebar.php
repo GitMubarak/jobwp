@@ -8,11 +8,14 @@ if ( ! defined( 'ABSPATH' ) ) {
         <h3 class="hndle"><span>Pro Features</span></h3>
         <div class="inside centered">
             <ul>
-                <li>&#10003; Application Form Styling</li>
-                <li>&#10003; Job Listing Styling</li>
                 <li>&#10003; Application List Export to CSV</li>
                 <li>&#10003; Notification Email to the Job Applicants</li>
                 <li>&#10003; External Application URL</li>
+                <li>&#10003; More Style Options for Job Details Page</li>
+                <li>&#10003; Application Form Styling</li>
+                <li>&#10003; More Style Options for Job Listing Page</li>
+                <li>&#10003; Third Party Application Form Supported</li>
+                <li>&#10003; User Consent Checkbox to Handle Personal Data</li>
             </ul>
             <p style="margin-bottom: 1px! important;"><a href="https://wpjoblisting.com/" target="_blank" class="button button-primary jobwp-button" style="background: #F5653E;">Upgrade Now!</a></p>
         </div>

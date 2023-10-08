@@ -45,6 +45,13 @@ if ( '' !== $showMessage ) {
                     <td><a href="<?php printf('%s/%s', $jobwpDir, $application->resume_name); ?>"><?php esc_html_e( $application->resume_name ); ?></a></td>
                     <td><?php printf('%s', date('D d M Y - h:i A', strtotime($application->applied_on))); ?>
                     </td>
+                    <?php
+                    if ( job_fs()->is_plan__premium_only('pro', true) ) { 
+                        ?>
+                        <td><?php printf('%s', $application->user_consent); ?></td>
+                        <?php
+                    }
+                    ?>
                     <td>
                         <span class="delReq">
                             <a href="?post_type=jobs&page=jobwp-application-list&delID=<?php esc_attr_e( $application->job_id ); ?>" class="reqDel"><?php _e('DELETE', JOBWP_TXT_DOMAIN); ?></a>

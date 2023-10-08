@@ -236,10 +236,11 @@ Now go to your detail page and refresh it.
 * Allow application URL option added to general settings panel - Pro
 * Job detail title background color option added - Pro
 * How to apply background color option added - Pro
+* User Consent feature added - Pro
 [//]: # fs_premium_only_end
 * UniqueId added to filename to make it more secured
 * Freemius SDK upgraded
-* Pro features panel added to admin sidebar
+* Pro feature panel added to admin sidebar
 
 = 2.1 =
 * Security fix at server side

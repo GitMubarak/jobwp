@@ -34,6 +34,8 @@ class JobWp_Master {
 	function jobwp_load_plugin_textdomain() {
 
 		load_plugin_textdomain( JOBWP_TXT_DOMAIN, FALSE, JOBWP_TXT_DOMAIN . '/languages/' );
+
+		$this->jobwp_upgrade_table();
 	}
 
 	private function jobwp_load_dependencies() {
@@ -121,6 +123,18 @@ class JobWp_Master {
 			$txt .= "# Silence is golden.\n";
 			fwrite($idxFl, $txt);
 			fclose($idxFl);
+		}
+	}
+
+	function jobwp_upgrade_table() {
+
+		global $wpdb;
+		$table_name = $wpdb->prefix . 'jobwp_applied';
+
+		if ( 2.1 < $this->jobwp_version ) {
+			if ( $wpdb->get_var("SHOW COLUMNS FROM {$table_name} LIKE 'user_consent'") != 'user_consent' ) {
+				$wpdb->query("ALTER TABLE {$table_name} ADD user_consent VARCHAR(2) NULL DEFAULT NULL");
+			}
 		}
 	}
 }

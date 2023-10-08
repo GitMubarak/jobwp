@@ -58,6 +58,19 @@ if ( ! $jobwp_hide_apply_form_title ) {
             <span><?php _e('Allowed Type(s): .pdf', JOBWP_TXT_DOMAIN); ?></span>
         </div>
 
+        <?php
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
+            if ( 'on' !== $jobwp_apply_form_user_consent ) {
+                ?>
+                <div class="jobwp-field-row">
+                    <input type="checkbox" name="jobwp_user_consent" id="jobwp_user_consent">&nbsp;&nbsp;<?php esc_html_e( $jobwp_apply_form_user_consent_text ); ?>
+                </div>
+                <?php
+            }
+        }
+        ?>
+
         <div class="jobwp-field-row">
             <input type="submit" name="jobwp_apply_btn" id="jobwp_apply_btn" class="jobwp-primary-button" value="<?php esc_attr_e( $jobwp_apply_form_submit_btn_txt ); ?>">
         </div>

@@ -63,6 +63,16 @@ trait Jobwp_ApplyForm_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Apply Now',
             ],
+            [
+                'name'      => 'jobwp_apply_form_user_consent',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_apply_form_user_consent_text',
+                'type'      => 'text',
+                'default'   => 'By using this form you agree with the storage and handling of your data by this website.',
+            ],
         ];
     }
 }

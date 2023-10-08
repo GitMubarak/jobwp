@@ -54,11 +54,12 @@ trait Jobwp_Applicaiton
                         
                                 $table_name     = $wpdb->prefix . 'jobwp_applied';
         
-                                $fullName       = isset( $post['jobwp_full_name'] ) ? sanitize_text_field( $post['jobwp_full_name'] ) : null;
-                                $applyFor       = isset( $post['jobwp_apply_for'] ) ? sanitize_text_field( $post['jobwp_apply_for'] ) : null;
-                                $email 		    = isset( $post['jobwp_email'] ) ? sanitize_email( $post['jobwp_email'] ) : null;
-                                $phoneNumber    = isset( $post['phoneNumber'] ) ? sanitize_text_field( $post['phoneNumber'] ) : null;
-                                $message        = isset( $post['jobwp_cover_letter'] ) ? sanitize_textarea_field( $post['jobwp_cover_letter'] ) : null;
+                                $fullName           = isset( $post['jobwp_full_name'] ) ? sanitize_text_field( $post['jobwp_full_name'] ) : null;
+                                $applyFor           = isset( $post['jobwp_apply_for'] ) ? sanitize_text_field( $post['jobwp_apply_for'] ) : null;
+                                $email 		        = isset( $post['jobwp_email'] ) ? sanitize_email( $post['jobwp_email'] ) : null;
+                                $phoneNumber        = isset( $post['phoneNumber'] ) ? sanitize_text_field( $post['phoneNumber'] ) : null;
+                                $message            = isset( $post['jobwp_cover_letter'] ) ? sanitize_textarea_field( $post['jobwp_cover_letter'] ) : null;
+                                $jobwp_user_consent = isset( $post['jobwp_user_consent'] ) ? sanitize_text_field( $post['jobwp_user_consent'] ) : null;
         
                                 $wpdb->query('INSERT INTO ' . $table_name . '(
                                     job_post_id,
@@ -68,7 +69,8 @@ trait Jobwp_Applicaiton
                                     applicant_phone,
                                     applicant_message,
                                     resume_name,
-                                    applied_on
+                                    applied_on,
+                                    user_consent
                                 ) VALUES (
                                     ' . get_the_ID() . ',
                                     "' . $applyFor . '",
@@ -77,7 +79,8 @@ trait Jobwp_Applicaiton
                                     "' . $phoneNumber . '",
                                     "' . $message . '",
                                     "' . $uniqueFile . '",
-                                    "' . date('Y-m-d h:i:s') . '"
+                                    "' . date('Y-m-d h:i:s') . '",
+                                    "' . $jobwp_user_consent . '"
                                 )');
                                 
                                 // Admin Notification Email

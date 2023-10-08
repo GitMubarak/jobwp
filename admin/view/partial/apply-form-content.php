@@ -53,6 +53,46 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
         <tr><td colspan="4"><hr></td></tr>
         <tr>
             <th scope="row">
+                <label for="jobwp_apply_form_user_consent"><?php _e('Hide User Consent', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td colspan="3">
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="checkbox" name="jobwp_apply_form_user_consent" class="jobwp_apply_form_user_consent" id="jobwp_apply_form_user_consent" <?php echo $jobwp_apply_form_user_consent ? 'checked' : ''; ?>>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('User Consent Text', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td colspan="3">
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <textarea name="jobwp_apply_form_user_consent_text" id="jobwp_apply_form_user_consent_text" class="regular-text" cols="40" style="min-height: 100px;"><?php esc_html_e( $jobwp_apply_form_user_consent_text ); ?></textarea>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
                 <label><?php _e('Submit Button Text', JOBWP_TXT_DOMAIN); ?></label>
             </th>
             <td colspan="3">
