@@ -34,6 +34,26 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
     }
 }
 
+$wbgAbctEmail = [];
+
+if ( '' !== $jobwp_admin_noti_email ) {
+    $wbgAbctEmail[] = sanitize_email( $jobwp_admin_noti_email );
+}
+
+if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
+    $wbgAbctAdmins = get_users( 'role=' . $jobwp_admin_noti_email_users );
+
+    if ( ! empty( $wbgAbctAdmins ) ) {
+        foreach ( $wbgAbctAdmins as $admin ):
+            $wbgAbctEmail[] = sanitize_email( $admin->user_email );
+        endforeach;
+    }
+}
+
+//echo '<pre>';
+//print_r($wbgAbctEmail);
+
 // Upload Resume
 if ( isset( $_FILES['jobwp_upload_resume']['name'] ) ) {
     
@@ -41,7 +61,8 @@ if ( isset( $_FILES['jobwp_upload_resume']['name'] ) ) {
         || ! wp_verify_nonce( $_POST['jobwp_apply_form_nonce_field'], 'jobwp_apply_form_action' ) ) {
         $resumeUploadMsg = __('Sorry, your nonce did not verify.', JOBWP_TXT_DOMAIN);
     } else {
-        $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume($_POST, $_FILES, $jobwp_admin_noti_email);
+
+        $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume($_POST, $_FILES, $wbgAbctEmail);
     }
     
 }

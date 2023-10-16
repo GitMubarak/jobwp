@@ -46,7 +46,7 @@ trait Jobwp_Applicaiton
 
                             if ( $r === false)  {
                                 
-                                return __('The file cannor be copied in the folder ' . $jobwpDir . '/jobwp-resume. Check if it exists and is writeable. You can also ask for support to your hosting provider.', JOBWP_TXT_DOMAIN);
+                                return __('The file cannot be copied in the folder ' . $jobwpDir . '/jobwp-resume. Check if it exists and is writeable. You can also ask for support to your hosting provider.', JOBWP_TXT_DOMAIN);
 
                             } else {
 
@@ -97,7 +97,7 @@ trait Jobwp_Applicaiton
                                 //$emailMessage .= '<br>' . __( 'Phone: ' ) . $phoneNumber;
                                 $emailMessage .= '<br>' . __( 'Cover Letter: ', 'jobwp' ) . $message;
                                 wp_mail(
-                                    esc_html( $admin_email ),
+                                    $admin_email,
                                     $subject,
                                     $emailMessage,
                                     $headers,

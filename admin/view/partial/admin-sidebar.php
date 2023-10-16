@@ -16,6 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <li>&#10003; More Style Options for Job Listing Page</li>
                 <li>&#10003; Third Party Application Form Supported</li>
                 <li>&#10003; User Consent Checkbox to Handle Personal Data</li>
+                <li>&#10003; Role Based Notification Email</li>
             </ul>
             <p style="margin-bottom: 1px! important;"><a href="https://wpjoblisting.com/" target="_blank" class="button button-primary jobwp-button" style="background: #F5653E;">Upgrade Now!</a></p>
         </div>

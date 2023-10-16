@@ -58,6 +58,11 @@ trait JobwpGeneralSettings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'jobwp_admin_noti_email_users',
+                'type'      => 'text',
+                'default'   => '',
+            ],
         ];
     }
 }

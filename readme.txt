@@ -246,7 +246,7 @@ Now go to your detail page and refresh it.
 
 = 2.3 =
 [//]: # fs_premium_only_begin
-* Application - Pro
+* Role Based Notification Email feature added - Pro
 [//]: # fs_premium_only_end
 * UniqueId 
 

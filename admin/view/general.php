@@ -42,6 +42,39 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                         </tr>
                         <tr>
                             <th scope="row">
+                                <label for="jobwp_ext_apply_now_url"><?php _e('Notification Email to User Role', JOBWP_TXT_DOMAIN); ?></label>
+                            </th>
+                            <td>
+                                <?php
+                                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                                    ?>
+                                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                                    <?php
+                                }
+
+                                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                                    ?>
+                                    <select id="jobwp_admin_noti_email_users" name="jobwp_admin_noti_email_users">
+                                        <option value=""><?php _e('Select User Role', JOBWP_TXT_DOMAIN); ?></option>
+                                        <?php
+                                        $roles = get_editable_roles();
+                                        foreach ( $roles as $role => $details ) {
+                                            $name = translate_user_role( $details['name'] );
+                                            ?>
+                                            <option value="<?php esc_attr_e( $role ); ?>" <?php echo ( $jobwp_admin_noti_email_users === $role ) ? 'selected ' : ''; ?>><?php esc_html_e( $name ); ?></option>
+                                            <?php
+                                        }
+                                        ?>
+                                    </select>
+                                    <?php
+                                }
+                                ?>
+                                <br>
+                                <code><?php _e('An email will sent to this role based user emails when a candidate submit an applicaiton.', JOBWP_TXT_DOMAIN); ?></code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
                                 <label><?php _e('Job Page Layout', JOBWP_TXT_DOMAIN); ?></label>
                             </th>
                             <td>
