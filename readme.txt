@@ -155,6 +155,8 @@ There are multiple layouts available where you can display jobs with a list or g
 * More Style Options for Job Listing Page
 * Third Party Application Form Supported
 * User Consent Checkbox to Handle Personal Data
+* Role Based Notification Email
+* Docx file type allowed for job application
 
 [Get the Pro](https://wpjoblisting.com/pricing-faq/)
 
@@ -247,6 +249,7 @@ Now go to your detail page and refresh it.
 = 2.3 =
 [//]: # fs_premium_only_begin
 * Role Based Notification Email feature added - Pro
+* Docx file type allowed for job application - Pro
 [//]: # fs_premium_only_end
 * UniqueId 
 

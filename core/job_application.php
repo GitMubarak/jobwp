@@ -16,9 +16,20 @@ trait Jobwp_Applicaiton
 
                 $ext = pathinfo( $file['jobwp_upload_resume']['name'], PATHINFO_EXTENSION );
                 
+                
                 // Checking the file type
-                if ( 'pdf' !== $ext ) {
-                    return __('Only Pdf file is permitted', JOBWP_TXT_DOMAIN);
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    $allowedfiletype = array("pdf");
+                    $allowedfiletypemsg = __('Only Pdf file is permitted', JOBWP_TXT_DOMAIN);
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    $allowedfiletype = array("pdf", "docx", "doc");
+                    $allowedfiletypemsg = __('Only Pdf, Docx files are permitted', JOBWP_TXT_DOMAIN);
+                }
+
+                if ( ! in_array( $ext, $allowedfiletype ) ) {
+                    return __( $allowedfiletypemsg );
                 }
                 //can't be larger than 2mb
                 else if ( $file['jobwp_upload_resume']['size'] > ( 2000000 ) ) {

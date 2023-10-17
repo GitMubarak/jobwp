@@ -54,8 +54,8 @@
         if (fileName.length == 0) {
             fail('Please select a file.', fileElt);
             return false;
-        } else if (!/\.(docs|pdf)$/.test(fileName)) {
-            fail('Only Pdf file is permitted.', fileElt);
+        } else if (!/\.(docx|pdf)$/.test(fileName)) {
+            fail('Only Pdf file is permitted. (docx only for Premium version)', fileElt);
             return false;
         } else {
             var file = fileElt.get(0).files[0];
