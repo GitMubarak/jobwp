@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2023-10-08 15:09+0600\n"
+"POT-Creation-Date: 2023-10-18 05:08+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -363,34 +363,11 @@ msgid "An email will sent to this email when a candidate submit an applicaiton."
 msgstr ""
 
 #: admin/view/general.php:45
-msgid "Job Page Layout"
+msgid "Notification Email to User Role"
 msgstr ""
 
-#: admin/view/general.php:49
-msgid "List"
-msgstr ""
-
-#: admin/view/general.php:52
-msgid "Grid"
-msgstr ""
-
-#: admin/view/general.php:57
-msgid "Use External Application Form"
-msgstr ""
-
-#: admin/view/general.php:66
-msgid "External Application Form Shortcode"
-msgstr ""
-
-#: admin/view/general.php:71
-msgid "You can use external form instead of default application form. Like WPForms, Contact Form etc."
-msgstr ""
-
-#: admin/view/general.php:76
-msgid "Allow External Application URL"
-msgstr ""
-
-#: admin/view/general.php:82 admin/view/partial/apply-form-content.php:62
+#: admin/view/general.php:51 admin/view/general.php:115
+#: admin/view/partial/apply-form-content.php:62
 #: admin/view/partial/apply-form-content.php:82
 #: admin/view/partial/apply-form-style.php:30
 #: admin/view/partial/apply-form-style.php:57
@@ -415,7 +392,43 @@ msgstr ""
 msgid "Please Upgrade Now"
 msgstr ""
 
-#: admin/view/general.php:98 admin/view/partial/apply-form-content.php:106
+#: admin/view/general.php:58
+msgid "Select User Role"
+msgstr ""
+
+#: admin/view/general.php:73
+msgid "An email will sent to this role based user emails when a candidate submit an applicaiton."
+msgstr ""
+
+#: admin/view/general.php:78
+msgid "Job Page Layout"
+msgstr ""
+
+#: admin/view/general.php:82
+msgid "List"
+msgstr ""
+
+#: admin/view/general.php:85
+msgid "Grid"
+msgstr ""
+
+#: admin/view/general.php:90
+msgid "Use External Application Form"
+msgstr ""
+
+#: admin/view/general.php:99
+msgid "External Application Form Shortcode"
+msgstr ""
+
+#: admin/view/general.php:104
+msgid "You can use external form instead of default application form. Like WPForms, Contact Form etc."
+msgstr ""
+
+#: admin/view/general.php:109
+msgid "Allow External Application URL"
+msgstr ""
+
+#: admin/view/general.php:131 admin/view/partial/apply-form-content.php:106
 #: admin/view/partial/apply-form-style.php:332
 #: admin/view/partial/listing-content.php:96
 #: admin/view/partial/listing-style.php:153
@@ -723,63 +736,67 @@ msgstr ""
 msgid "Button Color"
 msgstr ""
 
-#: core/job_application.php:21
+#: core/job_application.php:23
 msgid "Only Pdf file is permitted"
 msgstr ""
 
-#: core/job_application.php:25
+#: core/job_application.php:28
+msgid "Only Pdf, Docx files are permitted"
+msgstr ""
+
+#: core/job_application.php:36
 msgid "Your file size is to large"
 msgstr ""
 
-#: core/job_application.php:35
+#: core/job_application.php:46
 msgid "/jobwp-resume"
 msgstr ""
 
-#: core/job_application.php:49
-msgid "The file cannor be copied in the folder "
+#: core/job_application.php:60
+msgid "The file cannot be copied in the folder "
 msgstr ""
 
-#: core/job_application.php:93
+#: core/job_application.php:104
 msgid "Career - New Application"
 msgstr ""
 
-#: core/job_application.php:94
+#: core/job_application.php:105
 msgid "Applicant: "
 msgstr ""
 
-#: core/job_application.php:95
+#: core/job_application.php:106
 msgid "Applied For: "
 msgstr ""
 
-#: core/job_application.php:96
+#: core/job_application.php:107
 msgid "Email: "
 msgstr ""
 
-#: core/job_application.php:98
+#: core/job_application.php:109
 msgid "Cover Letter: "
 msgstr ""
 
-#: core/job_application.php:111
+#: core/job_application.php:122
 msgid "Hi"
 msgstr ""
 
-#: core/job_application.php:112
+#: core/job_application.php:123
 msgid "Thanks for applying to our"
 msgstr ""
 
-#: core/job_application.php:112
+#: core/job_application.php:123
 msgid "position"
 msgstr ""
 
-#: core/job_application.php:113
+#: core/job_application.php:124
 msgid "We'll review your application and be sure to get back to you if there might be a fit!"
 msgstr ""
 
-#: core/job_application.php:114
+#: core/job_application.php:125
 msgid "Best"
 msgstr ""
 
-#: core/job_application.php:125
+#: core/job_application.php:136
 msgid "Thank you for your application"
 msgstr ""
 
@@ -799,8 +816,16 @@ msgstr ""
 msgid "Attach your resume. Max size 2mb"
 msgstr ""
 
-#: front/view/apply.php:58
-msgid "Allowed Type(s): .pdf"
+#: front/view/apply.php:60
+msgid "Allowed Type(s): "
+msgstr ""
+
+#: front/view/apply.php:63
+msgid "pdf"
+msgstr ""
+
+#: front/view/apply.php:67
+msgid "pdf, docx"
 msgstr ""
 
 #: front/view/listing.php:103
@@ -835,7 +860,7 @@ msgstr ""
 msgid "No Job found"
 msgstr ""
 
-#: front/view/single.php:42
+#: front/view/single.php:62
 msgid "Sorry, your nonce did not verify."
 msgstr ""
 

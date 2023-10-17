@@ -251,7 +251,9 @@ Now go to your detail page and refresh it.
 * Role Based Notification Email feature added - Pro
 * Docx file type allowed for job application - Pro
 [//]: # fs_premium_only_end
-* UniqueId 
+* Css improved
+* Code optimized
+* Minor bug fixed 
 
 = 2.2 =
 [//]: # fs_premium_only_begin
