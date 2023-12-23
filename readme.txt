@@ -250,6 +250,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Role - Pro
 [//]: # fs_premium_only_end
+* Freemius SDK updated to 2.6.1
 * Css improved
 
 = 2.3 =
