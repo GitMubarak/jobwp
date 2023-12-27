@@ -63,6 +63,12 @@ $jobwpQueryArrParams = array(
             'value'   => 'active',
             'compare' => '='
         ),
+        array(
+            'key'     => 'jobwp_deadline',
+            'value'   => date('Y-m-d'),
+            'compare' => '>=',
+            'type'    => 'DATE'
+        ),
     ),
 );
 
