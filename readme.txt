@@ -260,6 +260,7 @@ Now go to your detail page and refresh it.
 * Search container border color option added
 * Search item bg color option added
 * Search item border color option added
+* Search item font size option added
 * Freemius SDK updated to 2.6.1
 * Css improved
 

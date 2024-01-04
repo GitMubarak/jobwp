@@ -13,6 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   .jobwp-search-container .jobwp-search-item select {
     background-color: <?php esc_html_e( $jobwp_search_item_bg_color ); ?>;
     border-color: <?php esc_html_e( $jobwp_search_item_border_color ); ?>;
+    font-size: <?php esc_html_e( $jobwp_search_item_font_size ); ?>px;
   }
   .jobwp-search-container .jobwp-search-item .submit-btn {
     background-color: <?php esc_html_e( $jobwp_search_btn_bg_color ); ?>;

@@ -78,6 +78,11 @@ trait Jobwp_Search_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#DDD',
             ],
+            [
+                'name'      => 'jobwp_search_item_font_size',
+                'type'      => 'number',
+                'default'   => '12',
+            ],
         ];
     }
 }

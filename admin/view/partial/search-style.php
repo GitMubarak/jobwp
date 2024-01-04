@@ -55,6 +55,13 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
                 <input class="jobwp-wp-color" type="text" name="jobwp_search_item_border_color" id="jobwp_search_item_border_color" value="<?php esc_attr_e( $jobwp_search_item_border_color ); ?>">
                 <div id="colorpicker"></div>
             </td>
+            <th scope="row">
+                <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input type="number" class="small-text" min="11" max="50" name="jobwp_search_item_font_size" id="jobwp_search_item_font_size" value="<?php esc_attr_e( $jobwp_search_item_font_size ); ?>">
+                <code>px</code>
+            </td>
         </tr>
         <!-- Search Button -->
         <tr>
