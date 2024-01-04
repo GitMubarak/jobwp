@@ -14,7 +14,7 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
     <table class="jobwp-settings-table">
         <!-- Search Button -->
         <tr>
-            <th scope="row" colspan="4">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><span><?php _e('Search Button', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -32,6 +32,13 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
             <td>
                 <input class="jobwp-wp-color" type="text" name="jobwp_search_btn_font_color" id="jobwp_search_btn_font_color" value="<?php esc_attr_e( $jobwp_search_btn_font_color ); ?>">
                 <div id="colorpicker"></div>
+            </td>
+            <th scope="row">
+                <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input type="number" class="small-text" min="11" max="50" name="jobwp_search_btn_font_size" id="jobwp_search_btn_font_size" value="<?php esc_attr_e( $jobwp_search_btn_font_size ); ?>">
+                <code>px</code>
             </td>
         </tr>
     </table>

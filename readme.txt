@@ -253,6 +253,7 @@ Now go to your detail page and refresh it.
 * Display jobs which deadlines are equal or grater than Today
 * Search button bg color option added
 * Search button font color option added
+* Search button font size option added
 * Freemius SDK updated to 2.6.1
 * Css improved
 

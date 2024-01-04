@@ -44,9 +44,9 @@ trait Jobwp_Search_Styles_Settings
                 'default'   => '#FFF',
             ],
             [
-                'name'      => 'jobwp_search_title_font_size',
+                'name'      => 'jobwp_search_btn_font_size',
                 'type'      => 'number',
-                'default'   => '20',
+                'default'   => '14',
             ],
         ];
     }

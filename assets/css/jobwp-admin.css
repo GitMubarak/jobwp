@@ -5,6 +5,10 @@
     margin-bottom: 20px;
 }
 
+table.jobwp-settings-table {
+    width: 100%;
+}
+
 table.jobwp-settings-table tr th,
 table.jobwp-settings-table tr td,
 table.jobwp-listing-content-settings-table tr th,
@@ -27,6 +31,10 @@ table.jobwp-listing-style-settings-table tr th,
 table.jobwp-single-settings-table tr th,
 table.jobwp-single-style-settings-table tr th {
     font-weight: 600;
+}
+
+table.jobwp-settings-table tr th {
+    text-align: right;
 }
 
 .manage-column.column-jobwp_list_sl {
