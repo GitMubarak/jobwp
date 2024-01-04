@@ -5,6 +5,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <style type="text/css">
   /* Search Panel Started */
+  .jobwp-search-container {
+    background-color: <?php esc_html_e( $jobwp_search_container_bg_color ); ?>;
+  }
   .jobwp-search-container .jobwp-search-item .submit-btn {
     background-color: <?php esc_html_e( $jobwp_search_btn_bg_color ); ?>;
     color: <?php esc_html_e( $jobwp_search_btn_font_color ); ?>;
