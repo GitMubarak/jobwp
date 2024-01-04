@@ -4,6 +4,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <style type="text/css">
+  /* Search Panel Started */
+  .jobwp-search-container .jobwp-search-item .submit-btn {
+    background-color: <?php esc_html_e( $jobwp_search_btn_bg_color ); ?>;
+  }
+  /* Search Panel Ended */
   /* Job Item */
   .jobwp-listing-body-container .jobwp-item {
     border: 1px solid <?php esc_html_e( $jobwp_listing_item_border_color ); ?>;

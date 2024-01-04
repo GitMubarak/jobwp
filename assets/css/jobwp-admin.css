@@ -5,6 +5,8 @@
     margin-bottom: 20px;
 }
 
+table.jobwp-settings-table tr th,
+table.jobwp-settings-table tr td,
 table.jobwp-listing-content-settings-table tr th,
 table.jobwp-listing-content-settings-table tr td,
 table.jobwp-listing-style-settings-table tr th,
@@ -19,6 +21,7 @@ table.jobwp-single-style-settings-table tr td {
     vertical-align: top;
 }
 
+table.jobwp-settings-table tr th,
 table.jobwp-listing-content-settings-table tr th,
 table.jobwp-listing-style-settings-table tr th,
 table.jobwp-single-settings-table tr th,

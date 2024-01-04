@@ -12,6 +12,7 @@ class JobWp_Admin
 	Jobwp_Listing_Content_Settings, 
 	Jobwp_Listing_Styles_Settings,
 	Jobwp_Search_Content_Settings,
+	Jobwp_Search_Styles_Settings,
 	Jobwp_Single_Content_Settings, 
 	Jobwp_Single_Styles_Settings,
 	Jobwp_ApplyForm_Content_Settings,
@@ -211,7 +212,15 @@ class JobWp_Admin
 
 		}
 
+		// Style
+		if ( isset( $_POST['updateSearchStyles'] ) ) {
+
+			$jobwpSearchMessage = $this->jobwp_set_search_styles_settings( $_POST );
+
+		}
+
 		$jobwpSearchContent = $this->jobwp_get_search_content_settings();
+		$jobwpSearchStyles = $this->jobwp_get_search_styles_settings();
 
 		require_once JOBWP_PATH . 'admin/view/search.php';
 	}

@@ -10,6 +10,7 @@ include_once JOBWP_PATH . 'core/listing-styles.php';
 include_once JOBWP_PATH . 'core/single-content.php';
 include_once JOBWP_PATH . 'core/single-styles.php';
 include_once JOBWP_PATH . 'core/search-content.php';
+include_once JOBWP_PATH . 'core/search-styles.php';
 include_once JOBWP_PATH . 'core/apply-form-content.php';
 include_once JOBWP_PATH . 'core/apply-form-style.php';
 include_once JOBWP_PATH . 'core/applications.php';

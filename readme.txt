@@ -251,6 +251,7 @@ Now go to your detail page and refresh it.
 * Role - Pro
 [//]: # fs_premium_only_end
 * Display jobs which deadlines are equal or grater than Today
+* Search button bg color option added
 * Freemius SDK updated to 2.6.1
 * Css improved
 

@@ -36,6 +36,14 @@ foreach ( $jobwpSearchContent as $sc_name => $sc_value ) {
     }
 }
 
+// Seaarch Styles
+$jobwpSearchStyles = $this->jobwp_get_search_styles_settings();
+foreach ( $jobwpSearchStyles as $ss_name => $ss_value ) {
+    if ( isset( $jobwpSearchStyles[$ss_name] ) ) {
+        ${"" . $ss_name} = $ss_value;
+    }
+}
+
 // For Pagination
 if ( is_front_page() ) {
     $jobwp_paged   = ( get_query_var('page') ) ? get_query_var('page') : 1;

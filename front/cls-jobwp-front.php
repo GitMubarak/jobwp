@@ -14,6 +14,7 @@ class JobWp_Front
 	Jobwp_Listing_Content_Settings, 
 	Jobwp_Listing_Styles_Settings,
 	Jobwp_Search_Content_Settings,
+	Jobwp_Search_Styles_Settings,
 	Jobwp_Single_Content_Settings, 
 	Jobwp_Single_Styles_Settings,
 	Jobwp_ApplyForm_Content_Settings,
