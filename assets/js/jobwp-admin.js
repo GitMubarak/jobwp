@@ -25,7 +25,8 @@
         '#jobwp_listing_item_bg_color',
         '#jobwp_single_title_bg_color',
         '#jobwp_single_how_to_apply_bg_color',
-        '#jobwp_search_btn_bg_color'
+        '#jobwp_search_btn_bg_color',
+        '#jobwp_search_btn_font_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {

@@ -39,6 +39,11 @@ trait Jobwp_Search_Styles_Settings
                 'default'   => '#13b5ea',
             ],
             [
+                'name'      => 'jobwp_search_btn_font_color',
+                'type'      => 'text',
+                'default'   => '#FFF',
+            ],
+            [
                 'name'      => 'jobwp_search_title_font_size',
                 'type'      => 'number',
                 'default'   => '20',
