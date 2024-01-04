@@ -247,9 +247,6 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 2.3.2 =
-[//]: # fs_premium_only_begin
-* Role - Pro
-[//]: # fs_premium_only_end
 * Display jobs which deadlines are equal or grater than Today
 * Search button bg color option added
 * Search button font color option added
