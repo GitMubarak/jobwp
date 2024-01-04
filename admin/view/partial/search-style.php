@@ -41,6 +41,28 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
                 <code>px</code>
             </td>
         </tr>
+        <!-- Search Button::Hover -->
+        <tr>
+            <th scope="row" colspan="6" style="text-align: left;">
+                <hr><span><?php _e('Search Button :: Hover', JOBWP_TXT_DOMAIN); ?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Background Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_search_btn_bg_color_hvr" id="jobwp_search_btn_bg_color_hvr" value="<?php esc_attr_e( $jobwp_search_btn_bg_color_hvr ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+            <th scope="row">
+                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_search_btn_font_color_hvr" id="jobwp_search_btn_font_color_hvr" value="<?php esc_attr_e( $jobwp_search_btn_font_color_hvr ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit">

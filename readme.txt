@@ -254,6 +254,8 @@ Now go to your detail page and refresh it.
 * Search button bg color option added
 * Search button font color option added
 * Search button font size option added
+* Search button hover bg color option added
+* Search button hover font color option added
 * Freemius SDK updated to 2.6.1
 * Css improved
 

@@ -9,6 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) {
     background-color: <?php esc_html_e( $jobwp_search_btn_bg_color ); ?>;
     color: <?php esc_html_e( $jobwp_search_btn_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_search_btn_font_size ); ?>px;
+    line-height: <?php esc_html_e( $jobwp_search_btn_font_size ); ?>px;
+  }
+  .jobwp-search-container .jobwp-search-item .submit-btn:hover {
+    background-color: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
+    color: <?php esc_html_e( $jobwp_search_btn_font_color_hvr ); ?>;
+    border-color: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
   }
   /* Search Panel Ended */
   /* Job Item */

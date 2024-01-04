@@ -48,6 +48,16 @@ trait Jobwp_Search_Styles_Settings
                 'type'      => 'number',
                 'default'   => '14',
             ],
+            [
+                'name'      => 'jobwp_search_btn_bg_color_hvr',
+                'type'      => 'text',
+                'default'   => '#6fa0df',
+            ],
+            [
+                'name'      => 'jobwp_search_btn_font_color_hvr',
+                'type'      => 'text',
+                'default'   => '#FFF',
+            ],
         ];
     }
 }
