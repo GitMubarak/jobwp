@@ -30,7 +30,8 @@
         '#jobwp_search_btn_bg_color_hvr',
         '#jobwp_search_btn_font_color_hvr',
         '#jobwp_search_container_bg_color',
-        '#jobwp_search_container_border_color'
+        '#jobwp_search_container_border_color',
+        '#jobwp_search_item_bg_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {

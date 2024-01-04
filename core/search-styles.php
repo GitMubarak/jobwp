@@ -68,6 +68,11 @@ trait Jobwp_Search_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#DDD',
             ],
+            [
+                'name'      => 'jobwp_search_item_bg_color',
+                'type'      => 'text',
+                'default'   => '#FFF',
+            ],
         ];
     }
 }

@@ -34,6 +34,21 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
                 <div id="colorpicker"></div>
             </td>
         </tr>
+        <!-- Search Items -->
+        <tr>
+            <th scope="row" colspan="6" style="text-align: left;">
+                <hr><span><?php _e('Search Items', JOBWP_TXT_DOMAIN); ?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Background Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_search_item_bg_color" id="jobwp_search_item_bg_color" value="<?php esc_attr_e( $jobwp_search_item_bg_color ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
         <!-- Search Button -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">
