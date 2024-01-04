@@ -7,6 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   /* Search Panel Started */
   .jobwp-search-container {
     background-color: <?php esc_html_e( $jobwp_search_container_bg_color ); ?>;
+    border-color: <?php esc_html_e( $jobwp_search_container_border_color ); ?>;
   }
   .jobwp-search-container .jobwp-search-item .submit-btn {
     background-color: <?php esc_html_e( $jobwp_search_btn_bg_color ); ?>;
