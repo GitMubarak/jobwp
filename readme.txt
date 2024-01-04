@@ -258,7 +258,7 @@ Now go to your detail page and refresh it.
 * Search item bg color option added
 * Search item border color option added
 * Search item font size option added
-* Freemius SDK updated to 2.6.1
+* Freemius SDK updated to 2.6.2
 * Css improved
 
 = 2.3 =
