@@ -63,6 +63,11 @@ trait JobwpGeneralSettings
                 'type'      => 'text',
                 'default'   => '',
             ],
+            [
+                'name'      => 'jobwp_hide_jobs_deadline_over',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

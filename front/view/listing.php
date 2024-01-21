@@ -71,12 +71,6 @@ $jobwpQueryArrParams = array(
             'value'   => 'active',
             'compare' => '='
         ),
-        array(
-            'key'     => 'jobwp_deadline',
-            'value'   => date('Y-m-d'),
-            'compare' => '>=',
-            'type'    => 'DATE'
-        ),
     ),
 );
 
@@ -89,6 +83,19 @@ if( $jobwp_category != '' ) {
             'field'     => 'name',
             'terms'     => $jobwp_category
         )
+    );
+}
+
+// Hide Jobs When Deadline Over
+if ( $jobwp_hide_jobs_deadline_over ) {
+
+    $jobwpQueryArrParams['meta_query'] = array(
+        array(
+            'key'     => 'jobwp_deadline',
+            'value'   => date('Y-m-d'),
+            'compare' => '>=',
+            'type'    => 'DATE'
+        ),
     );
 }
 

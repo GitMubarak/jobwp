@@ -30,7 +30,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
             <div class="tab-content">
                 <form name="jobwp_general_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-general-settings-form">
                     <table class="jobwp-single-settings-table">
-                        <tr>
+                        <tr class="jobwp_admin_noti_email">
                             <th scope="row">
                                 <label><?php _e('Admin Notification Email', JOBWP_TXT_DOMAIN); ?></label>
                             </th>
@@ -40,7 +40,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <code><?php _e('An email will sent to this email when a candidate submit an applicaiton.', JOBWP_TXT_DOMAIN); ?></code>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="jobwp_admin_noti_email_users">
                             <th scope="row">
                                 <label for="jobwp_ext_apply_now_url"><?php _e('Notification Email to User Role', JOBWP_TXT_DOMAIN); ?></label>
                             </th>
@@ -73,7 +73,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <code><?php _e('An email will sent to this role based user emails when a candidate submit an applicaiton.', JOBWP_TXT_DOMAIN); ?></code>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="jobwp_list_layout">
                             <th scope="row">
                                 <label><?php _e('Job Page Layout', JOBWP_TXT_DOMAIN); ?></label>
                             </th>
@@ -85,7 +85,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <label for="jobwp_list_layout_grid"><span></span><?php _e('Grid', JOBWP_TXT_DOMAIN); ?></label>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="jobwp_ext_application_form">
                             <th scope="row">
                                 <label for="jobwp_ext_application_form"><?php _e('Use External Application Form', JOBWP_TXT_DOMAIN); ?>?</label>
                             </th>
@@ -94,7 +94,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                     <?php echo $jobwp_ext_application_form ? 'checked' : ''; ?> >
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="jobwp_ext_application_form_shortcode">
                             <th scope="row">
                                 <label><?php _e('External Application Form Shortcode', JOBWP_TXT_DOMAIN); ?></label>
                             </th>
@@ -104,7 +104,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <code><?php _e('You can use external form instead of default application form. Like WPForms, Contact Form etc.', JOBWP_TXT_DOMAIN); ?></code>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="jobwp_ext_apply_now_url">
                             <th scope="row">
                                 <label for="jobwp_ext_apply_now_url"><?php _e('Allow External Application URL', JOBWP_TXT_DOMAIN); ?>?</label>
                             </th>
@@ -122,6 +122,14 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                     <?php
                                 }
                                 ?>
+                            </td>
+                        </tr>
+                        <tr class="jobwp_hide_jobs_deadline_over">
+                            <th scope="row">
+                                <label for="jobwp_hide_jobs_deadline_over"><?php _e('Hide Jobs When Deadline Over', JOBWP_TXT_DOMAIN); ?>?</label>
+                            </th>
+                            <td>
+                                <input type="checkbox" name="jobwp_hide_jobs_deadline_over" class="jobwp_hide_jobs_deadline_over" id="jobwp_hide_jobs_deadline_over" <?php echo $jobwp_hide_jobs_deadline_over ? 'checked' : ''; ?>>  
                             </td>
                         </tr>
                     </table>
