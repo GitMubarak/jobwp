@@ -251,6 +251,7 @@ Now go to your detail page and refresh it.
 * Role - Pro
 [//]: # fs_premium_only_end
 * Hide Jobs When Deadline Over option added
+* Hide Total Jobs Found option added
 
 = 2.3.2 =
 * Display jobs which deadlines are equal or grater than Today

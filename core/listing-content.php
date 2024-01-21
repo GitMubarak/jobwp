@@ -83,6 +83,11 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Job Type',
             ],
+            [
+                'name'      => 'jobwp_hide_total_jobs_found',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }
