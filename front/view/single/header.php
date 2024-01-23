@@ -66,33 +66,39 @@ if ( isset( $_FILES['jobwp_upload_resume']['name'] ) ) {
         $resumeUploadMsg = __('Sorry, your nonce did not verify.', JOBWP_TXT_DOMAIN);
     } else {
 
-        $curlx = curl_init();
+        if ( $jobwp_captcha_on_apply_form ) {
+            $curlx = curl_init();
 
-		curl_setopt($curlx, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
-		curl_setopt($curlx, CURLOPT_HEADER, 0);
-		curl_setopt($curlx, CURLOPT_RETURNTRANSFER, 1); 
-		curl_setopt($curlx, CURLOPT_POST, 1);
+            curl_setopt($curlx, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+            curl_setopt($curlx, CURLOPT_HEADER, 0);
+            curl_setopt($curlx, CURLOPT_RETURNTRANSFER, 1); 
+            curl_setopt($curlx, CURLOPT_POST, 1);
 
-		$post_data = [
-			'secret' => sanitize_text_field( $jobwp_recaptcha_secret_key ), //<--- your reCaptcha secret key
-			'response' => sanitize_text_field( $_POST['g-recaptcha-response'] ),
-		];
+            $post_data = [
+                'secret' => sanitize_text_field( $jobwp_recaptcha_secret_key ), //<--- your reCaptcha secret key
+                'response' => sanitize_text_field( $_POST['g-recaptcha-response'] ),
+            ];
 
-		curl_setopt($curlx, CURLOPT_POSTFIELDS, $post_data);
+            curl_setopt($curlx, CURLOPT_POSTFIELDS, $post_data);
 
-		$resp = json_decode(curl_exec($curlx));
+            $resp = json_decode(curl_exec($curlx));
 
-		curl_close($curlx);
-		
-		if ($resp->success) {
-			
+            curl_close($curlx);
+            
+            if ($resp->success) {
+                
+                $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume( $_POST, $_FILES, $wbgAbctEmail );
+                
+            } else {
+                
+                $resumeUploadMsg = __('reCaptcha verification failed!', JOBWP_TXT_DOMAIN);
+                
+            }
+        } else {
+
             $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume( $_POST, $_FILES, $wbgAbctEmail );
-			
-		} else {
-			// failed
-			$resumeUploadMsg = __('reCaptcha verification failed!', JOBWP_TXT_DOMAIN);
-			//exit;
-		}
+            
+        }
     }
     
 }

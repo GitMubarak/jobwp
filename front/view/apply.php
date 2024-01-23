@@ -91,10 +91,16 @@ if ( ! $jobwp_hide_apply_form_title ) {
         }
         ?>
 
-        <div class="jobwp-field-row">
-            <div class="g-recaptcha" data-sitekey="<?php esc_attr_e( $jobwp_recaptcha_site_key ); ?>"></div>
-            <div class="captcha-error" style="color: red;"></div>
-        </div>
+        <?php
+        if ( $jobwp_captcha_on_apply_form ) {
+            ?>
+            <div class="jobwp-field-row" id="jobwp-captcha-field">
+                <div class="g-recaptcha" data-sitekey="<?php esc_attr_e( $jobwp_recaptcha_site_key ); ?>"></div>
+                <div class="captcha-error" style="color: red;"></div>
+            </div>
+            <?php
+        }
+        ?>
 
         <div class="jobwp-field-row">
             <input type="submit" name="jobwp_apply_btn" id="jobwp_apply_btn" class="jobwp-primary-button" value="<?php esc_attr_e( $jobwp_apply_form_submit_btn_txt ); ?>">

@@ -78,6 +78,11 @@ trait JobwpGeneralSettings
                 'type'      => 'text',
                 'default'   => '',
             ],
+            [
+                'name'      => 'jobwp_captcha_on_apply_form',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

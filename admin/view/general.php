@@ -153,6 +153,14 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <input type="text" name="jobwp_recaptcha_secret_key" id="jobwp_recaptcha_secret_key" class="regular-text" value="<?php esc_attr_e( stripslashes( $jobwp_recaptcha_secret_key ) ); ?>" />
                             </td>
                         </tr>
+                        <tr class="jobwp_captcha_on_apply_form">
+                            <th scope="row">
+                                <label for="jobwp_captcha_on_apply_form"><?php _e('Enable on Apply Form', JOBWP_TXT_DOMAIN); ?>?</label>
+                            </th>
+                            <td>
+                                <input type="checkbox" name="jobwp_captcha_on_apply_form" class="jobwp_captcha_on_apply_form" id="jobwp_captcha_on_apply_form" <?php echo $jobwp_captcha_on_apply_form ? 'checked' : ''; ?>>  
+                            </td>
+                        </tr>
                     </table>
                     <hr>
                     <p class="submit">

@@ -35,6 +35,7 @@
         var fileElt = $('input#jobwp_upload_resume');
         var fileName = fileElt.val();
         var maxSize = 2000000;
+        var jobwpCaptchaField = document.getElementById('jobwp-captcha-field');
 
         if (fullName.val() == '') {
             fail('This field is required', fullName);
@@ -51,9 +52,11 @@
             return false;
         }
 
-        if (grecaptcha.getResponse() == "") {
-            $('.captcha-error').text("Please verify captcha");
-            return false;
+        if (jobwpCaptchaField != null) {
+            if (grecaptcha.getResponse() == "") {
+                $('.captcha-error').text("Please verify captcha");
+                return false;
+            }
         }
 
         if (fileName.length == 0) {
