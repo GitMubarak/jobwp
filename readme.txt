@@ -253,6 +253,7 @@ Now go to your detail page and refresh it.
 * Hide Jobs When Deadline Over option added
 * Hide Total Jobs Found option added
 * Action added for job single page before, after body container
+* reCaptcha implemented for job apply form
 
 = 2.3.2 =
 * Display jobs which deadlines are equal or grater than Today

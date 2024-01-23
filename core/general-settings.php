@@ -68,6 +68,16 @@ trait JobwpGeneralSettings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'jobwp_recaptcha_site_key',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'jobwp_recaptcha_secret_key',
+                'type'      => 'text',
+                'default'   => '',
+            ],
         ];
     }
 }

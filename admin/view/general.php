@@ -132,6 +132,27 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <input type="checkbox" name="jobwp_hide_jobs_deadline_over" class="jobwp_hide_jobs_deadline_over" id="jobwp_hide_jobs_deadline_over" <?php echo $jobwp_hide_jobs_deadline_over ? 'checked' : ''; ?>>  
                             </td>
                         </tr>
+                        <tr>
+                            <td colspan="2" style="font-size: 18px;">
+                                <hr><b><?php _e('Captcha', JOBWP_TXT_DOMAIN); ?></b><hr>
+                            </td>
+                        </tr>
+                        <tr class="jobwp_recaptcha_site_key">
+                            <th scope="row">
+                                <label><?php _e('Site Key', JOBWP_TXT_DOMAIN); ?></label>
+                            </th>
+                            <td>
+                                <input type="text" name="jobwp_recaptcha_site_key" id="jobwp_recaptcha_site_key" class="regular-text" value="<?php esc_attr_e( stripslashes( $jobwp_recaptcha_site_key ) ); ?>" />
+                            </td>
+                        </tr>
+                        <tr class="jobwp_recaptcha_secret_key">
+                            <th scope="row">
+                                <label><?php _e('Secret Key', JOBWP_TXT_DOMAIN); ?></label>
+                            </th>
+                            <td>
+                                <input type="text" name="jobwp_recaptcha_secret_key" id="jobwp_recaptcha_secret_key" class="regular-text" value="<?php esc_attr_e( stripslashes( $jobwp_recaptcha_secret_key ) ); ?>" />
+                            </td>
+                        </tr>
                     </table>
                     <hr>
                     <p class="submit">

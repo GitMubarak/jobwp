@@ -58,6 +58,8 @@ class JobWp_Front
 			FALSE 
 		);
 		
+		wp_enqueue_script( 'jobwp-recaptcha-script', 'https://www.google.com/recaptcha/api.js' );
+
 		if ( ! wp_script_is( 'jquery' ) ) {
 			wp_enqueue_script('jquery');
 		}

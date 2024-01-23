@@ -51,6 +51,11 @@
             return false;
         }
 
+        if (grecaptcha.getResponse() == "") {
+            $('.captcha-error').text("Please verify captcha");
+            return false;
+        }
+
         if (fileName.length == 0) {
             fail('Please select a file.', fileElt);
             return false;

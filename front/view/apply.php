@@ -19,6 +19,14 @@ foreach ( $jobwpApplyFormStyle as $fs_name => $fs_value ) {
     }
 }
 
+$jobwpGeneralSettings = $this->jobwp_get_general_settings();
+//print_r( $jobwpGeneralSettings );
+foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
+    if ( isset( $jobwpGeneralSettings[$option_name] ) ) {
+        ${"" . $option_name} = $option_value;
+    }
+}
+
 // Load Styling
 include JOBWP_PATH . 'assets/css/apply-form.php';
 
@@ -82,6 +90,11 @@ if ( ! $jobwp_hide_apply_form_title ) {
             }
         }
         ?>
+
+        <div class="jobwp-field-row">
+            <div class="g-recaptcha" data-sitekey="<?php esc_attr_e( $jobwp_recaptcha_site_key ); ?>"></div>
+            <div class="captcha-error" style="color: red;"></div>
+        </div>
 
         <div class="jobwp-field-row">
             <input type="submit" name="jobwp_apply_btn" id="jobwp_apply_btn" class="jobwp-primary-button" value="<?php esc_attr_e( $jobwp_apply_form_submit_btn_txt ); ?>">

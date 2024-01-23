@@ -440,6 +440,10 @@ span.wpsd-read-before-apply-border {
 
 /* Apply Now Started */
 
+.iziModal::after {
+    height: 0!important;
+}
+
 #jobwp-apply-form-modal {
     padding: 20px;
     overflow-y: scroll;
