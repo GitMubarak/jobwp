@@ -248,7 +248,7 @@ Now go to your detail page and refresh it.
 
 = 2.3.3 =
 [//]: # fs_premium_only_begin
-* Role - Pro
+* Company profile panel added - Pro
 [//]: # fs_premium_only_end
 * Hide Jobs When Deadline Over option added
 * Hide Total Jobs Found option added

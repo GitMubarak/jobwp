@@ -60,6 +60,10 @@ class JobWp_Master {
 
 		if ( job_fs()->is_plan__premium_only('pro', true) ) {
 			$this->jobwp_loader->add_action('admin_init', $jobwp_admin, 'jobwp_export_applications_to_csv');
+			
+			// Company Info
+			$this->jobwp_loader->add_action( 'job_company_add_form_fields', $jobwp_admin, 'jobwp_job_company_add_form_fields', 10, 2 );
+			$this->jobwp_loader->add_filter( 'manage_edit-job_company_columns', $jobwp_admin, 'jobwp_display_company_extra_column_header' );
 		}
 	}
 

@@ -64,6 +64,10 @@ class JobWp_Admin
 		}
 		
 		wp_enqueue_script('jquery-ui-datepicker');
+
+		if ( job_fs()->is_plan__premium_only('pro') ) {
+			wp_enqueue_media();
+		}
 		
 		wp_enqueue_script(
 			$this->jobwp_assets_prefix . 'admin',
@@ -475,6 +479,34 @@ class JobWp_Admin
 			'sort'				=> true,
 			'rewrite' 			=> array('slug' => 'job-location'),
 		));
+
+		if ( job_fs()->is_plan__premium_only('pro') ) {
+
+			$company = array(
+				'name' 				=> __('Job Company', JOBWP_TXT_DOMAIN),
+				'singular_name' 	=> __('Job Company', JOBWP_TXT_DOMAIN),
+				'search_items' 		=> __('Search Job Company', JOBWP_TXT_DOMAIN),
+				'all_items' 		=> __('All Job Company', JOBWP_TXT_DOMAIN),
+				'parent_item' 		=> __('Parent Job Company', JOBWP_TXT_DOMAIN),
+				'parent_item_colon'	=> __('Parent Job Company:', JOBWP_TXT_DOMAIN),
+				'edit_item' 		=> __('Edit Job Company', JOBWP_TXT_DOMAIN),
+				'update_item' 		=> __('Update Job Company', JOBWP_TXT_DOMAIN),
+				'add_new_item' 		=> __('Add New Job Company', JOBWP_TXT_DOMAIN),
+				'new_item_name' 	=> __('New Job Company Name', JOBWP_TXT_DOMAIN),
+				'menu_name' 		=> __('Job Company', JOBWP_TXT_DOMAIN),
+			);
+	
+			register_taxonomy('job_company', array('jobs'), array(
+				'hierarchical' 		=> true,
+				'labels' 			=> $company,
+				'show_ui' 			=> true,
+				'show_admin_column' => true,
+				'query_var' 		=> true,
+				'sort'				=> true,
+				'rewrite' 			=> array('slug' => 'job-company'),
+			));
+
+		}
 	}
 
 	/**
@@ -788,6 +820,56 @@ class JobWp_Admin
 				exit;
 			}
 		}
+	}
+
+	/**
+	 * Company Extra Info Add Form
+	 */
+	function jobwp_job_company_add_form_fields( $taxonomy ) {
+		?>
+		<div class="form-field term-group">
+
+			<label for="jobwp_company_email"><?php _e('Company Email', JOBWP_TXT_DOMAIN); ?></label>
+			<input type="text" id="jobwp_company_email" name="jobwp_company_email" class="jobwp_company_email">
+
+		</div>
+		<div class="form-field term-group">
+
+			<label for="jobwp_company_web"><?php _e('Company Website', JOBWP_TXT_DOMAIN); ?></label>
+			<input type="text" id="jobwp_company_web" name="jobwp_company_web" class="jobwp_company_web">
+			
+		</div>
+		<div class="form-field term-group">
+
+			<label for="jobwp_company_addr"><?php _e('Company Address', JOBWP_TXT_DOMAIN); ?></label>
+			<input type="text" id="jobwp_company_addr" name="jobwp_company_addr" class="jobwp_company_addr">
+			
+		</div>
+		<div class="form-field term-group">
+
+			<label for="jobwp_company_logo_id"><?php _e('Company Logo', JOBWP_TXT_DOMAIN); ?></label>
+			<input type="hidden" id="jobwp_company_logo_id" name="jobwp_company_logo_id" class="jobwp_company_logo_id" value="">
+
+			<div id="jobwp_company_logo_wrapper"></div>
+
+			<p>
+				<input type="button" class="button button-secondary jobwp_company_logo_button_add" id="jobwp_company_logo_button_add" name="jobwp_company_logo_button_add" value="<?php _e( 'Add Logo', JOBWP_TXT_DOMAIN ); ?>">
+				<input type="button" class="button button-secondary jobwp_company_logo_button_remove" id="jobwp_company_logo_button_remove" name="jobwp_company_logo_button_remove" value="<?php _e( 'Remove Logo', JOBWP_TXT_DOMAIN ); ?>">
+			</p>
+
+		</div>
+		<?php
+	}
+
+	/**
+	 * Company Extra Column Header
+	 */
+	function jobwp_display_company_extra_column_header( $columns ) {
+		$columns['jobwp_company_logo'] 	= __('Logo', JOBWP_TXT_DOMAIN);
+		$columns['jobwp_company_email']	= __('Email', JOBWP_TXT_DOMAIN);
+		$columns['jobwp_company_web']	= __('Website', JOBWP_TXT_DOMAIN);
+		$columns['jobwp_company_addr']	= __('Address', JOBWP_TXT_DOMAIN);
+		return $columns;
 	}
 }
 ?>

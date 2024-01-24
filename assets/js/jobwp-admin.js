@@ -57,4 +57,37 @@
             $(this).next().css('display', 'none');
         });
 
+    var aw_uploader = '';
+    $("#jobwp_company_logo_button_remove").hide();
+
+    //alert('Hi');
+    $('body').on('click', '#jobwp_company_logo_button_add', function(e) {
+        //alert('Hello');
+        e.preventDefault();
+        aw_uploader = wp.media({
+                title: 'JobWP Company Logo',
+                button: {
+                    text: 'Use this logo'
+                },
+                multiple: false
+            }).on('select', function() {
+                var attachment = aw_uploader.state().get('selection').first().toJSON();
+                $('#jobwp_company_logo_wrapper').html('');
+                $('#jobwp_company_logo_wrapper').html(
+                    "<img src=" + attachment.url + " style='width: 200px'>"
+                );
+                $('#jobwp_company_logo_id').val(attachment.url);
+                $("#jobwp_company_logo_button_add").hide();
+                $("#jobwp_company_logo_button_remove").show();
+            })
+            .open();
+    });
+
+    $("#jobwp_company_logo_button_remove").click(function() {
+        $('#jobwp_company_logo_wrapper').html('');
+        $('#jobwp_company_logo_id').val('');
+        $(this).hide();
+        $("#jobwp_company_logo_button_add").show();
+    });
+
 })(jQuery);
