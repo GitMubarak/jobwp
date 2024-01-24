@@ -67,25 +67,20 @@ if ( isset( $_FILES['jobwp_upload_resume']['name'] ) ) {
     } else {
 
         if ( $jobwp_captcha_on_apply_form ) {
-            $curlx = curl_init();
-
-            curl_setopt($curlx, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
-            curl_setopt($curlx, CURLOPT_HEADER, 0);
-            curl_setopt($curlx, CURLOPT_RETURNTRANSFER, 1); 
-            curl_setopt($curlx, CURLOPT_POST, 1);
-
-            $post_data = [
-                'secret' => sanitize_text_field( $jobwp_recaptcha_secret_key ), //<--- your reCaptcha secret key
-                'response' => sanitize_text_field( $_POST['g-recaptcha-response'] ),
-            ];
-
-            curl_setopt($curlx, CURLOPT_POSTFIELDS, $post_data);
-
-            $resp = json_decode(curl_exec($curlx));
-
-            curl_close($curlx);
             
-            if ($resp->success) {
+            $secret     = isset( $jobwp_recaptcha_secret_key ) ? sanitize_text_field( $jobwp_recaptcha_secret_key ) : '';
+            $recaptcha   = isset( $_POST['g-recaptcha-response'] ) ? sanitize_text_field( $_POST['g-recaptcha-response'] ) : null;
+
+            $url = "https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$recaptcha}";
+
+			$response = wp_remote_get( $url, array(
+				'timeout' => 20,
+				'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:20.0) Gecko/20100101 Firefox/20.0'
+			));
+
+			$respKey = json_decode( wp_remote_retrieve_body( $response ) );
+            
+            if ( $respKey->success ) {
                 
                 $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume( $_POST, $_FILES, $wbgAbctEmail );
                 
