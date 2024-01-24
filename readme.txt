@@ -254,7 +254,8 @@ Now go to your detail page and refresh it.
 * Hide Total Jobs Found option added
 * Action added for job single page before, after body container
 * reCaptcha implemented for job apply form
-* Enabla/Disable reCaptcha option added
+* Enable/Disable reCaptcha option added
+* Delete resume when delete an application
 
 = 2.3.2 =
 * Display jobs which deadlines are equal or grater than Today

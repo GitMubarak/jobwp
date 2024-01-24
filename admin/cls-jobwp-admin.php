@@ -727,9 +727,17 @@ class JobWp_Admin
 		global $wpdb;
 		$table_name = $wpdb->prefix . 'jobwp_applied';
 		
+		$resume = $wpdb->get_row( $wpdb->prepare("SELECT * FROM $table_name WHERE job_id = %d", $id), ARRAY_A);
+
 		$success = $wpdb->query( $wpdb->prepare("DELETE FROM $table_name WHERE job_id = %d", $id) );
 
 		if ( $success ) {
+			$jobwpDir = wp_upload_dir();
+			$jobwpDir = $jobwpDir['basedir'];
+			$fileName = $jobwpDir . '/jobwp-resume/' . $resume['resume_name'];
+			if ( file_exists( $fileName ) ) {
+				unlink( $fileName );
+			}
         	return __("Application has been deleted.", JOBWP_TXT_DOMAIN);
 		}
 	}
