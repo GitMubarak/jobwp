@@ -56,6 +56,21 @@ if ( $jobwpJobs->have_posts() ) {
             ?>
             <div class="jobwp-item">
                 <div class="jobwp-top">
+                    <?php
+                    if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                        if ( 'grid' === $jobwp_list_layout ) {
+                            if ( $jobwp_display_company_logo ) {
+                                if ( '' !== $jobwp_company_logo ) {
+                                    ?>
+                                    <div class="jobwp-top-img">
+                                        <img src="<?php echo esc_url( $jobwp_company_logo ); ?>"/>
+                                    </div>
+                                    <?php
+                                }
+                            }
+                        }
+                    }
+                    ?>
                     <div class="jobwp-top-left">
                         <h3 class="jobwp-job-title"><a href="<?php the_permalink(); ?>" class="jobwp-job-title-a"><?php the_title(); ?></a></h3>
                         <?php
@@ -77,12 +92,14 @@ if ( $jobwpJobs->have_posts() ) {
                     </div>
                     <?php
                     if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                        if ( $jobwp_display_company_logo ) {
-                            ?>
-                            <div class="jobwp-top-right">
-                                <img src="<?php echo esc_url( $jobwp_company_logo ); ?>"/>
-                            </div>
-                            <?php
+                        if ( 'grid' !== $jobwp_list_layout ) {
+                            if ( $jobwp_display_company_logo ) {
+                                ?>
+                                <div class="jobwp-top-right">
+                                    <img src="<?php echo esc_url( $jobwp_company_logo ); ?>"/>
+                                </div>
+                                <?php
+                            }
                         }
                     }
                     ?>

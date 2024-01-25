@@ -153,6 +153,20 @@ div.jobwp-list-bottom-item {
     margin-bottom: 0;
 }
 
+.jobwp-listing-body-container.grid .jobwp-item .jobwp-top .jobwp-top-img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.jobwp-listing-body-container.grid .jobwp-item .jobwp-top .jobwp-top-img img {
+    height: 100%;
+    width: auto;
+}
+
+.jobwp-listing-body-container.grid .jobwp-item .jobwp-top .jobwp-top-left {
+    width: 100%;
+}
+
 .jobwp-listing-body-container.grid .jobwp-item .jobwp-bottom {
     border: 0px solid #000;
     display: inline-block;
