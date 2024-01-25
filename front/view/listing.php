@@ -41,18 +41,52 @@ if ( $jobwpJobs->have_posts() ) {
             } else {
                 $jobwpDeadline = __( 'Closed', JOBWP_TXT_DOMAIN );
             }
+
+            if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                
+                $jobwp_company      = get_post_meta( $post->ID, 'jobwp_company', true );
+                $jobwp_company_info = get_term_by('name', $jobwp_company, 'job_company');
+
+                if ( ! empty( $jobwp_company_info ) ) {
+                    $jobwp_company_logo = get_term_meta ( $jobwp_company_info->term_id, 'jobwp_company_logo_id', true );
+                } else {
+                    $jobwp_company_logo = '';
+                }
+            }
             ?>
             <div class="jobwp-item">
-                <h3 class="jobwp-job-title"><a href="<?php the_permalink(); ?>" class="jobwp-job-title-a"><?php the_title(); ?></a></h3>
-                <?php
-                if ( ! $jobwp_list_display_overview ) {
-                    ?>
-                    <p class="jobwp-overview-excerpt">
-                        <?php echo wp_trim_words( get_the_content(), esc_html( $jobwp_list_overview_length ), '...' ); ?>
-                    </p>
+                <div class="jobwp-top">
+                    <div class="jobwp-top-left">
+                        <h3 class="jobwp-job-title"><a href="<?php the_permalink(); ?>" class="jobwp-job-title-a"><?php the_title(); ?></a></h3>
+                        <?php
+                        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                            if ( $jobwp_display_company_name ) {
+                                ?>
+                                <div class="jwb-list-comp-name"><?php esc_html_e( $jobwp_company ); ?></div>
+                                <?php
+                            }
+                        }
+                        if ( ! $jobwp_list_display_overview ) {
+                            ?>
+                            <p class="jobwp-overview-excerpt">
+                                <?php echo wp_trim_words( get_the_content(), esc_html( $jobwp_list_overview_length ), '...' ); ?>
+                            </p>
+                            <?php
+                        }
+                        ?>
+                    </div>
                     <?php
-                }
-                ?>
+                    if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                        if ( $jobwp_display_company_logo ) {
+                            ?>
+                            <div class="jobwp-top-right">
+                                <img src="<?php echo esc_url( $jobwp_company_logo ); ?>"/>
+                            </div>
+                            <?php
+                        }
+                    }
+                    ?>
+                </div>
                 <div class="jobwp-bottom">
                     <?php
                     if ( ! $jobwp_list_display_experience ) {

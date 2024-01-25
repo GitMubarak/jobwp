@@ -12,6 +12,46 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
 ?>
 <form name="jobwp_listing_content_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-listing-content-settings-form">
     <table class="jobwp-listing-content-settings-table">
+        <tr class="jobwp_display_company_name">
+            <th scope="row">
+                <label for="jobwp_display_company_name"><?php _e('Display Company Name', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="checkbox" name="jobwp_display_company_name" class="jobwp_display_company_name" id="jobwp_display_company_name" <?php echo $jobwp_display_company_name ? 'checked' : ''; ?>>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
+        <tr class="jobwp_display_company_logo">
+            <th scope="row">
+                <label for="jobwp_display_company_logo"><?php _e('Display Company Logo', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="checkbox" name="jobwp_display_company_logo" class="jobwp_display_company_logo" id="jobwp_display_company_logo" <?php echo $jobwp_display_company_logo ? 'checked' : ''; ?>>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
         <tr>
             <th scope="row">
                 <label for="jobwp_list_display_overview"><?php _e('Hide Overview', JOBWP_TXT_DOMAIN); ?>?</label>

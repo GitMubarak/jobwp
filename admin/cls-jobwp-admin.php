@@ -500,7 +500,7 @@ class JobWp_Admin
 				'hierarchical' 		=> true,
 				'labels' 			=> $company,
 				'show_ui' 			=> true,
-				'show_admin_column' => true,
+				'show_admin_column' => false,
 				'query_var' 		=> true,
 				'sort'				=> true,
 				'rewrite' 			=> array('slug' => 'job-company'),
@@ -596,6 +596,7 @@ class JobWp_Admin
 		$jobwp_deadline 		= get_post_meta( $post->ID, 'jobwp_deadline', true );
 		$jobwp_status			= get_post_meta( $post->ID, 'jobwp_status', true );
 		$jobwp_application_url	= get_post_meta( $post->ID, 'jobwp_application_url', true );
+		$jobwp_company			= get_post_meta( $post->ID, 'jobwp_company', true );
 
 		include_once JOBWP_PATH . 'admin/view/partial/job-info.php';
 	}
@@ -697,6 +698,7 @@ class JobWp_Admin
 			'jobwp_salary'				=> isset( $_POST['jobwp_salary'] ) ? wp_kses_post( $_POST['jobwp_salary'] ) : null,
 			'jobwp_other_benefits'		=> isset( $_POST['jobwp_other_benefits'] ) ? wp_kses_post( $_POST['jobwp_other_benefits'] ) : null,
 			'jobwp_application_url'		=> isset( $_POST['jobwp_application_url'] ) ? sanitize_url( $_POST['jobwp_application_url'] ) : '',
+			'jobwp_company'				=> isset( $_POST['jobwp_company'] ) ? sanitize_text_field( $_POST['jobwp_company'] ) : null,
 		);
 
 		foreach( $jobwp_meta_params as $key => $value ) {

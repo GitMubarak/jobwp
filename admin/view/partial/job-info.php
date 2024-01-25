@@ -4,6 +4,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <table class="form-table">
+    <tr class="jobwp_company">
+        <th scope="row">
+            <label for="jobwp_company"><?php _e('Select Company', JOBWP_TXT_DOMAIN); ?></label>
+        </th>
+        <td>
+            <?php
+            if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                ?>
+                <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                <?php
+            }
+
+            if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
+                $companies = get_terms( array( 'taxonomy' => 'job_company', 'hide_empty' => false, 'orderby' => 'name', 'order' => 'ASC',  'parent' => 0 ) );
+                ?>
+                <select name="jobwp_company">
+                    <option value=""><?php _e('Select a Company', JOBWP_TXT_DOMAIN); ?></option>
+                    <?php
+                    if ( count($companies) > 0 ) {
+                        foreach( $companies as $company ) {
+                            ?>
+                            <option value="<?php esc_attr_e( $company->name ); ?>" <?php echo ( $jobwp_company == $company->name ) ? 'selected' : ''; ?>><?php esc_html_e( $company->name ); ?></option>
+                            <?php
+                        }
+                    }
+                    ?>
+                </select>
+                <?php
+            }
+            ?>
+        </td>
+    </tr>
     <tr class="jobwp_experience">
         <th scope="row">
             <label for="jobwp_experience"><?php _e('Year of Experience', JOBWP_TXT_DOMAIN); ?></label>

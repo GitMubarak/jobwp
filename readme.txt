@@ -249,6 +249,8 @@ Now go to your detail page and refresh it.
 = 2.3.3 =
 [//]: # fs_premium_only_begin
 * Company profile panel added - Pro
+* Display company name on listing option added - Pro
+* Display company logo on listing option added - Pro
 [//]: # fs_premium_only_end
 * Hide Jobs When Deadline Over option added
 * Hide Total Jobs Found option added

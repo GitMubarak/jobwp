@@ -88,6 +88,16 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'jobwp_display_company_name',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_display_company_logo',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }
