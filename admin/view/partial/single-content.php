@@ -39,6 +39,26 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
                 ?>
             </td>
         </tr>
+        <tr class="jobwp_single_display_company_name">
+            <th scope="row">
+                <label for="jobwp_single_display_company_name"><?php _e('Display Company Name', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="checkbox" name="jobwp_single_display_company_name" class="jobwp_single_display_company_name" id="jobwp_single_display_company_name" <?php echo $jobwp_single_display_company_name ? 'checked' : ''; ?>>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
         <tr class="jobwp_single_display_company_logo">
             <th scope="row">
                 <label for="jobwp_single_display_company_logo"><?php _e('Display Company Logo', JOBWP_TXT_DOMAIN); ?>?</label>

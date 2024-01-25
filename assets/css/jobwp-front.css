@@ -385,7 +385,7 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 60% 1fr;
-    margin-top: 20px;
+    padding: 10px 0;
 }
 
 .single-top-left,
@@ -617,7 +617,7 @@ span.wpsd-read-before-apply-border {
     .circulr-details-top {
         width: 100%;
         display: block;
-        padding: 10px 0;
+        padding: 0px;
     }
     .single-top-left,
     .single-top-right {

@@ -46,11 +46,11 @@ include 'single/header.php';
                     <<?php esc_attr_e( $jobwp_single_title_tag ); ?> class="jobwp-job-title"><?php the_title(); ?></<?php esc_attr_e( $jobwp_single_title_tag ); ?>>
                     <?php
                     if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                        //if ( $jobwp_display_company_name ) {
+                        if ( $jobwp_single_display_company_name ) {
                             ?>
                             <div class="jwb-single-comp-name"><?php esc_html_e( $jobwp_company ); ?></div>
                             <?php
-                        //}
+                        }
                     }
                     ?>
                 </div>

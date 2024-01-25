@@ -184,6 +184,11 @@ trait Jobwp_Single_Content_Settings
                 'default'   => 'h2',
             ],
             [
+                'name'      => 'jobwp_single_display_company_name',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
                 'name'      => 'jobwp_single_display_company_logo',
                 'type'      => 'boolean',
                 'default'   => false,
