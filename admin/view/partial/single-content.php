@@ -12,6 +12,33 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
 ?>
 <form name="jobwp_single_content_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-single-content-settings-form">
     <table class="jobwp-single-settings-table">
+        <tr class="jobwp_single_title_tag">
+            <th scope="row">
+                <label for="jobwp_single_title_tag"><?php _e('Job Title Tag', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <select name="jobwp_single_title_tag">
+                        <option value="h1" <?php echo ( 'h1' == $jobwp_single_title_tag ) ? 'selected' : ''; ?>>h1</option>
+                        <option value="h2" <?php echo ( 'h2' == $jobwp_single_title_tag ) ? 'selected' : ''; ?>>h2</option>
+                        <option value="h3" <?php echo ( 'h3' == $jobwp_single_title_tag ) ? 'selected' : ''; ?>>h3</option>
+                        <option value="h4" <?php echo ( 'h4' == $jobwp_single_title_tag ) ? 'selected' : ''; ?>>h4</option>
+                        <option value="h5" <?php echo ( 'h5' == $jobwp_single_title_tag ) ? 'selected' : ''; ?>>h5</option>
+                        <option value="h6" <?php echo ( 'h6' == $jobwp_single_title_tag ) ? 'selected' : ''; ?>>h6</option>
+                    </select>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
         <tr>
             <th scope="row">
                 <label for="jobwp_single_hide_overview"><?php _e('Hide Overview', JOBWP_TXT_DOMAIN); ?>?</label>

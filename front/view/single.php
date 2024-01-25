@@ -30,7 +30,7 @@ include 'single/header.php';
             $jobwp_application_url          = get_post_meta( $post->ID, 'jobwp_application_url', true );
             ?>
             <div class="circulr-details-top">
-                <p class="jobwp-job-title"><?php the_title(); ?></p>
+                <<?php esc_attr_e( $jobwp_single_title_tag ); ?> class="jobwp-job-title"><?php the_title(); ?></<?php esc_attr_e( $jobwp_single_title_tag ); ?>>
             </div>
             <?php
             if ( null !== $resumeUploadMsg ) {

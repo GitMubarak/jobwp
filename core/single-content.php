@@ -178,6 +178,11 @@ trait Jobwp_Single_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Apply Online',
             ],
+            [
+                'name'      => 'jobwp_single_title_tag',
+                'type'      => 'text',
+                'default'   => 'h2',
+            ],
         ];
     }
 }

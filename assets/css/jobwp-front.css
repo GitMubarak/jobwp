@@ -381,7 +381,7 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
 
 .circulr-details-top {
     background: #eee;
-    border: 0px solid #000;
+    border: 1px solid #009900;
     width: 100%;
     display: grid;
     grid-gap: 20px;

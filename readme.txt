@@ -165,6 +165,7 @@ There are multiple layouts available where you can display jobs with a list or g
 * Display Company Name on Listing
 * Display Company Logo on Listing
 * Shortcode Option to Display Jobs of a Company
+* Option to Select Job Title Tag in Single Page
 
 [Get the Pro](https://wpjoblisting.com/pricing-faq/)
 
@@ -261,6 +262,7 @@ Now go to your detail page and refresh it.
 * Display company name on listing option added - Pro
 * Display company logo on listing option added - Pro
 * Display jobs of a company shortcode option added - Pro
+* Option to Select Job Title Tag in Single Page - Pro
 [//]: # fs_premium_only_end
 * Hide Jobs When Deadline Over option added
 * Hide Total Jobs Found option added
