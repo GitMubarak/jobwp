@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-01-25 08:05+0600\n"
+"POT-Creation-Date: 2024-01-26 01:35+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -463,6 +463,9 @@ msgstr ""
 #: admin/view/partial/listing-style.php:48
 #: admin/view/partial/listing-style.php:119
 #: admin/view/partial/listing-style.php:138
+#: admin/view/partial/single-content.php:23
+#: admin/view/partial/single-content.php:50
+#: admin/view/partial/single-content.php:70
 #: admin/view/partial/single-style.php:44
 #: admin/view/partial/single-style.php:102
 msgid "Please Upgrade Now"
@@ -530,7 +533,7 @@ msgstr ""
 #: admin/view/partial/listing-style.php:153
 #: admin/view/partial/search-content.php:93
 #: admin/view/partial/search-style.php:121
-#: admin/view/partial/single-content.php:238
+#: admin/view/partial/single-content.php:305
 #: admin/view/partial/single-style.php:132
 msgid "Save Settings"
 msgstr ""
@@ -682,15 +685,17 @@ msgid "Inactive"
 msgstr ""
 
 #: admin/view/partial/listing-content.php:17
+#: admin/view/partial/single-content.php:44
 msgid "Display Company Name"
 msgstr ""
 
 #: admin/view/partial/listing-content.php:37
+#: admin/view/partial/single-content.php:64
 msgid "Display Company Logo"
 msgstr ""
 
 #: admin/view/partial/listing-content.php:57
-#: admin/view/partial/single-content.php:17
+#: admin/view/partial/single-content.php:84
 msgid "Hide Overview"
 msgstr ""
 
@@ -710,18 +715,18 @@ msgstr ""
 #: admin/view/partial/listing-content.php:96
 #: admin/view/partial/listing-content.php:111
 #: admin/view/partial/listing-content.php:126
-#: admin/view/partial/single-content.php:24
-#: admin/view/partial/single-content.php:39
-#: admin/view/partial/single-content.php:54
-#: admin/view/partial/single-content.php:69
-#: admin/view/partial/single-content.php:84
-#: admin/view/partial/single-content.php:99
-#: admin/view/partial/single-content.php:114
-#: admin/view/partial/single-content.php:129
-#: admin/view/partial/single-content.php:144
-#: admin/view/partial/single-content.php:159
-#: admin/view/partial/single-content.php:174
-#: admin/view/partial/single-content.php:189
+#: admin/view/partial/single-content.php:91
+#: admin/view/partial/single-content.php:106
+#: admin/view/partial/single-content.php:121
+#: admin/view/partial/single-content.php:136
+#: admin/view/partial/single-content.php:151
+#: admin/view/partial/single-content.php:166
+#: admin/view/partial/single-content.php:181
+#: admin/view/partial/single-content.php:196
+#: admin/view/partial/single-content.php:211
+#: admin/view/partial/single-content.php:226
+#: admin/view/partial/single-content.php:241
+#: admin/view/partial/single-content.php:256
 msgid "Label Text"
 msgstr ""
 
@@ -779,7 +784,7 @@ msgid "Hide Category"
 msgstr ""
 
 #: admin/view/partial/search-content.php:68
-#: admin/view/partial/single-content.php:137
+#: admin/view/partial/single-content.php:204
 msgid "Hide Job Location"
 msgstr ""
 
@@ -804,63 +809,67 @@ msgstr ""
 msgid "Search Button :: Hover"
 msgstr ""
 
-#: admin/view/partial/single-content.php:32
+#: admin/view/partial/single-content.php:17
+msgid "Job Title Tag"
+msgstr ""
+
+#: admin/view/partial/single-content.php:99
 msgid "Hide No. of Vacancies"
 msgstr ""
 
-#: admin/view/partial/single-content.php:47
+#: admin/view/partial/single-content.php:114
 msgid "Hide Specific Skills"
 msgstr ""
 
-#: admin/view/partial/single-content.php:62
+#: admin/view/partial/single-content.php:129
 msgid "Hide Responsible For"
 msgstr ""
 
-#: admin/view/partial/single-content.php:77
+#: admin/view/partial/single-content.php:144
 msgid "Hide Additional Requirements"
 msgstr ""
 
-#: admin/view/partial/single-content.php:92
+#: admin/view/partial/single-content.php:159
 msgid "Hide Job Nature"
 msgstr ""
 
-#: admin/view/partial/single-content.php:107
+#: admin/view/partial/single-content.php:174
 msgid "Hide Educational Requirements"
 msgstr ""
 
-#: admin/view/partial/single-content.php:122
+#: admin/view/partial/single-content.php:189
 msgid "Hide Experience Requirements"
 msgstr ""
 
-#: admin/view/partial/single-content.php:152
+#: admin/view/partial/single-content.php:219
 msgid "Hide Salary"
 msgstr ""
 
-#: admin/view/partial/single-content.php:167
+#: admin/view/partial/single-content.php:234
 msgid "Hide Other Benefits"
 msgstr ""
 
-#: admin/view/partial/single-content.php:182
+#: admin/view/partial/single-content.php:249
 msgid "Hide Job Level"
 msgstr ""
 
-#: admin/view/partial/single-content.php:198
+#: admin/view/partial/single-content.php:265
 msgid "Hide Apply Procedure"
 msgstr ""
 
-#: admin/view/partial/single-content.php:205
+#: admin/view/partial/single-content.php:272
 msgid "Apply Procedure Title"
 msgstr ""
 
-#: admin/view/partial/single-content.php:213
+#: admin/view/partial/single-content.php:280
 msgid "Apply Procedure Content"
 msgstr ""
 
-#: admin/view/partial/single-content.php:221
+#: admin/view/partial/single-content.php:288
 msgid "Hide Apply Button"
 msgstr ""
 
-#: admin/view/partial/single-content.php:228
+#: admin/view/partial/single-content.php:295
 msgid "Apply Button Text"
 msgstr ""
 
