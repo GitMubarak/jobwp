@@ -28,9 +28,44 @@ include 'single/header.php';
             $bo_other_benefits              = get_post_meta( $post->ID, 'jobwp_other_benefits', true );
             $bo_job_salary                  = get_post_meta( $post->ID, 'jobwp_salary', true );
             $jobwp_application_url          = get_post_meta( $post->ID, 'jobwp_application_url', true );
+
+            if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                
+                $jobwp_company              = get_post_meta( $post->ID, 'jobwp_company', true );
+                $jobwp_company_info         = get_term_by('name', $jobwp_company, 'job_company');
+
+                if ( ! empty( $jobwp_company_info ) ) {
+                    $jobwp_company_logo     = get_term_meta ( $jobwp_company_info->term_id, 'jobwp_company_logo_id', true );
+                } else {
+                    $jobwp_company_logo = '';
+                }
+            }
             ?>
             <div class="circulr-details-top">
-                <<?php esc_attr_e( $jobwp_single_title_tag ); ?> class="jobwp-job-title"><?php the_title(); ?></<?php esc_attr_e( $jobwp_single_title_tag ); ?>>
+                <div class="single-top-left">
+                    <<?php esc_attr_e( $jobwp_single_title_tag ); ?> class="jobwp-job-title"><?php the_title(); ?></<?php esc_attr_e( $jobwp_single_title_tag ); ?>>
+                    <?php
+                    if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                        //if ( $jobwp_display_company_name ) {
+                            ?>
+                            <div class="jwb-single-comp-name"><?php esc_html_e( $jobwp_company ); ?></div>
+                            <?php
+                        //}
+                    }
+                    ?>
+                </div>
+                <?php
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    
+                    if ( $jobwp_single_display_company_logo ) {
+                        ?>
+                        <div class="single-top-right">
+                            <img src="<?php echo esc_url( $jobwp_company_logo ); ?>"/>
+                        </div>
+                        <?php
+                    }
+                }
+                ?>
             </div>
             <?php
             if ( null !== $resumeUploadMsg ) {

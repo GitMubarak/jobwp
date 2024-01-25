@@ -381,21 +381,39 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
 
 .circulr-details-top {
     background: #eee;
-    border: 1px solid #009900;
     width: 100%;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 70% 1fr;
+    grid-template-columns: 60% 1fr;
+    margin-top: 20px;
 }
 
-.circulr-details-top .jobwp-job-title {
-    border: 0px solid #000;
-    font-size: 36px;
-    line-height: 100px;
+.single-top-left,
+.single-top-right {
+    padding: 20px 0;
     text-align: center;
-    margin: 0;
+}
+
+.circulr-details-top .jobwp-job-title,
+.circulr-details-top .jwb-single-comp-name {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: left;
+    margin: 0 auto;
     padding: 0;
     font-weight: 600;
+    width: 80%;
+}
+
+.circulr-details-top .jwb-single-comp-name {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 28px;
+}
+
+.single-top-right img {
+    max-height: 100px;
+    width: auto;
 }
 
 .circulr-details-bottom {
@@ -599,11 +617,25 @@ span.wpsd-read-before-apply-border {
     .circulr-details-top {
         width: 100%;
         display: block;
-        padding: 20px 0;
+        padding: 10px 0;
     }
-    p.jobwp-job-title {
-        font-size: 26px;
-        line-height: 40px;
+    .single-top-left,
+    .single-top-right {
+        padding: 10px;
+        text-align: left;
+    }
+    .circulr-details-top .jobwp-job-title {
+        font-size: 18px !important;
+        line-height: 28px !important;
+        width: 100%;
+    }
+    .circulr-details-top .jwb-single-comp-name {
+        width: 100%;
+        font-size: 16px !important;
+        line-height: 26px !important;
+    }
+    .single-top-right img {
+        max-height: 80px;
     }
     .jobwp-single-area {
         display: block;

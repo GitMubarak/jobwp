@@ -263,6 +263,7 @@ Now go to your detail page and refresh it.
 * Display company logo on listing option added - Pro
 * Display jobs of a company shortcode option added - Pro
 * Option to Select Job Title Tag in Single Page - Pro
+* Display company logo on single page option added - Pro
 [//]: # fs_premium_only_end
 * Hide Jobs When Deadline Over option added
 * Hide Total Jobs Found option added
