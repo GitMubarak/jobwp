@@ -18,6 +18,12 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <li>&#10003; User Consent Checkbox to Handle Personal Data</li>
                 <li>&#10003; Role Based Notification Email</li>
                 <li>&#10003; Docx File Allowed for Job Application</li>
+                <li>&#10003; Admin Company Profile Panel</li>
+                <li>&#10003; Assign Job to a Company</li>
+                <li>&#10003; Display Company Name in Job Listing</li>
+                <li>&#10003; Display Company Logo in Job Listing</li>
+                <li>&#10003; Shortcode Option to Display Jobs of a Company</li>
+                
             </ul>
             <p style="margin-bottom: 1px! important;"><a href="https://wpjoblisting.com/" target="_blank" class="button button-primary jobwp-button" style="background: #F5653E;">Upgrade Now!</a></p>
         </div>

@@ -56,6 +56,9 @@ There are multiple layouts available where you can display jobs with a list or g
 * Admin application list panel
 * Delete jobs in Job Application Panel
 * Pagination in Job listing page
+* Google reCaptcha in Job Applicaiton Form
+* Job Expiry Option Available
+* Show Hide Jobs When Deadline is Over 
 
 
 **✅ Available Job Information**
@@ -157,6 +160,11 @@ There are multiple layouts available where you can display jobs with a list or g
 * User Consent Checkbox to Handle Personal Data
 * Role Based Notification Email
 * Docx file type allowed for job application
+* Admin Company Profile Panel
+* Assign a Job to a Company
+* Display Company Name on Listing
+* Display Company Logo on Listing
+* Shortcode Option to Display Jobs of a Company
 
 [Get the Pro](https://wpjoblisting.com/pricing-faq/)
 
@@ -249,8 +257,10 @@ Now go to your detail page and refresh it.
 = 2.3.3 =
 [//]: # fs_premium_only_begin
 * Company profile panel added - Pro
+* Assign a job to a Company - Pro
 * Display company name on listing option added - Pro
 * Display company logo on listing option added - Pro
+* Display jobs of a company shortcode option added - Pro
 [//]: # fs_premium_only_end
 * Hide Jobs When Deadline Over option added
 * Hide Total Jobs Found option added

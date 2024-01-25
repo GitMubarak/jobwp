@@ -57,6 +57,12 @@ $jobwp_limit        = isset( $jobwpAttr['limit'] ) ? $jobwpAttr['limit'] : 10;
 $jobwp_category     = isset( $jobwpAttr['category'] ) ? $jobwpAttr['category'] : '';
 $jobwp_search       = isset( $jobwpAttr['hide_search'] ) ? $jobwpAttr['hide_search'] : $jobwp_hide_search_panel; // on to hide
 
+if ( job_fs()->is_plan__premium_only('pro', true) ) {
+    
+    $jobwp_company  = isset( $jobwpAttr['company'] ) ? $jobwpAttr['company'] : '';
+
+}
+
 // Main Query Arguments
 $jobwpQueryArrParams = array(
     'post_type'         => 'jobs',
@@ -99,6 +105,21 @@ if ( $jobwp_hide_jobs_deadline_over ) {
     );
 }
 
+// Pro query params
+if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
+    if ( '' !== $jobwp_company ) {
+        
+        $jobwpQueryArrParams['meta_query'] = array(
+            array(
+                'key'     => 'jobwp_company',
+                'value'   => $jobwp_company,
+                'compare' => '='
+            ),
+        );
+    }
+
+}
 
 // Load Search Panel
 if ( 'on' !== $jobwp_search ) {
