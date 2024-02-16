@@ -3,8 +3,8 @@ Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: career, job board, job listing, jobs, job manager
 Requires at least: 5.2
-Tested up to: 6.4.2
-Stable tag: 2.3.3
+Tested up to: 6.4.3
+Stable tag: 2.3.4
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -28,13 +28,22 @@ After an applicant apply for a job, employer can see that application instantly 
 
 With this job board plugin you can customize your job listing very easily and extensively. You active, inactive a job, you can show hide and change colors and font size of your job info.
 
+= ✅ Suitable for Recruitment Agency =
+
+This plugin is designed to display jobs for various companies. You can display the related company's name and their logo in the job listing and job details page. You can also display jobs in various pages for various companies with the help of provided shortcode option.
+
+= ✅ Flexible for Internal Hiring =
+
+Individual companies can use this plugin for their internal hiring. They can open job vacancies within their organization and accept applications directly with a CV copy.
+
 = ✅ Accept Online Application =
 
-Job seeker can see their jobs, serch by category or job keywords or title. If they find any suitable job they can apply directly to a specific job. An apply online button is available in the job detail page which will open an application form where applicants can apply easily.
+Job seeker can serch Jobs by keywords or category. If they find any suitable job they can apply directly to it. An apply online button is available in the job detail page which will open an application form where applicants can apply easily.
 
-= ✅ Multiple Layouts =
+= ✅ Direct Application Link to Another Platform =
 
-There are multiple layouts available where you can display jobs with a list or grid view. You can display the layouts in different pages via shortcoded option. 
+You can display the job information and apply a url to that individual job which will redirect the job seekers to apply there. This could be use as an affiliate service.
+
 
 [__Live Demo__](https://wpjoblisting.com/demo/)
 
@@ -241,19 +250,25 @@ Now go to your detail page and refresh it.
 
 == Screenshots ==
 
-1. Showing Job Listing in a career page
-2. Showing Jeb Detail Page
-3. Job Application Form
-4. Application list panel in admin
+1. Showing Job Listing in List View
+2. Showing Job Listing in Grid View
+3. Showing Job Details Page
+4. Showing Application Form
 5. Listing page content settings
 6. Listing page styles settings
 7. Details page content settings
 8. Details page styles settings
-9. Job listing grid view
+9. Application list panel in admin
 10. Job listing minimal view
 
 
 == Changelog ==
+
+= 2.3.4 =
+[//]: # fs_premium_only_begin
+* Company - Pro
+[//]: # fs_premium_only_end
+* Hide
 
 = 2.3.3 =
 [//]: # fs_premium_only_begin
