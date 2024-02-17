@@ -88,6 +88,10 @@ class JobWp_Front
 
 		add_shortcode( 'jobwp_listing', array( $this, 'jobwp_load_shortcode_view' ) );
 		add_shortcode( 'jobwp_apply_form', array( $this, 'jobwp_load_shortcode_apply_now' ) );
+
+		if ( job_fs()->is_plan__premium_only('pro', true) ) {
+			add_shortcode( 'jobwp_search', array( $this, 'jobwp_load_search_view' ) );
+		}
 	}
 
 	/**
@@ -126,6 +130,18 @@ class JobWp_Front
 		}
 
 		return $template;
+	}
+
+	/**
+	 * Load Search Panel
+	*/
+	function jobwp_load_search_view( $searchAttr ) {
+
+		$output = '';
+		ob_start();
+		include_once JOBWP_PATH . 'front/view/search-single.php';
+		$output .= ob_get_clean();
+		return $output;
 	}
 }
 ?>

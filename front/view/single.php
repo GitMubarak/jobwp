@@ -352,13 +352,20 @@ include 'single/header.php';
                     <?php
                 } else {
 
-                    if ( is_user_logged_in() ) {
-                        ?>
-                        <a href="#" class="jobwp-trigger-link jobwp-primary-button"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
-                        <?php
+                    if ( $jobwp_allow_login_apply ) {
+
+                        if ( is_user_logged_in() ) {
+                            ?>
+                            <a href="#" class="jobwp-trigger-link jobwp-primary-button"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
+                            <?php
+                        } else {
+                            ?>
+                            <a href="<?php echo esc_url( home_url( '/wp-login.php' ) ); ?>" class="jobwp-primary-button"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
+                            <?php
+                        }
                     } else {
                         ?>
-                        <a href="<?php echo esc_url( home_url( '/wp-login.php' ) ); ?>" class="jobwp-primary-button"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
+                        <a href="#" class="jobwp-trigger-link jobwp-primary-button"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
                         <?php
                     }
                 }

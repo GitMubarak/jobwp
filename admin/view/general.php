@@ -132,6 +132,26 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <input type="checkbox" name="jobwp_hide_jobs_deadline_over" class="jobwp_hide_jobs_deadline_over" id="jobwp_hide_jobs_deadline_over" <?php echo $jobwp_hide_jobs_deadline_over ? 'checked' : ''; ?>>  
                             </td>
                         </tr>
+                        <tr class="jobwp_allow_login_apply">
+                            <th scope="row">
+                                <label for="jobwp_allow_login_apply"><?php _e('Allow Login to Apply', JOBWP_TXT_DOMAIN); ?>?</label>
+                            </th>
+                            <td>
+                                <?php
+                                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                                    ?>
+                                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                                    <?php
+                                }
+
+                                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                                    ?>
+                                    <input type="checkbox" name="jobwp_allow_login_apply" class="jobwp_allow_login_apply" id="jobwp_allow_login_apply" <?php echo $jobwp_allow_login_apply ? 'checked' : ''; ?>>
+                                    <?php
+                                }
+                                ?>
+                            </td>
+                        </tr>
                         <tr>
                             <td colspan="2" style="font-size: 18px;">
                                 <hr><b><?php _e('Captcha', JOBWP_TXT_DOMAIN); ?></b><hr>

@@ -83,6 +83,11 @@ trait JobwpGeneralSettings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'jobwp_allow_login_apply',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

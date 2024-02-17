@@ -23,9 +23,16 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <li>&#10003; Display Company Name in Job Listing</li>
                 <li>&#10003; Display Company Logo in Job Listing</li>
                 <li>&#10003; Shortcode Option to Display Jobs of a Company</li>
-                
+                <li>&#10003; Option to Allow Login Users to Apply</li>
+                <li>&#10003; Display Job Search Panel at Home</li>
             </ul>
-            <p style="margin-bottom: 1px! important;"><a href="https://wpjoblisting.com/" target="_blank" class="button button-primary jobwp-button" style="background: #F5653E;">Upgrade Now!</a></p>
+            <?php
+            if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                ?>
+                <p style="margin-bottom: 1px! important;"><a href="https://wpjoblisting.com/" target="_blank" class="button button-primary jobwp-button" style="background: #F5653E;">Upgrade Now!</a></p>
+                <?php
+            }
+            ?>
         </div>
     </div>
     <div class="postbox">

@@ -28,7 +28,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
     }
 }
 
-// Seaarch Content
+// Search Content
 $jobwpSearchContent = $this->jobwp_get_search_content_settings();
 foreach ( $jobwpSearchContent as $sc_name => $sc_value ) {
     if ( isset( $jobwpSearchContent[$sc_name] ) ) {
@@ -36,7 +36,7 @@ foreach ( $jobwpSearchContent as $sc_name => $sc_value ) {
     }
 }
 
-// Seaarch Styles
+// Search Styles
 $jobwpSearchStyles = $this->jobwp_get_search_styles_settings();
 foreach ( $jobwpSearchStyles as $ss_name => $ss_value ) {
     if ( isset( $jobwpSearchStyles[$ss_name] ) ) {

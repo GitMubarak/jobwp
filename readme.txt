@@ -175,6 +175,8 @@ You can display the job information and apply a url to that individual job which
 * Display Company Logo on Listing
 * Shortcode Option to Display Jobs of a Company
 * Option to Select Job Title Tag in Single Page
+* Option to Allow Login Users to Apply
+* Display Job Search Panel at Home
 
 [Get the Pro](https://wpjoblisting.com/pricing-faq/)
 
@@ -266,7 +268,8 @@ Now go to your detail page and refresh it.
 
 = 2.3.4 =
 [//]: # fs_premium_only_begin
-* Company - Pro
+* Option to allow login users to apply - Pro
+* Display Job Search Panel at Home - Pro
 [//]: # fs_premium_only_end
 * Hide
 
