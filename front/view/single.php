@@ -351,9 +351,16 @@ include 'single/header.php';
                     <a href="<?php echo esc_url( $jobwp_application_url ); ?>" class="jobwp-primary-button" target="_blank"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
                     <?php
                 } else {
-                    ?>
-                    <a href="#" class="jobwp-trigger-link jobwp-primary-button"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
-                    <?php
+
+                    if ( is_user_logged_in() ) {
+                        ?>
+                        <a href="#" class="jobwp-trigger-link jobwp-primary-button"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
+                        <?php
+                    } else {
+                        ?>
+                        <a href="<?php echo esc_url( home_url( '/wp-login.php' ) ); ?>" class="jobwp-primary-button"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
+                        <?php
+                    }
                 }
             }
             ?>
