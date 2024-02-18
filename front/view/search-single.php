@@ -26,7 +26,7 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
     }
 
     // Shortcode Options
-    $jobwp_search_url  = isset( $searchAttr['url'] ) ? $searchAttr['url'] : site_url();
+    $jobwp_search_url  = isset( $searchAttr['url'] ) ? $searchAttr['url'] : '';
     $jobwp_hide_search_keyword  = isset( $searchAttr['keyword'] ) ? $searchAttr['keyword'] : '';      // on/off to display
     $jobwp_hide_search_category = isset( $searchAttr['category'] ) ? $searchAttr['category'] : '';    // on/off to display
     $jobwp_hide_search_jobtype  = isset( $searchAttr['type'] ) ? $searchAttr['type'] : '';            // on/off to display
@@ -74,7 +74,7 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
             border-color: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
         }
     </style>
-    <form method="GET" action="<?php echo esc_url( $jobwp_search_url ); ?>" id="jobwp-search-form">
+    <form method="GET" action="<?php echo esc_url( home_url( '/' . $jobwp_search_url ) ); ?>" id="jobwp-search-form">
 
         <div class="jobwp-search-container">
             
