@@ -81,6 +81,26 @@ if ( ! defined( 'ABSPATH' ) ) {
             ?>
         </td>
     </tr>
+    <tr class="jobwp_is_featured_job">
+        <th scope="row">
+            <label for="jobwp_is_featured_job"><?php _e('Featured Job', JOBWP_TXT_DOMAIN); ?></label>
+        </th>
+        <td>
+            <?php
+            if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                ?>
+                <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                <?php
+            }
+
+            if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                ?>
+                <input type="checkbox" name="jobwp_is_featured_job" class="jobwp_is_featured_job" id="jobwp_is_featured_job" <?php echo $jobwp_is_featured_job ? 'checked' : ''; ?>>
+                <?php
+            }
+            ?>
+        </td>
+    </tr>
     <tr class="jobwp_status">
         <th scope="row">
             <label for="jobwp_status"><?php _e('Status', JOBWP_TXT_DOMAIN); ?></label>

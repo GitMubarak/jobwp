@@ -80,7 +80,6 @@ $jobwpQueryArrParams = array(
     ),
 );
 
-
 // If Category params found in shortcode
 if( $jobwp_category != '' ) {
     $jobwpQueryArrParams['tax_query'] = array(

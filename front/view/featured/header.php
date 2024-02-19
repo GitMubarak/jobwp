@@ -48,10 +48,19 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
         ),
     );
 
+    // Only featured jobs
+    $jobwpQueryArr['meta_query'][] = array(
+        array(
+            'key'     => 'jobwp_is_featured_job',
+            'value'   => 'on',
+            'compare' => '='
+        ),
+    );
+
     // Hide Jobs When Deadline Over
     if ( $jobwp_hide_jobs_deadline_over ) {
 
-        $jobwpQueryArr['meta_query'] = array(
+        $jobwpQueryArr['meta_query'][] = array(
             array(
                 'key'     => 'jobwp_deadline',
                 'value'   => date('Y-m-d'),
@@ -64,7 +73,7 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
     // Jobs of a Company
     if ( '' !== $jobwp_company ) {
         
-        $jobwpQueryArr['meta_query'] = array(
+        $jobwpQueryArr['meta_query'][] = array(
             array(
                 'key'     => 'jobwp_company',
                 'value'   => $jobwp_company,
@@ -72,6 +81,9 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
             ),
         );
     }
+
+    //echo '<pre>';
+    //print_r($jobwpQueryArr);
 
     $jobwpJobs = new WP_Query( $jobwpQueryArr );
 }

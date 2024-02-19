@@ -272,6 +272,7 @@ Now go to your detail page and refresh it.
 * Option to allow login users to apply - Pro
 * Display Job Search Panel at Home - Pro
 * Display Featured Jobs With Slider - Pro
+* Assign job as featured option added - Pro
 [//]: # fs_premium_only_end
 * Hide
 
