@@ -30,6 +30,9 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
         }
     }
 
+    // Shortcoded Options
+    $jobwp_company  = isset( $attr['company'] ) ? $attr['company'] : '';
+
     // Main Query Arguments
     $jobwpQueryArr = array(
         'post_type'         => 'jobs',
@@ -54,6 +57,18 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
                 'value'   => date('Y-m-d'),
                 'compare' => '>=',
                 'type'    => 'DATE'
+            ),
+        );
+    }
+
+    // Jobs of a Company
+    if ( '' !== $jobwp_company ) {
+        
+        $jobwpQueryArr['meta_query'] = array(
+            array(
+                'key'     => 'jobwp_company',
+                'value'   => $jobwp_company,
+                'compare' => '='
             ),
         );
     }

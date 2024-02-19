@@ -178,7 +178,7 @@ class JobWp_Front
 	/**
 	 * Load Featured View
 	*/
-	function jobwp_load_featured_view( $searchAttr ) {
+	function jobwp_load_featured_view( $attr ) {
 
 		$output = '';
 		ob_start();
