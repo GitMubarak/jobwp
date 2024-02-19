@@ -274,7 +274,8 @@ Now go to your detail page and refresh it.
 * Display Featured Jobs With Slider - Pro
 * Assign job as featured option added - Pro
 [//]: # fs_premium_only_end
-* Hide
+* Layout changing option at front view
+* CSS fixed
 
 = 2.3.3 =
 [//]: # fs_premium_only_begin

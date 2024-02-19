@@ -11,18 +11,26 @@ if ( $jobwpJobs->have_posts() ) {
     $jobwp_from       = 1 + $jobwp_prev_posts;
     $jobwp_to         = count( $jobwpJobs->posts ) + $jobwp_prev_posts;
     $jobwp_of         = $jobwpJobs->found_posts;
-
-    if ( ! $jobwp_hide_total_jobs_found ) {
-        ?>
-        <div class="jobwp-total-jobs-found">
-            <div class="jobwp-total-jobs-found-total"><?php echo esc_html( $jobwp_of ) . '&nbsp;' . __('Jobs Found', JOBWP_TXT_DOMAIN); ?></div>
-            <div class="jobwp-total-jobs-found-per-page">    
-                <?php _e('Displayed Here', JOBWP_TXT_DOMAIN); ?>: <span><?php printf( '%s - %s', $jobwp_from, $jobwp_to ); ?></span> <?php _e('Jobs', JOBWP_TXT_DOMAIN); ?>
-            </div>
-        </div>
-        <?php
-    }
     ?>
+    <div class="jobwp-listing-top">
+        <?php
+        if ( ! $jobwp_hide_total_jobs_found ) {
+            ?>
+            <div class="jobwp-total-jobs-found">
+                <div class="jobwp-total-jobs-found-total"><?php echo esc_html( $jobwp_of ) . '&nbsp;' . __('Jobs Found', JOBWP_TXT_DOMAIN); ?></div>
+                <div class="jobwp-total-jobs-found-per-page">    
+                    <?php _e('Displayed Here', JOBWP_TXT_DOMAIN); ?>: <span><?php printf( '%s - %s', $jobwp_from, $jobwp_to ); ?></span> <?php _e('Jobs', JOBWP_TXT_DOMAIN); ?>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
+        <div class="jobwp-select-view">
+            <?php _e('View', JOBWP_TXT_DOMAIN); ?>:
+            <span class="view list <?php echo ( 'list' === $jobwp_list_layout ) ? 'active' : ''; ?>" data-view_type="list"><i class="fa fa-list" aria-hidden="true"></i></span>
+            <span class="view grid <?php echo ( 'grid' === $jobwp_list_layout ) ? 'active' : ''; ?>" data-view_type="grid"><i class="fas fa-th-large"></i></span>
+        </div>
+    </div>
     <div class="jobwp-listing-body-container <?php esc_attr_e( $jobwp_list_layout ) ?>">
         <?php
         while ( $jobwpJobs->have_posts() ) {

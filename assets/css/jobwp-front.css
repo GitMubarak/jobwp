@@ -17,12 +17,36 @@
     color: #555555;
 }
 
-.jobwp-total-jobs-found {
-    border: 0px solid #000;
+.jobwp-listing-top {
     display: block;
     width: 100%;
     margin: 0 auto;
     max-width: 1150px;
+    min-height: 40px;
+}
+
+.jobwp-listing-top .jobwp-total-jobs-found,
+.jobwp-listing-top .jobwp-select-view {
+    width: 49.8%;
+    display: inline-block;
+}
+
+.jobwp-listing-top .jobwp-select-view {
+    text-align: right;
+    color: #111;
+}
+
+.jobwp-listing-top .jobwp-select-view span.view {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.jobwp-listing-top .jobwp-select-view span.view.list.active,
+.jobwp-listing-top .jobwp-select-view span.view.grid.active {
+    opacity: 1;
 }
 
 .jobwp-total-jobs-found .jobwp-total-jobs-found-total {
@@ -605,6 +629,9 @@ span.wpsd-read-before-apply-border {
 /* Apply Now Ended */
 
 @media only screen and (max-width: 500px) {
+    .jobwp-listing-top .jobwp-select-view {
+        display: none;
+    }
     .jobwp-item .jobwp-top .jobwp-top-left,
     .jobwp-item .jobwp-top .jobwp-top-right {
         width: 100%;

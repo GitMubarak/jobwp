@@ -3,6 +3,14 @@
     // USE STRICT
     "use strict";
 
+    $(document).on('click', '.jobwp-listing-top .jobwp-select-view span.view', function(event) {
+        event.preventDefault();
+        var url = new URL(window.location.href);
+        var urlParam = $(this).data('view_type');
+        url.searchParams.set('layout', urlParam);
+        window.location.href = url.href;
+    });
+
     $(document).on('click', '.jobwp-trigger-link', function(event) {
         event.preventDefault();
         $('#jobwp-apply-form-modal').iziModal('open');
