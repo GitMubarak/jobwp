@@ -50,6 +50,25 @@ class JobWp_Front
 			FALSE 
 		);
 
+		if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
+			wp_enqueue_style(
+				'jobwp-slick', 
+				JOBWP_ASSETS . 'css/slick.css',
+				array(),
+				$this->jobwp_version,
+				FALSE 
+			);
+
+			wp_enqueue_style(
+				'jobwp-slick-theme', 
+				JOBWP_ASSETS . 'css/slick-theme.css',
+				array(),
+				$this->jobwp_version,
+				FALSE 
+			);
+		}
+
 		wp_enqueue_style(	
 			'jobwp-front',
 			JOBWP_ASSETS . 'css/' . $this->jobwp_assets_prefix . 'front.css',
@@ -72,6 +91,17 @@ class JobWp_Front
 			TRUE 
 		);
 
+		if ( job_fs()->is_plan__premium_only('pro', true) ) {
+			
+			wp_enqueue_script(
+				'jobwp-slick',
+				JOBWP_ASSETS . 'js/slick.min.js',
+				'',
+				'2.4.20',
+				TRUE
+			);
+		}
+
 		wp_enqueue_script(  
 			'jobwp-front',
 			JOBWP_ASSETS . 'js/' . $this->jobwp_assets_prefix . 'front.js',
@@ -91,6 +121,7 @@ class JobWp_Front
 
 		if ( job_fs()->is_plan__premium_only('pro', true) ) {
 			add_shortcode( 'jobwp_search', array( $this, 'jobwp_load_search_view' ) );
+			add_shortcode( 'jobwp_featured', array( $this, 'jobwp_load_featured_view' ) );
 		}
 	}
 
@@ -140,6 +171,18 @@ class JobWp_Front
 		$output = '';
 		ob_start();
 		include_once JOBWP_PATH . 'front/view/search-single.php';
+		$output .= ob_get_clean();
+		return $output;
+	}
+
+	/**
+	 * Load Featured View
+	*/
+	function jobwp_load_featured_view( $searchAttr ) {
+
+		$output = '';
+		ob_start();
+		include_once JOBWP_PATH . 'front/view/featured.php';
 		$output .= ob_get_clean();
 		return $output;
 	}

@@ -25,6 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <li>&#10003; Shortcode Option to Display Jobs of a Company</li>
                 <li>&#10003; Option to Allow Login Users to Apply</li>
                 <li>&#10003; Display Job Search Panel at Home</li>
+                <li>&#10003; Display Featured Jobs With Slider</li>
             </ul>
             <?php
             if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
