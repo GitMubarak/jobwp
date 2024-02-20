@@ -178,6 +178,7 @@ You can display the job information and apply a url to that individual job which
 * Option to Allow Login Users to Apply
 * Display Job Search Panel at Home
 * Display Featured Jobs With Slider
+* HR User Role to Manage Jobs
 
 [Get the Pro](https://wpjoblisting.com/pricing-faq/)
 
@@ -273,6 +274,7 @@ Now go to your detail page and refresh it.
 * Display Job Search Panel at Home - Pro
 * Display Featured Jobs With Slider - Pro
 * Assign job as featured option added - Pro
+* HR User role implemented - Pro
 [//]: # fs_premium_only_end
 * Layout changing option at front view
 * CSS fixed

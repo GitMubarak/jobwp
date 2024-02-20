@@ -176,6 +176,85 @@ if ( function_exists( 'job_fs' ) ) {
                 $addr = ( isset( $_POST['jobwp_company_addr'] ) && '' !== $_POST['jobwp_company_addr'] ) ? sanitize_text_field( $_POST['jobwp_company_addr'] ) : '';
                 update_term_meta ( $term_id, 'jobwp_company_addr', $addr );
             }
+            
+            /*
+            * Add HR Role
+            */
+            function jobwp_add_hr_role() {
+                
+                add_role(
+                    'hr_user',
+                    'HR User',
+                    array(
+                        'read'         => true,
+                        'edit_posts'   => true,
+                        'upload_files' => true,
+                    ),
+                );
+            }
+            add_action( 'init', 'jobwp_add_hr_role' );
+            
+            /*
+            * Add HR User capabilities 
+            * Priority must be after the initial role definition
+            */
+            function jobwp_hr_role_capabilities() {
+
+                $role = get_role( 'hr_user' );
+            
+                $role->add_cap( 'edit_others_posts', true );
+                $role->add_cap( 'edit_published_posts', true );
+                $role->add_cap( 'manage_categories', true );
+                $role->add_cap( 'publish_posts', true );
+                $role->add_cap( 'upload_files', true );
+            } 
+            add_action( 'init', 'jobwp_hr_role_capabilities', 11 );
+
+            /*
+            * Removing some menu for HR Users
+            */
+            function jobwp_adjust_hr_admin_menu() {
+
+                $user = wp_get_current_user();
+
+                if ( in_array( 'hr_user', (array) $user->roles ) ) {
+                    
+                    remove_menu_page( 'index.php' );                  //Dashboard
+                    remove_menu_page( 'jetpack' );                    //Jetpack* 
+                    remove_menu_page( 'edit.php' );                   //Posts
+                    remove_menu_page( 'edit.php?post_type=page' );    //Pages
+                    remove_menu_page( 'edit-comments.php' );          //Comments
+                    remove_menu_page( 'themes.php' );                 //Appearance
+                    remove_menu_page( 'plugins.php' );                //Plugins
+                    remove_menu_page( 'users.php' );                  //Users
+                    remove_menu_page( 'tools.php' );                  //Tools
+                    remove_menu_page( 'options-general.php' );        //Settings
+                    remove_menu_page( 'profile.php' );                //Profile
+                    remove_menu_page( 'edit.php?post_type=wpcr3_review' ); //Settings
+                    remove_menu_page( 'upload.php' );                 //Media
+                }
+            }
+            add_action( 'admin_menu','jobwp_adjust_hr_admin_menu', 1 );
+
+            /*
+            * Removing Admin Bar Menu for HR Users
+            */
+            function jobwp_remove_admin_bar_menu_for_hr_users() {
+
+                global $wp_admin_bar;
+
+                $user = wp_get_current_user();
+                
+                if ( in_array( 'hr_user', (array) $user->roles ) ) {
+
+                    //$wp_admin_bar->remove_node('new-content');
+                    $wp_admin_bar->remove_node('new-post');
+                    $wp_admin_bar->remove_node('new-link');
+                    $wp_admin_bar->remove_node('new-media');
+                    $wp_admin_bar->remove_node('comments');
+                }
+            }
+            add_action( 'admin_bar_menu', 'jobwp_remove_admin_bar_menu_for_hr_users', 999 );
         }
 
     }

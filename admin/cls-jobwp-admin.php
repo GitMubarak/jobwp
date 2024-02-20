@@ -89,25 +89,25 @@ class JobWp_Admin
 			$jobwp_cpt_menu,
 			__('General Settings', JOBWP_TXT_DOMAIN),
 			__('General Settings', JOBWP_TXT_DOMAIN),
-			'manage_options',
+			'edit_others_posts',
 			'jobwp-general-settings',
-			array($this, JOBWP_PRFX . 'general_settings')
+			array($this, 'jobwp_general_settings')
 		);
 
 		add_submenu_page(
 			$jobwp_cpt_menu,
 			__('Listing Page Settings', JOBWP_TXT_DOMAIN),
 			__('Listing Page Settings', JOBWP_TXT_DOMAIN),
-			'manage_options',
+			'edit_others_posts',
 			'jobwp-listing-settings',
-			array($this, JOBWP_PRFX . 'listing_settings')
+			array($this, 'jobwp_listing_settings')
 		);
 
 		add_submenu_page(
 			$jobwp_cpt_menu,
 			__('Search Panel Settings', JOBWP_TXT_DOMAIN),
 			__('Search Panel Settings', JOBWP_TXT_DOMAIN),
-			'manage_options',
+			'edit_others_posts',
 			'jobwp-search-settings',
 			array($this, JOBWP_PRFX . 'search_settings')
 		);
@@ -116,7 +116,7 @@ class JobWp_Admin
 			$jobwp_cpt_menu,
 			__('Detail Page Settings', JOBWP_TXT_DOMAIN),
 			__('Detail Page Settings', JOBWP_TXT_DOMAIN),
-			'manage_options',
+			'edit_others_posts',
 			'jobwp-single-settings',
 			array($this, JOBWP_PRFX . 'single_settings')
 		);
@@ -125,7 +125,7 @@ class JobWp_Admin
 			$jobwp_cpt_menu,
 			__('Apply Form', JOBWP_TXT_DOMAIN),
 			__('Apply Form', JOBWP_TXT_DOMAIN),
-			'manage_options',
+			'edit_others_posts',
 			'jobwp-apply-form-settings',
 			array($this, JOBWP_PRFX . 'apply_form')
 		);
@@ -134,7 +134,7 @@ class JobWp_Admin
 			$jobwp_cpt_menu,
 			__('Application List', JOBWP_TXT_DOMAIN),
 			__('Application List', JOBWP_TXT_DOMAIN),
-			'manage_options',
+			'edit_others_posts',
 			'jobwp-application-list',
 			array($this, JOBWP_PRFX . 'application_list')
 		);
@@ -145,7 +145,7 @@ class JobWp_Admin
 	 */
 	function jobwp_general_settings() {
 
-		if ( ! current_user_can( 'manage_options' ) ) {
+		if ( ! current_user_can( 'edit_others_posts' ) ) {
 			return;
 		}
 
@@ -168,7 +168,7 @@ class JobWp_Admin
 	 */
 	function jobwp_listing_settings() {
 
-		if ( ! current_user_can( 'manage_options' ) ) {
+		if ( ! current_user_can( 'edit_others_posts' ) ) {
 			return;
 		}
 	
@@ -201,7 +201,7 @@ class JobWp_Admin
 	 */
 	function jobwp_search_settings() {
 
-		if ( ! current_user_can( 'manage_options' ) ) {
+		if ( ! current_user_can( 'edit_others_posts' ) ) {
 			return;
 		}
 	
@@ -231,7 +231,7 @@ class JobWp_Admin
 
 	function jobwp_single_settings() {
 
-		if ( ! current_user_can( 'manage_options' ) ) {
+		if ( ! current_user_can( 'edit_others_posts' ) ) {
 			return;
 		}
 	
@@ -264,7 +264,7 @@ class JobWp_Admin
 	 */
 	function jobwp_apply_form() {
 
-		if ( ! current_user_can( 'manage_options' ) ) {
+		if ( ! current_user_can( 'edit_others_posts' ) ) {
 			return;
 		}
 	
@@ -297,6 +297,10 @@ class JobWp_Admin
 	 *	Function For Loading General Settings Page
 	 */
 	function jobwp_application_list() {
+
+		if ( ! current_user_can( 'edit_others_posts' ) ) {
+			return;
+		}
 
 		$jobwpColumns = array(
 			'cb'                		=> __('Select All', JOBWP_TXT_DOMAIN),
@@ -344,7 +348,7 @@ class JobWp_Admin
 						'label'               => __('jobs', JOBWP_TXT_DOMAIN),
 						'description'         => __('Description For Job', JOBWP_TXT_DOMAIN),
 						'labels'              => $labels,
-						'supports'            => array('title', 'editor', 'page-attributes'),
+						'supports'            => array('title', 'editor', 'page-attributes', 'thumbnail'),
 						'public'              => true,
 						'hierarchical'        => false,
 						'show_ui'             => true,
@@ -357,7 +361,7 @@ class JobWp_Admin
 						'yarpp_support'       => true,
 						//'taxonomies' 	      => array('post_tag'),
 						'publicly_queryable'  => true,
-						'capability_type'     => 'page',
+						'capability_type'     => 'post',
 						'menu_icon'           => 'dashicons-portfolio'
 					);
 
