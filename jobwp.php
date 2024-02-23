@@ -189,7 +189,7 @@ if ( function_exists( 'job_fs' ) ) {
                         'read'         => true,
                         'edit_posts'   => true,
                         'upload_files' => true,
-                    ),
+                    )
                 );
             }
             add_action( 'init', 'jobwp_add_hr_role' );
