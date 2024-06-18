@@ -58,6 +58,6 @@ if ( ! defined( 'ABSPATH' ) ) {
   div.jobwp-pagination>ul.page-numbers>li:hover,
   div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
       background: <?php esc_html_e( $jobwp_hover_bg_color ); ?>;
-      color: #FFF;
+      color: <?php esc_html_e( $jobwp_hover_font_color ); ?>;
   }
 </style>

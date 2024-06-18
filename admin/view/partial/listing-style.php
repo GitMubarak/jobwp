@@ -214,6 +214,25 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				}
 				?>
             </td>
+            <th scope="row">
+                <label><?php _e('Hover Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_hover_font_color" id="jobwp_hover_font_color" value="<?php esc_attr_e( $jobwp_hover_font_color ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
         </tr>
     </table>
     <hr>
