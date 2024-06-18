@@ -272,7 +272,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Option to allow login users to apply - Pro
 [//]: # fs_premium_only_end
-* Layout
+* Freemius SDK upgraded to 2.7.2
 
 = 2.3.4 =
 [//]: # fs_premium_only_begin

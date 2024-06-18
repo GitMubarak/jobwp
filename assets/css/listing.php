@@ -50,4 +50,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     color: <?php esc_html_e( $jobwp_listing_info_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_listing_info_font_size ); ?>px;
   }
+  /* Pagination */
+  .jobwp-pagination .page-numbers li a {
+    color: <?php esc_html_e( $jobwp_pagination_font_color ); ?>;
+    border: 1px solid <?php esc_html_e( $jobwp_pagination_border_color ); ?>;;
+  }
 </style>

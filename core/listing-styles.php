@@ -73,6 +73,16 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#DDD',
             ],
+            [
+                'name'      => 'jobwp_pagination_font_color',
+                'type'      => 'text',
+                'default'   => '#13b5ea',
+            ],
+            [
+                'name'      => 'jobwp_pagination_border_color',
+                'type'      => 'text',
+                'default'   => '#13b5ea',
+            ],
         ];
     }
 }

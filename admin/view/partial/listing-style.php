@@ -148,6 +148,52 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
         </tr>
+        <!-- Pagination -->
+        <tr>
+            <th scope="row" colspan="4">
+                <hr><span><?php _e('Pagination', JOBWP_TXT_DOMAIN); ?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_pagination_font_color" id="jobwp_pagination_font_color" value="<?php esc_attr_e( $jobwp_pagination_font_color ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Border Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_pagination_border_color" id="jobwp_pagination_border_color" value="<?php esc_attr_e( $jobwp_pagination_border_color ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit"><button id="updateListingStyles" name="updateListingStyles" class="button button-primary jobwp-button"><?php _e('Save Settings', JOBWP_TXT_DOMAIN); ?></button></p>

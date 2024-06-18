@@ -32,7 +32,9 @@
         '#jobwp_search_container_bg_color',
         '#jobwp_search_container_border_color',
         '#jobwp_search_item_bg_color',
-        '#jobwp_search_item_border_color'
+        '#jobwp_search_item_border_color',
+        '#jobwp_pagination_font_color',
+        '#jobwp_pagination_border_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {
