@@ -270,7 +270,7 @@ Now go to your detail page and refresh it.
 
 = 2.3.5 =
 [//]: # fs_premium_only_begin
-* Option to allow login users to apply - Pro
+* Pagination font color, border color option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.7.2
 
