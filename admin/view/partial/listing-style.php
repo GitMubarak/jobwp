@@ -194,6 +194,27 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Hover Background Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_hover_bg_color" id="jobwp_hover_bg_color" value="<?php esc_attr_e( $jobwp_hover_bg_color ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit"><button id="updateListingStyles" name="updateListingStyles" class="button button-primary jobwp-button"><?php _e('Save Settings', JOBWP_TXT_DOMAIN); ?></button></p>

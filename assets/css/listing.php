@@ -53,6 +53,11 @@ if ( ! defined( 'ABSPATH' ) ) {
   /* Pagination */
   .jobwp-pagination .page-numbers li a {
     color: <?php esc_html_e( $jobwp_pagination_font_color ); ?>;
-    border: 1px solid <?php esc_html_e( $jobwp_pagination_border_color ); ?>;;
+    border: 1px solid <?php esc_html_e( $jobwp_pagination_border_color ); ?>;
+  }
+  div.jobwp-pagination>ul.page-numbers>li:hover,
+  div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
+      background: <?php esc_html_e( $jobwp_hover_bg_color ); ?>;
+      color: #FFF;
   }
 </style>

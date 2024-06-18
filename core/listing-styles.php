@@ -83,6 +83,11 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#13b5ea',
             ],
+            [
+                'name'      => 'jobwp_hover_bg_color',
+                'type'      => 'text',
+                'default'   => '#13b5ea',
+            ],
         ];
     }
 }
