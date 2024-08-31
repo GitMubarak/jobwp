@@ -63,7 +63,7 @@ trait Jobwp_Applicaiton
 
                                 global $wpdb;
                         
-                                $table_name     = $wpdb->prefix . 'jobwp_applied';
+                                $table_name     = $wpdb->base_prefix . 'jobwp_applied';
         
                                 $fullName           = isset( $post['jobwp_full_name'] ) ? sanitize_text_field( $post['jobwp_full_name'] ) : null;
                                 $applyFor           = isset( $post['jobwp_apply_for'] ) ? sanitize_text_field( $post['jobwp_apply_for'] ) : null;

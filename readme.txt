@@ -277,6 +277,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.7.4
 * Minor bug fixed
+* Nerwork site database prefix issue fixed
 
 = 2.3.4 =
 [//]: # fs_premium_only_begin

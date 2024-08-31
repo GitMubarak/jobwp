@@ -46,12 +46,14 @@ if ( '' !== $jobwp_admin_noti_email ) {
 
 if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
-    $wbgAbctAdmins = get_users( 'role=' . $jobwp_admin_noti_email_users );
+    if ( ''  !== $jobwp_admin_noti_email_users) {
+        $wbgAbctAdmins = get_users( 'role=' . $jobwp_admin_noti_email_users );
 
-    if ( ! empty( $wbgAbctAdmins ) ) {
-        foreach ( $wbgAbctAdmins as $admin ):
-            $wbgAbctEmail[] = sanitize_email( $admin->user_email );
-        endforeach;
+        if ( ! empty( $wbgAbctAdmins ) ) {
+            foreach ( $wbgAbctAdmins as $admin ):
+                $wbgAbctEmail[] = sanitize_email( $admin->user_email );
+            endforeach;
+        }
     }
 }
 

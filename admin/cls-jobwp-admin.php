@@ -758,14 +758,14 @@ class JobWp_Admin
 	private function jobwp_get_all_applications() {
 		
 		global $wpdb;
-    	$table_name     = $wpdb->prefix . 'jobwp_applied';
+    	$table_name     = $wpdb->base_prefix . 'jobwp_applied';
 		return $wpdb->get_results($wpdb->prepare("SELECT * FROM $table_name WHERE %d ORDER BY job_id DESC", 1));
 	}
 
 	protected function jobwp_delete_single_application( $id ) {
 
 		global $wpdb;
-		$table_name = $wpdb->prefix . 'jobwp_applied';
+		$table_name = $wpdb->base_prefix . 'jobwp_applied';
 		
 		$resume = $wpdb->get_row( $wpdb->prepare("SELECT * FROM $table_name WHERE job_id = %d", $id), ARRAY_A);
 
