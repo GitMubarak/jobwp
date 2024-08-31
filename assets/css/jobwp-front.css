@@ -257,6 +257,7 @@ div.jobwp-pagination>ul.page-numbers>li>span.page-numbers.current {
     height: 50px;
     line-height: 48px;
     font-size: 14px;
+    font-weight: 700;
 }
 
 div.jobwp-pagination>ul.page-numbers>li:hover,

@@ -2,8 +2,8 @@
 Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: career, job board, job listing, jobs, job manager
-Requires at least: 5.2
-Tested up to: 6.5.4
+Requires at least: 5.4
+Tested up to: 6.6.1
 Stable tag: 2.3.5
 Requires PHP: 7.2
 License: GPLv2 or later

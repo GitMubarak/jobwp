@@ -60,4 +60,9 @@ if ( ! defined( 'ABSPATH' ) ) {
       background: <?php esc_html_e( $jobwp_hover_bg_color ); ?>;
       color: <?php esc_html_e( $jobwp_hover_font_color ); ?>;
   }
+  div.jobwp-pagination>ul.page-numbers>li>span.page-numbers.current {
+    background: <?php esc_html_e( $jobwp_hover_bg_color ); ?>;
+    color: <?php esc_html_e( $jobwp_hover_font_color ); ?>;
+    border: 1px solid <?php esc_html_e( $jobwp_hover_bg_color ); ?>;
+  }
 </style>

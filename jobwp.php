@@ -6,9 +6,9 @@
  * Version:             2.3.5
  * Author:		        HM Plugin
  * Author URI:	        https://hmplugin.com
- * Requires at least:   5.2
+ * Requires at least:   5.4
  * Requires PHP:        7.2
- * Tested up to:        6.5.4
+ * Tested up to:        6.6.1
  * Text Domain:         jobwp
  * Domain Path:         /languages/
  * License:             GPL-2.0+
