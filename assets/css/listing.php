@@ -55,15 +55,20 @@ if ( ! defined( 'ABSPATH' ) ) {
     color: <?php esc_html_e( $jobwp_pagination_font_color ); ?>;
     border: 1px solid <?php esc_html_e( $jobwp_pagination_border_color ); ?>;
     background: <?php esc_html_e( $jobwp_pagination_bg_color ); ?>;
+    font-size: <?php esc_html_e( $jobwp_pagination_font_size ); ?>px;
+    border-radius: <?php esc_html_e( $jobwp_pagination_border_radius ); ?>px;
   }
   div.jobwp-pagination>ul.page-numbers>li:hover,
   div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
       background: <?php esc_html_e( $jobwp_hover_bg_color ); ?>;
       color: <?php esc_html_e( $jobwp_hover_font_color ); ?>;
+      border-radius: <?php esc_html_e( $jobwp_pagination_border_radius ); ?>px;
   }
   div.jobwp-pagination>ul.page-numbers>li>span.page-numbers.current {
     background: <?php esc_html_e( $jobwp_hover_bg_color ); ?>;
     color: <?php esc_html_e( $jobwp_hover_font_color ); ?>;
-    border: 1px solid <?php esc_html_e( $jobwp_hover_bg_color ); ?>;
+    border: 1px solid <?php esc_html_e( $jobwp_pagination_border_color ); ?>;
+    font-size: <?php esc_html_e( $jobwp_pagination_font_size ); ?>px;
+    border-radius: <?php esc_html_e( $jobwp_pagination_border_radius ); ?>px;
   }
 </style>

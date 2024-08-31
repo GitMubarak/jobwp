@@ -98,6 +98,16 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#FFF',
             ],
+            [
+                'name'      => 'jobwp_pagination_font_size',
+                'type'      => 'number',
+                'default'   => '14',
+            ],
+            [
+                'name'      => 'jobwp_pagination_border_radius',
+                'type'      => 'number',
+                'default'   => '0',
+            ],
         ];
     }
 }

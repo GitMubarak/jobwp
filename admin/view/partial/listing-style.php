@@ -215,6 +215,46 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
+                <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+            <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input type="number" class="small-text" min="11" max="40" step="1" name="jobwp_pagination_font_size" id="jobwp_pagination_font_size" value="<?php esc_attr_e( $jobwp_pagination_font_size ); ?>">
+                    <code>px</code>
+					<?php
+				}
+				?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Border Radius', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+            <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input type="number" class="small-text" min="0" max="50" step="1" name="jobwp_pagination_border_radius" id="jobwp_pagination_border_radius" value="<?php esc_attr_e( $jobwp_pagination_border_radius ); ?>">
+                    <code>px</code>
+					<?php
+				}
+				?>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
                 <label><?php _e('Hover Background Color', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
             <td>
