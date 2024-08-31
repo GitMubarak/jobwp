@@ -272,6 +272,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Pagination font color, border color option added - Pro
 * Pagination hover bg color, font color option added - Pro
+* Pagination bg color option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.7.4
 * Minor bug fixed

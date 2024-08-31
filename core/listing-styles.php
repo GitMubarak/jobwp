@@ -93,6 +93,11 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#FFF',
             ],
+            [
+                'name'      => 'jobwp_pagination_bg_color',
+                'type'      => 'text',
+                'default'   => '#FFF',
+            ],
         ];
     }
 }

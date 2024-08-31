@@ -14,7 +14,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
     <table class="jobwp-listing-style-settings-table">
         <!-- Job Item -->
         <tr>
-            <th scope="row" colspan="4">
+            <th scope="row" colspan="6">
                 <hr><span><?php _e('Job Item', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -60,7 +60,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <!-- Title -->
         <tr>
-            <th scope="row" colspan="4">
+            <th scope="row" colspan="6">
                 <hr><span><?php _e('Job Title', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -82,7 +82,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <!-- Overview -->
         <tr>
-            <th scope="row" colspan="4">
+            <th scope="row" colspan="6">
                 <hr><span><?php _e('Job Overview', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -104,7 +104,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <!-- Job Info -->
         <tr>
-            <th scope="row" colspan="4">
+            <th scope="row" colspan="6">
                 <hr><span><?php _e('Job Information', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -150,13 +150,13 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <!-- Pagination -->
         <tr>
-            <th scope="row" colspan="4">
+            <th scope="row" colspan="6">
                 <hr><span><?php _e('Pagination', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Background  Color', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
             <td>
                 <?php
@@ -168,7 +168,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 
 				if ( job_fs()->is_plan__premium_only('pro', true) ) {
 					?>
-                    <input class="jobwp-wp-color" type="text" name="jobwp_pagination_font_color" id="jobwp_pagination_font_color" value="<?php esc_attr_e( $jobwp_pagination_font_color ); ?>">
+                    <input class="jobwp-wp-color" type="text" name="jobwp_pagination_bg_color" id="jobwp_pagination_bg_color" value="<?php esc_attr_e( $jobwp_pagination_bg_color ); ?>">
                     <div id="colorpicker"></div>
 					<?php
 				}
@@ -188,6 +188,25 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				if ( job_fs()->is_plan__premium_only('pro', true) ) {
 					?>
                     <input class="jobwp-wp-color" type="text" name="jobwp_pagination_border_color" id="jobwp_pagination_border_color" value="<?php esc_attr_e( $jobwp_pagination_border_color ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_pagination_font_color" id="jobwp_pagination_font_color" value="<?php esc_attr_e( $jobwp_pagination_font_color ); ?>">
                     <div id="colorpicker"></div>
 					<?php
 				}
