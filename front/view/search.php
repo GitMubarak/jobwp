@@ -16,34 +16,28 @@ if ( '' != $jobwp_title_s ) {
 
 // Search Query Category
 if ( '' !== $jobwp_category_s ) {
-    $jobwpQueryArrParams['tax_query'] = array(
-        array(
-            'taxonomy' => 'jobs_category',
-            'field' => 'name',
-            'terms' => urldecode ( $jobwp_category_s )
-        )
+    $jobwpQueryArrParams['tax_query'][] = array(
+        'taxonomy' => 'jobs_category',
+        'field' => 'name',
+        'terms' => urldecode( $jobwp_category_s )
     );
 }
 
 // Search Query Job Type
 if ( '' !== $jobwp_type_s ) {
-    $jobwpQueryArrParams['tax_query'] = array(
-        array(
-            'taxonomy' => 'jobs_nature',
-            'field' => 'name',
-            'terms' => urldecode ( $jobwp_type_s )
-        )
+    $jobwpQueryArrParams['tax_query'][] = array(
+        'taxonomy' => 'jobs_nature',
+        'field' => 'name',
+        'terms' => urldecode( $jobwp_type_s )
     );
 }
 
 // Search by location
 if ( '' !== $jobwp_location_s ) {
-    $jobwpQueryArrParams['tax_query'] = array(
-        array(
-            'taxonomy' => 'jobs_location',
-            'field' => 'name',
-            'terms' => urldecode ( $jobwp_location_s )
-        )
+    $jobwpQueryArrParams['tax_query'][] = array(
+        'taxonomy' => 'jobs_location',
+        'field' => 'name',
+        'terms' => urldecode( $jobwp_location_s )
     );
 }
 
@@ -72,7 +66,7 @@ $jobwp_locations    = get_terms( array( 'taxonomy' => 'jobs_location', 'hide_emp
                     <?php
                     foreach ( $jobwp_categories as $job_category ) {
                         ?>
-                        <option value="<?php esc_attr_e( $job_category->name ); ?>" <?php echo ( $jobwp_category_s == $job_category->name ) ? 'Selected' : ''; ?>><?php esc_html_e( $job_category->name ); ?></option>
+                        <option value="<?php esc_attr_e( $job_category->name ); ?>" <?php selected( htmlspecialchars($jobwp_category_s), $job_category->name ); ?> ><?php esc_html_e( $job_category->name ); ?></option>
                         <?php 
                     } 
                     ?>

@@ -74,18 +74,22 @@ $jobwpQueryArrParams = array(
     'order'             => 'DESC',
     'posts_per_page'    => $jobwp_limit,
     'paged'             => $jobwp_paged,
-    'meta_query'  => array(
+    'meta_query'        => array(
+        'relation' => 'AND',
         array(
             'key'     => 'jobwp_status',
             'value'   => 'active',
             'compare' => '='
         ),
     ),
+    'tax_query'         => array(
+        'relation' => 'AND',
+    ),
 );
 
 // If Category params found in shortcode
 if( $jobwp_category != '' ) {
-    $jobwpQueryArrParams['tax_query'] = array(
+    $jobwpQueryArrParams['tax_query'][] = array(
         array(
             'taxonomy'  => 'jobs_category',
             'field'     => 'name',
@@ -97,13 +101,11 @@ if( $jobwp_category != '' ) {
 // Hide Jobs When Deadline Over
 if ( $jobwp_hide_jobs_deadline_over ) {
 
-    $jobwpQueryArrParams['meta_query'] = array(
-        array(
-            'key'     => 'jobwp_deadline',
-            'value'   => date('Y-m-d'),
-            'compare' => '>=',
-            'type'    => 'DATE'
-        ),
+    $jobwpQueryArrParams['meta_query'][] = array(
+        'key'     => 'jobwp_deadline',
+        'value'   => date('Y-m-d'),
+        'compare' => '>=',
+        'type'    => 'DATE'
     );
 }
 
@@ -112,7 +114,7 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
     if ( '' !== $jobwp_company ) {
         
-        $jobwpQueryArrParams['meta_query'] = array(
+        $jobwpQueryArrParams['meta_query'][] = array(
             array(
                 'key'     => 'jobwp_company',
                 'value'   => $jobwp_company,
@@ -129,6 +131,9 @@ if ( 'on' !== $jobwp_search ) {
 }
 
 $jobwpQueryArr = apply_filters( 'jobwp_front_main_query_array', $jobwpQueryArrParams );
+
+//echo '<pre>';
+//print_r($jobwpQueryArr);
 
 $jobwpJobs = new WP_Query( $jobwpQueryArr );
 
