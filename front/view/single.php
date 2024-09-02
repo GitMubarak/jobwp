@@ -339,7 +339,7 @@ include 'single/header.php';
             if ( '' != $jobwp_apply_procedure_content ) {
                 ?>
                 <p class="apply-to-email">
-                    <?php esc_html_e( $jobwp_apply_procedure_content ); ?>
+                    <?php echo wp_kses_post( $jobwp_apply_procedure_content ); ?>
                 </p>
                 <?php
             }

@@ -70,7 +70,7 @@ trait Jobwp_ApplyForm_Content_Settings
             ],
             [
                 'name'      => 'jobwp_apply_form_user_consent_text',
-                'type'      => 'text',
+                'type'      => 'textarea',
                 'default'   => 'By using this form you agree with the storage and handling of your data by this website.',
             ],
         ];

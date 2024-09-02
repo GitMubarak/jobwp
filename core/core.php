@@ -49,6 +49,11 @@ trait Jobwp_Core
             $this->data[$this->fields[$i]['name']] = isset( $post[$this->fields[$i]['name']] ) ? sanitize_email( $post[$this->fields[$i]['name']] ) : $this->fields[$i]['default'];
 
         }
+        if ( 'kses_post' === $this->fields[$i]['type'] ) {
+	
+          $this->data[$this->fields[$i]['name']] = isset( $post[$this->fields[$i]['name']] ) ? wp_kses_post( $post[$this->fields[$i]['name']] ) : $this->fields[$i]['default'];
+    
+        }
         $i++;
     }
 

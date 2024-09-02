@@ -165,7 +165,7 @@ trait Jobwp_Single_Content_Settings
             ],
             [
                 'name'      => 'jobwp_apply_procedure_content',
-                'type'      => 'textarea',
+                'type'      => 'kses_post',
                 'default'   => 'Interested candidates can send their resumes to career@your-domain.com mentioning "Job Title" in the subject line.',
             ],
             [

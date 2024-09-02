@@ -280,6 +280,7 @@ Now go to your detail page and refresh it.
 * Nerwork site database prefix issue fixed
 * Issue with option value & fixed in the search
 * Combined search implemented
+* Allow HTML into apply procedure content
 
 = 2.3.4 =
 [//]: # fs_premium_only_begin

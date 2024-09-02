@@ -275,7 +275,7 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
                 <input type="text" name="jobwp_apply_procedure_title" id="jobwp_apply_procedure_title" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_procedure_title ); ?>" />
             </td>
         </tr>
-        <tr>
+        <tr class="jobwp_apply_procedure_content">
             <th colspan="3" scope="row" style="text-align: right;">
                 <label><?php _e('Apply Procedure Content', JOBWP_TXT_DOMAIN); ?></label>
             </th>
