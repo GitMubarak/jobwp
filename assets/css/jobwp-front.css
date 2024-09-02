@@ -153,7 +153,8 @@ div.jobwp-list-bottom-item {
 .jobwp-bottom {
     border: 0px solid #000;
     display: block;
-    min-height: 3px;
+    min-height: 37px;
+    margin-bottom: 5px;
 }
 
 .pull-left {
@@ -162,6 +163,16 @@ div.jobwp-list-bottom-item {
 
 .pull-right {
     float: right;
+}
+
+div.jobwp-list-bottom-item i {
+    border: 2px solid #EAEAEA;
+    border-radius: 50%;
+    background: #FAFAFA;
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
 }
 
 

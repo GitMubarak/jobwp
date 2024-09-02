@@ -33,6 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     background-color: <?php esc_html_e( $jobwp_listing_item_bg_color ); ?>;
   }
   /* Job Listing */
+  .jobwp-item .jobwp-job-title,
   .jobwp-item .jobwp-job-title a.jobwp-job-title-a {
     color: <?php esc_html_e( $jobwp_listing_title_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_listing_title_font_size ); ?>px;
