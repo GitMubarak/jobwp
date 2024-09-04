@@ -14,7 +14,8 @@ class JobWp_Admin
 	Jobwp_Search_Content_Settings,
 	Jobwp_Search_Styles_Settings,
 	Jobwp_Single_Content_Settings, 
-	Jobwp_Single_Styles_Settings,
+	Jobwp_Single_Styles_Settings, 
+	Jobwp_Email_Settings,
 	Jobwp_ApplyForm_Content_Settings,
 	Jobwp_ApplyForm_Style_Settings;
 
@@ -119,6 +120,15 @@ class JobWp_Admin
 			'edit_others_posts',
 			'jobwp-single-settings',
 			array($this, JOBWP_PRFX . 'single_settings')
+		);
+
+		add_submenu_page(
+			$jobwp_cpt_menu,
+			__('Email Settings', JOBWP_TXT_DOMAIN),
+			__('Email Settings', JOBWP_TXT_DOMAIN),
+			'edit_others_posts',
+			'jobwp-email-settings',
+			array($this, 'jobwp_email_settings')
 		);
 		
 		add_submenu_page(
@@ -257,6 +267,26 @@ class JobWp_Admin
         $jobwpSingleStyles = $this->jobwp_get_single_styles_settings();
 
 		require_once JOBWP_PATH . 'admin/view/single.php';
+	}
+
+	function jobwp_email_settings() {
+
+		if ( ! current_user_can( 'edit_others_posts' ) ) {
+			return;
+		}
+
+		$jobwpEmailMessage = false;
+
+		// Content
+		if ( isset( $_POST['updateSettings'] ) ) {
+
+			$jobwpEmailMessage = $this->jobwp_set_email_settings( $_POST );
+
+		}
+
+		$jobwpEmailSettings = $this->jobwp_get_email_settings();
+
+		require_once JOBWP_PATH . 'admin/view/email.php';
 	}
 
 	/**

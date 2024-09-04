@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 include 'single/header.php';
 ?>
 <div class="jobwp-single-body-container">
-	<?php 
+	<?php
     if ( have_posts() ) { 
         
         while ( have_posts() ) {

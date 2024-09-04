@@ -117,23 +117,38 @@ trait Jobwp_Applicaiton
 
                                 if ( job_fs()->is_plan__premium_only('pro', true) ) {
                                     // Applicant Notificaton Email Started
-                                    $subjectRec = "Thank you for applying!";
 
-                                    $recMessage = __('Hi', 'jobwp') . '&nbsp;' . $fullName . ',';
-                                    $recMessage .= '<br><br>' . __('Thanks for applying to our', 'jobwp') . '&nbsp;' . $applyFor . '&nbsp;' . __('position', 'jobwp') . '.';
-                                    $recMessage .= '&nbsp;' . __("We'll review your application and be sure to get back to you if there might be a fit!", "jobwp");
-                                    $recMessage .= '<br><br>' . __('Best', 'jobwp') . ',';
+                                    $canEmailSettings	= get_option('jobwp_email_settings');
+                                    $can_email_subj     = isset( $canEmailSettings['jobwp_candidate_email_subject'] ) ? sanitize_text_field( $canEmailSettings['jobwp_candidate_email_subject'] ) : 'Thank you for applying!';
+                                    $can_email_body     = isset( $canEmailSettings['jobwp_candidate_email_body'] ) ? wp_kses_post( stripslashes( $canEmailSettings['jobwp_candidate_email_body'] ) ) : '';
+                                    
+                                    if ( '' != $can_email_body ) {
+                                        
+                                        $can_phrase_before  = ["#candidateName#", "#jobTitle#"];
+                                        $can_phrase_after   = ["". $fullName ."", "" . $applyFor . ""];
 
+                                        $can_email_body_final = str_replace($can_phrase_before, $can_phrase_after, $can_email_body);
+
+                                    } else {
+
+                                        $recMessage = __('Hi', 'jobwp') . '&nbsp;' . $fullName . ',';
+                                        $recMessage .= '<br><br>' . __('Thanks for applying to our', 'jobwp') . '&nbsp;' . $applyFor . '&nbsp;' . __('position', 'jobwp') . '.';
+                                        $recMessage .= '&nbsp;' . __("We'll review your application and be sure to get back to you if there might be a fit!", "jobwp");
+                                        $recMessage .= '<br><br>' . __('Best', 'jobwp') . ',';
+                                        
+                                        $can_email_body_final = $recMessage;
+                                    }
+                                    
                                     wp_mail(
                                         esc_html( $email ),
-                                        $subjectRec,
-                                        $recMessage,
+                                        $can_email_subj,
+                                        $can_email_body_final,
                                         $headers
                                     );
                                     // Applicant Notificaton Email Ended
                                 }
         
-                                return __('Thank you for your application', JOBWP_TXT_DOMAIN);
+                                return __('Thank you for your application', 'jobwp');
                             }
 
                         }
