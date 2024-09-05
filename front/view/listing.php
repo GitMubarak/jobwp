@@ -120,7 +120,7 @@ if ( $jobwpJobs->have_posts() ) {
                             <i class="fa fa-briefcase" aria-hidden="true"></i>
                             <strong class="primary-color"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?>:</strong>
                             <span class="ng-binding">
-                                <?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?>
+                                <?php esc_html_e( $jobwp_experience ); ?>
                             </span>
                         </div>
                         <?php

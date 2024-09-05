@@ -138,6 +138,8 @@ trait Jobwp_Applicaiton
                                         $can_email_body_final = str_replace($can_phrase_before, $can_phrase_after, $can_email_body);
 
                                     } else {
+                                        
+                                        $can_email_subj = "Thank you for applying!";
 
                                         $recMessage = __('Hi', 'jobwp') . '&nbsp;' . $fullName . ',';
                                         $recMessage .= '<br><br>' . __('Thanks for applying to our', 'jobwp') . '&nbsp;' . $applyFor . '&nbsp;' . __('position', 'jobwp') . '.';

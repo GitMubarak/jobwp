@@ -3,7 +3,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( job_fs()->is_plan__premium_only('pro', true) ) {
 //print_r( $jobwpEmailSettings );
 foreach ( $jobwpEmailSettings as $option_name => $option_value ) {
     if ( isset( $jobwpEmailSettings[$option_name] ) ) {
@@ -23,13 +22,16 @@ if ( $jobwpEmailMessage ) {
     echo '<br>';
 }
 ?>
-
 <div class="jobwp-wrap">
 
     <div class="jobwp_personal_wrap jobwp_personal_help" style="width: 76%; float: left;">
         
         <div class="tab-content">
-            <form name="jobwp_email_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-email-settings-form">
+
+            <?php
+            if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                ?>
+                <form name="jobwp_email_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-email-settings-form">
                 <table class="jobwp-single-settings-table">
                     <tr>
                         <td colspan="2">
@@ -84,15 +86,20 @@ if ( $jobwpEmailMessage ) {
                         </button>
                     </p>
                 </form>
-            </div>
-        
+                <?php
+            }
+
+            if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                ?>
+                <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                <?php
+            }
+            ?>
         </div>
-
-        <?php include_once('partial/admin-sidebar.php'); ?>
-
+        
     </div>
 
+    <?php include_once('partial/admin-sidebar.php'); ?>
 </div>
-<?php
-}
-?>
+
+</div>
