@@ -138,6 +138,26 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                     <?php echo $jobwp_hide_total_jobs_found ? 'checked' : ''; ?> >
             </td>
         </tr>
+        <tr class="jobwp_display_listing_icon">
+            <th scope="row">
+                <label for="jobwp_display_listing_icon"><?php _e('Hide Icon', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="checkbox" name="jobwp_display_listing_icon" class="jobwp_display_listing_icon" id="jobwp_display_listing_icon" <?php echo $jobwp_display_listing_icon ? 'checked' : ''; ?>>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit">

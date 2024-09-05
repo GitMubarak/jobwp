@@ -276,6 +276,7 @@ Now go to your detail page and refresh it.
 * Pagination border radius option added - Pro
 * Candidate email content settings added - Pro
 * Candidate email header from name and from email settings added - Pro
+* Listing page icon hide option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.7.4
 * Minor bug fixed
