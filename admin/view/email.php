@@ -36,8 +36,24 @@ if ( $jobwpEmailMessage ) {
                             <hr><?php _e('Candidate Email Settings', 'jobwp'); ?><hr>
                         </td>
                     </tr>
+                    <tr class="jobwp_re_from_name">
+                        <th scope="row" style="text-align: right;">
+                            <label><?php _e('Header From Name', 'jobwp'); ?></label>
+                        </th>
+                        <td>
+                            <input type="text" name="jobwp_re_from_name" id="jobwp_re_from_name" class="regular-text" value="<?php esc_attr_e( $jobwp_re_from_name ); ?>"/>
+                        </td>
+                    </tr>
+                    <tr class="jobwp_can_header_from_email">
+                        <th scope="row" style="text-align: right;">
+                            <label><?php _e('Header From Email', 'jobwp'); ?></label>
+                        </th>
+                        <td>
+                            <input type="email" name="jobwp_can_header_from_email" id="jobwp_can_header_from_email" class="regular-text" value="<?php esc_attr_e( $jobwp_can_header_from_email ); ?>"/>
+                        </td>
+                    </tr>
                     <tr class="jobwp_candidate_email_subject">
-                        <th scope="row">
+                        <th scope="row" style="text-align: right;">
                             <label><?php _e('Email Subject', 'jobwp'); ?></label>
                         </th>
                         <td>
@@ -47,6 +63,8 @@ if ( $jobwpEmailMessage ) {
                     <tr class="jobwp_candidate_email_body">
                         <th scope="row" style="text-align: right;">
                             <label><?php _e('Email Content', 'jobwp'); ?></label>
+                            <span class="dashicons dashicons-info-outline jobwp-admin-icon"></span>
+                            <img src="<?php esc_attr_e( JOBWP_ASSETS . 'img/jobwp-candidate-email-example.jpg' ); ?>" class="jobwp-admin-help-img">
                         </th>
                         <td colspan="2">
                             <textarea cols="100" style="min-height:200px;" name="jobwp_candidate_email_body" class="medium-text" id="jobwp_candidate_email_body"><?php echo wp_kses_post( stripslashes( $jobwp_candidate_email_body ) ); ?></textarea>

@@ -118,12 +118,20 @@ trait Jobwp_Applicaiton
                                 if ( job_fs()->is_plan__premium_only('pro', true) ) {
                                     // Applicant Notificaton Email Started
 
-                                    $canEmailSettings	= get_option('jobwp_email_settings');
-                                    $can_email_subj     = isset( $canEmailSettings['jobwp_candidate_email_subject'] ) ? sanitize_text_field( $canEmailSettings['jobwp_candidate_email_subject'] ) : 'Thank you for applying!';
-                                    $can_email_body     = isset( $canEmailSettings['jobwp_candidate_email_body'] ) ? wp_kses_post( stripslashes( $canEmailSettings['jobwp_candidate_email_body'] ) ) : '';
-                                    
+                                    $canEmailSettings	            = get_option('jobwp_email_settings');
+                                    $can_email_subj                 = isset( $canEmailSettings['jobwp_candidate_email_subject'] ) ? sanitize_text_field( $canEmailSettings['jobwp_candidate_email_subject'] ) : 'Thank you for applying!';
+                                    $can_email_body                 = isset( $canEmailSettings['jobwp_candidate_email_body'] ) ? wp_kses_post( stripslashes( $canEmailSettings['jobwp_candidate_email_body'] ) ) : '';
+                                    $jobwp_re_from_name             = isset( $canEmailSettings['jobwp_re_from_name'] ) ? sanitize_text_field( $canEmailSettings['jobwp_re_from_name'] ) : '';
+                                    $jobwp_can_header_from_email    = isset( $canEmailSettings['jobwp_can_header_from_email'] ) ? sanitize_email( $canEmailSettings['jobwp_can_header_from_email'] ) : '';
+
+                                    if ( '' != $jobwp_re_from_name ) {
+                                        $headers .= "From: {$jobwp_re_from_name} <{$jobwp_can_header_from_email}> \r\n";
+			                            $headers .= "Reply-To: {$jobwp_can_header_from_email} \r\n";
+                                        $headers .= 'X-Mailer: PHP/' . phpversion();
+                                    }
+
                                     if ( '' != $can_email_body ) {
-                                        
+
                                         $can_phrase_before  = ["#candidateName#", "#jobTitle#"];
                                         $can_phrase_after   = ["". $fullName ."", "" . $applyFor . ""];
 
@@ -141,7 +149,7 @@ trait Jobwp_Applicaiton
                                     
                                     wp_mail(
                                         esc_html( $email ),
-                                        $can_email_subj,
+                                        esc_html( $can_email_subj ),
                                         $can_email_body_final,
                                         $headers
                                     );

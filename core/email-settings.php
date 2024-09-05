@@ -43,6 +43,16 @@ trait Jobwp_Email_Settings
                 'type'      => 'kses_post',
                 'default'   => '',
             ],
+            [
+                'name'      => 'jobwp_re_from_name',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'jobwp_can_header_from_email',
+                'type'      => 'email',
+                'default'   => '',
+            ],
         ];
     }
 }
