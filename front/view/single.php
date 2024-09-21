@@ -347,9 +347,16 @@ include 'single/header.php';
             if ( ! $jobwp_hide_apply_button ) {
 
                 if ( 'on' === $jobwp_ext_apply_now_url ) {
-                    ?>
-                    <a href="<?php echo esc_url( $jobwp_application_url ); ?>" class="jobwp-primary-button" target="_blank"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
-                    <?php
+
+                    if ( '' !== $jobwp_application_url ) {
+                        ?>
+                        <a href="<?php echo esc_url( $jobwp_application_url ); ?>" class="jobwp-primary-button" target="_blank"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
+                        <?php
+                    } else {
+                        ?>
+                        <a href="#" class="jobwp-trigger-link jobwp-primary-button"><?php esc_html_e( $jobwp_apply_button_text ); ?></a>
+                        <?php
+                    }
                 } else {
 
                     if ( $jobwp_allow_login_apply ) {
