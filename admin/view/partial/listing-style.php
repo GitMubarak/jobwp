@@ -105,7 +105,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         <!-- Job Info -->
         <tr>
             <th scope="row" colspan="6">
-                <hr><span><?php _e('Job Information', JOBWP_TXT_DOMAIN); ?></span><hr>
+                <hr><span><?php _e('Job Information Label', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
         <tr>

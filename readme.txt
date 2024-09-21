@@ -3,7 +3,7 @@ Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: career, job board, job listing, jobs, job manager
 Requires at least: 5.4
-Tested up to: 6.6.1
+Tested up to: 6.6.2
 Stable tag: 2.3.5
 Requires PHP: 7.2
 License: GPLv2 or later
@@ -278,7 +278,7 @@ Now go to your detail page and refresh it.
 * Candidate email header from name and from email settings added - Pro
 * Listing page icon hide option added - Pro
 [//]: # fs_premium_only_end
-* Freemius SDK upgraded to 2.7.4
+* Freemius SDK upgraded to 2.8.1
 * Minor bug fixed
 * Nerwork site database prefix issue fixed
 * Issue with option value & fixed in the search
