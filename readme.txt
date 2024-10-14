@@ -272,7 +272,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Listing - Pro
 [//]: # fs_premium_only_end
-* Freemius
+* Details styles settings page css fixed
 
 = 2.3.5 =
 [//]: # fs_premium_only_begin

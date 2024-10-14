@@ -11,10 +11,10 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
 }
 ?>
 <form name="jobwp_single_style_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-single-style-form">
-    <table class="jobwp-single-style-settings-table">
+    <table class="jobwp-settings-table">
         <!-- Container -->
         <tr>
-            <th scope="row" colspan="4">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><span><?php _e('Container', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -29,7 +29,7 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
         </tr>
         <!-- Title -->
         <tr>
-            <th scope="row" colspan="4">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><span><?php _e('Job Title', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -37,7 +37,7 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
             <th scope="row">
                 <label><?php _e('Background Color', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
-            <td colspan="3">
+            <td>
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
@@ -53,8 +53,6 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
                 }
                 ?>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
@@ -72,7 +70,7 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
         </tr>
         <!-- Job Info -->
         <tr>
-            <th scope="row" colspan="4">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><span><?php _e('Job Info', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -87,7 +85,7 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
         </tr>
         <!-- How to Apply -->
         <tr>
-            <th scope="row" colspan="4">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><span><?php _e('How to Apply', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -114,7 +112,7 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
         </tr>
         <!-- Apply Button -->
         <tr>
-            <th scope="row" colspan="4">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><span><?php _e('Apply Button', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>

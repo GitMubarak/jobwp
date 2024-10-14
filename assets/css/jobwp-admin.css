@@ -5,7 +5,8 @@
     margin-bottom: 20px;
 }
 
-table.jobwp-settings-table {
+table.jobwp-settings-table,
+table.jobwp-single-style-settings-table {
     width: 100%;
 }
 
