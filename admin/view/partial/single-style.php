@@ -26,6 +26,13 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
                 <input class="jobwp-wp-color" type="text" name="jobwp_single_container_bg_color" id="jobwp_single_container_bg_color" value="<?php esc_attr_e( $jobwp_single_container_bg_color ); ?>">
                 <div id="colorpicker"></div>
             </td>
+            <th scope="row">
+                <label><?php _e('Margin Top', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input type="number" class="small-text" min="0" max="400" name="jobwp_single_container_margin_top" id="jobwp_single_container_margin_top" value="<?php esc_attr_e( $jobwp_single_container_margin_top ); ?>">
+                <code>px</code>
+            </td>
         </tr>
         <!-- Title -->
         <tr>

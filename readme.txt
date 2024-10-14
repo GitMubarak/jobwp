@@ -273,6 +273,7 @@ Now go to your detail page and refresh it.
 * Listing - Pro
 [//]: # fs_premium_only_end
 * Details styles settings page css fixed
+* Details page top margin option added
 
 = 2.3.5 =
 [//]: # fs_premium_only_begin

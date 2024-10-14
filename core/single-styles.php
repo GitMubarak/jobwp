@@ -68,6 +68,11 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#EEEEEE',
             ],
+            [
+                'name'      => 'jobwp_single_container_margin_top',
+                'type'      => 'number',
+                'default'   => '40',
+            ],
         ];
     }
 }
