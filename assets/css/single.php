@@ -7,6 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   .jobwp-single-body-container {
     background: <?php esc_html_e( $jobwp_single_container_bg_color ); ?>;
     margin-top: <?php esc_html_e( $jobwp_single_container_margin_top ); ?>px;
+    margin-bottom: <?php esc_html_e( $jobwp_single_container_margin_btm ); ?>px;
   }
   .jobwp-single-body-container .circulr-details-top {
     background: <?php esc_html_e( $jobwp_single_title_bg_color ); ?>;

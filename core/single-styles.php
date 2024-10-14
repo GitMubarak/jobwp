@@ -73,6 +73,11 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'number',
                 'default'   => '40',
             ],
+            [
+                'name'      => 'jobwp_single_container_margin_btm',
+                'type'      => 'number',
+                'default'   => '40',
+            ],
         ];
     }
 }
