@@ -478,16 +478,12 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
 }
 
 .jobwp-primary-button {
-    background: #008b8b;
-    border: 1px solid #247c26;
     border-radius: 3px;
-    font-size: 22px;
+    font-size: 18px;
     text-transform: uppercase;
     color: #fff;
-    padding: 10px 30px;
+    padding: 15px 20px;
     display: inline-block;
-    line-height: 36px;
-    height: 60px;
     text-decoration: none;
 }
 

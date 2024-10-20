@@ -274,6 +274,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_end
 * Details styles settings page css fixed
 * Details page top-bottom margin option added
+* Css fixed
 
 = 2.3.5 =
 [//]: # fs_premium_only_begin
