@@ -155,6 +155,13 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
+                <label><?php _e('Border Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_single_apply_btn_border_color" id="jobwp_single_apply_btn_border_color" value="<?php esc_attr_e( $jobwp_single_apply_btn_border_color ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+            <th scope="row">
                 <label><?php _e('Padding', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
             <td colspan="5">

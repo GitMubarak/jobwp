@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   }
   .circulr-details-bottom-email .jobwp-primary-button {
     background: <?php esc_html_e( $jobwp_single_apply_btn_bg_color ); ?>;
-    border: 1px solid <?php esc_html_e( $jobwp_single_apply_btn_bg_color ); ?>;
+    border: 1px solid <?php esc_html_e( $jobwp_single_apply_btn_border_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_single_apply_btn_font_size ); ?>px;
     color: <?php esc_html_e( $jobwp_single_apply_btn_font_color ); ?>;
     padding: <?php esc_html_e( $jobwp_single_apply_btn_padding_h ); ?>px <?php esc_html_e( $jobwp_single_apply_btn_padding_w ); ?>px;

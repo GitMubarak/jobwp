@@ -98,6 +98,11 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'number',
                 'default'   => '15',
             ],
+            [
+                'name'      => 'jobwp_single_apply_btn_border_color',
+                'type'      => 'text',
+                'default'   => '#008b8b',
+            ],
         ];
     }
 }
