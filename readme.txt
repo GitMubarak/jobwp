@@ -275,6 +275,7 @@ Now go to your detail page and refresh it.
 * Details styles settings page css fixed
 * Details page top-bottom margin option added
 * Apply button font size option added
+* Apply button font color option added
 * Css fixed
 
 = 2.3.5 =

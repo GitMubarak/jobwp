@@ -28,6 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     background: <?php esc_html_e( $jobwp_single_apply_btn_bg_color ); ?>;
     border: 1px solid <?php esc_html_e( $jobwp_single_apply_btn_bg_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_single_apply_btn_font_size ); ?>px;
+    color: <?php esc_html_e( $jobwp_single_apply_btn_font_color ); ?>;
   }
   .circulr-details-bottom-email .jobwp-primary-button:hover {
     color: <?php esc_html_e( $jobwp_single_apply_btn_bg_color ); ?>!important;

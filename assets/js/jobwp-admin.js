@@ -37,7 +37,8 @@
         '#jobwp_pagination_border_color',
         '#jobwp_hover_bg_color',
         '#jobwp_hover_font_color',
-        '#jobwp_pagination_bg_color'
+        '#jobwp_pagination_bg_color',
+        '#jobwp_single_apply_btn_font_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {

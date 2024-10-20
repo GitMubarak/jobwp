@@ -83,6 +83,11 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'number',
                 'default'   => '18',
             ],
+            [
+                'name'      => 'jobwp_single_apply_btn_font_color',
+                'type'      => 'text',
+                'default'   => '#FFFFFF',
+            ],
         ];
     }
 }
