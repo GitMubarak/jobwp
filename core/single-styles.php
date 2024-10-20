@@ -88,6 +88,16 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#FFFFFF',
             ],
+            [
+                'name'      => 'jobwp_single_apply_btn_padding_h',
+                'type'      => 'number',
+                'default'   => '15',
+            ],
+            [
+                'name'      => 'jobwp_single_apply_btn_padding_w',
+                'type'      => 'number',
+                'default'   => '15',
+            ],
         ];
     }
 }

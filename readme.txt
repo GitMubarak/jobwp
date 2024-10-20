@@ -276,7 +276,7 @@ Now go to your detail page and refresh it.
 * Details page top-bottom margin option added
 * Apply button font size option added
 * Apply button font color option added
-* Css fixed
+* Apply button padding option added
 
 = 2.3.5 =
 [//]: # fs_premium_only_begin
