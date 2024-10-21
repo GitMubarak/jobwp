@@ -122,6 +122,20 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
                 <input class="jobwp-wp-color" type="text" name="jobwp_single_howtoapply_title_brdr_clr" id="jobwp_single_howtoapply_title_brdr_clr" value="<?php esc_attr_e( $jobwp_single_howtoapply_title_brdr_clr ); ?>">
                 <div id="colorpicker"></div>
             </td>
+            <th scope="row">
+                <label><?php _e('Content Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_single_howtoapply_content_clr" id="jobwp_single_howtoapply_content_clr" value="<?php esc_attr_e( $jobwp_single_howtoapply_content_clr ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+            <th scope="row">
+                <label><?php _e('Content Size', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input type="number" class="small-text" min="11" max="50" name="jobwp_single_howtoapply_content_size" id="jobwp_single_howtoapply_content_size" value="<?php esc_attr_e( $jobwp_single_howtoapply_content_size ); ?>">
+                <code>px</code>
+            </td>
         </tr>
         <!-- Apply Button -->
         <tr>

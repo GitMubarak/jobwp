@@ -138,6 +138,16 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#CCCCCC',
             ],
+            [
+                'name'      => 'jobwp_single_howtoapply_content_clr',
+                'type'      => 'text',
+                'default'   => '#555555',
+            ],
+            [
+                'name'      => 'jobwp_single_howtoapply_content_size',
+                'type'      => 'number',
+                'default'   => '13',
+            ],
         ];
     }
 }

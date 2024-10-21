@@ -276,6 +276,7 @@ Now go to your detail page and refresh it.
 * Details page top-bottom margin option added
 * Apply button styling option added
 * How to apply title styling option added
+* How to apply content styling option added
 
 = 2.3.5 =
 [//]: # fs_premium_only_begin
