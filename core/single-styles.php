@@ -118,6 +118,11 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#555555',
             ],
+            [
+                'name'      => 'jobwp_single_apply_btn_brdr_radius',
+                'type'      => 'number',
+                'default'   => '0',
+            ],
         ];
     }
 }

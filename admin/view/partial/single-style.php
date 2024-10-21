@@ -164,12 +164,19 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
             <th scope="row">
                 <label><?php _e('Padding', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
-            <td colspan="5">
+            <td>
                 <input type="number" class="small-text" min="0" max="50" name="jobwp_single_apply_btn_padding_h" id="jobwp_single_apply_btn_padding_h" value="<?php esc_attr_e( $jobwp_single_apply_btn_padding_h ); ?>">
                 <?php _e('Height', JOBWP_TXT_DOMAIN); ?>&nbsp;&nbsp;
                 <input type="number" class="small-text" min="0" max="50" name="jobwp_single_apply_btn_padding_w" id="jobwp_single_apply_btn_padding_w" value="<?php esc_attr_e( $jobwp_single_apply_btn_padding_w ); ?>">
                 <?php _e('Width', JOBWP_TXT_DOMAIN); ?>&nbsp;
                 <code>(px)</code>
+            </td>
+            <th scope="row">
+                <label><?php _e('Border Radius', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td colspan="5">
+                <input type="number" class="small-text" min="0" max="50" name="jobwp_single_apply_btn_brdr_radius" id="jobwp_single_apply_btn_brdr_radius" value="<?php esc_attr_e( $jobwp_single_apply_btn_brdr_radius ); ?>">
+                <code>px</code>
             </td>
         </tr>
         <!-- Apply Button: Hover -->
