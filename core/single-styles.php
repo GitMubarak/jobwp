@@ -123,6 +123,16 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'number',
                 'default'   => '0',
             ],
+            [
+                'name'      => 'jobwp_single_howtoapply_title_font_clr',
+                'type'      => 'text',
+                'default'   => '#333333',
+            ],
+            [
+                'name'      => 'jobwp_single_howtoapply_title_font_size',
+                'type'      => 'number',
+                'default'   => '24',
+            ],
         ];
     }
 }

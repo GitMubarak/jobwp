@@ -275,6 +275,7 @@ Now go to your detail page and refresh it.
 * Details styles settings page css fixed
 * Details page top-bottom margin option added
 * Apply button styling settings option added
+* How to apply title color and font size option added
 
 = 2.3.5 =
 [//]: # fs_premium_only_begin

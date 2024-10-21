@@ -24,6 +24,10 @@ if ( ! defined( 'ABSPATH' ) ) {
   .jobwp-single-body-container .circulr-details-bottom-email {
     background: <?php esc_html_e( $jobwp_single_how_to_apply_bg_color ); ?>;
   }
+  .jobwp-single-body-container .circulr-details-bottom-email h3.wpsd-read-before-apply {
+    color: <?php esc_html_e( $jobwp_single_howtoapply_title_font_clr ); ?>;
+    font-size: <?php esc_html_e( $jobwp_single_howtoapply_title_font_size ); ?>px;
+  }
   .circulr-details-bottom-email .jobwp-primary-button {
     background: <?php esc_html_e( $jobwp_single_apply_btn_bg_color ); ?>;
     border: 1px solid <?php esc_html_e( $jobwp_single_apply_btn_border_color ); ?>;

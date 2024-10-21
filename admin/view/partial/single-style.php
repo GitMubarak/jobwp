@@ -95,9 +95,23 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
             <th scope="row">
                 <label><?php _e('Background Color', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
-            <td colspan="3">
+            <td>
                 <input class="jobwp-wp-color" type="text" name="jobwp_single_how_to_apply_bg_color" id="jobwp_single_how_to_apply_bg_color" value="<?php esc_attr_e( $jobwp_single_how_to_apply_bg_color ); ?>">
                 <div id="colorpicker"></div>
+            </td>
+            <th scope="row">
+                <label><?php _e('Title Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_single_howtoapply_title_font_clr" id="jobwp_single_howtoapply_title_font_clr" value="<?php esc_attr_e( $jobwp_single_howtoapply_title_font_clr ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+            <th scope="row">
+                <label><?php _e('Title Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input type="number" class="small-text" min="11" max="50" name="jobwp_single_howtoapply_title_font_size" id="jobwp_single_howtoapply_title_font_size" value="<?php esc_attr_e( $jobwp_single_howtoapply_title_font_size ); ?>">
+                <code>px</code>
             </td>
         </tr>
         <!-- Apply Button -->
