@@ -172,6 +172,28 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
                 <code>(px)</code>
             </td>
         </tr>
+        <!-- Apply Button: Hover -->
+        <tr>
+            <th scope="row" colspan="6" style="text-align: left;">
+                <hr><span><?php _e('Apply Button: Hover', JOBWP_TXT_DOMAIN); ?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Background Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_single_apply_btn_bg_clr_hvr" id="jobwp_single_apply_btn_bg_clr_hvr" value="<?php esc_attr_e( $jobwp_single_apply_btn_bg_clr_hvr ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+            <th scope="row">
+                <label><?php _e('Border Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_single_apply_btn_brdr_clr_hvr" id="jobwp_single_apply_btn_brdr_clr_hvr" value="<?php esc_attr_e( $jobwp_single_apply_btn_brdr_clr_hvr ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit"><button id="updateSingleStyles" name="updateSingleStyles" class="button button-primary jobwp-button"><?php _e('Save Settings', JOBWP_TXT_DOMAIN); ?></button></p>
