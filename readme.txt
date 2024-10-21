@@ -280,6 +280,7 @@ Now go to your detail page and refresh it.
 * Apply button border color option added
 * Apply button hover background color option added
 * Apply button hover border color option added
+* Apply button hover font color option added
 
 = 2.3.5 =
 [//]: # fs_premium_only_begin

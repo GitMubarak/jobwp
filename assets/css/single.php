@@ -34,6 +34,6 @@ if ( ! defined( 'ABSPATH' ) ) {
   .circulr-details-bottom-email .jobwp-primary-button:hover {
     background: <?php esc_html_e( $jobwp_single_apply_btn_bg_clr_hvr ); ?>;
     border: 1px solid <?php esc_html_e( $jobwp_single_apply_btn_brdr_clr_hvr ); ?>;
-    color: <?php esc_html_e( $jobwp_single_apply_btn_font_color ); ?>;
+    color: <?php esc_html_e( $jobwp_single_apply_btn_font_clr_hvr ); ?>;
   }
 </style>

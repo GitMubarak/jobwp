@@ -41,7 +41,8 @@
         '#jobwp_single_apply_btn_font_color',
         '#jobwp_single_apply_btn_border_color',
         '#jobwp_single_apply_btn_bg_clr_hvr',
-        '#jobwp_single_apply_btn_brdr_clr_hvr'
+        '#jobwp_single_apply_btn_brdr_clr_hvr',
+        '#jobwp_single_apply_btn_font_clr_hvr'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {

@@ -193,6 +193,13 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
                 <input class="jobwp-wp-color" type="text" name="jobwp_single_apply_btn_brdr_clr_hvr" id="jobwp_single_apply_btn_brdr_clr_hvr" value="<?php esc_attr_e( $jobwp_single_apply_btn_brdr_clr_hvr ); ?>">
                 <div id="colorpicker"></div>
             </td>
+            <th scope="row">
+                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_single_apply_btn_font_clr_hvr" id="jobwp_single_apply_btn_font_clr_hvr" value="<?php esc_attr_e( $jobwp_single_apply_btn_font_clr_hvr ); ?>">
+                <div id="colorpicker"></div>
+            </td>
         </tr>
     </table>
     <hr>

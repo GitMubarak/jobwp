@@ -113,6 +113,11 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#999999',
             ],
+            [
+                'name'      => 'jobwp_single_apply_btn_font_clr_hvr',
+                'type'      => 'text',
+                'default'   => '#555555',
+            ],
         ];
     }
 }
