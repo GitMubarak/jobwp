@@ -114,6 +114,15 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
                 <code>px</code>
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Title Border Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_single_howtoapply_title_brdr_clr" id="jobwp_single_howtoapply_title_brdr_clr" value="<?php esc_attr_e( $jobwp_single_howtoapply_title_brdr_clr ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
         <!-- Apply Button -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">

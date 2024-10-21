@@ -133,6 +133,11 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'number',
                 'default'   => '24',
             ],
+            [
+                'name'      => 'jobwp_single_howtoapply_title_brdr_clr',
+                'type'      => 'text',
+                'default'   => '#CCCCCC',
+            ],
         ];
     }
 }
