@@ -504,6 +504,7 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
 h3.wpsd-read-before-apply {
     font-size: 24px;
     padding: 0px;
+    margin: 0;
     width: 100%;
     text-align: center;
 }
@@ -521,6 +522,11 @@ span.wpsd-read-before-apply-border {
     padding: 0;
     font-size: 13px;
     line-height: 20px;
+}
+
+.circulr-details-bottom-email p.apply-to-email a,
+.circulr-details-bottom-email a.jobwp-primary-button {
+    text-decoration: none;
 }
 
 

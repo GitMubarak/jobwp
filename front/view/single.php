@@ -1,4 +1,5 @@
 <?php
+# Silence is golden.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -384,17 +385,11 @@ include 'single/header.php';
     ?>
 
 </div>
-<?php do_action( 'jobwp_single_after_body_container' ); ?>
-<!-- Application form modal -->
-<div id="jobwp-apply-form-modal" class="jobwp-apply-form-modal">
-    <?php
-    if ( $jobwp_ext_application_form ) {
-        echo do_shortcode( stripslashes( $jobwp_ext_application_form_shortcode ) );
-    } else {
-        echo do_shortcode( '[jobwp_apply_form]' );
-    }
-    ?>
-</div>
-<?php
-    get_footer(); 
+<?php 
+do_action( 'jobwp_single_after_body_container' );
+
+//Application form modal -->
+include 'single/applyform-modal.php';
+
+get_footer(); 
 ?>

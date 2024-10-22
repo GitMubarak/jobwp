@@ -20,6 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   .jobwp-single-left .label,
   .jobwp-single-left .text {
     color: <?php esc_html_e( $jobwp_single_info_font_color ); ?>;
+    margin: 0;
   }
   .jobwp-single-body-container .circulr-details-bottom-email {
     background: <?php esc_html_e( $jobwp_single_how_to_apply_bg_color ); ?>;

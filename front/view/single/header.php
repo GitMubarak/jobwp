@@ -9,7 +9,7 @@ global $post;
 
 $resumeUploadMsg = null;
 
-require_once JOBWP_PATH . 'front/' . JOBWP_CLS_PRFX . 'front.php';
+require_once JOBWP_PATH . 'front/cls-jobwp-front.php';
 $jobwp_front_new = new JobWp_Front(JOBWP_VERSION);
 
 // Single Settings Content

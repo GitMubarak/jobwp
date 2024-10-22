@@ -21,7 +21,7 @@ class JobWp_Front
 	Jobwp_ApplyForm_Style_Settings,
 	Jobwp_Applicaiton;
 
-	private $jobwp_version;
+	private $jobwp_version, $jobwp_assets_prefix;
 
 	function __construct( $version ) {
 
@@ -122,6 +122,7 @@ class JobWp_Front
 		if ( job_fs()->is_plan__premium_only('pro', true) ) {
 			add_shortcode( 'jobwp_search', array( $this, 'jobwp_load_search_view' ) );
 			add_shortcode( 'jobwp_featured', array( $this, 'jobwp_load_featured_view' ) );
+			add_shortcode( 'jobwp_single_job', array( $this, 'jobwp_load_single_job_view' ) );
 		}
 	}
 
@@ -183,6 +184,18 @@ class JobWp_Front
 		$output = '';
 		ob_start();
 		include_once JOBWP_PATH . 'front/view/featured.php';
+		$output .= ob_get_clean();
+		return $output;
+	}
+
+	/**
+	 * Load Single Job View
+	*/
+	function jobwp_load_single_job_view( $attr ) {
+
+		$output = '';
+		ob_start();
+		include_once JOBWP_PATH . 'front/view/single-job.php';
 		$output .= ob_get_clean();
 		return $output;
 	}

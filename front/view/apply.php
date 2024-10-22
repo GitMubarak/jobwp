@@ -27,6 +27,9 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
     }
 }
 
+// Shortcoded Options
+$job_title  = isset( $applyFrmAttr['job_title'] ) ? $applyFrmAttr['job_title'] : '';
+
 // Load Styling
 include JOBWP_PATH . 'assets/css/apply-form.php';
 
@@ -40,7 +43,7 @@ if ( ! $jobwp_hide_apply_form_title ) {
 
     <?php //if ( function_exists('wp_nonce_field') ) { wp_nonce_field('jobwp_apply_nonce_field'); } ?>
     <?php wp_nonce_field( 'jobwp_apply_form_action', 'jobwp_apply_form_nonce_field' ); ?>
-    <input type="hidden" value="<?php echo the_title(); ?>" id="jobwp_apply_for" name="jobwp_apply_for">
+    <input type="hidden" value="<?php esc_attr_e( $job_title ); ?>" id="jobwp_apply_for" name="jobwp_apply_for">
 
     <div class="jobwp-apply-form">
 
