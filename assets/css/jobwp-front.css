@@ -402,16 +402,15 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
 .left-cell {
     float: left;
     text-align: right;
-    padding-bottom: 20px;
     width: 36%;
+    padding: 20px 0 20px 0;
 }
 
 .right-cell {
     float: right;
     width: 60%;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    border-left: 1px solid #247c26;
+    padding: 20px 0 20px 30px;
+    border-left: 1px solid #999;
 }
 
 .circulr-details-top {

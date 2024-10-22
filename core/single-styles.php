@@ -71,12 +71,12 @@ trait Jobwp_Single_Styles_Settings
             [
                 'name'      => 'jobwp_single_container_margin_top',
                 'type'      => 'number',
-                'default'   => '40',
+                'default'   => '0',
             ],
             [
                 'name'      => 'jobwp_single_container_margin_btm',
                 'type'      => 'number',
-                'default'   => '40',
+                'default'   => '0',
             ],
             [
                 'name'      => 'jobwp_single_apply_btn_font_size',

@@ -1,11 +1,8 @@
 <?php
+# Silence is golden.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
-get_header();
-
-global $post;
 
 $resumeUploadMsg = null;
 
@@ -99,9 +96,6 @@ if ( isset( $_FILES['jobwp_upload_resume']['name'] ) ) {
     }
     
 }
-
-// Load anything before single_body_container
-do_action( 'jobwp_single_before_body_container' );
 
 // Load Styling
 include JOBWP_PATH . 'assets/css/single.php';
