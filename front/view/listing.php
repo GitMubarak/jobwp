@@ -92,7 +92,7 @@ if ( $jobwpJobs->have_posts() ) {
                         if ( ! $jobwp_list_display_overview ) {
                             ?>
                             <p class="jobwp-overview-excerpt">
-                                <?php echo wp_trim_words( get_the_content(), esc_html( $jobwp_list_overview_length ), '...' ); ?>
+                                <?php echo force_balance_tags( html_entity_decode( wp_trim_words( htmlentities( wpautop( get_the_content() ) ), $jobwp_list_overview_length, '...' ) ) ); ?>
                             </p>
                             <?php
                         }
