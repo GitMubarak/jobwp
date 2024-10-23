@@ -78,6 +78,28 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
+                <label><?php _e('Column Width', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="number" class="small-text" min="20" max="50" name="jobwp_single_info_column_left_width" id="jobwp_single_info_column_left_width" value="<?php esc_attr_e( $jobwp_single_info_column_left_width ); ?>">
+                    <?php _e('Left', JOBWP_TXT_DOMAIN); ?>&nbsp;&nbsp;
+                    <input type="number" class="small-text" min="20" max="80" name="jobwp_single_info_column_right_width" id="jobwp_single_info_column_right_width" value="<?php esc_attr_e( $jobwp_single_info_column_right_width ); ?>">
+                    <?php _e('Right', JOBWP_TXT_DOMAIN); ?>&nbsp;
+                    <code>(100%)</code>
+                    <?php
+                }
+                ?>
+            </td>
+            <th scope="row">
                 <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
             </th>
             <td>

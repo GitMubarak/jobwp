@@ -271,12 +271,14 @@ Now go to your detail page and refresh it.
 = 2.3.6 =
 [//]: # fs_premium_only_begin
 * Display single job with shortcode - Pro
+* Job details info column width option added - Pro
 [//]: # fs_premium_only_end
 * Details styles admin settings page css fixed
 * Details page top-bottom margin option added
 * Apply button styling option added
 * How to apply styling option added
 * Job overview paragraph issue fixed
+* Details page layout fixed
 
 = 2.3.5 =
 [//]: # fs_premium_only_begin

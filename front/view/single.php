@@ -29,12 +29,11 @@ do_action( 'jobwp_single_before_body_container' );
             include 'single/top-title.php';
             
             include 'single/job-details.php';
-        } 
-    } 
-    
-    include 'single/apply-procedure.php';
-    ?>
+        }
 
+        include 'single/apply-procedure.php';
+    }
+    ?>
 </div>
 <?php
 // Load anything after single_body_container

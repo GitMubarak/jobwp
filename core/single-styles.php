@@ -148,6 +148,16 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'number',
                 'default'   => '13',
             ],
+            [
+                'name'      => 'jobwp_single_info_column_left_width',
+                'type'      => 'number',
+                'default'   => '30',
+            ],
+            [
+                'name'      => 'jobwp_single_info_column_right_width',
+                'type'      => 'number',
+                'default'   => '70',
+            ],
         ];
     }
 }

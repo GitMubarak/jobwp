@@ -14,15 +14,16 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
     
     if ( ! empty( $post )) {
 
-        $job_title      = $post->post_title;
-        $job_overview   = $post->post_content;
-
-        include 'single/post-meta.php';
-
-        include 'single/top-title.php';
         ?>
         <div class="jobwp-single-body-container">
             <?php
+            $job_title      = $post->post_title;
+            $job_overview   = $post->post_content;
+
+            include 'single/post-meta.php';
+
+            include 'single/top-title.php';
+            
             include 'single/job-details.php';
 
             include 'single/apply-procedure.php';

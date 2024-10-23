@@ -15,10 +15,16 @@ if ( ! defined( 'ABSPATH' ) ) {
   .circulr-details-top .jobwp-job-title {
     color: <?php esc_html_e( $jobwp_single_title_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_single_title_font_size ); ?>px;
-    line-height: <?php esc_html_e( $jobwp_single_title_font_size + 10 ); ?>px;;
+    line-height: <?php esc_html_e( $jobwp_single_title_font_size + 10 ); ?>px;
   }
-  .jobwp-single-left .label,
-  .jobwp-single-left .text {
+  .jobwp-single-area .content-row .left-cell {
+    width: <?php esc_html_e( $jobwp_single_info_column_left_width ); ?>%;
+  }
+  .jobwp-single-area .content-row .right-cell {
+    width: <?php esc_html_e( $jobwp_single_info_column_right_width ); ?>%;
+  }
+  .jobwp-single-area .content-row .left-cell h5.label,
+  .jobwp-single-area .content-row .text {
     color: <?php esc_html_e( $jobwp_single_info_font_color ); ?>;
     margin: 0;
   }

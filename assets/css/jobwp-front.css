@@ -388,27 +388,26 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
 }
 
 .jobwp-single-area {
-    border: 0px solid #000;
     width: 100%;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 70% 1fr;
+    display: block;
 }
 
-.jobwp-single-left {
-    border: 0px solid #009900;
+.jobwp-single-area .content-row {
+    width: 100%;
+    display: block;
+    padding: 0 20px;
 }
 
 .left-cell {
     float: left;
     text-align: right;
-    width: 36%;
-    padding: 20px 0 20px 0;
+    width: 30%;
+    padding: 20px 20px 20px 0;
 }
 
 .right-cell {
     float: right;
-    width: 60%;
+    width: 70%;
     padding: 20px 0 20px 30px;
     border-left: 1px solid #999;
 }
@@ -450,13 +449,10 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
     width: auto;
 }
 
-.circulr-details-bottom {
-    background: #eee;
-    border: 0px solid #000;
-    width: 100%;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 70% 1fr;
+.jobwp-single-area .content-row .left-cell h5.label {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
 }
 
 .padding-50-0 {
