@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-09-21 23:20+0600\n"
+"POT-Creation-Date: 2024-10-23 16:34+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -472,7 +472,7 @@ msgstr ""
 #: admin/view/partial/search-content.php:93
 #: admin/view/partial/search-style.php:121
 #: admin/view/partial/single-content.php:305
-#: admin/view/partial/single-style.php:132
+#: admin/view/partial/single-style.php:248
 msgid "Save Settings"
 msgstr ""
 
@@ -511,8 +511,7 @@ msgstr ""
 #: admin/view/partial/single-content.php:23
 #: admin/view/partial/single-content.php:50
 #: admin/view/partial/single-content.php:70
-#: admin/view/partial/single-style.php:44
-#: admin/view/partial/single-style.php:102
+#: admin/view/partial/single-style.php:87
 msgid "Please Upgrade Now"
 msgstr ""
 
@@ -634,8 +633,9 @@ msgstr ""
 #: admin/view/partial/search-style.php:74
 #: admin/view/partial/search-style.php:103
 #: admin/view/partial/single-style.php:23
-#: admin/view/partial/single-style.php:38
-#: admin/view/partial/single-style.php:96
+#: admin/view/partial/single-style.php:52
+#: admin/view/partial/single-style.php:118
+#: admin/view/partial/single-style.php:225
 msgid "Background Color"
 msgstr ""
 
@@ -660,6 +660,7 @@ msgstr ""
 #: admin/view/partial/search-style.php:59
 #: admin/view/partial/search-style.php:88
 #: admin/view/partial/single-style.php:66
+#: admin/view/partial/single-style.php:177
 msgid "Font Size"
 msgstr ""
 
@@ -676,11 +677,13 @@ msgstr ""
 #: admin/view/partial/listing-style.php:178
 #: admin/view/partial/search-style.php:30
 #: admin/view/partial/search-style.php:52
+#: admin/view/partial/single-style.php:193
+#: admin/view/partial/single-style.php:232
 msgid "Border Color"
 msgstr ""
 
 #: admin/view/partial/apply-form-style.php:221
-#: admin/view/partial/single-style.php:118
+#: admin/view/partial/single-style.php:165
 msgid "Apply Button"
 msgstr ""
 
@@ -693,7 +696,9 @@ msgstr ""
 #: admin/view/partial/search-style.php:81
 #: admin/view/partial/search-style.php:110
 #: admin/view/partial/single-style.php:59
-#: admin/view/partial/single-style.php:81
+#: admin/view/partial/single-style.php:103
+#: admin/view/partial/single-style.php:184
+#: admin/view/partial/single-style.php:239
 msgid "Font Color"
 msgstr ""
 
@@ -813,7 +818,7 @@ msgid "Job Item"
 msgstr ""
 
 #: admin/view/partial/listing-style.php:64
-#: admin/view/partial/single-style.php:33
+#: admin/view/partial/single-style.php:47
 msgid "Job Title"
 msgstr ""
 
@@ -834,6 +839,7 @@ msgid "Background  Color"
 msgstr ""
 
 #: admin/view/partial/listing-style.php:237
+#: admin/view/partial/single-style.php:210
 msgid "Border Radius"
 msgstr ""
 
@@ -954,16 +960,72 @@ msgstr ""
 msgid "Apply Button Text"
 msgstr ""
 
+#: admin/view/partial/single-style.php:30
+msgid "Margin Top"
+msgstr ""
+
+#: admin/view/partial/single-style.php:37
+msgid "Margin Bottom"
+msgstr ""
+
 #: admin/view/partial/single-style.php:76
 msgid "Job Info"
 msgstr ""
 
-#: admin/view/partial/single-style.php:91
+#: admin/view/partial/single-style.php:81
+msgid "Column Width"
+msgstr ""
+
+#: admin/view/partial/single-style.php:94
+msgid "Left"
+msgstr ""
+
+#: admin/view/partial/single-style.php:96
+msgid "Right"
+msgstr ""
+
+#: admin/view/partial/single-style.php:113
 msgid "How to Apply"
 msgstr ""
 
-#: admin/view/partial/single-style.php:123
+#: admin/view/partial/single-style.php:125
+msgid "Title Font Color"
+msgstr ""
+
+#: admin/view/partial/single-style.php:132
+msgid "Title Font Size"
+msgstr ""
+
+#: admin/view/partial/single-style.php:141
+msgid "Title Border Color"
+msgstr ""
+
+#: admin/view/partial/single-style.php:148
+msgid "Content Color"
+msgstr ""
+
+#: admin/view/partial/single-style.php:155
+msgid "Content Size"
+msgstr ""
+
+#: admin/view/partial/single-style.php:170
 msgid "Button Color"
+msgstr ""
+
+#: admin/view/partial/single-style.php:200
+msgid "Padding"
+msgstr ""
+
+#: admin/view/partial/single-style.php:204
+msgid "Height"
+msgstr ""
+
+#: admin/view/partial/single-style.php:206
+msgid "Width"
+msgstr ""
+
+#: admin/view/partial/single-style.php:220
+msgid "Apply Button: Hover"
 msgstr ""
 
 #: core/job_application.php:23
@@ -1038,23 +1100,23 @@ msgstr ""
 msgid "_activate_existing"
 msgstr ""
 
-#: front/view/apply.php:63
+#: front/view/apply.php:66
 msgid "Upload CV/Resume"
 msgstr ""
 
-#: front/view/apply.php:64
+#: front/view/apply.php:67
 msgid "Attach your resume. Max size 2mb"
 msgstr ""
 
-#: front/view/apply.php:68
+#: front/view/apply.php:71
 msgid "Allowed Type(s): "
 msgstr ""
 
-#: front/view/apply.php:71
+#: front/view/apply.php:74
 msgid "pdf"
 msgstr ""
 
-#: front/view/apply.php:75
+#: front/view/apply.php:78
 msgid "pdf, docx"
 msgstr ""
 
@@ -1094,11 +1156,15 @@ msgstr ""
 msgid "No Job found"
 msgstr ""
 
-#: front/view/single/header.php:68
+#: front/view/single-job.php:37
+msgid "No job available!"
+msgstr ""
+
+#: front/view/single/header.php:65
 msgid "Sorry, your nonce did not verify."
 msgstr ""
 
-#: front/view/single/header.php:91
+#: front/view/single/header.php:88
 msgid "reCaptcha verification failed!"
 msgstr ""
 
