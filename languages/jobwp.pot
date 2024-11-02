@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-10-23 16:34+0600\n"
+"POT-Creation-Date: 2024-11-02 21:58+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -467,12 +467,12 @@ msgstr ""
 #: admin/view/email.php:85 admin/view/general.php:188
 #: admin/view/partial/apply-form-content.php:106
 #: admin/view/partial/apply-form-style.php:332
-#: admin/view/partial/listing-content.php:165
+#: admin/view/partial/listing-content.php:203
 #: admin/view/partial/listing-style.php:298
 #: admin/view/partial/search-content.php:93
 #: admin/view/partial/search-style.php:121
 #: admin/view/partial/single-content.php:305
-#: admin/view/partial/single-style.php:248
+#: admin/view/partial/single-style.php:271
 msgid "Save Settings"
 msgstr ""
 
@@ -496,7 +496,9 @@ msgstr ""
 #: admin/view/partial/job-info.php:15 admin/view/partial/job-info.php:72
 #: admin/view/partial/job-info.php:92 admin/view/partial/listing-content.php:23
 #: admin/view/partial/listing-content.php:43
-#: admin/view/partial/listing-content.php:149
+#: admin/view/partial/listing-content.php:140
+#: admin/view/partial/listing-content.php:158
+#: admin/view/partial/listing-content.php:187
 #: admin/view/partial/listing-style.php:29
 #: admin/view/partial/listing-style.php:48
 #: admin/view/partial/listing-style.php:119
@@ -634,8 +636,8 @@ msgstr ""
 #: admin/view/partial/search-style.php:103
 #: admin/view/partial/single-style.php:23
 #: admin/view/partial/single-style.php:52
-#: admin/view/partial/single-style.php:118
-#: admin/view/partial/single-style.php:225
+#: admin/view/partial/single-style.php:141
+#: admin/view/partial/single-style.php:248
 msgid "Background Color"
 msgstr ""
 
@@ -660,7 +662,7 @@ msgstr ""
 #: admin/view/partial/search-style.php:59
 #: admin/view/partial/search-style.php:88
 #: admin/view/partial/single-style.php:66
-#: admin/view/partial/single-style.php:177
+#: admin/view/partial/single-style.php:200
 msgid "Font Size"
 msgstr ""
 
@@ -677,13 +679,13 @@ msgstr ""
 #: admin/view/partial/listing-style.php:178
 #: admin/view/partial/search-style.php:30
 #: admin/view/partial/search-style.php:52
-#: admin/view/partial/single-style.php:193
-#: admin/view/partial/single-style.php:232
+#: admin/view/partial/single-style.php:216
+#: admin/view/partial/single-style.php:255
 msgid "Border Color"
 msgstr ""
 
 #: admin/view/partial/apply-form-style.php:221
-#: admin/view/partial/single-style.php:165
+#: admin/view/partial/single-style.php:188
 msgid "Apply Button"
 msgstr ""
 
@@ -696,9 +698,8 @@ msgstr ""
 #: admin/view/partial/search-style.php:81
 #: admin/view/partial/search-style.php:110
 #: admin/view/partial/single-style.php:59
-#: admin/view/partial/single-style.php:103
-#: admin/view/partial/single-style.php:184
-#: admin/view/partial/single-style.php:239
+#: admin/view/partial/single-style.php:207
+#: admin/view/partial/single-style.php:262
 msgid "Font Color"
 msgstr ""
 
@@ -777,6 +778,7 @@ msgstr ""
 #: admin/view/partial/listing-content.php:96
 #: admin/view/partial/listing-content.php:111
 #: admin/view/partial/listing-content.php:126
+#: admin/view/partial/listing-content.php:152
 #: admin/view/partial/single-content.php:91
 #: admin/view/partial/single-content.php:106
 #: admin/view/partial/single-content.php:121
@@ -806,10 +808,14 @@ msgid "Hide Job Type"
 msgstr ""
 
 #: admin/view/partial/listing-content.php:134
+msgid "Display Read More"
+msgstr ""
+
+#: admin/view/partial/listing-content.php:172
 msgid "Hide Total Jobs Found"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:143
+#: admin/view/partial/listing-content.php:181
 msgid "Hide Icon"
 msgstr ""
 
@@ -839,7 +845,7 @@ msgid "Background  Color"
 msgstr ""
 
 #: admin/view/partial/listing-style.php:237
-#: admin/view/partial/single-style.php:210
+#: admin/view/partial/single-style.php:233
 msgid "Border Radius"
 msgstr ""
 
@@ -984,47 +990,63 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
-#: admin/view/partial/single-style.php:113
+#: admin/view/partial/single-style.php:103
+msgid "Label Font Color"
+msgstr ""
+
+#: admin/view/partial/single-style.php:110
+msgid "Label Font Size"
+msgstr ""
+
+#: admin/view/partial/single-style.php:119
+msgid "Info Font Color"
+msgstr ""
+
+#: admin/view/partial/single-style.php:126
+msgid "Info Font Size"
+msgstr ""
+
+#: admin/view/partial/single-style.php:136
 msgid "How to Apply"
 msgstr ""
 
-#: admin/view/partial/single-style.php:125
+#: admin/view/partial/single-style.php:148
 msgid "Title Font Color"
 msgstr ""
 
-#: admin/view/partial/single-style.php:132
+#: admin/view/partial/single-style.php:155
 msgid "Title Font Size"
 msgstr ""
 
-#: admin/view/partial/single-style.php:141
+#: admin/view/partial/single-style.php:164
 msgid "Title Border Color"
 msgstr ""
 
-#: admin/view/partial/single-style.php:148
+#: admin/view/partial/single-style.php:171
 msgid "Content Color"
 msgstr ""
 
-#: admin/view/partial/single-style.php:155
+#: admin/view/partial/single-style.php:178
 msgid "Content Size"
 msgstr ""
 
-#: admin/view/partial/single-style.php:170
+#: admin/view/partial/single-style.php:193
 msgid "Button Color"
 msgstr ""
 
-#: admin/view/partial/single-style.php:200
+#: admin/view/partial/single-style.php:223
 msgid "Padding"
 msgstr ""
 
-#: admin/view/partial/single-style.php:204
+#: admin/view/partial/single-style.php:227
 msgid "Height"
 msgstr ""
 
-#: admin/view/partial/single-style.php:206
+#: admin/view/partial/single-style.php:229
 msgid "Width"
 msgstr ""
 
-#: admin/view/partial/single-style.php:220
+#: admin/view/partial/single-style.php:243
 msgid "Apply Button: Hover"
 msgstr ""
 
@@ -1092,6 +1114,10 @@ msgstr ""
 msgid "Thank you for your application"
 msgstr ""
 
+#: freemius/includes/class-freemius.php:18932
+msgid "true"
+msgstr ""
+
 #: freemius/templates/account/partials/site.php:339
 msgid " "
 msgstr ""
@@ -1144,15 +1170,15 @@ msgstr ""
 msgid "View"
 msgstr ""
 
-#: front/view/listing.php:228
+#: front/view/listing.php:235
 msgid "« "
 msgstr ""
 
-#: front/view/listing.php:229
+#: front/view/listing.php:236
 msgid " »"
 msgstr ""
 
-#: front/view/listing.php:241
+#: front/view/listing.php:248
 msgid "No Job found"
 msgstr ""
 
