@@ -40,7 +40,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     line-height: <?php esc_html_e( $jobwp_listing_title_font_size + 10 ); ?>px;
   }
   /* Job overview */
-  .jobwp-item p.jobwp-overview-excerpt {
+  .jobwp-item p.jobwp-overview-excerpt,
+  .jobwp-item .jobwp-top .jobwp-top-left p {
     color: <?php esc_html_e( $jobwp_listing_overview_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_listing_overview_font_size ); ?>px;
   }

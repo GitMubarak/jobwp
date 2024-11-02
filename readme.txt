@@ -270,7 +270,7 @@ Now go to your detail page and refresh it.
 
 = 2.3.7 =
 [//]: # fs_premium_only_begin
-* Pagination font color, border color option added - Pro
+* Display read more in job listing page option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.9.0
 * Job description info label font size option added

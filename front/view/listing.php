@@ -89,12 +89,19 @@ if ( $jobwpJobs->have_posts() ) {
                                 <?php
                             }
                         }
+                        
+                        // Over view
                         if ( ! $jobwp_list_display_overview ) {
-                            ?>
-                            <p class="jobwp-overview-excerpt">
-                                <?php echo force_balance_tags( html_entity_decode( wp_trim_words( htmlentities( wpautop( get_the_content() ) ), $jobwp_list_overview_length, '...' ) ) ); ?>
-                            </p>
-                            <?php
+                            echo force_balance_tags( html_entity_decode( wp_trim_words( htmlentities( wpautop( get_the_content() ) ), $jobwp_list_overview_length, '...' ) ) );
+                        }
+
+                        // Read More Button
+                        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                            if ( $jobwp_display_listing_read_more ) {
+                                ?>
+                                <a href="<?php the_permalink(); ?>" class="jobwp-read-more"><?php esc_html_e( $jobwp_listing_read_more_txt ); ?></a>
+                                <?php
+                            }
                         }
                         ?>
                     </div>

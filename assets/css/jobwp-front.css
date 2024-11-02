@@ -138,16 +138,28 @@
     color: #333333;
 }
 
-.jobwp-item p.jobwp-overview-excerpt {
+.jobwp-item p.jobwp-overview-excerpt,
+.jobwp-item .jobwp-top .jobwp-top-left p {
     margin: 10px 0;
 }
 
 div.jobwp-overview-excerpt,
-div.jobwp-list-bottom-item {
+div.jobwp-list-bottom-item,
+.jobwp-item .jobwp-top .jobwp-top-left p {
     font-size: 14px;
     line-height: 30px;
     font-weight: normal;
     color: #555;
+}
+
+.jobwp-item .jobwp-top .jobwp-top-left a.jobwp-read-more {
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #2B8EEC;
+    padding: 3px 10px;
+    border-radius: 3px;
 }
 
 .jobwp-bottom {

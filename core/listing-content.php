@@ -103,6 +103,16 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'jobwp_display_listing_read_more',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_listing_read_more_txt',
+                'type'      => 'text',
+                'default'   => 'Read More',
+            ],
         ];
     }
 }

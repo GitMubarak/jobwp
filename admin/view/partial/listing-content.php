@@ -114,7 +114,7 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 <input type="text" name="jobwp_list_loc_lbl_txt" id="jobwp_list_loc_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_loc_lbl_txt ); ?>" />
             </td>
         </tr>
-        <tr>
+        <tr class="jobwp_list_display_jtype">
             <th scope="row">
                 <label for="jobwp_list_display_jtype"><?php _e('Hide Job Type', JOBWP_TXT_DOMAIN); ?>?</label>
             </th>
@@ -129,7 +129,45 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 <input type="text" name="jobwp_list_job_type_lbl_txt" id="jobwp_list_job_type_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_job_type_lbl_txt ); ?>" />
             </td>
         </tr>
-        <tr>
+        <tr class="jobwp_display_listing_read_more">
+            <th scope="row">
+                <label for="jobwp_display_listing_read_more"><?php _e('Display Read More', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="checkbox" name="jobwp_display_listing_read_more" class="jobwp_display_listing_read_more" id="jobwp_display_listing_read_more" <?php echo $jobwp_display_listing_read_more ? 'checked' : ''; ?>>
+                    <?php
+                }
+                ?>
+            </td>
+            <th scope="row">
+                <label for="jobwp_listing_read_more_txt"><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="text" name="jobwp_listing_read_more_txt" id="jobwp_listing_read_more_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_listing_read_more_txt ); ?>" />
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
+        <tr class="jobwp_hide_total_jobs_found">
             <th scope="row">
                 <label for="jobwp_hide_total_jobs_found"><?php _e('Hide Total Jobs Found', JOBWP_TXT_DOMAIN); ?>?</label>
             </th>
