@@ -45,7 +45,8 @@
         '#jobwp_single_apply_btn_font_clr_hvr',
         '#jobwp_single_howtoapply_title_font_clr',
         '#jobwp_single_howtoapply_title_brdr_clr',
-        '#jobwp_single_howtoapply_content_clr'
+        '#jobwp_single_howtoapply_content_clr',
+        '#jobwp_single_info_lbl_font_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {
