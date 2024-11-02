@@ -106,6 +106,13 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
                 <input class="jobwp-wp-color" type="text" name="jobwp_single_info_font_color" id="jobwp_single_info_font_color" value="<?php esc_attr_e( $jobwp_single_info_font_color ); ?>">
                 <div id="colorpicker"></div>
             </td>
+            <th scope="row">
+                <label><?php _e('Label Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <input type="number" class="small-text" min="11" max="50" name="jobwp_single_info_lbl_font_size" id="jobwp_single_info_lbl_font_size" value="<?php esc_attr_e( $jobwp_single_info_lbl_font_size ); ?>">
+                <code>px</code>
+            </td>
         </tr>
         <!-- How to Apply -->
         <tr>

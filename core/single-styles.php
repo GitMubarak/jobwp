@@ -158,6 +158,11 @@ trait Jobwp_Single_Styles_Settings
                 'type'      => 'number',
                 'default'   => '70',
             ],
+            [
+                'name'      => 'jobwp_single_info_lbl_font_size',
+                'type'      => 'number',
+                'default'   => '18',
+            ],
         ];
     }
 }

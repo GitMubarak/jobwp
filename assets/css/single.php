@@ -28,6 +28,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     color: <?php esc_html_e( $jobwp_single_info_font_color ); ?>;
     margin: 0;
   }
+  .jobwp-single-area .content-row .left-cell h5.label {
+    font-size: <?php esc_html_e( $jobwp_single_info_lbl_font_size ); ?>px;
+  }
   .jobwp-single-body-container .circulr-details-bottom-email {
     background: <?php esc_html_e( $jobwp_single_how_to_apply_bg_color ); ?>;
   }
