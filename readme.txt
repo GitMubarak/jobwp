@@ -275,6 +275,8 @@ Now go to your detail page and refresh it.
 * Freemius SDK upgraded to 2.9.0
 * Job description info label font size option added
 * Job description info font size option added
+* CSS fixed
+* Details page responsive issue fixed
 
 = 2.3.6 =
 [//]: # fs_premium_only_begin

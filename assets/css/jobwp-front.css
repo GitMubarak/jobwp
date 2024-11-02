@@ -724,19 +724,21 @@ span.wpsd-read-before-apply-border {
         font-size: 22px;
         line-height: 26px;
     }
+    .jobwp-single-area .content-row .left-cell,
     .left-cell {
         float: none;
         text-align: left;
-        width: 100%;
+        width: 100% !important;
         border-bottom: 1px solid #DDD;
         line-height: 30px;
-        padding: 10px 20px;
+        padding: 10px 0px;
         font-weight: 600;
     }
-    .right-cell {
+    .right-cell,
+    .jobwp-single-area .content-row .right-cell {
         float: none;
-        width: 100%;
+        width: 100% !important;
         border-left: 0px;
-        padding: 10px 20px;
+        padding: 10px 0px;
     }
 }
