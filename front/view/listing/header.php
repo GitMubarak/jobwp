@@ -57,14 +57,15 @@ $jobwp_limit        = isset( $jobwpAttr['limit'] ) ? $jobwpAttr['limit'] : 10;
 $jobwp_category     = isset( $jobwpAttr['category'] ) ? $jobwpAttr['category'] : '';
 $jobwp_search       = isset( $jobwpAttr['hide_search'] ) ? $jobwpAttr['hide_search'] : $jobwp_hide_search_panel; // on to hide
 
-// Layout view url
-$jobwp_list_layout  = isset( $_GET['layout'] ) ? sanitize_text_field( $_GET['layout'] ) : $jobwp_list_layout;
-
+// Shortcoded options for Pro users
 if ( job_fs()->is_plan__premium_only('pro', true) ) {
     
     $jobwp_company  = isset( $jobwpAttr['company'] ) ? $jobwpAttr['company'] : '';
-
+    $jobwp_level    = isset( $jobwpAttr['level'] ) ? $jobwpAttr['level'] : '';
 }
+
+// Layout view url
+$jobwp_list_layout  = isset( $_GET['layout'] ) ? sanitize_text_field( $_GET['layout'] ) : $jobwp_list_layout;
 
 // Main Query Arguments
 $jobwpQueryArrParams = array(
@@ -123,6 +124,14 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
         );
     }
 
+    // If level found in the shortcode
+    if ( '' !== $jobwp_level ) {
+        $jobwpQueryArrParams['tax_query'][] = array(
+            'taxonomy' => 'jobs_level',
+            'field' => 'name',
+            'terms' => urldecode( $jobwp_level )
+        );
+    }
 }
 
 // Load Search Panel

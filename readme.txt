@@ -273,6 +273,7 @@ Now go to your detail page and refresh it.
 * Job level search item added - Pro
 * Search job level show-hide option added - Pro
 * Search job level drop down default text option added - Pro
+* Job level shortcoded option added - Pro
 [//]: # fs_premium_only_end
 * Freemius
 
