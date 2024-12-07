@@ -164,6 +164,15 @@ class JobWp_Front
 		return $template;
 	}
 
+	function jobwp_add_ld_json() {
+
+		global $post;
+		
+		if ( 'jobs' === $post->post_type  ) {
+			include_once JOBWP_PATH . 'front/view/ld-json.php';
+		}
+	}
+
 	/**
 	 * Load Search Panel
 	*/
