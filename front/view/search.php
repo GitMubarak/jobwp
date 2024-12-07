@@ -9,6 +9,10 @@ $jobwp_category_s   =  isset( $_GET['jobwp_category_s'] ) ? sanitize_text_field(
 $jobwp_type_s       =  isset( $_GET['jobwp_type_s'] ) ? sanitize_text_field( $_GET['jobwp_type_s'] ) : '';
 $jobwp_location_s   =  isset( $_GET['jobwp_location_s'] ) ? sanitize_text_field( $_GET['jobwp_location_s'] ) : '';
 
+if ( job_fs()->is_plan__premium_only('pro', true) ) {
+    $jobwp_level_s      =  isset( $_GET['jobwp_level_s'] ) ? sanitize_text_field( $_GET['jobwp_level_s'] ) : '';
+}
+
 // Search Query Ttitle
 if ( '' != $jobwp_title_s ) {
     $jobwpQueryArrParams['s'] = $jobwp_title_s;
@@ -39,6 +43,18 @@ if ( '' !== $jobwp_location_s ) {
         'field' => 'name',
         'terms' => urldecode( $jobwp_location_s )
     );
+}
+
+if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
+    // Search by levels
+    if ( '' !== $jobwp_level_s ) {
+        $jobwpQueryArrParams['tax_query'][] = array(
+            'taxonomy' => 'jobs_level',
+            'field' => 'name',
+            'terms' => urldecode( $jobwp_level_s )
+        );
+    }
 }
 
 $jobwp_categories   = get_terms( array( 'taxonomy' => 'jobs_category', 'hide_empty' => true, 'order' => 'ASC',  'parent' => 0 ) );
@@ -107,6 +123,29 @@ $jobwp_locations    = get_terms( array( 'taxonomy' => 'jobs_location', 'hide_emp
                 </select>
             </div>
             <?php
+        }
+
+        // Search items for Pro users
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
+            if ( ! $jobwp_hide_search_location ) {
+
+                $jobwp_levels = get_terms( array( 'taxonomy' => 'jobs_level', 'hide_empty' => true, 'order' => 'ASC',  'parent' => 0 ) );
+                ?>
+                <div class="jobwp-search-item">
+                    <select id="jobwp_level_s" name="jobwp_level_s">
+                        <option value=""><?php esc_attr_e( $jobwp_search_location_ph ); ?></option>
+                        <?php
+                        foreach ( $jobwp_levels as $level ) {
+                            ?>
+                            <option value="<?php esc_attr_e( $level->name ); ?>" <?php echo ( $jobwp_level_s == $level->name ) ? 'Selected' : ''; ?>><?php esc_html_e( $level->name ); ?></option>
+                            <?php 
+                        } 
+                        ?>
+                    </select>
+                </div>
+                <?php
+            }
         }
         ?>
 

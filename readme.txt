@@ -270,7 +270,7 @@ Now go to your detail page and refresh it.
 
 = 2.3.8 =
 [//]: # fs_premium_only_begin
-* Display read more in job listing page option added - Pro
+* Job level search item added - Pro
 [//]: # fs_premium_only_end
 * Freemius
 
