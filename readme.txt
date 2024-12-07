@@ -276,7 +276,8 @@ Now go to your detail page and refresh it.
 * Job level shortcoded option added - Pro
 * Google structured data implemented - Pro
 [//]: # fs_premium_only_end
-* Freemius
+* Hide apply procedure and apply button separated
+* Code optimized
 
 = 2.3.7 =
 [//]: # fs_premium_only_begin
