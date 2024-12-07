@@ -83,6 +83,16 @@ trait Jobwp_Search_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Search Job',
             ],
+            [
+                'name'      => 'jobwp_hide_search_level',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_search_level_ph',
+                'type'      => 'text',
+                'default'   => 'All Job Level',
+            ],
         ];
     }
 }

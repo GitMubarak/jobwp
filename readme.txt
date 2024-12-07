@@ -271,6 +271,8 @@ Now go to your detail page and refresh it.
 = 2.3.8 =
 [//]: # fs_premium_only_begin
 * Job level search item added - Pro
+* Search job level show-hide option added - Pro
+* Search job level drop down default text option added - Pro
 [//]: # fs_premium_only_end
 * Freemius
 

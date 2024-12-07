@@ -128,13 +128,13 @@ $jobwp_locations    = get_terms( array( 'taxonomy' => 'jobs_location', 'hide_emp
         // Search items for Pro users
         if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
-            if ( ! $jobwp_hide_search_location ) {
+            if ( ! $jobwp_hide_search_level ) {
 
                 $jobwp_levels = get_terms( array( 'taxonomy' => 'jobs_level', 'hide_empty' => true, 'order' => 'ASC',  'parent' => 0 ) );
                 ?>
                 <div class="jobwp-search-item">
                     <select id="jobwp_level_s" name="jobwp_level_s">
-                        <option value=""><?php esc_attr_e( $jobwp_search_location_ph ); ?></option>
+                        <option value=""><?php esc_attr_e( $jobwp_search_level_ph ); ?></option>
                         <?php
                         foreach ( $jobwp_levels as $level ) {
                             ?>

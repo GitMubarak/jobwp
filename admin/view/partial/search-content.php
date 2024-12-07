@@ -77,6 +77,44 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <input type="text" name="jobwp_search_location_ph" id="jobwp_search_location_ph" class="regular-text" value="<?php esc_attr_e( $jobwp_search_location_ph ); ?>" />
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label for="jobwp_hide_search_level"><?php _e('Hide Job Level', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="checkbox" name="jobwp_hide_search_level" id="jobwp_hide_search_level" value="1" <?php checked( $jobwp_hide_search_level, 1 ); ?>>
+                    <?php
+                }
+                ?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Placeholder Text', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="text" name="jobwp_search_level_ph" id="jobwp_search_level_ph" class="regular-text" value="<?php esc_attr_e( $jobwp_search_level_ph ); ?>"/>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
         <tr><td colspan="4"><hr></td></tr>
         <tr>
             <th scope="row">
