@@ -61,13 +61,16 @@ You can display the job information and apply a url to that individual job which
 * Lots of job informations
 * Job search panel
 * Applicants can apply directly to a job
+* Default Form integrated to Submit Applications
 * Instant notification email when an application is submitted
 * Admin application list panel
 * Delete jobs in Job Application Panel
 * Pagination in Job listing page
 * Google reCaptcha in Job Applicaiton Form
 * Job Expiry Option Available
-* Show Hide Jobs When Deadline is Over 
+* Show Hide Jobs When Deadline is Over
+* Job posting google structured data for better SEO
+* Drag and drop to manage order in the job details page
 
 
 **✅ Available Job Information**
@@ -179,6 +182,7 @@ You can display the job information and apply a url to that individual job which
 * Display Job Search Panel at Home
 * Display Featured Jobs With Slider
 * HR User Role to Manage Jobs
+* Customize email notification content for Candidate
 
 [Get the Pro](https://wpjoblisting.com/pricing-faq/)
 
@@ -234,7 +238,7 @@ Install JobWp as a regular WordPress plugin. Here are different ways to install 
 
 == Frequently Asked Questions ==
 
-= How can I Display Job? =
+= How can I Display Job Listing? =
 
 After activating the plugin, you will see “WP Jobs” in WordPress Admin Dashboard.
 
@@ -275,6 +279,7 @@ Now go to your detail page and refresh it.
 * Search job level drop down default text option added - Pro
 * Job level shortcoded option added - Pro
 * Google structured data implemented - Pro
+* Job details information sorting implemented - Pro
 [//]: # fs_premium_only_end
 * Hide apply procedure and apply button separated
 * Code optimized

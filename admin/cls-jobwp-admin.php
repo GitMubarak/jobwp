@@ -909,5 +909,28 @@ class JobWp_Admin
 		$columns['jobwp_company_addr']	= __('Address', JOBWP_TXT_DOMAIN);
 		return $columns;
 	}
+
+	/**
+	 * Set single items order
+	 */
+	function jobwp_set_single_items_order() {
+
+		delete_option('jobwp_single_item_order_list');
+		$new_order 	= $_POST['jobwp_single_sort_item'];
+		$new_list	= array();
+		
+		$i=0;
+		foreach ( $new_order as $order ) {
+			
+			if ( ! isset( $new_list[$i] ) ) {
+				$new_list[$i] = $order;
+			}
+			$i++;
+		}
+		
+		update_option('jobwp_single_item_order_list', $new_list);
+		
+		die();
+	}
 }
 ?>

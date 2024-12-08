@@ -60,11 +60,16 @@ class JobWp_Master {
 		$this->jobwp_loader->add_action('admin_init', $jobwp_admin, JOBWP_PRFX . 'flush_rewrite');
 
 		if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
 			$this->jobwp_loader->add_action('admin_init', $jobwp_admin, 'jobwp_export_applications_to_csv');
 			
 			// Company Info
 			$this->jobwp_loader->add_action( 'job_company_add_form_fields', $jobwp_admin, 'jobwp_job_company_add_form_fields', 10, 2 );
 			$this->jobwp_loader->add_filter( 'manage_edit-job_company_columns', $jobwp_admin, 'jobwp_display_company_extra_column_header' );
+
+			// Single item order ajax load
+			$this->jobwp_loader->add_action('wp_ajax_single_items_order', $jobwp_admin, 'jobwp_set_single_items_order');
+			$this->jobwp_loader->add_action('wp_ajax_nopriv_single_items_order', $jobwp_admin, 'jobwp_set_single_items_order');
 		}
 	}
 

@@ -30,6 +30,24 @@ trait Jobwp_Single_Content_Settings
         return $this->jobwp_build_get_settings_options( $this->fields, $this->settings );
 	}
 
+    function get_single_items_order() {
+
+        //Use delete_option to reset the sorting
+        //delete_option('jobwp_single_item_order_list');
+
+        if ( get_option( 'jobwp_single_item_order_list' ) ) {
+
+            $singleItems = get_option( 'jobwp_single_item_order_list' );
+
+        } else {
+
+            $singleItems = ['Overview', 'NoOfVacancies', 'Skills', 'ResponsibleFor', 'AdditionalRequirements', 'JobNature', 'EducationalRequirements', 
+                                'ExperienceRequirements', 'Location', 'Salary', 'Benefits', 'Level'];
+        }
+
+        return apply_filters( 'jobwp_single_item_order_list', $singleItems );
+    }
+
     protected function jobwp_single_content_option_fileds() {
 
         return [

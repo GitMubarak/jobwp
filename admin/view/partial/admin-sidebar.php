@@ -26,6 +26,9 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <li>&#10003; Option to Allow Login Users to Apply</li>
                 <li>&#10003; Display Job Search Panel at Home</li>
                 <li>&#10003; Display Featured Jobs With Slider</li>
+                <li>&#10003; Job posting google structured data for better SEO</li>
+                <li>&#10003; Drag and drop to manage order in the job details page</li>
+                <li>&#10003; Customize email notification content for Candidate</li>
             </ul>
             <?php
             if ( ! job_fs()->is_plan__premium_only('pro', true) ) {

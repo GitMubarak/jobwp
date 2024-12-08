@@ -9,9 +9,13 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
         ${"" . $option_name} = $option_value;
     }
 }
+
+$single_items = $this->get_single_items_order();
+//echo '<pre>';
+//print_r($single_items);
 ?>
 <form name="jobwp_single_content_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-single-content-settings-form">
-    <table class="jobwp-single-settings-table">
+    <table class="jobwp-single-settings-table" id="jobwp-single-content-settings-table">
         <tr class="jobwp_single_title_tag">
             <th scope="row">
                 <label for="jobwp_single_title_tag"><?php _e('Job Title Tag', JOBWP_TXT_DOMAIN); ?>:</label>
@@ -79,186 +83,251 @@ foreach ( $jobwpSingleContent as $option_name => $option_value ) {
                 ?>
             </td>
         </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_overview"><?php _e('Hide Overview', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_overview" class="jobwp_single_hide_overview" id="jobwp_single_hide_overview"
-                    <?php echo $jobwp_single_hide_overview ? 'checked' : ''; ?>>
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_overview_text" id="jobwp_single_overview_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_overview_text ); ?>" />
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_vacancies"><?php _e('Hide No. of Vacancies', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_vacancies" class="jobwp_single_hide_vacancies" id="jobwp_single_hide_vacancies"
-                    <?php echo $jobwp_single_hide_vacancies ? 'checked' : ''; ?> >
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_vacancies_text" id="jobwp_single_vacancies_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_vacancies_text ); ?>" />
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_skills"><?php _e('Hide Specific Skills', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_skills" class="jobwp_single_hide_skills" id="jobwp_single_hide_skills"
-                    <?php echo $jobwp_single_hide_skills ? 'checked' : ''; ?> >
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_skills_text" id="jobwp_single_skills_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_skills_text ); ?>" />
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_responsible"><?php _e('Hide Responsible For', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_responsible" class="jobwp_single_hide_responsible" id="jobwp_single_hide_responsible"
-                    <?php echo $jobwp_single_hide_responsible ? 'checked' : ''; ?> >
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_responsible_text" id="jobwp_single_responsible_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_responsible_text ); ?>" />
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_requirements"><?php _e('Hide Additional Requirements', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_requirements" class="jobwp_single_hide_requirements" id="jobwp_single_hide_requirements"
-                    <?php echo $jobwp_single_hide_requirements ? 'checked' : ''; ?> >
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_requirements_text" id="jobwp_single_requirements_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_requirements_text ); ?>" />
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_job_type"><?php _e('Hide Job Nature', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_job_type" class="jobwp_single_hide_job_type" id="jobwp_single_hide_job_type"
-                    <?php echo $jobwp_single_hide_job_type ? 'checked' : ''; ?> >
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_job_type_text" id="jobwp_single_job_type_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_job_type_text ); ?>" />
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_education"><?php _e('Hide Educational Requirements', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_education" class="jobwp_single_hide_education" id="jobwp_single_hide_education"
-                    <?php echo $jobwp_single_hide_education ? 'checked' : ''; ?> >
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_education_text" id="jobwp_single_education_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_education_text ); ?>" />
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_experience"><?php _e('Hide Experience Requirements', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_experience" class="jobwp_single_hide_experience" id="jobwp_single_hide_experience"
-                    <?php echo $jobwp_single_hide_experience ? 'checked' : ''; ?> >
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_experience_text" id="jobwp_single_experience_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_experience_text ); ?>" />
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_loc"><?php _e('Hide Job Location', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_loc" class="jobwp_single_hide_loc" id="jobwp_single_hide_loc"
-                    <?php echo $jobwp_single_hide_loc ? 'checked' : ''; ?> >
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_loc_text" id="jobwp_single_loc_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_loc_text ); ?>" />
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_salary"><?php _e('Hide Salary', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_salary" class="jobwp_single_hide_salary" id="jobwp_single_hide_salary"
-                    <?php echo $jobwp_single_hide_salary ? 'checked' : ''; ?> >
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_salary_text" id="jobwp_single_salary_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_salary_text ); ?>" />
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_benefit"><?php _e('Hide Other Benefits', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_benefit" class="jobwp_single_hide_benefit" id="jobwp_single_hide_benefit"
-                    <?php echo $jobwp_single_hide_benefit ? 'checked' : ''; ?> >
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_benefit_text" id="jobwp_single_benefit_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_benefit_text ); ?>" />
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label for="jobwp_single_hide_level"><?php _e('Hide Job Level', JOBWP_TXT_DOMAIN); ?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="jobwp_single_hide_level" class="jobwp_single_hide_level" id="jobwp_single_hide_level"
-                    <?php echo $jobwp_single_hide_level ? 'checked' : ''; ?> >
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input type="text" name="jobwp_single_level_text" id="jobwp_single_level_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_level_text ); ?>" />
-            </td>
-        </tr>
+        <tr><td colspan="4"><hr></td></tr>
+        <?php
+        foreach ( $single_items as $sItem ) {
+            
+            if ( 'Overview' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_Overview">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_overview"><?php _e('Hide Overview', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_overview" class="jobwp_single_hide_overview" id="jobwp_single_hide_overview"
+                            <?php echo $jobwp_single_hide_overview ? 'checked' : ''; ?>>
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_overview_text" id="jobwp_single_overview_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_overview_text ); ?>" />
+                    </td>
+                </tr>
+                <?php
+            }
+
+            if ( 'NoOfVacancies' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_NoOfVacancies">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_vacancies"><?php _e('Hide No. of Vacancies', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_vacancies" class="jobwp_single_hide_vacancies" id="jobwp_single_hide_vacancies"
+                            <?php echo $jobwp_single_hide_vacancies ? 'checked' : ''; ?> >
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_vacancies_text" id="jobwp_single_vacancies_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_vacancies_text ); ?>" />
+                    </td>
+                </tr>
+                <?php
+            }
+
+            if ( 'Skills' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_Skills">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_skills"><?php _e('Hide Specific Skills', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_skills" class="jobwp_single_hide_skills" id="jobwp_single_hide_skills"
+                            <?php echo $jobwp_single_hide_skills ? 'checked' : ''; ?> >
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_skills_text" id="jobwp_single_skills_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_skills_text ); ?>" />
+                    </td>
+                </tr>
+                <?php
+            }
+
+            if ( 'ResponsibleFor' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_ResponsibleFor">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_responsible"><?php _e('Hide Responsible For', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_responsible" class="jobwp_single_hide_responsible" id="jobwp_single_hide_responsible"
+                            <?php echo $jobwp_single_hide_responsible ? 'checked' : ''; ?> >
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_responsible_text" id="jobwp_single_responsible_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_responsible_text ); ?>" />
+                    </td>
+                </tr>
+                <?php
+            }
+
+            if ( 'AdditionalRequirements' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_AdditionalRequirements">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_requirements"><?php _e('Hide Additional Requirements', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_requirements" class="jobwp_single_hide_requirements" id="jobwp_single_hide_requirements"
+                            <?php echo $jobwp_single_hide_requirements ? 'checked' : ''; ?> >
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_requirements_text" id="jobwp_single_requirements_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_requirements_text ); ?>" />
+                    </td>
+                </tr>
+                <?php
+            }
+
+            if ( 'JobNature' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_JobNature">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_job_type"><?php _e('Hide Job Nature', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_job_type" class="jobwp_single_hide_job_type" id="jobwp_single_hide_job_type"
+                            <?php echo $jobwp_single_hide_job_type ? 'checked' : ''; ?> >
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_job_type_text" id="jobwp_single_job_type_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_job_type_text ); ?>" />
+                    </td>
+                </tr>
+                <?php
+            }
+
+            if ( 'EducationalRequirements' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_EducationalRequirements">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_education"><?php _e('Hide Educational Requirements', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_education" class="jobwp_single_hide_education" id="jobwp_single_hide_education"
+                            <?php echo $jobwp_single_hide_education ? 'checked' : ''; ?> >
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_education_text" id="jobwp_single_education_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_education_text ); ?>" />
+                    </td>
+                </tr>
+                <?php
+            }
+
+            if ( 'ExperienceRequirements' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_ExperienceRequirements">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_experience"><?php _e('Hide Experience Requirements', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_experience" class="jobwp_single_hide_experience" id="jobwp_single_hide_experience"
+                            <?php echo $jobwp_single_hide_experience ? 'checked' : ''; ?> >
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_experience_text" id="jobwp_single_experience_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_experience_text ); ?>" />
+                    </td>
+                </tr>
+                <?php
+            }
+
+            if ( 'Location' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_Location">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_loc"><?php _e('Hide Job Location', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_loc" class="jobwp_single_hide_loc" id="jobwp_single_hide_loc"
+                            <?php echo $jobwp_single_hide_loc ? 'checked' : ''; ?> >
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_loc_text" id="jobwp_single_loc_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_loc_text ); ?>" />
+                    </td>
+                </tr>
+                <?php
+            }
+
+            if ( 'Salary' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_Salary">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_salary"><?php _e('Hide Salary', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_salary" class="jobwp_single_hide_salary" id="jobwp_single_hide_salary"
+                            <?php echo $jobwp_single_hide_salary ? 'checked' : ''; ?> >
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_salary_text" id="jobwp_single_salary_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_salary_text ); ?>" />
+                    </td>
+                </tr>
+                <?php
+            }
+
+            if ( 'Benefits' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_Benefits">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_benefit"><?php _e('Hide Other Benefits', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_benefit" class="jobwp_single_hide_benefit" id="jobwp_single_hide_benefit"
+                            <?php echo $jobwp_single_hide_benefit ? 'checked' : ''; ?> >
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_benefit_text" id="jobwp_single_benefit_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_benefit_text ); ?>" />
+                    </td>
+                </tr>
+                <?php
+            }
+
+            if ( 'Level' === $sItem ) {
+                ?>
+                <tr class="jobwp_single_item" id="jobwp_single_sort_item_Level">
+                    <th scope="row">
+                        <label for="jobwp_single_hide_level"><?php _e('Hide Job Level', JOBWP_TXT_DOMAIN); ?>?</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="jobwp_single_hide_level" class="jobwp_single_hide_level" id="jobwp_single_hide_level"
+                            <?php echo $jobwp_single_hide_level ? 'checked' : ''; ?> >
+                    </td>
+                    <th scope="row">
+                        <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                    </th>
+                    <td>
+                        <input type="text" name="jobwp_single_level_text" id="jobwp_single_level_text" class="regular-text" value="<?php esc_attr_e( $jobwp_single_level_text ); ?>" />
+                    </td>
+                </tr>
+            <?php
+            }
+        }
+        ?>
         <tr><td colspan="4"><hr></td></tr>
         <tr>
             <th scope="row">
