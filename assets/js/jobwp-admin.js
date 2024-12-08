@@ -104,17 +104,4 @@
         $("#jobwp_company_logo_button_add").show();
     });
 
-    $('#jobwp-single-content-settings-table').sortable({
-        items: '.jobwp_single_item',
-        opacity: 0.6,
-        cursor: 'move',
-        axis: 'y',
-        update: function() {
-            var order = $(this).sortable('serialize') + '&action=single_items_order';
-            $.post(ajaxurl, order, function() {
-                //alert('test');
-            });
-        }
-    });
-
 })(jQuery);

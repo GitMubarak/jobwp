@@ -374,5 +374,30 @@ $single_items = $this->get_single_items_order();
             <i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;<?php _e('Save Settings', JOBWP_TXT_DOMAIN); ?>
         </button>
     </p>
-
 </form>
+
+<?php
+if ( job_fs()->is_plan__premium_only('pro', true) ) {
+    ?>
+    <script>
+    (function($) {
+        $(document).ready(function() {
+
+            $('#jobwp-single-content-settings-table').sortable({
+                items: '.jobwp_single_item',
+                opacity: 0.6,
+                cursor: 'move',
+                axis: 'y',
+                update: function() {
+                    var order = $(this).sortable('serialize') + '&action=single_items_order';
+                    $.post(ajaxurl, order, function() {
+                        //alert('test');
+                    });
+                }
+            });
+        });
+    })(jQuery);
+    </script>
+    <?php
+}
+?>
