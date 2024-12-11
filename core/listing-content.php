@@ -113,6 +113,11 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Read More',
             ],
+            [
+                'name'      => 'jobwp_total_jobs_found_lbl_txt',
+                'type'      => 'text',
+                'default'   => 'Jobs Found',
+            ],
         ];
     }
 }

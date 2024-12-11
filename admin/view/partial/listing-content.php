@@ -175,6 +175,12 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 <input type="checkbox" name="jobwp_hide_total_jobs_found" class="jobwp_hide_total_jobs_found" id="jobwp_hide_total_jobs_found"
                     <?php echo $jobwp_hide_total_jobs_found ? 'checked' : ''; ?> >
             </td>
+            <th scope="row">
+                <label for="jobwp_total_jobs_found_lbl_txt"><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input type="text" name="jobwp_total_jobs_found_lbl_txt" id="jobwp_total_jobs_found_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_total_jobs_found_lbl_txt ); ?>" />
+            </td>
         </tr>
         <tr class="jobwp_display_listing_icon">
             <th scope="row">
