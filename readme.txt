@@ -282,6 +282,7 @@ Now go to your detail page and refresh it.
 * Job details information sorting implemented - Pro
 [//]: # fs_premium_only_end
 * Hide apply procedure and apply button separated
+* Total jobs found text change option added
 * Code optimized
 
 = 2.3.7 =
