@@ -58,6 +58,11 @@ if ( ! $jobwp_hide_apply_form_title ) {
         </div>
 
         <div class="jobwp-field-row">
+            <label>Phone</label>
+            <input type="tel" class="" placeholder="201-555-0123" id="jobwp_tel_1" name="jobwp_tel_1">
+        </div>
+
+        <div class="jobwp-field-row">
             <label><?php esc_html_e( $jobwp_apply_form_cover_letter_label ); ?></label>
             <textarea class="" placeholder="<?php esc_attr_e( $jobwp_apply_form_cover_letter_label ); ?>" id="jobwp_cover_letter" name="jobwp_cover_letter"></textarea>
         </div>

@@ -611,6 +611,7 @@ span.wpsd-read-before-apply-border {
 
 .jobwp-field-row input[type="email"],
 .jobwp-field-row input[type="text"],
+.jobwp-field-row input[type="tel"],
 .jobwp-field-row textarea {
     color: #666;
     padding: .75em;
@@ -628,14 +629,21 @@ span.wpsd-read-before-apply-border {
 
 .jobwp-field-row input[type="text"]::placeholder,
 .jobwp-field-row input[type="email"]::placeholder,
+.jobwp-field-row input[type="tel"]::placeholder,
 .jobwp-field-row textarea::placeholder {
     color: #666;
 }
 
 .jobwp-field-row input[type="email"]:focus,
 .jobwp-field-row input[type="text"]:focus,
+.jobwp-field-row input[type="tel"]:focus,
 .jobwp-field-row textarea:focus {
     border-color: #666;
+}
+
+.iti {
+    display: block !important;
+    margin-top: 8px !important;
 }
 
 #jobwp_apply_btn {

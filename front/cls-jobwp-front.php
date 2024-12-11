@@ -67,6 +67,14 @@ class JobWp_Front
 				$this->jobwp_version,
 				FALSE 
 			);
+
+			wp_enqueue_style(
+				'jobwp-intltel-input', 
+				JOBWP_ASSETS . 'css/intlTelInput.min.css',
+				array(),
+				$this->jobwp_version,
+				FALSE 
+			);
 		}
 
 		wp_enqueue_style(	
@@ -98,6 +106,14 @@ class JobWp_Front
 				JOBWP_ASSETS . 'js/slick.min.js',
 				'',
 				'2.4.20',
+				TRUE
+			);
+
+			wp_enqueue_script(
+				'jobwp-intltel-input',
+				JOBWP_ASSETS . 'js/intlTelInput.min.js',
+				'',
+				$this->jobwp_version,
 				TRUE
 			);
 		}

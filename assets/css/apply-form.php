@@ -22,6 +22,7 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
   .jobwp-field-row input[type="email"],
   .jobwp-field-row input[type="text"],
+  .jobwp-field-row input[type="tel"],
   .jobwp-field-row textarea {
     color: <?php esc_html_e( $jobwp_apply_form_input_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_apply_form_input_font_size ); ?>px;
