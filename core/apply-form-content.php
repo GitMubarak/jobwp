@@ -73,6 +73,16 @@ trait Jobwp_ApplyForm_Content_Settings
                 'type'      => 'textarea',
                 'default'   => 'By using this form you agree with the storage and handling of your data by this website.',
             ],
+            [
+                'name'      => 'jobwp_display_apply_form_phone',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_apply_form_phone_label',
+                'type'      => 'text',
+                'default'   => 'Phone',
+            ],
         ];
     }
 }

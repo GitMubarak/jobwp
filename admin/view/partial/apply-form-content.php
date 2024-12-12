@@ -50,12 +50,51 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
                 <input type="text" name="jobwp_apply_form_cover_letter_label" id="jobwp_apply_form_cover_letter_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_cover_letter_label ); ?>" />
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label for="jobwp_display_apply_form_phone"><?php _e('Display Phone', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="checkbox" name="jobwp_display_apply_form_phone" id="jobwp_display_apply_form_phone" <?php echo $jobwp_display_apply_form_phone ? 'checked' : ''; ?>>
+                    <?php
+                }
+                ?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Phone Label Text', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="text" name="jobwp_apply_form_phone_label" id="jobwp_apply_form_phone_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_phone_label ); ?>"/>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
         <tr><td colspan="4"><hr></td></tr>
+        <!-- User Consent -->
         <tr>
             <th scope="row">
                 <label for="jobwp_apply_form_user_consent"><?php _e('Hide User Consent', JOBWP_TXT_DOMAIN); ?>?</label>
             </th>
-            <td colspan="3">
+            <td>
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
@@ -70,12 +109,10 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
                 }
                 ?>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php _e('User Consent Text', JOBWP_TXT_DOMAIN); ?></label>
             </th>
-            <td colspan="3">
+            <td>
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
@@ -96,7 +133,7 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
                 <label><?php _e('Submit Button Text', JOBWP_TXT_DOMAIN); ?></label>
             </th>
             <td colspan="3">
-                <input type="text" name="jobwp_apply_form_submit_btn_txt" id="jobwp_apply_form_submit_btn_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_submit_btn_txt ); ?>" />
+                <input type="text" name="jobwp_apply_form_submit_btn_txt" id="jobwp_apply_form_submit_btn_txt" class="medium-text" value="<?php esc_attr_e( $jobwp_apply_form_submit_btn_txt ); ?>" />
             </td>
         </tr>
     </table>

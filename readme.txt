@@ -282,6 +282,8 @@ Now go to your detail page and refresh it.
 * Job details information sorting implemented - Pro
 * Mobile number field added to application form - Pro
 * Application list export to excel implemented - Pro
+* Show hide phone in the application form option added - Pro
+* Application form phone label text option added - Pro
 [//]: # fs_premium_only_end
 * Hide apply procedure and apply button separated
 * Total jobs found text change option added

@@ -267,3 +267,7 @@ img.jobwp-admin-help-img {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+#jobwp-download-to-csv-form {
+    display: inline-block;
+}

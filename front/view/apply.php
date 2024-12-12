@@ -59,13 +59,16 @@ if ( ! $jobwp_hide_apply_form_title ) {
 
         <?php
         if ( job_fs()->is_plan__premium_only('pro', true) ) {
-            ?>
-            <div class="jobwp-field-row">
-                <label>Phone</label>
-                <input type="hidden" id="jobwp_tel_country_code" name ="jobwp_tel_country_code">
-                <input type="tel" class="" placeholder="201-555-0123" id="jobwp_tel_1" name="jobwp_tel_1">
-            </div>
-            <?php
+
+            if ( $jobwp_display_apply_form_phone )  {
+                ?>
+                <div class="jobwp-field-row">
+                    <label><?php esc_html_e( $jobwp_apply_form_phone_label ); ?></label>
+                    <input type="hidden" id="jobwp_tel_country_code" name ="jobwp_tel_country_code">
+                    <input type="tel" class="" placeholder="201-555-0123" id="jobwp_tel_1" name="jobwp_tel_1">
+                </div>
+                <?php
+            }
         }
         ?>
 
