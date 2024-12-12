@@ -71,6 +71,8 @@ trait Jobwp_Applicaiton
                                 $phoneNumber        = isset( $post['phoneNumber'] ) ? sanitize_text_field( $post['phoneNumber'] ) : null;
                                 $message            = isset( $post['jobwp_cover_letter'] ) ? sanitize_textarea_field( $post['jobwp_cover_letter'] ) : null;
                                 $jobwp_user_consent = isset( $post['jobwp_user_consent'] ) ? sanitize_text_field( $post['jobwp_user_consent'] ) : null;
+                                $intl_tel_dial_code = isset( $post['jobwp_tel_country_code'] ) ? sanitize_text_field( $post['jobwp_tel_country_code'] ) : null;
+                                $intl_tel           = isset( $post['jobwp_tel_1'] ) ? sanitize_text_field( $post['jobwp_tel_1'] ) : null;
         
                                 $wpdb->query('INSERT INTO ' . $table_name . '(
                                     job_post_id,
@@ -81,7 +83,8 @@ trait Jobwp_Applicaiton
                                     applicant_message,
                                     resume_name,
                                     applied_on,
-                                    user_consent
+                                    user_consent,
+                                    intl_tel
                                 ) VALUES (
                                     ' . get_the_ID() . ',
                                     "' . $applyFor . '",
@@ -91,7 +94,8 @@ trait Jobwp_Applicaiton
                                     "' . $message . '",
                                     "' . $uniqueFile . '",
                                     "' . date('Y-m-d h:i:s') . '",
-                                    "' . $jobwp_user_consent . '"
+                                    "' . $jobwp_user_consent . '",
+                                    "' . $intl_tel_dial_code . $intl_tel . '"
                                 )');
                                 
                                 // Admin Notification Email

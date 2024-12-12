@@ -38,17 +38,18 @@ if ( '' !== $showMessage ) {
                 <tr>
                     <td><input type="checkbox" class="bulkSelect" name="bulkSelection[]" value="<?php esc_attr_e( $application->job_id ); ?>"></td>
                     <td style="font-weight:600;"><?php printf('%d', $jL); ?></td>
-                    <td><?php printf('%s', $application->applied_for); ?></td>
-                    <td><?php printf('%s', $application->applicant_name); ?></td>
-                    <td><?php printf('%s', $application->applicant_email); ?></td>
-                    <td><?php printf('%s', $application->applicant_message); ?></td>
+                    <td><?php esc_html_e( $application->applied_for ); ?></td>
+                    <td><?php esc_html_e( $application->applicant_name ); ?></td>
+                    <td><?php esc_html_e( $application->applicant_email ); ?></td>
+                    <td><?php esc_html_e( $application->applicant_message ); ?></td>
                     <td><a href="<?php printf('%s/%s', $jobwpDir, $application->resume_name); ?>"><?php esc_html_e( $application->resume_name ); ?></a></td>
                     <td><?php printf('%s', date('D d M Y - h:i A', strtotime($application->applied_on))); ?>
                     </td>
                     <?php
                     if ( job_fs()->is_plan__premium_only('pro', true) ) { 
                         ?>
-                        <td><?php printf('%s', $application->user_consent); ?></td>
+                        <td><?php esc_html_e( $application->user_consent ); ?></td>
+                        <td><?php esc_html_e( $application->intl_tel ); ?></td>
                         <?php
                     }
                     ?>

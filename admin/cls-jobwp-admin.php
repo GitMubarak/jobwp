@@ -345,6 +345,7 @@ class JobWp_Admin
 
 		if ( job_fs()->is_plan__premium_only('pro', true) ) {
 			$jobwpColumns['jobwp_user_consent']	= __('User Consent', JOBWP_TXT_DOMAIN);
+			$jobwpColumns['jobwp_intl_tel']	= __('Phone', JOBWP_TXT_DOMAIN);
 		}
 
 		$jobwpColumns['action']	= __('Action', JOBWP_TXT_DOMAIN);

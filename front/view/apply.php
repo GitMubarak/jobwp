@@ -57,10 +57,17 @@ if ( ! $jobwp_hide_apply_form_title ) {
             <input type="email" class="" placeholder="<?php esc_attr_e( $jobwp_apply_form_email_label ); ?>" id="jobwp_email" name="jobwp_email">
         </div>
 
-        <div class="jobwp-field-row">
-            <label>Phone</label>
-            <input type="tel" class="" placeholder="201-555-0123" id="jobwp_tel_1" name="jobwp_tel_1">
-        </div>
+        <?php
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+            ?>
+            <div class="jobwp-field-row">
+                <label>Phone</label>
+                <input type="hidden" id="jobwp_tel_country_code" name ="jobwp_tel_country_code">
+                <input type="tel" class="" placeholder="201-555-0123" id="jobwp_tel_1" name="jobwp_tel_1">
+            </div>
+            <?php
+        }
+        ?>
 
         <div class="jobwp-field-row">
             <label><?php esc_html_e( $jobwp_apply_form_cover_letter_label ); ?></label>

@@ -27,7 +27,14 @@
         $(applyFormId).iziModal({});
     }
 
-
+    var jobwpTel1 = document.querySelector("#jobwp_tel_1");
+    if (jobwpTel1 != null) {
+        var phoneInput = window.intlTelInput(jobwpTel1, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js",
+            initialCountry: "us",
+            separateDialCode: true,
+        });
+    }
 
     $('#jobwp_apply_btn').on('click', function(e) {
 
@@ -58,6 +65,10 @@
         if (!jobwp_validate_email(email.val())) {
             fail('Please Enter Valid Email', email);
             return false;
+        }
+
+        if (jobwpTel1 != null) {
+            $("#jobwp_tel_country_code").val(phoneInput.getSelectedCountryData().dialCode);
         }
 
         if (jobwpCaptchaField != null) {
@@ -129,11 +140,5 @@
             ],
         });
     }
-
-    var jobwpTel1 = document.querySelector("#jobwp_tel_1");
-    var phoneInput = window.intlTelInput(jobwpTel1, {
-        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js",
-        initialCountry: "us",
-    });
 
 })(window, jQuery);

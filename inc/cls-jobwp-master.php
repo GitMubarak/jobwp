@@ -152,5 +152,11 @@ class JobWp_Master {
 				$wpdb->query("ALTER TABLE {$table_name} ADD user_consent VARCHAR(2) NULL DEFAULT NULL");
 			}
 		}
+
+		if ( 2.2 < $this->jobwp_version ) {
+			if ( $wpdb->get_var("SHOW COLUMNS FROM {$table_name} LIKE 'intl_tel'") != 'intl_tel' ) {
+				$wpdb->query("ALTER TABLE {$table_name} ADD intl_tel VARCHAR(50) NULL DEFAULT NULL");
+			}
+		}
 	}
 }
