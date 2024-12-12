@@ -104,4 +104,17 @@
         $("#jobwp_company_logo_button_add").show();
     });
 
+    $(document).ready(function() {
+        $("#btnExport").on('click', function() {
+            var table = document.getElementsByTagName("table");
+            //debugger;
+            TableToExcel.convert(table[0], {
+                name: `application-list.xlsx`,
+                sheet: {
+                    name: 'ApplicationList'
+                }
+            });
+        });
+    });
+
 })(jQuery);

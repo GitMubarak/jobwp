@@ -86,6 +86,7 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
     <form method="post" id="jobwp-download-to-csv-form" action="">
         <input type="submit" name="jobwp_download_csv" class="button button-primary jobwp-button" value="<?php _e('EXPORT TO CSV', JOBWP_TXT_DOMAIN); ?>">
     </form>
+    <button type="button" class="button button-primary jobwp-button" id="btnExport" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end"><?php _e('Export To Excel', JOBWP_TXT_DOMAIN); ?></button>
     <?php
 }
 ?>

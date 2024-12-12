@@ -69,6 +69,9 @@ class JobWp_Admin
 		if ( job_fs()->is_plan__premium_only('pro') ) {
 			wp_enqueue_media();
 		}
+
+		wp_register_script( 'jobwp-table-to-excel', 'https://cdn.jsdelivr.net/gh/linways/table-to-excel@v1.0.4/dist/tableToExcel.js' , '', '', true );
+		wp_enqueue_script( 'jobwp-table-to-excel' );
 		
 		wp_enqueue_script(
 			$this->jobwp_assets_prefix . 'admin',

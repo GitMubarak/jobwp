@@ -281,6 +281,7 @@ Now go to your detail page and refresh it.
 * Google structured data implemented - Pro
 * Job details information sorting implemented - Pro
 * Mobile number field added to application form - Pro
+* Application list export to excel implemented - Pro
 [//]: # fs_premium_only_end
 * Hide apply procedure and apply button separated
 * Total jobs found text change option added
