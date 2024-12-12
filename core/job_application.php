@@ -69,10 +69,12 @@ trait Jobwp_Applicaiton
                                 $applyFor           = isset( $post['jobwp_apply_for'] ) ? sanitize_text_field( $post['jobwp_apply_for'] ) : null;
                                 $email 		        = isset( $post['jobwp_email'] ) ? sanitize_email( $post['jobwp_email'] ) : null;
                                 $phoneNumber        = isset( $post['phoneNumber'] ) ? sanitize_text_field( $post['phoneNumber'] ) : null;
-                                $message            = isset( $post['jobwp_cover_letter'] ) ? sanitize_textarea_field( $post['jobwp_cover_letter'] ) : null;
+                                $message            = isset( $post['jobwp_cover_letter'] ) ? sanitize_textarea_field( $post['jobwp_cover_letter'] ) : '';
                                 $jobwp_user_consent = isset( $post['jobwp_user_consent'] ) ? sanitize_text_field( $post['jobwp_user_consent'] ) : null;
-                                $intl_tel_dial_code = isset( $post['jobwp_tel_country_code'] ) ? sanitize_text_field( $post['jobwp_tel_country_code'] ) : null;
-                                $intl_tel           = isset( $post['jobwp_tel_1'] ) ? sanitize_text_field( $post['jobwp_tel_1'] ) : null;
+                                $intl_tel_dial_code = isset( $post['jobwp_tel_country_code'] ) ? sanitize_text_field( $post['jobwp_tel_country_code'] ) : '';
+                                $intl_tel           = isset( $post['jobwp_tel_1'] ) ? sanitize_text_field( $post['jobwp_tel_1'] ) : '';
+
+                                $intlPhone          = ( '' !== $intl_tel ) ? $intl_tel_dial_code . $intl_tel : '';
         
                                 $wpdb->query('INSERT INTO ' . $table_name . '(
                                     job_post_id,
@@ -95,7 +97,7 @@ trait Jobwp_Applicaiton
                                     "' . $uniqueFile . '",
                                     "' . date('Y-m-d h:i:s') . '",
                                     "' . $jobwp_user_consent . '",
-                                    "' . $intl_tel_dial_code . $intl_tel . '"
+                                    "' . $intlPhone . '"
                                 )');
                                 
                                 // Admin Notification Email
@@ -109,8 +111,15 @@ trait Jobwp_Applicaiton
                                 $emailMessage = __('Applicant: ', 'jobwp') . $fullName;
                                 $emailMessage .= '<br>' . __( 'Applied For: ', 'jobwp' ) . $applyFor;
                                 $emailMessage .= '<br>' . __( 'Email: ', 'jobwp' ) . $email;
-                                //$emailMessage .= '<br>' . __( 'Phone: ' ) . $phoneNumber;
-                                $emailMessage .= '<br>' . __( 'Cover Letter: ', 'jobwp' ) . $message;
+
+                                if ( '' != $intl_tel ) {
+                                    $emailMessage .= '<br>' . __( 'Phone: ' ) . $intlPhone;
+                                }
+
+                                if ( '' != $message ) {
+                                    $emailMessage .= '<br>' . __( 'Cover Letter: ', 'jobwp' ) . $message;
+                                }
+
                                 wp_mail(
                                     $admin_email,
                                     $subject,
