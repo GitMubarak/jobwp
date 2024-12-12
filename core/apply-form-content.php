@@ -54,6 +54,11 @@ trait Jobwp_ApplyForm_Content_Settings
                 'default'   => 'Email',
             ],
             [
+                'name'      => 'jobwp_hide_apply_form_cover',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
                 'name'      => 'jobwp_apply_form_cover_letter_label',
                 'type'      => 'text',
                 'default'   => 'Cover Letter',

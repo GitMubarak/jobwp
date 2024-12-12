@@ -183,6 +183,10 @@ You can display the job information and apply a url to that individual job which
 * Display Featured Jobs With Slider
 * HR User Role to Manage Jobs
 * Customize email notification content for Candidate
+* Application list export to excel
+* Display Mobile number in the application form
+* Display Job by Job Level With The Shortcode Option
+* Job Level Option in the Search Panel
 
 [Get the Pro](https://wpjoblisting.com/pricing-faq/)
 
@@ -287,6 +291,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_end
 * Hide apply procedure and apply button separated
 * Total jobs found text change option added
+* Show hide cover letter option added
 * Code optimized
 
 = 2.3.7 =

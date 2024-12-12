@@ -70,12 +70,16 @@ if ( ! $jobwp_hide_apply_form_title ) {
                 <?php
             }
         }
-        ?>
 
-        <div class="jobwp-field-row">
-            <label><?php esc_html_e( $jobwp_apply_form_cover_letter_label ); ?></label>
-            <textarea class="" placeholder="<?php esc_attr_e( $jobwp_apply_form_cover_letter_label ); ?>" id="jobwp_cover_letter" name="jobwp_cover_letter"></textarea>
-        </div>
+        if ( ! $jobwp_hide_apply_form_cover ) {
+            ?>
+            <div class="jobwp-field-row">
+                <label><?php esc_html_e( $jobwp_apply_form_cover_letter_label ); ?></label>
+                <textarea class="" placeholder="<?php esc_attr_e( $jobwp_apply_form_cover_letter_label ); ?>" id="jobwp_cover_letter" name="jobwp_cover_letter"></textarea>
+            </div>
+            <?php
+        }
+        ?>
 
         <div class="jobwp-field-row">
             <label><?php _e('Upload CV/Resume', JOBWP_TXT_DOMAIN); ?></label><span class="required">*</span>

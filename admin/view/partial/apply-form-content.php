@@ -42,14 +42,22 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
                 <input type="text" name="jobwp_apply_form_email_label" id="jobwp_apply_form_email_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_email_label ); ?>" />
             </td>
         </tr>
+        <!-- Cover Letter -->
         <tr>
+            <th scope="row">
+                <label for="jobwp_hide_apply_form_cover"><?php _e('Hide Cover Letter', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="jobwp_hide_apply_form_cover" id="jobwp_hide_apply_form_cover" <?php echo $jobwp_hide_apply_form_cover ? 'checked' : ''; ?>>
+            </td>
             <th scope="row">
                 <label><?php _e('Cover Letter Label', JOBWP_TXT_DOMAIN); ?></label>
             </th>
-            <td colspan="3">
+            <td>
                 <input type="text" name="jobwp_apply_form_cover_letter_label" id="jobwp_apply_form_cover_letter_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_cover_letter_label ); ?>" />
             </td>
         </tr>
+        <!-- Phone -->
         <tr>
             <th scope="row">
                 <label for="jobwp_display_apply_form_phone"><?php _e('Display Phone', JOBWP_TXT_DOMAIN); ?>?</label>
@@ -70,7 +78,7 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
                 ?>
             </td>
             <th scope="row">
-                <label><?php _e('Phone Label Text', JOBWP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Phone Label', JOBWP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <?php

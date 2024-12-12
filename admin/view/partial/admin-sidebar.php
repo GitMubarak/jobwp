@@ -27,8 +27,12 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <li>&#10003; Display Job Search Panel at Home</li>
                 <li>&#10003; Display Featured Jobs With Slider</li>
                 <li>&#10003; Job posting google structured data for better SEO</li>
-                <li>&#10003; Drag and drop to manage order in the job details page</li>
+                <li>&#10003; Drag and Drop to Manage Job info Order in the Job Details Page</li>
                 <li>&#10003; Customize email notification content for Candidate</li>
+                <li>&#10003; Job Level Option in the Search Panel</li>
+                <li>&#10003; Display Job by Job Level With The Shortcode Option</li>
+                <li>&#10003; Display Mobile number in the application form</li>
+                <li>&#10003; Application list export to excel</li>
             </ul>
             <?php
             if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
