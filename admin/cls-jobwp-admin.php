@@ -831,13 +831,14 @@ class JobWp_Admin
 				$asl = 1;
 				foreach ( $applications as $application ) {
 					$row[0] = $asl;
-					$row[1] = $application->applied_for;
-					$row[2] = $application->applicant_name;
-					$row[3] = $application->applicant_email;
-					$row[4] = '"' . $application->applicant_message .'"';
-					$row[5] = date( 'D d M Y - h:i A', strtotime( $application->applied_on ) );
-					$row[6] = $application->resume_name;
-					$row[7] = $application->user_consent;
+					$row[1] = ( '' !== $application->applied_for ) ? sanitize_text_field( str_replace(",", ";", $application->applied_for) ) : '';
+					$row[2] = ( '' !== $application->applicant_name ) ? sanitize_text_field( $application->applicant_name ) : '';
+					$row[3] = ( '' !== $application->applicant_email ) ? sanitize_text_field( $application->applicant_email ) : '';
+					$row[4] = ( '' !== $application->applicant_message ) ? sanitize_text_field( str_replace(",", ";", $application->applicant_message) ) : '';
+					$row[5] = ( '' !== $application->applied_on ) ? date( 'D d M Y - h:i A', strtotime( sanitize_text_field( $application->applied_on ) ) ) : '';
+					$row[6] = ( '' !== $application->resume_name ) ? sanitize_text_field( $application->resume_name ) : '';
+					$row[7] = ( '' !== $application->user_consent ) ? sanitize_text_field( $application->user_consent ) : '';
+					$row[8] = ( '' !== $application->intl_tel ) ? sanitize_text_field( $application->intl_tel ) : '';
 					$data_rows[] = $row;
 					$asl++;
 				}
@@ -848,11 +849,11 @@ class JobWp_Admin
 				header("Content-Disposition: attachment; filename={$filename}");
 				header("Expires: 0");
 				header("Pragma: public");
-				printf( "%s,%s,%s,%s,%s,%s,%s,%s", "SL", "Applied For", "Name", "Email", "Cover Letter", "Applied On", "Resume Link", "User Consent" );
+				printf( "%s,%s,%s,%s,%s,%s,%s,%s,%s", "SL", "Applied For", "Name", "Email", "Cover Letter", "Applied On", "Resume Link", "User Consent" , "Phone" );
 				_e("\n");
 				
 				foreach ( $data_rows as $data ) {
-					printf( "%d,%s,%s,%s,%s,%s,%s,%s", $data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6], $data[7] );
+					printf( "%d,%s,%s,%s,%s,%s,%s,%s,%s", $data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6], $data[7], $data[8] );
 					_e("\n");
 				}
 				
