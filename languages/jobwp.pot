@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-12-13 04:01+0600\n"
+"POT-Creation-Date: 2025-01-28 20:49+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1149,7 +1149,7 @@ msgstr ""
 msgid "Thank you for your application"
 msgstr ""
 
-#: freemius/includes/class-freemius.php:18932
+#: freemius/includes/class-freemius.php:19005
 msgid "true"
 msgstr ""
 
