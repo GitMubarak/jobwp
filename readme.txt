@@ -277,7 +277,7 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 2.3.9 =
-* Hide
+* Updated Freemius SDK to the latest version
 
 = 2.3.8 =
 [//]: # fs_premium_only_begin
