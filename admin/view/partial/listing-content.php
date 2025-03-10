@@ -11,6 +11,7 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
 }
 ?>
 <form name="jobwp_listing_content_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-listing-content-settings-form">
+<?php wp_nonce_field( 'jobwp_listing_content_action', 'jobwp_listing_content_nonce' ); ?>
     <table class="jobwp-listing-content-settings-table">
         <tr class="jobwp_display_company_name">
             <th scope="row">

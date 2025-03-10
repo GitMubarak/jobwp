@@ -194,9 +194,13 @@ class JobWp_Admin
 
 		// Content
 		if ( isset( $_POST['updateListingContent'] ) ) {
-
-			$jobwpListingMessage = $this->jobwp_set_listing_content_settings( $_POST );
-
+			if ( ! isset( $_POST['jobwp_listing_content_nonce'] ) 
+				|| ! wp_verify_nonce( $_POST['jobwp_listing_content_nonce'], 'jobwp_listing_content_action' ) ) {
+				print 'Sorry, your nonce did not verify.';
+				exit;
+			} else {
+				$jobwpListingMessage = $this->jobwp_set_listing_content_settings( $_POST );
+			}
 		}
 
 		$jobwpListingContent = $this->jobwp_get_listing_content_settings();
