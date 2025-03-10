@@ -277,7 +277,7 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 2.4.0 =
-* Updated
+* CSRF checking applied to the General settings page
 
 = 2.3.9 =
 * Updated Freemius SDK to the latest version

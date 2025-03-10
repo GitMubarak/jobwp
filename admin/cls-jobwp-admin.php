@@ -164,11 +164,14 @@ class JobWp_Admin
 
 		$jobwpGeneralMessage = false;
 
-		// Content
 		if ( isset( $_POST['updateGeneralSettings'] ) ) {
-
-			$jobwpGeneralMessage = $this->jobwp_set_general_settings( $_POST );
-
+			if ( ! isset( $_POST['jobwp_general_nonce_field'] ) 
+				|| ! wp_verify_nonce( $_POST['jobwp_general_nonce_field'], 'jobwp_general_action_filed' ) ) {
+				print 'Sorry, your nonce did not verify.';
+				exit;
+			} else {
+				$jobwpGeneralMessage = $this->jobwp_set_general_settings( $_POST );
+			}
 		}
 
 		$jobwpGeneralSettings = $this->jobwp_get_general_settings();
