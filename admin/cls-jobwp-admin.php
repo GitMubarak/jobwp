@@ -207,9 +207,14 @@ class JobWp_Admin
 
 		// Style
 		if ( isset( $_POST['updateListingStyles'] ) ) {
-
-            $jobwpListingMessage = $this->jobwp_set_listing_styles_settings( $_POST );
-        }
+			if ( ! isset( $_POST['jobwp_listing_styles_nonce'] ) 
+				|| ! wp_verify_nonce( $_POST['jobwp_listing_styles_nonce'], 'jobwp_listing_styles_action' ) ) {
+				print 'Sorry, your nonce did not verify.';
+				exit;
+			} else {
+				$jobwpListingMessage = $this->jobwp_set_listing_styles_settings( $_POST );
+			}
+		}
 
         $jobwpListingStyles = $this->jobwp_get_listing_styles_settings();
 
