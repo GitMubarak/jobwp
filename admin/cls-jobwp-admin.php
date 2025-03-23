@@ -236,9 +236,13 @@ class JobWp_Admin
 
 		// Content
 		if ( isset( $_POST['updateSearchContent'] ) ) {
-
-			$jobwpSearchMessage = $this->jobwp_set_search_content_settings( $_POST );
-
+			if ( ! isset( $_POST['jobwp_search_content_nonce'] ) 
+				|| ! wp_verify_nonce( $_POST['jobwp_search_content_nonce'], 'jobwp_search_content_action' ) ) {
+				print 'Sorry, your nonce did not verify.';
+				exit;
+			} else {
+				$jobwpSearchMessage = $this->jobwp_set_search_content_settings( $_POST );
+			}
 		}
 
 		// Style
