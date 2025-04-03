@@ -11,6 +11,7 @@ foreach ( $jobwpSingleStyles as $option_name => $option_value ) {
 }
 ?>
 <form name="jobwp_single_style_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-single-style-form">
+<?php wp_nonce_field( 'jobwp_single_style_action', 'jobwp_single_style_nonce' ); ?>
     <table class="jobwp-settings-table">
         <!-- Container -->
         <tr>

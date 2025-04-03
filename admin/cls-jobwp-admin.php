@@ -287,9 +287,14 @@ class JobWp_Admin
 
 		// Style
 		if ( isset( $_POST['updateSingleStyles'] ) ) {
-
-            $jobwpSingleMessage = $this->jobwp_set_single_styles_settings( $_POST );
-        }
+			if ( ! isset( $_POST['jobwp_single_style_nonce'] ) 
+				|| ! wp_verify_nonce( $_POST['jobwp_single_style_nonce'], 'jobwp_single_style_action' ) ) {
+				print 'Sorry, your nonce did not verify.';
+				exit;
+			} else {
+				$jobwpSingleMessage = $this->jobwp_set_single_styles_settings( $_POST );
+			}
+		}
 
         $jobwpSingleStyles = $this->jobwp_get_single_styles_settings();
 
