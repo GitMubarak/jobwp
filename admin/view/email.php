@@ -32,6 +32,7 @@ if ( $jobwpEmailMessage ) {
             if ( job_fs()->is_plan__premium_only('pro', true) ) {
                 ?>
                 <form name="jobwp_email_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-email-settings-form">
+                <?php wp_nonce_field( 'jobwp_email_settings_action', 'jobwp_email_settings_nonce' ); ?>
                 <table class="jobwp-single-settings-table">
                     <tr>
                         <td colspan="2">

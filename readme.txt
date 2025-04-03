@@ -284,6 +284,7 @@ Now go to your detail page and refresh it.
 * CSRF checking applied to the Search Styles settings page
 * CSRF checking applied to the Single Content settings page
 * CSRF checking applied to the Single Styles settings page
+* CSRF checking applied to the Email settings page
 
 = 2.3.9 =
 * Updated Freemius SDK to the latest version

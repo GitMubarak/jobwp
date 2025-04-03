@@ -311,9 +311,13 @@ class JobWp_Admin
 
 		// Content
 		if ( isset( $_POST['updateSettings'] ) ) {
-
-			$jobwpEmailMessage = $this->jobwp_set_email_settings( $_POST );
-
+			if ( ! isset( $_POST['jobwp_email_settings_nonce'] ) 
+				|| ! wp_verify_nonce( $_POST['jobwp_email_settings_nonce'], 'jobwp_email_settings_action' ) ) {
+				print 'Sorry, your nonce did not verify.';
+				exit;
+			} else {
+				$jobwpEmailMessage = $this->jobwp_set_email_settings( $_POST );
+			}
 		}
 
 		$jobwpEmailSettings = $this->jobwp_get_email_settings();
