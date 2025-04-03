@@ -247,9 +247,13 @@ class JobWp_Admin
 
 		// Style
 		if ( isset( $_POST['updateSearchStyles'] ) ) {
-
-			$jobwpSearchMessage = $this->jobwp_set_search_styles_settings( $_POST );
-
+			if ( ! isset( $_POST['jobwp_search_style_nonce'] ) 
+				|| ! wp_verify_nonce( $_POST['jobwp_search_style_nonce'], 'jobwp_search_style_action' ) ) {
+				print 'Sorry, your nonce did not verify.';
+				exit;
+			} else {
+				$jobwpSearchMessage = $this->jobwp_set_search_styles_settings( $_POST );
+			}
 		}
 
 		$jobwpSearchContent = $this->jobwp_get_search_content_settings();

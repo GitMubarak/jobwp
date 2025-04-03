@@ -11,6 +11,7 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
 }
 ?>
 <form name="jobwp_search_style_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-search-style-form">
+<?php wp_nonce_field( 'jobwp_search_style_action', 'jobwp_search_style_nonce' ); ?>
     <table class="jobwp-settings-table">
         <!-- Search Container -->
         <tr>
