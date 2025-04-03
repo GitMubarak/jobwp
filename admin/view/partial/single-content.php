@@ -15,6 +15,7 @@ $single_items = $this->get_single_items_order();
 //print_r($single_items);
 ?>
 <form name="jobwp_single_content_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-single-content-settings-form">
+<?php wp_nonce_field( 'jobwp_single_content_action', 'jobwp_single_content_nonce' ); ?>
     <table class="jobwp-single-settings-table" id="jobwp-single-content-settings-table">
         <tr class="jobwp_single_title_tag">
             <th scope="row">

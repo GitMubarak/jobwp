@@ -274,9 +274,13 @@ class JobWp_Admin
 
 		// Content
 		if ( isset( $_POST['updateSingleContent'] ) ) {
-
-			$jobwpSingleMessage = $this->jobwp_set_single_content_settings( $_POST );
-
+			if ( ! isset( $_POST['jobwp_single_content_nonce'] ) 
+				|| ! wp_verify_nonce( $_POST['jobwp_single_content_nonce'], 'jobwp_single_content_action' ) ) {
+				print 'Sorry, your nonce did not verify.';
+				exit;
+			} else {
+				$jobwpSingleMessage = $this->jobwp_set_single_content_settings( $_POST );
+			}
 		}
 
 		$jobwpSingleContent = $this->jobwp_get_single_content_settings();
