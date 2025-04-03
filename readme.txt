@@ -280,6 +280,7 @@ Now go to your detail page and refresh it.
 * CSRF checking applied to the General settings page
 * CSRF checking applied to the Listing Content settings page
 * CSRF checking applied to the Listing Styles settings page
+* CSRF checking applied to the Search Content settings page
 
 = 2.3.9 =
 * Updated Freemius SDK to the latest version
