@@ -340,9 +340,13 @@ class JobWp_Admin
 
 		// Content
 		if ( isset( $_POST['updateApplyFormContent'] ) ) {
-
-			$jobwpApplyFormMessage = $this->jobwp_set_apply_form_content_settings( $_POST );
-
+			if ( ! isset( $_POST['jobwp_apply_form_content_nonce'] ) 
+				|| ! wp_verify_nonce( $_POST['jobwp_apply_form_content_nonce'], 'jobwp_apply_form_content_action' ) ) {
+				print 'Sorry, your nonce did not verify.';
+				exit;
+			} else {
+				$jobwpApplyFormMessage = $this->jobwp_set_apply_form_content_settings( $_POST );
+			}
 		}
 
 		$jobwpApplyFormContent = $this->jobwp_get_apply_form_content_settings();

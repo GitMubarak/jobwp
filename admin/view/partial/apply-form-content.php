@@ -11,6 +11,7 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
 }
 ?>
 <form name="jobwp_apply_form_content_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-apply-form-content-settings-form">
+<?php wp_nonce_field( 'jobwp_apply_form_content_action', 'jobwp_apply_form_content_nonce' ); ?>
     <table class="jobwp-listing-content-settings-table">
         <tr>
             <th scope="row">
