@@ -75,7 +75,7 @@ trait Jobwp_Applicaiton
                                 $intl_tel           = isset( $post['jobwp_tel_1'] ) ? sanitize_text_field( $post['jobwp_tel_1'] ) : '';
 
                                 $intlPhone          = ( '' !== $intl_tel ) ? $intl_tel_dial_code . $intl_tel : '';
-        
+                                /*
                                 $wpdb->query('INSERT INTO ' . $table_name . '(
                                     job_post_id,
                                     applied_for,
@@ -99,6 +99,35 @@ trait Jobwp_Applicaiton
                                     "' . $jobwp_user_consent . '",
                                     "' . $intlPhone . '"
                                 )');
+                                */
+                                $wpdb->query(
+                                    $wpdb->prepare(
+                                        "INSERT INTO $table_name
+                                        ( job_post_id,
+                                        applied_for,
+                                        applicant_name,
+                                        applicant_email,
+                                        applicant_phone,
+                                        applicant_message,
+                                        resume_name,
+                                        applied_on,
+                                        user_consent,
+                                        intl_tel )
+                                        VALUES ( %d, %s, %s, %s, %s, %s, %s, %s, %s, %s )",
+                                        array(
+                                            get_the_ID(),
+                                            $applyFor,
+                                            $fullName,
+                                            $email,
+                                            $phoneNumber,
+                                            $message,
+                                            $uniqueFile,
+                                            date('Y-m-d h:i:s'),
+                                            $jobwp_user_consent,
+                                            $intlPhone,
+                                        )
+                                    )
+                                );
                                 
                                 // Admin Notification Email
                                 $attachments = array($fileName);
