@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-01-28 20:49+0600\n"
+"POT-Creation-Date: 2025-04-05 20:33+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -50,359 +50,359 @@ msgstr ""
 msgid "Application List"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:339
+#: admin/cls-jobwp-admin.php:380
 msgid "Select All"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:340
+#: admin/cls-jobwp-admin.php:381
 msgid "#"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:341
+#: admin/cls-jobwp-admin.php:382
 msgid "Applied For"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:342
+#: admin/cls-jobwp-admin.php:383
 msgid "Name"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:343 admin/cls-jobwp-admin.php:912
+#: admin/cls-jobwp-admin.php:384 admin/cls-jobwp-admin.php:953
 msgid "Email"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:344
+#: admin/cls-jobwp-admin.php:385
 msgid "Cover Letter"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:345
+#: admin/cls-jobwp-admin.php:386
 msgid "Resume"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:346
+#: admin/cls-jobwp-admin.php:387
 msgid "Date"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:350
+#: admin/cls-jobwp-admin.php:391
 msgid "User Consent"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:351
+#: admin/cls-jobwp-admin.php:392
 msgid "Phone"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:354
+#: admin/cls-jobwp-admin.php:395
 msgid "Action"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:367 admin/cls-jobwp-admin.php:371
+#: admin/cls-jobwp-admin.php:408 admin/cls-jobwp-admin.php:412
 msgid "All Jobs"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:368 admin/cls-jobwp-admin.php:369
+#: admin/cls-jobwp-admin.php:409 admin/cls-jobwp-admin.php:410
 msgid "WP Jobs"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:370
+#: admin/cls-jobwp-admin.php:411
 msgid "Parent Job"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:372
+#: admin/cls-jobwp-admin.php:413
 msgid "View Job"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:373
+#: admin/cls-jobwp-admin.php:414
 msgid "Add New Job"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:374
+#: admin/cls-jobwp-admin.php:415
 msgid "Add New"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:375
+#: admin/cls-jobwp-admin.php:416
 msgid "Edit Job"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:376
+#: admin/cls-jobwp-admin.php:417
 msgid "Update Job"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:377
+#: admin/cls-jobwp-admin.php:418
 msgid "Search Job"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:378
+#: admin/cls-jobwp-admin.php:419
 msgid "Not Found"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:379
+#: admin/cls-jobwp-admin.php:420
 msgid "Not found in Trash"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:382
+#: admin/cls-jobwp-admin.php:423
 msgid "jobs"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:383
+#: admin/cls-jobwp-admin.php:424
 msgid "Description For Job"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:411 admin/cls-jobwp-admin.php:421
+#: admin/cls-jobwp-admin.php:452 admin/cls-jobwp-admin.php:462
 msgid "Job Categories"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:412
+#: admin/cls-jobwp-admin.php:453
 msgid "Job Category"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:413
+#: admin/cls-jobwp-admin.php:454
 msgid "Search Job Categories"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:414
+#: admin/cls-jobwp-admin.php:455
 msgid "All Job Categories"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:415
+#: admin/cls-jobwp-admin.php:456
 msgid "Parent Job Category"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:416
+#: admin/cls-jobwp-admin.php:457
 msgid "Parent Job Category:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:417
+#: admin/cls-jobwp-admin.php:458
 msgid "Edit Job Category"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:418
+#: admin/cls-jobwp-admin.php:459
 msgid "Update Job Category"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:419
+#: admin/cls-jobwp-admin.php:460
 msgid "Add New Job Category"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:420
+#: admin/cls-jobwp-admin.php:461
 msgid "New Job Category Name"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:440 admin/cls-jobwp-admin.php:441
-#: admin/cls-jobwp-admin.php:450
+#: admin/cls-jobwp-admin.php:481 admin/cls-jobwp-admin.php:482
+#: admin/cls-jobwp-admin.php:491
 msgid "Job Nature"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:442
+#: admin/cls-jobwp-admin.php:483
 msgid "Search Job Nature"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:443
+#: admin/cls-jobwp-admin.php:484
 msgid "All Job Nature"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:444
+#: admin/cls-jobwp-admin.php:485
 msgid "Parent Job Nature"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:445
+#: admin/cls-jobwp-admin.php:486
 msgid "Parent Job Nature:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:446
+#: admin/cls-jobwp-admin.php:487
 msgid "Edit Job Nature"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:447
+#: admin/cls-jobwp-admin.php:488
 msgid "Update Job Nature"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:448
+#: admin/cls-jobwp-admin.php:489
 msgid "Add New Job Nature"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:449
+#: admin/cls-jobwp-admin.php:490
 msgid "New Job Nature Name"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:469 admin/cls-jobwp-admin.php:470
-#: admin/cls-jobwp-admin.php:479
+#: admin/cls-jobwp-admin.php:510 admin/cls-jobwp-admin.php:511
+#: admin/cls-jobwp-admin.php:520
 msgid "Job Level"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:471
+#: admin/cls-jobwp-admin.php:512
 msgid "Search Job Level"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:472
+#: admin/cls-jobwp-admin.php:513
 msgid "All Job Level"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:473
+#: admin/cls-jobwp-admin.php:514
 msgid "Parent Job Level"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:474
+#: admin/cls-jobwp-admin.php:515
 msgid "Parent Job Level:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:475
+#: admin/cls-jobwp-admin.php:516
 msgid "Edit Job Level"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:476
+#: admin/cls-jobwp-admin.php:517
 msgid "Update Job Level"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:477
+#: admin/cls-jobwp-admin.php:518
 msgid "Add New Job Level"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:478
+#: admin/cls-jobwp-admin.php:519
 msgid "New Job Level Name"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:498 admin/cls-jobwp-admin.php:499
-#: admin/cls-jobwp-admin.php:508
+#: admin/cls-jobwp-admin.php:539 admin/cls-jobwp-admin.php:540
+#: admin/cls-jobwp-admin.php:549
 msgid "Job Location"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:500
+#: admin/cls-jobwp-admin.php:541
 msgid "Search Job Location"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:501
+#: admin/cls-jobwp-admin.php:542
 msgid "All Job Location"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:502
+#: admin/cls-jobwp-admin.php:543
 msgid "Parent Job Location"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:503
+#: admin/cls-jobwp-admin.php:544
 msgid "Parent Job Location:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:504
+#: admin/cls-jobwp-admin.php:545
 msgid "Edit Job Location"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:505
+#: admin/cls-jobwp-admin.php:546
 msgid "Update Job Location"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:506
+#: admin/cls-jobwp-admin.php:547
 msgid "Add New Job Location"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:507
+#: admin/cls-jobwp-admin.php:548
 msgid "New Job Location Name"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:524 admin/cls-jobwp-admin.php:525
-#: admin/cls-jobwp-admin.php:534
+#: admin/cls-jobwp-admin.php:565 admin/cls-jobwp-admin.php:566
+#: admin/cls-jobwp-admin.php:575
 msgid "Job Company"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:526
+#: admin/cls-jobwp-admin.php:567
 msgid "Search Job Company"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:527
+#: admin/cls-jobwp-admin.php:568
 msgid "All Job Company"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:528
+#: admin/cls-jobwp-admin.php:569
 msgid "Parent Job Company"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:529
+#: admin/cls-jobwp-admin.php:570
 msgid "Parent Job Company:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:530
+#: admin/cls-jobwp-admin.php:571
 msgid "Edit Job Company"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:531
+#: admin/cls-jobwp-admin.php:572
 msgid "Update Job Company"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:532
+#: admin/cls-jobwp-admin.php:573
 msgid "Add New Job Company"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:533
+#: admin/cls-jobwp-admin.php:574
 msgid "New Job Company Name"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:557
+#: admin/cls-jobwp-admin.php:598
 msgid "Job Details:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:566
+#: admin/cls-jobwp-admin.php:607
 msgid "Responsibilities:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:575
+#: admin/cls-jobwp-admin.php:616
 msgid "Skills Required:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:584
+#: admin/cls-jobwp-admin.php:625
 msgid "Educational Requirements:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:593
+#: admin/cls-jobwp-admin.php:634
 msgid "Additional Requirements:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:602
+#: admin/cls-jobwp-admin.php:643
 msgid "Salary:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:611
+#: admin/cls-jobwp-admin.php:652
 msgid "Other Benefits:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:815
+#: admin/cls-jobwp-admin.php:856
 msgid "Application has been deleted."
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:856 admin/cls-jobwp-admin.php:860
+#: admin/cls-jobwp-admin.php:897 admin/cls-jobwp-admin.php:901
 msgid "\n"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:875 jobwp.php:121
+#: admin/cls-jobwp-admin.php:916 jobwp.php:121
 msgid "Company Email"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:881 jobwp.php:129
+#: admin/cls-jobwp-admin.php:922 jobwp.php:129
 msgid "Company Website"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:887 jobwp.php:137
+#: admin/cls-jobwp-admin.php:928 jobwp.php:137
 msgid "Company Address"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:893 jobwp.php:145
+#: admin/cls-jobwp-admin.php:934 jobwp.php:145
 msgid "Company Logo"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:899
+#: admin/cls-jobwp-admin.php:940
 msgid "Add Logo"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:900 jobwp.php:156
+#: admin/cls-jobwp-admin.php:941 jobwp.php:156
 msgid "Remove Logo"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:911
+#: admin/cls-jobwp-admin.php:952
 msgid "Logo"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:913
+#: admin/cls-jobwp-admin.php:954
 msgid "Website"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:914
+#: admin/cls-jobwp-admin.php:955
 msgid "Address"
 msgstr ""
 
@@ -444,294 +444,294 @@ msgstr ""
 msgid "Styles"
 msgstr ""
 
-#: admin/view/email.php:38
+#: admin/view/email.php:39
 msgid "Candidate Email Settings"
 msgstr ""
 
-#: admin/view/email.php:43
+#: admin/view/email.php:44
 msgid "Header From Name"
 msgstr ""
 
-#: admin/view/email.php:51
+#: admin/view/email.php:52
 msgid "Header From Email"
 msgstr ""
 
-#: admin/view/email.php:59
+#: admin/view/email.php:60
 msgid "Email Subject"
 msgstr ""
 
-#: admin/view/email.php:67
+#: admin/view/email.php:68
 msgid "Email Content"
 msgstr ""
 
-#: admin/view/email.php:74
+#: admin/view/email.php:75
 msgid "To use candidate name apply #candidateName# in the content"
 msgstr ""
 
-#: admin/view/email.php:76
+#: admin/view/email.php:77
 msgid "To use job title apply #jobTitle# in the content"
 msgstr ""
 
-#: admin/view/email.php:78
+#: admin/view/email.php:79
 msgid "Use <<code>br</code>> to break line in the content"
 msgstr ""
 
-#: admin/view/email.php:85 admin/view/general.php:188
-#: admin/view/partial/apply-form-content.php:151
-#: admin/view/partial/apply-form-style.php:332
-#: admin/view/partial/listing-content.php:209
-#: admin/view/partial/listing-style.php:298
-#: admin/view/partial/search-content.php:131
-#: admin/view/partial/search-style.php:121
-#: admin/view/partial/single-content.php:374
-#: admin/view/partial/single-style.php:271
+#: admin/view/email.php:86 admin/view/general.php:190
+#: admin/view/partial/apply-form-content.php:152
+#: admin/view/partial/apply-form-style.php:333
+#: admin/view/partial/listing-content.php:210
+#: admin/view/partial/listing-style.php:299
+#: admin/view/partial/search-content.php:132
+#: admin/view/partial/search-style.php:122
+#: admin/view/partial/single-content.php:375
+#: admin/view/partial/single-style.php:272
 msgid "Save Settings"
 msgstr ""
 
-#: admin/view/email.php:94 admin/view/general.php:51 admin/view/general.php:115
-#: admin/view/general.php:143 admin/view/partial/apply-form-content.php:69
-#: admin/view/partial/apply-form-content.php:87
-#: admin/view/partial/apply-form-content.php:109
-#: admin/view/partial/apply-form-content.php:127
-#: admin/view/partial/apply-form-style.php:30
-#: admin/view/partial/apply-form-style.php:57
-#: admin/view/partial/apply-form-style.php:76
-#: admin/view/partial/apply-form-style.php:102
-#: admin/view/partial/apply-form-style.php:121
-#: admin/view/partial/apply-form-style.php:147
-#: admin/view/partial/apply-form-style.php:166
-#: admin/view/partial/apply-form-style.php:186
-#: admin/view/partial/apply-form-style.php:205
-#: admin/view/partial/apply-form-style.php:232
-#: admin/view/partial/apply-form-style.php:253
-#: admin/view/partial/apply-form-style.php:272
-#: admin/view/partial/apply-form-style.php:298
-#: admin/view/partial/apply-form-style.php:317
+#: admin/view/email.php:95 admin/view/general.php:52 admin/view/general.php:116
+#: admin/view/general.php:144 admin/view/partial/apply-form-content.php:70
+#: admin/view/partial/apply-form-content.php:88
+#: admin/view/partial/apply-form-content.php:110
+#: admin/view/partial/apply-form-content.php:128
+#: admin/view/partial/apply-form-style.php:31
+#: admin/view/partial/apply-form-style.php:58
+#: admin/view/partial/apply-form-style.php:77
+#: admin/view/partial/apply-form-style.php:103
+#: admin/view/partial/apply-form-style.php:122
+#: admin/view/partial/apply-form-style.php:148
+#: admin/view/partial/apply-form-style.php:167
+#: admin/view/partial/apply-form-style.php:187
+#: admin/view/partial/apply-form-style.php:206
+#: admin/view/partial/apply-form-style.php:233
+#: admin/view/partial/apply-form-style.php:254
+#: admin/view/partial/apply-form-style.php:273
+#: admin/view/partial/apply-form-style.php:299
+#: admin/view/partial/apply-form-style.php:318
 #: admin/view/partial/job-info.php:15 admin/view/partial/job-info.php:72
-#: admin/view/partial/job-info.php:92 admin/view/partial/listing-content.php:23
-#: admin/view/partial/listing-content.php:43
-#: admin/view/partial/listing-content.php:140
-#: admin/view/partial/listing-content.php:158
-#: admin/view/partial/listing-content.php:193
-#: admin/view/partial/listing-style.php:29
-#: admin/view/partial/listing-style.php:48
-#: admin/view/partial/listing-style.php:119
-#: admin/view/partial/listing-style.php:138
-#: admin/view/partial/listing-style.php:165
-#: admin/view/partial/listing-style.php:184
-#: admin/view/partial/listing-style.php:203
-#: admin/view/partial/listing-style.php:224
-#: admin/view/partial/listing-style.php:243
-#: admin/view/partial/listing-style.php:264
-#: admin/view/partial/listing-style.php:283
-#: admin/view/partial/search-content.php:88
-#: admin/view/partial/search-content.php:106
-#: admin/view/partial/single-content.php:27
-#: admin/view/partial/single-content.php:54
-#: admin/view/partial/single-content.php:74
-#: admin/view/partial/single-style.php:87
+#: admin/view/partial/job-info.php:92 admin/view/partial/listing-content.php:24
+#: admin/view/partial/listing-content.php:44
+#: admin/view/partial/listing-content.php:141
+#: admin/view/partial/listing-content.php:159
+#: admin/view/partial/listing-content.php:194
+#: admin/view/partial/listing-style.php:30
+#: admin/view/partial/listing-style.php:49
+#: admin/view/partial/listing-style.php:120
+#: admin/view/partial/listing-style.php:139
+#: admin/view/partial/listing-style.php:166
+#: admin/view/partial/listing-style.php:185
+#: admin/view/partial/listing-style.php:204
+#: admin/view/partial/listing-style.php:225
+#: admin/view/partial/listing-style.php:244
+#: admin/view/partial/listing-style.php:265
+#: admin/view/partial/listing-style.php:284
+#: admin/view/partial/search-content.php:89
+#: admin/view/partial/search-content.php:107
+#: admin/view/partial/single-content.php:28
+#: admin/view/partial/single-content.php:55
+#: admin/view/partial/single-content.php:75
+#: admin/view/partial/single-style.php:88
 msgid "Please Upgrade Now"
 msgstr ""
 
-#: admin/view/general.php:35
+#: admin/view/general.php:36
 msgid "Admin Notification Email"
 msgstr ""
 
-#: admin/view/general.php:40
+#: admin/view/general.php:41
 msgid "An email will sent to this email when a candidate submit an applicaiton."
 msgstr ""
 
-#: admin/view/general.php:45
+#: admin/view/general.php:46
 msgid "Notification Email to User Role"
 msgstr ""
 
-#: admin/view/general.php:58
+#: admin/view/general.php:59
 msgid "Select User Role"
 msgstr ""
 
-#: admin/view/general.php:73
+#: admin/view/general.php:74
 msgid "An email will sent to this role based user emails when a candidate submit an applicaiton."
 msgstr ""
 
-#: admin/view/general.php:78
+#: admin/view/general.php:79
 msgid "Job Page Layout"
 msgstr ""
 
-#: admin/view/general.php:82
+#: admin/view/general.php:83
 msgid "List"
 msgstr ""
 
-#: admin/view/general.php:85
+#: admin/view/general.php:86
 msgid "Grid"
 msgstr ""
 
-#: admin/view/general.php:90
+#: admin/view/general.php:91
 msgid "Use External Application Form"
 msgstr ""
 
-#: admin/view/general.php:99
+#: admin/view/general.php:100
 msgid "External Application Form Shortcode"
 msgstr ""
 
-#: admin/view/general.php:104
+#: admin/view/general.php:105
 msgid "You can use external form instead of default application form. Like WPForms, Contact Form etc."
 msgstr ""
 
-#: admin/view/general.php:109
+#: admin/view/general.php:110
 msgid "Allow External Application URL"
 msgstr ""
 
-#: admin/view/general.php:129
+#: admin/view/general.php:130
 msgid "Hide Jobs When Deadline Over"
 msgstr ""
 
-#: admin/view/general.php:137
+#: admin/view/general.php:138
 msgid "Allow Login to Apply"
 msgstr ""
 
-#: admin/view/general.php:157
+#: admin/view/general.php:159
 msgid "Captcha"
 msgstr ""
 
-#: admin/view/general.php:162
+#: admin/view/general.php:164
 msgid "Site Key"
 msgstr ""
 
-#: admin/view/general.php:170
+#: admin/view/general.php:172
 msgid "Secret Key"
 msgstr ""
 
-#: admin/view/general.php:178
+#: admin/view/general.php:180
 msgid "Enable on Apply Form"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:17
+#: admin/view/partial/apply-form-content.php:18
 msgid "Hide Form Title"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:23
+#: admin/view/partial/apply-form-content.php:24
 msgid "Title Text"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:31
+#: admin/view/partial/apply-form-content.php:32
 msgid "Name Label"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:39
+#: admin/view/partial/apply-form-content.php:40
 msgid "Email Label"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:48
+#: admin/view/partial/apply-form-content.php:49
 msgid "Hide Cover Letter"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:54
+#: admin/view/partial/apply-form-content.php:55
 msgid "Cover Letter Label"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:63
+#: admin/view/partial/apply-form-content.php:64
 msgid "Display Phone"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:81
+#: admin/view/partial/apply-form-content.php:82
 msgid "Phone Label"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:103
+#: admin/view/partial/apply-form-content.php:104
 msgid "Hide User Consent"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:121
+#: admin/view/partial/apply-form-content.php:122
 msgid "User Consent Text"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:141
+#: admin/view/partial/apply-form-content.php:142
 msgid "Submit Button Text"
 msgstr ""
 
-#: admin/view/partial/apply-form-style.php:19
+#: admin/view/partial/apply-form-style.php:20
 msgid "Form Container"
 msgstr ""
 
-#: admin/view/partial/apply-form-style.php:24
-#: admin/view/partial/apply-form-style.php:180
-#: admin/view/partial/apply-form-style.php:226
-#: admin/view/partial/apply-form-style.php:292
-#: admin/view/partial/listing-style.php:23
-#: admin/view/partial/search-style.php:23
-#: admin/view/partial/search-style.php:45
-#: admin/view/partial/search-style.php:74
-#: admin/view/partial/search-style.php:103
-#: admin/view/partial/single-style.php:23
-#: admin/view/partial/single-style.php:52
-#: admin/view/partial/single-style.php:141
-#: admin/view/partial/single-style.php:248
+#: admin/view/partial/apply-form-style.php:25
+#: admin/view/partial/apply-form-style.php:181
+#: admin/view/partial/apply-form-style.php:227
+#: admin/view/partial/apply-form-style.php:293
+#: admin/view/partial/listing-style.php:24
+#: admin/view/partial/search-style.php:24
+#: admin/view/partial/search-style.php:46
+#: admin/view/partial/search-style.php:75
+#: admin/view/partial/search-style.php:104
+#: admin/view/partial/single-style.php:24
+#: admin/view/partial/single-style.php:53
+#: admin/view/partial/single-style.php:142
+#: admin/view/partial/single-style.php:249
 msgid "Background Color"
 msgstr ""
 
-#: admin/view/partial/apply-form-style.php:46
+#: admin/view/partial/apply-form-style.php:47
 msgid "Form Title"
 msgstr ""
 
-#: admin/view/partial/apply-form-style.php:51
-#: admin/view/partial/apply-form-style.php:96
-#: admin/view/partial/apply-form-style.php:141
+#: admin/view/partial/apply-form-style.php:52
+#: admin/view/partial/apply-form-style.php:97
+#: admin/view/partial/apply-form-style.php:142
 msgid "Color"
 msgstr ""
 
-#: admin/view/partial/apply-form-style.php:70
-#: admin/view/partial/apply-form-style.php:115
-#: admin/view/partial/apply-form-style.php:160
-#: admin/view/partial/apply-form-style.php:266
-#: admin/view/partial/listing-style.php:76
-#: admin/view/partial/listing-style.php:98
-#: admin/view/partial/listing-style.php:132
-#: admin/view/partial/listing-style.php:218
-#: admin/view/partial/search-style.php:59
-#: admin/view/partial/search-style.php:88
-#: admin/view/partial/single-style.php:66
-#: admin/view/partial/single-style.php:200
+#: admin/view/partial/apply-form-style.php:71
+#: admin/view/partial/apply-form-style.php:116
+#: admin/view/partial/apply-form-style.php:161
+#: admin/view/partial/apply-form-style.php:267
+#: admin/view/partial/listing-style.php:77
+#: admin/view/partial/listing-style.php:99
+#: admin/view/partial/listing-style.php:133
+#: admin/view/partial/listing-style.php:219
+#: admin/view/partial/search-style.php:60
+#: admin/view/partial/search-style.php:89
+#: admin/view/partial/single-style.php:67
+#: admin/view/partial/single-style.php:201
 msgid "Font Size"
 msgstr ""
 
-#: admin/view/partial/apply-form-style.php:91
+#: admin/view/partial/apply-form-style.php:92
 msgid "Form Label"
 msgstr ""
 
-#: admin/view/partial/apply-form-style.php:136
+#: admin/view/partial/apply-form-style.php:137
 msgid "Form Inputs"
 msgstr ""
 
-#: admin/view/partial/apply-form-style.php:199
-#: admin/view/partial/listing-style.php:42
-#: admin/view/partial/listing-style.php:178
-#: admin/view/partial/search-style.php:30
-#: admin/view/partial/search-style.php:52
-#: admin/view/partial/single-style.php:216
-#: admin/view/partial/single-style.php:255
+#: admin/view/partial/apply-form-style.php:200
+#: admin/view/partial/listing-style.php:43
+#: admin/view/partial/listing-style.php:179
+#: admin/view/partial/search-style.php:31
+#: admin/view/partial/search-style.php:53
+#: admin/view/partial/single-style.php:217
+#: admin/view/partial/single-style.php:256
 msgid "Border Color"
 msgstr ""
 
-#: admin/view/partial/apply-form-style.php:221
-#: admin/view/partial/single-style.php:188
+#: admin/view/partial/apply-form-style.php:222
+#: admin/view/partial/single-style.php:189
 msgid "Apply Button"
 msgstr ""
 
-#: admin/view/partial/apply-form-style.php:247
-#: admin/view/partial/apply-form-style.php:311
-#: admin/view/partial/listing-style.php:69
-#: admin/view/partial/listing-style.php:91
-#: admin/view/partial/listing-style.php:113
-#: admin/view/partial/listing-style.php:197
-#: admin/view/partial/search-style.php:81
-#: admin/view/partial/search-style.php:110
-#: admin/view/partial/single-style.php:59
-#: admin/view/partial/single-style.php:207
-#: admin/view/partial/single-style.php:262
+#: admin/view/partial/apply-form-style.php:248
+#: admin/view/partial/apply-form-style.php:312
+#: admin/view/partial/listing-style.php:70
+#: admin/view/partial/listing-style.php:92
+#: admin/view/partial/listing-style.php:114
+#: admin/view/partial/listing-style.php:198
+#: admin/view/partial/search-style.php:82
+#: admin/view/partial/search-style.php:111
+#: admin/view/partial/single-style.php:60
+#: admin/view/partial/single-style.php:208
+#: admin/view/partial/single-style.php:263
 msgid "Font Color"
 msgstr ""
 
-#: admin/view/partial/apply-form-style.php:287
+#: admin/view/partial/apply-form-style.php:288
 msgid "Apply Button :: Hover"
 msgstr ""
 
@@ -775,309 +775,309 @@ msgstr ""
 msgid "Inactive"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:17
-#: admin/view/partial/single-content.php:48
+#: admin/view/partial/listing-content.php:18
+#: admin/view/partial/single-content.php:49
 msgid "Display Company Name"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:37
-#: admin/view/partial/single-content.php:68
+#: admin/view/partial/listing-content.php:38
+#: admin/view/partial/single-content.php:69
 msgid "Display Company Logo"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:57
-#: admin/view/partial/single-content.php:94
+#: admin/view/partial/listing-content.php:58
+#: admin/view/partial/single-content.php:95
 msgid "Hide Overview"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:59
+#: admin/view/partial/listing-content.php:60
 msgid "img/jobwp-list-hide-overview.webp"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:66
+#: admin/view/partial/listing-content.php:67
 msgid "Word Lengtht"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:74
+#: admin/view/partial/listing-content.php:75
 msgid "Hide Experience"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:81
-#: admin/view/partial/listing-content.php:96
-#: admin/view/partial/listing-content.php:111
-#: admin/view/partial/listing-content.php:126
-#: admin/view/partial/listing-content.php:152
-#: admin/view/partial/listing-content.php:179
-#: admin/view/partial/single-content.php:101
-#: admin/view/partial/single-content.php:121
-#: admin/view/partial/single-content.php:141
-#: admin/view/partial/single-content.php:161
-#: admin/view/partial/single-content.php:181
-#: admin/view/partial/single-content.php:201
-#: admin/view/partial/single-content.php:221
-#: admin/view/partial/single-content.php:241
-#: admin/view/partial/single-content.php:261
-#: admin/view/partial/single-content.php:281
-#: admin/view/partial/single-content.php:301
-#: admin/view/partial/single-content.php:321
+#: admin/view/partial/listing-content.php:82
+#: admin/view/partial/listing-content.php:97
+#: admin/view/partial/listing-content.php:112
+#: admin/view/partial/listing-content.php:127
+#: admin/view/partial/listing-content.php:153
+#: admin/view/partial/listing-content.php:180
+#: admin/view/partial/single-content.php:102
+#: admin/view/partial/single-content.php:122
+#: admin/view/partial/single-content.php:142
+#: admin/view/partial/single-content.php:162
+#: admin/view/partial/single-content.php:182
+#: admin/view/partial/single-content.php:202
+#: admin/view/partial/single-content.php:222
+#: admin/view/partial/single-content.php:242
+#: admin/view/partial/single-content.php:262
+#: admin/view/partial/single-content.php:282
+#: admin/view/partial/single-content.php:302
+#: admin/view/partial/single-content.php:322
 msgid "Label Text"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:89
+#: admin/view/partial/listing-content.php:90
 msgid "Hide Deadline"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:104
+#: admin/view/partial/listing-content.php:105
 msgid "Hide Location"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:119
-#: admin/view/partial/search-content.php:54
+#: admin/view/partial/listing-content.php:120
+#: admin/view/partial/search-content.php:55
 msgid "Hide Job Type"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:134
+#: admin/view/partial/listing-content.php:135
 msgid "Display Read More"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:172
+#: admin/view/partial/listing-content.php:173
 msgid "Hide Total Jobs Found"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:187
+#: admin/view/partial/listing-content.php:188
 msgid "Hide Icon"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:18
+#: admin/view/partial/listing-style.php:19
 msgid "Job Item"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:64
-#: admin/view/partial/single-style.php:47
+#: admin/view/partial/listing-style.php:65
+#: admin/view/partial/single-style.php:48
 msgid "Job Title"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:86
+#: admin/view/partial/listing-style.php:87
 msgid "Job Overview"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:108
+#: admin/view/partial/listing-style.php:109
 msgid "Job Information Label"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:154
+#: admin/view/partial/listing-style.php:155
 msgid "Pagination"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:159
+#: admin/view/partial/listing-style.php:160
 msgid "Background  Color"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:237
-#: admin/view/partial/single-style.php:233
+#: admin/view/partial/listing-style.php:238
+#: admin/view/partial/single-style.php:234
 msgid "Border Radius"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:258
+#: admin/view/partial/listing-style.php:259
 msgid "Hover Background Color"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:277
+#: admin/view/partial/listing-style.php:278
 msgid "Hover Font Color"
 msgstr ""
 
-#: admin/view/partial/search-content.php:17
+#: admin/view/partial/search-content.php:18
 msgid "Hide Search Panel"
 msgstr ""
 
-#: admin/view/partial/search-content.php:26
+#: admin/view/partial/search-content.php:27
 msgid "Hide Keyword"
 msgstr ""
 
-#: admin/view/partial/search-content.php:32
-#: admin/view/partial/search-content.php:46
-#: admin/view/partial/search-content.php:60
-#: admin/view/partial/search-content.php:74
-#: admin/view/partial/search-content.php:100
+#: admin/view/partial/search-content.php:33
+#: admin/view/partial/search-content.php:47
+#: admin/view/partial/search-content.php:61
+#: admin/view/partial/search-content.php:75
+#: admin/view/partial/search-content.php:101
 msgid "Placeholder Text"
 msgstr ""
 
-#: admin/view/partial/search-content.php:40
+#: admin/view/partial/search-content.php:41
 msgid "Hide Category"
 msgstr ""
 
-#: admin/view/partial/search-content.php:68
-#: admin/view/partial/single-content.php:254
+#: admin/view/partial/search-content.php:69
+#: admin/view/partial/single-content.php:255
 msgid "Hide Job Location"
 msgstr ""
 
-#: admin/view/partial/search-content.php:82
-#: admin/view/partial/single-content.php:314
+#: admin/view/partial/search-content.php:83
+#: admin/view/partial/single-content.php:315
 msgid "Hide Job Level"
 msgstr ""
 
-#: admin/view/partial/search-content.php:121
+#: admin/view/partial/search-content.php:122
 msgid "Search Button Text"
 msgstr ""
 
-#: admin/view/partial/search-style.php:18
-#: admin/view/partial/single-style.php:18
+#: admin/view/partial/search-style.php:19
+#: admin/view/partial/single-style.php:19
 msgid "Container"
 msgstr ""
 
-#: admin/view/partial/search-style.php:40
+#: admin/view/partial/search-style.php:41
 msgid "Search Items"
 msgstr ""
 
-#: admin/view/partial/search-style.php:69
+#: admin/view/partial/search-style.php:70
 msgid "Search Button"
 msgstr ""
 
-#: admin/view/partial/search-style.php:98
+#: admin/view/partial/search-style.php:99
 msgid "Search Button :: Hover"
 msgstr ""
 
-#: admin/view/partial/single-content.php:21
+#: admin/view/partial/single-content.php:22
 msgid "Job Title Tag"
 msgstr ""
 
-#: admin/view/partial/single-content.php:114
+#: admin/view/partial/single-content.php:115
 msgid "Hide No. of Vacancies"
 msgstr ""
 
-#: admin/view/partial/single-content.php:134
+#: admin/view/partial/single-content.php:135
 msgid "Hide Specific Skills"
 msgstr ""
 
-#: admin/view/partial/single-content.php:154
+#: admin/view/partial/single-content.php:155
 msgid "Hide Responsible For"
 msgstr ""
 
-#: admin/view/partial/single-content.php:174
+#: admin/view/partial/single-content.php:175
 msgid "Hide Additional Requirements"
 msgstr ""
 
-#: admin/view/partial/single-content.php:194
+#: admin/view/partial/single-content.php:195
 msgid "Hide Job Nature"
 msgstr ""
 
-#: admin/view/partial/single-content.php:214
+#: admin/view/partial/single-content.php:215
 msgid "Hide Educational Requirements"
 msgstr ""
 
-#: admin/view/partial/single-content.php:234
+#: admin/view/partial/single-content.php:235
 msgid "Hide Experience Requirements"
 msgstr ""
 
-#: admin/view/partial/single-content.php:274
+#: admin/view/partial/single-content.php:275
 msgid "Hide Salary"
 msgstr ""
 
-#: admin/view/partial/single-content.php:294
+#: admin/view/partial/single-content.php:295
 msgid "Hide Other Benefits"
 msgstr ""
 
-#: admin/view/partial/single-content.php:334
+#: admin/view/partial/single-content.php:335
 msgid "Hide Apply Procedure"
 msgstr ""
 
-#: admin/view/partial/single-content.php:341
+#: admin/view/partial/single-content.php:342
 msgid "Apply Procedure Title"
 msgstr ""
 
-#: admin/view/partial/single-content.php:349
+#: admin/view/partial/single-content.php:350
 msgid "Apply Procedure Content"
 msgstr ""
 
-#: admin/view/partial/single-content.php:357
+#: admin/view/partial/single-content.php:358
 msgid "Hide Apply Button"
 msgstr ""
 
-#: admin/view/partial/single-content.php:364
+#: admin/view/partial/single-content.php:365
 msgid "Apply Button Text"
 msgstr ""
 
-#: admin/view/partial/single-style.php:30
+#: admin/view/partial/single-style.php:31
 msgid "Margin Top"
 msgstr ""
 
-#: admin/view/partial/single-style.php:37
+#: admin/view/partial/single-style.php:38
 msgid "Margin Bottom"
 msgstr ""
 
-#: admin/view/partial/single-style.php:76
+#: admin/view/partial/single-style.php:77
 msgid "Job Info"
 msgstr ""
 
-#: admin/view/partial/single-style.php:81
+#: admin/view/partial/single-style.php:82
 msgid "Column Width"
 msgstr ""
 
-#: admin/view/partial/single-style.php:94
+#: admin/view/partial/single-style.php:95
 msgid "Left"
 msgstr ""
 
-#: admin/view/partial/single-style.php:96
+#: admin/view/partial/single-style.php:97
 msgid "Right"
 msgstr ""
 
-#: admin/view/partial/single-style.php:103
+#: admin/view/partial/single-style.php:104
 msgid "Label Font Color"
 msgstr ""
 
-#: admin/view/partial/single-style.php:110
+#: admin/view/partial/single-style.php:111
 msgid "Label Font Size"
 msgstr ""
 
-#: admin/view/partial/single-style.php:119
+#: admin/view/partial/single-style.php:120
 msgid "Info Font Color"
 msgstr ""
 
-#: admin/view/partial/single-style.php:126
+#: admin/view/partial/single-style.php:127
 msgid "Info Font Size"
 msgstr ""
 
-#: admin/view/partial/single-style.php:136
+#: admin/view/partial/single-style.php:137
 msgid "How to Apply"
 msgstr ""
 
-#: admin/view/partial/single-style.php:148
+#: admin/view/partial/single-style.php:149
 msgid "Title Font Color"
 msgstr ""
 
-#: admin/view/partial/single-style.php:155
+#: admin/view/partial/single-style.php:156
 msgid "Title Font Size"
 msgstr ""
 
-#: admin/view/partial/single-style.php:164
+#: admin/view/partial/single-style.php:165
 msgid "Title Border Color"
 msgstr ""
 
-#: admin/view/partial/single-style.php:171
+#: admin/view/partial/single-style.php:172
 msgid "Content Color"
 msgstr ""
 
-#: admin/view/partial/single-style.php:178
+#: admin/view/partial/single-style.php:179
 msgid "Content Size"
 msgstr ""
 
-#: admin/view/partial/single-style.php:193
+#: admin/view/partial/single-style.php:194
 msgid "Button Color"
 msgstr ""
 
-#: admin/view/partial/single-style.php:223
+#: admin/view/partial/single-style.php:224
 msgid "Padding"
 msgstr ""
 
-#: admin/view/partial/single-style.php:227
+#: admin/view/partial/single-style.php:228
 msgid "Height"
 msgstr ""
 
-#: admin/view/partial/single-style.php:229
+#: admin/view/partial/single-style.php:230
 msgid "Width"
 msgstr ""
 
-#: admin/view/partial/single-style.php:243
+#: admin/view/partial/single-style.php:244
 msgid "Apply Button: Hover"
 msgstr ""
 
@@ -1101,51 +1101,51 @@ msgstr ""
 msgid "The file cannot be copied in the folder "
 msgstr ""
 
-#: core/job_application.php:110
+#: core/job_application.php:139
 msgid "Career - New Application"
 msgstr ""
 
-#: core/job_application.php:111
+#: core/job_application.php:140
 msgid "Applicant: "
 msgstr ""
 
-#: core/job_application.php:112
+#: core/job_application.php:141
 msgid "Applied For: "
 msgstr ""
 
-#: core/job_application.php:113
+#: core/job_application.php:142
 msgid "Email: "
 msgstr ""
 
-#: core/job_application.php:116
+#: core/job_application.php:145
 msgid "Phone: "
 msgstr ""
 
-#: core/job_application.php:120
+#: core/job_application.php:149
 msgid "Cover Letter: "
 msgstr ""
 
-#: core/job_application.php:157
+#: core/job_application.php:186
 msgid "Hi"
 msgstr ""
 
-#: core/job_application.php:158
+#: core/job_application.php:187
 msgid "Thanks for applying to our"
 msgstr ""
 
-#: core/job_application.php:158
+#: core/job_application.php:187
 msgid "position"
 msgstr ""
 
-#: core/job_application.php:159
+#: core/job_application.php:188
 msgid "We'll review your application and be sure to get back to you if there might be a fit!"
 msgstr ""
 
-#: core/job_application.php:160
+#: core/job_application.php:189
 msgid "Best"
 msgstr ""
 
-#: core/job_application.php:174
+#: core/job_application.php:203
 msgid "Thank you for your application"
 msgstr ""
 
