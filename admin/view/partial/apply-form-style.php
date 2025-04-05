@@ -12,6 +12,7 @@ foreach ( $jobwpApplyFormStyle as $fs_name => $fs_value ) {
 }
 ?>
 <form name="jobwp_apply_form_style_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-apply-form-style-form">
+<?php wp_nonce_field( 'jobwp_apply_form_style_action', 'jobwp_apply_form_style_nonce' ); ?>
     <table class="jobwp-single-style-settings-table">
         <!-- Container -->
         <tr>

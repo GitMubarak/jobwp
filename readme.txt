@@ -286,6 +286,7 @@ Now go to your detail page and refresh it.
 * CSRF checking applied to the Single Styles settings page
 * CSRF checking applied to the Email settings page
 * CSRF checking applied to the Apply Form Content settings page
+* CSRF checking applied to the Apply Form Styles settings page
 
 = 2.3.9 =
 * Updated Freemius SDK to the latest version

@@ -353,9 +353,13 @@ class JobWp_Admin
 
 		// Style
 		if ( isset( $_POST['updateApplyFormStyle'] ) ) {
-
-			$jobwpApplyFormMessage = $this->jobwp_set_apply_form_style_settings( $_POST );
-
+			if ( ! isset( $_POST['jobwp_apply_form_style_nonce'] ) 
+				|| ! wp_verify_nonce( $_POST['jobwp_apply_form_style_nonce'], 'jobwp_apply_form_style_action' ) ) {
+				print 'Sorry, your nonce did not verify.';
+				exit;
+			} else {
+				$jobwpApplyFormMessage = $this->jobwp_set_apply_form_style_settings( $_POST );
+			}
 		}
 
 		$jobwpApplyFormStyle = $this->jobwp_get_apply_form_style_settings();
