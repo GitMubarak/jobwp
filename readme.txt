@@ -280,7 +280,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Job - Pro
 [//]: # fs_premium_only_end
-* Hide 
+* Freemius SDK upgraded to 2.12.0
 
 = 2.4.0 =
 * CSRF checking applied to the General settings page
