@@ -278,7 +278,7 @@ Now go to your detail page and refresh it.
 
 = 2.4.1 =
 [//]: # fs_premium_only_begin
-* Job - Pro
+* Search items border radius option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.12.0
 

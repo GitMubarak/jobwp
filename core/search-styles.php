@@ -83,6 +83,11 @@ trait Jobwp_Search_Styles_Settings
                 'type'      => 'number',
                 'default'   => '12',
             ],
+            [
+                'name'      => 'jobwp_search_item_border_radius',
+                'type'      => 'number',
+                'default'   => '0',
+            ],
         ];
     }
 }

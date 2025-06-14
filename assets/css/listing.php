@@ -73,4 +73,14 @@ if ( ! defined( 'ABSPATH' ) ) {
     font-size: <?php esc_html_e( $jobwp_pagination_font_size ); ?>px;
     border-radius: <?php esc_html_e( $jobwp_pagination_border_radius ); ?>px;
   }
+  <?php
+  if ( job_fs()->is_plan__premium_only('pro', true) ) {
+    ?>
+    .jobwp-search-container .jobwp-search-item input[type="text"],
+    .jobwp-search-container .jobwp-search-item select {
+      border-radius: <?php esc_attr_e( $jobwp_search_item_border_radius ); ?>px;
+    }
+    <?php
+  }
+  ?>
 </style>

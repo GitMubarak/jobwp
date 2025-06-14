@@ -64,6 +64,27 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
                 <code>px</code>
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Border Radius', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="number" class="small-text" min="0" max="50" name="jobwp_search_item_border_radius" id="jobwp_search_item_border_radius" value="<?php esc_attr_e( $jobwp_search_item_border_radius ); ?>">
+                    <code>px</code>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
         <!-- Search Button -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">
