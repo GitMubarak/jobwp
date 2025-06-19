@@ -279,8 +279,10 @@ Now go to your detail page and refresh it.
 = 2.4.1 =
 [//]: # fs_premium_only_begin
 * Search items border radius option added - Pro
+* Doc file type allowed in the application form - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.12.0
+* Code optimized
 
 = 2.4.0 =
 * CSRF checking applied to the General settings page

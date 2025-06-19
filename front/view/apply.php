@@ -94,7 +94,7 @@ if ( ! $jobwp_hide_apply_form_title ) {
                 }
 
                 if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    _e('pdf, docx', JOBWP_TXT_DOMAIN); 
+                    _e('pdf, docx, doc', JOBWP_TXT_DOMAIN); 
                 }
                 ?>
             </span>
