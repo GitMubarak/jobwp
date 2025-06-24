@@ -280,7 +280,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Search - Pro
 [//]: # fs_premium_only_end
-* Freemius
+* Minor css fixed
 
 = 2.4.1 =
 [//]: # fs_premium_only_begin

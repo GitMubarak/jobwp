@@ -165,8 +165,7 @@ div.jobwp-list-bottom-item,
 .jobwp-bottom {
     border: 0px solid #000;
     display: block;
-    min-height: 37px;
-    margin-bottom: 5px;
+    min-height: 0px;
 }
 
 .pull-left {
@@ -216,13 +215,18 @@ div.jobwp-list-bottom-item i {
 
 .jobwp-listing-body-container.grid .jobwp-item .jobwp-bottom {
     border: 0px solid #000;
-    display: inline-block;
+    display: block;
     width: 100%;
 }
 
 .jobwp-listing-body-container.grid .jobwp-item .jobwp-list-bottom-item {
     display: block;
     width: 100%;
+    margin-bottom: 5px;
+}
+
+.jobwp-listing-body-container .jobwp-item .jobwp-list-bottom-item {
+    margin-bottom: 5px;
 }
 
 .jobwp-listing-body-container.grid .jobwp-item .pull-right {
