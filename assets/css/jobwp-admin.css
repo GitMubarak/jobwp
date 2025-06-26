@@ -6,6 +6,7 @@
 }
 
 table.jobwp-settings-table,
+table.jobwp-listing-style-settings-table,
 table.jobwp-single-style-settings-table {
     width: 100%;
 }
@@ -35,6 +36,11 @@ table.jobwp-single-style-settings-table tr th {
 }
 
 table.jobwp-settings-table tr th {
+    text-align: right;
+}
+
+table.jobwp-listing-style-settings-table tr th {
+    max-width: 100px;
     text-align: right;
 }
 

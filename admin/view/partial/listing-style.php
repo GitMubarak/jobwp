@@ -15,7 +15,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
     <table class="jobwp-listing-style-settings-table">
         <!-- Job Item -->
         <tr>
-            <th scope="row" colspan="6">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><span><?php _e('Job Item', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -61,7 +61,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <!-- Title -->
         <tr>
-            <th scope="row" colspan="6">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><span><?php _e('Job Title', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -83,7 +83,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <!-- Overview -->
         <tr>
-            <th scope="row" colspan="6">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><span><?php _e('Job Overview', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -105,7 +105,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <!-- Job Info -->
         <tr>
-            <th scope="row" colspan="6">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><span><?php _e('Job Information Label', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
@@ -151,7 +151,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <!-- Pagination -->
         <tr>
-            <th scope="row" colspan="6">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><span><?php _e('Pagination', JOBWP_TXT_DOMAIN); ?></span><hr>
             </th>
         </tr>
