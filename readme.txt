@@ -278,7 +278,7 @@ Now go to your detail page and refresh it.
 
 = 2.4.2 =
 [//]: # fs_premium_only_begin
-* Search - Pro
+* Featured job slider overview format fixed - Pro
 [//]: # fs_premium_only_end
 * Minor css fixed
 

@@ -74,10 +74,11 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
             color: #666;
         }
         .jobwp-featured-wrapper-slide .jobwp-featured-slide-item .jobwp-featured-comp-name {
-            color: #333;
-            margin-top: 10px;
-            font-size: 16px;
             line-height: 26px;
+            margin: 5px 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: #333333;
         }
         .jobwp-featured-wrapper-slide .jobwp-featured-slide-item .jobwp-featured-overview,
         .jobwp-featured-wrapper-slide .jobwp-featured-slide-item .jobwp-featured-overview p {
