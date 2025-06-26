@@ -90,10 +90,16 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
                     if ( ! $jobwp_list_display_experience ) {
                         ?>
                         <div class="jobwp-featured-meta experience">
-                            <i class="fa fa-briefcase" aria-hidden="true"></i>
-                            <span class="jobwp-featured-meta-title"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?>:</span>
+                            <?php
+                            if ( ! $jobwp_display_listing_icon ) {
+                                ?>
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                <?php
+                            }
+                            ?>
+                            <span class="jobwp-featured-meta-title"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?></span>
                             <span class="jobwp-featured-meta-value">
-                                <?php esc_html_e( $jobwp_experience ); ?> <?php _e('Years', JOBWP_TXT_DOMAIN); ?>
+                                <?php esc_html_e( $jobwp_experience ); ?>
                             </span>
                         </div>
                         <?php
@@ -102,8 +108,14 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
                     if ( ! $jobwp_list_display_deadline ) {
                         ?>
                         <div class="jobwp-featured-meta deadline">
-                            <i class="fa fa-calendar-days" aria-hidden="true"></i>
-                            <span class="jobwp-featured-meta-title"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?>:</span>
+                            <?php
+                            if ( ! $jobwp_display_listing_icon ) {
+                                ?>
+                                <i class="fa fa-calendar-days" aria-hidden="true"></i>
+                                <?php
+                            }
+                            ?>
+                            <span class="jobwp-featured-meta-title"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?></span>
                             <span class="jobwp-featured-meta-value">
                                 <?php esc_html_e( $jobwpDeadline ); ?>
                             </span>
@@ -113,9 +125,15 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
                     if ( ! $jobwp_list_display_location ) {
                         ?>
-                        <div class="jobwp-featured-meta deadline">
-                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                            <span class="jobwp-featured-meta-title"><?php esc_html_e( $jobwp_list_loc_lbl_txt ); ?>:</span>
+                        <div class="jobwp-featured-meta location">
+                            <?php
+                            if ( ! $jobwp_display_listing_icon ) {
+                                ?>
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <?php
+                            }
+                            ?>
+                            <span class="jobwp-featured-meta-title"><?php esc_html_e( $jobwp_list_loc_lbl_txt ); ?></span>
                             <span class="jobwp-featured-meta-value">
                                 <?php
                                 if ( ! empty( $jobs_location ) ) {
@@ -124,6 +142,32 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
                                         $jobs_location_arr[] = $location->name . '';
                                     }
                                     echo implode( ', ', $jobs_location_arr );   
+                                }
+                                ?>
+                            </span>
+                        </div>
+                        <?php
+                    }
+
+                    if ( ! $jobwp_list_display_jtype ) {
+                        ?>
+                        <div class="jobwp-featured-meta job-type">
+                            <?php
+                            if ( ! $jobwp_display_listing_icon ) {
+                                ?>
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <?php
+                            }
+                            ?>
+                            <span class="jobwp-featured-meta-title"><?php esc_html_e( $jobwp_list_job_type_lbl_txt ); ?></span>
+                            <span class="jobwp-featured-meta-value">
+                                <?php
+                                if ( ! empty( $jobs_nature ) ) {
+                                    $jobs_nature_arr = array();
+                                    foreach( $jobs_nature as $type ) {
+                                        $jobs_nature_arr[] = $type->name . '';
+                                    }
+                                    echo implode( ', ', $jobs_nature_arr );   
                                 }
                                 ?>
                             </span>

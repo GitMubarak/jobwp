@@ -279,6 +279,7 @@ Now go to your detail page and refresh it.
 = 2.4.2 =
 [//]: # fs_premium_only_begin
 * Featured job slider overview format fixed - Pro
+* Job type info added to featured job - Pro
 [//]: # fs_premium_only_end
 * Minor css fixed
 

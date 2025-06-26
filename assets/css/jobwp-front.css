@@ -176,7 +176,8 @@ div.jobwp-list-bottom-item,
     float: right;
 }
 
-div.jobwp-list-bottom-item i {
+div.jobwp-list-bottom-item i,
+div.jobwp-featured-meta i {
     border: 2px solid #EAEAEA;
     border-radius: 50%;
     background: #FAFAFA;

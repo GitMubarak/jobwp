@@ -99,7 +99,6 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
             margin-left: 2px;
             color: <?php esc_html_e( $jobwp_listing_info_font_color ); ?>;
             font-size: <?php esc_html_e( $jobwp_listing_info_font_size ); ?>px;
-            line-height: <?php esc_html_e( $jobwp_listing_info_font_size + 10 ); ?>px;
         }
         .jobwp-featured-wrapper-slide .jobwp-featured-slide-item .jobwp-featured-meta span.jobwp-featured-meta-title {
             font-weight: 700;
