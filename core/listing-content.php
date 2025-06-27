@@ -123,6 +123,11 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'jobwp_list_salary_lbl_txt',
+                'type'      => 'text',
+                'default'   => 'Salary',
+            ],
         ];
     }
 }

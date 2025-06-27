@@ -222,7 +222,7 @@ if ( $jobwpJobs->have_posts() ) {
                     if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
                         if ( $jobwp_list_display_salary ) {
-                            
+
                             if ( ! empty( $bo_job_salary ) ) {
                             ?>
                             <div class="jobwp-list-bottom-item pull-left">
@@ -233,7 +233,7 @@ if ( $jobwpJobs->have_posts() ) {
                                     <?php
                                 }
                                 ?>
-                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?></strong>
+                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_salary_lbl_txt ); ?></strong>
                                 <span class="ng-binding">
                                     <?php echo wp_kses_post( $bo_job_salary ); ?>
                                 </span>

@@ -158,7 +158,19 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
             </th>
             <td>
-                <input type="text" name="jobwp_list_job_type_lbl_txt" id="jobwp_list_job_type_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_job_type_lbl_txt ); ?>" />
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="text" name="jobwp_list_salary_lbl_txt" id="jobwp_list_salary_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_salary_lbl_txt ); ?>" />
+                    <?php
+                }
+                ?>
             </td>
         </tr>
         <tr>
