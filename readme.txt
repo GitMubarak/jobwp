@@ -280,6 +280,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Featured job slider overview format fixed - Pro
 * Job type info added to featured job - Pro
+* Display salary in listing page - Pro
 [//]: # fs_premium_only_end
 * Minor css fixed
 

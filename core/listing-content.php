@@ -118,6 +118,11 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Jobs Found',
             ],
+            [
+                'name'      => 'jobwp_list_display_salary',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }
