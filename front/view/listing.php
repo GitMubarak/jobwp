@@ -40,6 +40,7 @@ if ( $jobwpJobs->have_posts() ) {
             $jobwp_experience       = get_post_meta( $post->ID, 'jobwp_experience', true );
             $jobwp_deadline         = get_post_meta( $post->ID, 'jobwp_deadline', true );
             $bo_job_salary          = get_post_meta( $post->ID, 'jobwp_salary', true );
+            $bo_job_responsibilities = get_post_meta( $post->ID, 'jobwp_responsibilities', true );
             $jobs_location          = wp_get_post_terms( $post->ID, 'jobs_location', array('fields' => 'all') );
             $jobs_nature            = wp_get_post_terms( $post->ID, 'jobs_nature', array('fields' => 'all') );
             $jobwpDateDiff          = date_diff( date_create( date('Y-m-d') ), date_create( $jobwp_deadline ) );
@@ -236,6 +237,27 @@ if ( $jobwpJobs->have_posts() ) {
                                 <strong class="primary-color"><?php esc_html_e( $jobwp_list_salary_lbl_txt ); ?></strong>
                                 <span class="ng-binding">
                                     <?php echo wp_kses_post( $bo_job_salary ); ?>
+                                </span>
+                            </div>
+                            <?php
+                            }
+                        }
+
+                        if ( $jobwp_list_display_responsibility ) {
+
+                            if ( ! empty( $bo_job_responsibilities ) ) {
+                            ?>
+                            <div class="jobwp-list-bottom-item pull-right">
+                                <?php
+                                if ( ! $jobwp_display_listing_icon ) {
+                                    ?>
+                                    <i class="fa-solid fa-list-check"></i>
+                                    <?php
+                                }
+                                ?>
+                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_respo_lbl_txt ); ?></strong>
+                                <span class="ng-binding">
+                                    <?php echo wp_kses_post( $bo_job_responsibilities ); ?>
                                 </span>
                             </div>
                             <?php

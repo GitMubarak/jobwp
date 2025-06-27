@@ -173,6 +173,44 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 ?>
             </td>
         </tr>
+        <tr class="jobwp_list_display_responsibility">
+            <th scope="row">
+                <label for="jobwp_list_display_responsibility"><?php _e('Display Responsibility', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="checkbox" name="jobwp_list_display_responsibility" class="jobwp_list_display_responsibility" id="jobwp_list_display_responsibility" value="1" <?php checked( $jobwp_list_display_responsibility, 1 ); ?> />
+                    <?php
+                }
+                ?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Label Text', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="text" name="jobwp_list_respo_lbl_txt" id="jobwp_list_respo_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_respo_lbl_txt ); ?>" />
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
         <tr>
             <td colspan="4"><hr><hr></td>
         </tr>

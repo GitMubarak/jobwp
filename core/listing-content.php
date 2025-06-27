@@ -128,6 +128,16 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Salary',
             ],
+            [
+                'name'      => 'jobwp_list_display_responsibility',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_list_respo_lbl_txt',
+                'type'      => 'text',
+                'default'   => 'Responsibility',
+            ],
         ];
     }
 }

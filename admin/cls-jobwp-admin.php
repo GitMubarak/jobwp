@@ -604,7 +604,7 @@ class JobWp_Admin
 
 		add_meta_box(
 			'jobwp-metabox-responsibilities',
-			__( 'Responsibilities:', JOBWP_TXT_DOMAIN ),
+			__( 'Responsibilities / Roles', JOBWP_TXT_DOMAIN ),
 			array( $this, 'jobwp_metabox_responsibilities' ),
 			'jobs',
 			'normal',
