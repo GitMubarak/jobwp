@@ -81,6 +81,52 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
                 <code>px</code>
             </td>
         </tr>
+        <!-- Company -->
+        <tr>
+            <th scope="row" colspan="6" style="text-align: left;">
+                <hr><span><?php _e('Company', JOBWP_TXT_DOMAIN); ?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_list_com_font_color" id="jobwp_list_com_font_color" value="<?php esc_attr_e( $jobwp_list_com_font_color ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input type="number" class="small-text" min="11" max="50" name="jobwp_list_com_font_size" id="jobwp_list_com_font_size" value="<?php esc_attr_e( $jobwp_list_com_font_size ); ?>">
+                    <code>px</code>
+					<?php
+				}
+				?>
+            </td>
+        </tr>
         <!-- Overview -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">

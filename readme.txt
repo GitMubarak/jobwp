@@ -283,6 +283,8 @@ Now go to your detail page and refresh it.
 * Display salary in the listing page - Pro
 * Display responsibility in the listing page - Pro
 * Display vacancy in the listing page - Pro
+* List page company font color option added - Pro
+* List page company font size option added - pro
 [//]: # fs_premium_only_end
 * Job title word length option added
 * Minor css fixed

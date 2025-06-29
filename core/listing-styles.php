@@ -108,6 +108,16 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'number',
                 'default'   => '0',
             ],
+            [
+                'name'      => 'jobwp_list_com_font_color',
+                'type'      => 'text',
+                'default'   => '#333333',
+            ],
+            [
+                'name'      => 'jobwp_list_com_font_size',
+                'type'      => 'number',
+                'default'   => '15',
+            ],
         ];
     }
 }
