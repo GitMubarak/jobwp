@@ -20,6 +20,7 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
                 $jobwp_experience       = get_post_meta( $post->ID, 'jobwp_experience', true );
                 $jobwp_deadline         = get_post_meta( $post->ID, 'jobwp_deadline', true );
+                $bo_job_salary          = get_post_meta( $post->ID, 'jobwp_salary', true );
                 $jobs_location          = wp_get_post_terms( $post->ID, 'jobs_location', array('fields' => 'all') );
                 $jobs_nature            = wp_get_post_terms( $post->ID, 'jobs_nature', array('fields' => 'all') );
                 $jobwpDateDiff          = date_diff( date_create( date('Y-m-d') ), date_create( $jobwp_deadline ) );
@@ -160,6 +161,27 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
                             </span>
                         </div>
                         <?php
+                    }
+
+                    if ( 'show' === $salary ) {
+
+                        if ( ! empty( $bo_job_salary ) ) {
+                        ?>
+                        <div class="jobwp-featured-meta job-type">
+                            <?php
+                            if ( ! $jobwp_display_listing_icon ) {
+                                ?>
+                                <i class="fa-solid fa-sack-dollar"></i>
+                                <?php
+                            }
+                            ?>
+                            <span class="jobwp-featured-meta-title"><?php esc_html_e( $jobwp_list_salary_lbl_txt ); ?></span>
+                            <span class="jobwp-featured-meta-value">
+                                <?php echo wp_kses_post( $bo_job_salary ); ?>
+                            </span>
+                        </div>
+                        <?php
+                        }
                     }
                     ?>
                 </div>

@@ -286,6 +286,7 @@ Now go to your detail page and refresh it.
 * List page company font color option added - Pro
 * List page company font size option added - pro
 * Featured job title length shortcode option added - Pro
+* Featured job salary show hide shortcode option added - Pro
 [//]: # fs_premium_only_end
 * Job title word length option added
 * Minor css fixed
