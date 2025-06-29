@@ -52,30 +52,17 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
                         }
                     }
                     ?>
-                    <h3 class="jobwp-featured-title"><a href="<?php the_permalink(); ?>" class="jobwp-featured-title-a"><?php the_title(); ?></a></h3>
+                    <h3 class="jobwp-featured-title">
+                        <a href="<?php the_permalink(); ?>" class="jobwp-featured-title-a">
+                            <?php echo wp_trim_words( get_the_title(), $title_length, '...' ); ?>
+                        </a>
+                    </h3>
                     <?php
                     if ( $jobwp_display_company_name ) {
                         ?>
                         <div class="jobwp-featured-comp-name"><?php esc_html_e( $jobwp_company ); ?></div>
                         <?php
                     }
-
-                    /*
-                    if ( ! $jobwp_list_display_overview ) {
-                        ?>
-                        <div class="jobwp-featured-overview">
-                            <?php 
-                            $jobwp_featured_desc = strip_tags( get_the_content() );
-                            if ( strlen( $jobwp_featured_desc ) > 150 ) {
-                                echo substr( $jobwp_featured_desc, 0, 150 ) . '...';
-                            } else {
-                                echo $jobwp_featured_desc;
-                            }
-                            ?>
-                        </div>
-                        <?php
-                    }
-                    */
 
                     if ( ! $jobwp_list_display_overview ) {
                         ?>

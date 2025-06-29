@@ -32,6 +32,7 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
     // Shortcoded Options
     $jobwp_company  = isset( $attr['company'] ) ? $attr['company'] : '';
+    $title_length  = isset( $attr['title_length'] ) ? $attr['title_length'] : 10;
 
     // Main Query Arguments
     $jobwpQueryArr = array(
