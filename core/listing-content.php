@@ -138,6 +138,16 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Responsibility',
             ],
+            [
+                'name'      => 'jobwp_list_display_vacancy',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_list_vacancy_lbl_txt',
+                'type'      => 'text',
+                'default'   => 'Vacancy',
+            ],
         ];
     }
 }

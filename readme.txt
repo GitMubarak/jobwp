@@ -282,6 +282,7 @@ Now go to your detail page and refresh it.
 * Job type info added to featured job - Pro
 * Display salary in the listing page - Pro
 * Display responsibility in the listing page - Pro
+* Display vacancy in the listing page - Pro
 [//]: # fs_premium_only_end
 * Minor css fixed
 

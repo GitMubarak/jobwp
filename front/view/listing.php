@@ -41,6 +41,7 @@ if ( $jobwpJobs->have_posts() ) {
             $jobwp_deadline         = get_post_meta( $post->ID, 'jobwp_deadline', true );
             $bo_job_salary          = get_post_meta( $post->ID, 'jobwp_salary', true );
             $bo_job_responsibilities = get_post_meta( $post->ID, 'jobwp_responsibilities', true );
+            $bo_vacancies           = get_post_meta( $post->ID, 'jobwp_vacancies', true );
             $jobs_location          = wp_get_post_terms( $post->ID, 'jobs_location', array('fields' => 'all') );
             $jobs_nature            = wp_get_post_terms( $post->ID, 'jobs_nature', array('fields' => 'all') );
             $jobwpDateDiff          = date_diff( date_create( date('Y-m-d') ), date_create( $jobwp_deadline ) );
@@ -258,6 +259,33 @@ if ( $jobwpJobs->have_posts() ) {
                                 <strong class="primary-color"><?php esc_html_e( $jobwp_list_respo_lbl_txt ); ?></strong>
                                 <span class="ng-binding">
                                     <?php echo wp_kses_post( $bo_job_responsibilities ); ?>
+                                </span>
+                            </div>
+                            <?php
+                            }
+                        }
+                    }
+                    ?>
+                </div>
+                <div class="jobwp-bottom clear">
+                    <?php
+                    if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
+                        if ( $jobwp_list_display_vacancy ) {
+
+                            if ( ! empty( $bo_vacancies ) ) {
+                            ?>
+                            <div class="jobwp-list-bottom-item pull-left">
+                                <?php
+                                if ( ! $jobwp_display_listing_icon ) {
+                                    ?>
+                                    <i class="fa-solid fa-users"></i>
+                                    <?php
+                                }
+                                ?>
+                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_vacancy_lbl_txt ); ?></strong>
+                                <span class="ng-binding">
+                                    <?php echo wp_kses_post( $bo_vacancies ); ?>
                                 </span>
                             </div>
                             <?php
