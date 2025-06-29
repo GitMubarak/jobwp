@@ -284,6 +284,7 @@ Now go to your detail page and refresh it.
 * Display responsibility in the listing page - Pro
 * Display vacancy in the listing page - Pro
 [//]: # fs_premium_only_end
+* Job title word length option added
 * Minor css fixed
 
 = 2.4.1 =

@@ -83,7 +83,11 @@ if ( $jobwpJobs->have_posts() ) {
                     }
                     ?>
                     <div class="jobwp-top-left">
-                        <h3 class="jobwp-job-title"><a href="<?php the_permalink(); ?>" class="jobwp-job-title-a"><?php the_title(); ?></a></h3>
+                        <h3 class="jobwp-job-title">
+                            <a href="<?php the_permalink(); ?>" class="jobwp-job-title-a">
+                                <?php echo wp_trim_words( get_the_title(), $jobwp_list_title_length, '...' ); ?>
+                            </a>
+                        </h3>
                         <?php
                         if ( job_fs()->is_plan__premium_only('pro', true) ) {
                             if ( $jobwp_display_company_name ) {

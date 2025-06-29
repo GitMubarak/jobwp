@@ -13,6 +13,15 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
 <form name="jobwp_listing_content_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-listing-content-settings-form">
 <?php wp_nonce_field( 'jobwp_listing_content_action', 'jobwp_listing_content_nonce' ); ?>
     <table class="jobwp-listing-content-settings-table">
+        <!-- Title Word Lengtht -->
+        <tr>
+            <th scope="row">
+                <label for="jobwp_list_title_length"><?php _e('Title Word Length', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input type="number" name="jobwp_list_title_length" class="medium-text" min="1" max="150" step="1" value="<?php esc_attr_e( $jobwp_list_title_length ); ?>">
+            </td>
+        </tr>
         <tr class="jobwp_display_company_name">
             <th scope="row">
                 <label for="jobwp_display_company_name"><?php _e('Display Company Name', JOBWP_TXT_DOMAIN); ?>?</label>
@@ -65,7 +74,7 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                     <?php echo $jobwp_list_display_overview ? 'checked' : ''; ?> >
             </td>
             <th scope="row">
-                <label for="wbg_cat_label_txt"><?php _e('Word Lengtht', JOBWP_TXT_DOMAIN); ?></label>
+                <label for="wbg_cat_label_txt"><?php _e('Word Length', JOBWP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="number" name="jobwp_list_overview_length" class="medium-text" min="1" max="150" step="1" value="<?php esc_attr_e( $jobwp_list_overview_length ); ?>">

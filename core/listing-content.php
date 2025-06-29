@@ -148,6 +148,11 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Vacancy',
             ],
+            [
+                'name'      => 'jobwp_list_title_length',
+                'type'      => 'number',
+                'default'   => 10,
+            ],
         ];
     }
 }
