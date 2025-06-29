@@ -76,9 +76,9 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
         .jobwp-featured-wrapper-slide .jobwp-featured-slide-item .jobwp-featured-comp-name {
             line-height: 26px;
             margin: 5px 0;
-            font-size: 15px;
             font-weight: 600;
-            color: #333333;
+            color: <?php esc_html_e( $jobwp_list_com_font_color ); ?>;
+            font-size: <?php esc_html_e( $jobwp_list_com_font_size ); ?>px;
         }
         .jobwp-featured-wrapper-slide .jobwp-featured-slide-item .jobwp-featured-overview,
         .jobwp-featured-wrapper-slide .jobwp-featured-slide-item .jobwp-featured-overview p {
