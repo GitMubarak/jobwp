@@ -163,7 +163,7 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
                         <?php
                     }
 
-                    if ( 'show' === $salary ) {
+                    if ( 'show' === $display_salary ) {
 
                         if ( ! empty( $bo_job_salary ) ) {
                         ?>
