@@ -334,6 +334,15 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 ?>
             </td>
         </tr>
+        <tr class="jobwp_hide_pagination">
+            <th scope="row">
+                <label for="jobwp_hide_pagination"><?php _e('Hide Pagination', JOBWP_TXT_DOMAIN); ?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="jobwp_hide_pagination" class="jobwp_hide_pagination" id="jobwp_hide_pagination" value="1" 
+                    <?php checked( $jobwp_hide_pagination, 1 ); ?> />  
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit">

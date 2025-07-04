@@ -153,6 +153,11 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'number',
                 'default'   => 10,
             ],
+            [
+                'name'      => 'jobwp_hide_pagination',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

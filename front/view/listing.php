@@ -303,25 +303,31 @@ if ( $jobwpJobs->have_posts() ) {
         }
         ?>
     </div>
-    <div class="jobwp-pagination">
-        <?php
-        if ( $jobwpJobs->max_num_pages > 1 ) {
-            $jobwpPaginateBig = 999999999; // need an unlikely integer
-            $jobwpPaginateArgs = array(
-                'base'      => str_replace( $jobwpPaginateBig, '%#%', esc_url( get_pagenum_link( $jobwpPaginateBig ) ) ),
-                'format'    => '?page=%#%',
-                'total'     => $jobwpJobs->max_num_pages,
-                'current'   => max( 1, $jobwp_paged ),
-                'end_size'  => 1,
-                'mid_size'  => 2,
-                'prev_text' => __('« '),
-                'next_text' => __(' »'),
-                'type'      => 'list',
-            );
-            echo paginate_links( $jobwpPaginateArgs );
-        }
+    <?php
+    if ( ! $jobwp_hide_pagination ) {
         ?>
-    </div>
+        <div class="jobwp-pagination">
+            <?php
+            if ( $jobwpJobs->max_num_pages > 1 ) {
+                $jobwpPaginateBig = 999999999; // need an unlikely integer
+                $jobwpPaginateArgs = array(
+                    'base'      => str_replace( $jobwpPaginateBig, '%#%', esc_url( get_pagenum_link( $jobwpPaginateBig ) ) ),
+                    'format'    => '?page=%#%',
+                    'total'     => $jobwpJobs->max_num_pages,
+                    'current'   => max( 1, $jobwp_paged ),
+                    'end_size'  => 1,
+                    'mid_size'  => 2,
+                    'prev_text' => __('« '),
+                    'next_text' => __(' »'),
+                    'type'      => 'list',
+                );
+                echo paginate_links( $jobwpPaginateArgs );
+            }
+            ?>
+        </div>
+        <?php
+    }
+    ?>
     <?php
     wp_reset_postdata();
 }   

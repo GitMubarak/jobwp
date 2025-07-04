@@ -289,6 +289,7 @@ Now go to your detail page and refresh it.
 * Featured job salary show hide shortcode option added - Pro
 [//]: # fs_premium_only_end
 * Job title word length option added
+* Pagination hide option added
 * Minor css fixed
 
 = 2.4.1 =
