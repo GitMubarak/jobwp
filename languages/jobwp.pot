@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-04-05 20:33+0600\n"
+"POT-Creation-Date: 2025-07-05 03:56+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -66,7 +66,7 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:384 admin/cls-jobwp-admin.php:953
+#: admin/cls-jobwp-admin.php:384 admin/cls-jobwp-admin.php:957
 msgid "Email"
 msgstr ""
 
@@ -339,7 +339,7 @@ msgid "Job Details:"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:607
-msgid "Responsibilities:"
+msgid "Responsibilities / Roles"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:616
@@ -362,47 +362,47 @@ msgstr ""
 msgid "Other Benefits:"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:856
+#: admin/cls-jobwp-admin.php:860
 msgid "Application has been deleted."
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:897 admin/cls-jobwp-admin.php:901
+#: admin/cls-jobwp-admin.php:901 admin/cls-jobwp-admin.php:905
 msgid "\n"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:916 jobwp.php:121
+#: admin/cls-jobwp-admin.php:920 jobwp.php:121
 msgid "Company Email"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:922 jobwp.php:129
+#: admin/cls-jobwp-admin.php:926 jobwp.php:129
 msgid "Company Website"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:928 jobwp.php:137
+#: admin/cls-jobwp-admin.php:932 jobwp.php:137
 msgid "Company Address"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:934 jobwp.php:145
+#: admin/cls-jobwp-admin.php:938 jobwp.php:145
 msgid "Company Logo"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:940
+#: admin/cls-jobwp-admin.php:944
 msgid "Add Logo"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:941 jobwp.php:156
+#: admin/cls-jobwp-admin.php:945 jobwp.php:156
 msgid "Remove Logo"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:952
+#: admin/cls-jobwp-admin.php:956
 msgid "Logo"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:954
+#: admin/cls-jobwp-admin.php:958
 msgid "Website"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:955
+#: admin/cls-jobwp-admin.php:959
 msgid "Address"
 msgstr ""
 
@@ -479,10 +479,10 @@ msgstr ""
 #: admin/view/email.php:86 admin/view/general.php:190
 #: admin/view/partial/apply-form-content.php:152
 #: admin/view/partial/apply-form-style.php:333
-#: admin/view/partial/listing-content.php:210
-#: admin/view/partial/listing-style.php:299
+#: admin/view/partial/listing-content.php:350
+#: admin/view/partial/listing-style.php:345
 #: admin/view/partial/search-content.php:132
-#: admin/view/partial/search-style.php:122
+#: admin/view/partial/search-style.php:143
 #: admin/view/partial/single-content.php:375
 #: admin/view/partial/single-style.php:272
 msgid "Save Settings"
@@ -508,24 +508,33 @@ msgstr ""
 #: admin/view/partial/apply-form-style.php:299
 #: admin/view/partial/apply-form-style.php:318
 #: admin/view/partial/job-info.php:15 admin/view/partial/job-info.php:72
-#: admin/view/partial/job-info.php:92 admin/view/partial/listing-content.php:24
-#: admin/view/partial/listing-content.php:44
-#: admin/view/partial/listing-content.php:141
-#: admin/view/partial/listing-content.php:159
-#: admin/view/partial/listing-content.php:194
+#: admin/view/partial/job-info.php:92 admin/view/partial/listing-content.php:33
+#: admin/view/partial/listing-content.php:53
+#: admin/view/partial/listing-content.php:155
+#: admin/view/partial/listing-content.php:173
+#: admin/view/partial/listing-content.php:193
+#: admin/view/partial/listing-content.php:211
+#: admin/view/partial/listing-content.php:231
+#: admin/view/partial/listing-content.php:249
+#: admin/view/partial/listing-content.php:272
+#: admin/view/partial/listing-content.php:290
+#: admin/view/partial/listing-content.php:325
 #: admin/view/partial/listing-style.php:30
 #: admin/view/partial/listing-style.php:49
-#: admin/view/partial/listing-style.php:120
-#: admin/view/partial/listing-style.php:139
+#: admin/view/partial/listing-style.php:98
+#: admin/view/partial/listing-style.php:117
 #: admin/view/partial/listing-style.php:166
 #: admin/view/partial/listing-style.php:185
-#: admin/view/partial/listing-style.php:204
-#: admin/view/partial/listing-style.php:225
-#: admin/view/partial/listing-style.php:244
-#: admin/view/partial/listing-style.php:265
-#: admin/view/partial/listing-style.php:284
+#: admin/view/partial/listing-style.php:212
+#: admin/view/partial/listing-style.php:231
+#: admin/view/partial/listing-style.php:250
+#: admin/view/partial/listing-style.php:271
+#: admin/view/partial/listing-style.php:290
+#: admin/view/partial/listing-style.php:311
+#: admin/view/partial/listing-style.php:330
 #: admin/view/partial/search-content.php:89
 #: admin/view/partial/search-content.php:107
+#: admin/view/partial/search-style.php:75
 #: admin/view/partial/single-content.php:28
 #: admin/view/partial/single-content.php:55
 #: admin/view/partial/single-content.php:75
@@ -660,8 +669,8 @@ msgstr ""
 #: admin/view/partial/listing-style.php:24
 #: admin/view/partial/search-style.php:24
 #: admin/view/partial/search-style.php:46
-#: admin/view/partial/search-style.php:75
-#: admin/view/partial/search-style.php:104
+#: admin/view/partial/search-style.php:96
+#: admin/view/partial/search-style.php:125
 #: admin/view/partial/single-style.php:24
 #: admin/view/partial/single-style.php:53
 #: admin/view/partial/single-style.php:142
@@ -684,11 +693,12 @@ msgstr ""
 #: admin/view/partial/apply-form-style.php:161
 #: admin/view/partial/apply-form-style.php:267
 #: admin/view/partial/listing-style.php:77
-#: admin/view/partial/listing-style.php:99
-#: admin/view/partial/listing-style.php:133
-#: admin/view/partial/listing-style.php:219
+#: admin/view/partial/listing-style.php:111
+#: admin/view/partial/listing-style.php:145
+#: admin/view/partial/listing-style.php:179
+#: admin/view/partial/listing-style.php:265
 #: admin/view/partial/search-style.php:60
-#: admin/view/partial/search-style.php:89
+#: admin/view/partial/search-style.php:110
 #: admin/view/partial/single-style.php:67
 #: admin/view/partial/single-style.php:201
 msgid "Font Size"
@@ -704,7 +714,7 @@ msgstr ""
 
 #: admin/view/partial/apply-form-style.php:200
 #: admin/view/partial/listing-style.php:43
-#: admin/view/partial/listing-style.php:179
+#: admin/view/partial/listing-style.php:225
 #: admin/view/partial/search-style.php:31
 #: admin/view/partial/search-style.php:53
 #: admin/view/partial/single-style.php:217
@@ -721,10 +731,11 @@ msgstr ""
 #: admin/view/partial/apply-form-style.php:312
 #: admin/view/partial/listing-style.php:70
 #: admin/view/partial/listing-style.php:92
-#: admin/view/partial/listing-style.php:114
-#: admin/view/partial/listing-style.php:198
-#: admin/view/partial/search-style.php:82
-#: admin/view/partial/search-style.php:111
+#: admin/view/partial/listing-style.php:138
+#: admin/view/partial/listing-style.php:160
+#: admin/view/partial/listing-style.php:244
+#: admin/view/partial/search-style.php:103
+#: admin/view/partial/search-style.php:132
 #: admin/view/partial/single-style.php:60
 #: admin/view/partial/single-style.php:208
 #: admin/view/partial/single-style.php:263
@@ -775,39 +786,46 @@ msgstr ""
 msgid "Inactive"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:18
+#: admin/view/partial/listing-content.php:19
+msgid "Title Word Length"
+msgstr ""
+
+#: admin/view/partial/listing-content.php:27
 #: admin/view/partial/single-content.php:49
 msgid "Display Company Name"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:38
+#: admin/view/partial/listing-content.php:47
 #: admin/view/partial/single-content.php:69
 msgid "Display Company Logo"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:58
+#: admin/view/partial/listing-content.php:68
 #: admin/view/partial/single-content.php:95
 msgid "Hide Overview"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:60
+#: admin/view/partial/listing-content.php:70
 msgid "img/jobwp-list-hide-overview.webp"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:67
-msgid "Word Lengtht"
+#: admin/view/partial/listing-content.php:77
+msgid "Word Length"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:75
+#: admin/view/partial/listing-content.php:89
 msgid "Hide Experience"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:82
-#: admin/view/partial/listing-content.php:97
-#: admin/view/partial/listing-content.php:112
-#: admin/view/partial/listing-content.php:127
-#: admin/view/partial/listing-content.php:153
-#: admin/view/partial/listing-content.php:180
+#: admin/view/partial/listing-content.php:96
+#: admin/view/partial/listing-content.php:111
+#: admin/view/partial/listing-content.php:126
+#: admin/view/partial/listing-content.php:141
+#: admin/view/partial/listing-content.php:167
+#: admin/view/partial/listing-content.php:205
+#: admin/view/partial/listing-content.php:243
+#: admin/view/partial/listing-content.php:284
+#: admin/view/partial/listing-content.php:311
 #: admin/view/partial/single-content.php:102
 #: admin/view/partial/single-content.php:122
 #: admin/view/partial/single-content.php:142
@@ -823,29 +841,45 @@ msgstr ""
 msgid "Label Text"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:90
+#: admin/view/partial/listing-content.php:104
 msgid "Hide Deadline"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:105
+#: admin/view/partial/listing-content.php:119
 msgid "Hide Location"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:120
+#: admin/view/partial/listing-content.php:134
 #: admin/view/partial/search-content.php:55
 msgid "Hide Job Type"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:135
+#: admin/view/partial/listing-content.php:149
+msgid "Display Salary"
+msgstr ""
+
+#: admin/view/partial/listing-content.php:187
+msgid "Display Responsibility"
+msgstr ""
+
+#: admin/view/partial/listing-content.php:225
+msgid "Display Vacancy"
+msgstr ""
+
+#: admin/view/partial/listing-content.php:266
 msgid "Display Read More"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:173
+#: admin/view/partial/listing-content.php:304
 msgid "Hide Total Jobs Found"
 msgstr ""
 
-#: admin/view/partial/listing-content.php:188
+#: admin/view/partial/listing-content.php:319
 msgid "Hide Icon"
+msgstr ""
+
+#: admin/view/partial/listing-content.php:339
+msgid "Hide Pagination"
 msgstr ""
 
 #: admin/view/partial/listing-style.php:19
@@ -858,31 +892,36 @@ msgid "Job Title"
 msgstr ""
 
 #: admin/view/partial/listing-style.php:87
+msgid "Company"
+msgstr ""
+
+#: admin/view/partial/listing-style.php:133
 msgid "Job Overview"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:109
+#: admin/view/partial/listing-style.php:155
 msgid "Job Information Label"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:155
+#: admin/view/partial/listing-style.php:201
 msgid "Pagination"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:160
+#: admin/view/partial/listing-style.php:206
 msgid "Background  Color"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:238
+#: admin/view/partial/listing-style.php:284
+#: admin/view/partial/search-style.php:69
 #: admin/view/partial/single-style.php:234
 msgid "Border Radius"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:259
+#: admin/view/partial/listing-style.php:305
 msgid "Hover Background Color"
 msgstr ""
 
-#: admin/view/partial/listing-style.php:278
+#: admin/view/partial/listing-style.php:324
 msgid "Hover Font Color"
 msgstr ""
 
@@ -929,11 +968,11 @@ msgstr ""
 msgid "Search Items"
 msgstr ""
 
-#: admin/view/partial/search-style.php:70
+#: admin/view/partial/search-style.php:91
 msgid "Search Button"
 msgstr ""
 
-#: admin/view/partial/search-style.php:99
+#: admin/view/partial/search-style.php:120
 msgid "Search Button :: Hover"
 msgstr ""
 
@@ -1101,55 +1140,55 @@ msgstr ""
 msgid "The file cannot be copied in the folder "
 msgstr ""
 
-#: core/job_application.php:139
+#: core/job_application.php:115
 msgid "Career - New Application"
 msgstr ""
 
-#: core/job_application.php:140
+#: core/job_application.php:116
 msgid "Applicant: "
 msgstr ""
 
-#: core/job_application.php:141
+#: core/job_application.php:117
 msgid "Applied For: "
 msgstr ""
 
-#: core/job_application.php:142
+#: core/job_application.php:118
 msgid "Email: "
 msgstr ""
 
-#: core/job_application.php:145
+#: core/job_application.php:121
 msgid "Phone: "
 msgstr ""
 
-#: core/job_application.php:149
+#: core/job_application.php:125
 msgid "Cover Letter: "
 msgstr ""
 
-#: core/job_application.php:186
+#: core/job_application.php:162
 msgid "Hi"
 msgstr ""
 
-#: core/job_application.php:187
+#: core/job_application.php:163
 msgid "Thanks for applying to our"
 msgstr ""
 
-#: core/job_application.php:187
+#: core/job_application.php:163
 msgid "position"
 msgstr ""
 
-#: core/job_application.php:188
+#: core/job_application.php:164
 msgid "We'll review your application and be sure to get back to you if there might be a fit!"
 msgstr ""
 
-#: core/job_application.php:189
+#: core/job_application.php:165
 msgid "Best"
 msgstr ""
 
-#: core/job_application.php:203
+#: core/job_application.php:179
 msgid "Thank you for your application"
 msgstr ""
 
-#: freemius/includes/class-freemius.php:19005
+#: freemius/includes/class-freemius.php:19049
 msgid "true"
 msgstr ""
 
@@ -1157,7 +1196,7 @@ msgstr ""
 msgid " "
 msgstr ""
 
-#: freemius/templates/connect.php:367
+#: freemius/templates/connect.php:370
 msgid "_activate_existing"
 msgstr ""
 
@@ -1178,15 +1217,11 @@ msgid "pdf"
 msgstr ""
 
 #: front/view/apply.php:97
-msgid "pdf, docx"
+msgid "pdf, docx, doc"
 msgstr ""
 
-#: front/view/featured.php:31 front/view/listing.php:50
+#: front/view/featured.php:32 front/view/listing.php:53
 msgid "Closed"
-msgstr ""
-
-#: front/view/featured.php:84
-msgid "Years"
 msgstr ""
 
 #: front/view/listing.php:22
@@ -1201,15 +1236,15 @@ msgstr ""
 msgid "View"
 msgstr ""
 
-#: front/view/listing.php:235
+#: front/view/listing.php:320
 msgid "« "
 msgstr ""
 
-#: front/view/listing.php:236
+#: front/view/listing.php:321
 msgid " »"
 msgstr ""
 
-#: front/view/listing.php:248
+#: front/view/listing.php:336
 msgid "No Job found"
 msgstr ""
 
@@ -1229,12 +1264,12 @@ msgstr ""
 msgid "Change Logo"
 msgstr ""
 
-#: lib/freemius-integrator.php:55
+#: lib/freemius-integrator.php:53
 #, php-format
 msgid "Hey %1$s"
 msgstr ""
 
-#: lib/freemius-integrator.php:56
+#: lib/freemius-integrator.php:54
 #, php-format
 msgid "Please help us improve %2$s! If you opt-in, some data about your usage of %2$s will be sent to %5$s. If you skip this, that's okay! %2$s will still work just fine."
 msgstr ""

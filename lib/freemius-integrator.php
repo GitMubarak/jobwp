@@ -28,8 +28,6 @@ if ( ! function_exists( 'job_fs' ) ) {
                 'menu'                => array(
                     'slug'           => 'edit.php?post_type=jobs',
                 ),
-                // Set the SDK to work in a sandbox mode (for development & testing).
-                // IMPORTANT: MAKE SURE TO REMOVE SECRET KEY BEFORE DEPLOYMENT.
                 'secret_key'          => 'sk_h+^k.XyxKV=*f@+.h!z&<(2egHy.2',
             ) );
         }
