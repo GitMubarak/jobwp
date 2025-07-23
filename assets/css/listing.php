@@ -48,7 +48,10 @@ if ( ! defined( 'ABSPATH' ) ) {
   /* Job info */
   .jobwp-item .jobwp-bottom .jobwp-list-bottom-item i.fa,
   .jobwp-item .jobwp-bottom .jobwp-list-bottom-item i.fa-solid,
-  .jobwp-item .jobwp-bottom .jobwp-list-bottom-item strong.primary-color {
+  .jobwp-item .jobwp-bottom .jobwp-list-bottom-item strong.primary-color,
+  .jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper .jobwp-list-info-item .jobwp-list-bottom-item i.fa,
+  .jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper .jobwp-list-info-item .jobwp-list-bottom-item i.fa-solid,
+  .jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper .jobwp-list-info-item .jobwp-list-bottom-item strong.primary-color {
     color: <?php esc_html_e( $jobwp_listing_info_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_listing_info_font_size ); ?>px;
   }

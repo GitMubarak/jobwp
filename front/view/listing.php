@@ -126,175 +126,207 @@ if ( $jobwpJobs->have_posts() ) {
                     }
                     ?>
                 </div>
-                <div class="jobwp-bottom">
-                    <?php
-                    if ( ! $jobwp_list_display_experience ) {
+                <div class="jobwp-list-info-wrapper">
+                    <div class="jobwp-list-info-item">
+                        <?php
+                        if ( ! $jobwp_list_display_experience ) {
 
-                        if ( '' !== $jobwp_experience ) {
-                            ?>
-                            <div class="jobwp-list-bottom-item pull-left">
-                                <?php
-                                if ( ! $jobwp_display_listing_icon ) {
-                                    ?>
-                                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            if ( '' !== $jobwp_experience ) {
+                                ?>
+                                <div class="jobwp-list-bottom-item pull-left">
                                     <?php
-                                }
-                                ?>
-                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?></strong>
-                                <span class="ng-binding">
-                                    <?php esc_html_e( $jobwp_experience ); ?>
-                                </span>
-                            </div>
-                            <?php
-                        }
-                    }
-
-                    if ( ! $jobwp_list_display_deadline ) {
-                        ?>
-                        <div class="jobwp-list-bottom-item pull-right">
-                            <?php
-                            if ( ! $jobwp_display_listing_icon ) {
-                                ?>
-                                <i class="fa fa-calendar-days" aria-hidden="true"></i>
-                                <?php
-                            }
-                            ?>
-                            <strong class="primary-color"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?></strong>
-                            <span class="ng-binding">
-                                <?php esc_html_e( $jobwpDeadline ); ?>
-                            </span>
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <div class="jobwp-bottom clear">
-                    <?php
-                    if ( ! $jobwp_list_display_location ) {
-                        ?>
-                        <div class="jobwp-list-bottom-item pull-left">
-                            <?php
-                            if ( ! $jobwp_display_listing_icon ) {
-                                ?>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <?php
-                            }
-                            ?>
-                            <strong class="primary-color"><?php esc_html_e( $jobwp_list_loc_lbl_txt ); ?></strong>
-                            <span>
-                            <?php
-                            if ( ! empty( $jobs_location ) ) {
-                                $jobs_location_arr = array();
-                                foreach( $jobs_location as $location ) {
-                                    $jobs_location_arr[] = $location->name . '';
-                                }
-                                echo implode( ', ', $jobs_location_arr );   
-                            }
-                            ?>
-                            </span>
-                        </div>
-                        <?php
-                    }
-
-                    if ( ! $jobwp_list_display_jtype ) {
-                        ?>
-                        <div class="jobwp-list-bottom-item pull-right">
-                            <?php
-                            if ( ! $jobwp_display_listing_icon ) {
-                                ?>
-                                <i class="fa-solid fa-graduation-cap"></i>
-                                <?php
-                            }
-                            ?>
-                            <strong class="primary-color"><?php esc_html_e( $jobwp_list_job_type_lbl_txt ); ?></strong>
-                            <span>
-                            <?php
-                            if ( ! empty( $jobs_nature ) ) {
-                                $jobs_nature_arr = array();
-                                foreach( $jobs_nature as $type ) {
-                                    $jobs_nature_arr[] = $type->name . '';
-                                }
-                                echo implode( ', ', $jobs_nature_arr );   
-                            }
-                            ?>
-                            </span>
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <div class="jobwp-bottom clear">
-                    <?php
-                    if ( job_fs()->is_plan__premium_only('pro', true) ) {
-
-                        if ( $jobwp_list_display_salary ) {
-
-                            if ( ! empty( $bo_job_salary ) ) {
-                            ?>
-                            <div class="jobwp-list-bottom-item pull-left">
-                                <?php
-                                if ( ! $jobwp_display_listing_icon ) {
+                                    if ( ! $jobwp_display_listing_icon ) {
+                                        ?>
+                                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                        <?php
+                                    }
                                     ?>
-                                    <i class="fa-solid fa-sack-dollar"></i>
-                                    <?php
-                                }
-                                ?>
-                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_salary_lbl_txt ); ?></strong>
-                                <span class="ng-binding">
-                                    <?php echo wp_kses_post( $bo_job_salary ); ?>
-                                </span>
-                            </div>
-                            <?php
+                                    <strong class="primary-color"><?php esc_html_e( $jobwp_list_exp_lbl_txt ); ?></strong>
+                                    <span class="ng-binding">
+                                        <?php esc_html_e( $jobwp_experience ); ?>
+                                    </span>
+                                </div>
+                                <?php
                             }
                         }
-
-                        if ( $jobwp_list_display_responsibility ) {
-
-                            if ( ! empty( $bo_job_responsibilities ) ) {
+                        ?>
+                    </div>
+                    <div class="jobwp-list-info-item">
+                        <?php
+                        if ( ! $jobwp_list_display_deadline ) {
                             ?>
                             <div class="jobwp-list-bottom-item pull-right">
                                 <?php
                                 if ( ! $jobwp_display_listing_icon ) {
                                     ?>
-                                    <i class="fa-solid fa-list-check"></i>
+                                    <i class="fa fa-calendar-days" aria-hidden="true"></i>
                                     <?php
                                 }
                                 ?>
-                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_respo_lbl_txt ); ?></strong>
+                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_deadline_lbl_txt ); ?></strong>
                                 <span class="ng-binding">
-                                    <?php echo wp_kses_post( $bo_job_responsibilities ); ?>
+                                    <?php esc_html_e( $jobwpDeadline ); ?>
                                 </span>
                             </div>
                             <?php
-                            }
                         }
-                    }
-                    ?>
-                </div>
-                <div class="jobwp-bottom clear">
-                    <?php
-                    if ( job_fs()->is_plan__premium_only('pro', true) ) {
-
-                        if ( $jobwp_list_display_vacancy ) {
-
-                            if ( ! empty( $bo_vacancies ) ) {
+                        ?>
+                    </div>
+                    <div class="jobwp-list-info-item">
+                        <?php
+                        if ( ! $jobwp_list_display_location ) {
                             ?>
                             <div class="jobwp-list-bottom-item pull-left">
                                 <?php
                                 if ( ! $jobwp_display_listing_icon ) {
                                     ?>
-                                    <i class="fa-solid fa-users"></i>
+                                    <i class="fa-solid fa-location-dot"></i>
                                     <?php
                                 }
                                 ?>
-                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_vacancy_lbl_txt ); ?></strong>
-                                <span class="ng-binding">
-                                    <?php echo wp_kses_post( $bo_vacancies ); ?>
+                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_loc_lbl_txt ); ?></strong>
+                                <span>
+                                <?php
+                                if ( ! empty( $jobs_location ) ) {
+                                    $jobs_location_arr = array();
+                                    foreach( $jobs_location as $location ) {
+                                        $jobs_location_arr[] = $location->name . '';
+                                    }
+                                    echo implode( ', ', $jobs_location_arr );   
+                                }
+                                ?>
                                 </span>
                             </div>
                             <?php
-                            }
                         }
+                        ?>
+                    </div>
+                    <div class="jobwp-list-info-item">
+                        <?php
+                        if ( ! $jobwp_list_display_jtype ) {
+                            ?>
+                            <div class="jobwp-list-bottom-item pull-right">
+                                <?php
+                                if ( ! $jobwp_display_listing_icon ) {
+                                    ?>
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <?php
+                                }
+                                ?>
+                                <strong class="primary-color"><?php esc_html_e( $jobwp_list_job_type_lbl_txt ); ?></strong>
+                                <span>
+                                <?php
+                                if ( ! empty( $jobs_nature ) ) {
+                                    $jobs_nature_arr = array();
+                                    foreach( $jobs_nature as $type ) {
+                                        $jobs_nature_arr[] = $type->name . '';
+                                    }
+                                    echo implode( ', ', $jobs_nature_arr );   
+                                }
+                                ?>
+                                </span>
+                            </div>
+                            <?php
+                        }
+                        ?>
+                    </div>
+                    <?php
+                    if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                        ?>
+                        <div class="jobwp-list-info-item">
+                            <?php
+                            if ( $jobwp_list_display_salary ) {
+
+                                if ( ! empty( $bo_job_salary ) ) {
+                                ?>
+                                <div class="jobwp-list-bottom-item pull-left">
+                                    <?php
+                                    if ( ! $jobwp_display_listing_icon ) {
+                                        ?>
+                                        <i class="fa-solid fa-sack-dollar"></i>
+                                        <?php
+                                    }
+                                    ?>
+                                    <strong class="primary-color"><?php esc_html_e( $jobwp_list_salary_lbl_txt ); ?></strong>
+                                    <span class="ng-binding">
+                                        <?php echo wp_kses_post( $bo_job_salary ); ?>
+                                    </span>
+                                </div>
+                                <?php
+                                }
+                            }
+                            ?>
+                        </div>
+                        <div class="jobwp-list-info-item">
+                            <?php
+                            if ( $jobwp_list_display_responsibility ) {
+
+                                if ( ! empty( $bo_job_responsibilities ) ) {
+                                ?>
+                                <div class="jobwp-list-bottom-item pull-right">
+                                    <?php
+                                    if ( ! $jobwp_display_listing_icon ) {
+                                        ?>
+                                        <i class="fa-solid fa-list-check"></i>
+                                        <?php
+                                    }
+                                    ?>
+                                    <strong class="primary-color"><?php esc_html_e( $jobwp_list_respo_lbl_txt ); ?></strong>
+                                    <span class="ng-binding">
+                                        <?php echo wp_kses_post( $bo_job_responsibilities ); ?>
+                                    </span>
+                                </div>
+                                <?php
+                                }
+                            }
+                            ?>
+                        </div>
+                        <div class="jobwp-list-info-item">
+                            <?php
+                            if ( $jobwp_list_display_vacancy ) {
+
+                                if ( ! empty( $bo_vacancies ) ) {
+                                ?>
+                                <div class="jobwp-list-bottom-item pull-left">
+                                    <?php
+                                    if ( ! $jobwp_display_listing_icon ) {
+                                        ?>
+                                        <i class="fa-solid fa-users"></i>
+                                        <?php
+                                    }
+                                    ?>
+                                    <strong class="primary-color"><?php esc_html_e( $jobwp_list_vacancy_lbl_txt ); ?></strong>
+                                    <span class="ng-binding">
+                                        <?php echo wp_kses_post( $bo_vacancies ); ?>
+                                    </span>
+                                </div>
+                                <?php
+                                }
+                            }
+                            ?>
+                        </div>
+                        <div class="jobwp-list-info-item">
+                            <?php
+                            if ( $jobwp_list_display_publish_date ) {
+                                ?>
+                                <div class="jobwp-list-bottom-item pull-right">
+                                    <?php
+                                    if ( ! $jobwp_display_listing_icon ) {
+                                        ?>
+                                        <i class="fa fa-calendar-days"></i>
+                                        <?php
+                                    }
+                                    ?>
+                                    <strong class="primary-color"><?php esc_html_e( $jobwp_list_publish_date_lbl_txt ); ?></strong>
+                                    <span class="ng-binding">
+                                        <?php echo get_the_date( 'd M, Y' ); ?>
+                                    </span>
+                                </div>
+                                <?php
+                            }
+                            ?>
+                        </div>
+                        <?php
                     }
                     ?>
                 </div>

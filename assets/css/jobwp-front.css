@@ -187,6 +187,24 @@ div.jobwp-featured-meta i {
     text-align: center;
 }
 
+.jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper {
+    border: 1px solid #000;
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper .jobwp-list-info-item {
+    border: 1px solid #009900;
+    min-height: 35px;
+    line-height: 35px;
+    padding: 5px 0;
+}
+
+.jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper .jobwp-list-info-item .jobwp-list-bottom-item {
+    margin-bottom: 0;
+}
+
 
 /* Grid Layout Started */
 
