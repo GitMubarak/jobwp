@@ -280,7 +280,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Featured job slider overview format fixed - Pro
 [//]: # fs_premium_only_end
-* Job
+* Freemius SDK upgraded to 2.12.1
 
 = 2.4.2 =
 [//]: # fs_premium_only_begin
