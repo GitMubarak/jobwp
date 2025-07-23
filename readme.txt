@@ -278,7 +278,7 @@ Now go to your detail page and refresh it.
 
 = 2.4.3 =
 [//]: # fs_premium_only_begin
-* Featured job slider overview format fixed - Pro
+* Display publish date admin option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.12.1
 

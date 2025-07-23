@@ -158,6 +158,16 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'jobwp_list_display_publish_date',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_list_publish_date_lbl_txt',
+                'type'      => 'text',
+                'default'   => 'Publishing Date',
+            ],
         ];
     }
 }
