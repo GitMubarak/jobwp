@@ -188,14 +188,12 @@ div.jobwp-featured-meta i {
 }
 
 .jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper {
-    border: 1px solid #000;
     clear: both;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper .jobwp-list-info-item {
-    border: 1px solid #009900;
     min-height: 35px;
     line-height: 35px;
     padding: 5px 0;
@@ -250,6 +248,16 @@ div.jobwp-featured-meta i {
 
 .jobwp-listing-body-container.grid .jobwp-item .pull-right {
     float: left;
+}
+
+.jobwp-listing-body-container.grid .jobwp-item .jobwp-list-info-wrapper {
+    display: block;
+    height: auto;
+}
+
+.jobwp-listing-body-container.grid .jobwp-item .jobwp-list-info-wrapper .pull-left,
+.jobwp-listing-body-container.grid .jobwp-item .jobwp-list-info-wrapper .pull-right {
+    float: none;
 }
 
 
@@ -749,6 +757,14 @@ span.wpsd-read-before-apply-border {
     }
     .pull-right {
         float: left;
+    }
+    .jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper {
+        display: block;
+        height: auto;
+    }
+    .jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper .pull-right,
+    .jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper .pull-left {
+        float: none;
     }
     /* Single */
     .circulr-details-top p.jobwp-job-title {

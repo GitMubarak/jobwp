@@ -278,9 +278,12 @@ Now go to your detail page and refresh it.
 
 = 2.4.3 =
 [//]: # fs_premium_only_begin
-* Display publish date admin option added - Pro
+* Job publish date added in listing page - Pro
+* Publish date show-hide admin option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.12.1
+* Code optimized
+* Css fixed
 
 = 2.4.2 =
 [//]: # fs_premium_only_begin
