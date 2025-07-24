@@ -16,12 +16,12 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         <!-- Job Item -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">
-                <hr><span><?php _e('Job Item', JOBWP_TXT_DOMAIN); ?></span><hr>
+                <hr><span><?php _e('Job Item', 'jobwp'); ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Background Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Background Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <?php
@@ -40,7 +40,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
             <th scope="row">
-                <label><?php _e('Border Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Border Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <?php
@@ -62,19 +62,19 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         <!-- Title -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">
-                <hr><span><?php _e('Job Title', JOBWP_TXT_DOMAIN); ?></span><hr>
+                <hr><span><?php _e('Job Title', 'jobwp'); ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Font Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <input class="jobwp-wp-color" type="text" name="jobwp_listing_title_font_color" id="jobwp_listing_title_font_color" value="<?php esc_attr_e( $jobwp_listing_title_font_color ); ?>">
                 <div id="colorpicker"></div>
             </td>
             <th scope="row">
-                <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Font Size', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <input type="number" class="small-text" min="11" max="50" name="jobwp_listing_title_font_size" id="jobwp_listing_title_font_size" value="<?php esc_attr_e( $jobwp_listing_title_font_size ); ?>">
@@ -84,12 +84,12 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         <!-- Company -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">
-                <hr><span><?php _e('Company', JOBWP_TXT_DOMAIN); ?></span><hr>
+                <hr><span><?php _e('Company', 'jobwp'); ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Font Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <?php
@@ -108,7 +108,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
             <th scope="row">
-                <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Font Size', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <?php
@@ -130,19 +130,19 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         <!-- Overview -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">
-                <hr><span><?php _e('Job Overview', JOBWP_TXT_DOMAIN); ?></span><hr>
+                <hr><span><?php _e('Job Overview', 'jobwp'); ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Font Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <input class="jobwp-wp-color" type="text" name="jobwp_listing_overview_font_color" id="jobwp_listing_overview_font_color" value="<?php esc_attr_e( $jobwp_listing_overview_font_color ); ?>">
                 <div id="colorpicker"></div>
             </td>
             <th scope="row">
-                <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Font Size', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <input type="number" class="small-text" min="11" max="50" name="jobwp_listing_overview_font_size" id="jobwp_listing_overview_font_size" value="<?php esc_attr_e( $jobwp_listing_overview_font_size ); ?>">
@@ -152,12 +152,12 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         <!-- Job Info -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">
-                <hr><span><?php _e('Job Information Label', JOBWP_TXT_DOMAIN); ?></span><hr>
+                <hr><span><?php _e('Job Information Label', 'jobwp'); ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Font Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <?php
@@ -176,7 +176,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
             <th scope="row">
-                <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Font Size', 'jobwp'); ?>:</label>
             </th>
             <td>
             <?php
@@ -195,15 +195,21 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
         </tr>
+        <!-- Read More Button -->
+        <tr>
+            <th scope="row" colspan="6" style="text-align: left;">
+                <hr><span><?php _e('Read More Button', 'jobwp'); ?></span><hr>
+            </th>
+        </tr>
         <!-- Pagination -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">
-                <hr><span><?php _e('Pagination', JOBWP_TXT_DOMAIN); ?></span><hr>
+                <hr><span><?php _e('Pagination', 'jobwp'); ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Background  Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Background  Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <?php
@@ -222,7 +228,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
             <th scope="row">
-                <label><?php _e('Border Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Border Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <?php
@@ -241,7 +247,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
             <th scope="row">
-                <label><?php _e('Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Font Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <?php
@@ -262,7 +268,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Font Size', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Font Size', 'jobwp'); ?>:</label>
             </th>
             <td>
             <?php
@@ -281,7 +287,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
             <th scope="row">
-                <label><?php _e('Border Radius', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Border Radius', 'jobwp'); ?>:</label>
             </th>
             <td>
             <?php
@@ -302,7 +308,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Hover Background Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Hover Background Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <?php
@@ -321,7 +327,7 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
             <th scope="row">
-                <label><?php _e('Hover Font Color', JOBWP_TXT_DOMAIN); ?>:</label>
+                <label><?php _e('Hover Font Color', 'jobwp'); ?>:</label>
             </th>
             <td>
                 <?php
@@ -342,5 +348,5 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         </tr>
     </table>
     <hr>
-    <p class="submit"><button id="updateListingStyles" name="updateListingStyles" class="button button-primary jobwp-button"><?php _e('Save Settings', JOBWP_TXT_DOMAIN); ?></button></p>
+    <p class="submit"><button id="updateListingStyles" name="updateListingStyles" class="button button-primary jobwp-button"><?php _e('Save Settings', 'jobwp'); ?></button></p>
 </form>
