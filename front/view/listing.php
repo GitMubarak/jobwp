@@ -5,7 +5,43 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 include 'listing/header.php';
 
-$listing_item_arr = ['experience', 'deadline', 'location', 'jobtype', 'salary', 'role', 'vacancy', 'publishdate'];
+//$listing_item_arr = ['experience', 'deadline', 'location', 'jobtype', 'salary', 'role', 'vacancy', 'publishdate'];
+$listing_item_arr = [];
+
+for ( $lia=1; $lia<9; $lia++ ) {
+
+    if ( $lia == $jobwp_list_exp_order ) {
+        $listing_item_arr[] = 'experience';
+    }
+    if ( $lia == $jobwp_list_deadline_order ) {
+        $listing_item_arr[] = 'deadline';
+    }
+    if ( $lia == $jobwp_list_loc_order ) {
+        $listing_item_arr[] = 'location';
+    }
+    if ( $lia == $jobwp_list_jobtype_order ) {
+        $listing_item_arr[] = 'jobtype';
+    }
+
+    if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
+        
+        if ( $lia == $jobwp_list_salary_order ) {
+            $listing_item_arr[] = 'salary';
+        }
+        if ( $lia == $jobwp_list_role_order ) {
+            $listing_item_arr[] = 'role';
+        } 
+        if ( $lia == $jobwp_list_vacancy_order ) {
+            $listing_item_arr[] = 'vacancy';
+        }        
+        if ( $lia == $jobwp_list_pdate_order ) {
+            $listing_item_arr[] = 'publishdate';
+        } 
+    }
+}
+//echo '<pre>';
+//print_r( $listing_item_arr );
 
 if ( $jobwpJobs->have_posts() ) {
 

@@ -63,7 +63,7 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             </td>
         </tr>
         <!-- Hide Overview -->
-        <tr>
+        <tr class="jobwp_list_display_overview">
             <th scope="row">
                 <label for="jobwp_list_display_overview"><?php _e('Hide Overview', JOBWP_TXT_DOMAIN); ?>?</label>
                 <span class="dashicons dashicons-info-outline jobwp-admin-icon"></span>
@@ -81,7 +81,7 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             </td>
         </tr>
         <tr>
-            <td colspan="4"><hr><hr></td>
+            <td colspan="6"><hr><hr></td>
         </tr>
         <!-- Hide Experience -->
         <tr>
@@ -98,7 +98,14 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             <td>
                 <input type="text" name="jobwp_list_exp_lbl_txt" id="jobwp_list_exp_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_exp_lbl_txt ); ?>" />
             </td>
+            <th scope="row">
+                <label for="jobwp_list_exp_order"><?php _e('Order', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input type="number" name="jobwp_list_exp_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_exp_order ); ?>">
+            </td>
         </tr>
+        <!-- Hide Deadline -->
         <tr>
             <th scope="row">
                 <label for="jobwp_list_display_deadline"><?php _e('Hide Deadline', JOBWP_TXT_DOMAIN); ?>?</label>
@@ -113,7 +120,14 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             <td>
                 <input type="text" name="jobwp_list_deadline_lbl_txt" id="jobwp_list_deadline_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_deadline_lbl_txt ); ?>" />
             </td>
+            <th scope="row">
+                <label for="jobwp_list_deadline_order"><?php _e('Order', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input type="number" name="jobwp_list_deadline_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_deadline_order ); ?>">
+            </td>
         </tr>
+        <!-- Hide Location -->
         <tr>
             <th scope="row">
                 <label for="jobwp_list_display_location"><?php _e('Hide Location', JOBWP_TXT_DOMAIN); ?>?</label>
@@ -128,7 +142,14 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             <td>
                 <input type="text" name="jobwp_list_loc_lbl_txt" id="jobwp_list_loc_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_loc_lbl_txt ); ?>" />
             </td>
+            <th scope="row">
+                <label for="jobwp_list_loc_order"><?php _e('Order', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input type="number" name="jobwp_list_loc_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_loc_order ); ?>">
+            </td>
         </tr>
+        <!-- Hide Job Type -->
         <tr class="jobwp_list_display_jtype">
             <th scope="row">
                 <label for="jobwp_list_display_jtype"><?php _e('Hide Job Type', JOBWP_TXT_DOMAIN); ?>?</label>
@@ -143,7 +164,14 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             <td>
                 <input type="text" name="jobwp_list_job_type_lbl_txt" id="jobwp_list_job_type_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_job_type_lbl_txt ); ?>" />
             </td>
+            <th scope="row">
+                <label for="jobwp_list_jobtype_order"><?php _e('Order', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input type="number" name="jobwp_list_jobtype_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_jobtype_order ); ?>">
+            </td>
         </tr>
+        <!-- Hide Salary -->
         <tr class="jobwp_list_display_salary">
             <th scope="row">
                 <label for="jobwp_list_display_salary"><?php _e('Display Salary', JOBWP_TXT_DOMAIN); ?>?</label>
@@ -181,7 +209,26 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 }
                 ?>
             </td>
+            <th scope="row">
+                <label for="jobwp_list_salary_order"><?php _e('Order', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="number" name="jobwp_list_salary_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_salary_order ); ?>" />
+                    <?php
+                }
+                ?>
+            </td>
         </tr>
+        <!-- Hide Responsibility -->
         <tr class="jobwp_list_display_responsibility">
             <th scope="row">
                 <label for="jobwp_list_display_responsibility"><?php _e('Display Responsibility', JOBWP_TXT_DOMAIN); ?>?</label>
@@ -219,7 +266,26 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 }
                 ?>
             </td>
+            <th scope="row">
+                <label for="jobwp_list_role_order"><?php _e('Order', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="number" name="jobwp_list_role_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_role_order ); ?>" />
+                    <?php
+                }
+                ?>
+            </td>
         </tr>
+        <!-- Hide Vacancy -->
         <tr class="jobwp_list_display_vacancy">
             <th scope="row">
                 <label for="jobwp_list_display_vacancy"><?php _e('Display Vacancy', JOBWP_TXT_DOMAIN); ?>?</label>
@@ -257,7 +323,26 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 }
                 ?>
             </td>
+            <th scope="row">
+                <label for="jobwp_list_vacancy_order"><?php _e('Order', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="number" name="jobwp_list_vacancy_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_vacancy_order ); ?>" />
+                    <?php
+                }
+                ?>
+            </td>
         </tr>
+        <!-- Hide Publish Date -->
         <tr class="jobwp_list_display_publish_date">
             <th scope="row">
                 <label for="jobwp_list_display_publish_date"><?php _e('Display Publish Date', JOBWP_TXT_DOMAIN); ?>?</label>
@@ -296,9 +381,27 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 }
                 ?>
             </td>
+            <th scope="row">
+                <label for="jobwp_list_pdate_order"><?php _e('Order', JOBWP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="number" name="jobwp_list_pdate_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_pdate_order ); ?>" />
+                    <?php
+                }
+                ?>
+            </td>
         </tr>
         <tr>
-            <td colspan="4"><hr><hr></td>
+            <td colspan="6"><hr><hr></td>
         </tr>
         <tr class="jobwp_display_listing_read_more">
             <th scope="row">

@@ -168,6 +168,46 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Publishing Date',
             ],
+            [
+                'name'      => 'jobwp_list_exp_order',
+                'type'      => 'number',
+                'default'   => 1,
+            ],
+            [
+                'name'      => 'jobwp_list_deadline_order',
+                'type'      => 'number',
+                'default'   => 2,
+            ],
+            [
+                'name'      => 'jobwp_list_loc_order',
+                'type'      => 'number',
+                'default'   => 3,
+            ],
+            [
+                'name'      => 'jobwp_list_jobtype_order',
+                'type'      => 'number',
+                'default'   => 4,
+            ],
+            [
+                'name'      => 'jobwp_list_salary_order',
+                'type'      => 'number',
+                'default'   => 5,
+            ],
+            [
+                'name'      => 'jobwp_list_role_order',
+                'type'      => 'number',
+                'default'   => 6,
+            ],
+            [
+                'name'      => 'jobwp_list_vacancy_order',
+                'type'      => 'number',
+                'default'   => 7,
+            ],
+            [
+                'name'      => 'jobwp_list_pdate_order',
+                'type'      => 'number',
+                'default'   => 8,
+            ],
         ];
     }
 }
