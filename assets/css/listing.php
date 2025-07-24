@@ -55,6 +55,13 @@ if ( ! defined( 'ABSPATH' ) ) {
     color: <?php esc_html_e( $jobwp_listing_info_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_listing_info_font_size ); ?>px;
   }
+  /* Read More */
+  .jobwp-item .jobwp-top .jobwp-top-left a.jobwp-read-more {
+    color: <?php esc_html_e( $jobwp_read_more_bg_color ); ?>;
+    background-color: <?php esc_html_e( $jobwp_read_more_bg_color ); ?>;
+    padding: 3px 10px;
+    border-radius: 3px;
+  }
   /* Pagination */
   .jobwp-pagination .page-numbers li a.page-numbers {
     color: <?php esc_html_e( $jobwp_pagination_font_color ); ?>;
