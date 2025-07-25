@@ -57,8 +57,9 @@ if ( ! defined( 'ABSPATH' ) ) {
   }
   /* Read More */
   .jobwp-item .jobwp-top .jobwp-top-left a.jobwp-read-more {
-    color: <?php esc_html_e( $jobwp_read_more_bg_color ); ?>;
+    color: <?php esc_html_e( $jobwp_read_more_font_color ); ?>;
     background-color: <?php esc_html_e( $jobwp_read_more_bg_color ); ?>;
+    font-size: <?php esc_html_e( $jobwp_read_more_font_size ); ?>px;
     padding: 3px 10px;
     border-radius: 3px;
   }

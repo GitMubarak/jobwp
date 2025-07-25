@@ -221,6 +221,44 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				}
 				?>
             </td>
+            <th scope="row">
+                <label><?php _e('Font Color', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_read_more_font_color" id="jobwp_read_more_font_color" value="<?php esc_attr_e( $jobwp_read_more_font_color ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Font Size', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+            <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input type="number" class="small-text" min="11" max="30" step="1" name="jobwp_read_more_font_size" id="jobwp_read_more_font_size" value="<?php esc_attr_e( $jobwp_read_more_font_size ); ?>">
+                    <code>px</code>
+					<?php
+				}
+				?>
+            </td>
         </tr>
         <!-- Pagination -->
         <tr>

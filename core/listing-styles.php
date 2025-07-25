@@ -123,6 +123,16 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#2B8EEC',
             ],
+            [
+                'name'      => 'jobwp_read_more_font_color',
+                'type'      => 'text',
+                'default'   => '#FFFFFF',
+            ],
+            [
+                'name'      => 'jobwp_read_more_font_size',
+                'type'      => 'number',
+                'default'   => '15',
+            ],
         ];
     }
 }
