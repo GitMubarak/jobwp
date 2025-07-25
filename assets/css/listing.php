@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     color: <?php esc_html_e( $jobwp_read_more_font_color ); ?>;
     background-color: <?php esc_html_e( $jobwp_read_more_bg_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_read_more_font_size ); ?>px;
-    border: 1px solid <?php esc_html_e( $jobwp_read_more_border_color ); ?>;
+    border: <?php esc_html_e( $jobwp_read_more_border_width ); ?>px solid <?php esc_html_e( $jobwp_read_more_border_color ); ?>;
     padding: 3px 10px;
     border-radius: 3px;
   }

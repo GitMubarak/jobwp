@@ -138,6 +138,11 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#2B8EEC',
             ],
+            [
+                'name'      => 'jobwp_read_more_border_width',
+                'type'      => 'number',
+                'default'   => '0',
+            ],
         ];
     }
 }

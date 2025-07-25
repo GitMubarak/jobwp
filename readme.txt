@@ -284,6 +284,7 @@ Now go to your detail page and refresh it.
 * Read more button background color option added - Pro
 * Read more button font color, size option added - Pro
 * Read more button border color option added - Pro
+* Read more button border width option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.12.1
 * Code optimized
