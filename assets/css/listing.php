@@ -62,7 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     font-size: <?php esc_html_e( $jobwp_read_more_font_size ); ?>px;
     border: <?php esc_html_e( $jobwp_read_more_border_width ); ?>px solid <?php esc_html_e( $jobwp_read_more_border_color ); ?>;
     padding: 3px 10px;
-    border-radius: 3px;
+    border-radius: <?php esc_html_e( $jobwp_read_more_border_radius ); ?>px;
   }
   /* Pagination */
   .jobwp-pagination .page-numbers li a.page-numbers {

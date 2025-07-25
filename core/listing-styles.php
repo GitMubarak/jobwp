@@ -143,6 +143,11 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'number',
                 'default'   => '0',
             ],
+            [
+                'name'      => 'jobwp_read_more_border_radius',
+                'type'      => 'number',
+                'default'   => '0',
+            ],
         ];
     }
 }
