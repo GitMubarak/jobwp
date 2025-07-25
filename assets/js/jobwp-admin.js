@@ -49,7 +49,8 @@
         '#jobwp_single_info_lbl_font_color',
         '#jobwp_list_com_font_color',
         '#jobwp_read_more_bg_color',
-        '#jobwp_read_more_font_color'
+        '#jobwp_read_more_font_color',
+        '#jobwp_read_more_border_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {
