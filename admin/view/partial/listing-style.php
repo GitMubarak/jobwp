@@ -345,6 +345,52 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
         </tr>
+        <!-- Read More Button : Hover -->
+        <tr>
+            <th scope="row" colspan="6" style="text-align: left;">
+                <hr><span><?php _e('Read More Button : Hover', 'jobwp'); ?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Background Color', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_read_more_bg_color_hvr" id="jobwp_read_more_bg_color_hvr" value="<?php esc_attr_e( $jobwp_read_more_bg_color_hvr ); ?>" />
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+            <th scope="row">
+                <label><?php _e('Font Color', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_read_more_font_color_hvr" id="jobwp_read_more_font_color_hvr" value="<?php esc_attr_e( $jobwp_read_more_font_color_hvr ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
+        </tr>
         <!-- Pagination -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">

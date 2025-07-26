@@ -287,6 +287,7 @@ Now go to your detail page and refresh it.
 * Read more button border width option added - Pro
 * Read more button border radius option added - Pro
 * Read more button padding option added - Pro
+* Read more button hover bg, font color option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.12.1
 * Code optimized

@@ -65,6 +65,10 @@ if ( ! defined( 'ABSPATH' ) ) {
     padding: <?php esc_html_e( $jobwp_read_more_padding_tb ); ?>px <?php esc_html_e( $jobwp_read_more_padding_lr ); ?>px;
     border-radius: <?php esc_html_e( $jobwp_read_more_border_radius ); ?>px;
   }
+  .jobwp-item .jobwp-top .jobwp-top-left a.jobwp-read-more:hover {
+    color: <?php esc_html_e( $jobwp_read_more_font_color_hvr ); ?>;
+    background-color: <?php esc_html_e( $jobwp_read_more_bg_color_hvr ); ?>;
+  }
   /* Pagination */
   .jobwp-pagination .page-numbers li a.page-numbers {
     color: <?php esc_html_e( $jobwp_pagination_font_color ); ?>;

@@ -158,6 +158,16 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'number',
                 'default'   => '15',
             ],
+            [
+                'name'      => 'jobwp_read_more_bg_color_hvr',
+                'type'      => 'text',
+                'default'   => '#2B8EEC',
+            ],
+            [
+                'name'      => 'jobwp_read_more_font_color_hvr',
+                'type'      => 'text',
+                'default'   => '#FFFFFF',
+            ],
         ];
     }
 }
