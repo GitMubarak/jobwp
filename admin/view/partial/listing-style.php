@@ -80,6 +80,25 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
                 <input type="number" class="small-text" min="11" max="50" name="jobwp_listing_title_font_size" id="jobwp_listing_title_font_size" value="<?php esc_attr_e( $jobwp_listing_title_font_size ); ?>">
                 <code>px</code>
             </td>
+            <th scope="row">
+                <label><?php _e('Hover Font Color', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <input class="jobwp-wp-color" type="text" name="jobwp_listing_title_font_color_hvr" id="jobwp_listing_title_font_color_hvr" value="<?php esc_attr_e( $jobwp_listing_title_font_color_hvr ); ?>">
+                    <div id="colorpicker"></div>
+					<?php
+				}
+				?>
+            </td>
         </tr>
         <!-- Company -->
         <tr>

@@ -94,6 +94,9 @@ if ( ! defined( 'ABSPATH' ) ) {
   <?php
   if ( job_fs()->is_plan__premium_only('pro', true) ) {
     ?>
+    .jobwp-item .jobwp-job-title a.jobwp-job-title-a:hover {
+      color: <?php esc_html_e( $jobwp_listing_title_font_color_hvr ); ?>;
+    }
     .jobwp-item .jwb-list-comp-name {
       color: <?php esc_html_e( $jobwp_list_com_font_color ); ?>;
       font-size: <?php esc_html_e( $jobwp_list_com_font_size ); ?>px;

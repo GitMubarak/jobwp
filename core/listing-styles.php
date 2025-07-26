@@ -173,6 +173,11 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#2B8EEC',
             ],
+            [
+                'name'      => 'jobwp_listing_title_font_color_hvr',
+                'type'      => 'text',
+                'default'   => '#242424',
+            ],
         ];
     }
 }
