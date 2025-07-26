@@ -60,8 +60,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     color: <?php esc_html_e( $jobwp_read_more_font_color ); ?>;
     background-color: <?php esc_html_e( $jobwp_read_more_bg_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_read_more_font_size ); ?>px;
+    line-height: <?php esc_html_e( $jobwp_read_more_font_size ); ?>px;
     border: <?php esc_html_e( $jobwp_read_more_border_width ); ?>px solid <?php esc_html_e( $jobwp_read_more_border_color ); ?>;
-    padding: 3px 10px;
+    padding: <?php esc_html_e( $jobwp_read_more_padding_tb ); ?>px <?php esc_html_e( $jobwp_read_more_padding_lr ); ?>px;
     border-radius: <?php esc_html_e( $jobwp_read_more_border_radius ); ?>px;
   }
   /* Pagination */

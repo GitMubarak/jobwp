@@ -319,6 +319,32 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
 				?>
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Padding', 'jobwp'); ?>:</label>
+            </th>
+            <td colspan="5">
+            <?php
+				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+					<?php
+				}
+
+				if ( job_fs()->is_plan__premium_only('pro', true) ) {
+					?>
+                    <?php _e('Top/Bottom', 'jobwp'); ?>
+                    <input type="number" class="small-text" min="0" max="100" step="1" name="jobwp_read_more_padding_tb" id="jobwp_read_more_padding_tb" value="<?php esc_attr_e( $jobwp_read_more_padding_tb ); ?>">
+                    <code>px</code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <?php _e('Left/Right', 'jobwp'); ?>
+                    <input type="number" class="small-text" min="0" max="100" step="1" name="jobwp_read_more_padding_lr" id="jobwp_read_more_padding_lr" value="<?php esc_attr_e( $jobwp_read_more_padding_lr ); ?>">
+                    <code>px</code>
+					<?php
+				}
+				?>
+            </td>
+        </tr>
         <!-- Pagination -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">

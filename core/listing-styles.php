@@ -148,6 +148,16 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'number',
                 'default'   => '0',
             ],
+            [
+                'name'      => 'jobwp_read_more_padding_tb',
+                'type'      => 'number',
+                'default'   => '10',
+            ],
+            [
+                'name'      => 'jobwp_read_more_padding_lr',
+                'type'      => 'number',
+                'default'   => '15',
+            ],
         ];
     }
 }
