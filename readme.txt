@@ -282,6 +282,7 @@ Now go to your detail page and refresh it.
 * Publish date show-hide admin option added - Pro
 * Read more button styling options added - Pro
 * Job title hover font color option added - Pro
+* Location shortcoded option added - Pro
 [//]: # fs_premium_only_end
 * Listing page job info order option added
 * Freemius SDK upgraded to 2.12.1

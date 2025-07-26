@@ -62,6 +62,7 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
     
     $jobwp_company  = isset( $jobwpAttr['company'] ) ? $jobwpAttr['company'] : '';
     $jobwp_level    = isset( $jobwpAttr['level'] ) ? $jobwpAttr['level'] : '';
+    $jobwp_location = isset( $jobwpAttr['location'] ) ? explode( ",", $jobwpAttr['location'] ) : [];
 }
 
 // Layout view url
@@ -130,6 +131,17 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
             'taxonomy' => 'jobs_level',
             'field' => 'name',
             'terms' => urldecode( $jobwp_level )
+        );
+    }
+
+    // If location found in the shortcode
+    if ( ! empty( $jobwp_location ) ) {
+        $jobwpQueryArrParams['tax_query'][] = array(
+            array(
+                'taxonomy' => 'jobs_location',
+                'field' => 'name',
+                'terms' => $jobwp_location
+            )
         );
     }
 }
