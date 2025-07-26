@@ -68,6 +68,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   .jobwp-item .jobwp-top .jobwp-top-left a.jobwp-read-more:hover {
     color: <?php esc_html_e( $jobwp_read_more_font_color_hvr ); ?>;
     background-color: <?php esc_html_e( $jobwp_read_more_bg_color_hvr ); ?>;
+    border: <?php esc_html_e( $jobwp_read_more_border_width ); ?>px solid <?php esc_html_e( $jobwp_read_more_border_color_hvr ); ?>;
   }
   /* Pagination */
   .jobwp-pagination .page-numbers li a.page-numbers {

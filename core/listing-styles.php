@@ -168,6 +168,11 @@ trait Jobwp_Listing_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#FFFFFF',
             ],
+            [
+                'name'      => 'jobwp_read_more_border_color_hvr',
+                'type'      => 'text',
+                'default'   => '#2B8EEC',
+            ],
         ];
     }
 }

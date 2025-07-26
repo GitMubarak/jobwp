@@ -280,7 +280,6 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Job publish date added in listing page - Pro
 * Publish date show-hide admin option added - Pro
-* Listing page job info order option added - Pro
 * Read more button background color option added - Pro
 * Read more button font color, size option added - Pro
 * Read more button border color option added - Pro
@@ -288,7 +287,9 @@ Now go to your detail page and refresh it.
 * Read more button border radius option added - Pro
 * Read more button padding option added - Pro
 * Read more button hover bg, font color option added - Pro
+* Read more button hover border color option added - Pro
 [//]: # fs_premium_only_end
+* Listing page job info order option added
 * Freemius SDK upgraded to 2.12.1
 * Code optimized
 * Css fixed
