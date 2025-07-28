@@ -567,6 +567,36 @@ span.wpsd-read-before-apply-border {
     text-decoration: none;
 }
 
+ul.jobwp-share-on {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul.jobwp-share-on li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul.jobwp-share-on li a.jobwp-share-on-link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 16px;
+    color: #FFF;
+    background: #333333;
+    text-decoration: none;
+}
+
+ul.jobwp-share-on li a.jobwp-share-on-link:hover {
+    background: #777;
+}
+
 
 /* Details Ended */
 

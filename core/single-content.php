@@ -211,6 +211,16 @@ trait Jobwp_Single_Content_Settings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'jobwp_hide_share_on',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'jobwp_share_on_text',
+                'type'      => 'text',
+                'default'   => 'Share On',
+            ],
         ];
     }
 }

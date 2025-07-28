@@ -283,6 +283,7 @@ Now go to your detail page and refresh it.
 * Read more button styling options added - Pro
 * Job title hover font color option added - Pro
 * Location shortcoded option added - Pro
+* Share on feature added to job details page - Pro
 [//]: # fs_premium_only_end
 * Listing page job info order option added
 * Freemius SDK upgraded to 2.12.1

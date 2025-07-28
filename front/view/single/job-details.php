@@ -270,4 +270,32 @@ foreach ( $single_items as $sItem ) {
     }
 }
 ?>
+    <?php
+    if ( job_fs()->is_plan__premium_only('pro', true) ) {
+
+        if ( ! $jobwp_hide_share_on ) {
+            ?>
+            <div class="content-row">
+                <div class="left-cell padding-bottom-50">
+                    <h5 class="label"><?php esc_html_e( $jobwp_share_on_text ); ?></h5>
+                </div>
+                <div class="right-cell text">
+                    <ul class="jobwp-share-on">
+                        <li>
+                            <a href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank" class="jobwp-share-on-link facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/share?url=<?php echo get_permalink(); ?>&text=" target="_blank" class="jobwp-share-on-link twitter"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/shareArticle?url=<?php echo get_permalink(); ?>&title=" class="jobwp-share-on-link linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <?php
+        }
+    }
+    ?>
 </div>
