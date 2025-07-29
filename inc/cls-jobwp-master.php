@@ -27,7 +27,7 @@ class JobWp_Master {
 	function __construct() {
 
 		$this->jobwp_version = JOBWP_VERSION;
-		add_action( 'plugins_loaded', array( $this, 'jobwp_load_plugin_textdomain' ) );
+		add_action( 'init', array( $this, 'jobwp_load_plugin_textdomain' ) );
 		$this->jobwp_load_dependencies();
 		$this->jobwp_trigger_admin_hooks();
 		$this->jobwp_trigger_front_hooks();
@@ -35,7 +35,7 @@ class JobWp_Master {
 
 	function jobwp_load_plugin_textdomain() {
 
-		load_plugin_textdomain( JOBWP_TXT_DOMAIN, FALSE, JOBWP_TXT_DOMAIN . '/languages/' );
+		load_plugin_textdomain( 'jobwp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
 		$this->jobwp_upgrade_table();
 	}

@@ -287,6 +287,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_end
 * Listing page job info order option added
 * Freemius SDK upgraded to 2.12.1
+* Textdomain changed from define to real textdomain
 * Code optimized
 * Css fixed
 
