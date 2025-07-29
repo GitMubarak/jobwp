@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JobWP\n"
 "POT-Creation-Date: 2025-07-29 18:46+0600\n"
-"PO-Revision-Date: 2025-07-29 18:55+0000\n"
+"PO-Revision-Date: 2025-07-29 18:51+0000\n"
 "Last-Translator: \n"
 "Language-Team: Bengali (Bangladesh)\n"
 "Language: bn_BD\n"
@@ -262,12 +262,6 @@ msgstr "কর্মজীবন - নতুন অ্যাপ্লিকে�
 #: jobwp.php:155
 msgid "Change Logo"
 msgstr "পরিবর্তন লোগো"
-
-#: core/job_application.php:60
-msgid ""
-"Check if it exists and is writeable. You can also ask for support to your "
-"hosting provider"
-msgstr ""
 
 #: front/view/featured.php:32 front/view/listing.php:91
 msgid "Closed"
@@ -1229,7 +1223,7 @@ msgid "Thanks for applying to our"
 msgstr "ধন্যবাদ জন্য আবেদন করতে আমাদের"
 
 #: core/job_application.php:60
-msgid "The file cannot be copied in the folder"
+msgid "The file cannot be copied in the folder "
 msgstr ""
 
 #: core/job_application.php:46

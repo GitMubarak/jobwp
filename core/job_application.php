@@ -20,12 +20,12 @@ trait Jobwp_Applicaiton
                 // Checking the file type
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     $allowedfiletype = array("pdf");
-                    $allowedfiletypemsg = __('Only Pdf file is permitted', JOBWP_TXT_DOMAIN);
+                    $allowedfiletypemsg = __('Only Pdf file is permitted', 'jobwp');
                 }
 
                 if ( job_fs()->is_plan__premium_only('pro', true) ) {
                     $allowedfiletype = array("pdf", "docx", "doc");
-                    $allowedfiletypemsg = __('Only Pdf, Docx files are permitted', JOBWP_TXT_DOMAIN);
+                    $allowedfiletypemsg = __('Only Pdf, Docx files are permitted', 'jobwp');
                 }
 
                 if ( ! in_array( $ext, $allowedfiletype ) ) {
@@ -33,7 +33,7 @@ trait Jobwp_Applicaiton
                 }
                 //can't be larger than 2mb
                 else if ( $file['jobwp_upload_resume']['size'] > ( 2000000 ) ) {
-                    return __('Your file size is to large', JOBWP_TXT_DOMAIN);
+                    return __('Your file size is to large', 'jobwp');
                 } else {
 
                     $jobwpDir = wp_upload_dir();
@@ -43,7 +43,7 @@ trait Jobwp_Applicaiton
 
                     if ( ! is_writable( $jobwpDir . '/jobwp-resume' ) ) {
 
-                        return 'The folder ' . __($jobwpDir . '/jobwp-resume') . ' cannot be created or is not writable. Ask for support to your hosting provider.';
+                        return __('The folder', 'jobwp') . ' ' . $jobwpDir . '/jobwp-resume ' . __('cannot be created or is not writable. Ask for support to your hosting provider', 'jobwp') . '.';
 
                     } else {
 
@@ -57,7 +57,7 @@ trait Jobwp_Applicaiton
 
                             if ( $r === false)  {
                                 
-                                return __('The file cannot be copied in the folder ' . $jobwpDir . '/jobwp-resume. Check if it exists and is writeable. You can also ask for support to your hosting provider.', JOBWP_TXT_DOMAIN);
+                                return __('The file cannot be copied in the folder', 'jobwp') .  ' ' . $jobwpDir . '/jobwp-resume ' . __('Check if it exists and is writeable. You can also ask for support to your hosting provider', 'jobwp') . '.';
 
                             } else {
 

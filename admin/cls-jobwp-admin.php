@@ -378,7 +378,7 @@ class JobWp_Admin
 
 		$jobwpColumns = array(
 			'cb'                		=> __('Select All', JOBWP_TXT_DOMAIN),
-			'jobwp_list_sl'				=> __('#', JOBWP_TXT_DOMAIN),
+			'jobwp_list_sl'				=> '#',
 			'jobwp_applied_for' 		=> __('Applied For', JOBWP_TXT_DOMAIN),
 			'jobwp_applicant_name'		=> __('Name', JOBWP_TXT_DOMAIN),
 			'jobwp_applicant_email'		=> __('Email', JOBWP_TXT_DOMAIN),
@@ -898,11 +898,11 @@ class JobWp_Admin
 				header("Expires: 0");
 				header("Pragma: public");
 				printf( "%s,%s,%s,%s,%s,%s,%s,%s,%s", "SL", "Applied For", "Name", "Email", "Cover Letter", "Applied On", "Resume Link", "User Consent" , "Phone" );
-				_e("\n");
+				echo "\n";
 				
 				foreach ( $data_rows as $data ) {
 					printf( "%d,%s,%s,%s,%s,%s,%s,%s,%s", $data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6], $data[7], $data[8] );
-					_e("\n");
+					echo "\n";
 				}
 				
 				exit;

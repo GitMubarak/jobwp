@@ -437,8 +437,8 @@ if ( $jobwpJobs->have_posts() ) {
                     'current'   => max( 1, $jobwp_paged ),
                     'end_size'  => 1,
                     'mid_size'  => 2,
-                    'prev_text' => __('« '),
-                    'next_text' => __(' »'),
+                    'prev_text' => '« ',
+                    'next_text' => ' »',
                     'type'      => 'list',
                 );
                 echo paginate_links( $jobwpPaginateArgs );

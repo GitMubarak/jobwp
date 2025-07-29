@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JobWP\n"
 "POT-Creation-Date: 2025-07-29 18:46+0600\n"
-"PO-Revision-Date: 2025-07-29 18:55+0000\n"
+"PO-Revision-Date: 2025-07-29 15:53+0000\n"
 "Last-Translator: \n"
 "Language-Team: Bengali (Bangladesh)\n"
 "Language: bn_BD\n"
@@ -18,9 +18,26 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "X-Loco-Version: 2.8.0; wp-6.8.2; php-7.4.19"
 
+#: admin/cls-jobwp-admin.php:901 admin/cls-jobwp-admin.php:905
+msgid ""
+"\n"
+msgstr ""
+
 #: freemius/templates/account/partials/site.php:339
 msgid " "
 msgstr ""
+
+#: front/view/listing.php:441
+msgid " »"
+msgstr ""
+
+#: admin/cls-jobwp-admin.php:381
+msgid "#"
+msgstr ""
+
+#: core/job_application.php:46
+msgid "/jobwp-resume"
+msgstr "/jobwp-সারসংকলন"
 
 #: freemius/templates/connect.php:370
 msgid "_activate_existing"
@@ -245,12 +262,6 @@ msgstr "বাটন রঙ"
 msgid "Candidate Email Settings"
 msgstr "প্রার্থী ইমেইল সেটিংস"
 
-#: core/job_application.php:46
-msgid ""
-"cannot be created or is not writable. Ask for support to your hosting "
-"provider"
-msgstr ""
-
 #: admin/view/general.php:159
 msgid "Captcha"
 msgstr "ক্যাপচা"
@@ -262,12 +273,6 @@ msgstr "কর্মজীবন - নতুন অ্যাপ্লিকে�
 #: jobwp.php:155
 msgid "Change Logo"
 msgstr "পরিবর্তন লোগো"
-
-#: core/job_application.php:60
-msgid ""
-"Check if it exists and is writeable. You can also ask for support to your "
-"hosting provider"
-msgstr ""
 
 #: front/view/featured.php:32 front/view/listing.php:91
 msgid "Closed"
@@ -1229,11 +1234,7 @@ msgid "Thanks for applying to our"
 msgstr "ধন্যবাদ জন্য আবেদন করতে আমাদের"
 
 #: core/job_application.php:60
-msgid "The file cannot be copied in the folder"
-msgstr ""
-
-#: core/job_application.php:46
-msgid "The folder"
+msgid "The file cannot be copied in the folder "
 msgstr ""
 
 #: admin/view/partial/single-style.php:165
@@ -1363,3 +1364,7 @@ msgstr ""
 #: core/job_application.php:36
 msgid "Your file size is to large"
 msgstr "আপনার ফাইলের আকার বড় করতে"
+
+#: front/view/listing.php:440
+msgid "« "
+msgstr ""
