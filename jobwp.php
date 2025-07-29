@@ -257,5 +257,10 @@ if ( function_exists( 'job_fs' ) ) {
             add_action( 'admin_bar_menu', 'jobwp_remove_admin_bar_menu_for_hr_users', 999 );
         }
 
+        function jobwp_load_plugin_textdomain_test() {
+            load_plugin_textdomain( 'jobwp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+        }
+        add_action( 'plugins_loaded', 'jobwp_load_plugin_textdomain_test' );
+
     }
 }

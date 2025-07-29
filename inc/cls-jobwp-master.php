@@ -35,7 +35,7 @@ class JobWp_Master {
 
 	function jobwp_load_plugin_textdomain() {
 
-		load_plugin_textdomain( 'jobwp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+		//load_plugin_textdomain( 'jobwp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
 		$this->jobwp_upgrade_table();
 	}

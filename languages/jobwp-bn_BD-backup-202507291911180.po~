@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JobWP\n"
 "POT-Creation-Date: 2025-07-29 18:46+0600\n"
-"PO-Revision-Date: 2025-07-29 19:14+0000\n"
+"PO-Revision-Date: 2025-07-29 19:10+0000\n"
 "Last-Translator: \n"
 "Language-Team: Bengali (Bangladesh)\n"
 "Language: bn_BD\n"
@@ -250,8 +250,6 @@ msgid ""
 "cannot be created or is not writable. Ask for support to your hosting "
 "provider"
 msgstr ""
-"তৈরি করা যাবে না অথবা লেখা যাবে না। আপনার হোস্টিং প্রদানকারীর কাছে সহায়তা "
-"চাইতে পারেন"
 
 #: admin/view/general.php:159
 msgid "Captcha"
@@ -270,8 +268,6 @@ msgid ""
 "Check if it exists and is writeable. You can also ask for support to your "
 "hosting provider"
 msgstr ""
-"এটি বিদ্যমান কিনা এবং লেখার যোগ্য কিনা তা পরীক্ষা করুন। আপনি আপনার হোস্টিং "
-"প্রোভাইডারকেও সহায়তা চাইতে পারেন।"
 
 #: front/view/featured.php:32 front/view/listing.php:91
 msgid "Closed"
@@ -335,7 +331,7 @@ msgstr "কভার লেটার লেবেল"
 
 #: core/job_application.php:125
 msgid "Cover Letter: "
-msgstr "কভার লেটার:"
+msgstr ""
 
 #: admin/cls-jobwp-admin.php:387
 msgid "Date"
@@ -451,7 +447,7 @@ msgstr "ইমেইল বিষয়"
 
 #: core/job_application.php:118
 msgid "Email: "
-msgstr "ইমেইল:"
+msgstr ""
 
 #: admin/view/general.php:180
 msgid "Enable on Apply Form"
@@ -984,7 +980,7 @@ msgstr "ফোন লেবেল"
 
 #: core/job_application.php:121
 msgid "Phone: "
-msgstr "ফোন:"
+msgstr ""
 
 #: admin/view/partial/search-content.php:33
 #: admin/view/partial/search-content.php:47
@@ -1234,11 +1230,11 @@ msgstr "ধন্যবাদ জন্য আবেদন করতে আম�
 
 #: core/job_application.php:60
 msgid "The file cannot be copied in the folder"
-msgstr "ফাইলটি ফোল্ডারে কপি করা যাবে না।"
+msgstr ""
 
 #: core/job_application.php:46
 msgid "The folder"
-msgstr "ফোল্ডার"
+msgstr ""
 
 #: admin/view/partial/single-style.php:165
 msgid "Title Border Color"
@@ -1262,11 +1258,11 @@ msgstr "শিরোনাম শব্দ দৈর্ঘ্য"
 
 #: admin/view/email.php:75
 msgid "To use candidate name apply #candidateName# in the content"
-msgstr "প্রার্থীর নাম ব্যবহার করতে কন্টেন্টে #candidateName# প্রয়োগ করুন।"
+msgstr ""
 
 #: admin/view/email.php:77
 msgid "To use job title apply #jobTitle# in the content"
-msgstr "চাকরির শিরোনাম ব্যবহার করতে কন্টেন্টে #jobTitle# প্রয়োগ করুন।"
+msgstr ""
 
 #: admin/view/partial/listing-style.php:355
 msgid "Top/Bottom"
@@ -1306,7 +1302,7 @@ msgstr "তারিখ সিভি/সারসংকলন"
 
 #: admin/view/email.php:79
 msgid "Use <<code>br</code>> to break line in the content"
-msgstr "কন্টেন্টে লাইন ভাঙতে <<code>br</code> ব্যবহার করুন"
+msgstr ""
 
 #: admin/view/general.php:91
 msgid "Use External Application Form"

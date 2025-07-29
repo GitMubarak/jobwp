@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JobWP\n"
-"POT-Creation-Date: 2025-07-29 18:46+0600\n"
-"PO-Revision-Date: 2025-07-29 18:35+0000\n"
+"POT-Creation-Date: 2025-07-30 00:54+0600\n"
+"PO-Revision-Date: 2025-07-29 19:19+0000\n"
 "Last-Translator: \n"
-"Language-Team: Bengali (Bangladesh)\n"
-"Language: bn_BD\n"
+"Language-Team: Italian\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,18 +18,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "X-Loco-Version: 2.8.0; wp-6.8.2; php-7.4.19"
 
-#: admin/cls-jobwp-admin.php:901 admin/cls-jobwp-admin.php:905
-msgid ""
-"\n"
-msgstr ""
-
 #: freemius/templates/account/partials/site.php:339
 msgid " "
 msgstr ""
-
-#: core/job_application.php:46
-msgid "/jobwp-resume"
-msgstr "/jobwp-সারসংকলন"
 
 #: freemius/templates/connect.php:370
 msgid "_activate_existing"
@@ -37,87 +28,87 @@ msgstr "_activate_existing"
 
 #: admin/cls-jobwp-admin.php:395
 msgid "Action"
-msgstr "কর্ম"
+msgstr "Azione"
 
 #: admin/view/partial/job-info.php:110
 msgid "Active"
-msgstr "সক্রিয়"
+msgstr "Attivo"
 
 #: admin/cls-jobwp-admin.php:944
 msgid "Add Logo"
-msgstr "যোগ লোগো"
+msgstr "Aggiungere Il Logo"
 
 #: admin/cls-jobwp-admin.php:415
 msgid "Add New"
-msgstr "নতুন যুক্ত করুন"
+msgstr "Aggiungi Nuovo"
 
 #: admin/cls-jobwp-admin.php:414
 msgid "Add New Job"
-msgstr "যোগ নতুন কাজ"
+msgstr "Aggiungi Un Nuovo Lavoro"
 
 #: admin/cls-jobwp-admin.php:460
 msgid "Add New Job Category"
-msgstr "যোগ নতুন চাকরী বিভাগ"
+msgstr "Aggiungi Nuova Categoria Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:573
 msgid "Add New Job Company"
-msgstr "যোগ নতুন কাজ কোম্পানি"
+msgstr "Aggiungi Un Nuovo Lavoro Azienda"
 
 #: admin/cls-jobwp-admin.php:518
 msgid "Add New Job Level"
-msgstr "যোগ নতুন কাজ স্তর"
+msgstr "Aggiungi Un Nuovo Livello Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:547
 msgid "Add New Job Location"
-msgstr "যোগ নতুন কাজ, অবস্থান"
+msgstr "Aggiungi Un Nuovo Posto Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:489
 msgid "Add New Job Nature"
-msgstr "যোগ নতুন কাজের প্রকৃতি"
+msgstr "Aggiungi Un Nuovo Lavoro Di Natura"
 
 #: admin/cls-jobwp-admin.php:634
 msgid "Additional Requirements:"
-msgstr "অতিরিক্ত প্রয়োজনীয়তা:"
+msgstr "Ulteriori Requisiti:"
 
 #: admin/cls-jobwp-admin.php:959
 msgid "Address"
-msgstr "ঠিকানা"
+msgstr "Indirizzo"
 
 #: admin/view/general.php:36
 msgid "Admin Notification Email"
-msgstr "অ্যাডমিন বিজ্ঞপ্তি ইমেল"
+msgstr "Admin Email Di Notifica"
 
 #: admin/cls-jobwp-admin.php:455
 msgid "All Job Categories"
-msgstr "সব কাজের বিভাগ"
+msgstr "Tutte Le Categorie Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:568
 msgid "All Job Company"
-msgstr "সব কাজ কোম্পানি"
+msgstr "Tutto Il Lavoro E Società"
 
 #: admin/cls-jobwp-admin.php:513
 msgid "All Job Level"
-msgstr "সব কাজ স্তরে"
+msgstr "Tutti A Livello Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:542
 msgid "All Job Location"
-msgstr "সব কাজ, অবস্থান"
+msgstr "Tutto Il Lavoro E Posizione"
 
 #: admin/cls-jobwp-admin.php:484
 msgid "All Job Nature"
-msgstr "সব কাজের প্রকৃতি"
+msgstr "Tutto Il Lavoro E La Natura"
 
 #: admin/cls-jobwp-admin.php:408 admin/cls-jobwp-admin.php:412
 msgid "All Jobs"
-msgstr "সব কাজ"
+msgstr "Tutti I Posti Di Lavoro"
 
 #: admin/view/general.php:110
 msgid "Allow External Application URL"
-msgstr "অনুমতি বহিরাগত অ্যাপ্লিকেশন URL টি"
+msgstr "Consentire l'Applicazione Esterna URL"
 
 #: admin/view/general.php:138
 msgid "Allow Login to Apply"
-msgstr "অনুমতি আবেদন করতে লগইন করুন"
+msgstr "Consentire l'Accesso ad Applicare"
 
 #: front/view/apply.php:90
 msgid "Allowed Type(s): "
@@ -126,80 +117,82 @@ msgstr ""
 #: admin/view/general.php:41
 msgid ""
 "An email will sent to this email when a candidate submit an applicaiton."
-msgstr "একটি ইমেইল পাঠানো হবে এই ইমেইল যখন একটি প্রার্থী জমা একটি applicaiton."
+msgstr ""
+"Una email verrà inviata a questa e-mail quando un candidato di presentare "
+"un'applicazione."
 
 #: admin/view/general.php:74
 msgid ""
 "An email will sent to this role based user emails when a candidate submit an "
 "applicaiton."
 msgstr ""
-"একটি ইমেইল পাঠানো হবে, এই ভূমিকা ভিত্তিক ব্যবহারকারী ইমেইল যখন একটি প্রার্থী "
-"জমা একটি applicaiton."
+"Una email verrà inviata a questo ruolo utente basata su messaggi di posta "
+"elettronica quando un candidato di presentare un'applicazione."
 
 #: core/job_application.php:116
 msgid "Applicant: "
-msgstr ""
+msgstr "Richiedente:"
 
 #: admin/cls-jobwp-admin.php:860
 msgid "Application has been deleted."
-msgstr "অ্যাপ্লিকেশন মুছে ফেলা হয়েছে."
+msgstr "L'applicazione è stata eliminata."
 
 #: admin/cls-jobwp-admin.php:148 admin/cls-jobwp-admin.php:149
 msgid "Application List"
-msgstr "অ্যাপ্লিকেশন তালিকা"
+msgstr "Elenco Applicazioni"
 
 #: admin/view/application_list.php:16
 msgid "Application Lists"
-msgstr "অ্যাপ্লিকেশন তালিকা"
+msgstr "Elenchi Di Applicazione"
 
 #: admin/cls-jobwp-admin.php:382
 msgid "Applied For"
-msgstr "জন্য প্রয়োগ করা"
+msgstr "Applicato Per"
 
 #: core/job_application.php:117
 msgid "Applied For: "
-msgstr ""
+msgstr "Applicato per:"
 
 #: admin/view/partial/apply-form-style.php:222
 #: admin/view/partial/single-style.php:189
 msgid "Apply Button"
-msgstr "আবেদন বাটন"
+msgstr "Pulsante Applica"
 
 #: admin/view/partial/apply-form-style.php:288
 msgid "Apply Button :: Hover"
-msgstr "আবেদন বাটন :: উপর কার্সার রেখে দেখুন"
+msgstr "Pulsante Applica :: Hover"
 
 #: admin/view/partial/single-content.php:368
 msgid "Apply Button Text"
-msgstr "আবেদন বাটন টেক্সট"
+msgstr "Pulsante Applica Testo"
 
 #: admin/view/partial/single-style.php:244
 msgid "Apply Button: Hover"
-msgstr "আবেদন বাটন: উপর কার্সার রেখে দেখুন"
+msgstr "Pulsante Applica: Hover"
 
 #: admin/cls-jobwp-admin.php:139 admin/cls-jobwp-admin.php:140
 msgid "Apply Form"
-msgstr "আবেদন ফরম"
+msgstr "Applicare Forma"
 
 #: admin/view/apply-form.php:9
 msgid "Apply Form Settings"
-msgstr "আবেদন ফর্ম সেটিংস"
+msgstr "Applicare Le Impostazioni Del Modulo"
 
 #: admin/view/partial/single-content.php:352
 msgid "Apply Procedure Content"
-msgstr "আবেদন পদ্ধতি কন্টেন্ট"
+msgstr "Si Applica La Procedura Di Contenuti"
 
 #: admin/view/partial/single-content.php:343
 msgid "Apply Procedure Title"
-msgstr "আবেদন পদ্ধতি শিরোনাম"
+msgstr "Applicare La Procedura Titolo"
 
 #: front/view/apply.php:86
 msgid "Attach your resume. Max size 2mb"
-msgstr "আপনার সারসংকলন সংযুক্ত করুন. সর্বোচ্চ সাইজ 2mb"
+msgstr "Allega il tuo curriculum. Dimensione massima di 2mb"
 
 #: admin/view/partial/listing-style.php:440
 msgid "Background  Color"
-msgstr "পটভূমির রঙ"
+msgstr "Colore Di Sfondo"
 
 #: admin/view/partial/apply-form-style.php:25
 #: admin/view/partial/apply-form-style.php:181
@@ -217,11 +210,11 @@ msgstr "পটভূমির রঙ"
 #: admin/view/partial/single-style.php:142
 #: admin/view/partial/single-style.php:249
 msgid "Background Color"
-msgstr "পটভূমির রঙ"
+msgstr "Colore Di Sfondo"
 
 #: core/job_application.php:165
 msgid "Best"
-msgstr "সেরা"
+msgstr "Migliore"
 
 #: admin/view/partial/apply-form-style.php:200
 #: admin/view/partial/listing-style.php:43
@@ -233,242 +226,258 @@ msgstr "সেরা"
 #: admin/view/partial/single-style.php:217
 #: admin/view/partial/single-style.php:256
 msgid "Border Color"
-msgstr "সীমানা রং"
+msgstr "Il Colore Del Bordo"
 
 #: admin/view/partial/listing-style.php:322
 #: admin/view/partial/listing-style.php:518
 #: admin/view/partial/search-style.php:69
 #: admin/view/partial/single-style.php:234
 msgid "Border Radius"
-msgstr "সীমানা ব্যাসার্ধ"
+msgstr "Border Radius"
 
 #: admin/view/partial/listing-style.php:303
 msgid "Border Width"
-msgstr "সীমানা প্রস্থ"
+msgstr "Larghezza Del Bordo"
 
 #: admin/view/partial/single-style.php:194
 msgid "Button Color"
-msgstr "বাটন রঙ"
+msgstr "Il Colore Del Pulsante"
 
 #: admin/view/email.php:39
 msgid "Candidate Email Settings"
-msgstr "প্রার্থী ইমেইল সেটিংস"
+msgstr "Candidato Impostazioni E-Mail"
+
+#: core/job_application.php:46
+msgid ""
+"cannot be created or is not writable. Ask for support to your hosting "
+"provider"
+msgstr ""
+"non può essere creata o non è scrivibile. Chiedere aiuto al tuo fornitore di "
+"hosting"
 
 #: admin/view/general.php:159
 msgid "Captcha"
-msgstr "ক্যাপচা"
+msgstr "Captcha"
 
 #: core/job_application.php:115
 msgid "Career - New Application"
-msgstr "কর্মজীবন - নতুন অ্যাপ্লিকেশন"
+msgstr "Carriera - Nuova Applicazione"
 
 #: jobwp.php:155
 msgid "Change Logo"
-msgstr "পরিবর্তন লোগো"
+msgstr "Modificare Il Logo"
+
+#: core/job_application.php:60
+msgid ""
+"Check if it exists and is writeable. You can also ask for support to your "
+"hosting provider"
+msgstr ""
+"Controllare se esiste ed è scrivibile. Si può anche chiedere aiuto al tuo "
+"fornitore di hosting"
 
 #: front/view/featured.php:32 front/view/listing.php:91
 msgid "Closed"
-msgstr "বন্ধ"
+msgstr "Chiuso"
 
 #: admin/view/partial/apply-form-style.php:52
 #: admin/view/partial/apply-form-style.php:97
 #: admin/view/partial/apply-form-style.php:142
 msgid "Color"
-msgstr "রঙ"
+msgstr "Colore"
 
 #: admin/view/partial/single-style.php:82
 msgid "Column Width"
-msgstr "কলাম প্রস্থ"
+msgstr "La Larghezza Della Colonna"
 
 #: admin/view/partial/listing-style.php:106
 msgid "Company"
-msgstr "কোম্পানি"
+msgstr "Azienda"
 
 #: admin/cls-jobwp-admin.php:932 jobwp.php:137
 msgid "Company Address"
-msgstr "কোম্পানির ঠিকানা"
+msgstr "Azienda Indirizzo"
 
 #: admin/cls-jobwp-admin.php:920 jobwp.php:121
 msgid "Company Email"
-msgstr "কোম্পানি ইমেইল"
+msgstr "Di Posta Elettronica Della Società"
 
 #: admin/cls-jobwp-admin.php:938 jobwp.php:145
 msgid "Company Logo"
-msgstr "কোম্পানি লোগো"
+msgstr "Il Logo Della Società"
 
 #: admin/cls-jobwp-admin.php:926 jobwp.php:129
 msgid "Company Website"
-msgstr "কোম্পানি ওয়েবসাইট"
+msgstr "Azienda Sito"
 
 #: admin/view/partial/search-style.php:19
 #: admin/view/partial/single-style.php:19
 msgid "Container"
-msgstr "ধারক"
+msgstr "Contenitore"
 
 #: admin/view/apply-form.php:22 admin/view/listing.php:22
 #: admin/view/search.php:22 admin/view/single.php:22
 msgid "Content"
-msgstr "কন্টেন্ট"
+msgstr "Contenuto"
 
 #: admin/view/partial/single-style.php:172
 msgid "Content Color"
-msgstr "কন্টেন্ট রঙ"
+msgstr "Colore Del Contenuto"
 
 #: admin/view/partial/single-style.php:179
 msgid "Content Size"
-msgstr "বিষয়বস্তু আকার"
+msgstr "Dimensioni Del Contenuto"
 
 #: admin/cls-jobwp-admin.php:385
 msgid "Cover Letter"
-msgstr "কভার চিঠি"
+msgstr "Lettera Di Copertura"
 
 #: admin/view/partial/apply-form-content.php:55
 msgid "Cover Letter Label"
-msgstr "কভার লেটার লেবেল"
+msgstr "Lettera Di Copertura Etichetta"
 
 #: core/job_application.php:125
 msgid "Cover Letter: "
-msgstr ""
+msgstr "Lettera di presentazione:"
 
 #: admin/cls-jobwp-admin.php:387
 msgid "Date"
-msgstr "আপলোড"
+msgstr "Data"
 
 #: admin/view/partial/job-info.php:58
 msgid "Deadline"
-msgstr "নির্দিষ্ট সময়সীমা"
+msgstr "Scadenza"
 
 #: admin/view/application_list.php:58
 msgid "DELETE"
-msgstr "মুছে দিন"
+msgstr "ELIMINARE"
 
 #: admin/cls-jobwp-admin.php:424
 msgid "Description For Job"
-msgstr "বিবরণ: কাজের জন্য"
+msgstr "Descrizione Per Lavoro"
 
 #: admin/cls-jobwp-admin.php:121 admin/cls-jobwp-admin.php:122
 #: admin/view/single.php:9
 msgid "Detail Page Settings"
-msgstr "বিস্তারিত পৃষ্ঠা সেটিংস"
+msgstr "Pagina Dettagli Delle Impostazioni"
 
 #: freemius/assets/js/pricing/freemius-pricing.js:2
 msgid "display"
-msgstr "প্রদর্শন"
+msgstr "display"
 
 #: admin/view/partial/listing-content.php:47
 #: admin/view/partial/single-content.php:69
 msgid "Display Company Logo"
-msgstr "কোম্পানী লোগো প্রদর্শন"
+msgstr "Visualizza Il Logo Della Società"
 
 #: admin/view/partial/listing-content.php:27
 #: admin/view/partial/single-content.php:49
 msgid "Display Company Name"
-msgstr "কোম্পানির নাম প্রদর্শন"
+msgstr "Visualizza Società Nome"
 
 #: admin/view/partial/apply-form-content.php:64
 msgid "Display Phone"
-msgstr "প্রদর্শন ফোন"
+msgstr "Visualizza Telefono"
 
 #: admin/view/partial/listing-content.php:348
 msgid "Display Publish Date"
-msgstr "প্রদর্শন তারিখ প্রকাশ"
+msgstr "Display Data Di Pubblicazione"
 
 #: admin/view/partial/listing-content.php:408
 msgid "Display Read More"
-msgstr "প্রদর্শন Read More"
+msgstr "Display Per Saperne Di Più"
 
 #: admin/view/partial/listing-content.php:234
 msgid "Display Responsibility"
-msgstr "প্রদর্শনের দায়িত্ব"
+msgstr "Visualizza La Responsabilità"
 
 #: admin/view/partial/listing-content.php:177
 msgid "Display Salary"
-msgstr "প্রদর্শন বেতন"
+msgstr "Display Stipendio"
 
 #: admin/view/partial/listing-content.php:291
 msgid "Display Vacancy"
-msgstr "প্রদর্শন কর্মখালি"
+msgstr "Display Posto Vacante"
 
 #: front/view/listing.php:60
 msgid "Displayed Here"
-msgstr "এখানে প্রদর্শিত"
+msgstr "Visualizzate Qui"
 
 #: admin/cls-jobwp-admin.php:416
 msgid "Edit Job"
-msgstr "সম্পাদনা কাজ"
+msgstr "Edit Lavoro"
 
 #: admin/cls-jobwp-admin.php:458
 msgid "Edit Job Category"
-msgstr "সম্পাদনা কাজ বিভাগ"
+msgstr "Modifica Categoria Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:571
 msgid "Edit Job Company"
-msgstr "সম্পাদনা কাজ কোম্পানি"
+msgstr "Edit Lavoro Azienda"
 
 #: admin/cls-jobwp-admin.php:516
 msgid "Edit Job Level"
-msgstr "সম্পাদনা পেশা স্তর"
+msgstr "Modifica A Livello Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:545
 msgid "Edit Job Location"
-msgstr "সম্পাদনা কাজ, অবস্থান"
+msgstr "Modifica Posizione Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:487
 msgid "Edit Job Nature"
-msgstr "সম্পাদনা কাজের প্রকৃতি"
+msgstr "Edit Lavoro Di Natura"
 
 #: admin/cls-jobwp-admin.php:625
 msgid "Educational Requirements:"
-msgstr "শিক্ষাগত প্রয়োজনীয়তা:"
+msgstr "Requisiti Formativi:"
 
 #: admin/cls-jobwp-admin.php:384 admin/cls-jobwp-admin.php:957
 msgid "Email"
-msgstr "ইমেইল"
+msgstr "Email"
 
 #: admin/view/email.php:68
 msgid "Email Content"
-msgstr "ইমেইলের বিষয়বস্তু"
+msgstr "Il Contenuto Delle Email"
 
 #: admin/view/partial/apply-form-content.php:40
 msgid "Email Label"
-msgstr "ইমেইল লেবেল"
+msgstr "E-Mail Etichetta"
 
 #: admin/cls-jobwp-admin.php:130 admin/cls-jobwp-admin.php:131
 #: admin/view/email.php:16
 msgid "Email Settings"
-msgstr "ইমেল সেটিংস"
+msgstr "Impostazioni E-Mail"
 
 #: admin/view/email.php:60
 msgid "Email Subject"
-msgstr "ইমেইল বিষয়"
+msgstr "Oggetto Del Messaggio"
 
 #: core/job_application.php:118
 msgid "Email: "
-msgstr ""
+msgstr "E-mail:"
 
 #: admin/view/general.php:180
 msgid "Enable on Apply Form"
-msgstr "সক্রিয় আবেদন ফরম"
+msgstr "Abilita Form"
 
 #: admin/view/application_list.php:87
 msgid "EXPORT TO CSV"
-msgstr "এক্সপোর্ট CSV"
+msgstr "ESPORTAZIONE IN FORMATO CSV"
 
 #: admin/view/application_list.php:89
 msgid "Export To Excel"
-msgstr "রপ্তানি সীমা অতিক্রম করা"
+msgstr "Esportazione In Excel"
 
 #: admin/view/general.php:100
 msgid "External Application Form Shortcode"
-msgstr "বহিরাগত অ্যাপ্লিকেশন ফর্ম সর্টকোড"
+msgstr "Applicazione Esterna Di Forma Shortcode"
 
 #: admin/view/partial/job-info.php:66
 msgid "External Apply Now URL"
-msgstr "বাহ্যিক আবেদন এখন URL টি"
+msgstr "Esterni Applica URL"
 
 #: admin/view/partial/job-info.php:86
 msgid "Featured Job"
-msgstr "বৈশিষ্ট্যযুক্ত কাজ"
+msgstr "Di Lavoro In Evidenza"
 
 #: admin/view/partial/apply-form-style.php:248
 #: admin/view/partial/apply-form-style.php:312
@@ -485,7 +494,7 @@ msgstr "বৈশিষ্ট্যযুক্ত কাজ"
 #: admin/view/partial/single-style.php:208
 #: admin/view/partial/single-style.php:263
 msgid "Font Color"
-msgstr "ফন্ট রঙ"
+msgstr "Font Color"
 
 #: admin/view/partial/apply-form-style.php:71
 #: admin/view/partial/apply-form-style.php:116
@@ -502,279 +511,279 @@ msgstr "ফন্ট রঙ"
 #: admin/view/partial/single-style.php:67
 #: admin/view/partial/single-style.php:201
 msgid "Font Size"
-msgstr "ফন্টের আকার"
+msgstr "Dimensione Del Carattere"
 
 #: admin/view/partial/apply-form-style.php:20
 msgid "Form Container"
-msgstr "ফরম ধারক"
+msgstr "Modulo Contenitore"
 
 #: admin/view/partial/apply-form-style.php:137
 msgid "Form Inputs"
-msgstr "ফর্ম ইনপুট"
+msgstr "Input Di Un Form"
 
 #: admin/view/partial/apply-form-style.php:92
 msgid "Form Label"
-msgstr "ফর্ম লেবেল"
+msgstr "Modulo Di Etichetta"
 
 #: admin/view/partial/apply-form-style.php:47
 msgid "Form Title"
-msgstr "ফর্ম শিরোনাম"
+msgstr "Titolo Del Modulo"
 
 #: admin/cls-jobwp-admin.php:94 admin/cls-jobwp-admin.php:95
 #: admin/view/general.php:16
 msgid "General Settings"
-msgstr "সাধারণ সেটিংস"
+msgstr "Impostazioni Generali"
 
 #: admin/view/general.php:86
 msgid "Grid"
-msgstr "গ্রিড"
+msgstr "Griglia"
 
 #: admin/view/email.php:52
 msgid "Header From Email"
-msgstr "হেডার থেকে ইমেইল"
+msgstr "Intestazione E-Mail"
 
 #: admin/view/email.php:44
 msgid "Header From Name"
-msgstr "হেডার থেকে নাম"
+msgstr "L'Intestazione Con Nome"
 
 #: admin/view/partial/single-style.php:228
 msgid "Height"
-msgstr "উচ্চতা"
+msgstr "Altezza"
 
 #: lib/freemius-integrator.php:53
 #, php-format
 msgid "Hey %1$s"
-msgstr "আরে %1$s"
+msgstr "Ehi, %1$s"
 
 #: core/job_application.php:162
 msgid "Hi"
-msgstr "হাই"
+msgstr "Ciao"
 
 #: admin/view/partial/single-content.php:175
 msgid "Hide Additional Requirements"
-msgstr "আড়াল অতিরিক্ত প্রয়োজনীয়তা"
+msgstr "Nascondi Ulteriori Requisiti"
 
 #: admin/view/partial/single-content.php:361
 msgid "Hide Apply Button"
-msgstr "আড়াল বাটন প্রয়োগ"
+msgstr "Nascondere Il Pulsante Applica"
 
 #: admin/view/partial/single-content.php:336
 msgid "Hide Apply Procedure"
-msgstr "আড়াল আবেদন পদ্ধতি"
+msgstr "Nascondere Applica La Procedura Di"
 
 #: admin/view/partial/search-content.php:41
 msgid "Hide Category"
-msgstr "আড়াল বিভাগ"
+msgstr "Nascondere Categoria"
 
 #: admin/view/partial/apply-form-content.php:49
 msgid "Hide Cover Letter"
-msgstr "আড়াল কভার চিঠি"
+msgstr "Nascondere Lettera Di Copertura"
 
 #: admin/view/partial/listing-content.php:111
 msgid "Hide Deadline"
-msgstr "আড়াল নির্দিষ্ট সময়সীমা"
+msgstr "Nascondere Scadenza"
 
 #: admin/view/partial/single-content.php:215
 msgid "Hide Educational Requirements"
-msgstr "আড়াল শিক্ষাগত প্রয়োজনীয়তা"
+msgstr "Nascondere I Requisiti Educativi"
 
 #: admin/view/partial/listing-content.php:89
 msgid "Hide Experience"
-msgstr "আড়াল অভিজ্ঞতা"
+msgstr "Nascondere Esperienza"
 
 #: admin/view/partial/single-content.php:235
 msgid "Hide Experience Requirements"
-msgstr "আড়াল অভিজ্ঞতা প্রয়োজনীয়তা"
+msgstr "Nascondere I Requisiti Di Esperienza"
 
 #: admin/view/partial/apply-form-content.php:18
 msgid "Hide Form Title"
-msgstr "আড়াল ফর্ম শিরোনাম"
+msgstr "Nascondere Il Titolo Del Modulo"
 
 #: admin/view/partial/listing-content.php:461
 msgid "Hide Icon"
-msgstr "আড়াল আইকন"
+msgstr "Icona Nascondi"
 
 #: admin/view/partial/search-content.php:83
 #: admin/view/partial/single-content.php:315
 msgid "Hide Job Level"
-msgstr "আড়াল কাজ স্তর"
+msgstr "Nascondi Il Livello Di Lavoro"
 
 #: admin/view/partial/search-content.php:69
 #: admin/view/partial/single-content.php:255
 msgid "Hide Job Location"
-msgstr "গোপন কাজ, অবস্থান"
+msgstr "Nascondere Posizione Di Lavoro"
 
 #: admin/view/partial/single-content.php:195
 msgid "Hide Job Nature"
-msgstr "আড়াল কাজের প্রকৃতি"
+msgstr "Nascondere Di Lavoro Di Natura"
 
 #: admin/view/partial/listing-content.php:155
 #: admin/view/partial/search-content.php:55
 msgid "Hide Job Type"
-msgstr "আড়াল কাজ টাইপ"
+msgstr "Nascondi Tipo Di Lavoro"
 
 #: admin/view/general.php:130
 msgid "Hide Jobs When Deadline Over"
-msgstr "আড়াল চাকরি যখন নির্দিষ্ট সময়সীমা উপর"
+msgstr "Nascondere I Lavori Oltre Il Termine Di Scadenza"
 
 #: admin/view/partial/search-content.php:27
 msgid "Hide Keyword"
-msgstr "আড়াল কিওয়ার্ড"
+msgstr "Nascondere Parola Chiave"
 
 #: admin/view/partial/listing-content.php:133
 msgid "Hide Location"
-msgstr "আড়াল অবস্থান"
+msgstr "Nascondere Posizione"
 
 #: admin/view/partial/single-content.php:115
 msgid "Hide No. of Vacancies"
-msgstr "আড়াল নেই. এর খালি"
+msgstr "Nascondere No. di posti Vacanti"
 
 #: admin/view/partial/single-content.php:295
 msgid "Hide Other Benefits"
-msgstr "আড়াল অন্যান্য সুবিধা"
+msgstr "Nascondere Altri Benefici"
 
 #: admin/view/partial/listing-content.php:68
 #: admin/view/partial/single-content.php:95
 msgid "Hide Overview"
-msgstr "আড়াল সংক্ষিপ্ত বিবরণ"
+msgstr "Nascondere Panoramica"
 
 #: admin/view/partial/listing-content.php:481
 msgid "Hide Pagination"
-msgstr "আড়াল পত্রাঙ্কন"
+msgstr "Nascondere La Paginazione"
 
 #: admin/view/partial/single-content.php:155
 msgid "Hide Responsible For"
-msgstr "লুকানোর জন্য দায়ী"
+msgstr "Nascondere Responsabile"
 
 #: admin/view/partial/single-content.php:275
 msgid "Hide Salary"
-msgstr "আড়াল বেতন"
+msgstr "Nascondere Stipendio"
 
 #: admin/view/partial/search-content.php:18
 msgid "Hide Search Panel"
-msgstr "অনুসন্ধান প্যানেল লুকান"
+msgstr "Nascondi Pannello Di Ricerca"
 
 #: admin/view/partial/single-content.php:377
 msgid "Hide Share On"
-msgstr "আড়াল শেয়ার করুন"
+msgstr "Nascondere Condividi Su"
 
 #: admin/view/partial/single-content.php:135
 msgid "Hide Specific Skills"
-msgstr "আড়াল নির্দিষ্ট দক্ষতা"
+msgstr "Nascondere Specifiche Competenze"
 
 #: admin/view/partial/listing-content.php:446
 msgid "Hide Total Jobs Found"
-msgstr "আড়াল মোট চাকরি পাওয়া যায়"
+msgstr "Nascondere Totale Di Posti Di Lavoro Trovato"
 
 #: admin/view/partial/apply-form-content.php:104
 msgid "Hide User Consent"
-msgstr "আড়াল ব্যবহারকারীর সম্মতি"
+msgstr "Nascondere Il Consenso Dell'Utente"
 
 #: admin/view/partial/listing-style.php:539
 msgid "Hover Background Color"
-msgstr "উপর কার্সার রেখে দেখুন পটভূমির রঙ"
+msgstr "Passa Il Colore Di Sfondo"
 
 #: admin/view/partial/listing-style.php:84
 #: admin/view/partial/listing-style.php:558
 msgid "Hover Font Color"
-msgstr "উপর কার্সার রেখে দেখুন ফন্টের রং"
+msgstr "Hover Colore Del Carattere"
 
 #: admin/view/partial/single-style.php:137
 msgid "How to Apply"
-msgstr "কিভাবে আবেদন করতে হবে"
+msgstr "Come Applicare"
 
 #: admin/view/partial/listing-content.php:70
 msgid "img/jobwp-list-hide-overview.webp"
-msgstr "img/jobwp-তালিকা-লুকান-সংক্ষিপ্ত বিবরণ.webp"
+msgstr "img/jobwp-elenco-nascondere-panoramica.webp"
 
 #: admin/view/partial/job-info.php:113
 msgid "Inactive"
-msgstr "নিষ্ক্রিয়"
+msgstr "Inattivo"
 
 #: admin/view/partial/single-style.php:120
 msgid "Info Font Color"
-msgstr "তথ্য ফন্টের রং"
+msgstr "Info Colore Del Carattere"
 
 #: admin/view/partial/single-style.php:127
 msgid "Info Font Size"
-msgstr "তথ্য ফন্টের আকার"
+msgstr "Info Dimensione Del Carattere"
 
 #: admin/cls-jobwp-admin.php:452 admin/cls-jobwp-admin.php:462
 msgid "Job Categories"
-msgstr "কাজের ধরন"
+msgstr "Categorie Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:453
 msgid "Job Category"
-msgstr "কাজের বিভাগ"
+msgstr "Categoria Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:565 admin/cls-jobwp-admin.php:566
 #: admin/cls-jobwp-admin.php:575
 msgid "Job Company"
-msgstr "কাজ কোম্পানি"
+msgstr "Lavoro Azienda"
 
 #: admin/cls-jobwp-admin.php:598
 msgid "Job Details:"
-msgstr "কাজের বিবরণ:"
+msgstr "Dettagli Lavoro:"
 
 #: admin/view/partial/single-style.php:77
 msgid "Job Info"
-msgstr "কাজ তথ্য"
+msgstr "Info Lavoro"
 
 #: admin/view/partial/listing-style.php:174
 msgid "Job Information Label"
-msgstr "কাজের তথ্য লেবেল"
+msgstr "Informazioni Sul Processo Di Etichetta"
 
 #: admin/view/partial/listing-style.php:19
 msgid "Job Item"
-msgstr "কাজ আইটেম"
+msgstr "Lavoro Elemento"
 
 #: admin/cls-jobwp-admin.php:510 admin/cls-jobwp-admin.php:511
 #: admin/cls-jobwp-admin.php:520
 msgid "Job Level"
-msgstr "কাজের স্তর"
+msgstr "A Livello Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:539 admin/cls-jobwp-admin.php:540
 #: admin/cls-jobwp-admin.php:549
 msgid "Job Location"
-msgstr "কাজের অবস্থান"
+msgstr "Sede Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:481 admin/cls-jobwp-admin.php:482
 #: admin/cls-jobwp-admin.php:491
 msgid "Job Nature"
-msgstr "কাজের প্রকৃতি"
+msgstr "Di Lavoro Di Natura"
 
 #: admin/view/partial/listing-style.php:152
 msgid "Job Overview"
-msgstr "কাজের সংক্ষিপ্ত বিবরণ"
+msgstr "Panoramica"
 
 #: admin/view/general.php:79
 msgid "Job Page Layout"
-msgstr "কাজ পৃষ্ঠা বিন্যাস"
+msgstr "Lavoro Di Layout Di Pagina"
 
 #: admin/view/partial/listing-style.php:65
 #: admin/view/partial/single-style.php:48
 msgid "Job Title"
-msgstr "কাজের শিরোনাম"
+msgstr "Titolo Di Lavoro"
 
 #: admin/view/partial/single-content.php:22
 msgid "Job Title Tag"
-msgstr "চাকরির শিরোনাম ট্যাগ"
+msgstr "Titolo Di Lavoro Tag"
 
 #: front/view/listing.php:60
 msgid "Jobs"
-msgstr "চাকরি"
+msgstr "Posti di lavoro"
 
 #: admin/cls-jobwp-admin.php:423
 msgid "jobs"
-msgstr "চাকরি"
+msgstr "posti di lavoro"
 
 #: admin/view/partial/single-style.php:104
 msgid "Label Font Color"
-msgstr "লেবেল ফন্টের রং"
+msgstr "Etichetta Colore Del Carattere"
 
 #: admin/view/partial/single-style.php:111
 msgid "Label Font Size"
-msgstr "লেবেল ফন্ট সাইজ"
+msgstr "Dimensione Del Carattere Dell'Etichetta"
 
 #: admin/view/partial/listing-content.php:96
 #: admin/view/partial/listing-content.php:118
@@ -800,96 +809,96 @@ msgstr "লেবেল ফন্ট সাইজ"
 #: admin/view/partial/single-content.php:322
 #: admin/view/partial/single-content.php:396
 msgid "Label Text"
-msgstr "লেবেল টেক্সট"
+msgstr "Il Testo Dell'Etichetta"
 
 #: admin/view/partial/single-style.php:95
 msgid "Left"
-msgstr "বাম"
+msgstr "A sinistra"
 
 #: admin/view/partial/listing-style.php:359
 msgid "Left/Right"
-msgstr "বাম/ডান"
+msgstr "Sinistra/Destra"
 
 #: admin/view/general.php:83
 msgid "List"
-msgstr "তালিকা"
+msgstr "Elenco"
 
 #: admin/cls-jobwp-admin.php:103 admin/cls-jobwp-admin.php:104
 #: admin/view/listing.php:9
 msgid "Listing Page Settings"
-msgstr "তালিকা পৃষ্ঠা সেটিংস"
+msgstr "Elenco Delle Impostazioni Di Pagina"
 
 #: admin/cls-jobwp-admin.php:956
 msgid "Logo"
-msgstr "লোগো"
+msgstr "Logo"
 
 #: admin/view/partial/single-style.php:38
 msgid "Margin Bottom"
-msgstr "মার্জিন নীচে"
+msgstr "Margine Inferiore"
 
 #: admin/view/partial/single-style.php:31
 msgid "Margin Top"
-msgstr "মার্জিন শীর্ষ"
+msgstr "Margine Superiore"
 
 #: admin/cls-jobwp-admin.php:383
 msgid "Name"
-msgstr "নাম"
+msgstr "Nome"
 
 #: admin/view/partial/apply-form-content.php:32
 msgid "Name Label"
-msgstr "নাম লেবেল"
+msgstr "Etichetta Con Nome"
 
 #: admin/cls-jobwp-admin.php:461
 msgid "New Job Category Name"
-msgstr "নতুন চাকরী বিষয়শ্রেণীতে নাম"
+msgstr "Nuovo Lavoro A Nome Della Categoria"
 
 #: admin/cls-jobwp-admin.php:574
 msgid "New Job Company Name"
-msgstr "নতুন চাকরী কোম্পানির নাম"
+msgstr "Nuovo Lavoro Nome Società"
 
 #: admin/cls-jobwp-admin.php:519
 msgid "New Job Level Name"
-msgstr "নতুন পেশা স্তরের নাম"
+msgstr "Nuovo Lavoro A Livello Di Nome"
 
 #: admin/cls-jobwp-admin.php:548
 msgid "New Job Location Name"
-msgstr "নতুন কাজ অবস্থান নাম"
+msgstr "Nuova Posizione Di Lavoro Nome"
 
 #: admin/cls-jobwp-admin.php:490
 msgid "New Job Nature Name"
-msgstr "নতুন কাজের প্রকৃতি নাম"
+msgstr "Nuovo Lavoro Di Natura Nome"
 
 #: front/view/single-job.php:37
 msgid "No job available!"
-msgstr "কোন কাজ পাওয়া যায়!"
+msgstr "Nessun lavoro disponibile!"
 
 #: front/view/listing.php:456
 msgid "No Job found"
-msgstr "কোন কাজ পাওয়া যায়"
+msgstr "Il Lavoro non lo trova"
 
 #: admin/view/partial/job-info.php:50
 msgid "No. of Vacancies"
-msgstr "কোন. এর খালি"
+msgstr "No. di posti Vacanti"
 
 #: admin/cls-jobwp-admin.php:419
 msgid "Not Found"
-msgstr "না পাওয়া"
+msgstr "Non Trovato"
 
 #: admin/cls-jobwp-admin.php:420
 msgid "Not found in Trash"
-msgstr "না পাওয়া যায়, ট্র্যাশ"
+msgstr "Non trovato nel Cestino"
 
 #: admin/view/general.php:46
 msgid "Notification Email to User Role"
-msgstr "বিজ্ঞপ্তি ইমেল থেকে, ব্যবহারকারী ভূমিকা"
+msgstr "E-Mail di notifica per Ruolo Utente"
 
 #: core/job_application.php:23
 msgid "Only Pdf file is permitted"
-msgstr "শুধুমাত্র পিডিএফ ফাইল অনুমতি দেওয়া হয়"
+msgstr "Solo file Pdf è consentito"
 
 #: core/job_application.php:28
 msgid "Only Pdf, Docx files are permitted"
-msgstr "শুধুমাত্র পিডিএফ, Docx ফাইল অনুমতি দেওয়া হয়"
+msgstr "Solo Pdf, Docx file è consentito"
 
 #: admin/view/partial/listing-content.php:102
 #: admin/view/partial/listing-content.php:124
@@ -900,84 +909,84 @@ msgstr "শুধুমাত্র পিডিএফ, Docx ফাইল অন
 #: admin/view/partial/listing-content.php:327
 #: admin/view/partial/listing-content.php:385
 msgid "Order"
-msgstr "যাতে"
+msgstr "Ordine"
 
 #: admin/cls-jobwp-admin.php:652
 msgid "Other Benefits:"
-msgstr "অন্যান্য সুবিধা:"
+msgstr "Altri Benefici:"
 
 #: admin/view/partial/listing-style.php:343
 #: admin/view/partial/single-style.php:224
 msgid "Padding"
-msgstr "প্যাডিং"
+msgstr "Imbottitura"
 
 #: admin/view/partial/listing-style.php:435
 msgid "Pagination"
-msgstr "Pagination"
+msgstr "Impaginazione"
 
 #: admin/cls-jobwp-admin.php:411
 msgid "Parent Job"
-msgstr "মূল কাজ"
+msgstr "Processo Padre"
 
 #: admin/cls-jobwp-admin.php:456
 msgid "Parent Job Category"
-msgstr "মূল পেশা বিভাগ"
+msgstr "Lavoro Principale Di Categoria"
 
 #: admin/cls-jobwp-admin.php:457
 msgid "Parent Job Category:"
-msgstr "ঊর্ধ্বতন Job Category:"
+msgstr "Lavoro Parent Category:"
 
 #: admin/cls-jobwp-admin.php:569
 msgid "Parent Job Company"
-msgstr "পিতা বা মাতা কোম্পানি কাজ"
+msgstr "Lavoro Principale Azienda"
 
 #: admin/cls-jobwp-admin.php:570
 msgid "Parent Job Company:"
-msgstr "মূল কাজ কোম্পানি:"
+msgstr "Lavoro Principale Azienda:"
 
 #: admin/cls-jobwp-admin.php:514
 msgid "Parent Job Level"
-msgstr "মূল পেশা স্তর"
+msgstr "Genitore A Livello Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:515
 msgid "Parent Job Level:"
-msgstr "মূল কাজের স্তর:"
+msgstr "Genitore A Livello Di Lavoro:"
 
 #: admin/cls-jobwp-admin.php:543
 msgid "Parent Job Location"
-msgstr "মূল কাজ, অবস্থান"
+msgstr "Genitore Posizione Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:544
 msgid "Parent Job Location:"
-msgstr "মূল কাজের অবস্থান:"
+msgstr "Genitore Sede Di Lavoro:"
 
 #: admin/cls-jobwp-admin.php:485
 msgid "Parent Job Nature"
-msgstr "মূল কাজের প্রকৃতি"
+msgstr "Lavoro Principale Di Natura"
 
 #: admin/cls-jobwp-admin.php:486
 msgid "Parent Job Nature:"
-msgstr "মূল কাজের প্রকৃতি:"
+msgstr "Lavoro Principale Di Natura:"
 
 #: front/view/apply.php:93
 msgid "pdf"
-msgstr "পিডিএফ"
+msgstr "pdf"
 
 #: front/view/apply.php:97
 msgid "pdf, docx, doc"
-msgstr "পিডিএফ, docx, doc"
+msgstr "pdf, docx, doc"
 
 #: admin/cls-jobwp-admin.php:392
 msgid "Phone"
-msgstr "ফোন"
+msgstr "Telefono"
 
 #: admin/view/partial/apply-form-content.php:82
 msgid "Phone Label"
-msgstr "ফোন লেবেল"
+msgstr "Telefono Etichetta"
 
 #: core/job_application.php:121
 msgid "Phone: "
-msgstr ""
+msgstr "Telefono:"
 
 #: admin/view/partial/search-content.php:33
 #: admin/view/partial/search-content.php:47
@@ -985,7 +994,7 @@ msgstr ""
 #: admin/view/partial/search-content.php:75
 #: admin/view/partial/search-content.php:101
 msgid "Placeholder Text"
-msgstr "স্থানধারক টেক্সট"
+msgstr "Il Testo Segnaposto"
 
 #: lib/freemius-integrator.php:54
 #, php-format
@@ -994,9 +1003,9 @@ msgid ""
 "%2$s will be sent to %5$s. If you skip this, that's okay! %2$s will still "
 "work just fine."
 msgstr ""
-"দয়া করে আমাদের সাহায্য উন্নত %2$s! আপনি যদি অপ্ট ইন, কিছু তথ্য সম্পর্কে "
-"আপনার usage of %2$s will be sent to %5$s. যদি আপনি এই লাফালাফি, এটা ঠিক আছে! "
-"%2$s এখনও ঠিক সূক্ষ্ম কাজ করবে."
+"Aiutaci a migliorare %2$s! Se si opt-in, alcuni dati circa l'utilizzo di "
+"%2$s sarà inviata a %5$s. Se si ignora questo, va bene così! %2$s continuerà "
+"a funzionare bene."
 
 #: admin/view/email.php:95 admin/view/general.php:52 admin/view/general.php:116
 #: admin/view/general.php:144 admin/view/partial/apply-form-content.php:70
@@ -1069,51 +1078,51 @@ msgstr ""
 #: admin/view/partial/single-content.php:402
 #: admin/view/partial/single-style.php:88
 msgid "Please Upgrade Now"
-msgstr "এখন আপগ্রেড করুন"
+msgstr "Per Favore, Aggiorna Ora"
 
 #: admin/view/application_list.php:80
 msgid "Please Upgrade Now to Export"
-msgstr "দয়া করে আপগ্রেড করার জন্য এখন রপ্তানি"
+msgstr "Per favore, aggiorna Ora per Esportazione"
 
 #: admin/view/application_list.php:79
 msgid "Please Upgrade to Export in CSV/Excel"
-msgstr "দয়া করে আপগ্রেড করার জন্য এক্সপোর্ট CSV/এক্সেল"
+msgstr "Aggiornamento, per l'Esportazione in formato CSV/Excel"
 
 #: core/job_application.php:163
 msgid "position"
-msgstr "অবস্থান"
+msgstr "posizione"
 
 #: admin/view/partial/listing-style.php:220
 msgid "Read More Button"
-msgstr "আরো বাটন পড়ুন"
+msgstr "Leggi Di Più Pulsante"
 
 #: admin/view/partial/listing-style.php:370
 msgid "Read More Button : Hover"
-msgstr "আরো বাটন পড়ুন : উপর কার্সার রেখে দেখুন"
+msgstr "Leggi Di Più Pulsante : Hover"
 
 #: front/view/single/header.php:88
 msgid "reCaptcha verification failed!"
-msgstr "তথ্যের যাচাইকরণ ব্যর্থ হয়েছে!"
+msgstr "reCaptcha verifica non riuscita!"
 
 #: admin/cls-jobwp-admin.php:945 jobwp.php:156
 msgid "Remove Logo"
-msgstr "অপসারণ লোগো"
+msgstr "Rimuovere Il Logo"
 
 #: admin/cls-jobwp-admin.php:607
 msgid "Responsibilities / Roles"
-msgstr "দায়িত্ব / ভূমিকা"
+msgstr "Responsabilità / Ruoli"
 
 #: admin/cls-jobwp-admin.php:386
 msgid "Resume"
-msgstr "সারসংকলন"
+msgstr "Riprendere"
 
 #: admin/view/partial/single-style.php:97
 msgid "Right"
-msgstr "ডান"
+msgstr "A destra"
 
 #: admin/cls-jobwp-admin.php:643
 msgid "Salary:"
-msgstr "বেতন:"
+msgstr "Stipendio:"
 
 #: admin/view/email.php:86 admin/view/general.php:190
 #: admin/view/partial/apply-form-content.php:152
@@ -1125,129 +1134,133 @@ msgstr "বেতন:"
 #: admin/view/partial/single-content.php:418
 #: admin/view/partial/single-style.php:272
 msgid "Save Settings"
-msgstr "সেটিংস সংরক্ষণ করুন"
+msgstr "Salvare Le Impostazioni"
 
 #: admin/view/partial/search-style.php:91
 msgid "Search Button"
-msgstr "অনুসন্ধান বাটন"
+msgstr "Pulsante Di Ricerca"
 
 #: admin/view/partial/search-style.php:120
 msgid "Search Button :: Hover"
-msgstr "অনুসন্ধান বাটন :: উপর কার্সার রেখে দেখুন"
+msgstr "Pulsante Di Ricerca :: Hover"
 
 #: admin/view/partial/search-content.php:122
 msgid "Search Button Text"
-msgstr "অনুসন্ধান বাটন টেক্সট"
+msgstr "Pulsante Di Ricerca Di Testo"
 
 #: admin/view/partial/search-style.php:41
 msgid "Search Items"
-msgstr "অনুসন্ধান আইটেম"
+msgstr "Elementi Di Ricerca"
 
 #: admin/cls-jobwp-admin.php:418
 msgid "Search Job"
-msgstr "অনুসন্ধান কাজ"
+msgstr "Di Ricerca Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:454
 msgid "Search Job Categories"
-msgstr "অনুসন্ধান কাজ আরও"
+msgstr "La Ricerca Di Categorie Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:567
 msgid "Search Job Company"
-msgstr "অনুসন্ধান কাজ কোম্পানি"
+msgstr "Di Lavoro Di Ricerca Azienda"
 
 #: admin/cls-jobwp-admin.php:512
 msgid "Search Job Level"
-msgstr "অনুসন্ধান কাজ স্তর"
+msgstr "Di Ricerca A Livello Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:541
 msgid "Search Job Location"
-msgstr "অনুসন্ধান কাজ অবস্থান"
+msgstr "Di Lavoro Di Ricerca Percorso Di"
 
 #: admin/cls-jobwp-admin.php:483
 msgid "Search Job Nature"
-msgstr "অনুসন্ধান কাজের প্রকৃতি"
+msgstr "La Ricerca Di Lavoro Di Natura"
 
 #: admin/cls-jobwp-admin.php:112 admin/cls-jobwp-admin.php:113
 #: admin/view/search.php:9
 msgid "Search Panel Settings"
-msgstr "অনুসন্ধান প্যানেলের সেটিংস"
+msgstr "Ricerca Delle Impostazioni Del Pannello"
 
 #: admin/view/general.php:172
 msgid "Secret Key"
-msgstr "গোপন কী"
+msgstr "Chiave Segreta"
 
 #: admin/view/partial/job-info.php:24
 msgid "Select a Company"
-msgstr "নির্বাচন করুন একটি কোম্পানি"
+msgstr "Selezionare un'Azienda"
 
 #: admin/cls-jobwp-admin.php:380
 msgid "Select All"
-msgstr "সব নির্বাচন করুন"
+msgstr "Seleziona Tutto"
 
 #: admin/view/partial/job-info.php:9
 msgid "Select Company"
-msgstr "নির্বাচন কোম্পানি"
+msgstr "Selezionare La Società"
 
 #: admin/view/general.php:59
 msgid "Select User Role"
-msgstr "নির্বাচন ব্যবহারকারী ভূমিকা"
+msgstr "Selezionare Ruolo Di Utente"
 
 #: admin/view/general.php:164
 msgid "Site Key"
-msgstr "সাইটে কী"
+msgstr "Sito Chiave"
 
 #: admin/cls-jobwp-admin.php:616
 msgid "Skills Required:"
-msgstr "প্রয়োজনীয় দক্ষতা:"
+msgstr "Competenze Richieste:"
 
 #: front/view/single/header.php:65
 msgid "Sorry, your nonce did not verify."
-msgstr "দুঃখিত, আপনার আপাতত যাচাই করা হয়নি."
+msgstr "Spiacente, la tua nonce non si verifica."
 
 #: admin/view/partial/job-info.php:106
 msgid "Status"
-msgstr "অবস্থা"
+msgstr "Stato"
 
 #: admin/view/apply-form.php:25 admin/view/listing.php:25
 #: admin/view/search.php:25 admin/view/single.php:25
 msgid "Styles"
-msgstr "শৈলী"
+msgstr "Stili"
 
 #: admin/view/partial/apply-form-content.php:142
 msgid "Submit Button Text"
-msgstr "জমা বাটন টেক্সট"
+msgstr "Testo Del Bottone Submit"
 
 #: core/job_application.php:179
 msgid "Thank you for your application"
-msgstr "ধন্যবাদ, আপনি আপনার অ্যাপ্লিকেশনের জন্য"
+msgstr "Grazie per la vostra applicazione"
 
 #: core/job_application.php:163
 msgid "Thanks for applying to our"
-msgstr "ধন্যবাদ জন্য আবেদন করতে আমাদের"
+msgstr "Grazie per la domanda per il nostro"
 
 #: core/job_application.php:60
-msgid "The file cannot be copied in the folder "
-msgstr ""
+msgid "The file cannot be copied in the folder"
+msgstr "Il file non può essere copiato nella cartella"
+
+#: core/job_application.php:46
+msgid "The folder"
+msgstr "La cartella"
 
 #: admin/view/partial/single-style.php:165
 msgid "Title Border Color"
-msgstr "শিরোনাম সীমানা রং"
+msgstr "Titolo Il Colore Del Bordo"
 
 #: admin/view/partial/single-style.php:149
 msgid "Title Font Color"
-msgstr "শিরোনাম ফন্ট রঙ"
+msgstr "Titolo Font Color"
 
 #: admin/view/partial/single-style.php:156
 msgid "Title Font Size"
-msgstr "শিরোনাম ফন্ট, আকার"
+msgstr "Titolo Dimensione Del Carattere"
 
 #: admin/view/partial/apply-form-content.php:24
 msgid "Title Text"
-msgstr "শিরোনাম টেক্সট"
+msgstr "Il Testo Del Titolo"
 
 #: admin/view/partial/listing-content.php:19
 msgid "Title Word Length"
-msgstr "শিরোনাম শব্দ দৈর্ঘ্য"
+msgstr "Titolo Word Lunghezza"
 
 #: admin/view/email.php:75
 msgid "To use candidate name apply #candidateName# in the content"
@@ -1259,39 +1272,39 @@ msgstr ""
 
 #: admin/view/partial/listing-style.php:355
 msgid "Top/Bottom"
-msgstr "উপরে/নীচে"
+msgstr "Superiore/Inferiore"
 
 #: freemius/includes/class-freemius.php:19047
 msgid "true"
-msgstr "সত্য"
+msgstr "vero"
 
 #: admin/cls-jobwp-admin.php:417
 msgid "Update Job"
-msgstr "আপডেট কাজ"
+msgstr "Processo Di Aggiornamento"
 
 #: admin/cls-jobwp-admin.php:459
 msgid "Update Job Category"
-msgstr "আপডেট কাজ বিভাগ"
+msgstr "Processo Di Aggiornamento Per Categoria"
 
 #: admin/cls-jobwp-admin.php:572
 msgid "Update Job Company"
-msgstr "আপডেট কাজ কোম্পানি"
+msgstr "Processo Di Aggiornamento Azienda"
 
 #: admin/cls-jobwp-admin.php:517
 msgid "Update Job Level"
-msgstr "আপডেট কাজ স্তর"
+msgstr "Aggiornamento A Livello Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:546
 msgid "Update Job Location"
-msgstr "আপডেট কাজ, অবস্থান"
+msgstr "Aggiornamento Posizione Di Lavoro"
 
 #: admin/cls-jobwp-admin.php:488
 msgid "Update Job Nature"
-msgstr "আপডেট কাজের প্রকৃতি"
+msgstr "Processo Di Aggiornamento Natura"
 
 #: front/view/apply.php:85
 msgid "Upload CV/Resume"
-msgstr "তারিখ সিভি/সারসংকলন"
+msgstr "Caricare CV"
 
 #: admin/view/email.php:79
 msgid "Use <<code>br</code>> to break line in the content"
@@ -1299,60 +1312,60 @@ msgstr ""
 
 #: admin/view/general.php:91
 msgid "Use External Application Form"
-msgstr "ব্যবহার বহিরাগত অ্যাপ্লিকেশন ফর্ম"
+msgstr "Uso Esterno Modulo Della Domanda"
 
 #: admin/cls-jobwp-admin.php:391
 msgid "User Consent"
-msgstr "ব্যবহারকারী অনুমতি"
+msgstr "Il Consenso Dell'Utente"
 
 #: admin/view/partial/apply-form-content.php:122
 msgid "User Consent Text"
-msgstr "ব্যবহারকারী সম্মতি টেক্সট"
+msgstr "Il Consenso Dell'Utente Di Testo"
 
 #: front/view/listing.php:67
 msgid "View"
-msgstr "দেখুন"
+msgstr "Vista"
 
 #: admin/cls-jobwp-admin.php:413
 msgid "View Job"
-msgstr "দেখুন কাজ"
+msgstr "Lavoro Di Vista"
 
 #: core/job_application.php:164
 msgid ""
 "We'll review your application and be sure to get back to you if there might "
 "be a fit!"
 msgstr ""
-"আমরা পর্যালোচনা করব আপনার আবেদন এবং নিশ্চিত করা আপনি ফিরে পেতে হতে পারে যদি "
-"একটি উপযুক্ত!"
+"Esamineremo la tua domanda ed essere sicuri di tornare a voi se ci potrebbe "
+"essere un bene!"
 
 #: admin/cls-jobwp-admin.php:958
 msgid "Website"
-msgstr "ওয়েবসাইট"
+msgstr "Sito web"
 
 #: admin/view/partial/single-style.php:230
 msgid "Width"
-msgstr "প্রস্থ"
+msgstr "Larghezza"
 
 #: admin/view/partial/listing-content.php:77
 msgid "Word Length"
-msgstr "শব্দ দৈর্ঘ্য"
+msgstr "La Lunghezza Della Parola"
 
 #: admin/cls-jobwp-admin.php:409 admin/cls-jobwp-admin.php:410
 msgid "WP Jobs"
-msgstr "ডাব্লু চাকরি"
+msgstr "WP Lavori"
 
 #: admin/view/partial/job-info.php:42
 msgid "Year of Experience"
-msgstr "বছর এর অভিজ্ঞতা"
+msgstr "Anno di Esperienza"
 
 #: admin/view/general.php:105
 msgid ""
 "You can use external form instead of default application form. Like WPForms, "
 "Contact Form etc."
 msgstr ""
-"আপনি ব্যবহার করতে পারেন, বহিরাগত ফর্ম, পরিবর্তে ডিফল্ট অ্যাপ্লিকেশন ফর্ম. মত "
-"WPForms, যোগাযোগ ফর্ম, ইত্যাদি."
+"È possibile utilizzare la forma esterna invece di default del modulo di "
+"domanda. Come WPForms, Modulo di Contatto, etc."
 
 #: core/job_application.php:36
 msgid "Your file size is to large"
-msgstr "আপনার ফাইলের আকার বড় করতে"
+msgstr "La dimensione del file è di grandi dimensioni"
