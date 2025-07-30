@@ -1,462 +1,462 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JobWP\n"
-"POT-Creation-Date: 2025-07-30 00:54+0600\n"
-"PO-Revision-Date: 2025-07-30 16:13+0000\n"
+"POT-Creation-Date: 2025-07-30 22:30+0600\n"
+"PO-Revision-Date: 2025-07-30 16:52+0000\n"
 "Last-Translator: \n"
-"Language-Team: Spanish (Spain)\n"
-"Language: es_ES\n"
+"Language-Team: French (France)\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: admin/cls-jobwp-admin.php\n"
-"\n"
 "Report-Msgid-Bugs-To: \n"
 "X-Loco-Version: 2.8.0; wp-6.8.2; php-7.4.19"
 
 #: admin/cls-jobwp-admin.php:94 admin/cls-jobwp-admin.php:95
 #: admin/view/general.php:16
 msgid "General Settings"
-msgstr ""
+msgstr "Paramètres Généraux"
 
 #: admin/cls-jobwp-admin.php:103 admin/cls-jobwp-admin.php:104
 #: admin/view/listing.php:9
 msgid "Listing Page Settings"
-msgstr ""
+msgstr "Page De La Liste Des Paramètres"
 
 #: admin/cls-jobwp-admin.php:112 admin/cls-jobwp-admin.php:113
 #: admin/view/search.php:9
 msgid "Search Panel Settings"
-msgstr ""
+msgstr "La Recherche Des Paramètres Du Panneau"
 
 #: admin/cls-jobwp-admin.php:121 admin/cls-jobwp-admin.php:122
 #: admin/view/single.php:9
 msgid "Detail Page Settings"
-msgstr ""
+msgstr "Détail De La Page De Paramètres"
 
 #: admin/cls-jobwp-admin.php:130 admin/cls-jobwp-admin.php:131
 #: admin/view/email.php:16
 msgid "Email Settings"
-msgstr ""
+msgstr "Paramètres De Messagerie"
 
 #: admin/cls-jobwp-admin.php:139 admin/cls-jobwp-admin.php:140
 msgid "Apply Form"
-msgstr ""
+msgstr "Appliquer La Forme"
 
 #: admin/cls-jobwp-admin.php:148 admin/cls-jobwp-admin.php:149
 msgid "Application List"
-msgstr ""
+msgstr "La Liste Des Applications"
 
 #: admin/cls-jobwp-admin.php:380
 msgid "Select All"
-msgstr ""
+msgstr "Sélectionnez Tous Les"
 
-#: admin/cls-jobwp-admin.php:382
+#: admin/cls-jobwp-admin.php:382 core/job_application.php:117
 msgid "Applied For"
-msgstr ""
+msgstr "Appliqué Pour"
 
 #: admin/cls-jobwp-admin.php:383
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: admin/cls-jobwp-admin.php:384 admin/cls-jobwp-admin.php:957
+#: core/job_application.php:118
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
-#: admin/cls-jobwp-admin.php:385
+#: admin/cls-jobwp-admin.php:385 core/job_application.php:125
 msgid "Cover Letter"
-msgstr ""
+msgstr "Lettre D'Accompagnement"
 
 #: admin/cls-jobwp-admin.php:386
 msgid "Resume"
-msgstr ""
+msgstr "Résumé"
 
 #: admin/cls-jobwp-admin.php:387
 msgid "Date"
-msgstr ""
+msgstr "Date"
 
 #: admin/cls-jobwp-admin.php:391
 msgid "User Consent"
-msgstr ""
+msgstr "Le Consentement De L'Utilisateur"
 
-#: admin/cls-jobwp-admin.php:392
+#: admin/cls-jobwp-admin.php:392 core/job_application.php:121
 msgid "Phone"
-msgstr ""
+msgstr "Téléphone"
 
 #: admin/cls-jobwp-admin.php:395
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 #: admin/cls-jobwp-admin.php:408 admin/cls-jobwp-admin.php:412
 msgid "All Jobs"
-msgstr ""
+msgstr "Tous Les Emplois"
 
 #: admin/cls-jobwp-admin.php:409 admin/cls-jobwp-admin.php:410
 msgid "WP Jobs"
-msgstr ""
+msgstr "WP Emplois"
 
 #: admin/cls-jobwp-admin.php:411
 msgid "Parent Job"
-msgstr ""
+msgstr "Parent D'Emploi"
 
 #: admin/cls-jobwp-admin.php:413
 msgid "View Job"
-msgstr ""
+msgstr "Le Travail De Vue"
 
 #: admin/cls-jobwp-admin.php:414
 msgid "Add New Job"
-msgstr ""
+msgstr "Ajouter Un Nouveau Travail"
 
 #: admin/cls-jobwp-admin.php:415
 msgid "Add New"
-msgstr ""
+msgstr "Ajouter De Nouveaux"
 
 #: admin/cls-jobwp-admin.php:416
 msgid "Edit Job"
-msgstr ""
+msgstr "Modifier Le Travail"
 
 #: admin/cls-jobwp-admin.php:417
 msgid "Update Job"
-msgstr ""
+msgstr "Tâche De Mise À Jour"
 
 #: admin/cls-jobwp-admin.php:418
 msgid "Search Job"
-msgstr ""
+msgstr "Recherche D'Emploi"
 
 #: admin/cls-jobwp-admin.php:419
 msgid "Not Found"
-msgstr ""
+msgstr "Pas Trouvé"
 
 #: admin/cls-jobwp-admin.php:420
 msgid "Not found in Trash"
-msgstr ""
+msgstr "Pas trouvé dans la Corbeille"
 
 #: admin/cls-jobwp-admin.php:423
 msgid "jobs"
-msgstr ""
+msgstr "emplois"
 
 #: admin/cls-jobwp-admin.php:424
 msgid "Description For Job"
-msgstr ""
+msgstr "Description De L'Emploi"
 
 #: admin/cls-jobwp-admin.php:452 admin/cls-jobwp-admin.php:462
 msgid "Job Categories"
-msgstr ""
+msgstr "Catégories D'Emploi"
 
 #: admin/cls-jobwp-admin.php:453
 msgid "Job Category"
-msgstr ""
+msgstr "Catégorie D'Emploi"
 
 #: admin/cls-jobwp-admin.php:454
 msgid "Search Job Categories"
-msgstr ""
+msgstr "Recherche De Toutes Les Catégories D'Emploi"
 
 #: admin/cls-jobwp-admin.php:455
 msgid "All Job Categories"
-msgstr ""
+msgstr "Toutes Les Catégories D'Emploi"
 
 #: admin/cls-jobwp-admin.php:456
 msgid "Parent Job Category"
-msgstr ""
+msgstr "Parent Catégorie D'Emploi"
 
 #: admin/cls-jobwp-admin.php:457
 msgid "Parent Job Category:"
-msgstr ""
+msgstr "Parent Catégorie D'Emploi:"
 
 #: admin/cls-jobwp-admin.php:458
 msgid "Edit Job Category"
-msgstr ""
+msgstr "Modifier La Catégorie D'Emploi"
 
 #: admin/cls-jobwp-admin.php:459
 msgid "Update Job Category"
-msgstr ""
+msgstr "Mise À Jour D'Une Catégorie D'Emploi"
 
 #: admin/cls-jobwp-admin.php:460
 msgid "Add New Job Category"
-msgstr ""
+msgstr "Ajouter Un Nouveau Travail De Catégorie"
 
 #: admin/cls-jobwp-admin.php:461
 msgid "New Job Category Name"
-msgstr ""
+msgstr "Nouvelle Catégorie D'Emploi Nom"
 
 #: admin/cls-jobwp-admin.php:481 admin/cls-jobwp-admin.php:482
 #: admin/cls-jobwp-admin.php:491
 msgid "Job Nature"
-msgstr ""
+msgstr "Travail De La Nature"
 
 #: admin/cls-jobwp-admin.php:483
 msgid "Search Job Nature"
-msgstr ""
+msgstr "Recherche Travail De La Nature"
 
 #: admin/cls-jobwp-admin.php:484
 msgid "All Job Nature"
-msgstr ""
+msgstr "Tous Les Emplois La Nature"
 
 #: admin/cls-jobwp-admin.php:485
 msgid "Parent Job Nature"
-msgstr ""
+msgstr "Parent Du Travail De La Nature"
 
 #: admin/cls-jobwp-admin.php:486
 msgid "Parent Job Nature:"
-msgstr ""
+msgstr "Parent Du Travail De La Nature:"
 
 #: admin/cls-jobwp-admin.php:487
 msgid "Edit Job Nature"
-msgstr ""
+msgstr "Modifier Le Travail De La Nature"
 
 #: admin/cls-jobwp-admin.php:488
 msgid "Update Job Nature"
-msgstr ""
+msgstr "Mise À Jour Du Travail De La Nature"
 
 #: admin/cls-jobwp-admin.php:489
 msgid "Add New Job Nature"
-msgstr ""
+msgstr "Ajouter Un Nouveau Travail De La Nature"
 
 #: admin/cls-jobwp-admin.php:490
 msgid "New Job Nature Name"
-msgstr ""
+msgstr "Nouveau Travail De La Nature Nom"
 
 #: admin/cls-jobwp-admin.php:510 admin/cls-jobwp-admin.php:511
 #: admin/cls-jobwp-admin.php:520
 msgid "Job Level"
-msgstr ""
+msgstr "Au Niveau De La Tâche"
 
 #: admin/cls-jobwp-admin.php:512
 msgid "Search Job Level"
-msgstr ""
+msgstr "La Recherche Au Niveau De La Tâche"
 
 #: admin/cls-jobwp-admin.php:513
 msgid "All Job Level"
-msgstr ""
+msgstr "Tous Les Emplois"
 
 #: admin/cls-jobwp-admin.php:514
 msgid "Parent Job Level"
-msgstr ""
+msgstr "Parent Au Niveau De La Tâche"
 
 #: admin/cls-jobwp-admin.php:515
 msgid "Parent Job Level:"
-msgstr ""
+msgstr "Parent Au Niveau De La Tâche:"
 
 #: admin/cls-jobwp-admin.php:516
 msgid "Edit Job Level"
-msgstr ""
+msgstr "Modifier Le Niveau D'Emploi"
 
 #: admin/cls-jobwp-admin.php:517
 msgid "Update Job Level"
-msgstr ""
+msgstr "Mise À Jour Au Niveau De La Tâche"
 
 #: admin/cls-jobwp-admin.php:518
 msgid "Add New Job Level"
-msgstr ""
+msgstr "Ajouter Un Nouveau Niveau De La Tâche"
 
 #: admin/cls-jobwp-admin.php:519
 msgid "New Job Level Name"
-msgstr ""
+msgstr "Nouveau Niveau D'Emploi Nom"
 
 #: admin/cls-jobwp-admin.php:539 admin/cls-jobwp-admin.php:540
 #: admin/cls-jobwp-admin.php:549
 msgid "Job Location"
-msgstr ""
+msgstr "Lieu De Travail"
 
 #: admin/cls-jobwp-admin.php:541
 msgid "Search Job Location"
-msgstr ""
+msgstr "Rechercher L'Emplacement De L'Emploi"
 
 #: admin/cls-jobwp-admin.php:542
 msgid "All Job Location"
-msgstr ""
+msgstr "Tous Les Lieu De Travail"
 
 #: admin/cls-jobwp-admin.php:543
 msgid "Parent Job Location"
-msgstr ""
+msgstr "Parents Lieu De Travail"
 
 #: admin/cls-jobwp-admin.php:544
 msgid "Parent Job Location:"
-msgstr ""
+msgstr "Parents Lieu De Travail:"
 
 #: admin/cls-jobwp-admin.php:545
 msgid "Edit Job Location"
-msgstr ""
+msgstr "Modifier L'Emplacement De L'Emploi"
 
 #: admin/cls-jobwp-admin.php:546
 msgid "Update Job Location"
-msgstr ""
+msgstr "Mise À Jour De L'Emplacement De L'Emploi"
 
 #: admin/cls-jobwp-admin.php:547
 msgid "Add New Job Location"
-msgstr ""
+msgstr "Ajouter Un Nouveau Lieu De Travail"
 
 #: admin/cls-jobwp-admin.php:548
 msgid "New Job Location Name"
-msgstr ""
+msgstr "Nouveau Lieu De Travail Nom"
 
 #: admin/cls-jobwp-admin.php:565 admin/cls-jobwp-admin.php:566
 #: admin/cls-jobwp-admin.php:575
 msgid "Job Company"
-msgstr ""
+msgstr "D'Emploi De L'Entreprise"
 
 #: admin/cls-jobwp-admin.php:567
 msgid "Search Job Company"
-msgstr ""
+msgstr "Recherche D'Emploi De L'Entreprise"
 
 #: admin/cls-jobwp-admin.php:568
 msgid "All Job Company"
-msgstr ""
+msgstr "Toutes Les Offres D'Emploi De L'Entreprise"
 
 #: admin/cls-jobwp-admin.php:569
 msgid "Parent Job Company"
-msgstr ""
+msgstr "Parent D'Emploi De L'Entreprise"
 
 #: admin/cls-jobwp-admin.php:570
 msgid "Parent Job Company:"
-msgstr ""
+msgstr "Parent D'Emploi De L'Entreprise:"
 
 #: admin/cls-jobwp-admin.php:571
 msgid "Edit Job Company"
-msgstr ""
+msgstr "Modifier L'Offre De L'Entreprise"
 
 #: admin/cls-jobwp-admin.php:572
 msgid "Update Job Company"
-msgstr ""
+msgstr "Mise À Jour De Travail De L'Entreprise"
 
 #: admin/cls-jobwp-admin.php:573
 msgid "Add New Job Company"
-msgstr ""
+msgstr "Ajouter Un Nouveau Travail De L'Entreprise"
 
 #: admin/cls-jobwp-admin.php:574
 msgid "New Job Company Name"
-msgstr ""
+msgstr "Nouvel Emploi Nom De L'Entreprise"
 
 #: admin/cls-jobwp-admin.php:598
 msgid "Job Details:"
-msgstr ""
+msgstr "Détails De L'Offre:"
 
 #: admin/cls-jobwp-admin.php:607
 msgid "Responsibilities / Roles"
-msgstr ""
+msgstr "Responsabilités / Rôles"
 
 #: admin/cls-jobwp-admin.php:616
 msgid "Skills Required:"
-msgstr ""
+msgstr "Compétences Requises:"
 
 #: admin/cls-jobwp-admin.php:625
 msgid "Educational Requirements:"
-msgstr ""
+msgstr "Exigences En Matière D'Éducation:"
 
 #: admin/cls-jobwp-admin.php:634
 msgid "Additional Requirements:"
-msgstr ""
+msgstr "Exigences Supplémentaires:"
 
 #: admin/cls-jobwp-admin.php:643
 msgid "Salary:"
-msgstr ""
+msgstr "Salaire:"
 
 #: admin/cls-jobwp-admin.php:652
 msgid "Other Benefits:"
-msgstr ""
+msgstr "Autres Avantages:"
 
 #: admin/cls-jobwp-admin.php:860
 msgid "Application has been deleted."
-msgstr ""
+msgstr "L'Application a été supprimée."
 
 #: admin/cls-jobwp-admin.php:920 jobwp.php:121
 msgid "Company Email"
-msgstr ""
+msgstr "Messagerie De L'Entreprise."
 
 #: admin/cls-jobwp-admin.php:926 jobwp.php:129
 msgid "Company Website"
-msgstr ""
+msgstr "Site Web De L'Entreprise"
 
 #: admin/cls-jobwp-admin.php:932 jobwp.php:137
 msgid "Company Address"
-msgstr ""
+msgstr "Adresse De La Société"
 
 #: admin/cls-jobwp-admin.php:938 jobwp.php:145
 msgid "Company Logo"
-msgstr ""
+msgstr "Le Logo De L'Entreprise"
 
 #: admin/cls-jobwp-admin.php:944
 msgid "Add Logo"
-msgstr ""
+msgstr "Ajoutez Le Logo De"
 
 #: admin/cls-jobwp-admin.php:945 jobwp.php:156
 msgid "Remove Logo"
-msgstr ""
+msgstr "Retirer Le Logo"
 
 #: admin/cls-jobwp-admin.php:956
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: admin/cls-jobwp-admin.php:958
 msgid "Website"
-msgstr ""
+msgstr "Site web"
 
 #: admin/cls-jobwp-admin.php:959
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 #: admin/view/application_list.php:16
 msgid "Application Lists"
-msgstr ""
+msgstr "Demande De Listes"
 
 #: admin/view/application_list.php:58
 msgid "DELETE"
-msgstr ""
+msgstr "SUPPRIMER"
 
 #: admin/view/application_list.php:79
 msgid "Please Upgrade to Export in CSV/Excel"
-msgstr ""
+msgstr "Veuillez mettre à niveau pour les Exporter dans un fichier CSV/Excel"
 
 #: admin/view/application_list.php:80
 msgid "Please Upgrade Now to Export"
-msgstr ""
+msgstr "Veuillez mettre à jour Maintenant pour l'Exportation"
 
 #: admin/view/application_list.php:87
 msgid "EXPORT TO CSV"
-msgstr ""
+msgstr "EXPORTER AU FORMAT CSV"
 
 #: admin/view/application_list.php:89
 msgid "Export To Excel"
-msgstr ""
+msgstr "Exporter Vers Excel"
 
 #: admin/view/apply-form.php:9
 msgid "Apply Form Settings"
-msgstr ""
+msgstr "Appliquer Les Paramètres De Formulaire"
 
 #: admin/view/apply-form.php:22 admin/view/listing.php:22
 #: admin/view/search.php:22 admin/view/single.php:22
 msgid "Content"
-msgstr ""
+msgstr "Contenu"
 
 #: admin/view/apply-form.php:25 admin/view/listing.php:25
 #: admin/view/search.php:25 admin/view/single.php:25
 msgid "Styles"
-msgstr ""
+msgstr "Styles"
 
 #: admin/view/email.php:39
 msgid "Candidate Email Settings"
-msgstr ""
+msgstr "Candidat Paramètres De Messagerie"
 
 #: admin/view/email.php:44
 msgid "Header From Name"
-msgstr ""
+msgstr "L'En-Tête De Nom"
 
 #: admin/view/email.php:52
 msgid "Header From Email"
-msgstr ""
+msgstr "L'En-Tête De L'E-Mail"
 
 #: admin/view/email.php:60
 msgid "Email Subject"
-msgstr ""
+msgstr "L'Objet Du Courriel"
 
 #: admin/view/email.php:68
 msgid "Email Content"
-msgstr ""
+msgstr "Le Contenu De L'Email"
 
 #: admin/view/email.php:75
 msgid "To use candidate name apply #candidateName# in the content"
@@ -480,7 +480,7 @@ msgstr ""
 #: admin/view/partial/single-content.php:418
 #: admin/view/partial/single-style.php:272
 msgid "Save Settings"
-msgstr ""
+msgstr "Enregistrer Les Paramètres"
 
 #: admin/view/email.php:95 admin/view/general.php:52 admin/view/general.php:116
 #: admin/view/general.php:144 admin/view/partial/apply-form-content.php:70
@@ -553,132 +553,138 @@ msgstr ""
 #: admin/view/partial/single-content.php:402
 #: admin/view/partial/single-style.php:88
 msgid "Please Upgrade Now"
-msgstr ""
+msgstr "Veuillez Mettre À Jour Maintenant"
 
 #: admin/view/general.php:36
 msgid "Admin Notification Email"
-msgstr ""
+msgstr "Admin E-Mail De Notification"
 
 #: admin/view/general.php:41
 msgid ""
 "An email will sent to this email when a candidate submit an applicaiton."
 msgstr ""
+"Un email sera envoyé à cet e-mail quand un candidat à soumettre un "
+"formulaire."
 
 #: admin/view/general.php:46
 msgid "Notification Email to User Role"
-msgstr ""
+msgstr "E-Mail de Notification du Rôle de l'Utilisateur"
 
 #: admin/view/general.php:59
 msgid "Select User Role"
-msgstr ""
+msgstr "Sélectionnez Le Rôle D'Utilisateur"
 
 #: admin/view/general.php:74
 msgid ""
 "An email will sent to this role based user emails when a candidate submit an "
 "applicaiton."
 msgstr ""
+"Un email sera envoyé à ce rôle en fonction de l'utilisateur e-mails "
+"lorsqu'un candidat soumettre un formulaire."
 
 #: admin/view/general.php:79
 msgid "Job Page Layout"
-msgstr ""
+msgstr "Travail De Mise En Page"
 
 #: admin/view/general.php:83
 msgid "List"
-msgstr ""
+msgstr "Liste"
 
 #: admin/view/general.php:86
 msgid "Grid"
-msgstr ""
+msgstr "Grille"
 
 #: admin/view/general.php:91
 msgid "Use External Application Form"
-msgstr ""
+msgstr "Usage Externe Formulaire De Demande"
 
 #: admin/view/general.php:100
 msgid "External Application Form Shortcode"
-msgstr ""
+msgstr "Externe Formulaire De Demande De Shortcode"
 
 #: admin/view/general.php:105
 msgid ""
 "You can use external form instead of default application form. Like WPForms, "
 "Contact Form etc."
 msgstr ""
+"Vous pouvez utiliser la forme externe au lieu de la valeur par défaut du "
+"formulaire de demande. Comme WPForms, Formulaire de Contact, etc."
 
 #: admin/view/general.php:110
 msgid "Allow External Application URL"
-msgstr ""
+msgstr "Permettre l'Application Externe URL"
 
 #: admin/view/general.php:130
 msgid "Hide Jobs When Deadline Over"
-msgstr ""
+msgstr "Masquer Les Emplois De Quand Date Limite De Plus De"
 
 #: admin/view/general.php:138
 msgid "Allow Login to Apply"
-msgstr ""
+msgstr "Permettre la Connexion à Appliquer"
 
 #: admin/view/general.php:159
 msgid "Captcha"
-msgstr ""
+msgstr "Captcha"
 
 #: admin/view/general.php:164
 msgid "Site Key"
-msgstr ""
+msgstr "Site Clé"
 
 #: admin/view/general.php:172
 msgid "Secret Key"
-msgstr ""
+msgstr "Clé Secrète"
 
 #: admin/view/general.php:180
 msgid "Enable on Apply Form"
-msgstr ""
+msgstr "Permettre à Appliquer la Forme"
 
 #: admin/view/partial/apply-form-content.php:18
 msgid "Hide Form Title"
-msgstr ""
+msgstr "Masquer Le Formulaire De Titre"
 
 #: admin/view/partial/apply-form-content.php:24
 msgid "Title Text"
-msgstr ""
+msgstr "Titre Du Texte"
 
 #: admin/view/partial/apply-form-content.php:32
 msgid "Name Label"
-msgstr ""
+msgstr "Nom De L'Étiquette"
 
 #: admin/view/partial/apply-form-content.php:40
 msgid "Email Label"
-msgstr ""
+msgstr "Étiquette De Courriel"
 
 #: admin/view/partial/apply-form-content.php:49
 msgid "Hide Cover Letter"
-msgstr ""
+msgstr "Masquer La Lettre D'Accompagnement"
 
 #: admin/view/partial/apply-form-content.php:55
 msgid "Cover Letter Label"
-msgstr ""
+msgstr "Lettre D'Accompagnement De L'Étiquette"
 
 #: admin/view/partial/apply-form-content.php:64
 msgid "Display Phone"
-msgstr ""
+msgstr "Afficher Le Téléphone"
 
 #: admin/view/partial/apply-form-content.php:82
 msgid "Phone Label"
-msgstr ""
+msgstr "L'Étiquette Du Téléphone"
 
 #: admin/view/partial/apply-form-content.php:104
 msgid "Hide User Consent"
-msgstr ""
+msgstr "Masquer Le Consentement De L'Utilisateur"
 
 #: admin/view/partial/apply-form-content.php:122
 msgid "User Consent Text"
-msgstr ""
+msgstr "Le Consentement De L'Utilisateur Le Texte"
 
 #: admin/view/partial/apply-form-content.php:142
 msgid "Submit Button Text"
-msgstr ""
+msgstr "Bouton De Soumission"
 
 #: admin/view/partial/apply-form-style.php:20
 msgid "Form Container"
-msgstr ""
+msgstr "Conteneur De Formulaire"
 
 #: admin/view/partial/apply-form-style.php:25
 #: admin/view/partial/apply-form-style.php:181
@@ -696,17 +702,17 @@ msgstr ""
 #: admin/view/partial/single-style.php:142
 #: admin/view/partial/single-style.php:249
 msgid "Background Color"
-msgstr ""
+msgstr "Couleur D'Arrière-Plan"
 
 #: admin/view/partial/apply-form-style.php:47
 msgid "Form Title"
-msgstr ""
+msgstr "Titre Du Formulaire"
 
 #: admin/view/partial/apply-form-style.php:52
 #: admin/view/partial/apply-form-style.php:97
 #: admin/view/partial/apply-form-style.php:142
 msgid "Color"
-msgstr ""
+msgstr "Couleur"
 
 #: admin/view/partial/apply-form-style.php:71
 #: admin/view/partial/apply-form-style.php:116
@@ -723,15 +729,15 @@ msgstr ""
 #: admin/view/partial/single-style.php:67
 #: admin/view/partial/single-style.php:201
 msgid "Font Size"
-msgstr ""
+msgstr "Taille De La Police"
 
 #: admin/view/partial/apply-form-style.php:92
 msgid "Form Label"
-msgstr ""
+msgstr "Étiquette De Formulaire"
 
 #: admin/view/partial/apply-form-style.php:137
 msgid "Form Inputs"
-msgstr ""
+msgstr "Entrées D'Un Formulaire"
 
 #: admin/view/partial/apply-form-style.php:200
 #: admin/view/partial/listing-style.php:43
@@ -743,12 +749,12 @@ msgstr ""
 #: admin/view/partial/single-style.php:217
 #: admin/view/partial/single-style.php:256
 msgid "Border Color"
-msgstr ""
+msgstr "Couleur De La Bordure"
 
 #: admin/view/partial/apply-form-style.php:222
 #: admin/view/partial/single-style.php:189
 msgid "Apply Button"
-msgstr ""
+msgstr "Bouton Appliquer"
 
 #: admin/view/partial/apply-form-style.php:248
 #: admin/view/partial/apply-form-style.php:312
@@ -765,82 +771,82 @@ msgstr ""
 #: admin/view/partial/single-style.php:208
 #: admin/view/partial/single-style.php:263
 msgid "Font Color"
-msgstr ""
+msgstr "La Couleur De La Police"
 
 #: admin/view/partial/apply-form-style.php:288
 msgid "Apply Button :: Hover"
-msgstr ""
+msgstr "Bouton Appliquer :: Hover"
 
 #: admin/view/partial/job-info.php:9
 msgid "Select Company"
-msgstr ""
+msgstr "Sélectionner Entreprise"
 
 #: admin/view/partial/job-info.php:24
 msgid "Select a Company"
-msgstr ""
+msgstr "Sélectionnez une Entreprise"
 
 #: admin/view/partial/job-info.php:42
 msgid "Year of Experience"
-msgstr ""
+msgstr "Année d'Expérience"
 
 #: admin/view/partial/job-info.php:50
 msgid "No. of Vacancies"
-msgstr ""
+msgstr "Pas de. de postes Vacants"
 
 #: admin/view/partial/job-info.php:58
 msgid "Deadline"
-msgstr ""
+msgstr "Date limite"
 
 #: admin/view/partial/job-info.php:66
 msgid "External Apply Now URL"
-msgstr ""
+msgstr "Externes s'Appliquent Désormais URL"
 
 #: admin/view/partial/job-info.php:86
 msgid "Featured Job"
-msgstr ""
+msgstr "Vedette De L'Emploi"
 
 #: admin/view/partial/job-info.php:106
 msgid "Status"
-msgstr ""
+msgstr "Statut"
 
 #: admin/view/partial/job-info.php:110
 msgid "Active"
-msgstr ""
+msgstr "Active"
 
 #: admin/view/partial/job-info.php:113
 msgid "Inactive"
-msgstr ""
+msgstr "Inactif"
 
 #: admin/view/partial/listing-content.php:19
 msgid "Title Word Length"
-msgstr ""
+msgstr "Titre De La Longueur De Mot"
 
 #: admin/view/partial/listing-content.php:27
 #: admin/view/partial/single-content.php:49
 msgid "Display Company Name"
-msgstr ""
+msgstr "Affichage Du Nom De La Société"
 
 #: admin/view/partial/listing-content.php:47
 #: admin/view/partial/single-content.php:69
 msgid "Display Company Logo"
-msgstr ""
+msgstr "Affichage Du Logo De L'Entreprise"
 
 #: admin/view/partial/listing-content.php:68
 #: admin/view/partial/single-content.php:95
 msgid "Hide Overview"
-msgstr ""
+msgstr "Masquer La Vue D'Ensemble"
 
 #: admin/view/partial/listing-content.php:70
 msgid "img/jobwp-list-hide-overview.webp"
-msgstr ""
+msgstr "img/jobwp-liste-cacher-vue d'ensemble.webp"
 
 #: admin/view/partial/listing-content.php:77
 msgid "Word Length"
-msgstr ""
+msgstr "La Longueur De Mot"
 
 #: admin/view/partial/listing-content.php:89
 msgid "Hide Experience"
-msgstr ""
+msgstr "Masquer L'Expérience"
 
 #: admin/view/partial/listing-content.php:96
 #: admin/view/partial/listing-content.php:118
@@ -866,7 +872,7 @@ msgstr ""
 #: admin/view/partial/single-content.php:322
 #: admin/view/partial/single-content.php:396
 msgid "Label Text"
-msgstr ""
+msgstr "Le Texte De L'Étiquette"
 
 #: admin/view/partial/listing-content.php:102
 #: admin/view/partial/listing-content.php:124
@@ -877,130 +883,130 @@ msgstr ""
 #: admin/view/partial/listing-content.php:327
 #: admin/view/partial/listing-content.php:385
 msgid "Order"
-msgstr ""
+msgstr "Afin"
 
 #: admin/view/partial/listing-content.php:111
 msgid "Hide Deadline"
-msgstr ""
+msgstr "Masquer La Date Limite"
 
 #: admin/view/partial/listing-content.php:133
 msgid "Hide Location"
-msgstr ""
+msgstr "Masquer La Localisation"
 
 #: admin/view/partial/listing-content.php:155
 #: admin/view/partial/search-content.php:55
 msgid "Hide Job Type"
-msgstr ""
+msgstr "Masquer Le Type D'Emploi"
 
 #: admin/view/partial/listing-content.php:177
 msgid "Display Salary"
-msgstr ""
+msgstr "Affichage De Salaire"
 
 #: admin/view/partial/listing-content.php:234
 msgid "Display Responsibility"
-msgstr ""
+msgstr "Affichage De La Responsabilité"
 
 #: admin/view/partial/listing-content.php:291
 msgid "Display Vacancy"
-msgstr ""
+msgstr "Affichage De Vacance"
 
 #: admin/view/partial/listing-content.php:348
 msgid "Display Publish Date"
-msgstr ""
+msgstr "Affichage De La Date De Publication"
 
 #: admin/view/partial/listing-content.php:408
 msgid "Display Read More"
-msgstr ""
+msgstr "Afficher Lire Plus"
 
 #: admin/view/partial/listing-content.php:446
 msgid "Hide Total Jobs Found"
-msgstr ""
+msgstr "Masquer Total Des Emplois Disponibles"
 
 #: admin/view/partial/listing-content.php:461
 msgid "Hide Icon"
-msgstr ""
+msgstr "Masquer L'Icône"
 
 #: admin/view/partial/listing-content.php:481
 msgid "Hide Pagination"
-msgstr ""
+msgstr "Masquer La Pagination"
 
 #: admin/view/partial/listing-style.php:19
 msgid "Job Item"
-msgstr ""
+msgstr "L'Emploi De L'Élément De"
 
 #: admin/view/partial/listing-style.php:65
 #: admin/view/partial/single-style.php:48
 msgid "Job Title"
-msgstr ""
+msgstr "Titre De L'Emploi"
 
 #: admin/view/partial/listing-style.php:84
 #: admin/view/partial/listing-style.php:558
 msgid "Hover Font Color"
-msgstr ""
+msgstr "Placez La Couleur De La Police"
 
 #: admin/view/partial/listing-style.php:106
 msgid "Company"
-msgstr ""
+msgstr "Société"
 
 #: admin/view/partial/listing-style.php:152
 msgid "Job Overview"
-msgstr ""
+msgstr "Aperçu Du Poste"
 
 #: admin/view/partial/listing-style.php:174
 msgid "Job Information Label"
-msgstr ""
+msgstr "Renseignements Sur L'Emploi De L'Étiquette"
 
 #: admin/view/partial/listing-style.php:220
 msgid "Read More Button"
-msgstr ""
+msgstr "Lire Plus De Bouton"
 
 #: admin/view/partial/listing-style.php:303
 msgid "Border Width"
-msgstr ""
+msgstr "La Largeur De La Bordure"
 
 #: admin/view/partial/listing-style.php:322
 #: admin/view/partial/listing-style.php:518
 #: admin/view/partial/search-style.php:69
 #: admin/view/partial/single-style.php:234
 msgid "Border Radius"
-msgstr ""
+msgstr "Rayon Des Frontières"
 
 #: admin/view/partial/listing-style.php:343
 #: admin/view/partial/single-style.php:224
 msgid "Padding"
-msgstr ""
+msgstr "Rembourrage"
 
 #: admin/view/partial/listing-style.php:355
 msgid "Top/Bottom"
-msgstr ""
+msgstr "Haut/Bas"
 
 #: admin/view/partial/listing-style.php:359
 msgid "Left/Right"
-msgstr ""
+msgstr "Gauche/Droite"
 
 #: admin/view/partial/listing-style.php:370
 msgid "Read More Button : Hover"
-msgstr ""
+msgstr "Lire Plus De Bouton : Hover"
 
 #: admin/view/partial/listing-style.php:435
 msgid "Pagination"
-msgstr ""
+msgstr "La Pagination"
 
 #: admin/view/partial/listing-style.php:440
 msgid "Background  Color"
-msgstr ""
+msgstr "Couleur D'Arrière-Plan"
 
 #: admin/view/partial/listing-style.php:539
 msgid "Hover Background Color"
-msgstr ""
+msgstr "Hover Couleur D'Arrière-Plan"
 
 #: admin/view/partial/search-content.php:18
 msgid "Hide Search Panel"
-msgstr ""
+msgstr "Masquer Le Panneau De Recherche"
 
 #: admin/view/partial/search-content.php:27
 msgid "Hide Keyword"
-msgstr ""
+msgstr "Masquer Le Mot-Clé"
 
 #: admin/view/partial/search-content.php:33
 #: admin/view/partial/search-content.php:47
@@ -1008,276 +1014,266 @@ msgstr ""
 #: admin/view/partial/search-content.php:75
 #: admin/view/partial/search-content.php:101
 msgid "Placeholder Text"
-msgstr ""
+msgstr "Texte De L'Espace Réservé"
 
 #: admin/view/partial/search-content.php:41
 msgid "Hide Category"
-msgstr ""
+msgstr "Masquer La Catégorie"
 
 #: admin/view/partial/search-content.php:69
 #: admin/view/partial/single-content.php:255
 msgid "Hide Job Location"
-msgstr ""
+msgstr "Masquer L'Emplacement De L'Emploi"
 
 #: admin/view/partial/search-content.php:83
 #: admin/view/partial/single-content.php:315
 msgid "Hide Job Level"
-msgstr ""
+msgstr "Masquer Le Niveau D'Emploi"
 
 #: admin/view/partial/search-content.php:122
 msgid "Search Button Text"
-msgstr ""
+msgstr "Bouton De Recherche De Texte"
 
 #: admin/view/partial/search-style.php:19
 #: admin/view/partial/single-style.php:19
 msgid "Container"
-msgstr ""
+msgstr "Conteneur"
 
 #: admin/view/partial/search-style.php:41
 msgid "Search Items"
-msgstr ""
+msgstr "Les Éléments De Recherche"
 
 #: admin/view/partial/search-style.php:91
 msgid "Search Button"
-msgstr ""
+msgstr "Bouton De Recherche"
 
 #: admin/view/partial/search-style.php:120
 msgid "Search Button :: Hover"
-msgstr ""
+msgstr "Bouton De Recherche :: Hover"
 
 #: admin/view/partial/single-content.php:22
 msgid "Job Title Tag"
-msgstr ""
+msgstr "Titre De L'Emploi De La Balise"
 
 #: admin/view/partial/single-content.php:115
 msgid "Hide No. of Vacancies"
-msgstr ""
+msgstr "Cacher Pas. de postes Vacants"
 
 #: admin/view/partial/single-content.php:135
 msgid "Hide Specific Skills"
-msgstr ""
+msgstr "Cacher Des Compétences Spécifiques"
 
 #: admin/view/partial/single-content.php:155
 msgid "Hide Responsible For"
-msgstr ""
+msgstr "Masquer Responsable De"
 
 #: admin/view/partial/single-content.php:175
 msgid "Hide Additional Requirements"
-msgstr ""
+msgstr "Cacher Des Exigences Supplémentaires"
 
 #: admin/view/partial/single-content.php:195
 msgid "Hide Job Nature"
-msgstr ""
+msgstr "Masquer La Nature De L'Emploi"
 
 #: admin/view/partial/single-content.php:215
 msgid "Hide Educational Requirements"
-msgstr ""
+msgstr "Masquer Les Exigences En Matière D'Éducation"
 
 #: admin/view/partial/single-content.php:235
 msgid "Hide Experience Requirements"
-msgstr ""
+msgstr "Masquer Les Exigences En Matière D'Expérience"
 
 #: admin/view/partial/single-content.php:275
 msgid "Hide Salary"
-msgstr ""
+msgstr "Masquer Salaire"
 
 #: admin/view/partial/single-content.php:295
 msgid "Hide Other Benefits"
-msgstr ""
+msgstr "Masquer D'Autres Avantages"
 
 #: admin/view/partial/single-content.php:336
 msgid "Hide Apply Procedure"
-msgstr ""
+msgstr "Masquer Appliquer La Procédure"
 
 #: admin/view/partial/single-content.php:343
 msgid "Apply Procedure Title"
-msgstr ""
+msgstr "Appliquer La Procédure De Titre"
 
 #: admin/view/partial/single-content.php:352
 msgid "Apply Procedure Content"
-msgstr ""
+msgstr "Appliquer La Procédure De Contenu"
 
 #: admin/view/partial/single-content.php:361
 msgid "Hide Apply Button"
-msgstr ""
+msgstr "Masquer Le Bouton Appliquer"
 
 #: admin/view/partial/single-content.php:368
 msgid "Apply Button Text"
-msgstr ""
+msgstr "Appliquer Le Texte Du Bouton"
 
 #: admin/view/partial/single-content.php:377
 msgid "Hide Share On"
-msgstr ""
+msgstr "Masquer Les Partager Sur"
 
 #: admin/view/partial/single-style.php:31
 msgid "Margin Top"
-msgstr ""
+msgstr "Marge Supérieure"
 
 #: admin/view/partial/single-style.php:38
 msgid "Margin Bottom"
-msgstr ""
+msgstr "La Marge En Bas"
 
 #: admin/view/partial/single-style.php:77
 msgid "Job Info"
-msgstr ""
+msgstr "Les Informations Relatives Au Travail"
 
 #: admin/view/partial/single-style.php:82
 msgid "Column Width"
-msgstr ""
+msgstr "La Largeur De La Colonne"
 
 #: admin/view/partial/single-style.php:95
 msgid "Left"
-msgstr ""
+msgstr "De gauche"
 
 #: admin/view/partial/single-style.php:97
 msgid "Right"
-msgstr ""
+msgstr "Droit"
 
 #: admin/view/partial/single-style.php:104
 msgid "Label Font Color"
-msgstr ""
+msgstr "La Police De L'Étiquette De La Couleur"
 
 #: admin/view/partial/single-style.php:111
 msgid "Label Font Size"
-msgstr ""
+msgstr "Étiquette Taille De La Police"
 
 #: admin/view/partial/single-style.php:120
 msgid "Info Font Color"
-msgstr ""
+msgstr "Info La Couleur De La Police"
 
 #: admin/view/partial/single-style.php:127
 msgid "Info Font Size"
-msgstr ""
+msgstr "Info Taille De La Police"
 
 #: admin/view/partial/single-style.php:137
 msgid "How to Apply"
-msgstr ""
+msgstr "Comment Appliquer"
 
 #: admin/view/partial/single-style.php:149
 msgid "Title Font Color"
-msgstr ""
+msgstr "Titre La Couleur De La Police"
 
 #: admin/view/partial/single-style.php:156
 msgid "Title Font Size"
-msgstr ""
+msgstr "Titre De La Taille De La Police"
 
 #: admin/view/partial/single-style.php:165
 msgid "Title Border Color"
-msgstr ""
+msgstr "Titre De La Couleur De La Bordure"
 
 #: admin/view/partial/single-style.php:172
 msgid "Content Color"
-msgstr ""
+msgstr "Contenu De La Couleur"
 
 #: admin/view/partial/single-style.php:179
 msgid "Content Size"
-msgstr ""
+msgstr "La Taille Du Contenu"
 
 #: admin/view/partial/single-style.php:194
 msgid "Button Color"
-msgstr ""
+msgstr "Bouton De Couleur"
 
 #: admin/view/partial/single-style.php:228
 msgid "Height"
-msgstr ""
+msgstr "Hauteur"
 
 #: admin/view/partial/single-style.php:230
 msgid "Width"
-msgstr ""
+msgstr "Largeur"
 
 #: admin/view/partial/single-style.php:244
 msgid "Apply Button: Hover"
-msgstr ""
+msgstr "Bouton Appliquer: Hover"
 
 #: core/job_application.php:23
 msgid "Only Pdf file is permitted"
-msgstr ""
+msgstr "Pdf fichier est autorisé"
 
 #: core/job_application.php:28
 msgid "Only Pdf, Docx files are permitted"
-msgstr ""
+msgstr "Pdf, les fichiers Docx sont autorisés"
 
 #: core/job_application.php:36
 msgid "Your file size is to large"
-msgstr ""
+msgstr "La taille de votre fichier est de grande"
 
 #: core/job_application.php:46
 msgid "The folder"
-msgstr ""
+msgstr "Le dossier"
 
 #: core/job_application.php:46
 msgid ""
 "cannot be created or is not writable. Ask for support to your hosting "
 "provider"
 msgstr ""
+"ne peut pas être créé ou n'est pas accessible en écriture. Demandez de "
+"l'aide à votre fournisseur d'hébergement"
 
 #: core/job_application.php:60
 msgid "The file cannot be copied in the folder"
-msgstr ""
+msgstr "Le fichier ne peut pas être copié dans le dossier"
 
 #: core/job_application.php:60
 msgid ""
 "Check if it exists and is writeable. You can also ask for support to your "
 "hosting provider"
 msgstr ""
+"Vérifier s'il existe et est accessible en écriture. Vous pouvez également "
+"demander de l'aide à votre fournisseur d'hébergement"
 
 #: core/job_application.php:115
 msgid "Career - New Application"
-msgstr ""
+msgstr "La Carrière De La Nouvelle Application"
 
 #: core/job_application.php:116
-msgid "Applicant: "
-msgstr ""
-
-#: core/job_application.php:117
-msgid "Applied For: "
-msgstr ""
-
-#: core/job_application.php:118
-msgid "Email: "
-msgstr ""
-
-#: core/job_application.php:121
-msgid "Phone: "
-msgstr ""
-
-#: core/job_application.php:125
-msgid "Cover Letter: "
-msgstr ""
+msgid "Applicant"
+msgstr "Demandeur"
 
 #: core/job_application.php:162
 msgid "Hi"
-msgstr ""
+msgstr "Salut"
 
 #: core/job_application.php:163
 msgid "Thanks for applying to our"
-msgstr ""
+msgstr "Merci pour l'appliquer à notre"
 
 #: core/job_application.php:163
 msgid "position"
-msgstr ""
+msgstr "position"
 
 #: core/job_application.php:164
 msgid ""
 "We'll review your application and be sure to get back to you if there might "
 "be a fit!"
 msgstr ""
+"Nous examinerons votre demande et assurez-vous de revenir à vous si il y a "
+"peut être un ajustement!"
 
 #: core/job_application.php:165
 msgid "Best"
-msgstr ""
+msgstr "Meilleur"
 
 #: core/job_application.php:179
 msgid "Thank you for your application"
-msgstr ""
+msgstr "Je vous remercie pour votre application"
 
 #: freemius/assets/js/pricing/freemius-pricing.js:2
 msgid "display"
-msgstr ""
+msgstr "affichage"
 
 #: freemius/includes/class-freemius.php:19047
 msgid "true"
-msgstr ""
+msgstr "vrai"
 
 #: freemius/templates/account/partials/site.php:339
 msgid " "
@@ -1285,68 +1281,68 @@ msgstr ""
 
 #: freemius/templates/connect.php:370
 msgid "_activate_existing"
-msgstr ""
+msgstr "_activate_existing"
 
 #: front/view/apply.php:85
 msgid "Upload CV/Resume"
-msgstr ""
+msgstr "Télécharger CV"
 
 #: front/view/apply.php:86
 msgid "Attach your resume. Max size 2mb"
-msgstr ""
+msgstr "Joindre votre curriculum vitae. Taille maximale de 2 mo"
 
 #: front/view/apply.php:90
-msgid "Allowed Type(s): "
-msgstr ""
+msgid "Allowed Types"
+msgstr "Les Types Autorisés"
 
 #: front/view/apply.php:93
 msgid "pdf"
-msgstr ""
+msgstr "pdf"
 
 #: front/view/apply.php:97
 msgid "pdf, docx, doc"
-msgstr ""
+msgstr "pdf, docx, doc"
 
 #: front/view/featured.php:32 front/view/listing.php:91
 msgid "Closed"
-msgstr ""
+msgstr "Fermé"
 
 #: front/view/listing.php:60
 msgid "Displayed Here"
-msgstr ""
+msgstr "Affiché Ici"
 
 #: front/view/listing.php:60
 msgid "Jobs"
-msgstr ""
+msgstr "Emplois"
 
 #: front/view/listing.php:67
 msgid "View"
-msgstr ""
+msgstr "Vue"
 
 #: front/view/listing.php:456
 msgid "No Job found"
-msgstr ""
+msgstr "Aucun Travail n'a trouvé"
 
 #: front/view/single-job.php:37
 msgid "No job available!"
-msgstr ""
+msgstr "Pas de travail disponible!"
 
 #: front/view/single/header.php:65
 msgid "Sorry, your nonce did not verify."
-msgstr ""
+msgstr "Désolé, votre nonce n'a pas vérifié."
 
 #: front/view/single/header.php:88
 msgid "reCaptcha verification failed!"
-msgstr ""
+msgstr "reCaptcha échec de la vérification de!"
 
 #: jobwp.php:155
 msgid "Change Logo"
-msgstr ""
+msgstr "Changement De Logo"
 
 #: lib/freemius-integrator.php:53
 #, php-format
 msgid "Hey %1$s"
-msgstr ""
+msgstr "Hey %1$s"
 
 #: lib/freemius-integrator.php:54
 #, php-format
@@ -1355,3 +1351,6 @@ msgid ""
 "%2$s will be sent to %5$s. If you skip this, that's okay! %2$s will still "
 "work just fine."
 msgstr ""
+"Veuillez nous aider à améliorer %2$s! Si vous acceptez, certaines données "
+"concernant votre utilisation de %2$s sera envoyé à %5$s. Si vous ignorez "
+"cela, c'est d'accord! %2$s fonctionne toujours très bien."

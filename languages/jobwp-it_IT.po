@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JobWP\n"
 "POT-Creation-Date: 2025-07-30 00:54+0600\n"
-"PO-Revision-Date: 2025-07-29 19:19+0000\n"
+"PO-Revision-Date: 2025-07-30 16:47+0000\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "Language: it_IT\n"
@@ -111,8 +111,8 @@ msgid "Allow Login to Apply"
 msgstr "Consentire l'Accesso ad Applicare"
 
 #: front/view/apply.php:90
-msgid "Allowed Type(s): "
-msgstr ""
+msgid "Allowed Types"
+msgstr "Tipi consentiti"
 
 #: admin/view/general.php:41
 msgid ""
@@ -130,8 +130,9 @@ msgstr ""
 "elettronica quando un candidato di presentare un'applicazione."
 
 #: core/job_application.php:116
-msgid "Applicant: "
-msgstr "Richiedente:"
+#| msgid "Applicant: "
+msgid "Applicant"
+msgstr "Richiedente"
 
 #: admin/cls-jobwp-admin.php:860
 msgid "Application has been deleted."
@@ -145,13 +146,9 @@ msgstr "Elenco Applicazioni"
 msgid "Application Lists"
 msgstr "Elenchi Di Applicazione"
 
-#: admin/cls-jobwp-admin.php:382
+#: admin/cls-jobwp-admin.php:382 core/job_application.php:117
 msgid "Applied For"
 msgstr "Applicato Per"
-
-#: core/job_application.php:117
-msgid "Applied For: "
-msgstr "Applicato per:"
 
 #: admin/view/partial/apply-form-style.php:222
 #: admin/view/partial/single-style.php:189
@@ -327,17 +324,13 @@ msgstr "Colore Del Contenuto"
 msgid "Content Size"
 msgstr "Dimensioni Del Contenuto"
 
-#: admin/cls-jobwp-admin.php:385
+#: admin/cls-jobwp-admin.php:385 core/job_application.php:125
 msgid "Cover Letter"
 msgstr "Lettera Di Copertura"
 
 #: admin/view/partial/apply-form-content.php:55
 msgid "Cover Letter Label"
 msgstr "Lettera Di Copertura Etichetta"
-
-#: core/job_application.php:125
-msgid "Cover Letter: "
-msgstr "Lettera di presentazione:"
 
 #: admin/cls-jobwp-admin.php:387
 msgid "Date"
@@ -431,6 +424,7 @@ msgid "Educational Requirements:"
 msgstr "Requisiti Formativi:"
 
 #: admin/cls-jobwp-admin.php:384 admin/cls-jobwp-admin.php:957
+#: core/job_application.php:118
 msgid "Email"
 msgstr "Email"
 
@@ -450,10 +444,6 @@ msgstr "Impostazioni E-Mail"
 #: admin/view/email.php:60
 msgid "Email Subject"
 msgstr "Oggetto Del Messaggio"
-
-#: core/job_application.php:118
-msgid "Email: "
-msgstr "E-mail:"
 
 #: admin/view/general.php:180
 msgid "Enable on Apply Form"
@@ -976,17 +966,13 @@ msgstr "pdf"
 msgid "pdf, docx, doc"
 msgstr "pdf, docx, doc"
 
-#: admin/cls-jobwp-admin.php:392
+#: admin/cls-jobwp-admin.php:392 core/job_application.php:121
 msgid "Phone"
 msgstr "Telefono"
 
 #: admin/view/partial/apply-form-content.php:82
 msgid "Phone Label"
 msgstr "Telefono Etichetta"
-
-#: core/job_application.php:121
-msgid "Phone: "
-msgstr "Telefono:"
 
 #: admin/view/partial/search-content.php:33
 #: admin/view/partial/search-content.php:47
@@ -1265,10 +1251,11 @@ msgstr "Titolo Word Lunghezza"
 #: admin/view/email.php:75
 msgid "To use candidate name apply #candidateName# in the content"
 msgstr ""
+"Per utilizzare il nome del candidato, applicare #candidateName# nel contenuto"
 
 #: admin/view/email.php:77
 msgid "To use job title apply #jobTitle# in the content"
-msgstr ""
+msgstr "Per utilizzare il titolo di lavoro, applicare #jobTitle# nel contenuto"
 
 #: admin/view/partial/listing-style.php:355
 msgid "Top/Bottom"
@@ -1308,7 +1295,7 @@ msgstr "Caricare CV"
 
 #: admin/view/email.php:79
 msgid "Use <<code>br</code>> to break line in the content"
-msgstr ""
+msgstr "Utilizzare <<code>br</code>> per interrompere la riga nel contenuto"
 
 #: admin/view/general.php:91
 msgid "Use External Application Form"

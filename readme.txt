@@ -198,6 +198,8 @@ You can display the job information and apply a url to that individual job which
 * Bengoli (Bangla)
 * Italian
 * Russian
+* Spanish (Spain)
+* French (France)
 
 
 **👍 Feedback/Rating:**
