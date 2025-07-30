@@ -200,6 +200,8 @@ You can display the job information and apply a url to that individual job which
 * Russian
 * Spanish (Spain)
 * French (France)
+* German
+* Dutch (Netherlands)
 
 
 **👍 Feedback/Rating:**
