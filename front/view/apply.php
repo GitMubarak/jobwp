@@ -82,19 +82,19 @@ if ( ! $jobwp_hide_apply_form_title ) {
         ?>
 
         <div class="jobwp-field-row">
-            <label><?php _e('Upload CV/Resume', JOBWP_TXT_DOMAIN); ?></label><span class="required">*</span>
-            <span><?php _e('Attach your resume. Max size 2mb', JOBWP_TXT_DOMAIN); ?></span>
+            <label><?php _e('Upload CV/Resume', 'jobwp'); ?></label><span class="required">*</span>
+            <span><?php _e('Attach your resume. Max size 2mb', 'jobwp'); ?></span>
             <input type="file" name="jobwp_upload_resume" id="jobwp_upload_resume" />
             <span>
                 <?php 
-                _e('Allowed Type(s): ', JOBWP_TXT_DOMAIN); 
+                echo __('Allowed Types', 'jobwp') . ': ';
                 
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    _e('pdf', JOBWP_TXT_DOMAIN); 
+                    _e('pdf', 'jobwp'); 
                 }
 
                 if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    _e('pdf, docx, doc', JOBWP_TXT_DOMAIN); 
+                    _e('pdf, docx, doc', 'jobwp'); 
                 }
                 ?>
             </span>

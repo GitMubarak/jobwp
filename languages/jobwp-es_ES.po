@@ -2,15 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JobWP\n"
 "POT-Creation-Date: 2025-07-30 00:54+0600\n"
-"PO-Revision-Date: 2025-07-29 19:26+0000\n"
+"PO-Revision-Date: 2025-07-30 16:14+0000\n"
 "Last-Translator: \n"
-"Language-Team: Russian\n"
-"Language: ru_RU\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
-"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
@@ -25,91 +24,91 @@ msgstr ""
 
 #: freemius/templates/connect.php:370
 msgid "_activate_existing"
-msgstr "_активать_существующий"
+msgstr "_activate_existing"
 
 #: admin/cls-jobwp-admin.php:395
 msgid "Action"
-msgstr "Экшен"
+msgstr "Acción"
 
 #: admin/view/partial/job-info.php:110
 msgid "Active"
-msgstr "Активный"
+msgstr "Activo"
 
 #: admin/cls-jobwp-admin.php:944
 msgid "Add Logo"
-msgstr "Добавить Логотип"
+msgstr "Añadir El Logotipo"
 
 #: admin/cls-jobwp-admin.php:415
 msgid "Add New"
-msgstr "Добавить Новый"
+msgstr "Añadir Nuevo"
 
 #: admin/cls-jobwp-admin.php:414
 msgid "Add New Job"
-msgstr "Добавить Новое Задание"
+msgstr "Añadir Nuevo Trabajo"
 
 #: admin/cls-jobwp-admin.php:460
 msgid "Add New Job Category"
-msgstr "Добавить Новую категорию Заданий"
+msgstr "Agregar Nueva Categoría De Trabajo"
 
 #: admin/cls-jobwp-admin.php:573
 msgid "Add New Job Company"
-msgstr "Добавить Новую Вакансию В Компанию"
+msgstr "Añadir Nuevo Trabajo De La Empresa"
 
 #: admin/cls-jobwp-admin.php:518
 msgid "Add New Job Level"
-msgstr "Добавить Новый Уровень Задания"
+msgstr "Agregar Nuevo Nivel De Trabajo"
 
 #: admin/cls-jobwp-admin.php:547
 msgid "Add New Job Location"
-msgstr "Добавить Новое Место Работы"
+msgstr "Añadir Nuevo Lugar De Trabajo"
 
 #: admin/cls-jobwp-admin.php:489
 msgid "Add New Job Nature"
-msgstr "Добавление Нового Характера Задания"
+msgstr "Añadir Nuevo Trabajo De La Naturaleza"
 
 #: admin/cls-jobwp-admin.php:634
 msgid "Additional Requirements:"
-msgstr "Дополнительные требования:"
+msgstr "Requisitos Adicionales:"
 
 #: admin/cls-jobwp-admin.php:959
 msgid "Address"
-msgstr "Адрес"
+msgstr "Dirección"
 
 #: admin/view/general.php:36
 msgid "Admin Notification Email"
-msgstr "Электронное письмо с уведомлением администратора"
+msgstr "Administración De Correo Electrónico De Notificación"
 
 #: admin/cls-jobwp-admin.php:455
 msgid "All Job Categories"
-msgstr "Все категории Вакансий"
+msgstr "Todas Las Categorías De Empleo"
 
 #: admin/cls-jobwp-admin.php:568
 msgid "All Job Company"
-msgstr "Вся Работа Компании"
+msgstr "Todos Los Puestos De La Empresa"
 
 #: admin/cls-jobwp-admin.php:513
 msgid "All Job Level"
-msgstr "Весь Уровень Работы"
+msgstr "Todos Los Puestos De Nivel"
 
 #: admin/cls-jobwp-admin.php:542
 msgid "All Job Location"
-msgstr "Все Места Работы"
+msgstr "Todo Lugar De Trabajo"
 
 #: admin/cls-jobwp-admin.php:484
 msgid "All Job Nature"
-msgstr "Весь Характер Работы"
+msgstr "Todo El Trabajo De La Naturaleza"
 
 #: admin/cls-jobwp-admin.php:408 admin/cls-jobwp-admin.php:412
 msgid "All Jobs"
-msgstr "Все Рабочие Места"
+msgstr "Todos Los Puestos De Trabajo"
 
 #: admin/view/general.php:110
 msgid "Allow External Application URL"
-msgstr "Разрешить URL-адрес внешнего приложения"
+msgstr "Permitir Externo dirección URL de la Aplicación"
 
 #: admin/view/general.php:138
 msgid "Allow Login to Apply"
-msgstr "Разрешить применение логина"
+msgstr "Permitir el inicio de Sesión para Aplicar"
 
 #: front/view/apply.php:90
 msgid "Allowed Type(s): "
@@ -119,16 +118,16 @@ msgstr ""
 msgid ""
 "An email will sent to this email when a candidate submit an applicaiton."
 msgstr ""
-"Электронное письмо будет отправлено на этот адрес электронной почты, когда "
-"кандидат подаст заявку."
+"Un correo electrónico será enviado a este correo electrónico cuando un "
+"candidato a presentar una aplicación."
 
 #: admin/view/general.php:74
 msgid ""
 "An email will sent to this role based user emails when a candidate submit an "
 "applicaiton."
 msgstr ""
-"Электронное письмо будет отправлено на электронную почту этого пользователя "
-"на основе ролей, когда кандидат подаст заявку."
+"Un correo electrónico será enviado a este rol de usuario basada en mensajes "
+"de correo electrónico cuando un candidato a presentar una aplicación."
 
 #: core/job_application.php:116
 msgid "Applicant: "
@@ -136,19 +135,19 @@ msgstr ""
 
 #: admin/cls-jobwp-admin.php:860
 msgid "Application has been deleted."
-msgstr "Приложение было удалено."
+msgstr "La aplicación ha sido eliminada."
 
 #: admin/cls-jobwp-admin.php:148 admin/cls-jobwp-admin.php:149
 msgid "Application List"
-msgstr "Список Приложений"
+msgstr "Lista De Aplicaciones"
 
 #: admin/view/application_list.php:16
 msgid "Application Lists"
-msgstr "Списки приложений"
+msgstr "Aplicación De Listas De"
 
 #: admin/cls-jobwp-admin.php:382
 msgid "Applied For"
-msgstr "Подал Заявку На"
+msgstr "Aplica Para"
 
 #: core/job_application.php:117
 msgid "Applied For: "
@@ -157,43 +156,43 @@ msgstr ""
 #: admin/view/partial/apply-form-style.php:222
 #: admin/view/partial/single-style.php:189
 msgid "Apply Button"
-msgstr "Кнопка \"Применить\""
+msgstr "Botón Aplicar"
 
 #: admin/view/partial/apply-form-style.php:288
 msgid "Apply Button :: Hover"
-msgstr "Кнопка применить :: Наведение курсора мыши"
+msgstr "Botón Aplicar: A: Hover"
 
 #: admin/view/partial/single-content.php:368
 msgid "Apply Button Text"
-msgstr "Применить Текст кнопки"
+msgstr "Aplicar El Texto De Los Botones"
 
 #: admin/view/partial/single-style.php:244
 msgid "Apply Button: Hover"
-msgstr "Кнопка применить: Наведите курсор"
+msgstr "Botón Aplicar: Hover"
 
 #: admin/cls-jobwp-admin.php:139 admin/cls-jobwp-admin.php:140
 msgid "Apply Form"
-msgstr "Форма заявки"
+msgstr "Aplicar De Forma"
 
 #: admin/view/apply-form.php:9
 msgid "Apply Form Settings"
-msgstr "Применить Настройки формы"
+msgstr "Aplicar La Configuración Del Formulario"
 
 #: admin/view/partial/single-content.php:352
 msgid "Apply Procedure Content"
-msgstr "Содержание процедуры применения"
+msgstr "Aplicar El Procedimiento De Contenido"
 
 #: admin/view/partial/single-content.php:343
 msgid "Apply Procedure Title"
-msgstr "Название процедуры применения"
+msgstr "Aplicar El Procedimiento De Título"
 
 #: front/view/apply.php:86
 msgid "Attach your resume. Max size 2mb"
-msgstr "Приложите свое резюме. Максимальный размер 2 мб."
+msgstr "Adjunte su curriculum vitae. El tamaño máximo de 2mb"
 
 #: admin/view/partial/listing-style.php:440
 msgid "Background  Color"
-msgstr "Цвет фона"
+msgstr "Color De Fondo"
 
 #: admin/view/partial/apply-form-style.php:25
 #: admin/view/partial/apply-form-style.php:181
@@ -211,11 +210,11 @@ msgstr "Цвет фона"
 #: admin/view/partial/single-style.php:142
 #: admin/view/partial/single-style.php:249
 msgid "Background Color"
-msgstr "Цвет фона"
+msgstr "Color De Fondo"
 
 #: core/job_application.php:165
 msgid "Best"
-msgstr "Лучшие"
+msgstr "Mejor"
 
 #: admin/view/partial/apply-form-style.php:200
 #: admin/view/partial/listing-style.php:43
@@ -227,114 +226,113 @@ msgstr "Лучшие"
 #: admin/view/partial/single-style.php:217
 #: admin/view/partial/single-style.php:256
 msgid "Border Color"
-msgstr "Цвет границы"
+msgstr "El Color Del Borde"
 
 #: admin/view/partial/listing-style.php:322
 #: admin/view/partial/listing-style.php:518
 #: admin/view/partial/search-style.php:69
 #: admin/view/partial/single-style.php:234
 msgid "Border Radius"
-msgstr "Радиус границы"
+msgstr "Radio Frontera"
 
 #: admin/view/partial/listing-style.php:303
 msgid "Border Width"
-msgstr "Ширина границы"
+msgstr "Ancho Del Borde"
 
 #: admin/view/partial/single-style.php:194
 msgid "Button Color"
-msgstr "Цвет пуговицы"
+msgstr "Botón De Color"
 
 #: admin/view/email.php:39
 msgid "Candidate Email Settings"
-msgstr "Настройки электронной почты Кандидата"
+msgstr "Candidato A La Configuración De Correo Electrónico"
 
 #: core/job_application.php:46
 msgid ""
 "cannot be created or is not writable. Ask for support to your hosting "
 "provider"
 msgstr ""
-"не может быть создан или недоступен для записи. Обратитесь за поддержкой к "
-"своему хостинг-провайдеру."
+"no se puede crear o no es modificable. Pida ayuda a su proveedor de hosting"
 
 #: admin/view/general.php:159
 msgid "Captcha"
-msgstr "Капча"
+msgstr "Captcha"
 
 #: core/job_application.php:115
 msgid "Career - New Application"
-msgstr "Карьера - Новое приложение"
+msgstr "Carrera - Nueva Aplicación"
 
 #: jobwp.php:155
 msgid "Change Logo"
-msgstr "Изменить Логотип"
+msgstr "Cambio De Logo"
 
 #: core/job_application.php:60
 msgid ""
 "Check if it exists and is writeable. You can also ask for support to your "
 "hosting provider"
 msgstr ""
-"Проверьте, существует ли он и доступен для записи. Вы также можете "
-"обратиться за поддержкой к своему хостинг-провайдеру"
+"Comprobar si existe y es de escritura. También puede pedir ayuda a su "
+"proveedor de hosting"
 
 #: front/view/featured.php:32 front/view/listing.php:91
 msgid "Closed"
-msgstr "Закрыто"
+msgstr "Cerrado"
 
 #: admin/view/partial/apply-form-style.php:52
 #: admin/view/partial/apply-form-style.php:97
 #: admin/view/partial/apply-form-style.php:142
 msgid "Color"
-msgstr "Цвет"
+msgstr "Color"
 
 #: admin/view/partial/single-style.php:82
 msgid "Column Width"
-msgstr "Ширина столбца"
+msgstr "El Ancho De La Columna"
 
 #: admin/view/partial/listing-style.php:106
 msgid "Company"
-msgstr "Компания"
+msgstr "Empresa"
 
 #: admin/cls-jobwp-admin.php:932 jobwp.php:137
 msgid "Company Address"
-msgstr "Адрес компании"
+msgstr "La Dirección De La Empresa"
 
 #: admin/cls-jobwp-admin.php:920 jobwp.php:121
 msgid "Company Email"
-msgstr "Электронная почта компании"
+msgstr "Correo Electrónico De La Empresa"
 
 #: admin/cls-jobwp-admin.php:938 jobwp.php:145
 msgid "Company Logo"
-msgstr "Логотип компании"
+msgstr "El Logotipo De La Empresa"
 
 #: admin/cls-jobwp-admin.php:926 jobwp.php:129
 msgid "Company Website"
-msgstr "Веб-сайт Компании"
+msgstr "Sitio Web De La Empresa"
 
 #: admin/view/partial/search-style.php:19
 #: admin/view/partial/single-style.php:19
 msgid "Container"
-msgstr "Контейнер"
+msgstr "Contenedor"
 
 #: admin/view/apply-form.php:22 admin/view/listing.php:22
 #: admin/view/search.php:22 admin/view/single.php:22
 msgid "Content"
-msgstr "Содержание"
+msgstr "Contenido"
 
 #: admin/view/partial/single-style.php:172
 msgid "Content Color"
-msgstr "Цвет содержимого"
+msgstr "El Contenido De Color"
 
 #: admin/view/partial/single-style.php:179
 msgid "Content Size"
-msgstr "Размер контента"
+msgstr "Tamaño Del Contenido"
 
 #: admin/cls-jobwp-admin.php:385
 msgid "Cover Letter"
-msgstr "Сопроводительное письмо"
+msgstr "Carta De Cubierta"
 
 #: admin/view/partial/apply-form-content.php:55
 msgid "Cover Letter Label"
-msgstr "Этикетка с Сопроводительным письмом"
+msgstr "Carta De Cubierta De La Etiqueta"
 
 #: core/job_application.php:125
 msgid "Cover Letter: "
@@ -342,115 +340,115 @@ msgstr ""
 
 #: admin/cls-jobwp-admin.php:387
 msgid "Date"
-msgstr "Дата"
+msgstr "Fecha"
 
 #: admin/view/partial/job-info.php:58
 msgid "Deadline"
-msgstr "Крайний срок"
+msgstr "Fecha límite"
 
 #: admin/view/application_list.php:58
 msgid "DELETE"
-msgstr "Удалить"
+msgstr "ELIMINAR"
 
 #: admin/cls-jobwp-admin.php:424
 msgid "Description For Job"
-msgstr "Описание Работы"
+msgstr "Descripción Del Puesto De Trabajo"
 
 #: admin/cls-jobwp-admin.php:121 admin/cls-jobwp-admin.php:122
 #: admin/view/single.php:9
 msgid "Detail Page Settings"
-msgstr "Настройки страницы Сведений"
+msgstr "Detalle De La Configuración De La Página"
 
 #: freemius/assets/js/pricing/freemius-pricing.js:2
 msgid "display"
-msgstr "дисплей"
+msgstr "pantalla"
 
 #: admin/view/partial/listing-content.php:47
 #: admin/view/partial/single-content.php:69
 msgid "Display Company Logo"
-msgstr "Отобразить Логотип Компании"
+msgstr "Mostrar El Logotipo De La Empresa"
 
 #: admin/view/partial/listing-content.php:27
 #: admin/view/partial/single-content.php:49
 msgid "Display Company Name"
-msgstr "Отображать Название Компании"
+msgstr "Mostrar El Nombre De La Empresa"
 
 #: admin/view/partial/apply-form-content.php:64
 msgid "Display Phone"
-msgstr "Дисплей Телефона"
+msgstr "Teléfono De Pantalla"
 
 #: admin/view/partial/listing-content.php:348
 msgid "Display Publish Date"
-msgstr "Отображать Дату публикации"
+msgstr "Mostrar Fecha De Publicación"
 
 #: admin/view/partial/listing-content.php:408
 msgid "Display Read More"
-msgstr "Дисплей Читать Далее"
+msgstr "Pantalla Leer Más"
 
 #: admin/view/partial/listing-content.php:234
 msgid "Display Responsibility"
-msgstr "Проявляйте Ответственность"
+msgstr "Mostrar Responsabilidad"
 
 #: admin/view/partial/listing-content.php:177
 msgid "Display Salary"
-msgstr "Отображать Зарплату"
+msgstr "Pantalla De Sueldo"
 
 #: admin/view/partial/listing-content.php:291
 msgid "Display Vacancy"
-msgstr "Показать Вакансию"
+msgstr "Visualización De La Vacante"
 
 #: front/view/listing.php:60
 msgid "Displayed Here"
-msgstr "Отображается Здесь"
+msgstr "Se Muestra Aquí"
 
 #: admin/cls-jobwp-admin.php:416
 msgid "Edit Job"
-msgstr "Редактировать задание"
+msgstr "Editar Trabajo"
 
 #: admin/cls-jobwp-admin.php:458
 msgid "Edit Job Category"
-msgstr "Редактировать категорию задания"
+msgstr "Editar Una Categoría De Trabajo"
 
 #: admin/cls-jobwp-admin.php:571
 msgid "Edit Job Company"
-msgstr "Редактировать Работу Компании"
+msgstr "Editar Trabajo De La Empresa"
 
 #: admin/cls-jobwp-admin.php:516
 msgid "Edit Job Level"
-msgstr "Редактировать Уровень задания"
+msgstr "Modificar El Nivel De Trabajo"
 
 #: admin/cls-jobwp-admin.php:545
 msgid "Edit Job Location"
-msgstr "Изменить Местоположение работы"
+msgstr "Editar La Ubicación Del Trabajo"
 
 #: admin/cls-jobwp-admin.php:487
 msgid "Edit Job Nature"
-msgstr "Редактировать Характер задания"
+msgstr "Editar Trabajo De La Naturaleza"
 
 #: admin/cls-jobwp-admin.php:625
 msgid "Educational Requirements:"
-msgstr "Требования к образованию:"
+msgstr "Requisitos De Educación:"
 
 #: admin/cls-jobwp-admin.php:384 admin/cls-jobwp-admin.php:957
 msgid "Email"
-msgstr "Электронная почта"
+msgstr "Correo electrónico"
 
 #: admin/view/email.php:68
 msgid "Email Content"
-msgstr "Содержимое электронной почты"
+msgstr "El Contenido Del Correo Electrónico"
 
 #: admin/view/partial/apply-form-content.php:40
 msgid "Email Label"
-msgstr "Метка электронной почты"
+msgstr "Etiqueta De Correo Electrónico"
 
 #: admin/cls-jobwp-admin.php:130 admin/cls-jobwp-admin.php:131
 #: admin/view/email.php:16
 msgid "Email Settings"
-msgstr "Настройки электронной почты"
+msgstr "Configuración De Correo Electrónico"
 
 #: admin/view/email.php:60
 msgid "Email Subject"
-msgstr "Тема электронного письма"
+msgstr "Asunto Del Correo Electrónico"
 
 #: core/job_application.php:118
 msgid "Email: "
@@ -458,27 +456,27 @@ msgstr ""
 
 #: admin/view/general.php:180
 msgid "Enable on Apply Form"
-msgstr "Включить в Форме Подачи заявки"
+msgstr "Habilitar en Forma de Aplicar"
 
 #: admin/view/application_list.php:87
 msgid "EXPORT TO CSV"
-msgstr "ЭКСПОРТ В ФОРМАТ CSV"
+msgstr "EXPORTAR A CSV"
 
 #: admin/view/application_list.php:89
 msgid "Export To Excel"
-msgstr "Экспорт В Excel"
+msgstr "Exportar A Excel"
 
 #: admin/view/general.php:100
 msgid "External Application Form Shortcode"
-msgstr "Короткий Код Формы Внешней заявки"
+msgstr "Aplicación Externa Formulario Abreviado"
 
 #: admin/view/partial/job-info.php:66
 msgid "External Apply Now URL"
-msgstr "Внешний URL-АДРЕС \"Применить сейчас\""
+msgstr "Externo Aplicar Ahora URL"
 
 #: admin/view/partial/job-info.php:86
 msgid "Featured Job"
-msgstr "Рекомендуемая работа"
+msgstr "Destacado Trabajo"
 
 #: admin/view/partial/apply-form-style.php:248
 #: admin/view/partial/apply-form-style.php:312
@@ -495,7 +493,7 @@ msgstr "Рекомендуемая работа"
 #: admin/view/partial/single-style.php:208
 #: admin/view/partial/single-style.php:263
 msgid "Font Color"
-msgstr "Цвет шрифта"
+msgstr "El Color De La Fuente"
 
 #: admin/view/partial/apply-form-style.php:71
 #: admin/view/partial/apply-form-style.php:116
@@ -512,279 +510,279 @@ msgstr "Цвет шрифта"
 #: admin/view/partial/single-style.php:67
 #: admin/view/partial/single-style.php:201
 msgid "Font Size"
-msgstr "Размер шрифта"
+msgstr "El Tamaño De La Fuente"
 
 #: admin/view/partial/apply-form-style.php:20
 msgid "Form Container"
-msgstr "Форма Контейнера"
+msgstr "Contenedor De Formulario"
 
 #: admin/view/partial/apply-form-style.php:137
 msgid "Form Inputs"
-msgstr "Входные данные формы"
+msgstr "Formulario De Entradas"
 
 #: admin/view/partial/apply-form-style.php:92
 msgid "Form Label"
-msgstr "Метка формы"
+msgstr "Etiqueta De Formulario"
 
 #: admin/view/partial/apply-form-style.php:47
 msgid "Form Title"
-msgstr "Название формы"
+msgstr "Título Del Formulario"
 
 #: admin/cls-jobwp-admin.php:94 admin/cls-jobwp-admin.php:95
 #: admin/view/general.php:16
 msgid "General Settings"
-msgstr "Общие настройки"
+msgstr "Configuración General"
 
 #: admin/view/general.php:86
 msgid "Grid"
-msgstr "Сетка"
+msgstr "Cuadrícula"
 
 #: admin/view/email.php:52
 msgid "Header From Email"
-msgstr "Заголовок из электронного письма"
+msgstr "Encabezado De Correo Electrónico"
 
 #: admin/view/email.php:44
 msgid "Header From Name"
-msgstr "Заголовок Из Имени"
+msgstr "Encabezado De Nombre"
 
 #: admin/view/partial/single-style.php:228
 msgid "Height"
-msgstr "Высота"
+msgstr "Altura"
 
 #: lib/freemius-integrator.php:53
 #, php-format
 msgid "Hey %1$s"
-msgstr "Привет , %1$с"
+msgstr "Hey %1$s"
 
 #: core/job_application.php:162
 msgid "Hi"
-msgstr "Привет"
+msgstr "Hola"
 
 #: admin/view/partial/single-content.php:175
 msgid "Hide Additional Requirements"
-msgstr "Скрыть Дополнительные требования"
+msgstr "Ocultar Requisitos Adicionales"
 
 #: admin/view/partial/single-content.php:361
 msgid "Hide Apply Button"
-msgstr "Скрыть кнопку \"Применить\""
+msgstr "Ocultar Botón Aplicar"
 
 #: admin/view/partial/single-content.php:336
 msgid "Hide Apply Procedure"
-msgstr "Процедура Скрытого применения"
+msgstr "Ocultar Aplicar El Procedimiento De"
 
 #: admin/view/partial/search-content.php:41
 msgid "Hide Category"
-msgstr "Скрыть категорию"
+msgstr "Ocultar Categoría"
 
 #: admin/view/partial/apply-form-content.php:49
 msgid "Hide Cover Letter"
-msgstr "Скрыть Сопроводительное письмо"
+msgstr "Ocultar De La Carta De Cubierta"
 
 #: admin/view/partial/listing-content.php:111
 msgid "Hide Deadline"
-msgstr "Скрыть Крайний срок"
+msgstr "Ocultar Plazo"
 
 #: admin/view/partial/single-content.php:215
 msgid "Hide Educational Requirements"
-msgstr "Скрыть Требования к Образованию"
+msgstr "Ocultar Los Requisitos Educativos"
 
 #: admin/view/partial/listing-content.php:89
 msgid "Hide Experience"
-msgstr "Скрыть Опыт"
+msgstr "Ocultar Experiencia"
 
 #: admin/view/partial/single-content.php:235
 msgid "Hide Experience Requirements"
-msgstr "Скрыть Требования к опыту"
+msgstr "Ocultar Los Requisitos De Experiencia"
 
 #: admin/view/partial/apply-form-content.php:18
 msgid "Hide Form Title"
-msgstr "Скрыть Заголовок Формы"
+msgstr "Ocultar El Título Del Formulario"
 
 #: admin/view/partial/listing-content.php:461
 msgid "Hide Icon"
-msgstr "Скрыть значок"
+msgstr "Ocultar Icono De"
 
 #: admin/view/partial/search-content.php:83
 #: admin/view/partial/single-content.php:315
 msgid "Hide Job Level"
-msgstr "Скрыть Уровень Задания"
+msgstr "Ocultar El Nivel De Trabajo"
 
 #: admin/view/partial/search-content.php:69
 #: admin/view/partial/single-content.php:255
 msgid "Hide Job Location"
-msgstr "Скрыть Местоположение Задания"
+msgstr "Ocultar La Ubicación Del Trabajo"
 
 #: admin/view/partial/single-content.php:195
 msgid "Hide Job Nature"
-msgstr "Скрывать Характер Работы"
+msgstr "Ocultar La Naturaleza Del Trabajo"
 
 #: admin/view/partial/listing-content.php:155
 #: admin/view/partial/search-content.php:55
 msgid "Hide Job Type"
-msgstr "Скрыть Тип задания"
+msgstr "Ocultar El Tipo De Trabajo"
 
 #: admin/view/general.php:130
 msgid "Hide Jobs When Deadline Over"
-msgstr "Скрывать задания По Истечении Крайнего срока"
+msgstr "Ocultar Puestos De Trabajo Cuando El Plazo Más"
 
 #: admin/view/partial/search-content.php:27
 msgid "Hide Keyword"
-msgstr "Скрыть ключевое слово"
+msgstr "Ocultar Palabra Clave"
 
 #: admin/view/partial/listing-content.php:133
 msgid "Hide Location"
-msgstr "Скрыть Местоположение"
+msgstr "Ocultar La Ubicación"
 
 #: admin/view/partial/single-content.php:115
 msgid "Hide No. of Vacancies"
-msgstr "Скрыть количество вакансий"
+msgstr "Ocultar No. de Vacantes"
 
 #: admin/view/partial/single-content.php:295
 msgid "Hide Other Benefits"
-msgstr "Скройте Другие Преимущества"
+msgstr "Ocultar Otros Beneficios"
 
 #: admin/view/partial/listing-content.php:68
 #: admin/view/partial/single-content.php:95
 msgid "Hide Overview"
-msgstr "Скрыть Обзор"
+msgstr "Ocultar Descripción"
 
 #: admin/view/partial/listing-content.php:481
 msgid "Hide Pagination"
-msgstr "Скрыть Разбивку на страницы"
+msgstr "Ocultar La Paginación"
 
 #: admin/view/partial/single-content.php:155
 msgid "Hide Responsible For"
-msgstr "Скрыть Ответственность За"
+msgstr "Ocultar Responsable De"
 
 #: admin/view/partial/single-content.php:275
 msgid "Hide Salary"
-msgstr "Скрывать Зарплату"
+msgstr "Ocultar Sueldo"
 
 #: admin/view/partial/search-content.php:18
 msgid "Hide Search Panel"
-msgstr "Скрыть панель Поиска"
+msgstr "Ocultar El Panel De Búsqueda"
 
 #: admin/view/partial/single-content.php:377
 msgid "Hide Share On"
-msgstr "Скрыть Общий доступ На"
+msgstr "Ocultar Compartir En"
 
 #: admin/view/partial/single-content.php:135
 msgid "Hide Specific Skills"
-msgstr "Скрывать Определенные Навыки"
+msgstr "Ocultar Habilidades Específicas"
 
 #: admin/view/partial/listing-content.php:446
 msgid "Hide Total Jobs Found"
-msgstr "Скрыть Общее количество Найденных Заданий"
+msgstr "Ocultar Total De Los Empleos Encontrados"
 
 #: admin/view/partial/apply-form-content.php:104
 msgid "Hide User Consent"
-msgstr "Скрыть Согласие Пользователя"
+msgstr "Ocultar El Consentimiento Del Usuario"
 
 #: admin/view/partial/listing-style.php:539
 msgid "Hover Background Color"
-msgstr "Цвет фона при наведении курсора мыши"
+msgstr "Hover Color De Fondo"
 
 #: admin/view/partial/listing-style.php:84
 #: admin/view/partial/listing-style.php:558
 msgid "Hover Font Color"
-msgstr "Цвет шрифта при наведении курсора мыши"
+msgstr "Hover Color De La Fuente"
 
 #: admin/view/partial/single-style.php:137
 msgid "How to Apply"
-msgstr "Как подать заявку"
+msgstr "Cómo Aplicar"
 
 #: admin/view/partial/listing-content.php:70
 msgid "img/jobwp-list-hide-overview.webp"
-msgstr "изображение/jobwp-список-скрыть-обзор.webp"
+msgstr "img/jobwp-lista-ocultar-visión de conjunto.webp"
 
 #: admin/view/partial/job-info.php:113
 msgid "Inactive"
-msgstr "Неактивный"
+msgstr "Inactivo"
 
 #: admin/view/partial/single-style.php:120
 msgid "Info Font Color"
-msgstr "Цвет шрифта Информации"
+msgstr "Información De Color De La Fuente"
 
 #: admin/view/partial/single-style.php:127
 msgid "Info Font Size"
-msgstr "Размер шрифта информации"
+msgstr "Información Tamaño De La Fuente"
 
 #: admin/cls-jobwp-admin.php:452 admin/cls-jobwp-admin.php:462
 msgid "Job Categories"
-msgstr "Категории должностей"
+msgstr "Las Categorías De Empleo"
 
 #: admin/cls-jobwp-admin.php:453
 msgid "Job Category"
-msgstr "Категория работы"
+msgstr "La Categoría De Trabajo"
 
 #: admin/cls-jobwp-admin.php:565 admin/cls-jobwp-admin.php:566
 #: admin/cls-jobwp-admin.php:575
 msgid "Job Company"
-msgstr "Работа в компании"
+msgstr "Trabajo De La Empresa"
 
 #: admin/cls-jobwp-admin.php:598
 msgid "Job Details:"
-msgstr "Сведения о задании:"
+msgstr "Detalles Del Trabajo:"
 
 #: admin/view/partial/single-style.php:77
 msgid "Job Info"
-msgstr "Информация о работе"
+msgstr "Info Del Trabajo"
 
 #: admin/view/partial/listing-style.php:174
 msgid "Job Information Label"
-msgstr "Метка с информацией о задании"
+msgstr "Información Sobre El Trabajo De La Etiqueta"
 
 #: admin/view/partial/listing-style.php:19
 msgid "Job Item"
-msgstr "Элемент задания"
+msgstr "Elemento De Trabajo"
 
 #: admin/cls-jobwp-admin.php:510 admin/cls-jobwp-admin.php:511
 #: admin/cls-jobwp-admin.php:520
 msgid "Job Level"
-msgstr "Уровень работы"
+msgstr "A Nivel De Trabajo"
 
 #: admin/cls-jobwp-admin.php:539 admin/cls-jobwp-admin.php:540
 #: admin/cls-jobwp-admin.php:549
 msgid "Job Location"
-msgstr "Место работы"
+msgstr "Lugar De Trabajo"
 
 #: admin/cls-jobwp-admin.php:481 admin/cls-jobwp-admin.php:482
 #: admin/cls-jobwp-admin.php:491
 msgid "Job Nature"
-msgstr "Характер Работы"
+msgstr "Trabajo De La Naturaleza"
 
 #: admin/view/partial/listing-style.php:152
 msgid "Job Overview"
-msgstr "Обзор работы"
+msgstr "Descripción General Del Trabajo"
 
 #: admin/view/general.php:79
 msgid "Job Page Layout"
-msgstr "Макет страницы задания"
+msgstr "Trabajo De Diseño De Página"
 
 #: admin/view/partial/listing-style.php:65
 #: admin/view/partial/single-style.php:48
 msgid "Job Title"
-msgstr "Должность"
+msgstr "Título Del Trabajo"
 
 #: admin/view/partial/single-content.php:22
 msgid "Job Title Tag"
-msgstr "Тег с Названием должности"
+msgstr "Trabajo De La Etiqueta De Título"
 
 #: front/view/listing.php:60
 msgid "Jobs"
-msgstr "Вакансии"
+msgstr "Puestos de trabajo"
 
 #: admin/cls-jobwp-admin.php:423
 msgid "jobs"
-msgstr "Вакансии"
+msgstr "puestos de trabajo"
 
 #: admin/view/partial/single-style.php:104
 msgid "Label Font Color"
-msgstr "Цвет шрифта этикетки"
+msgstr "Etiqueta De Color De La Fuente"
 
 #: admin/view/partial/single-style.php:111
 msgid "Label Font Size"
-msgstr "Размер шрифта надписи"
+msgstr "Etiqueta De Tamaño De Fuente"
 
 #: admin/view/partial/listing-content.php:96
 #: admin/view/partial/listing-content.php:118
@@ -810,96 +808,96 @@ msgstr "Размер шрифта надписи"
 #: admin/view/partial/single-content.php:322
 #: admin/view/partial/single-content.php:396
 msgid "Label Text"
-msgstr "Текст метки"
+msgstr "El Texto De La Etiqueta"
 
 #: admin/view/partial/single-style.php:95
 msgid "Left"
-msgstr "Слева"
+msgstr "A la izquierda"
 
 #: admin/view/partial/listing-style.php:359
 msgid "Left/Right"
-msgstr "Слева / Справа"
+msgstr "Izquierda/Derecha"
 
 #: admin/view/general.php:83
 msgid "List"
-msgstr "Список"
+msgstr "Lista"
 
 #: admin/cls-jobwp-admin.php:103 admin/cls-jobwp-admin.php:104
 #: admin/view/listing.php:9
 msgid "Listing Page Settings"
-msgstr "Настройки страницы со Списком"
+msgstr "Listado De La Configuración De La Página"
 
 #: admin/cls-jobwp-admin.php:956
 msgid "Logo"
-msgstr "Логотип"
+msgstr "Logotipo"
 
 #: admin/view/partial/single-style.php:38
 msgid "Margin Bottom"
-msgstr "Нижний Край поля"
+msgstr "Margen Inferior"
 
 #: admin/view/partial/single-style.php:31
 msgid "Margin Top"
-msgstr "Верхнее поле"
+msgstr "Margen Superior"
 
 #: admin/cls-jobwp-admin.php:383
 msgid "Name"
-msgstr "Имя"
+msgstr "Nombre"
 
 #: admin/view/partial/apply-form-content.php:32
 msgid "Name Label"
-msgstr "Именная Этикетка"
+msgstr "Nombre De La Etiqueta"
 
 #: admin/cls-jobwp-admin.php:461
 msgid "New Job Category Name"
-msgstr "Название Новой категории Работы"
+msgstr "Nuevo Empleo Nombre De La Categoría"
 
 #: admin/cls-jobwp-admin.php:574
 msgid "New Job Company Name"
-msgstr "Название компании, занимающейся Новой Работой"
+msgstr "Nuevo Trabajo Nombre De La Empresa"
 
 #: admin/cls-jobwp-admin.php:519
 msgid "New Job Level Name"
-msgstr "Название Нового Уровня задания"
+msgstr "Nuevo Nivel De Trabajo Nombre"
 
 #: admin/cls-jobwp-admin.php:548
 msgid "New Job Location Name"
-msgstr "Название Нового Места Работы"
+msgstr "Nuevo Empleo Nombre De La Ubicación"
 
 #: admin/cls-jobwp-admin.php:490
 msgid "New Job Nature Name"
-msgstr "Название Характера Новой Работы"
+msgstr "Nuevo Trabajo De La Naturaleza Nombre"
 
 #: front/view/single-job.php:37
 msgid "No job available!"
-msgstr "Нет свободной работы!"
+msgstr "No hay trabajo disponible!"
 
 #: front/view/listing.php:456
 msgid "No Job found"
-msgstr "Работа не найдена"
+msgstr "Ningún Trabajo encontrar"
 
 #: admin/view/partial/job-info.php:50
 msgid "No. of Vacancies"
-msgstr "Количество вакансий"
+msgstr "No. de Vacantes"
 
 #: admin/cls-jobwp-admin.php:419
 msgid "Not Found"
-msgstr "Не Найден"
+msgstr "No Se Encuentra"
 
 #: admin/cls-jobwp-admin.php:420
 msgid "Not found in Trash"
-msgstr "Не найдено в Мусорном ведре"
+msgstr "No se encontró en la Basura"
 
 #: admin/view/general.php:46
 msgid "Notification Email to User Role"
-msgstr "Уведомление по электронной почте Роли Пользователя"
+msgstr "Correo electrónico de notificación a la Función de Usuario"
 
 #: core/job_application.php:23
 msgid "Only Pdf file is permitted"
-msgstr "Разрешен только Pdf-файл"
+msgstr "Sólo archivo Pdf está permitido"
 
 #: core/job_application.php:28
 msgid "Only Pdf, Docx files are permitted"
-msgstr "Разрешены только файлы Pdf, Docx"
+msgstr "Sólo Pdf, Docx archivos están permitidos"
 
 #: admin/view/partial/listing-content.php:102
 #: admin/view/partial/listing-content.php:124
@@ -910,68 +908,68 @@ msgstr "Разрешены только файлы Pdf, Docx"
 #: admin/view/partial/listing-content.php:327
 #: admin/view/partial/listing-content.php:385
 msgid "Order"
-msgstr "Порядок"
+msgstr "El fin de"
 
 #: admin/cls-jobwp-admin.php:652
 msgid "Other Benefits:"
-msgstr "Другие Преимущества:"
+msgstr "Otros Beneficios:"
 
 #: admin/view/partial/listing-style.php:343
 #: admin/view/partial/single-style.php:224
 msgid "Padding"
-msgstr "Заполнение"
+msgstr "Relleno"
 
 #: admin/view/partial/listing-style.php:435
 msgid "Pagination"
-msgstr "Разбивка на страницы"
+msgstr "La paginación"
 
 #: admin/cls-jobwp-admin.php:411
 msgid "Parent Job"
-msgstr "Родительское задание"
+msgstr "Los Padres De Empleo"
 
 #: admin/cls-jobwp-admin.php:456
 msgid "Parent Job Category"
-msgstr "Категория Родительского задания"
+msgstr "Padres Categoría De Trabajo"
 
 #: admin/cls-jobwp-admin.php:457
 msgid "Parent Job Category:"
-msgstr "Категория Родительского задания:"
+msgstr "Padres Categoría De Trabajo:"
 
 #: admin/cls-jobwp-admin.php:569
 msgid "Parent Job Company"
-msgstr "Материнская компания по трудоустройству"
+msgstr "Trabajo Principal De La Empresa"
 
 #: admin/cls-jobwp-admin.php:570
 msgid "Parent Job Company:"
-msgstr "Материнская компания по трудоустройству:"
+msgstr "Trabajo Principal De La Empresa:"
 
 #: admin/cls-jobwp-admin.php:514
 msgid "Parent Job Level"
-msgstr "Уровень Родительского задания"
+msgstr "De Los Padres A Nivel De Trabajo"
 
 #: admin/cls-jobwp-admin.php:515
 msgid "Parent Job Level:"
-msgstr "Уровень Родительского задания:"
+msgstr "De Los Padres A Nivel De Trabajo:"
 
 #: admin/cls-jobwp-admin.php:543
 msgid "Parent Job Location"
-msgstr "Родительское рабочее место"
+msgstr "Los Padres Localización Del Trabajo"
 
 #: admin/cls-jobwp-admin.php:544
 msgid "Parent Job Location:"
-msgstr "Родительское рабочее место:"
+msgstr "Los Padres Ubicación Del Trabajo:"
 
 #: admin/cls-jobwp-admin.php:485
 msgid "Parent Job Nature"
-msgstr "Характер Родительской работы"
+msgstr "Trabajo Principal De La Naturaleza"
 
 #: admin/cls-jobwp-admin.php:486
 msgid "Parent Job Nature:"
-msgstr "Характер Родительской работы:"
+msgstr "Trabajo Principal De La Naturaleza:"
 
 #: front/view/apply.php:93
 msgid "pdf"
-msgstr "PDF"
+msgstr "pdf"
 
 #: front/view/apply.php:97
 msgid "pdf, docx, doc"
@@ -979,11 +977,11 @@ msgstr "pdf, docx, doc"
 
 #: admin/cls-jobwp-admin.php:392
 msgid "Phone"
-msgstr "Телефон"
+msgstr "Teléfono"
 
 #: admin/view/partial/apply-form-content.php:82
 msgid "Phone Label"
-msgstr "Метка телефона"
+msgstr "Etiqueta Del Teléfono"
 
 #: core/job_application.php:121
 msgid "Phone: "
@@ -995,7 +993,7 @@ msgstr ""
 #: admin/view/partial/search-content.php:75
 #: admin/view/partial/search-content.php:101
 msgid "Placeholder Text"
-msgstr "Текст-заполнитель"
+msgstr "Texto De Marcador De Posición"
 
 #: lib/freemius-integrator.php:54
 #, php-format
@@ -1004,9 +1002,9 @@ msgid ""
 "%2$s will be sent to %5$s. If you skip this, that's okay! %2$s will still "
 "work just fine."
 msgstr ""
-"Пожалуйста, помогите нам улучшить %2$s! Если вы зарегистрируетесь, некоторые "
-"данные об использовании %2$s будут отправлены на %5$s. Если вы пропустите "
-"это, ничего страшного! %2$s по-прежнему будет работать просто отлично."
+"Por favor, ayúdenos a mejorar %2$s! Si usted opt-in, algunos datos acerca de "
+"su uso de %2$s) será enviado a %5$s. Si omite este, que bien! De %2$s "
+"todavía va a funcionar bien."
 
 #: admin/view/email.php:95 admin/view/general.php:52 admin/view/general.php:116
 #: admin/view/general.php:144 admin/view/partial/apply-form-content.php:70
@@ -1079,51 +1077,51 @@ msgstr ""
 #: admin/view/partial/single-content.php:402
 #: admin/view/partial/single-style.php:88
 msgid "Please Upgrade Now"
-msgstr "Пожалуйста, обновите Сейчас"
+msgstr "Por Favor Actualizar Ahora"
 
 #: admin/view/application_list.php:80
 msgid "Please Upgrade Now to Export"
-msgstr "Пожалуйста, обновите сейчас, чтобы Экспортировать"
+msgstr "Por favor, Actualiza Ahora a la Exportación"
 
 #: admin/view/application_list.php:79
 msgid "Please Upgrade to Export in CSV/Excel"
-msgstr "Пожалуйста, перейдите на экспорт в формате CSV / Excel"
+msgstr "Por favor, Actualice a la Exportación en CSV/Excel"
 
 #: core/job_application.php:163
 msgid "position"
-msgstr "положение"
+msgstr "posición"
 
 #: admin/view/partial/listing-style.php:220
 msgid "Read More Button"
-msgstr "Кнопка \"Прочитать подробнее\""
+msgstr "Botón De Leer Más"
 
 #: admin/view/partial/listing-style.php:370
 msgid "Read More Button : Hover"
-msgstr "Кнопка \" Подробнее \" : Наведите курсор мыши"
+msgstr "Leer Más Botón : Hover"
 
 #: front/view/single/header.php:88
 msgid "reCaptcha verification failed!"
-msgstr "Не удалось выполнить проверку reCAPTCHA!"
+msgstr "reCaptcha error en la comprobación!"
 
 #: admin/cls-jobwp-admin.php:945 jobwp.php:156
 msgid "Remove Logo"
-msgstr "Удалить Логотип"
+msgstr "Quitar Logo"
 
 #: admin/cls-jobwp-admin.php:607
 msgid "Responsibilities / Roles"
-msgstr "Обязанности / Роли"
+msgstr "Responsabilidades / Funciones"
 
 #: admin/cls-jobwp-admin.php:386
 msgid "Resume"
-msgstr "Возобновление"
+msgstr "Curriculum vitae"
 
 #: admin/view/partial/single-style.php:97
 msgid "Right"
-msgstr "Правильно"
+msgstr "Derecho"
 
 #: admin/cls-jobwp-admin.php:643
 msgid "Salary:"
-msgstr "Заработная плата:"
+msgstr "Salario:"
 
 #: admin/view/email.php:86 admin/view/general.php:190
 #: admin/view/partial/apply-form-content.php:152
@@ -1135,133 +1133,133 @@ msgstr "Заработная плата:"
 #: admin/view/partial/single-content.php:418
 #: admin/view/partial/single-style.php:272
 msgid "Save Settings"
-msgstr "Сохранение настроек"
+msgstr "Guardar La Configuración"
 
 #: admin/view/partial/search-style.php:91
 msgid "Search Button"
-msgstr "Кнопка Поиска"
+msgstr "Botón De Búsqueda"
 
 #: admin/view/partial/search-style.php:120
 msgid "Search Button :: Hover"
-msgstr "Кнопка поиска :: Наведение курсора мыши"
+msgstr "Botón De Búsqueda : A: Hover"
 
 #: admin/view/partial/search-content.php:122
 msgid "Search Button Text"
-msgstr "Текст кнопки Поиска"
+msgstr "Botón De Búsqueda De Texto"
 
 #: admin/view/partial/search-style.php:41
 msgid "Search Items"
-msgstr "Элементы поиска"
+msgstr "Búsqueda De Artículos"
 
 #: admin/cls-jobwp-admin.php:418
 msgid "Search Job"
-msgstr "Поиск Работы"
+msgstr "La Búsqueda De Empleo"
 
 #: admin/cls-jobwp-admin.php:454
 msgid "Search Job Categories"
-msgstr "Поиск категорий Вакансий"
+msgstr "De Trabajo De La Búsqueda De Categorías"
 
 #: admin/cls-jobwp-admin.php:567
 msgid "Search Job Company"
-msgstr "Компания по Поиску Работы"
+msgstr "De Trabajo De La Búsqueda De La Empresa"
 
 #: admin/cls-jobwp-admin.php:512
 msgid "Search Job Level"
-msgstr "Уровень поиска Работы"
+msgstr "Búsqueda De Empleo A Nivel"
 
 #: admin/cls-jobwp-admin.php:541
 msgid "Search Job Location"
-msgstr "Поиск Места Работы"
+msgstr "La Búsqueda De La Ubicación Del Trabajo"
 
 #: admin/cls-jobwp-admin.php:483
 msgid "Search Job Nature"
-msgstr "Характер Поиска Работы"
+msgstr "De Trabajo De La Búsqueda De La Naturaleza"
 
 #: admin/cls-jobwp-admin.php:112 admin/cls-jobwp-admin.php:113
 #: admin/view/search.php:9
 msgid "Search Panel Settings"
-msgstr "Настройки панели Поиска"
+msgstr "La Búsqueda De La Configuración Del Panel De"
 
 #: admin/view/general.php:172
 msgid "Secret Key"
-msgstr "Секретный Ключ"
+msgstr "Clave Secreta"
 
 #: admin/view/partial/job-info.php:24
 msgid "Select a Company"
-msgstr "Выберите компанию"
+msgstr "Seleccione una Empresa"
 
 #: admin/cls-jobwp-admin.php:380
 msgid "Select All"
-msgstr "Выбрать Все"
+msgstr "Seleccione Todos Los"
 
 #: admin/view/partial/job-info.php:9
 msgid "Select Company"
-msgstr "Выберите компанию"
+msgstr "Seleccione La Empresa"
 
 #: admin/view/general.php:59
 msgid "Select User Role"
-msgstr "Выберите Роль пользователя"
+msgstr "Seleccione La Función De Usuario"
 
 #: admin/view/general.php:164
 msgid "Site Key"
-msgstr "Ключ сайта"
+msgstr "Sitio Clave"
 
 #: admin/cls-jobwp-admin.php:616
 msgid "Skills Required:"
-msgstr "Необходимые навыки:"
+msgstr "Habilidades Requeridas:"
 
 #: front/view/single/header.php:65
 msgid "Sorry, your nonce did not verify."
-msgstr "Извините, ваш одноразовый номер не подтвердился."
+msgstr "Lo sentimos, tu nonce no verificar."
 
 #: admin/view/partial/job-info.php:106
 msgid "Status"
-msgstr "Статус"
+msgstr "Estado"
 
 #: admin/view/apply-form.php:25 admin/view/listing.php:25
 #: admin/view/search.php:25 admin/view/single.php:25
 msgid "Styles"
-msgstr "Стили"
+msgstr "Estilos"
 
 #: admin/view/partial/apply-form-content.php:142
 msgid "Submit Button Text"
-msgstr "Текст кнопки Отправки"
+msgstr "Texto Del Botón Enviar"
 
 #: core/job_application.php:179
 msgid "Thank you for your application"
-msgstr "Благодарим вас за вашу заявку"
+msgstr "Gracias por su solicitud"
 
 #: core/job_application.php:163
 msgid "Thanks for applying to our"
-msgstr "Спасибо, что обратились в наш"
+msgstr "Gracias por aplicar a nuestro"
 
 #: core/job_application.php:60
 msgid "The file cannot be copied in the folder"
-msgstr "Файл не может быть скопирован в папку"
+msgstr "El archivo no puede ser copiado en la carpeta"
 
 #: core/job_application.php:46
 msgid "The folder"
-msgstr "Папка"
+msgstr "La carpeta"
 
 #: admin/view/partial/single-style.php:165
 msgid "Title Border Color"
-msgstr "Цвет границы заголовка"
+msgstr "Título Del Color De Borde"
 
 #: admin/view/partial/single-style.php:149
 msgid "Title Font Color"
-msgstr "Цвет шрифта заголовка"
+msgstr "Título El Color De La Fuente"
 
 #: admin/view/partial/single-style.php:156
 msgid "Title Font Size"
-msgstr "Размер шрифта заголовка"
+msgstr "Título Tamaño De La Fuente"
 
 #: admin/view/partial/apply-form-content.php:24
 msgid "Title Text"
-msgstr "Текст заголовка"
+msgstr "Texto Del Título"
 
 #: admin/view/partial/listing-content.php:19
 msgid "Title Word Length"
-msgstr "Длина слова в заголовке"
+msgstr "Título De La Longitud De La Palabra"
 
 #: admin/view/email.php:75
 msgid "To use candidate name apply #candidateName# in the content"
@@ -1273,39 +1271,39 @@ msgstr ""
 
 #: admin/view/partial/listing-style.php:355
 msgid "Top/Bottom"
-msgstr "Верх /Низ"
+msgstr "Superior/Inferior"
 
 #: freemius/includes/class-freemius.php:19047
 msgid "true"
-msgstr "истинный"
+msgstr "cierto"
 
 #: admin/cls-jobwp-admin.php:417
 msgid "Update Job"
-msgstr "Задание на обновление"
+msgstr "Trabajo De Actualización"
 
 #: admin/cls-jobwp-admin.php:459
 msgid "Update Job Category"
-msgstr "Обновить категорию задания"
+msgstr "Actualización De La Categoría De Trabajo"
 
 #: admin/cls-jobwp-admin.php:572
 msgid "Update Job Company"
-msgstr "Обновить Вакансию Компании"
+msgstr "Trabajo De Actualización De La Empresa"
 
 #: admin/cls-jobwp-admin.php:517
 msgid "Update Job Level"
-msgstr "Обновить Уровень задания"
+msgstr "Trabajo De Actualización De Nivel"
 
 #: admin/cls-jobwp-admin.php:546
 msgid "Update Job Location"
-msgstr "Обновить Местоположение задания"
+msgstr "Trabajo De Actualización De Ubicación"
 
 #: admin/cls-jobwp-admin.php:488
 msgid "Update Job Nature"
-msgstr "Обновить Характер задания"
+msgstr "Trabajo De Actualización De La Naturaleza"
 
 #: front/view/apply.php:85
 msgid "Upload CV/Resume"
-msgstr "Загрузить CV / Резюме"
+msgstr "Cargar CV"
 
 #: admin/view/email.php:79
 msgid "Use <<code>br</code>> to break line in the content"
@@ -1313,60 +1311,60 @@ msgstr ""
 
 #: admin/view/general.php:91
 msgid "Use External Application Form"
-msgstr "Используйте Внешнюю Форму Заявки"
+msgstr "Uso Externo Formulario De Solicitud"
 
 #: admin/cls-jobwp-admin.php:391
 msgid "User Consent"
-msgstr "Согласие Пользователя"
+msgstr "El Consentimiento Del Usuario"
 
 #: admin/view/partial/apply-form-content.php:122
 msgid "User Consent Text"
-msgstr "Текст Согласия Пользователя"
+msgstr "El Consentimiento Del Usuario En Texto"
 
 #: front/view/listing.php:67
 msgid "View"
-msgstr "Вид"
+msgstr "Ver"
 
 #: admin/cls-jobwp-admin.php:413
 msgid "View Job"
-msgstr "Просмотр Задания"
+msgstr "View Job"
 
 #: core/job_application.php:164
 msgid ""
 "We'll review your application and be sure to get back to you if there might "
 "be a fit!"
 msgstr ""
-"Мы рассмотрим вашу заявку и обязательно свяжемся с вами, если она вам "
-"подойдет!"
+"Vamos a revisar su aplicación y asegúrese de volver a usted si no puede ser "
+"un ajuste!"
 
 #: admin/cls-jobwp-admin.php:958
 msgid "Website"
-msgstr "Веб-сайт"
+msgstr "Sitio web"
 
 #: admin/view/partial/single-style.php:230
 msgid "Width"
-msgstr "Ширина"
+msgstr "Ancho"
 
 #: admin/view/partial/listing-content.php:77
 msgid "Word Length"
-msgstr "Длина слова"
+msgstr "La Longitud De La Palabra"
 
 #: admin/cls-jobwp-admin.php:409 admin/cls-jobwp-admin.php:410
 msgid "WP Jobs"
-msgstr "Рабочие места WP"
+msgstr "WP Puestos de trabajo"
 
 #: admin/view/partial/job-info.php:42
 msgid "Year of Experience"
-msgstr "Год опыта работы"
+msgstr "Año de Experiencia"
 
 #: admin/view/general.php:105
 msgid ""
 "You can use external form instead of default application form. Like WPForms, "
 "Contact Form etc."
 msgstr ""
-"Вы можете использовать внешнюю форму вместо формы заявки по умолчанию. "
-"Например, WPForms, контактную форму и т.д."
+"Usted puede utilizar la forma externa en lugar de la predeterminada "
+"formulario de solicitud. Como WPForms, Formulario de Contacto, etc."
 
 #: core/job_application.php:36
 msgid "Your file size is to large"
-msgstr "Размер вашего файла слишком велик"
+msgstr "Su tamaño del archivo es grande"

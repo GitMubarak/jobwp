@@ -113,16 +113,16 @@ trait Jobwp_Applicaiton
                                 //$headers .= 'From: Career' . "\r\n";
                                 
                                 $subject = __('Career - New Application', 'jobwp');
-                                $emailMessage = __('Applicant: ', 'jobwp') . $fullName;
-                                $emailMessage .= '<br>' . __( 'Applied For: ', 'jobwp' ) . $applyFor;
-                                $emailMessage .= '<br>' . __( 'Email: ', 'jobwp' ) . $email;
+                                $emailMessage = __('Applicant', 'jobwp') . ': ' . $fullName;
+                                $emailMessage .= '<br>' . __( 'Applied For', 'jobwp' ) . ': ' . $applyFor;
+                                $emailMessage .= '<br>' . __( 'Email', 'jobwp' ) . ': ' . $email;
 
                                 if ( '' != $intl_tel ) {
-                                    $emailMessage .= '<br>' . __( 'Phone: ' ) . $intlPhone;
+                                    $emailMessage .= '<br>' . __( 'Phone' ) . ': ' . $intlPhone;
                                 }
 
                                 if ( '' != $message ) {
-                                    $emailMessage .= '<br>' . __( 'Cover Letter: ', 'jobwp' ) . $message;
+                                    $emailMessage .= '<br>' . __( 'Cover Letter', 'jobwp' ) . ': ' . $message;
                                 }
 
                                 wp_mail(

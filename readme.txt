@@ -196,6 +196,8 @@ You can display the job information and apply a url to that individual job which
 * POT file included (/languages/)
 * English (United States) (Default)
 * Bengoli (Bangla)
+* Italian
+* Russian
 
 
 **👍 Feedback/Rating:**

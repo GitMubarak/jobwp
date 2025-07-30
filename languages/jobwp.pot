@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-07-30 00:54+0600\n"
+"POT-Creation-Date: 2025-07-30 22:30+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -54,7 +54,7 @@ msgstr ""
 msgid "Select All"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:382
+#: admin/cls-jobwp-admin.php:382 core/job_application.php:117
 msgid "Applied For"
 msgstr ""
 
@@ -63,10 +63,11 @@ msgid "Name"
 msgstr ""
 
 #: admin/cls-jobwp-admin.php:384 admin/cls-jobwp-admin.php:957
+#: core/job_application.php:118
 msgid "Email"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:385
+#: admin/cls-jobwp-admin.php:385 core/job_application.php:125
 msgid "Cover Letter"
 msgstr ""
 
@@ -82,7 +83,7 @@ msgstr ""
 msgid "User Consent"
 msgstr ""
 
-#: admin/cls-jobwp-admin.php:392
+#: admin/cls-jobwp-admin.php:392 core/job_application.php:121
 msgid "Phone"
 msgstr ""
 
@@ -1215,23 +1216,7 @@ msgid "Career - New Application"
 msgstr ""
 
 #: core/job_application.php:116
-msgid "Applicant: "
-msgstr ""
-
-#: core/job_application.php:117
-msgid "Applied For: "
-msgstr ""
-
-#: core/job_application.php:118
-msgid "Email: "
-msgstr ""
-
-#: core/job_application.php:121
-msgid "Phone: "
-msgstr ""
-
-#: core/job_application.php:125
-msgid "Cover Letter: "
+msgid "Applicant"
 msgstr ""
 
 #: core/job_application.php:162
@@ -1283,7 +1268,7 @@ msgid "Attach your resume. Max size 2mb"
 msgstr ""
 
 #: front/view/apply.php:90
-msgid "Allowed Type(s): "
+msgid "Allowed Types"
 msgstr ""
 
 #: front/view/apply.php:93
