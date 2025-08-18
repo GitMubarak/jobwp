@@ -287,7 +287,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Job publish date added in listing page - Pro
 [//]: # fs_premium_only_end
-* Listing
+* Nonce verification applied in application list
 
 = 2.4.3 =
 [//]: # fs_premium_only_begin

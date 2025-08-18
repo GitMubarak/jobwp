@@ -6,7 +6,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 $showMessage = '';
 // Delete Single Application
 if ( isset( $_GET['delID'] ) ) {
-    $showMessage = $this->jobwp_delete_single_application( $_GET['delID'] );
+
+    if ( ! isset( $_GET['application_list_nonce'] ) 
+        || ! wp_verify_nonce( $_GET['application_list_nonce'], 'application_list_action' ) ) {
+        $showMessage = 'Sorry, your nonce did not verify.';
+    } else {
+        $showMessage = $this->jobwp_delete_single_application( $_GET['delID'] );
+    }
 }
 
 $jobwpDir = wp_upload_dir();
@@ -55,7 +61,7 @@ if ( '' !== $showMessage ) {
                     ?>
                     <td>
                         <span class="delReq">
-                            <a href="?post_type=jobs&page=jobwp-application-list&delID=<?php esc_attr_e( $application->job_id ); ?>" class="reqDel"><?php _e('DELETE', JOBWP_TXT_DOMAIN); ?></a>
+                            <a href="<?php print wp_nonce_url('?post_type=jobs&page=jobwp-application-list&delID='. esc_attr( $application->job_id ) . '', 'application_list_action', 'application_list_nonce'); ?>" class="reqDel"><?php _e('DELETE', JOBWP_TXT_DOMAIN); ?></a>
                         </span>
                     </td>
                 </tr>
