@@ -9,7 +9,7 @@ if ( isset( $_GET['delID'] ) ) {
 
     if ( ! isset( $_GET['application_list_nonce'] ) 
         || ! wp_verify_nonce( $_GET['application_list_nonce'], 'application_list_action' ) ) {
-        $showMessage = 'Sorry, your nonce did not verify.';
+        $showMessage = __('Sorry, your nonce did not verify.', 'jobwp');
     } else {
         $showMessage = $this->jobwp_delete_single_application( $_GET['delID'] );
     }
@@ -19,7 +19,7 @@ $jobwpDir = wp_upload_dir();
 $jobwpDir = $jobwpDir['baseurl'] . '/jobwp-resume';
 ?>
 <div class="settings-banner">
-    <h2><i class="fa-solid fa-list-check"></i>&nbsp;<?php _e('Application Lists', JOBWP_TXT_DOMAIN); ?></h2>
+    <h2><i class="fa-solid fa-list-check"></i>&nbsp;<?php _e('Application Lists', 'jobwp'); ?></h2>
 </div>
 <?php 
 if ( '' !== $showMessage ) {
@@ -61,7 +61,7 @@ if ( '' !== $showMessage ) {
                     ?>
                     <td>
                         <span class="delReq">
-                            <a href="<?php print wp_nonce_url('?post_type=jobs&page=jobwp-application-list&delID='. esc_attr( $application->job_id ) . '', 'application_list_action', 'application_list_nonce'); ?>" class="reqDel"><?php _e('DELETE', JOBWP_TXT_DOMAIN); ?></a>
+                            <a href="<?php print wp_nonce_url('?post_type=jobs&page=jobwp-application-list&delID='. esc_attr( $application->job_id ) . '', 'application_list_action', 'application_list_nonce'); ?>" class="reqDel"><?php _e('DELETE', 'jobwp'); ?></a>
                         </span>
                     </td>
                 </tr>
@@ -82,7 +82,7 @@ if ( '' !== $showMessage ) {
 <?php
 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
     ?>
-    <a href="#" class="button button-primary jobwp-button"><?php _e('Please Upgrade to Export in CSV/Excel', JOBWP_TXT_DOMAIN); ?></a><br>
+    <a href="#" class="button button-primary jobwp-button"><?php _e('Please Upgrade to Export in CSV/Excel', 'jobwp'); ?></a><br>
     <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now to Export', 'jobwp') . '</a>'; ?></span>
     <?php
 }
@@ -90,9 +90,9 @@ if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
 if ( job_fs()->is_plan__premium_only('pro', true) ) {
     ?>
     <form method="post" id="jobwp-download-to-csv-form" action="">
-        <input type="submit" name="jobwp_download_csv" class="button button-primary jobwp-button" value="<?php _e('EXPORT TO CSV', JOBWP_TXT_DOMAIN); ?>">
+        <input type="submit" name="jobwp_download_csv" class="button button-primary jobwp-button" value="<?php _e('EXPORT TO CSV', 'jobwp'); ?>">
     </form>
-    <button type="button" class="button button-primary jobwp-button" id="btnExport" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end"><?php _e('Export To Excel', JOBWP_TXT_DOMAIN); ?></button>
+    <button type="button" class="button button-primary jobwp-button" id="btnExport" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end"><?php _e('Export To Excel', 'jobwp'); ?></button>
     <?php
 }
 ?>
