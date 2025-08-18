@@ -288,6 +288,7 @@ Now go to your detail page and refresh it.
 * Job publish date added in listing page - Pro
 [//]: # fs_premium_only_end
 * Nonce verification applied in application list
+* Order by option added with title, date and menu_order
 
 = 2.4.3 =
 [//]: # fs_premium_only_begin

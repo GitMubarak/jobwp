@@ -56,6 +56,8 @@ $jobwp_list_layout  = isset( $jobwpAttr['layout'] ) ? $jobwpAttr['layout'] : $jo
 $jobwp_limit        = isset( $jobwpAttr['limit'] ) ? $jobwpAttr['limit'] : 10;
 $jobwp_category     = isset( $jobwpAttr['category'] ) ? $jobwpAttr['category'] : '';
 $jobwp_search       = isset( $jobwpAttr['hide_search'] ) ? $jobwpAttr['hide_search'] : $jobwp_hide_search_panel; // on to hide
+$jobwp_order_by     = isset( $jobwpAttr['order_by'] ) ? $jobwpAttr['order_by'] : 'date'; //title-date-menu_order
+$jobwp_order        = isset( $jobwpAttr['order'] ) ? $jobwpAttr['order'] : 'DESC'; //ASC/DESC
 
 // Shortcoded options for Pro users
 if ( job_fs()->is_plan__premium_only('pro', true) ) {
@@ -72,8 +74,8 @@ $jobwp_list_layout  = isset( $_GET['layout'] ) ? sanitize_text_field( $_GET['lay
 $jobwpQueryArrParams = array(
     'post_type'         => 'jobs',
     'post_status'       => 'publish',
-    'orderby'           => 'date',
-    'order'             => 'DESC',
+    'orderby'           => $jobwp_order_by,
+    'order'             => $jobwp_order,
     'posts_per_page'    => $jobwp_limit,
     'paged'             => $jobwp_paged,
     'meta_query'        => array(
