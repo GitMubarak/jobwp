@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-07-30 22:30+0600\n"
+"POT-Creation-Date: 2025-08-18 18:51+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -399,27 +399,31 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
-#: admin/view/application_list.php:16
+#: admin/view/application_list.php:12 front/view/single/header.php:65
+msgid "Sorry, your nonce did not verify."
+msgstr ""
+
+#: admin/view/application_list.php:22
 msgid "Application Lists"
 msgstr ""
 
-#: admin/view/application_list.php:58
+#: admin/view/application_list.php:64
 msgid "DELETE"
 msgstr ""
 
-#: admin/view/application_list.php:79
+#: admin/view/application_list.php:85
 msgid "Please Upgrade to Export in CSV/Excel"
 msgstr ""
 
-#: admin/view/application_list.php:80
+#: admin/view/application_list.php:86
 msgid "Please Upgrade Now to Export"
 msgstr ""
 
-#: admin/view/application_list.php:87
+#: admin/view/application_list.php:93
 msgid "EXPORT TO CSV"
 msgstr ""
 
-#: admin/view/application_list.php:89
+#: admin/view/application_list.php:95
 msgid "Export To Excel"
 msgstr ""
 
@@ -1301,10 +1305,6 @@ msgstr ""
 
 #: front/view/single-job.php:37
 msgid "No job available!"
-msgstr ""
-
-#: front/view/single/header.php:65
-msgid "Sorry, your nonce did not verify."
 msgstr ""
 
 #: front/view/single/header.php:88

@@ -284,9 +284,6 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 2.4.4 =
-[//]: # fs_premium_only_begin
-* Job publish date added in listing page - Pro
-[//]: # fs_premium_only_end
 * Nonce verification applied in application list
 * Order by option added with title, date and menu_order
 
