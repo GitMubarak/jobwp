@@ -9,268 +9,267 @@ $single_items = $jobwp_front_new->get_single_items_order();
 //print_r($single_items);
 ?>
 <div class="jobwp-single-area">
-<?php
-foreach ( $single_items as $sItem ) {
-        
-    if ( 'Overview' === $sItem ) {
-
-        if ( ! $jobwp_single_hide_overview ) {
-            ?>
-            <div class="content-row">
-                <div class="left-cell">
-                    <h5 class="label"><?php esc_html_e( $jobwp_single_overview_text ); ?></h5>
-                </div>
-                <div class="right-cell text">
-                    <?php echo force_balance_tags( html_entity_decode( htmlentities( wpautop( $job_overview ) ) ) ); ?>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <?php
-        }
-    }
-    
-    if ( 'NoOfVacancies' === $sItem ) {
-
-        if ( ! $jobwp_single_hide_vacancies ) {
-
-            if ( '' !== $bo_vacancies ) {
-                ?>
-                <div class="content-row">
-                    <div class="left-cell">
-                        <h5 class="label"><?php esc_html_e( $jobwp_single_vacancies_text ); ?></h5>
-                    </div>
-                    <div class="right-cell text">
-                        <?php esc_html_e( $bo_vacancies ); ?>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <?php
-            }
-        }
-    }
-
-    if ( 'Skills' === $sItem ) {
-    
-        if ( ! $jobwp_single_hide_skills ) {
-            if ( ! empty( $bo_career_skills ) ) {
-            ?>
-            <div class="content-row">
-                <div class="left-cell">
-                    <h5 class="label"><?php esc_html_e( $jobwp_single_skills_text ); ?></h5>
-                </div>
-                <div class="right-cell">
-                    <div class="custom-list text">
-                        <?php echo wp_kses_post( $bo_career_skills ); ?>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <?php
-            }
-        }
-    }
-
-    if ( 'ResponsibleFor' === $sItem ) {
-        
-        if ( ! $jobwp_single_hide_responsible ) {
-            if ( ! empty( $bo_job_responsibilities ) ) {
-            ?>
-            <div class="content-row">
-                <div class="left-cell">
-                    <h5 class="label"><?php esc_html_e( $jobwp_single_responsible_text ); ?></h5>
-                </div>
-                <div class="right-cell">
-                    <div class="custom-list text">
-                        <?php echo wp_kses_post( $bo_job_responsibilities ); ?>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <?php
-            }
-        }
-    }
-
-    if ( 'AdditionalRequirements' === $sItem ) {
-        
-        if ( ! $jobwp_single_hide_requirements ) {
-            if ( ! empty( $bo_job_additional_requirements ) ) {
-            ?>
-            <div class="content-row">
-                <div class="left-cell">
-                    <h5 class="label"><?php esc_html_e( $jobwp_single_requirements_text ); ?></h5>
-                </div>
-                <div class="right-cell">
-                    <div class="custom-list text">
-                        <?php echo wp_kses_post( $bo_job_additional_requirements ); ?>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <?php
-            }
-        }
-    }
-
-    if ( 'JobNature' === $sItem ) {
-        
-        if ( ! $jobwp_single_hide_job_type ) {
-            ?>
-            <div class="content-row">
-                <div class="left-cell">
-                    <h5 class="label"><?php esc_html_e( $jobwp_single_job_type_text ); ?></h5>
-                </div>
-                <div class="right-cell text">
-                    <?php
-                    // Job Nature
-                    if ( ! empty( $jobs_nature ) ) {
-                        $jobs_nature_arr = array();
-                        foreach( $jobs_nature as $nature ) {
-                            $jobs_nature_arr[] = $nature->name . '';
-                        }
-                        echo implode( ', ', $jobs_nature_arr );   
-                    }
-                    ?>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <?php
-        }
-    }
-
-    if ( 'EducationalRequirements' === $sItem ) {
-        
-        if ( ! $jobwp_single_hide_education ) {
-            if ( ! empty( $jobwp_edu_req ) ) {
-            ?>
-            <div class="content-row">
-                <div class="left-cell">
-                    <h5 class="label"><?php esc_html_e( $jobwp_single_education_text ); ?></h5>
-                </div>
-                <div class="right-cell text">
-                    <?php echo wp_kses_post( $jobwp_edu_req ); ?>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <?php
-            }
-        }
-    }
-
-    if ( 'ExperienceRequirements' === $sItem ) {
-        
-        if ( ! $jobwp_single_hide_experience ) {
-
-            if ( '' !== $bo_experience ) {
-                ?>
-                <div class="content-row">
-                    <div class="left-cell">
-                        <h5 class="label"><?php esc_html_e( $jobwp_single_experience_text ); ?></h5>
-                    </div>
-                    <div class="right-cell text">
-                        <?php esc_html_e( $bo_experience ); ?>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <?php
-            }
-        }
-    }
-
-    if ( 'Location' === $sItem ) {
-        
-        if ( ! $jobwp_single_hide_loc ) {
-            if ( ! empty( $jobs_location ) ) {
-            ?>
-            <div class="content-row">
-                <div class="left-cell">
-                    <h5 class="label"><?php esc_html_e( $jobwp_single_loc_text ); ?></h5>
-                </div>
-                <div class="right-cell text">
-                    <?php
-                        $jobs_location_arr = array();
-                        foreach( $jobs_location as $location ) {
-                            $jobs_location_arr[] = $location->name . '';
-                        }
-                        echo implode( ', ', $jobs_location_arr );
-                    ?>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <?php
-            }
-        }
-    }
-
-    if ( 'Salary' === $sItem ) {
-        
-        if ( ! $jobwp_single_hide_salary ) {
-            if ( ! empty( $bo_job_salary ) ) {
-            ?>
-            <div class="content-row">
-                <div class="left-cell">
-                    <h5 class="label"><?php esc_html_e( $jobwp_single_salary_text ); ?></h5>
-                </div>
-                <div class="right-cell">
-                    <div class="custom-list text">
-                        <?php echo wp_kses_post( $bo_job_salary ); ?>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <?php
-            }
-        }
-    }
-
-    if ( 'Benefits' === $sItem ) {
-        
-        if ( ! $jobwp_single_hide_benefit ) {
-            if ( ! empty( $bo_other_benefits ) ) {
-            ?>
-            <div class="content-row">
-                <div class="left-cell">
-                    <h5 class="label"><?php esc_html_e( $jobwp_single_benefit_text ); ?></h5>
-                </div>
-                <div class="right-cell">
-                    <div class="custom-list text">
-                        <?php echo wp_kses_post( $bo_other_benefits ); ?>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <?php
-            }
-        }
-    }
-
-    if ( 'Level' === $sItem ) {
-        
-        if ( ! $jobwp_single_hide_level ) {
-            ?>
-            <div class="content-row">
-                <div class="left-cell padding-bottom-50">
-                    <h5 class="label"><?php esc_html_e( $jobwp_single_level_text ); ?></h5>
-                </div>
-                <div class="right-cell text">
-                    <?php
-                    if ( ! empty( $jobs_level ) ) {
-                        $jobs_level_arr = array();
-                        foreach( $jobs_level as $pos ) {
-                            $jobs_level_arr[] = $pos->name . '';
-                        }
-                        echo implode( ', ', $jobs_level_arr );   
-                    }
-                    ?>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <?php
-        }
-    }
-}
-?>
     <?php
+    foreach ( $single_items as $sItem ) {
+            
+        if ( 'Overview' === $sItem ) {
+
+            if ( ! $jobwp_single_hide_overview ) {
+                ?>
+                <div class="content-row">
+                    <div class="left-cell">
+                        <h5 class="label"><?php esc_html_e( $jobwp_single_overview_text ); ?></h5>
+                    </div>
+                    <div class="right-cell text">
+                        <?php echo force_balance_tags( html_entity_decode( htmlentities( wpautop( $job_overview ) ) ) ); ?>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <?php
+            }
+        }
+        
+        if ( 'NoOfVacancies' === $sItem ) {
+
+            if ( ! $jobwp_single_hide_vacancies ) {
+
+                if ( '' !== $bo_vacancies ) {
+                    ?>
+                    <div class="content-row">
+                        <div class="left-cell">
+                            <h5 class="label"><?php esc_html_e( $jobwp_single_vacancies_text ); ?></h5>
+                        </div>
+                        <div class="right-cell text">
+                            <?php esc_html_e( $bo_vacancies ); ?>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <?php
+                }
+            }
+        }
+
+        if ( 'Skills' === $sItem ) {
+        
+            if ( ! $jobwp_single_hide_skills ) {
+                if ( ! empty( $bo_career_skills ) ) {
+                ?>
+                <div class="content-row">
+                    <div class="left-cell">
+                        <h5 class="label"><?php esc_html_e( $jobwp_single_skills_text ); ?></h5>
+                    </div>
+                    <div class="right-cell">
+                        <div class="custom-list text">
+                            <?php echo wp_kses_post( $bo_career_skills ); ?>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <?php
+                }
+            }
+        }
+
+        if ( 'ResponsibleFor' === $sItem ) {
+            
+            if ( ! $jobwp_single_hide_responsible ) {
+                if ( ! empty( $bo_job_responsibilities ) ) {
+                ?>
+                <div class="content-row">
+                    <div class="left-cell">
+                        <h5 class="label"><?php esc_html_e( $jobwp_single_responsible_text ); ?></h5>
+                    </div>
+                    <div class="right-cell">
+                        <div class="custom-list text">
+                            <?php echo wp_kses_post( $bo_job_responsibilities ); ?>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <?php
+                }
+            }
+        }
+
+        if ( 'AdditionalRequirements' === $sItem ) {
+            
+            if ( ! $jobwp_single_hide_requirements ) {
+                if ( ! empty( $bo_job_additional_requirements ) ) {
+                ?>
+                <div class="content-row">
+                    <div class="left-cell">
+                        <h5 class="label"><?php esc_html_e( $jobwp_single_requirements_text ); ?></h5>
+                    </div>
+                    <div class="right-cell">
+                        <div class="custom-list text">
+                            <?php echo wp_kses_post( $bo_job_additional_requirements ); ?>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <?php
+                }
+            }
+        }
+
+        if ( 'JobNature' === $sItem ) {
+            
+            if ( ! $jobwp_single_hide_job_type ) {
+                ?>
+                <div class="content-row">
+                    <div class="left-cell">
+                        <h5 class="label"><?php esc_html_e( $jobwp_single_job_type_text ); ?></h5>
+                    </div>
+                    <div class="right-cell text">
+                        <?php
+                        // Job Nature
+                        if ( ! empty( $jobs_nature ) ) {
+                            $jobs_nature_arr = array();
+                            foreach( $jobs_nature as $nature ) {
+                                $jobs_nature_arr[] = $nature->name . '';
+                            }
+                            echo implode( ', ', $jobs_nature_arr );   
+                        }
+                        ?>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <?php
+            }
+        }
+
+        if ( 'EducationalRequirements' === $sItem ) {
+            
+            if ( ! $jobwp_single_hide_education ) {
+                if ( ! empty( $jobwp_edu_req ) ) {
+                ?>
+                <div class="content-row">
+                    <div class="left-cell">
+                        <h5 class="label"><?php esc_html_e( $jobwp_single_education_text ); ?></h5>
+                    </div>
+                    <div class="right-cell text">
+                        <?php echo wp_kses_post( $jobwp_edu_req ); ?>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <?php
+                }
+            }
+        }
+
+        if ( 'ExperienceRequirements' === $sItem ) {
+            
+            if ( ! $jobwp_single_hide_experience ) {
+
+                if ( '' !== $bo_experience ) {
+                    ?>
+                    <div class="content-row">
+                        <div class="left-cell">
+                            <h5 class="label"><?php esc_html_e( $jobwp_single_experience_text ); ?></h5>
+                        </div>
+                        <div class="right-cell text">
+                            <?php esc_html_e( $bo_experience ); ?>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <?php
+                }
+            }
+        }
+
+        if ( 'Location' === $sItem ) {
+            
+            if ( ! $jobwp_single_hide_loc ) {
+                if ( ! empty( $jobs_location ) ) {
+                ?>
+                <div class="content-row">
+                    <div class="left-cell">
+                        <h5 class="label"><?php esc_html_e( $jobwp_single_loc_text ); ?></h5>
+                    </div>
+                    <div class="right-cell text">
+                        <?php
+                            $jobs_location_arr = array();
+                            foreach( $jobs_location as $location ) {
+                                $jobs_location_arr[] = $location->name . '';
+                            }
+                            echo implode( ', ', $jobs_location_arr );
+                        ?>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <?php
+                }
+            }
+        }
+
+        if ( 'Salary' === $sItem ) {
+            
+            if ( ! $jobwp_single_hide_salary ) {
+                if ( ! empty( $bo_job_salary ) ) {
+                ?>
+                <div class="content-row">
+                    <div class="left-cell">
+                        <h5 class="label"><?php esc_html_e( $jobwp_single_salary_text ); ?></h5>
+                    </div>
+                    <div class="right-cell">
+                        <div class="custom-list text">
+                            <?php echo wp_kses_post( $bo_job_salary ); ?>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <?php
+                }
+            }
+        }
+
+        if ( 'Benefits' === $sItem ) {
+            
+            if ( ! $jobwp_single_hide_benefit ) {
+                if ( ! empty( $bo_other_benefits ) ) {
+                ?>
+                <div class="content-row">
+                    <div class="left-cell">
+                        <h5 class="label"><?php esc_html_e( $jobwp_single_benefit_text ); ?></h5>
+                    </div>
+                    <div class="right-cell">
+                        <div class="custom-list text">
+                            <?php echo wp_kses_post( $bo_other_benefits ); ?>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <?php
+                }
+            }
+        }
+
+        if ( 'Level' === $sItem ) {
+            
+            if ( ! $jobwp_single_hide_level ) {
+                ?>
+                <div class="content-row">
+                    <div class="left-cell padding-bottom-50">
+                        <h5 class="label"><?php esc_html_e( $jobwp_single_level_text ); ?></h5>
+                    </div>
+                    <div class="right-cell text">
+                        <?php
+                        if ( ! empty( $jobs_level ) ) {
+                            $jobs_level_arr = array();
+                            foreach( $jobs_level as $pos ) {
+                                $jobs_level_arr[] = $pos->name . '';
+                            }
+                            echo implode( ', ', $jobs_level_arr );   
+                        }
+                        ?>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <?php
+            }
+        }
+    }
+    
     if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
         if ( ! $jobwp_hide_share_on ) {
@@ -285,10 +284,10 @@ foreach ( $single_items as $sItem ) {
                             <a href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank" class="jobwp-share-on-link facebook"><i class="fa-brands fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/share?url=<?php echo get_permalink(); ?>&text=" target="_blank" class="jobwp-share-on-link twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://twitter.com/share?url=<?php echo get_permalink(); ?>&text=<?php echo get_the_title(); ?>" target="_blank" class="jobwp-share-on-link twitter"><i class="fa-brands fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="http://www.linkedin.com/shareArticle?url=<?php echo get_permalink(); ?>&title=" class="jobwp-share-on-link linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&ro=true&trk=EasySocialShareButtons&title=<?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>" target="_blank" class="jobwp-share-on-link linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
                         </li>
                     </ul>
                 </div>

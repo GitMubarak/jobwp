@@ -285,7 +285,7 @@ Now go to your detail page and refresh it.
 
 = 2.4.5 =
 [//]: # fs_premium_only_begin
-* Job - Pro
+* Linkedin share issue fixed - Pro
 [//]: # fs_premium_only_end
 * Reset button styling option added
 * Freemius SDK upgraded to 2.12.2
