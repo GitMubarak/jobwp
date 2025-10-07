@@ -56,7 +56,8 @@
         '#jobwp_read_more_border_color_hvr',
         '#jobwp_listing_title_font_color_hvr',
         '#jobwp_reset_btn_bg_color',
-        '#jobwp_reset_btn_font_color'
+        '#jobwp_reset_btn_font_color',
+        '#jobwp_reset_btn_border_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {

@@ -139,7 +139,7 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
         <!-- Reset Button -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">
-                <hr><span><?php _e('Search Button', 'jobwp'); ?></span><hr>
+                <hr><span><?php _e('Reset Button', 'jobwp'); ?></span><hr>
             </th>
         </tr>
         <tr>
@@ -155,6 +155,13 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
             </th>
             <td>
                 <input class="jobwp-wp-color" type="text" name="jobwp_reset_btn_font_color" id="jobwp_reset_btn_font_color" value="<?php esc_attr_e( $jobwp_reset_btn_font_color ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+            <th scope="row">
+                <label><?php _e('Border Color', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_reset_btn_border_color" id="jobwp_reset_btn_border_color" value="<?php esc_attr_e( $jobwp_reset_btn_border_color ); ?>">
                 <div id="colorpicker"></div>
             </td>
         </tr>
