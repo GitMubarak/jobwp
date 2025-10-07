@@ -3,8 +3,8 @@ Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: career, job board, job listing, jobs, job manager
 Requires at least: 5.4
-Tested up to: 6.8.2
-Stable tag: 2.4.4
+Tested up to: 6.8.3
+Stable tag: 2.4.5
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -282,6 +282,12 @@ Now go to your detail page and refresh it.
 
 
 == Changelog ==
+
+= 2.4.5 =
+[//]: # fs_premium_only_begin
+* Job - Pro
+[//]: # fs_premium_only_end
+* Listing
 
 = 2.4.4 =
 * Nonce verification applied in application list
