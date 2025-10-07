@@ -17,6 +17,30 @@ $single_items = $this->get_single_items_order();
 <form name="jobwp_single_content_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-single-content-settings-form">
 <?php wp_nonce_field( 'jobwp_single_content_action', 'jobwp_single_content_nonce' ); ?>
     <table class="jobwp-single-settings-table" id="jobwp-single-content-settings-table">
+        <tr class="jobwp_single_layout">
+            <th scope="row">
+                <label><?php _e('Details Page Layout', 'jobwp'); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="radio" name="jobwp_single_layout" id="jobwp_single_layout_vertical" value="vertical" <?php echo ( 'vertical' === $jobwp_single_layout ) ? 'checked' : ''; ?> >
+                    <label for="jobwp_single_layout_vertical"><span></span><?php _e('Vertical', 'jobwp'); ?></label>
+                    &nbsp;&nbsp;
+                    <input type="radio" name="jobwp_single_layout" id="jobwp_single_layout_horizontal" value="horizontal" <?php echo ( 'horizontal' === $jobwp_single_layout ) ? 'checked' : ''; ?> >
+                    <label for="jobwp_single_layout_horizontal"><span></span><?php _e('Horizontal', 'jobwp'); ?></label>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
         <tr class="jobwp_single_title_tag">
             <th scope="row">
                 <label for="jobwp_single_title_tag"><?php _e('Job Title Tag', 'jobwp'); ?>:</label>

@@ -221,6 +221,11 @@ trait Jobwp_Single_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Share On',
             ],
+            [
+                'name'      => 'jobwp_single_layout',
+                'type'      => 'string',
+                'default'   => 'horizontal',
+            ],
         ];
     }
 }

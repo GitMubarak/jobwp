@@ -13,7 +13,7 @@ include 'single/header.php';
 // Load anything before single_body_container
 do_action( 'jobwp_single_before_body_container' );
 ?>
-<div class="jobwp-single-body-container">
+<div class="jobwp-single-body-container <?php esc_attr_e( $jobwp_single_layout ) ?>">
 	<?php
     if ( have_posts() ) { 
         
