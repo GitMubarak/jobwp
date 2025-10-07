@@ -369,7 +369,7 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
     padding: 15px 13px;
     line-height: 30px;
     height: 45px;
-    color: #333!important;
+    color: #333;
 }
 
 .jobwp-search-container .jobwp-search-item .submit-btn {

@@ -60,7 +60,8 @@
         '#jobwp_reset_btn_border_color',
         '#jobwp_reset_btn_bg_color_hvr',
         '#jobwp_reset_btn_font_color_hvr',
-        '#jobwp_reset_btn_border_color_hvr'
+        '#jobwp_reset_btn_border_color_hvr',
+        '#jobwp_search_item_font_color'
     ];
 
     $.each(jobwpColorPicker, function(index, value) {

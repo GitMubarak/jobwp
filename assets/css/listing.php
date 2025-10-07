@@ -115,6 +115,10 @@ if ( ! defined( 'ABSPATH' ) ) {
     .jobwp-search-container .jobwp-search-item input[type="text"],
     .jobwp-search-container .jobwp-search-item select {
       border-radius: <?php esc_attr_e( $jobwp_search_item_border_radius ); ?>px;
+      color: <?php esc_html_e( $jobwp_search_item_font_color ); ?>;
+    }
+    .jobwp-search-container .jobwp-search-item input[type="text"]::placeholder {
+      color: <?php esc_html_e( $jobwp_search_item_font_color ); ?>;
     }
     <?php
   }

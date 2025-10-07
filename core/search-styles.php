@@ -118,6 +118,11 @@ trait Jobwp_Search_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#13b5ea',
             ],
+            [
+                'name'      => 'jobwp_search_item_font_color',
+                'type'      => 'text',
+                'default'   => '#333333',
+            ],
         ];
     }
 }
