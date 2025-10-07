@@ -165,6 +165,28 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
                 <div id="colorpicker"></div>
             </td>
         </tr>
+        <!-- Reset Button:Hover -->
+        <tr>
+            <th scope="row" colspan="6" style="text-align: left;">
+                <hr><span><?php _e('Reset Button :: Hover', 'jobwp'); ?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Background Color', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_reset_btn_bg_color_hvr" id="jobwp_reset_btn_bg_color_hvr" value="<?php esc_attr_e( $jobwp_reset_btn_bg_color_hvr ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+            <th scope="row">
+                <label><?php _e('Font Color', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_reset_btn_font_color_hvr" id="jobwp_reset_btn_font_color_hvr" value="<?php esc_attr_e( $jobwp_reset_btn_font_color_hvr ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit">

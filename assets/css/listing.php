@@ -31,6 +31,11 @@ if ( ! defined( 'ABSPATH' ) ) {
     color: <?php esc_html_e( $jobwp_reset_btn_font_color ); ?>;
     border-color: <?php esc_html_e( $jobwp_reset_btn_border_color ); ?>;
   }
+  .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh:hover {
+    background-color: <?php esc_html_e( $jobwp_reset_btn_bg_color_hvr ); ?>;
+    color: <?php esc_html_e( $jobwp_reset_btn_font_color_hvr ); ?>;
+    border-color: <?php esc_html_e( $jobwp_reset_btn_border_color ); ?>;
+  }
   /* Search Panel Ended */
   /* Job Item */
   .jobwp-listing-body-container .jobwp-item {
