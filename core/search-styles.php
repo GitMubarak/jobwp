@@ -88,6 +88,16 @@ trait Jobwp_Search_Styles_Settings
                 'type'      => 'number',
                 'default'   => '0',
             ],
+            [
+                'name'      => 'jobwp_reset_btn_bg_color',
+                'type'      => 'text',
+                'default'   => '#FFFFFF',
+            ],
+            [
+                'name'      => 'jobwp_reset_btn_font_color',
+                'type'      => 'text',
+                'default'   => '#666666',
+            ],
         ];
     }
 }

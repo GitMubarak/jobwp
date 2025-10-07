@@ -287,7 +287,9 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Job - Pro
 [//]: # fs_premium_only_end
+* Reset button styling option added
 * Freemius SDK upgraded to 2.12.2
+* Css fixed
 
 = 2.4.4 =
 * Nonce verification applied in application list

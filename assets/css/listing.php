@@ -26,6 +26,10 @@ if ( ! defined( 'ABSPATH' ) ) {
     color: <?php esc_html_e( $jobwp_search_btn_font_color_hvr ); ?>;
     border-color: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
   }
+  .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
+    background-color: <?php esc_html_e( $jobwp_reset_btn_bg_color ); ?>;
+    color: <?php esc_html_e( $jobwp_reset_btn_font_color ); ?>;
+  }
   /* Search Panel Ended */
   /* Job Item */
   .jobwp-listing-body-container .jobwp-item {
