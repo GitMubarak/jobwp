@@ -186,6 +186,13 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
                 <input class="jobwp-wp-color" type="text" name="jobwp_reset_btn_font_color_hvr" id="jobwp_reset_btn_font_color_hvr" value="<?php esc_attr_e( $jobwp_reset_btn_font_color_hvr ); ?>">
                 <div id="colorpicker"></div>
             </td>
+            <th scope="row">
+                <label><?php _e('Border Color', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_reset_btn_border_color_hvr" id="jobwp_reset_btn_border_color_hvr" value="<?php esc_attr_e( $jobwp_reset_btn_border_color_hvr ); ?>">
+                <div id="colorpicker"></div>
+            </td>
         </tr>
     </table>
     <hr>

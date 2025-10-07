@@ -113,6 +113,11 @@ trait Jobwp_Search_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#FFFFFF',
             ],
+            [
+                'name'      => 'jobwp_reset_btn_border_color_hvr',
+                'type'      => 'text',
+                'default'   => '#13b5ea',
+            ],
         ];
     }
 }
