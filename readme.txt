@@ -287,7 +287,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Job - Pro
 [//]: # fs_premium_only_end
-* Listing
+* Freemius SDK upgraded to 2.12.2
 
 = 2.4.4 =
 * Nonce verification applied in application list
