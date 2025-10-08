@@ -128,6 +128,11 @@ trait Jobwp_Search_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#DDDDDD',
             ],
+            [
+                'name'      => 'jobwp_search_btn_border_color_hvr',
+                'type'      => 'text',
+                'default'   => '#DDDDDD',
+            ],
         ];
     }
 }

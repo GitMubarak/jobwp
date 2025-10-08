@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   .jobwp-search-container .jobwp-search-item .button.submit-btn:hover {
     background-color: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
     color: <?php esc_html_e( $jobwp_search_btn_font_color_hvr ); ?>;
-    border-color: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
+    border-color: <?php esc_html_e( $jobwp_search_btn_border_color_hvr ); ?>;
   }
   .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
     background-color: <?php esc_html_e( $jobwp_reset_btn_bg_color ); ?>;
