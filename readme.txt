@@ -294,6 +294,7 @@ Now go to your detail page and refresh it.
 * Search button border color option added
 * Freemius SDK upgraded to 2.12.2
 * Css fixed
+* Code optimized
 
 = 2.4.4 =
 * Nonce verification applied in application list

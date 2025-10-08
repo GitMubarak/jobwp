@@ -149,7 +149,8 @@ class JobWp_Front
 
 		$output = '';
 		ob_start();
-		include_once JOBWP_PATH . 'front/view/listing.php';
+		//include_once JOBWP_PATH . 'front/view/listing.php';
+		include ( dirname( __FILE__ ) .  '/view/listing.php' );
 		$output .= ob_get_clean();
 		return $output;
 	}
@@ -161,7 +162,8 @@ class JobWp_Front
 
 		$output = '';
 		ob_start();
-		include_once JOBWP_PATH . 'front/view/apply.php';
+		//include_once JOBWP_PATH . 'front/view/apply.php';
+		include ( dirname( __FILE__ ) .  '/view/apply.php' );
 		$output .= ob_get_clean();
 		return $output;
 	}
@@ -196,7 +198,8 @@ class JobWp_Front
 
 		$output = '';
 		ob_start();
-		include_once JOBWP_PATH . 'front/view/search-single.php';
+		//include_once JOBWP_PATH . 'front/view/search-single.php';
+		include ( dirname( __FILE__ ) .  '/view/search-single.php' );
 		$output .= ob_get_clean();
 		return $output;
 	}
@@ -208,7 +211,8 @@ class JobWp_Front
 
 		$output = '';
 		ob_start();
-		include_once JOBWP_PATH . 'front/view/featured.php';
+		//include_once JOBWP_PATH . 'front/view/featured.php';
+		include ( dirname( __FILE__ ) .  '/view/featured.php' );
 		$output .= ob_get_clean();
 		return $output;
 	}
@@ -220,7 +224,8 @@ class JobWp_Front
 
 		$output = '';
 		ob_start();
-		include_once JOBWP_PATH . 'front/view/single-job.php';
+		//include_once JOBWP_PATH . 'front/view/single-job.php';
+		include ( dirname( __FILE__ ) .  '/view/single-job.php' );
 		$output .= ob_get_clean();
 		return $output;
 	}
