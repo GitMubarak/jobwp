@@ -372,13 +372,13 @@ div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
     color: #333;
 }
 
-.jobwp-search-container .jobwp-search-item .submit-btn {
+.jobwp-search-container .jobwp-search-item .button.submit-btn {
     width: 150px;
     height: 45px;
     background: #13b5ea;
     color: #ffffff;
     font-size: 14px;
-    border: none;
+    border: 1px solid #DDD;
     border-radius: 5px;
     font-weight: 700;
     letter-spacing: 0.5px;

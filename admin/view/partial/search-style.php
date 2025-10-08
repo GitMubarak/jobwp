@@ -133,6 +133,15 @@ foreach ( $jobwpSearchStyles as $option_name => $option_value ) {
                 <code>px</code>
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Border Color', 'jobwp'); ?>:</label>
+            </th>
+            <td>
+                <input class="jobwp-wp-color" type="text" name="jobwp_search_btn_border_color" id="jobwp_search_btn_border_color" value="<?php esc_attr_e( $jobwp_search_btn_border_color ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
         <!-- Search Button::Hover -->
         <tr>
             <th scope="row" colspan="6" style="text-align: left;">

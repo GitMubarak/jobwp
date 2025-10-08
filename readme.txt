@@ -291,6 +291,7 @@ Now go to your detail page and refresh it.
 * Search items order option added - Pro
 [//]: # fs_premium_only_end
 * Reset button styling option added
+* Search button border color option added
 * Freemius SDK upgraded to 2.12.2
 * Css fixed
 

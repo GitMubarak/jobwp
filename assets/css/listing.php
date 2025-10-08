@@ -15,13 +15,13 @@ if ( ! defined( 'ABSPATH' ) ) {
     border-color: <?php esc_html_e( $jobwp_search_item_border_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_search_item_font_size ); ?>px;
   }
-  .jobwp-search-container .jobwp-search-item .submit-btn {
+  .jobwp-search-container .jobwp-search-item .button.submit-btn {
     background-color: <?php esc_html_e( $jobwp_search_btn_bg_color ); ?>;
     color: <?php esc_html_e( $jobwp_search_btn_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_search_btn_font_size ); ?>px;
-    line-height: <?php esc_html_e( $jobwp_search_btn_font_size ); ?>px;
+    border: 1px solid <?php esc_html_e( $jobwp_search_btn_border_color ); ?>;
   }
-  .jobwp-search-container .jobwp-search-item .submit-btn:hover {
+  .jobwp-search-container .jobwp-search-item .button.submit-btn:hover {
     background-color: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
     color: <?php esc_html_e( $jobwp_search_btn_font_color_hvr ); ?>;
     border-color: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
