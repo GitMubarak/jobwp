@@ -93,6 +93,31 @@ trait Jobwp_Search_Content_Settings
                 'type'      => 'text',
                 'default'   => 'All Job Level',
             ],
+            [
+                'name'      => 'jobwp_search_title_order',
+                'type'      => 'number',
+                'default'   => '1',
+            ],
+            [
+                'name'      => 'jobwp_search_category_order',
+                'type'      => 'number',
+                'default'   => '2',
+            ],
+            [
+                'name'      => 'jobwp_search_type_order',
+                'type'      => 'number',
+                'default'   => '3',
+            ],
+            [
+                'name'      => 'jobwp_search_location_order',
+                'type'      => 'number',
+                'default'   => '4',
+            ],
+            [
+                'name'      => 'jobwp_search_level_order',
+                'type'      => 'number',
+                'default'   => '5',
+            ],
         ];
     }
 }

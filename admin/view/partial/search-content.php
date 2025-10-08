@@ -13,6 +13,7 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
 <form name="jobwp_search_content_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-search-content-settings-form">
 <?php wp_nonce_field( 'jobwp_search_content_action', 'jobwp_search_content_nonce' ); ?>
     <table class="jobwp-listing-content-settings-table">
+        <!-- Hide Search Panel -->
         <tr>
             <th scope="row">
                 <label for="jobwp_hide_search_panel"><?php _e('Hide Search Panel', 'jobwp'); ?>?</label>
@@ -21,7 +22,8 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <input type="checkbox" name="jobwp_hide_search_panel" id="jobwp_hide_search_panel" <?php echo $jobwp_hide_search_panel ? 'checked' : ''; ?>>
             </td>
         </tr>
-        <tr><td colspan="4"><hr></td></tr>
+        <tr><td colspan="6"><hr></td></tr>
+        <!-- Hide Keyword/Title -->
         <tr>
             <th scope="row">
                 <label for="jobwp_hide_search_keyword"><?php _e('Hide Keyword/Title', 'jobwp'); ?>?</label>
@@ -36,12 +38,25 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <input type="text" name="jobwp_search_keyword_ph" id="jobwp_search_keyword_ph" class="regular-text" value="<?php esc_attr_e( $jobwp_search_keyword_ph ); ?>" />
             </td>
             <th scope="row">
-                <label for="jobwp_list_exp_order"><?php _e('Order', 'jobwp'); ?></label>
+                <label for="jobwp_search_title_order"><?php _e('Order', 'jobwp'); ?></label>
             </th>
             <td>
-                <input type="number" name="jobwp_list_exp_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_exp_order ); ?>">
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="number" name="jobwp_search_title_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_search_title_order ); ?>">
+                    <?php
+                }
+                ?>
             </td>
         </tr>
+        <!-- Hide Category -->
         <tr>
             <th scope="row">
                 <label for="jobwp_hide_search_category"><?php _e('Hide Category', 'jobwp'); ?>?</label>
@@ -54,6 +69,24 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
             </th>
             <td>
                 <input type="text" name="jobwp_search_category_ph" id="jobwp_search_category_ph" class="regular-text" value="<?php esc_attr_e( $jobwp_search_category_ph ); ?>" />
+            </td>
+            <th scope="row">
+                <label for="jobwp_search_category_order"><?php _e('Order', 'jobwp'); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="number" name="jobwp_search_category_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_search_category_order ); ?>">
+                    <?php
+                }
+                ?>
             </td>
         </tr>
         <tr>
@@ -69,6 +102,24 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
             <td>
                 <input type="text" name="jobwp_search_jobtype_ph" id="jobwp_search_jobtype_ph" class="regular-text" value="<?php esc_attr_e( $jobwp_search_jobtype_ph ); ?>" />
             </td>
+            <th scope="row">
+                <label for="jobwp_search_type_order"><?php _e('Order', 'jobwp'); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="number" name="jobwp_search_type_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_search_type_order ); ?>">
+                    <?php
+                }
+                ?>
+            </td>
         </tr>
         <tr>
             <th scope="row">
@@ -83,6 +134,24 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
             <td>
                 <input type="text" name="jobwp_search_location_ph" id="jobwp_search_location_ph" class="regular-text" value="<?php esc_attr_e( $jobwp_search_location_ph ); ?>" />
             </td>
+            <th scope="row">
+                <label for="jobwp_search_location_order"><?php _e('Order', 'jobwp'); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="number" name="jobwp_search_location_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_search_location_order ); ?>">
+                    <?php
+                }
+                ?>
+            </td>
         </tr>
         <tr>
             <th scope="row">
@@ -92,7 +161,7 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -110,7 +179,7 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -121,8 +190,26 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 }
                 ?>
             </td>
+            <th scope="row">
+                <label for="jobwp_search_level_order"><?php _e('Order', 'jobwp'); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="number" name="jobwp_search_level_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_search_level_order ); ?>">
+                    <?php
+                }
+                ?>
+            </td>
         </tr>
-        <tr><td colspan="4"><hr></td></tr>
+        <tr><td colspan="6"><hr></td></tr>
         <tr>
             <th scope="row">
                 <label><?php _e('Search Button Text', 'jobwp'); ?></label>
