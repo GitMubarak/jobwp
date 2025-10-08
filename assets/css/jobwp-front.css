@@ -606,28 +606,28 @@ ul.jobwp-share-on li a.jobwp-share-on-link:hover {
 
 /* Vertical Layout Started */
 
-.jobwp-single-body-container.horizontal .jobwp-single-area .content-row {
+.jobwp-single-body-container.vertical .jobwp-single-area .content-row {
     padding: 0px 50px;
 }
 
-.jobwp-single-body-container.horizontal .jobwp-single-area .content-row .left-cell,
-.jobwp-single-body-container.horizontal .jobwp-single-area .content-row .right-cell {
+.jobwp-single-body-container.vertical .jobwp-single-area .content-row .left-cell,
+.jobwp-single-body-container.vertical .jobwp-single-area .content-row .right-cell {
     border: 0px solid #009900;
     width: 100%;
     float: none;
     text-align: left;
 }
 
-.jobwp-single-body-container.horizontal .jobwp-single-area .content-row .left-cell {
+.jobwp-single-body-container.vertical .jobwp-single-area .content-row .left-cell {
     padding-bottom: 10px;
 }
 
-.jobwp-single-body-container.horizontal .jobwp-single-area .content-row .right-cell {
+.jobwp-single-body-container.vertical .jobwp-single-area .content-row .right-cell {
     border-top: 1px solid #999;
     padding: 10px 0 10px 0px;
 }
 
-.jobwp-single-body-container.horizontal .jobwp-single-area .content-row .right-cell ul {
+.jobwp-single-body-container.vertical .jobwp-single-area .content-row .right-cell ul {
     margin: 0 0 0 15px;
     padding: 0;
     list-style: disc;
@@ -840,7 +840,7 @@ ul.jobwp-share-on li a.jobwp-share-on-link:hover {
         font-size: 22px;
         line-height: 26px;
     }
-    .jobwp-single-body-container.horizontal .jobwp-single-area .content-row {
+    .jobwp-single-body-container.vertical .jobwp-single-area .content-row {
         padding: 0 20px;
     }
     .jobwp-single-area .content-row .left-cell,
