@@ -89,9 +89,7 @@ for ( $sia=1; $sia<6; $sia++ ) {
 //print_r( $search_item_arr );
 ?>
 <form method="GET" action="<?php echo get_permalink( $post->ID ); ?>" id="jobwp-search-form">
-
-    <div class="jobwp-search-container">
-        
+    <div class="jobwp-search-container"> 
         <?php
         foreach ( $search_item_arr as $searchItem ) {
 
@@ -203,5 +201,4 @@ for ( $sia=1; $sia<6; $sia++ ) {
         </div>
     
     </div>
-
 </form>

@@ -148,6 +148,11 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
     }
 }
 
+// Load Styling
+include JOBWP_PATH . 'assets/css/listing.php';
+?>
+<div class="jobwp-listing-parent-wrapper">
+<?php
 // Load Search Panel
 if ( 'on' !== $jobwp_search ) {
     include JOBWP_PATH . 'front/view/search.php';
@@ -159,7 +164,4 @@ $jobwpQueryArr = apply_filters( 'jobwp_front_main_query_array', $jobwpQueryArrPa
 //print_r($jobwpQueryArr);
 
 $jobwpJobs = new WP_Query( $jobwpQueryArr );
-
-// Load Styling
-include JOBWP_PATH . 'assets/css/listing.php';
 ?>

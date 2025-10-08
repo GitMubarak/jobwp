@@ -6,6 +6,13 @@
     padding-top: 50px;
 }
 
+.jobwp-listing-parent-wrapper {
+    border: 0px solid #000;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
 .jobwp-listing-body-container {
     margin: 20px auto;
     border: 0px solid #000;
