@@ -284,9 +284,6 @@ Now go to your detail page and refresh it.
 == Changelog ==
 
 = 2.4.6 =
-[//]: # fs_premium_only_begin
-* Linkedin share issue fixed - Pro
-[//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.13.0
 * Sanitization applied to resume upload
 * URL escaping applied to admin resume view

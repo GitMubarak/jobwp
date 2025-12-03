@@ -19,7 +19,7 @@ if ( ! function_exists( 'job_fs' ) ) {
                 'slug'                => 'jobwp',
                 'type'                => 'plugin',
                 'public_key'          => 'pk_e2d8d8f3056789d2b63d655f5f710',
-                'is_premium'          => true,
+                'is_premium'          => false,
                 'premium_suffix'      => 'Professional',
                 // If your plugin is a serviceware, set this option to false.
                 'has_premium_version' => true,
@@ -88,4 +88,6 @@ if ( ! function_exists( 'job_fs' ) ) {
 
 	}
     job_fs()->add_action('after_uninstall', 'job_fs_uninstall_cleanup');
+
+    job_fs()->add_filter( 'pricing/show_annual_in_monthly', '__return_false' );
 }

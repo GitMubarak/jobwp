@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-10-09 05:12+0600\n"
+"POT-Creation-Date: 2025-12-03 13:53+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.7\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -1295,7 +1295,7 @@ msgstr ""
 msgid "display"
 msgstr ""
 
-#: freemius/includes/class-freemius.php:19059
+#: freemius/includes/class-freemius.php:19063
 msgid "true"
 msgstr ""
 
