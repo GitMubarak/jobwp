@@ -48,7 +48,7 @@ if ( '' !== $showMessage ) {
                     <td><?php esc_html_e( $application->applicant_name ); ?></td>
                     <td><?php esc_html_e( $application->applicant_email ); ?></td>
                     <td><?php esc_html_e( $application->applicant_message ); ?></td>
-                    <td><a href="<?php printf('%s/%s', $jobwpDir, $application->resume_name); ?>"><?php esc_html_e( $application->resume_name ); ?></a></td>
+                    <td><a href="<?php echo esc_url( $jobwpDir . '/' . $application->resume_name ); ?>"><?php esc_html_e( $application->resume_name ); ?></a></td>
                     <td><?php printf('%s', date('D d M Y - h:i A', strtotime($application->applied_on))); ?>
                     </td>
                     <?php

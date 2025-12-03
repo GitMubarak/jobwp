@@ -289,6 +289,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.13.0
 * Sanitization applied to resume upload
+* URL escaping applied to admin resume view
 
 = 2.4.5 =
 [//]: # fs_premium_only_begin
