@@ -287,7 +287,7 @@ Now go to your detail page and refresh it.
 [//]: # fs_premium_only_begin
 * Linkedin share issue fixed - Pro
 [//]: # fs_premium_only_end
-* Reset
+* Freemius SDK upgraded to 2.13.0
 
 = 2.4.5 =
 [//]: # fs_premium_only_begin
