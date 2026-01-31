@@ -1,7 +1,7 @@
 === JobWP - Job Board, Job Listing, Career Page and Recruitment Plugin ===
 Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
-Tags: career, job board, job listing, jobs, job manager
+Tags: Job Board, Job Listing, Career Page, Recruitment, Job Manager
 Requires at least: 5.4
 Tested up to: 6.9
 Stable tag: 2.4.6
@@ -9,186 +9,112 @@ Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easiest job board plugin to display job listings in a career page and allow users to apply directly to your site.
+Create a modern job board and career page on WordPress. Accept job listings, manage applications, and grow a recruitment platform.
 
 == Description ==
 
-**JobWP** is the **Easiest Job Board, Career and Recruitment Plugin for WordPress** to display job listing in a career page.
+**JobWP is a powerful and easy-to-use WordPress job board plugin** that helps you build a professional **career page, job listings board, and online recruitment system** without coding. Whether you’re a business, agency, recruiter, or community site, JobWP makes posting and managing jobs fast and simple.
 
-Employer can add multiple job listings and can show them on a career page by inserting [jobwp_listing] shortcode.
-Applicants can apply directly via the job application form.
-After an applicant apply for a job, employer can see that application instantly in the Application List page.
+
+**📌 Key Benefits**
+
+✔ Add job listings and job board functionality to any WordPress site
+✔ Display jobs with a shortcode anywhere on your site
+✔ Accept applications directly via built-in application form
+✔ Rich job listing features like search, filters, list/grid view
+✔ Translation-ready and responsive on mobile devices
+✔ Great for companies, recruiters, agencies, and job boards
+
+
 
 **How It Works!**
 
 [youtube https://youtu.be/ZtbjdFyas90]
 
 
-= ✅ Fully Customizable =
 
-With this job board plugin you can customize your job listing very easily and extensively. You active, inactive a job, you can show hide and change colors and font size of your job info.
+**🌟 Main Features (Free Version)**
 
-= ✅ Suitable for Recruitment Agency =
+✓ Create and display job listings in a clean layout
 
-This plugin is designed to display jobs for various companies. You can display the related company's name and their logo in the job listing and job details page. You can also display jobs in various pages for various companies with the help of provided shortcode option.
+✓ Use the [jobwp_listing] shortcode to show jobs anywhere
 
-= ✅ Flexible for Internal Hiring =
+✓ List jobs in list or grid view
 
-Individual companies can use this plugin for their internal hiring. They can open job vacancies within their organization and accept applications directly with a CV copy.
+✓ Built-in job search by title, category, type, location
 
-= ✅ Accept Online Application =
+✓ Responsive on all devices
 
-Job seeker can serch Jobs by keywords or category. If they find any suitable job they can apply directly to it. An apply online button is available in the job detail page which will open an application form where applicants can apply easily.
+✓ Applicants can apply directly from job details page
 
-= ✅ Direct Application Link to Another Platform =
+✓ Instant email notification on new applications
 
-You can display the job information and apply a url to that individual job which will redirect the job seekers to apply there. This could be use as an affiliate service.
-
-
-[__Live Demo__](https://wpjoblisting.com/demo/)
-
-[Read more about JobWP](https://wpjoblisting.com/)
-
-**🌟 Key Features:**
-
-* Easy to install and use
-* Option to use external form in the application form
-* Fully responsive for any device
-* Translation Ready
-* Display job listing in a career page
-* Two layouts - List and Grid view
-* Display job details in a single page
-* Lots of job informations
-* Job search panel
-* Applicants can apply directly to a job
-* Default Form integrated to Submit Applications
-* Instant notification email when an application is submitted
-* Admin application list panel
-* Delete jobs in Job Application Panel
-* Pagination in Job listing page
-* Google reCaptcha in Job Applicaiton Form
-* Job Expiry Option Available
-* Show Hide Jobs When Deadline is Over
-* Job posting google structured data for better SEO
-* Drag and drop to manage order in the job details page
-
-
-**✅ Available Job Information**
-
-* Job overview
-* Year of Experience
-* Number of Vacancies
-* Job Deadline
-* Job Status - Active / Inactive a job
-* Job Categories - Sales / Marketing / IT etc.
-* Job Nature - Full time / part time etc.
-* Job Level - Sr. / Jr. Position
-* Job Location
-* Job Responsibilities
-* Skills Required
-* Educational Requirements
-* Additional Requirements
-* Salary
-* Other Benefits
-
-
-**✅ Search Panel Items**
-
-* Search by Job Title
-* Search by Job Category
-* Search by Job Type
-* Search by Job Location
-
-
-**✅ Options In Listing Page Settings**
-
-* Overview show-hide option
-* Overview word length option
-* Deadline label text option
-* Experience label text option
-* Title font color option
-* Title font size option
-* Overview font color option
-* Overview font size option
-
-
-**✅ Options In Search Panel Settings**
-
-* Hide search panel option
-* Search keyword show hide option
-* Search category show hide option
-* Search job type show hide option
-* Search location show hide option
-* Search button text option
-
-
-**✅ Options In Details Page Settings**
-
-* Apply procedure title option
-* Apply procedure content option
-* Title font color option
-* Title font size option
-
-
-**✅ Application Form Settings**
-
-* Application form title show-hide option
-* Application form title text option
-* Applicant name label text option
-* Applicant email label text option
-* Cover letter label text option
-* Application form submit button text option
+✓ Google structured data for job listings (SEO benefit)
 
 
 
-➡️ Useage of Shortcode:⬅️
+**🚀 Upgrade to Pro for More Features**
 
-<strong> Use the below Shortcode to display Jobs </strong>
+📥 Export applications to CSV/Excel
 
-<pre> [jobwp_listing] </pre>
+✉️ Customizable email notifications for Candidate
 
-<strong> Shortcode to limit Jobs </strong>
+🔗 External application URL support
 
-<pre> [jobwp_listing limit=5] </pre>
+🎨 More styling options for job listing and job detail pages
 
-<strong> Shortcode to display Jobs of a Category </strong>
+👤 Company profile support (logo, details)
 
-<pre> [jobwp_listing category="Category Name"] </pre>
+🏆 Featured jobs slider
 
-<strong> Shortcode to display Layout: list or grid </strong>
+📊 Role based notifications
 
-<pre> [jobwp_listing layout="list"] </pre>
+📄 DOCX upload for applicant resumes
+
+🔒 Consent checkbox and improved UX for forms
+
+🗃️ Job search panel display controls
+
+👥 Optional login requirement to apply
 
 
-**✅ Pro Features**
 
-* Application List Export to CSV
-* Notification Email to the Job Applicants
-* External Application URL
-* More Style Options for Job Details Page
-* Application Form Styling
-* More Style Options for Job Listing Page
-* Third Party Application Form Supported
-* User Consent Checkbox to Handle Personal Data
-* Role Based Notification Email
-* Docx file type allowed for job application
-* Admin Company Profile Panel
-* Assign a Job to a Company
-* Display Company Name on Listing
-* Display Company Logo on Listing
-* Shortcode Option to Display Jobs of a Company
-* Option to Select Job Title Tag in Single Page
-* Option to Allow Login Users to Apply
-* Display Job Search Panel at Home
-* Display Featured Jobs With Slider
-* HR User Role to Manage Jobs
-* Customize email notification content for Candidate
-* Application list export to excel
-* Display Mobile number in the application form
-* Display Job by Job Level With The Shortcode Option
-* Job Level Option in the Search Panel
+**🎯 Who Is JobWP For?**
 
-[Get the Pro](https://wpjoblisting.com/pricing-faq/)
+JobWP is ideal for:
+
+✔ Small and medium business career pages
+✔ Recruitment agencies
+✔ Company internal hiring pages
+✔ Niche job boards
+✔ Community or membership sites looking to list jobs
+
+
+
+**📍 Easy to Use**
+
+1. **Install JobWP** from the WordPress dashboard.
+
+2. Create a page and insert: <pre> [jobwp_listing] </pre>
+
+3. Publish your career page — done!
+
+You can also limit jobs, filter by category, and customize the job list layout using shortcode parameters.
+
+
+
+**📈 SEO & Performance Friendly**
+
+JobWP includes Google structured data for job listings — meaning your jobs can appear in Google’s job search results (enhancing visibility). Servers and themes can index listings easily to boost organic traffic.
+
+
+
+**🔧 Compatibility**
+
+✔ Works with any modern WordPress theme
+✔ Fully responsive
+✔ Translation ready
+
 
 
 **📋 Translation Ready:**
@@ -205,25 +131,17 @@ You can display the job information and apply a url to that individual job which
 * Portuguese (Brazil)
 
 
-**👍 Feedback/Rating:**
-If you find this plugin helpful, feel free to give us your valuable review. Rate us and share this plugin with your friends and others. This will motivate us and help us to grow.
-[Rate Us](https://wordpress.org/support/plugin/jobwp/reviews/#new-post)
+
+**⭐ Reviews & Support**
+
+User feedback shows JobWP is intuitive, visually clean, and functional, with helpful support. A number of users highlight its ease of use and modern design.
 
 
-**🔥 Other Plugins from [HM Plugin](https://hmplugin.com)**
 
-👉 [WordPress Books Showcase Plugin](https://wordpress.org/plugins/wp-books-gallery/) Create an online digital library to sell and affiliate books
-👉 [WordPress Donation Plugin](https://wordpress.org/plugins/wp-stripe-donation/) Create a form to collect donation and payment via Stripe payment gateway
-👉 [WordPress News Plugin](https://wordpress.org/plugins/wp-top-news/) Display internal and external news in various layouts
-👉 [WordPress Notification Bar Plugin](https://wordpress.org/plugins/tiny-bar/) Dsiplay message and a button at the top or bottom of your webpage
-👉 [WordPress Author Bio Box Plugin](https://wordpress.org/plugins/hm-cool-author-box-widget/) Displays an author box / author info / auhor bio to your website
-👉 [WordPress Logo Showcase Plugin](https://wordpress.org/plugins/hm-logo-showcase/) Easiest client, brand logo showcase plugin to display logos on your website
-👉 [WordPress Resume Manager Plugin](https://wordpress.org/plugins/hm-resume-manager/) Display and manage personal resume or CV at your WordPress webpage
-👉 [WordPress Restaurant Menu Plugin](https://wordpress.org/plugins/menukaart/) Simplest plugin that displays food items, menus in your webpage
-👉 [WordPress Job Board and Recruitment Plugin](https://wordpress.org/plugins/jobwp/) Easiest Job Board, Career and Recruitment Plugin to display job listing in a career page
-👉 [WordPress Product Showcase Plugin](https://wordpress.org/plugins/hm-product-catalog/) Display products with various informations on your website
-👉 [WordPress Testimonial Plugin](https://wordpress.org/plugins/hm-testimonial/) Displays client’s testimonial, review or quote in multiple ways
-👉 [WordPress FAQ Plugin](https://wordpress.org/plugins/wp-display-faq/) WordPress FAQ Plugin which will display various FAQs in your website
+**🔗 Live Demo & Pro Version**
+
+If you want more features or help scaling your job board, check out the [demo and Pro version](https://wpjoblisting.com/).
+
 
 
 == Installation ==
@@ -249,35 +167,54 @@ Install JobWp as a regular WordPress plugin. Here are different ways to install 
 
 == Frequently Asked Questions ==
 
-= How can I Display Job Listing? =
+= Can I create a job board without coding? =
 
-After activating the plugin, you will see “WP Jobs” in WordPress Admin Dashboard.
+Yes. **JobWP lets you create a job board in WordPress without any coding**. Simply install the plugin, create a page, and add the job listing shortcode <pre> [jobwp_listing] </pre>.
 
-Firstly, Go to “Add New” and add your Job there.
+= How do I display job listings on my website? =
 
-Next, create a page and in the page editor put the shortcode [jobwp_listing] and Update it.
-You will see a Job Listing on that page.
+You can display job listings by adding the <pre> [jobwp_listing] </pre> shortcode to any page or post. This allows you to create a **career page or job board page** anywhere on your site.
 
-= Job detail page is not working! Showing 404 not found! =
+= Can applicants apply for jobs directly on the site? =
 
-Please go to your admin panel settings -> Permalinks.
+Yes. JobWP includes a built-in **job application form** that allows candidates to apply directly from the job detail page. Applications are stored in your dashboard and can trigger email notifications.
 
-After that just press Save Changes button.
+= Is JobWP compatible with my WordPress theme? =
 
-Now go to your detail page and refresh it.
+JobWP works with **any modern WordPress theme** and is fully responsive. It inherits your theme’s styles to blend naturally with your site design.
+
+= Can applicants upload resumes or CV files? =
+
+Yes. **Resume and CV uploads** (PDF) are supported, making it easy to collect candidate information during job applications. **DOC, DOCX** formats are available in JobWP Pro.
+
+= Can I create a career page for my company? =
+
+Absolutely. JobWP is perfect for creating a **company career page** where you can list open positions, show job details, and accept applications in one place.
+
+= Does JobWP support job search and filters? =
+
+Yes. JobWP includes **job search and filtering options** such as keyword search, job category, job type, and location to help users find relevant listings quickly.
+
+= Why do job detail pages show a 404 error? =
+
+If you experience 404 errors on job pages, go to **Settings → Permalinks** in WordPress and click **Save Changes** to refresh rewrite rules.
+
+= Is JobWP translation ready? =
+
+Yes. JobWP is **translation-ready** and can be translated into any language using standard WordPress translation tools.
 
 
 == Screenshots ==
 
-1. Showing Job Listing in List View
-2. Showing Job Listing in Grid View
-3. Showing Job Details Page
-4. Showing Application Form
+1. Job board frontend (clean, modern) List View
+2. Job listing frontend Grid View
+3. Single career page view
+4. Job submission form
 5. Listing page content settings
 6. Listing page styles settings
 7. Details page content settings
 8. Details page styles settings
-9. Application list panel in admin
+9. Admin management screen
 10. Job listing minimal view
 
 
