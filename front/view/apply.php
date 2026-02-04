@@ -65,7 +65,7 @@ if ( ! $jobwp_hide_apply_form_title ) {
                 <div class="jobwp-field-row">
                     <label><?php esc_html_e( $jobwp_apply_form_phone_label ); ?></label>
                     <input type="hidden" id="jobwp_tel_country_code" name ="jobwp_tel_country_code">
-                    <input type="tel" class="" placeholder="201-555-0123" id="jobwp_tel_1" name="jobwp_tel_1">
+                    <input type="tel" class="" placeholder="201-555-0123" id="jobwp_tel_1" name="jobwp_tel_1" data-default-country-code="<?php esc_attr_e( $jobwp_default_country_code ); ?>">
                 </div>
                 <?php
             }

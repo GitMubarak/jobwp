@@ -21,10 +21,11 @@ table.jobwp-single-settings-table tr th,
 table.jobwp-single-settings-table tr td,
 table.jobwp-single-style-settings-table tr th,
 table.jobwp-single-style-settings-table tr td {
-    border: 0px solid #000;
+    border: 0px solid #EAEAEA;
     padding: 10px;
     text-align: left;
     vertical-align: middle;
+    background-color: #F7F7F7;
 }
 
 table.jobwp-settings-table tr th,
@@ -41,7 +42,7 @@ table.jobwp-settings-table tr th {
 }
 
 table.jobwp-listing-style-settings-table tr th {
-    max-width: 100px;
+    max-width: 120px;
     text-align: right;
 }
 

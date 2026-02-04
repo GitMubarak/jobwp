@@ -88,6 +88,11 @@ trait Jobwp_ApplyForm_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Phone',
             ],
+            [
+                'name'      => 'jobwp_default_country_code',
+                'type'      => 'text',
+                'default'   => 'us',
+            ],
         ];
     }
 }

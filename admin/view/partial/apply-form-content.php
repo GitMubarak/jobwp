@@ -12,7 +12,7 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
 ?>
 <form name="jobwp_apply_form_content_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-apply-form-content-settings-form">
 <?php wp_nonce_field( 'jobwp_apply_form_content_action', 'jobwp_apply_form_content_nonce' ); ?>
-    <table class="jobwp-listing-content-settings-table">
+    <table class="jobwp-listing-content-settings-table" style="width: 100%;">
         <tr>
             <th scope="row">
                 <label for="jobwp_hide_apply_form_title"><?php _e('Hide Form Title', 'jobwp'); ?>?</label>
@@ -20,10 +20,10 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
             <td>
                 <input type="checkbox" name="jobwp_hide_apply_form_title" id="jobwp_hide_apply_form_title" <?php echo $jobwp_hide_apply_form_title ? 'checked' : ''; ?>>
             </td>
-            <th scope="row">
+            <th scope="row" style="text-align: right;">
                 <label><?php _e('Title Text', 'jobwp'); ?></label>
             </th>
-            <td>
+            <td colspan="3">
                 <input type="text" name="jobwp_apply_form_title" id="jobwp_apply_form_title" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_title ); ?>" />
             </td>
         </tr>
@@ -31,7 +31,7 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
             <th scope="row">
                 <label><?php _e('Name Label', 'jobwp'); ?></label>
             </th>
-            <td colspan="3">
+            <td colspan="5">
                 <input type="text" name="jobwp_apply_form_name_label" id="jobwp_apply_form_name_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_name_label ); ?>" />
             </td>
         </tr>
@@ -39,7 +39,7 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
             <th scope="row">
                 <label><?php _e('Email Label', 'jobwp'); ?></label>
             </th>
-            <td colspan="3">
+            <td colspan="5">
                 <input type="text" name="jobwp_apply_form_email_label" id="jobwp_apply_form_email_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_email_label ); ?>" />
             </td>
         </tr>
@@ -51,11 +51,11 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
             <td>
                 <input type="checkbox" name="jobwp_hide_apply_form_cover" id="jobwp_hide_apply_form_cover" <?php echo $jobwp_hide_apply_form_cover ? 'checked' : ''; ?>>
             </td>
-            <th scope="row">
+            <th scope="row" style="text-align: right;">
                 <label><?php _e('Cover Letter Label', 'jobwp'); ?></label>
             </th>
-            <td>
-                <input type="text" name="jobwp_apply_form_cover_letter_label" id="jobwp_apply_form_cover_letter_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_cover_letter_label ); ?>" />
+            <td colspan="3">
+                <input type="text" name="jobwp_apply_form_cover_letter_label" id="jobwp_apply_form_cover_letter_label" class="medium-text" value="<?php esc_attr_e( $jobwp_apply_form_cover_letter_label ); ?>" />
             </td>
         </tr>
         <!-- Phone -->
@@ -78,7 +78,7 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
                 }
                 ?>
             </td>
-            <th scope="row">
+            <th scope="row" style="text-align: right;">
                 <label><?php _e('Phone Label', 'jobwp'); ?></label>
             </th>
             <td>
@@ -91,13 +91,32 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
 
                 if ( job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <input type="text" name="jobwp_apply_form_phone_label" id="jobwp_apply_form_phone_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_phone_label ); ?>"/>
+                    <input type="text" name="jobwp_apply_form_phone_label" id="jobwp_apply_form_phone_label" class="medium-text" value="<?php esc_attr_e( $jobwp_apply_form_phone_label ); ?>"/>
                     <?php
                 }
                 ?>
             </td>
+            <th scope="row" style="text-align: right;">
+                <label><?php _e('Default Country Code', 'jobwp'); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                    ?>
+                    <input type="text" name="jobwp_default_country_code" id="jobwp_default_country_code" class="small-text" value="<?php esc_attr_e( $jobwp_default_country_code ); ?>"/>
+                    <?php
+                }
+                ?>
+                <code>2 digit codes (ISO 3166-1)</code>
+            </td>
         </tr>
-        <tr><td colspan="4"><hr></td></tr>
+        <tr><td colspan="6"><hr></td></tr>
         <!-- User Consent -->
         <tr>
             <th scope="row">
@@ -118,10 +137,10 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
                 }
                 ?>
             </td>
-            <th scope="row">
+            <th scope="row" style="text-align: right;">
                 <label><?php _e('User Consent Text', 'jobwp'); ?></label>
             </th>
-            <td>
+            <td colspan="3">
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
@@ -141,7 +160,7 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
             <th scope="row">
                 <label><?php _e('Submit Button Text', 'jobwp'); ?></label>
             </th>
-            <td colspan="3">
+            <td colspan="5">
                 <input type="text" name="jobwp_apply_form_submit_btn_txt" id="jobwp_apply_form_submit_btn_txt" class="medium-text" value="<?php esc_attr_e( $jobwp_apply_form_submit_btn_txt ); ?>" />
             </td>
         </tr>

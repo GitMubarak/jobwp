@@ -28,10 +28,11 @@
     }
 
     var jobwpTel1 = document.querySelector("#jobwp_tel_1");
+    var defaultCountry = $(jobwpTel1).attr('data-default-country-code');
     if (jobwpTel1 != null) {
         var phoneInput = window.intlTelInput(jobwpTel1, {
             utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js",
-            initialCountry: "us",
+            initialCountry: defaultCountry,
             separateDialCode: true,
         });
     }
