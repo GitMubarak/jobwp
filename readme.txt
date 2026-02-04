@@ -3,7 +3,7 @@ Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: Job Board, Job Listing, Career Page, Recruitment, Job Manager
 Requires at least: 5.4
-Tested up to: 6.9
+Tested up to: 6.9.1
 Stable tag: 2.4.7
 Requires PHP: 7.2
 License: GPLv2 or later
@@ -221,7 +221,7 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 == Changelog ==
 
 = 2.4.7 =
-* Freemius
+* Tested compatibility with WordPress 6.9.1
 
 = 2.4.6 =
 * Freemius SDK upgraded to 2.13.0
