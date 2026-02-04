@@ -44,7 +44,7 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -77,7 +77,7 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -109,7 +109,7 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -141,7 +141,7 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -161,7 +161,7 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -179,7 +179,7 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -197,7 +197,7 @@ foreach ( $jobwpSearchContent as $option_name => $option_value ) {
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Upgrade to Professional', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 

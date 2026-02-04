@@ -25,7 +25,7 @@ $single_items = $this->get_single_items_order();
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -49,7 +49,7 @@ $single_items = $this->get_single_items_order();
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -76,7 +76,7 @@ $single_items = $this->get_single_items_order();
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -96,7 +96,7 @@ $single_items = $this->get_single_items_order();
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -404,7 +404,7 @@ $single_items = $this->get_single_items_order();
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 
@@ -423,7 +423,7 @@ $single_items = $this->get_single_items_order();
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now', 'jobwp') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
                     <?php
                 }
 

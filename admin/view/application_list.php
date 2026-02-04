@@ -82,8 +82,8 @@ if ( '' !== $showMessage ) {
 <?php
 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
     ?>
-    <a href="#" class="button button-primary jobwp-button"><?php _e('Please Upgrade to Export in CSV/Excel', 'jobwp'); ?></a><br>
-    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now to Export', 'jobwp') . '</a>'; ?></span>
+    <a href="<?php echo job_fs()->get_upgrade_url(); ?>" class="button button-primary jobwp-button"><?php _e('Export to CSV/Excel Available in Professional', 'jobwp'); ?></a><br>
+    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Export Available in Professional', 'jobwp') . '</a>'; ?></span>
     <?php
 }
 
