@@ -257,6 +257,30 @@ if ( function_exists( 'job_fs' ) ) {
             add_action( 'admin_bar_menu', 'jobwp_remove_admin_bar_menu_for_hr_users', 999 );
         }
 
+        // Add a books gallery slug option in permalink setting
+        add_action('admin_init', function() {
+            add_settings_field('jobwp_cpt_slug', __('JobWP Slug', 'jobwp'), 'jobwp_cpt_slug_output', 'permalink', 'optional');
+        });
+
+        // Setting output
+        function jobwp_cpt_slug_output() {
+            ?>
+            <input name="jobwp_cpt_slug" type="text" class="regular-text code" value="<?php esc_attr_e( get_option('jobwp_cpt_slug') ); ?>" placeholder="<?php echo 'jobs'; ?>" />
+            <?php
+        }
+
+        // Save setting
+        add_action('admin_init', function() {
+
+            if ( isset( $_POST['permalink_structure'] ) ) {
+
+                update_option( 'jobwp_cpt_slug', trim( sanitize_text_field( $_POST['jobwp_cpt_slug'] ) ) );
+            }
+        });
+        
+        /*
+        * Loading text domain at end so that no init error
+        */
         function jobwp_load_plugin_textdomain_test() {
             load_plugin_textdomain( 'jobwp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
         }
