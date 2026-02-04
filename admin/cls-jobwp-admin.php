@@ -404,6 +404,8 @@ class JobWp_Admin
 	 */
 	function jobwp_custom_post_type() {
 
+		$bg_slug = ( ! empty( get_option('jobwp_cpt_slug') ) ) ? get_option('jobwp_cpt_slug') : 'jobs';
+
 		$labels = array(
 							'name'                => __('All Jobs', 'jobwp'),
 							'singular_name'       => __('WP Jobs', 'jobwp'),
@@ -437,7 +439,8 @@ class JobWp_Admin
 						//'taxonomies' 	      => array('post_tag'),
 						'publicly_queryable'  => true,
 						'capability_type'     => 'post',
-						'menu_icon'           => 'dashicons-portfolio'
+						'menu_icon'           => 'dashicons-portfolio',
+						'rewrite'				=> array( 'slug' => esc_html( $bg_slug ) ),
 					);
 
 		register_post_type('jobs', $args);
