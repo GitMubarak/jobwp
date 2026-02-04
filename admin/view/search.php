@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div id="wph-wrap-all" class="wrap jobwp-search-settings-page">
 
     <div class="settings-banner">
-        <h2><i class="fa fa-search" aria-hidden="true"></i>&nbsp;<?php _e('Search Panel Settings', JOBWP_TXT_DOMAIN); ?></h2>
+        <h2><i class="fa fa-search" aria-hidden="true"></i>&nbsp;<?php _e('Search Panel Settings', 'jobwp'); ?></h2>
     </div>
 
     <?php 
@@ -19,10 +19,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         <nav class="nav-tab-wrapper">
             <a href="?post_type=jobs&page=jobwp-search-settings&tab=settings" class="nav-tab jobwp-tab <?php if ( $jobwpTab !== 'styles' ) { ?> jobwp-tab-active<?php } ?>">
-                <i class="fa fa-cog" aria-hidden="true">&nbsp;</i><?php _e('Content', JOBWP_TXT_DOMAIN); ?>
+                <i class="fa fa-cog" aria-hidden="true">&nbsp;</i><?php _e('Content', 'jobwp'); ?>
             </a>
             <a href="?post_type=jobs&page=jobwp-search-settings&tab=styles" class="nav-tab jobwp-tab <?php if ( $jobwpTab === 'styles' ) { ?> jobwp-tab-active<?php } ?>">
-                <i class="fa fa-paint-brush" aria-hidden="true"></i>&nbsp;<?php _e('Styles', JOBWP_TXT_DOMAIN); ?>
+                <i class="fa fa-paint-brush" aria-hidden="true"></i>&nbsp;<?php _e('Styles', 'jobwp'); ?>
             </a>
         </nav>
 

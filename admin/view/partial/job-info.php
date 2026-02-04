@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <table class="form-table">
     <tr class="jobwp_company">
         <th scope="row">
-            <label for="jobwp_company"><?php _e('Select Company', JOBWP_TXT_DOMAIN); ?></label>
+            <label for="jobwp_company"><?php _e('Select Company', 'jobwp'); ?></label>
         </th>
         <td>
             <?php
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 $companies = get_terms( array( 'taxonomy' => 'job_company', 'hide_empty' => false, 'orderby' => 'name', 'order' => 'ASC',  'parent' => 0 ) );
                 ?>
                 <select name="jobwp_company">
-                    <option value=""><?php _e('Select a Company', JOBWP_TXT_DOMAIN); ?></option>
+                    <option value=""><?php _e('Select a Company', 'jobwp'); ?></option>
                     <?php
                     if ( count($companies) > 0 ) {
                         foreach( $companies as $company ) {
@@ -39,7 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     </tr>
     <tr class="jobwp_experience">
         <th scope="row">
-            <label for="jobwp_experience"><?php _e('Year of Experience', JOBWP_TXT_DOMAIN); ?></label>
+            <label for="jobwp_experience"><?php _e('Year of Experience', 'jobwp'); ?></label>
         </th>
         <td>
             <input type="text" name="jobwp_experience" value="<?php esc_attr_e( $jobwp_experience ); ?>" class="regular-text">
@@ -47,7 +47,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     </tr>
     <tr class="jobwp_vacancies">
         <th scope="row">
-            <label for="jobwp_vacancies"><?php _e('No. of Vacancies', JOBWP_TXT_DOMAIN); ?></label>
+            <label for="jobwp_vacancies"><?php _e('No. of Vacancies', 'jobwp'); ?></label>
         </th>
         <td>
             <input type="number" min="1" max="20" step="1" name="jobwp_vacancies" value="<?php echo esc_attr( $jobwp_vacancies ); ?>" class="regular-text">
@@ -55,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     </tr>
     <tr class="jobwp_deadline">
         <th scope="row">
-            <label for="jobwp_deadline"><?php _e('Deadline', JOBWP_TXT_DOMAIN); ?></label>
+            <label for="jobwp_deadline"><?php _e('Deadline', 'jobwp'); ?></label>
         </th>
         <td>
             <input type="text" name="jobwp_deadline" id="jobwp_deadline" value="<?php esc_attr_e( $jobwp_deadline ); ?>" class="medium-text" readonly>
@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     </tr>
     <tr class="jobwp_application_url">
         <th scope="row">
-            <label for="jobwp_application_url"><?php _e('External Apply Now URL', JOBWP_TXT_DOMAIN); ?></label>
+            <label for="jobwp_application_url"><?php _e('External Apply Now URL', 'jobwp'); ?></label>
         </th>
         <td>
             <?php
@@ -83,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     </tr>
     <tr class="jobwp_is_featured_job">
         <th scope="row">
-            <label for="jobwp_is_featured_job"><?php _e('Featured Job', JOBWP_TXT_DOMAIN); ?></label>
+            <label for="jobwp_is_featured_job"><?php _e('Featured Job', 'jobwp'); ?></label>
         </th>
         <td>
             <?php
@@ -103,14 +103,14 @@ if ( ! defined( 'ABSPATH' ) ) {
     </tr>
     <tr class="jobwp_status">
         <th scope="row">
-            <label for="jobwp_status"><?php _e('Status', JOBWP_TXT_DOMAIN); ?></label>
+            <label for="jobwp_status"><?php _e('Status', 'jobwp'); ?></label>
         </th>
         <td>
             <input type="radio" name="jobwp_status" class="jobwp_status" id="jobwp_status_active" value="active" <?php echo ( 'inactive' !== esc_attr( $jobwp_status ) ) ? 'checked' : ''; ?> >
-            <label for="jobwp_status_active"><span></span><?php _e( 'Active', JOBWP_TXT_DOMAIN ); ?></label>
+            <label for="jobwp_status_active"><span></span><?php _e( 'Active', 'jobwp' ); ?></label>
             &nbsp;&nbsp;
             <input type="radio" name="jobwp_status" class="jobwp_status" id="jobwp_status_inactive" value="inactive" <?php echo ( 'inactive' === esc_attr( $jobwp_status ) ) ? 'checked' : ''; ?> >
-            <label for="jobwp_status_inactive"><span></span><?php _e( 'Inactive', JOBWP_TXT_DOMAIN ); ?></label>
+            <label for="jobwp_status_inactive"><span></span><?php _e( 'Inactive', 'jobwp' ); ?></label>
         </td>
     </tr>
 </table>
