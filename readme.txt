@@ -2,10 +2,10 @@
 Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: Job Board, Job Listing, Career Page, Recruitment, Job Manager
-Requires at least: 5.4
-Tested up to: 6.9.1
 Stable tag: 2.4.7
-Requires PHP: 7.2
+Tested up to: 6.9.1
+Requires at least: 5.8
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -221,9 +221,11 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 == Changelog ==
 
 = 2.4.7 =
+[//]: # fs_premium_only_begin
+* Added default country option for apply form phone number - Pro
+[//]: # fs_premium_only_end
 * Tested compatibility with WordPress 6.9.1
 * Added JobWP slug option in permalink settings
-* Added default country option for job listing apply form phone number
 * Added clearer labels and helper text in plugin settings
 * Improved UI in plugin settings
 

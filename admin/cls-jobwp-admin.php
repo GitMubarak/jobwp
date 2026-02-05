@@ -831,7 +831,7 @@ class JobWp_Admin
 	}
 
 	/**
-	 * 
+	 *  Get all applicaitons
 	 */
 	private function jobwp_get_all_applications() {
 		

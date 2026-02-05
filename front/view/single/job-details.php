@@ -280,13 +280,13 @@ $single_items = $jobwp_front_new->get_single_items_order();
                 </div>
                 <div class="right-cell text">
                     <ul class="jobwp-share-on">
-                        <li>
+                        <li class="facebook">
                             <a href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank" class="jobwp-share-on-link facebook"><i class="fa-brands fa-facebook-f"></i></a>
                         </li>
-                        <li>
+                        <li class="twitter">
                             <a href="https://twitter.com/share?url=<?php echo get_permalink(); ?>&text=<?php echo get_the_title(); ?>" target="_blank" class="jobwp-share-on-link twitter"><i class="fa-brands fa-twitter"></i></a>
                         </li>
-                        <li>
+                        <li class="linkedin">
                             <a href="https://www.linkedin.com/shareArticle?mini=true&ro=true&trk=EasySocialShareButtons&title=<?php echo get_the_title(); ?>&url=<?php echo get_permalink(); ?>" target="_blank" class="jobwp-share-on-link linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
                         </li>
                     </ul>
