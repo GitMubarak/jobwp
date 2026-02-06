@@ -228,6 +228,7 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 * Added JobWP slug option in permalink settings
 * Added clearer labels and helper text in plugin settings
 * Improved UI in plugin settings
+* Fixed minor bugs
 
 = 2.4.6 =
 * Freemius SDK upgraded to 2.13.0

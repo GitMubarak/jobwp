@@ -172,7 +172,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <label><?php _e('Secret Key', 'jobwp'); ?></label>
                             </th>
                             <td>
-                                <input type="text" name="jobwp_recaptcha_secret_key" id="jobwp_recaptcha_secret_key" class="regular-text" value="<?php esc_attr_e( stripslashes( $jobwp_recaptcha_secret_key ) ); ?>" />
+                                <input type="password" name="jobwp_recaptcha_secret_key" id="jobwp_recaptcha_secret_key" class="regular-text" value="<?php esc_attr_e( stripslashes( $jobwp_recaptcha_secret_key ) ); ?>" />
                             </td>
                         </tr>
                         <tr class="jobwp_captcha_on_apply_form">
