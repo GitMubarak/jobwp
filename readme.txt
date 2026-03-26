@@ -224,7 +224,7 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 [//]: # fs_premium_only_begin
 * Added - Pro
 [//]: # fs_premium_only_end
-* Tested 
+* Freemius SDK upgraded to 2.13.1
 
 = 2.4.7 =
 [//]: # fs_premium_only_begin
