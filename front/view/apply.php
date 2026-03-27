@@ -83,7 +83,7 @@ if ( ! $jobwp_hide_apply_form_title ) {
 
         <div class="jobwp-field-row">
             <label><?php esc_html_e( $jobwp_apply_form_upload_label ); ?></label><span class="required">*</span>
-            <span><?php _e('Attach your resume. Max size 2mb', 'jobwp'); ?></span>
+            <span><?php esc_html_e( $jobwp_apply_form_attach_label ); ?></span>
             <input type="file" name="jobwp_upload_resume" id="jobwp_upload_resume" />
             <span>
                 <?php 

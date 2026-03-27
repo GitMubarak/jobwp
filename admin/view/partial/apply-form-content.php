@@ -127,6 +127,15 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
                 <input type="text" name="jobwp_apply_form_upload_label" id="jobwp_apply_form_upload_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_upload_label ); ?>" />
             </td>
         </tr>
+        <!-- Attach Resume -->
+        <tr>
+            <th scope="row">
+                <label><?php _e('Attach Resume Label', 'jobwp'); ?></label>
+            </th>
+            <td colspan="5">
+                <input type="text" name="jobwp_apply_form_attach_label" id="jobwp_apply_form_attach_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_attach_label ); ?>" />
+            </td>
+        </tr>
         <!-- User Consent -->
         <tr>
             <th scope="row">

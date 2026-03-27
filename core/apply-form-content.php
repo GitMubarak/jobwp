@@ -98,6 +98,11 @@ trait Jobwp_ApplyForm_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Upload CV/Resume',
             ],
+            [
+                'name'      => 'jobwp_apply_form_attach_label',
+                'type'      => 'text',
+                'default'   => 'Attach your resume. Max size 2mb',
+            ],
         ];
     }
 }
