@@ -227,6 +227,7 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 * Freemius SDK upgraded to 2.13.1
 * Apply form upload cv label text option added
 * Apply form Attach Resume label text option added
+* Apply form Allowed Types label text option added
 
 = 2.4.7 =
 [//]: # fs_premium_only_begin

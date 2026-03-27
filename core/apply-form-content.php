@@ -103,6 +103,11 @@ trait Jobwp_ApplyForm_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Attach your resume. Max size 2mb',
             ],
+            [
+                'name'      => 'jobwp_apply_form_allowed_types_label',
+                'type'      => 'text',
+                'default'   => 'Allowed Types',
+            ],
         ];
     }
 }

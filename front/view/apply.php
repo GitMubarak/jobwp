@@ -87,7 +87,7 @@ if ( ! $jobwp_hide_apply_form_title ) {
             <input type="file" name="jobwp_upload_resume" id="jobwp_upload_resume" />
             <span>
                 <?php 
-                echo __('Allowed Types', 'jobwp') . ': ';
+                echo esc_html( $jobwp_apply_form_allowed_types_label ) . ': ';
                 
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     _e('pdf', 'jobwp'); 

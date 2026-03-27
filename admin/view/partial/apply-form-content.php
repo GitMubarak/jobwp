@@ -136,6 +136,15 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
                 <input type="text" name="jobwp_apply_form_attach_label" id="jobwp_apply_form_attach_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_attach_label ); ?>" />
             </td>
         </tr>
+        <!-- Allowed Types -->
+        <tr>
+            <th scope="row">
+                <label><?php _e('Allowed Types Label', 'jobwp'); ?></label>
+            </th>
+            <td colspan="5">
+                <input type="text" name="jobwp_apply_form_allowed_types_label" id="jobwp_apply_form_allowed_types_label" class="regular-text" value="<?php esc_attr_e( $jobwp_apply_form_allowed_types_label ); ?>" />
+            </td>
+        </tr>
         <!-- User Consent -->
         <tr>
             <th scope="row">
