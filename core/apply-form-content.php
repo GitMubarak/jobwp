@@ -93,6 +93,11 @@ trait Jobwp_ApplyForm_Content_Settings
                 'type'      => 'text',
                 'default'   => 'us',
             ],
+            [
+                'name'      => 'jobwp_apply_form_upload_label',
+                'type'      => 'text',
+                'default'   => 'Upload CV/Resume',
+            ],
         ];
     }
 }
