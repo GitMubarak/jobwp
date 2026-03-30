@@ -108,6 +108,11 @@ trait Jobwp_ApplyForm_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Allowed Types',
             ],
+            [
+                'name'      => 'jobwp_apply_form_allow_redirect',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

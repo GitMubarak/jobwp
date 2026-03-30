@@ -82,19 +82,23 @@ if ( isset( $_FILES['jobwp_upload_resume']['name'] ) ) {
             if ( $respKey->success ) {
                 
                 $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume( $_POST, $_FILES, $wbgAbctEmail );
-                
+
+                if ( $jobwp_apply_form_allow_redirect ) {
+                    ?>
+                    <script type="text/javascript">
+                        window.location = "<?php echo esc_url( home_url( '/thank-you' ) ); ?>";
+                    </script>
+                    <?php
+                }
             } else {
                 
                 $resumeUploadMsg = __('reCaptcha verification failed!', JOBWP_TXT_DOMAIN);
-                
             }
         } else {
 
             $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume( $_POST, $_FILES, $wbgAbctEmail );
-            
         }
     }
-    
 }
 
 // Load Styling
