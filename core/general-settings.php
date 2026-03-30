@@ -88,6 +88,11 @@ trait JobwpGeneralSettings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'jobwp_allow_redirect_after_application',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

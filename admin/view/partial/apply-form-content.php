@@ -193,27 +193,6 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
                 <input type="text" name="jobwp_apply_form_submit_btn_txt" id="jobwp_apply_form_submit_btn_txt" class="medium-text" value="<?php esc_attr_e( $jobwp_apply_form_submit_btn_txt ); ?>" />
             </td>
         </tr>
-        <!-- Redirect After Apply -->
-        <tr>
-            <th scope="row">
-                <label for="jobwp_apply_form_user_consent"><?php _e('Redirect After Application', 'jobwp'); ?>?</label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
-
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="checkbox" name="jobwp_apply_form_allow_redirect" class="jobwp_apply_form_allow_redirect" id="jobwp_apply_form_allow_redirect" value="1" <?php checked( $jobwp_apply_form_allow_redirect, 1 ); ?>>
-                    <?php
-                }
-                ?>
-            </td>
-        </tr>
     </table>
     <hr>
     <p class="submit">

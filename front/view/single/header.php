@@ -35,6 +35,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
     }
 }
 
+// Email Aggregrate
 $wbgAbctEmail = [];
 
 if ( '' !== $jobwp_admin_noti_email ) {
@@ -83,7 +84,7 @@ if ( isset( $_FILES['jobwp_upload_resume']['name'] ) ) {
                 
                 $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume( $_POST, $_FILES, $wbgAbctEmail );
 
-                if ( $jobwp_apply_form_allow_redirect ) {
+                if ( $jobwp_allow_redirect_after_application ) {
                     ?>
                     <script type="text/javascript">
                         window.location = "<?php echo esc_url( home_url( '/thank-you' ) ); ?>";

@@ -153,6 +153,27 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 ?>
                             </td>
                         </tr>
+                        <!-- Redirect After Apply -->
+                        <tr>
+                            <th scope="row">
+                                <label for="jobwp_allow_redirect_after_application"><?php _e('Redirect After Application', 'jobwp'); ?>?</label>
+                            </th>
+                            <td>
+                                <?php
+                                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                                    ?>
+                                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
+                                    <?php
+                                }
+
+                                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                                    ?>
+                                    <input type="checkbox" name="jobwp_allow_redirect_after_application" class="jobwp_allow_redirect_after_application" id="jobwp_allow_redirect_after_application" value="1" <?php checked( $jobwp_allow_redirect_after_application, 1 ); ?>>
+                                    <?php
+                                }
+                                ?>
+                            </td>
+                        </tr>
                         <!-- Captcha -->
                         <tr>
                             <td colspan="2" style="font-size: 18px;">
