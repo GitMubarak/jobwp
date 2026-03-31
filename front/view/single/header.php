@@ -85,9 +85,11 @@ if ( isset( $_FILES['jobwp_upload_resume']['name'] ) ) {
                 $resumeUploadMsg = $jobwp_front_new->jobwp_upload_resume( $_POST, $_FILES, $wbgAbctEmail );
 
                 if ( $jobwp_allow_redirect_after_application ) {
+
+                    $redirectPage = ( '' != $jobwp_redirect_page_after_submit ) ? $jobwp_redirect_page_after_submit : null;
                     ?>
                     <script type="text/javascript">
-                        window.location = "<?php echo esc_url( home_url( '/thank-you' ) ); ?>";
+                        window.location = "<?php echo esc_url( home_url( '/' . $redirectPage ) ); ?>";
                     </script>
                     <?php
                 }

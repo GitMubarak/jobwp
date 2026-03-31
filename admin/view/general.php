@@ -174,6 +174,40 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 ?>
                             </td>
                         </tr>
+                        <tr>
+                            <th scope="row">
+                                <label><?php _e('Select Redirect Page', 'wp-stripe-donation'); ?></label>
+                            </th>
+                            <td colspan="5">
+                                <?php
+                                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                                    ?>
+                                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
+                                    <?php
+                                }
+
+                                if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                                    ?>
+                                    <select name="jobwp_redirect_page_after_submit" id="jobwp_redirect_page_after_submit" class="regular-text">
+                                        <option value=""><?php esc_html_e('Select Page'); ?></option>
+                                        <?php
+                                        $pages = get_pages();
+                                        foreach ( $pages as $page ) { 
+                                            ?>
+                                            <option value="<?php esc_attr_e( $page->post_name ); ?>" <?php selected( $jobwp_redirect_page_after_submit, $page->post_name ); ?>>
+                                                <?php esc_html_e( $page->post_title ); ?>
+                                            </option>
+                                            <?php
+                                        } 
+                                        ?>
+                                    </select>
+                                    <br>
+                                    <code><?php _e('Select the page that will be redirected after application submit', 'jobwp'); ?></code>
+                                    <?php
+                                }
+                                ?>
+                            </td>
+                        </tr>
                         <!-- Captcha -->
                         <tr>
                             <td colspan="2" style="font-size: 18px;">
