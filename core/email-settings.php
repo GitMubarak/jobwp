@@ -53,6 +53,11 @@ trait Jobwp_Email_Settings
                 'type'      => 'email',
                 'default'   => '',
             ],
+            [
+                'name'      => 'jobwp_disable_candidate_email',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

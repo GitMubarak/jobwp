@@ -224,6 +224,7 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 [//]: # fs_premium_only_begin
 * Added redirect option after application submit - Pro
 * Redirect page select option added - Pro
+* Candidate notification email disable option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK upgraded to 2.13.1
 * Apply form upload cv label text option added

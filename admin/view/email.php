@@ -35,8 +35,16 @@ if ( $jobwpEmailMessage ) {
                 <?php wp_nonce_field( 'jobwp_email_settings_action', 'jobwp_email_settings_nonce' ); ?>
                 <table class="jobwp-single-settings-table">
                     <tr>
-                        <td colspan="2">
-                            <hr><?php _e('Candidate Email Settings', 'jobwp'); ?><hr>
+                        <td colspan="2" style="font-size: 15px;">
+                            <hr><strong><?php _e('Candidate Email Settings', 'jobwp'); ?></strong>&nbsp;::<hr>
+                        </td>
+                    </tr>
+                    <tr class="jobwp_disable_candidate_email">
+                        <th scope="row">
+                            <label for="jobwp_disable_candidate_email"><?php _e('Disable Candidate Email', 'jobwp'); ?>?</label>
+                        </th>
+                        <td>
+                            <input type="checkbox" name="jobwp_disable_candidate_email" class="jobwp_disable_candidate_email" id="jobwp_disable_candidate_email" value="1" <?php checked( $jobwp_disable_candidate_email, 1 ); ?> />  
                         </td>
                     </tr>
                     <tr class="jobwp_re_from_name">
