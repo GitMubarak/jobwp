@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2026-02-06 13:05+0600\n"
+"POT-Creation-Date: 2026-04-04 03:38+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -399,7 +399,7 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
-#: admin/view/application_list.php:12 front/view/single/header.php:65
+#: admin/view/application_list.php:12 front/view/single/header.php:66
 msgid "Sorry, your nonce did not verify."
 msgstr ""
 
@@ -446,35 +446,39 @@ msgid "Candidate Email Settings"
 msgstr ""
 
 #: admin/view/email.php:44
-msgid "Header From Name"
+msgid "Disable Candidate Email"
 msgstr ""
 
 #: admin/view/email.php:52
-msgid "Header From Email"
+msgid "Header From Name"
 msgstr ""
 
 #: admin/view/email.php:60
-msgid "Email Subject"
+msgid "Header From Email"
 msgstr ""
 
 #: admin/view/email.php:68
+msgid "Email Subject"
+msgstr ""
+
+#: admin/view/email.php:76
 msgid "Email Content"
 msgstr ""
 
-#: admin/view/email.php:75
+#: admin/view/email.php:83
 msgid "To use candidate name apply #candidateName# in the content"
 msgstr ""
 
-#: admin/view/email.php:77
+#: admin/view/email.php:85
 msgid "To use job title apply #jobTitle# in the content"
 msgstr ""
 
-#: admin/view/email.php:79
+#: admin/view/email.php:87
 msgid "Use <<code>br</code>> to break line in the content"
 msgstr ""
 
-#: admin/view/email.php:86 admin/view/general.php:190
-#: admin/view/partial/apply-form-content.php:171
+#: admin/view/email.php:94 admin/view/general.php:245
+#: admin/view/partial/apply-form-content.php:200
 #: admin/view/partial/apply-form-style.php:333
 #: admin/view/partial/listing-content.php:492
 #: admin/view/partial/listing-style.php:579
@@ -485,12 +489,14 @@ msgstr ""
 msgid "Save Settings"
 msgstr ""
 
-#: admin/view/email.php:95 admin/view/general.php:52 admin/view/general.php:116
-#: admin/view/general.php:144 admin/view/partial/apply-form-content.php:70
-#: admin/view/partial/apply-form-content.php:88
-#: admin/view/partial/apply-form-content.php:106
-#: admin/view/partial/apply-form-content.php:129
-#: admin/view/partial/apply-form-content.php:147
+#: admin/view/email.php:103 admin/view/general.php:52
+#: admin/view/general.php:116 admin/view/general.php:144
+#: admin/view/general.php:165 admin/view/general.php:185
+#: admin/view/partial/apply-form-content.php:57
+#: admin/view/partial/apply-form-content.php:75
+#: admin/view/partial/apply-form-content.php:93
+#: admin/view/partial/apply-form-content.php:157
+#: admin/view/partial/apply-form-content.php:175
 #: admin/view/partial/apply-form-style.php:31
 #: admin/view/partial/apply-form-style.php:58
 #: admin/view/partial/apply-form-style.php:77
@@ -622,18 +628,34 @@ msgid "Should Candidate Login Before Apply"
 msgstr ""
 
 #: admin/view/general.php:159
+msgid "Redirect After Application"
+msgstr ""
+
+#: admin/view/general.php:179
+msgid "Select Redirect Page"
+msgstr ""
+
+#: admin/view/general.php:192
+msgid "Select Page"
+msgstr ""
+
+#: admin/view/general.php:205
+msgid "Select the page that will be redirected after application submit"
+msgstr ""
+
+#: admin/view/general.php:214
 msgid "Captcha"
 msgstr ""
 
-#: admin/view/general.php:164
+#: admin/view/general.php:219
 msgid "Site Key"
 msgstr ""
 
-#: admin/view/general.php:172
+#: admin/view/general.php:227
 msgid "Secret Key"
 msgstr ""
 
-#: admin/view/general.php:180
+#: admin/view/general.php:235
 msgid "Enable on Apply Form"
 msgstr ""
 
@@ -645,44 +667,61 @@ msgstr ""
 msgid "Title Text"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:32
+#: admin/view/partial/apply-form-content.php:33
 msgid "Name Label"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:40
+#: admin/view/partial/apply-form-content.php:42
 msgid "Email Label"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:49
-msgid "Hide Cover Letter"
-msgstr ""
-
-#: admin/view/partial/apply-form-content.php:55
-msgid "Cover Letter Label"
-msgstr ""
-
-#: admin/view/partial/apply-form-content.php:64
+#: admin/view/partial/apply-form-content.php:51
 msgid "Display Phone"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:82
+#: admin/view/partial/apply-form-content.php:69
 msgid "Phone Label"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:100
+#: admin/view/partial/apply-form-content.php:87
 msgid "Default Country Code"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:123
+#: admin/view/partial/apply-form-content.php:103
+msgid "2 digit codes (ISO 3166-1)"
+msgstr ""
+
+#: admin/view/partial/apply-form-content.php:109
+msgid "Hide Cover Letter"
+msgstr ""
+
+#: admin/view/partial/apply-form-content.php:115
+msgid "Cover Letter Label"
+msgstr ""
+
+#: admin/view/partial/apply-form-content.php:124
+msgid "Upload Resume Label"
+msgstr ""
+
+#: admin/view/partial/apply-form-content.php:133
+msgid "Attach Resume Label"
+msgstr ""
+
+#: admin/view/partial/apply-form-content.php:142
+msgid "Allowed Types Label"
+msgstr ""
+
+#: admin/view/partial/apply-form-content.php:151
 msgid "Hide User Consent"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:141
+#: admin/view/partial/apply-form-content.php:169
 msgid "User Consent Text"
 msgstr ""
 
-#: admin/view/partial/apply-form-content.php:161
-msgid "Submit Button Text"
+#: admin/view/partial/apply-form-content.php:190
+#: admin/view/partial/single-content.php:392
+msgid "Apply Button Text"
 msgstr ""
 
 #: admin/view/partial/apply-form-style.php:20
@@ -1149,10 +1188,6 @@ msgstr ""
 msgid "Hide Apply Button"
 msgstr ""
 
-#: admin/view/partial/single-content.php:392
-msgid "Apply Button Text"
-msgstr ""
-
 #: admin/view/partial/single-content.php:401
 msgid "Hide Share On"
 msgstr ""
@@ -1273,27 +1308,27 @@ msgstr ""
 msgid "Applicant"
 msgstr ""
 
-#: core/job_application.php:162
+#: core/job_application.php:165
 msgid "Hi"
 msgstr ""
 
-#: core/job_application.php:163
+#: core/job_application.php:166
 msgid "Thanks for applying to our"
 msgstr ""
 
-#: core/job_application.php:163
+#: core/job_application.php:166
 msgid "position"
 msgstr ""
 
-#: core/job_application.php:164
+#: core/job_application.php:167
 msgid "We'll review your application and be sure to get back to you if there might be a fit!"
 msgstr ""
 
-#: core/job_application.php:165
+#: core/job_application.php:168
 msgid "Best"
 msgstr ""
 
-#: core/job_application.php:179
+#: core/job_application.php:182
 msgid "Thank you for your application"
 msgstr ""
 
@@ -1301,7 +1336,7 @@ msgstr ""
 msgid "display"
 msgstr ""
 
-#: freemius/includes/class-freemius.php:19063
+#: freemius/includes/class-freemius.php:19059
 msgid "true"
 msgstr ""
 
@@ -1311,18 +1346,6 @@ msgstr ""
 
 #: freemius/templates/connect.php:370
 msgid "_activate_existing"
-msgstr ""
-
-#: front/view/apply.php:85
-msgid "Upload CV/Resume"
-msgstr ""
-
-#: front/view/apply.php:86
-msgid "Attach your resume. Max size 2mb"
-msgstr ""
-
-#: front/view/apply.php:90
-msgid "Allowed Types"
 msgstr ""
 
 #: front/view/apply.php:93
@@ -1357,7 +1380,7 @@ msgstr ""
 msgid "No job available!"
 msgstr ""
 
-#: front/view/single/header.php:88
+#: front/view/single/header.php:98
 msgid "reCaptcha verification failed!"
 msgstr ""
 
