@@ -264,17 +264,30 @@ if ( function_exists( 'job_fs' ) ) {
 
         // Setting output
         function jobwp_cpt_slug_output() {
+
+            wp_nonce_field('jobwp_cpt_slug_permalink_action', 'jobwp_cpt_slug_permalink_nonce');
             ?>
-            <input name="jobwp_cpt_slug" type="text" class="regular-text code" value="<?php esc_attr_e( get_option('jobwp_cpt_slug') ); ?>" placeholder="<?php echo 'jobs'; ?>" />
+            <input type="text" name="jobwp_cpt_slug" value="<?php esc_attr_e( get_option('jobwp_cpt_slug') ); ?>" placeholder="<?php echo 'jobs'; ?>" class="regular-text code" />
             <?php
         }
 
         // Save setting
         add_action('admin_init', function() {
 
-            if ( isset( $_POST['permalink_structure'] ) ) {
+            if ( isset( $_POST['permalink_structure'] ) && current_user_can('manage_options') ) {
+                
+                if ( isset( $_POST['_wp_http_referer'] ) && strpos( $_POST['_wp_http_referer'], 'options-permalink.php' ) !== false ) {
+                    
+                    // Checking the nonce exists and is valid
+                    if ( ! isset( $_POST['jobwp_cpt_slug_permalink_nonce'] ) || ! wp_verify_nonce( $_POST['jobwp_cpt_slug_permalink_nonce'], 'jobwp_cpt_slug_permalink_action' ) ) {
 
-                update_option( 'jobwp_cpt_slug', trim( sanitize_text_field( $_POST['jobwp_cpt_slug'] ) ) );
+                        wp_die('Security check failed');
+                    
+                    } else {
+                        
+                        update_option( 'jobwp_cpt_slug', trim( sanitize_text_field( $_POST['jobwp_cpt_slug'] ) ) );
+                    }
+                }
             }
         });
         
