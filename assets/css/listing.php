@@ -91,6 +91,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   div.jobwp-pagination>ul.page-numbers>li:hover,
   div.jobwp-pagination>ul.page-numbers>li>a.page-numbers:hover {
       background: <?php esc_html_e( $jobwp_hover_bg_color ); ?>;
+      border-color: <?php esc_html_e( $jobwp_hover_bg_color ); ?>;
       color: <?php esc_html_e( $jobwp_hover_font_color ); ?>;
       border-radius: <?php esc_html_e( $jobwp_pagination_border_radius ); ?>px;
   }

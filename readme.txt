@@ -225,6 +225,8 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 * Added - Pro
 [//]: # fs_premium_only_end
 * Improved stability and compatibility
+* Pagination layout improved
+* Tested compatibility with WordPress 7.0
 
 = 2.4.8 =
 [//]: # fs_premium_only_begin
