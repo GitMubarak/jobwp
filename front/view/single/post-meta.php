@@ -19,6 +19,11 @@ $bo_job_additional_requirements = get_post_meta( $post->ID, 'jobwp_add_req', tru
 $bo_other_benefits              = get_post_meta( $post->ID, 'jobwp_other_benefits', true );
 $bo_job_salary                  = get_post_meta( $post->ID, 'jobwp_salary', true );
 $jobwp_application_url          = get_post_meta( $post->ID, 'jobwp_application_url', true );
+$jobwp_deadline                 = get_post_meta( $post->ID, 'jobwp_deadline', true );
+$jobwp_base_salary_min	        = get_post_meta( $post->ID, 'jobwp_base_salary_min', true );
+$jobwp_base_salary_max	        = get_post_meta( $post->ID, 'jobwp_base_salary_max', true );
+$jobwp_base_salary_currency	    = get_post_meta( $post->ID, 'jobwp_base_salary_currency', true );
+$jobwp_base_salary_time	        = get_post_meta( $post->ID, 'jobwp_base_salary_time', true );
 
 if ( job_fs()->is_plan__premium_only('pro', true) ) {
     
@@ -30,5 +35,14 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
     } else {
         $jobwp_company_logo = '';
     }
+}
+
+// Job Nature
+if ( ! empty( $jobs_nature ) ) {
+    $jobs_nature_arr = array();
+    foreach( $jobs_nature as $nature ) {
+        $jobs_nature_arr[] = $nature->name . '';
+    }
+    $employmentType = implode( ', ', $jobs_nature_arr );   
 }
 ?>

@@ -16,14 +16,14 @@ if ( ! empty( $jobs_location ) ) {
     $location = implode( ', ', $jobs_location_arr );   
 }
 
-$jobs_nature    = wp_get_post_terms( $post->ID, 'jobs_nature', array('fields' => 'all') );
+$jobs_nature = wp_get_post_terms( $post->ID, 'jobs_nature', array('fields' => 'all') );
 
 if ( ! empty( $jobs_nature ) ) {
     $jobs_nature_arr = array();
     foreach( $jobs_nature as $type ) {
         $jobs_nature_arr[] = $type->name . '';
     }
-    $employmentType = implode( ', ', $jobs_nature_arr );   
+    $employmentType = implode( ', ', $jobs_nature_arr );
 }
 ?>
 <script type="application/ld+json">
@@ -36,13 +36,13 @@ if ( ! empty( $jobs_nature ) ) {
     "validThrough" : "<?php esc_html_e( $validThrough ); ?>",
     "employmentType" : "<?php esc_html_e( strtoupper( $employmentType ) ); ?>",
     "hiringOrganization" : {
-    "@type" : "Organization",
-    "name" : "<?php echo get_bloginfo( 'name' ); ?>",
-    "sameAs" : "<?php echo get_site_url(); ?>"
+        "@type" : "Organization",
+        "name" : "<?php echo get_bloginfo( 'name' ); ?>",
+        "sameAs" : "<?php echo get_site_url(); ?>"
     },
     "jobLocation": {
-    "@type": "Place",
-    "address": "<?php esc_html_e( $location ); ?>"
+        "@type": "Place",
+        "address": "<?php esc_html_e( $location ); ?>"
     }
 }
 </script>

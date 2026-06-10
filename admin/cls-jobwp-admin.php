@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 */
 class JobWp_Admin 
 {
-	use Jobwp_Core, JobwpGeneralSettings, 
+	use Jobwp_Core, JobWP_Currency, JobwpGeneralSettings,
 	Jobwp_Listing_Content_Settings, 
 	Jobwp_Listing_Styles_Settings,
 	Jobwp_Search_Content_Settings,
@@ -680,6 +680,10 @@ class JobWp_Admin
 		$jobwp_application_url	= get_post_meta( $post->ID, 'jobwp_application_url', true );
 		$jobwp_company			= get_post_meta( $post->ID, 'jobwp_company', true );
 		$jobwp_is_featured_job	= get_post_meta( $post->ID, 'jobwp_is_featured_job', true );
+		$jobwp_base_salary_min	= get_post_meta( $post->ID, 'jobwp_base_salary_min', true );
+		$jobwp_base_salary_max	= get_post_meta( $post->ID, 'jobwp_base_salary_max', true );
+		$jobwp_base_salary_currency	= get_post_meta( $post->ID, 'jobwp_base_salary_currency', true );
+		$jobwp_base_salary_time	= get_post_meta( $post->ID, 'jobwp_base_salary_time', true );
 
 		include_once JOBWP_PATH . 'admin/view/partial/job-info.php';
 	}
@@ -783,6 +787,10 @@ class JobWp_Admin
 			'jobwp_application_url'		=> isset( $_POST['jobwp_application_url'] ) ? sanitize_url( $_POST['jobwp_application_url'] ) : '',
 			'jobwp_company'				=> isset( $_POST['jobwp_company'] ) ? sanitize_text_field( $_POST['jobwp_company'] ) : null,
 			'jobwp_is_featured_job'		=> isset( $_POST['jobwp_is_featured_job'] ) ? sanitize_text_field( $_POST['jobwp_is_featured_job'] ) : null,
+			'jobwp_base_salary_min'		=> isset( $_POST['jobwp_base_salary_min'] ) ? sanitize_text_field( $_POST['jobwp_base_salary_min'] ) : null,
+			'jobwp_base_salary_max'		=> isset( $_POST['jobwp_base_salary_max'] ) ? sanitize_text_field( $_POST['jobwp_base_salary_max'] ) : null,
+			'jobwp_base_salary_currency'	=> isset( $_POST['jobwp_base_salary_currency'] ) ? sanitize_text_field( $_POST['jobwp_base_salary_currency'] ) : null,
+			'jobwp_base_salary_time'	=> isset( $_POST['jobwp_base_salary_time'] ) ? sanitize_text_field( $_POST['jobwp_base_salary_time'] ) : null,
 		);
 
 		foreach( $jobwp_meta_params as $key => $value ) {

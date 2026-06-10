@@ -101,6 +101,41 @@ if ( ! defined( 'ABSPATH' ) ) {
             ?>
         </td>
     </tr>
+    <tr class="jobwp_base_salary">
+        <th scope="row">
+            <label for="jobwp_base_salary"><?php _e('Base Salary', 'jobwp'); ?></label>
+        </th>
+        <td>
+            <?php _e('Min Salary', 'jobwp'); ?>&nbsp;
+            <input type="number" min="0" max="9999999999" name="jobwp_base_salary_min" value="<?php esc_attr_e( $jobwp_base_salary_min ); ?>" class="medium-text">
+            &nbsp;&nbsp;
+            <?php _e('Max Salary', 'jobwp'); ?>&nbsp;
+            <input type="number" min="0" max="9999999999" name="jobwp_base_salary_max" value="<?php esc_attr_e( $jobwp_base_salary_max ); ?>" class="medium-text">
+            &nbsp;&nbsp;
+            <?php _e('Currency', 'jobwp'); ?>&nbsp;
+            <select name="jobwp_base_salary_currency" id="jobwp_base_salary_currency" class="small-text">
+                <?php
+                $jobwpCurrency = $this->hm_get_all_currency();
+                foreach ( $jobwpCurrency as $curr ) { 
+                    ?>
+                    <option value="<?php esc_attr_e( $curr->abbreviation ); ?>" <?php selected( $jobwp_base_salary_currency, $curr->abbreviation ); ?> >
+                        <?php esc_html_e( $curr->abbreviation ); ?>
+                    </option>
+                    <?php
+                } 
+                ?>
+            </select>
+            &nbsp;&nbsp;
+            <?php _e('Schedule', 'jobwp'); ?>&nbsp;
+            <select name="jobwp_base_salary_time" class="medium-text">
+                <option value="HOUR" <?php selected( $jobwp_base_salary_time, 'HOUR' ); ?>><?php _e('Hourly', 'jobwp'); ?></option>
+                <option value="DAY" <?php selected( $jobwp_base_salary_time, 'DAY' ); ?>><?php _e('Daily', 'jobwp'); ?></option>
+                <option value="WEEK" <?php selected( $jobwp_base_salary_time, 'WEEK' ); ?>><?php _e('Weekly', 'jobwp'); ?></option>
+                <option value="MONTH" <?php selected( $jobwp_base_salary_time, 'MONTH' ); ?>><?php _e('Monthly', 'jobwp'); ?></option>
+                <option value="YEAR" <?php selected( $jobwp_base_salary_time, 'YEAR' ); ?>><?php _e('Yearly', 'jobwp'); ?></option>
+            </select>
+        </td>
+    </tr>
     <tr class="jobwp_status">
         <th scope="row">
             <label for="jobwp_status"><?php _e('Status', 'jobwp'); ?></label>

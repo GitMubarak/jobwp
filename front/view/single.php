@@ -39,8 +39,11 @@ do_action( 'jobwp_single_before_body_container' );
 // Load anything after single_body_container
 do_action( 'jobwp_single_after_body_container' );
 
-//Application form modal
+// Application form modal
 include 'single/applyform-modal.php';
+
+// load structured data
+include 'single/structured-data.php';
 
 get_footer(); 
 ?>

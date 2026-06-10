@@ -4,6 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 require_once JOBWP_PATH . 'core/core.php';
+include_once JOBWP_PATH . 'inc/cls-hm-currency.php';
 include_once JOBWP_PATH . 'core/general-settings.php';
 include_once JOBWP_PATH . 'core/listing-content.php';
 include_once JOBWP_PATH . 'core/listing-styles.php';
@@ -79,9 +80,7 @@ class JobWp_Master {
 		$this->jobwp_loader->add_action('wp_enqueue_scripts', $jobwp_front, JOBWP_PRFX . 'front_assets');
 		$this->jobwp_loader->add_filter('single_template', $jobwp_front, JOBWP_PRFX . 'single_template', 10);
 
-		if ( job_fs()->is_plan__premium_only('pro', true) ) {
-			$this->jobwp_loader->add_filter('wp_head', $jobwp_front, 'jobwp_add_ld_json', -1);
-		}
+		//$this->jobwp_loader->add_filter('wp_head', $jobwp_front, 'jobwp_add_ld_json', -1);
 		
 		$jobwp_front->jobwp_load_shortcode();
 	}
