@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <label for="jobwp_experience"><?php _e('Year of Experience', 'jobwp'); ?></label>
         </th>
         <td>
-            <input type="text" name="jobwp_experience" value="<?php esc_attr_e( $jobwp_experience ); ?>" class="regular-text">
+            <input type="text" name="jobwp_experience" value="<?php esc_attr_e( $jobwp_experience ); ?>" class="medium-text">
         </td>
     </tr>
     <tr class="jobwp_vacancies">
@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <label for="jobwp_vacancies"><?php _e('No. of Vacancies', 'jobwp'); ?></label>
         </th>
         <td>
-            <input type="number" min="1" max="20" step="1" name="jobwp_vacancies" value="<?php echo esc_attr( $jobwp_vacancies ); ?>" class="regular-text">
+            <input type="number" min="1" max="10000" step="1" name="jobwp_vacancies" value="<?php echo esc_attr( $jobwp_vacancies ); ?>" class="small-text">
         </td>
     </tr>
     <tr class="jobwp_deadline">

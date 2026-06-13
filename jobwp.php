@@ -256,6 +256,11 @@ if ( function_exists( 'job_fs' ) ) {
             }
             add_action( 'admin_bar_menu', 'jobwp_remove_admin_bar_menu_for_hr_users', 999 );
         }
+        
+        // Loading extra fields in job location taxonomy
+        // Specially for Google structure data
+        include 'location-extra-field.php';
+        //============================================= 
 
         // Add a books gallery slug option in permalink setting
         add_action('admin_init', function() {
