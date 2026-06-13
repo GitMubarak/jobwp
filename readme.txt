@@ -225,6 +225,7 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 * Added - Pro
 [//]: # fs_premium_only_end
 * Base salary item added to Google structure data
+* Location Country Code added to Google structure data
 * Location Postal Code added to Google structure data
 * Pagination layout improved
 * Improved stability and compatibility

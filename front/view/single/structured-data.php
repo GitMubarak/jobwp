@@ -38,10 +38,6 @@ if ( ! empty( $jobs_nature_arr ) ) {
 // Location
 if ( ! empty( $jobs_location ) ) {
 
-    /*$structureData['jobLocation'] = [ 
-        "@type" => "Place",
-    ];*/
-
     $jobLocationsSchema  = [];
     
     foreach ( $jobs_location as $loc ) {
@@ -50,12 +46,21 @@ if ( ! empty( $jobs_location ) ) {
             '@type' => 'Place',
             'address' => [
                 '@type'           => 'PostalAddress',
-                //'streetAddress'   = $loc['street'],
                 'addressLocality' => esc_html( $loc->name ),
-                //'addressRegion'   = $loc['region'],
-                //'addressCountry'  = $loc['country']
+                //'addressRegion'   = $loc['region']
             ]
         ];
+
+        if ( isset( $loc->description ) && ! empty( $loc->description ) ) {
+            $place['address']['streetAddress'] = esc_html( $loc->description );
+        }
+        
+        // Check if country exists and is not empty
+        $countryCode = get_term_meta( $loc->term_id, 'jobwp_location_country', true );
+
+        if ( isset( $countryCode ) && ! empty( $countryCode ) ) {
+            $place['address']['addressCountry'] = esc_html( $countryCode );
+        }
 
         // Check if postal code exists and is not empty
         $postalCode = get_term_meta( $loc->term_id, 'jobwp_location_post_code', true );
@@ -63,10 +68,6 @@ if ( ! empty( $jobs_location ) ) {
         if ( isset( $postalCode ) && ! empty( $postalCode ) ) {
             $place['address']['postalCode'] = esc_html( $postalCode );
         }
-        //$jobLocsArr[]['address']['@type'] = "PostalAddress";
-        //$jobLocsArr[]['address']['addressLocality'] = esc_html( $location->name );
-        //$jobLocsArr[]['address']['postalCode'] = esc_html( get_term_meta( $location->term_id, 'jobwp_location_post_code', true ) );
-        //$jobLocsArr[] = esc_html( $location->name );
 
         $jobLocationsSchema[] = $place;
     }
