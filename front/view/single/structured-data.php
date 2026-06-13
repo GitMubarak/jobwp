@@ -62,6 +62,13 @@ if ( ! empty( $jobs_location ) ) {
             $place['address']['addressCountry'] = esc_html( $countryCode );
         }
 
+        // Check if Region exists and is not empty
+        $addressRegion = get_term_meta( $loc->term_id, 'jobwp_location_region', true );
+
+        if ( isset( $addressRegion ) && ! empty( $addressRegion ) ) {
+            $place['address']['addressRegion'] = esc_html( $addressRegion );
+        }
+
         // Check if postal code exists and is not empty
         $postalCode = get_term_meta( $loc->term_id, 'jobwp_location_post_code', true );
 

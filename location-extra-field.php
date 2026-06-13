@@ -12,6 +12,10 @@ function jobwp_location_add_extra_fields( $taxonomy ) {
         <input type="text" name="jobwp_location_country"  id="jobwp-location-country" class="jobwp-location-country small-text">
     </div>
     <div class="form-field term-group">
+        <label for="jobwp_location_region"><?php _e('Region', 'jobwp'); ?></label>
+        <input type="text" name="jobwp_location_region"  id="jobwp-location-region" class="jobwp-location-region">
+    </div>
+    <div class="form-field term-group">
         <label for="jobwp_location_post_code"><?php _e('Postal Code', 'jobwp'); ?></label>
         <input type="text" name="jobwp_location_post_code"  id="jobwp-location-post-code" class="jobwp-location-post-code">
     </div>
@@ -29,6 +33,10 @@ function jobwp_location_save_extra_fields ( $term_id, $tt_id ) {
     // Country Code-2
     $jobwp_location_country = ( isset( $_POST['jobwp_location_country'] ) && '' !== $_POST['jobwp_location_country'] ) ? sanitize_text_field( $_POST['jobwp_location_country'] ) : '';
     add_term_meta( $term_id, 'jobwp_location_country', $jobwp_location_country, true );
+
+    // Region
+    $jobwp_location_region = ( isset( $_POST['jobwp_location_region'] ) && '' !== $_POST['jobwp_location_region'] ) ? sanitize_text_field( $_POST['jobwp_location_region'] ) : '';
+    add_term_meta( $term_id, 'jobwp_location_region', $jobwp_location_region, true );
 }
 
 // Step3: Display Extra Fields in Edit Form
@@ -36,6 +44,7 @@ add_action( 'jobs_location_edit_form_fields', 'jobwp_location_edit_extra_fields'
 function jobwp_location_edit_extra_fields ( $term, $taxonomy ) {
 
     $jobwp_location_country     = get_term_meta( $term->term_id, 'jobwp_location_country', true );
+    $jobwp_location_region      = get_term_meta( $term->term_id, 'jobwp_location_region', true );
     $jobwp_location_post_code   = get_term_meta( $term->term_id, 'jobwp_location_post_code', true );
     ?>
     <tr class="form-field term-group-wrap">
@@ -44,6 +53,14 @@ function jobwp_location_edit_extra_fields ( $term, $taxonomy ) {
         </th>
         <td>
             <input type="text" name="jobwp_location_country" value="<?php esc_attr_e( $jobwp_location_country ); ?>" id="jobwp-location-country" class="jobwp-location-country">
+        </td>
+    </tr>
+    <tr class="form-field term-group-wrap">
+        <th scope="row">
+            <label for="jobwp_location_region"><?php _e('Region', 'jobwp'); ?></label>
+        </th>
+        <td>
+            <input type="text" name="jobwp_location_region" value="<?php esc_attr_e( $jobwp_location_region ); ?>" id="jobwp-location-region" class="jobwp-location-region">
         </td>
     </tr>
     <tr class="form-field term-group-wrap">
@@ -65,6 +82,10 @@ function jobwp_location_update_extra_fields ( $term_id, $tt_id ) {
     $jobwp_location_country = ( isset( $_POST['jobwp_location_country'] ) && '' !== $_POST['jobwp_location_country'] ) ? sanitize_text_field( $_POST['jobwp_location_country'] ) : '';
     update_term_meta ( $term_id, 'jobwp_location_country', $jobwp_location_country );
 
+    // Update Region
+    $jobwp_location_region = ( isset( $_POST['jobwp_location_region'] ) && '' !== $_POST['jobwp_location_region'] ) ? sanitize_text_field( $_POST['jobwp_location_region'] ) : '';
+    update_term_meta ( $term_id, 'jobwp_location_region', $jobwp_location_region );
+
     // Update Postal Code
     $jobwp_location_post_code = ( isset( $_POST['jobwp_location_post_code'] ) && '' !== $_POST['jobwp_location_post_code'] ) ? sanitize_text_field( $_POST['jobwp_location_post_code'] ) : '';
     update_term_meta ( $term_id, 'jobwp_location_post_code', $jobwp_location_post_code );
@@ -74,8 +95,9 @@ function jobwp_location_update_extra_fields ( $term_id, $tt_id ) {
 add_filter( 'manage_edit-jobs_location_columns', 'jobwp_location_extra_fields_in_column_heading' );
 function jobwp_location_extra_fields_in_column_heading( $columns ) {
 
-    $columns['jobwp_location_country'] = __('Country', 'jobwp');
-    $columns['jobwp_location_post_code'] = __('Postal Code', 'jobwp');
+    $columns['jobwp_location_country']      = __('Country', 'jobwp');
+    $columns['jobwp_location_region']       = __('Region', 'jobwp');
+    $columns['jobwp_location_post_code']    = __('Postal Code', 'jobwp');
     return $columns;
 }
 
@@ -84,6 +106,7 @@ function jobwp_location_extra_fields_in_column( $string, $columns, $term_id ) {
 
     $jobwp_location_post_code   = get_term_meta( $term_id, 'jobwp_location_post_code', true );
     $jobwp_location_country     = get_term_meta( $term_id, 'jobwp_location_country', true );
+    $jobwp_location_region      = get_term_meta( $term_id, 'jobwp_location_region', true );
 
     switch ( $columns ) {
         case 'jobwp_location_post_code' :
@@ -91,6 +114,9 @@ function jobwp_location_extra_fields_in_column( $string, $columns, $term_id ) {
         break;
         case 'jobwp_location_country' :
             esc_html_e( $jobwp_location_country );
+        break;
+        case 'jobwp_location_region' :
+            esc_html_e( $jobwp_location_region );
         break;
     }
 }
