@@ -12,6 +12,12 @@ $structureData = [
     "datePosted"    => date("Y-m-d", strtotime( get_the_date() )),
 ];
 
+$structureData['identifier'] = [ 
+    "@type" => "PropertyValue",
+    "name" => "JobWP",
+    "value" => "jobwp-" .get_the_ID()
+];
+
 if ( ! empty( $jobwp_deadline ) ) {
     $structureData['validThrough'] = date("c", strtotime( esc_html( $jobwp_deadline ) ));
 }

@@ -228,6 +228,7 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 * Location Country Code added to Google structure data
 * Location Region Code added to Google structure data
 * Location Postal Code added to Google structure data
+* Identifier added to Google structure data
 * Pagination layout improved
 * Improved stability and compatibility
 * Tested compatibility with WordPress 7.0
