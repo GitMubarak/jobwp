@@ -12,7 +12,7 @@ if ( ! function_exists( 'job_fs' ) ) {
 
         if ( ! isset( $job_fs ) ) {
             // Include Freemius SDK.
-            require_once JOBWP_PATH . '/freemius/start.php';
+            require_once JOBWP_PATH . 'vendor/freemius/start.php';
 
             $job_fs = fs_dynamic_init( array(
                 'id'                  => '10190',

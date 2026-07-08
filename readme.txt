@@ -232,6 +232,7 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 * Pagination layout improved
 * Improved stability and compatibility
 * Tested compatibility with WordPress 7.0
+* Freemius SDK upgraded to 2.13.2
 
 = 2.4.8 =
 [//]: # fs_premium_only_begin
