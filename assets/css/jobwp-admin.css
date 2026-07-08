@@ -59,7 +59,15 @@ td.jobwp-settings-block-title {
 }
 
 table.jobwp-single-settings-table tr td input[type='text'],
-table.jobwp-single-settings-table tr td input[type='password'] {
+table.jobwp-single-settings-table tr td input[type='password'],
+table.jobwp-single-settings-table tr td select,
+table.jobwp-single-settings-table tr td textarea,
+table.jobwp-listing-content-settings-table tr td input[type='number'],
+table.jobwp-listing-content-settings-table tr td input[type='text'],
+table.jobwp-listing-content-settings-table tr td textarea,
+table.jobwp-listing-style-settings-table tr td input[type='number'],
+table.jobwp-settings-table tr td input[type='number'],
+table.jobwp-single-style-settings-table tr td input[type='number'] {
     border-radius: 5px;
     background-color: #F5F4ED;
 }
