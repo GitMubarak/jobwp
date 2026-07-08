@@ -7,7 +7,8 @@
 
 table.jobwp-settings-table,
 table.jobwp-listing-style-settings-table,
-table.jobwp-single-style-settings-table {
+table.jobwp-single-style-settings-table,
+table.jobwp-single-settings-table {
     width: 100%;
 }
 
@@ -21,11 +22,14 @@ table.jobwp-single-settings-table tr th,
 table.jobwp-single-settings-table tr td,
 table.jobwp-single-style-settings-table tr th,
 table.jobwp-single-style-settings-table tr td {
-    border: 0px solid #EAEAEA;
-    padding: 10px;
+    border-top: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-bottom: 0px solid #DDD;
+    padding: 15px;
     text-align: left;
     vertical-align: middle;
-    background-color: #F7F7F7;
+    background-color: #FFFFFF;
 }
 
 table.jobwp-settings-table tr th,
@@ -35,6 +39,7 @@ table.jobwp-single-settings-table tr th,
 table.jobwp-single-style-settings-table tr th {
     font-weight: 600;
     vertical-align: middle;
+    background-color: #F5F4ED;
 }
 
 table.jobwp-settings-table tr th {
@@ -44,6 +49,19 @@ table.jobwp-settings-table tr th {
 table.jobwp-listing-style-settings-table tr th {
     max-width: 120px;
     text-align: right;
+}
+
+td.jobwp-settings-block-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #FAF9F5 !important;
+}
+
+table.jobwp-single-settings-table tr td input[type='text'],
+table.jobwp-single-settings-table tr td input[type='password'] {
+    border-radius: 5px;
+    background-color: #F5F4ED;
 }
 
 .manage-column.column-jobwp_list_sl {

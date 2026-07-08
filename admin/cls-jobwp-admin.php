@@ -927,25 +927,18 @@ class JobWp_Admin
 	function jobwp_job_company_add_form_fields( $taxonomy ) {
 		?>
 		<div class="form-field term-group">
-
 			<label for="jobwp_company_email"><?php _e('Company Email', 'jobwp'); ?></label>
 			<input type="text" id="jobwp_company_email" name="jobwp_company_email" class="jobwp_company_email">
-
 		</div>
 		<div class="form-field term-group">
-
 			<label for="jobwp_company_web"><?php _e('Company Website', 'jobwp'); ?></label>
 			<input type="text" id="jobwp_company_web" name="jobwp_company_web" class="jobwp_company_web">
-			
 		</div>
 		<div class="form-field term-group">
-
 			<label for="jobwp_company_addr"><?php _e('Company Address', 'jobwp'); ?></label>
 			<input type="text" id="jobwp_company_addr" name="jobwp_company_addr" class="jobwp_company_addr">
-			
 		</div>
 		<div class="form-field term-group">
-
 			<label for="jobwp_company_logo_id"><?php _e('Company Logo', 'jobwp'); ?></label>
 			<input type="hidden" id="jobwp_company_logo_id" name="jobwp_company_logo_id" class="jobwp_company_logo_id" value="">
 
@@ -955,7 +948,6 @@ class JobWp_Admin
 				<input type="button" class="button button-secondary jobwp_company_logo_button_add" id="jobwp_company_logo_button_add" name="jobwp_company_logo_button_add" value="<?php _e( 'Add Logo', 'jobwp' ); ?>">
 				<input type="button" class="button button-secondary jobwp_company_logo_button_remove" id="jobwp_company_logo_button_remove" name="jobwp_company_logo_button_remove" value="<?php _e( 'Remove Logo', 'jobwp' ); ?>">
 			</p>
-
 		</div>
 		<?php
 	}

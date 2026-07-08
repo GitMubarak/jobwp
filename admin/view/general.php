@@ -31,6 +31,9 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                 <form name="jobwp_general_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-general-settings-form">
                 <?php wp_nonce_field( 'jobwp_general_action_filed', 'jobwp_general_nonce_field' ); ?>
                     <table class="jobwp-single-settings-table">
+                        <tr>
+                            <td colspan="2" class="jobwp-settings-block-title"><?php _e('Notifications', 'jobwp'); ?></td>
+                        </tr>
                         <tr class="jobwp_admin_noti_email">
                             <th scope="row">
                                 <label><?php _e('Admin Notification Email', 'jobwp'); ?></label>
@@ -74,6 +77,9 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <code><?php _e('An email will sent to this role based user emails when a candidate submit an applicaiton.', 'jobwp'); ?></code>
                             </td>
                         </tr>
+                        <tr>
+                            <td colspan="2" class="jobwp-settings-block-title"><?php _e('Layout', 'jobwp'); ?></td>
+                        </tr>
                         <tr class="jobwp_list_layout">
                             <th scope="row">
                                 <label><?php _e('Job Page Layout', 'jobwp'); ?></label>
@@ -85,6 +91,9 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <input type="radio" name="jobwp_list_layout" id="jobwp_list_layout_grid" value="grid" <?php echo ( 'grid' === $jobwp_list_layout ) ? 'checked' : ''; ?> >
                                 <label for="jobwp_list_layout_grid"><span></span><?php _e('Grid', 'jobwp'); ?></label>
                             </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="jobwp-settings-block-title"><?php _e('Application form', 'jobwp'); ?></td>
                         </tr>
                         <tr class="jobwp_ext_application_form">
                             <th scope="row">
@@ -210,9 +219,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                         </tr>
                         <!-- Captcha -->
                         <tr>
-                            <td colspan="2" style="font-size: 18px;">
-                                <hr><b><?php _e('Captcha', 'jobwp'); ?></b><hr>
-                            </td>
+                            <td colspan="2" class="jobwp-settings-block-title"><?php _e('reCAPTCHA', 'jobwp'); ?></td>
                         </tr>
                         <tr class="jobwp_recaptcha_site_key">
                             <th scope="row">
