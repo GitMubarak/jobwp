@@ -54,9 +54,11 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <td>
                                     <div class="pro-unlock">
                                         <i class="fa-regular fa-envelope" style="font-size:18px;flex-shrink:0" aria-hidden="true"></i>
-                                        <div class="pro-unlock-text">Route new applications to specific user roles — not just the admin. Essential for agencies with account managers per client.</div>
-                                            <?php echo '<a href="' . job_fs()->get_upgrade_url() . '" class="pro-unlock-btn">' . __('Unlock', 'jobwp') . '</a>'; ?>
+                                        <div class="pro-unlock-text">
+                                            <?php _e('Route new applications to specific user roles — not just the admin. Essential for agencies with account managers per client.', 'jobwp'); ?>
                                         </div>
+                                        <?php echo '<a href="' . job_fs()->get_upgrade_url() . '" class="pro-unlock-btn">' . __('Unlock', 'jobwp') . '</a>'; ?>
+                                    </div>
                                 </td>
                             </tr>
                             <?php
@@ -118,26 +120,40 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <input type="text" name="jobwp_ext_application_form_shortcode" id="jobwp_ext_application_form_shortcode" class="regular-text" value="<?php esc_attr_e( stripslashes( $jobwp_ext_application_form_shortcode ) ); ?>" />
                             </td>
                         </tr>
-                        <tr class="jobwp_ext_apply_now_url">
-                            <th scope="row">
-                                <label for="jobwp_ext_apply_now_url"><?php _e('Allow External Application URL', 'jobwp'); ?>?</label>
-                            </th>
-                            <td>
-                                <?php
-                                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                                    ?>
-                                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                                    <?php
-                                }
+                        <?php
+                        if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                            ?>
+                            <tr class="upgrade-promotion">
+                                <th scope="row">
+                                    <label for="jobwp_ext_apply_now_url"><i class="fa fa-lock" aria-hidden="true"></i><?php _e('Allow external application URL', 'jobwp'); ?></label>
+                                </th>
+                                <td>
+                                    <div class="pro-unlock">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        <div class="pro-unlock-text">
+                                            <?php _e('Link jobs directly to LinkedIn, Indeed, or any external URL. Perfect for affiliate job boards and agency clients.', 'jobwp'); ?>
+                                        </div>
+                                        <?php echo '<a href="' . job_fs()->get_upgrade_url() . '" class="pro-unlock-btn">' . __('Unlock', 'jobwp') . '</a>'; ?>
+                                    </div>
+                                </td>
+                            </tr>
+                            <?php
+                        }
 
-                                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                                    ?>
-                                    <input type="checkbox" name="jobwp_ext_apply_now_url" class="jobwp_ext_apply_now_url" id="jobwp_ext_apply_now_url" <?php echo $jobwp_ext_apply_now_url ? 'checked' : ''; ?>>
-                                    <?php
-                                }
-                                ?>
-                            </td>
-                        </tr>
+                        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                            ?>
+                            <tr class="jobwp_ext_apply_now_url">
+                                <th scope="row">
+                                    <label for="jobwp_ext_apply_now_url"><?php _e('Allow external application URL', 'jobwp'); ?>?</label>
+                                </th>
+                                <td>
+                                    <input type="checkbox" name="jobwp_ext_apply_now_url" class="jobwp_ext_apply_now_url" id="jobwp_ext_apply_now_url" <?php echo $jobwp_ext_apply_now_url ? 'checked' : ''; ?>>    
+                                    <?php _e('Enable', 'jobwp'); ?>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
                         <tr class="jobwp_hide_jobs_deadline_over">
                             <th scope="row">
                                 <label for="jobwp_hide_jobs_deadline_over"><?php _e('Hide Jobs When Deadline is Over', 'jobwp'); ?>?</label>
