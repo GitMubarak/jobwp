@@ -174,8 +174,6 @@ class JobWp_Admin
 			}
 		}
 
-		$jobwpGeneralSettings = $this->jobwp_get_general_settings();
-
 		require_once JOBWP_PATH . 'admin/view/general.php';
 	}
 

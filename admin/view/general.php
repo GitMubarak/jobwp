@@ -3,6 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+$jobwpGeneralSettings = $this->jobwp_get_general_settings();
 //print_r( $jobwpGeneralSettings );
 foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
     if ( isset( $jobwpGeneralSettings[$option_name] ) ) {
@@ -30,34 +31,44 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
             <div class="tab-content">
                 <form name="jobwp_general_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-general-settings-form">
                 <?php wp_nonce_field( 'jobwp_general_action_filed', 'jobwp_general_nonce_field' ); ?>
-                    <table class="jobwp-single-settings-table">
+                    <table class="hm-settings-table jobwp-single-settings-table" cellpadding="0" cellspacing="0">
                         <tr>
                             <td colspan="2" class="jobwp-settings-block-title"><?php _e('Notifications', 'jobwp'); ?></td>
                         </tr>
                         <tr class="jobwp_admin_noti_email">
                             <th scope="row">
-                                <label><?php _e('Admin Notification Email', 'jobwp'); ?></label>
+                                <label><?php _e('Admin notification email', 'jobwp'); ?></label>
                             </th>
                             <td>
                                 <input type="text" name="jobwp_admin_noti_email" id="jobwp_admin_noti_email" class="regular-text" value="<?php esc_attr_e( $jobwp_admin_noti_email ); ?>" />
-                                <br>
-                                <code><?php _e('An email will sent to this email when a candidate submit an applicaiton.', 'jobwp'); ?></code>
+                                <span><?php _e('An email is sent here when a candidate submits an application.', 'jobwp'); ?></span>
                             </td>
                         </tr>
-                        <tr class="jobwp_admin_noti_email_users">
-                            <th scope="row">
-                                <label for="jobwp_ext_apply_now_url"><?php _e('Notification Email to User Role', 'jobwp'); ?></label>
-                            </th>
-                            <td>
-                                <?php
-                                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                                    ?>
-                                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                                    <?php
-                                }
-
-                                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                                    ?>
+                        <?php
+                        if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+                            ?>
+                            <tr class="upgrade-promotion">
+                                <th scope="row">
+                                    <label for="jobwp_ext_apply_now_url"><i class="fa fa-lock" aria-hidden="true"></i><?php _e('Notification email to user role', 'jobwp'); ?></label>
+                                </th>
+                                <td>
+                                    <div class="pro-unlock">
+                                        <i class="fa-regular fa-envelope" style="font-size:18px;flex-shrink:0" aria-hidden="true"></i>
+                                        <div class="pro-unlock-text">Route new applications to specific user roles — not just the admin. Essential for agencies with account managers per client.</div>
+                                            <?php echo '<a href="' . job_fs()->get_upgrade_url() . '" class="pro-unlock-btn">' . __('Unlock', 'jobwp') . '</a>'; ?>
+                                        </div>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                        
+                        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+                            ?>
+                            <tr class="jobwp_admin_noti_email_users">
+                                <th scope="row">
+                                    <label for="jobwp_ext_apply_now_url"><?php _e('Notification email to user role', 'jobwp'); ?></label>
+                                </th>
+                                <td>
                                     <select id="jobwp_admin_noti_email_users" name="jobwp_admin_noti_email_users">
                                         <option value=""><?php _e('Select User Role', 'jobwp'); ?></option>
                                         <?php
@@ -70,26 +81,25 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                         }
                                         ?>
                                     </select>
-                                    <?php
-                                }
-                                ?>
-                                <br>
-                                <code><?php _e('An email will sent to this role based user emails when a candidate submit an applicaiton.', 'jobwp'); ?></code>
-                            </td>
-                        </tr>
+                                    <span><?php _e("An email is sent to this role based user's email when an applicaiton is submitted.", 'jobwp'); ?></span>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
                         <tr>
                             <td colspan="2" class="jobwp-settings-block-title"><?php _e('Layout', 'jobwp'); ?></td>
                         </tr>
                         <tr class="jobwp_list_layout">
                             <th scope="row">
-                                <label><?php _e('Job Page Layout', 'jobwp'); ?></label>
+                                <label><?php _e('Job listing page layout', 'jobwp'); ?></label>
                             </th>
                             <td>
                                 <input type="radio" name="jobwp_list_layout" id="jobwp_list_layout_list" value="list" <?php echo ( 'list' === $jobwp_list_layout ) ? 'checked' : ''; ?> >
-                                <label for="jobwp_list_layout_list"><span></span><?php _e('List', 'jobwp'); ?></label>
+                                <label for="jobwp_list_layout_list"><?php _e('List', 'jobwp'); ?></label>
                                 &nbsp;&nbsp;
                                 <input type="radio" name="jobwp_list_layout" id="jobwp_list_layout_grid" value="grid" <?php echo ( 'grid' === $jobwp_list_layout ) ? 'checked' : ''; ?> >
-                                <label for="jobwp_list_layout_grid"><span></span><?php _e('Grid', 'jobwp'); ?></label>
+                                <label for="jobwp_list_layout_grid"><?php _e('Grid', 'jobwp'); ?></label>
                             </td>
                         </tr>
                         <tr>
@@ -97,21 +107,15 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                         </tr>
                         <tr class="jobwp_ext_application_form">
                             <th scope="row">
-                                <label for="jobwp_ext_application_form"><?php _e('Use External Application Form', 'jobwp'); ?>?</label>
+                                <label for="jobwp_ext_application_form"><?php _e('Use external application form', 'jobwp'); ?>?</label>
                             </th>
                             <td>
                                 <input type="checkbox" name="jobwp_ext_application_form" class="jobwp_ext_application_form" id="jobwp_ext_application_form"
-                                    <?php echo $jobwp_ext_application_form ? 'checked' : ''; ?> >
-                            </td>
-                        </tr>
-                        <tr class="jobwp_ext_application_form_shortcode">
-                            <th scope="row">
-                                <label><?php _e('External Application Form Shortcode', 'jobwp'); ?></label>
-                            </th>
-                            <td>
-                                <input type="text" name="jobwp_ext_application_form_shortcode" id="jobwp_ext_application_form_shortcode" class="regular-text" value="<?php esc_attr_e( stripslashes( $jobwp_ext_application_form_shortcode ) ); ?>" />
+                                    <?php echo $jobwp_ext_application_form ? 'checked' : ''; ?>>
+                                <?php _e('Enable', 'jobwp'); ?>
+                                <span><?php _e('Use WPForms, Contact Form 7, or any shortcode-based form instead of the built-in form.', 'jobwp'); ?></span>
                                 <br>
-                                <code><?php _e('You can use external form instead of default application form. Like WPForms, Contact Form etc.', 'jobwp'); ?></code>
+                                <input type="text" name="jobwp_ext_application_form_shortcode" id="jobwp_ext_application_form_shortcode" class="regular-text" value="<?php esc_attr_e( stripslashes( $jobwp_ext_application_form_shortcode ) ); ?>" />
                             </td>
                         </tr>
                         <tr class="jobwp_ext_apply_now_url">
@@ -210,8 +214,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                         } 
                                         ?>
                                     </select>
-                                    <br>
-                                    <code><?php _e('Select the page that will be redirected after application submit', 'jobwp'); ?></code>
+                                    <span><?php _e('Select the page that will be redirected after application submit', 'jobwp'); ?></span>
                                     <?php
                                 }
                                 ?>

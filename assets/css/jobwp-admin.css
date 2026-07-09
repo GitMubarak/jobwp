@@ -5,6 +5,64 @@
     margin-bottom: 20px;
 }
 
+table.hm-settings-table {
+    border-left: 1px solid #DDD;
+    width: 100%;
+}
+
+table.hm-settings-table tr.upgrade-promotion th,
+table.hm-settings-table tr.upgrade-promotion td {
+    background: #F6EEDF;
+    border-bottom: 1px solid #805C1F;
+}
+
+table.hm-settings-table tr.upgrade-promotion th {
+    color: #805C1F;
+    width: 200px;
+    vertical-align: top;
+}
+
+table.hm-settings-table span {
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+}
+
+table.hm-settings-table tr.upgrade-promotion td .pro-unlock {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: #FFF;
+    border: 0.5px solid #805C1F;
+    border-radius: 8px;
+}
+
+.pro-unlock-text {
+    font-size: 14px;
+    flex: 1;
+    line-height: 1.4;
+}
+
+.pro-unlock-btn {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: #F6EEDF;
+    color: #805C1F;
+    border: 0.5px solid #805C1F;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+.pro-unlock-btn:hover {
+    background: #805C1F;
+    color: #F6EEDF;
+}
+
 table.jobwp-settings-table,
 table.jobwp-listing-style-settings-table,
 table.jobwp-single-style-settings-table,
@@ -24,7 +82,7 @@ table.jobwp-single-style-settings-table tr th,
 table.jobwp-single-style-settings-table tr td {
     border-top: 1px solid #DDD;
     border-right: 1px solid #DDD;
-    border-left: 1px solid #DDD;
+    border-left: 0px solid #DDD;
     border-bottom: 0px solid #DDD;
     padding: 15px;
     text-align: left;
@@ -38,12 +96,13 @@ table.jobwp-listing-style-settings-table tr th,
 table.jobwp-single-settings-table tr th,
 table.jobwp-single-style-settings-table tr th {
     font-weight: 600;
-    vertical-align: middle;
+    vertical-align: top;
     background-color: #F5F4ED;
 }
 
 table.jobwp-settings-table tr th {
     text-align: right;
+    vertical-align: top;
 }
 
 table.jobwp-listing-style-settings-table tr th {
@@ -56,6 +115,7 @@ td.jobwp-settings-block-title {
     font-size: 14px;
     font-weight: 600;
     background-color: #FAF9F5 !important;
+    padding: 10px 20px !important;
 }
 
 table.jobwp-single-settings-table tr td input[type='text'],
