@@ -22,56 +22,48 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 <input type="number" name="jobwp_list_title_length" class="medium-text" min="1" max="150" step="1" value="<?php esc_attr_e( $jobwp_list_title_length ); ?>">
             </td>
         </tr>
-        <tr class="jobwp_display_company_name">
-            <th scope="row">
-                <label><?php _e('Display Company Name', 'jobwp'); ?>?</label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
+        <?php
+        echo '<tr><td colspan="6" style="padding:0;"></td></tr>';
+        $jobwp_upgrade_arr = [
+            'label' => 'Display company name & logo',
+            'icon' => 'fa-regular fa-address-card',
+            'message' => "Show the hiring company's name and logo on each listing card — essential for recruitment agencies posting jobs on behalf of multiple clients.",
+        ];
 
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
+        $this->jobwp_upgrade_to_premium_section( $jobwp_upgrade_arr );
+
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+            ?>
+            <tr class="jobwp_display_company_name">
+                <th scope="row">
+                    <label><?php _e('Display Company Name', 'jobwp'); ?>?</label>
+                </th>
+                <td>
                     <input type="checkbox" name="jobwp_display_company_name" class="jobwp_display_company_name" id="jobwp_display_company_name" <?php echo $jobwp_display_company_name ? 'checked' : ''; ?>>
                     <label for="jobwp_display_company_name"><?php _e('Enable', 'jobwp'); ?></label>
-                    <?php
-                }
-                ?>
-            </td>
-            <th scope="row">
-                <label><?php _e('Display Company Logo', 'jobwp'); ?>?</label>
-            </th>
-            <td colspan="3">
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
-
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
+                </td>
+                <th scope="row">
+                    <label><?php _e('Display Company Logo', 'jobwp'); ?>?</label>
+                </th>
+                <td colspan="3">
                     <input type="checkbox" name="jobwp_display_company_logo" class="jobwp_display_company_logo" id="jobwp_display_company_logo" <?php echo $jobwp_display_company_logo ? 'checked' : ''; ?>>
                     <label for="jobwp_display_company_logo"><?php _e('Enable', 'jobwp'); ?></label>
-                    <?php
-                }
-                ?>
-            </td>
-        </tr>
+                </td>
+            </tr>
+            <?php
+        }
+        ?>
         <!-- Hide Overview -->
         <tr class="jobwp_list_display_overview">
             <th scope="row">
-                <label for="jobwp_list_display_overview"><?php _e('Hide Overview', 'jobwp'); ?>?</label>
+                <label><?php _e('Hide Overview', 'jobwp'); ?>?</label>
                 <span class="dashicons dashicons-info-outline jobwp-admin-icon"></span>
                 <img src="<?php echo esc_attr( JOBWP_ASSETS . 'img/jobwp-list-hide-overview.webp' ); ?>" class="jobwp-admin-help-img">
             </th>
             <td>
                 <input type="checkbox" name="jobwp_list_display_overview" class="jobwp_list_display_overview" id="jobwp_list_display_overview"
-                    <?php echo $jobwp_list_display_overview ? 'checked' : ''; ?> >
+                    <?php echo $jobwp_list_display_overview ? 'checked' : ''; ?>>
+                <label for="jobwp_list_display_overview"><?php _e('Enable', 'jobwp'); ?></label>
             </td>
             <th scope="row">
                 <label for="wbg_cat_label_txt"><?php _e('Word Length', 'jobwp'); ?></label>
@@ -87,17 +79,18 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
         <!-- Hide Experience -->
         <tr>
             <th scope="row">
-                <label for="jobwp_list_display_experience"><?php _e('Hide Experience', 'jobwp'); ?>?</label>
+                <label><?php _e('Hide Experience', 'jobwp'); ?>?</label>
             </th>
             <td>
                 <input type="checkbox" name="jobwp_list_display_experience" class="jobwp_list_display_experience" id="jobwp_list_display_experience"
-                    <?php echo $jobwp_list_display_experience ? 'checked' : ''; ?> >
+                    <?php echo $jobwp_list_display_experience ? 'checked' : ''; ?>>
+                <label for="jobwp_list_display_experience"><?php _e('Enable', 'jobwp'); ?></label>
             </td>
             <th scope="row">
                 <label><?php _e('Label Text', 'jobwp'); ?></label>
             </th>
             <td>
-                <input type="text" name="jobwp_list_exp_lbl_txt" id="jobwp_list_exp_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_exp_lbl_txt ); ?>" />
+                <input type="text" name="jobwp_list_exp_lbl_txt" id="jobwp_list_exp_lbl_txt" class="medium-text" value="<?php esc_attr_e( $jobwp_list_exp_lbl_txt ); ?>" />
             </td>
             <th scope="row">
                 <label for="jobwp_list_exp_order"><?php _e('Order', 'jobwp'); ?></label>
@@ -109,17 +102,18 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
         <!-- Hide Deadline -->
         <tr>
             <th scope="row">
-                <label for="jobwp_list_display_deadline"><?php _e('Hide Deadline', 'jobwp'); ?>?</label>
+                <label><?php _e('Hide Deadline', 'jobwp'); ?>?</label>
             </th>
             <td>
                 <input type="checkbox" name="jobwp_list_display_deadline" class="jobwp_list_display_deadline" id="jobwp_list_display_deadline"
-                    <?php echo $jobwp_list_display_deadline ? 'checked' : ''; ?> >
+                    <?php echo $jobwp_list_display_deadline ? 'checked' : ''; ?>>
+                <label for="jobwp_list_display_deadline"><?php _e('Enable', 'jobwp'); ?></label>
             </td>
             <th scope="row">
                 <label><?php _e('Label Text', 'jobwp'); ?></label>
             </th>
             <td>
-                <input type="text" name="jobwp_list_deadline_lbl_txt" id="jobwp_list_deadline_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_deadline_lbl_txt ); ?>" />
+                <input type="text" name="jobwp_list_deadline_lbl_txt" id="jobwp_list_deadline_lbl_txt" class="medium-text" value="<?php esc_attr_e( $jobwp_list_deadline_lbl_txt ); ?>" />
             </td>
             <th scope="row">
                 <label for="jobwp_list_deadline_order"><?php _e('Order', 'jobwp'); ?></label>
@@ -131,17 +125,18 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
         <!-- Hide Location -->
         <tr>
             <th scope="row">
-                <label for="jobwp_list_display_location"><?php _e('Hide Location', 'jobwp'); ?>?</label>
+                <label><?php _e('Hide Location', 'jobwp'); ?>?</label>
             </th>
             <td>
                 <input type="checkbox" name="jobwp_list_display_location" class="jobwp_list_display_location" id="jobwp_list_display_location"
-                    <?php echo $jobwp_list_display_location ? 'checked' : ''; ?> >
+                    <?php echo $jobwp_list_display_location ? 'checked' : ''; ?>>
+                <label for="jobwp_list_display_location"><?php _e('Enable', 'jobwp'); ?></label>
             </td>
             <th scope="row">
                 <label><?php _e('Label Text', 'jobwp'); ?></label>
             </th>
             <td>
-                <input type="text" name="jobwp_list_loc_lbl_txt" id="jobwp_list_loc_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_loc_lbl_txt ); ?>" />
+                <input type="text" name="jobwp_list_loc_lbl_txt" id="jobwp_list_loc_lbl_txt" class="medium-text" value="<?php esc_attr_e( $jobwp_list_loc_lbl_txt ); ?>" />
             </td>
             <th scope="row">
                 <label for="jobwp_list_loc_order"><?php _e('Order', 'jobwp'); ?></label>
@@ -153,17 +148,18 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
         <!-- Hide Job Type -->
         <tr class="jobwp_list_display_jtype">
             <th scope="row">
-                <label for="jobwp_list_display_jtype"><?php _e('Hide Job Type', 'jobwp'); ?>?</label>
+                <label><?php _e('Hide Job Type', 'jobwp'); ?>?</label>
             </th>
             <td>
                 <input type="checkbox" name="jobwp_list_display_jtype" class="jobwp_list_display_jtype" id="jobwp_list_display_jtype"
-                    <?php echo $jobwp_list_display_jtype ? 'checked' : ''; ?> >
+                    <?php echo $jobwp_list_display_jtype ? 'checked' : ''; ?>>
+                <label for="jobwp_list_display_jtype"><?php _e('Enable', 'jobwp'); ?></label>
             </td>
             <th scope="row">
                 <label><?php _e('Label Text', 'jobwp'); ?></label>
             </th>
             <td>
-                <input type="text" name="jobwp_list_job_type_lbl_txt" id="jobwp_list_job_type_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_job_type_lbl_txt ); ?>" />
+                <input type="text" name="jobwp_list_job_type_lbl_txt" id="jobwp_list_job_type_lbl_txt" class="medium-text" value="<?php esc_attr_e( $jobwp_list_job_type_lbl_txt ); ?>" />
             </td>
             <th scope="row">
                 <label for="jobwp_list_jobtype_order"><?php _e('Order', 'jobwp'); ?></label>
@@ -173,318 +169,235 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             </td>
         </tr>
         <!-- Hide Salary -->
-        <tr class="jobwp_list_display_salary">
-            <th scope="row">
-                <label for="jobwp_list_display_salary"><?php _e('Display Salary', 'jobwp'); ?>?</label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
+        <?php
+        echo '<tr><td colspan="6" style="padding:0;"></td></tr>';
+        $jobwp_upgrade_arr = [
+            'label' => 'Display salary',
+            'icon' => 'fa-solid fa-sack-dollar',
+            'message' => "Show the salary range on the listing card — candidates filter by salary and listings with it visible get more clicks.",
+        ];
 
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="checkbox" name="jobwp_list_display_salary" class="jobwp_list_display_salary" id="jobwp_list_display_salary" value="1" <?php checked( $jobwp_list_display_salary, 1 ); ?> />
-                    <?php
-                }
-                ?>
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', 'jobwp'); ?></label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
-
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="text" name="jobwp_list_salary_lbl_txt" id="jobwp_list_salary_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_salary_lbl_txt ); ?>" />
-                    <?php
-                }
-                ?>
-            </td>
-            <th scope="row">
-                <label for="jobwp_list_salary_order"><?php _e('Order', 'jobwp'); ?></label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
-
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="number" name="jobwp_list_salary_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_salary_order ); ?>" />
-                    <?php
-                }
-                ?>
-            </td>
-        </tr>
+        $this->jobwp_upgrade_to_premium_section( $jobwp_upgrade_arr );
+        
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+            ?>
+            <tr class="jobwp_list_display_salary">
+                <th scope="row">
+                    <label><?php _e('Display Salary', 'jobwp'); ?>?</label>
+                </th>
+                <td>
+                    <input type="checkbox" name="jobwp_list_display_salary" class="jobwp_list_display_salary" id="jobwp_list_display_salary" value="1" 
+                        <?php checked( $jobwp_list_display_salary, 1 ); ?> />
+                    <label for="jobwp_list_display_salary"><?php _e('Enable', 'jobwp'); ?></label>   
+                </td>
+                <th scope="row">
+                    <label><?php _e('Label Text', 'jobwp'); ?></label>
+                </th>
+                <td>
+                    <input type="text" name="jobwp_list_salary_lbl_txt" id="jobwp_list_salary_lbl_txt" class="medium-text" 
+                        value="<?php esc_attr_e( $jobwp_list_salary_lbl_txt ); ?>" />
+                </td>
+                <th scope="row">
+                    <label for="jobwp_list_salary_order"><?php _e('Order', 'jobwp'); ?></label>
+                </th>
+                <td>
+                    <input type="number" name="jobwp_list_salary_order" class="medium-text" min="1" max="20" step="1" 
+                        value="<?php esc_attr_e( $jobwp_list_salary_order ); ?>" />
+                </td>
+            </tr>
+            <?php
+        }
+        ?>
         <!-- Hide Responsibility -->
-        <tr class="jobwp_list_display_responsibility">
-            <th scope="row">
-                <label for="jobwp_list_display_responsibility"><?php _e('Display Responsibility', 'jobwp'); ?>?</label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
+        <?php
+        echo '<tr><td colspan="6" style="padding:0;"></td></tr>';
+        $jobwp_upgrade_arr = [
+            'label' => 'Display responsibility & vacancy count',
+            'icon' => 'fa-solid fa-clipboard-list',
+            'message' => "Show job responsibilities and number of open positions directly on the listing — gives candidates more context before clicking through.",
+        ];
 
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="checkbox" name="jobwp_list_display_responsibility" class="jobwp_list_display_responsibility" id="jobwp_list_display_responsibility" value="1" <?php checked( $jobwp_list_display_responsibility, 1 ); ?> />
-                    <?php
-                }
-                ?>
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', 'jobwp'); ?></label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
+        $this->jobwp_upgrade_to_premium_section( $jobwp_upgrade_arr );
 
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="text" name="jobwp_list_respo_lbl_txt" id="jobwp_list_respo_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_respo_lbl_txt ); ?>" />
-                    <?php
-                }
-                ?>
-            </td>
-            <th scope="row">
-                <label for="jobwp_list_role_order"><?php _e('Order', 'jobwp'); ?></label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
-
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+            ?>
+            <tr class="jobwp_list_display_responsibility">
+                <th scope="row">
+                    <label><?php _e('Display Responsibility', 'jobwp'); ?>?</label>
+                </th>
+                <td>
+                    <input type="checkbox" name="jobwp_list_display_responsibility" class="jobwp_list_display_responsibility" id="jobwp_list_display_responsibility" value="1" 
+                        <?php checked( $jobwp_list_display_responsibility, 1 ); ?> />
+                    <label for="jobwp_list_display_responsibility"><?php _e('Enable', 'jobwp'); ?></label>
+                </td>
+                <th scope="row">
+                    <label><?php _e('Label Text', 'jobwp'); ?></label>
+                </th>
+                <td>
+                    <input type="text" name="jobwp_list_respo_lbl_txt" id="jobwp_list_respo_lbl_txt" class="medium-text" value="<?php esc_attr_e( $jobwp_list_respo_lbl_txt ); ?>" />    
+                </td>
+                <th scope="row">
+                    <label for="jobwp_list_role_order"><?php _e('Order', 'jobwp'); ?></label>
+                </th>
+                <td>
                     <input type="number" name="jobwp_list_role_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_role_order ); ?>" />
-                    <?php
-                }
-                ?>
-            </td>
-        </tr>
-        <!-- Hide Vacancy -->
-        <tr class="jobwp_list_display_vacancy">
-            <th scope="row">
-                <label for="jobwp_list_display_vacancy"><?php _e('Display Vacancy', 'jobwp'); ?>?</label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
-
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="checkbox" name="jobwp_list_display_vacancy" class="jobwp_list_display_vacancy" id="jobwp_list_display_vacancy" value="1" <?php checked( $jobwp_list_display_vacancy, 1 ); ?> />
-                    <?php
-                }
-                ?>
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', 'jobwp'); ?></label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
-
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="text" name="jobwp_list_vacancy_lbl_txt" id="jobwp_list_vacancy_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_vacancy_lbl_txt ); ?>" />
-                    <?php
-                }
-                ?>
-            </td>
-            <th scope="row">
-                <label for="jobwp_list_vacancy_order"><?php _e('Order', 'jobwp'); ?></label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
-
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="number" name="jobwp_list_vacancy_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_vacancy_order ); ?>" />
-                    <?php
-                }
-                ?>
-            </td>
-        </tr>
+                </td>
+            </tr>
+            <!-- Hide Vacancy -->
+            <tr class="jobwp_list_display_vacancy">
+                <th scope="row">
+                    <label><?php _e('Display Vacancy', 'jobwp'); ?>?</label>
+                </th>
+                <td>
+                    <input type="checkbox" name="jobwp_list_display_vacancy" class="jobwp_list_display_vacancy" id="jobwp_list_display_vacancy" value="1" 
+                        <?php checked( $jobwp_list_display_vacancy, 1 ); ?> />
+                    <label for="jobwp_list_display_vacancy"><?php _e('Enable', 'jobwp'); ?></label>
+                </td>
+                <th scope="row">
+                    <label><?php _e('Label Text', 'jobwp'); ?></label>
+                </th>
+                <td>
+                    <input type="text" name="jobwp_list_vacancy_lbl_txt" id="jobwp_list_vacancy_lbl_txt" class="medium-text" 
+                        value="<?php esc_attr_e( $jobwp_list_vacancy_lbl_txt ); ?>" />   
+                </td>
+                <th scope="row">
+                    <label for="jobwp_list_vacancy_order"><?php _e('Order', 'jobwp'); ?></label>
+                </th>
+                <td>
+                    <input type="number" name="jobwp_list_vacancy_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_vacancy_order ); ?>" />  
+                </td>
+            </tr>
+            <?php
+        }
+        ?>
         <!-- Hide Publish Date -->
-        <tr class="jobwp_list_display_publish_date">
-            <th scope="row">
-                <label for="jobwp_list_display_publish_date"><?php _e('Display Publish Date', 'jobwp'); ?>?</label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
+        <?php
+        echo '<tr><td colspan="6" style="padding:0;"></td></tr>';
+        $jobwp_upgrade_arr = [
+            'label' => 'Display publish date',
+            'icon' => 'fa-regular fa-calendar-days',
+            'message' => "Show when each job was posted — helps candidates identify fresh listings and builds trust in your board's activity.",
+        ];
 
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
+        $this->jobwp_upgrade_to_premium_section( $jobwp_upgrade_arr );
+
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+            ?>
+            <tr class="jobwp_list_display_publish_date">
+                <th scope="row">
+                    <label><?php _e('Display Publish Date', 'jobwp'); ?>?</label>
+                </th>
+                <td>
                     <input type="checkbox" name="jobwp_list_display_publish_date" class="jobwp_list_display_publish_date" id="jobwp_list_display_publish_date" value="1" 
                         <?php checked( $jobwp_list_display_publish_date, 1 ); ?> />
-                    <?php
-                }
-                ?>
-            </td>
-            <th scope="row">
-                <label><?php _e('Label Text', 'jobwp'); ?></label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
-
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="text" name="jobwp_list_publish_date_lbl_txt" id="jobwp_list_publish_date_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_list_publish_date_lbl_txt ); ?>" />
-                    <?php
-                }
-                ?>
-            </td>
-            <th scope="row">
-                <label for="jobwp_list_pdate_order"><?php _e('Order', 'jobwp'); ?></label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
-
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="number" name="jobwp_list_pdate_order" class="medium-text" min="1" max="20" step="1" value="<?php esc_attr_e( $jobwp_list_pdate_order ); ?>" />
-                    <?php
-                }
-                ?>
-            </td>
-        </tr>
+                    <label for="jobwp_list_display_publish_date"><?php _e('Enable', 'jobwp'); ?></label>
+                </td>
+                <th scope="row">
+                    <label><?php _e('Label Text', 'jobwp'); ?></label>
+                </th>
+                <td>
+                    <input type="text" name="jobwp_list_publish_date_lbl_txt" id="jobwp_list_publish_date_lbl_txt" class="medium-text" 
+                        value="<?php esc_attr_e( $jobwp_list_publish_date_lbl_txt ); ?>" />
+                </td>
+                <th scope="row">
+                    <label for="jobwp_list_pdate_order"><?php _e('Order', 'jobwp'); ?></label>
+                </th>
+                <td>
+                    <input type="number" name="jobwp_list_pdate_order" class="medium-text" min="1" max="20" step="1" 
+                        value="<?php esc_attr_e( $jobwp_list_pdate_order ); ?>" />
+                </td>
+            </tr>
+            <?php
+        }
+        ?>
         <!-- Other Settings -->
         <tr>
             <td colspan="6" class="jobwp-settings-block-title"><?php _e('Other Settings', 'jobwp'); ?></td>
         </tr>
-        <tr class="jobwp_display_listing_read_more">
-            <th scope="row">
-                <label for="jobwp_display_listing_read_more"><?php _e('Display Read More', 'jobwp'); ?>?</label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
+        <!-- Display Read More -->
+        <?php
+        echo '<tr><td colspan="6" style="padding:0;"></td></tr>';
+        $jobwp_upgrade_arr = [
+            'label' => 'Display read more button',
+            'icon' => 'fa-solid fa-circle-plus',
+            'message' => "Add a custom Read More button to listing cards with your own label text.",
+        ];
 
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="checkbox" name="jobwp_display_listing_read_more" class="jobwp_display_listing_read_more" id="jobwp_display_listing_read_more" <?php echo $jobwp_display_listing_read_more ? 'checked' : ''; ?>>
-                    <?php
-                }
-                ?>
-            </td>
-            <th scope="row">
-                <label for="jobwp_listing_read_more_txt"><?php _e('Label Text', 'jobwp'); ?></label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
+        $this->jobwp_upgrade_to_premium_section( $jobwp_upgrade_arr );
 
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="text" name="jobwp_listing_read_more_txt" id="jobwp_listing_read_more_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_listing_read_more_txt ); ?>" />
-                    <?php
-                }
-                ?>
-            </td>
-        </tr>
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+            ?>
+            <tr class="jobwp_display_listing_read_more">
+                <th scope="row">
+                    <label><?php _e('Display read more button', 'jobwp'); ?>?</label>
+                </th>
+                <td>
+                    <input type="checkbox" name="jobwp_display_listing_read_more" class="jobwp_display_listing_read_more" id="jobwp_display_listing_read_more" 
+                        <?php echo $jobwp_display_listing_read_more ? 'checked' : ''; ?>>
+                    <label for="jobwp_display_listing_read_more"><?php _e('Enable', 'jobwp'); ?></label>
+                </td>
+                <th scope="row">
+                    <label for="jobwp_listing_read_more_txt"><?php _e('Label Text', 'jobwp'); ?></label>
+                </th>
+                <td colspan="3">
+                    <input type="text" name="jobwp_listing_read_more_txt" id="jobwp_listing_read_more_txt" class="medium-text" 
+                        value="<?php esc_attr_e( $jobwp_listing_read_more_txt ); ?>" />
+                </td>
+            </tr>
+            <?php
+        }
+        ?>
+        <!-- Hide Total Jobs Found -->
         <tr class="jobwp_hide_total_jobs_found">
             <th scope="row">
-                <label for="jobwp_hide_total_jobs_found"><?php _e('Hide Total Jobs Found', 'jobwp'); ?>?</label>
+                <label><?php _e('Hide Total Jobs Found', 'jobwp'); ?>?</label>
             </th>
             <td>
                 <input type="checkbox" name="jobwp_hide_total_jobs_found" class="jobwp_hide_total_jobs_found" id="jobwp_hide_total_jobs_found"
-                    <?php echo $jobwp_hide_total_jobs_found ? 'checked' : ''; ?> >
+                    <?php echo $jobwp_hide_total_jobs_found ? 'checked' : ''; ?>>
+                <label for="jobwp_hide_total_jobs_found"><?php _e('Enable', 'jobwp'); ?></label>
             </td>
             <th scope="row">
                 <label for="jobwp_total_jobs_found_lbl_txt"><?php _e('Label Text', 'jobwp'); ?></label>
             </th>
-            <td>
-                <input type="text" name="jobwp_total_jobs_found_lbl_txt" id="jobwp_total_jobs_found_lbl_txt" class="regular-text" value="<?php esc_attr_e( $jobwp_total_jobs_found_lbl_txt ); ?>" />
+            <td colspan="3">
+                <input type="text" name="jobwp_total_jobs_found_lbl_txt" id="jobwp_total_jobs_found_lbl_txt" class="medium-text" value="<?php esc_attr_e( $jobwp_total_jobs_found_lbl_txt ); ?>" />
             </td>
         </tr>
-        <tr class="jobwp_display_listing_icon">
-            <th scope="row">
-                <label for="jobwp_display_listing_icon"><?php _e('Hide Icon', 'jobwp'); ?>?</label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
+        <!-- Hide Icon -->
+        <?php
+        echo '<tr><td colspan="6" style="padding:0;"></td></tr>';
+        $jobwp_upgrade_arr = [
+            'label' => 'Hide icon',
+            'icon' => 'fa-solid fa-square-xmark',
+            'message' => "Remove the default job info icon from listings for a cleaner, more minimal design.",
+        ];
 
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <input type="checkbox" name="jobwp_display_listing_icon" class="jobwp_display_listing_icon" id="jobwp_display_listing_icon" <?php echo $jobwp_display_listing_icon ? 'checked' : ''; ?>>
-                    <?php
-                }
-                ?>
-            </td>
-        </tr>
+        $this->jobwp_upgrade_to_premium_section( $jobwp_upgrade_arr );
+
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+            ?>
+            <tr class="jobwp_display_listing_icon">
+                <th scope="row">
+                    <label><?php _e('Hide icon', 'jobwp'); ?>?</label>
+                </th>
+                <td colspan="5">
+                    <input type="checkbox" name="jobwp_display_listing_icon" class="jobwp_display_listing_icon" id="jobwp_display_listing_icon" 
+                        <?php echo $jobwp_display_listing_icon ? 'checked' : ''; ?>>
+                    <label for="jobwp_display_listing_icon"><?php _e('Enable', 'jobwp'); ?></label>
+                </td>
+            </tr>
+            <?php
+        }
+        ?>
         <tr class="jobwp_hide_pagination">
             <th scope="row">
-                <label for="jobwp_hide_pagination"><?php _e('Hide Pagination', 'jobwp'); ?>?</label>
+                <label><?php _e('Hide Pagination', 'jobwp'); ?>?</label>
             </th>
-            <td>
+            <td colspan="5">
                 <input type="checkbox" name="jobwp_hide_pagination" class="jobwp_hide_pagination" id="jobwp_hide_pagination" value="1" 
-                    <?php checked( $jobwp_hide_pagination, 1 ); ?> />  
+                    <?php checked( $jobwp_hide_pagination, 1 ); ?> />
+                <label for="jobwp_hide_pagination"><?php _e('Enable', 'jobwp'); ?></label>
             </td>
         </tr>
     </table>

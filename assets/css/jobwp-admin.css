@@ -7,6 +7,7 @@
 
 table.hm-settings-table {
     border-left: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
     width: 100%;
 }
 
@@ -14,6 +15,7 @@ table.hm-settings-table tr.upgrade-promotion th,
 table.hm-settings-table tr.upgrade-promotion td {
     background: #F6EEDF;
     border-bottom: 1px solid #805C1F;
+    max-width: 250px;
 }
 
 table.hm-settings-table tr.upgrade-promotion th {
@@ -129,7 +131,7 @@ table.jobwp-listing-style-settings-table tr td input[type='number'],
 table.jobwp-settings-table tr td input[type='number'],
 table.jobwp-single-style-settings-table tr td input[type='number'] {
     border-radius: 5px;
-    background-color: #F5F4ED;
+    background-image: linear-gradient(to right, #F7F7F7, #FFF);
 }
 
 .manage-column.column-jobwp_list_sl {
@@ -453,6 +455,10 @@ table.jobwp-single-style-settings-table tr td input[type='number'] {
 span.jobwp-admin-icon {
     color: #8fa5e0;
     cursor: pointer;
+    display: inline-block !important;
+    margin: 0 !important;
+    font-size: 14px !important;
+    line-height: 26px;
 }
 
 span.jobwp-admin-icon:hover {
