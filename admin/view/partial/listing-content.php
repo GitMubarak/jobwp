@@ -12,19 +12,19 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
 ?>
 <form name="jobwp_listing_content_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-listing-content-settings-form">
 <?php wp_nonce_field( 'jobwp_listing_content_action', 'jobwp_listing_content_nonce' ); ?>
-    <table class="jobwp-listing-content-settings-table">
+    <table class="hm-settings-table jobwp-listing-content-settings-table" cellpadding="0" cellspacing="0">
         <!-- Title Word Lengtht -->
         <tr>
             <th scope="row">
                 <label for="jobwp_list_title_length"><?php _e('Title Word Length', 'jobwp'); ?></label>
             </th>
-            <td>
+            <td colspan="6">
                 <input type="number" name="jobwp_list_title_length" class="medium-text" min="1" max="150" step="1" value="<?php esc_attr_e( $jobwp_list_title_length ); ?>">
             </td>
         </tr>
         <tr class="jobwp_display_company_name">
             <th scope="row">
-                <label for="jobwp_display_company_name"><?php _e('Display Company Name', 'jobwp'); ?>?</label>
+                <label><?php _e('Display Company Name', 'jobwp'); ?>?</label>
             </th>
             <td>
                 <?php
@@ -37,16 +37,15 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 if ( job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
                     <input type="checkbox" name="jobwp_display_company_name" class="jobwp_display_company_name" id="jobwp_display_company_name" <?php echo $jobwp_display_company_name ? 'checked' : ''; ?>>
+                    <label for="jobwp_display_company_name"><?php _e('Enable', 'jobwp'); ?></label>
                     <?php
                 }
                 ?>
             </td>
-        </tr>
-        <tr class="jobwp_display_company_logo">
             <th scope="row">
-                <label for="jobwp_display_company_logo"><?php _e('Display Company Logo', 'jobwp'); ?>?</label>
+                <label><?php _e('Display Company Logo', 'jobwp'); ?>?</label>
             </th>
-            <td>
+            <td colspan="3">
                 <?php
                 if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
@@ -57,6 +56,7 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 if ( job_fs()->is_plan__premium_only('pro', true) ) {
                     ?>
                     <input type="checkbox" name="jobwp_display_company_logo" class="jobwp_display_company_logo" id="jobwp_display_company_logo" <?php echo $jobwp_display_company_logo ? 'checked' : ''; ?>>
+                    <label for="jobwp_display_company_logo"><?php _e('Enable', 'jobwp'); ?></label>
                     <?php
                 }
                 ?>
@@ -76,12 +76,13 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             <th scope="row">
                 <label for="wbg_cat_label_txt"><?php _e('Word Length', 'jobwp'); ?></label>
             </th>
-            <td>
+            <td colspan="3">
                 <input type="number" name="jobwp_list_overview_length" class="medium-text" min="1" max="150" step="1" value="<?php esc_attr_e( $jobwp_list_overview_length ); ?>">
             </td>
         </tr>
+        <!-- Job Information -->
         <tr>
-            <td colspan="6"><hr><hr></td>
+            <td colspan="6" class="jobwp-settings-block-title"><?php _e('Job Information', 'jobwp'); ?></td>
         </tr>
         <!-- Hide Experience -->
         <tr>
@@ -400,8 +401,9 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
                 ?>
             </td>
         </tr>
+        <!-- Other Settings -->
         <tr>
-            <td colspan="6"><hr><hr></td>
+            <td colspan="6" class="jobwp-settings-block-title"><?php _e('Other Settings', 'jobwp'); ?></td>
         </tr>
         <tr class="jobwp_display_listing_read_more">
             <th scope="row">

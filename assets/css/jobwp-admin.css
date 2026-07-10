@@ -220,7 +220,6 @@ table.jobwp-single-style-settings-table tr td input[type='number'] {
     color: #FFF;
     border: 0px solid #5E24DD;
     border-radius: 5px;
-    padding: 6px 20px;
     font-size: 16px;
     font-weight: 600;
 }
@@ -339,6 +338,113 @@ table.jobwp-single-style-settings-table tr td input[type='number'] {
 .jobwp-admin-sidebar .postbox.pro-features ul a {
     color: #35c481;
     text-decoration: none;
+}
+
+
+/* Suggested by Claude */
+
+.jobwp-admin-sidebar .postbox {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.postbox .inside ul.left {
+    text-align: left;
+    margin: 0 10px;
+}
+
+.jobwp-admin-sidebar .postbox.pro-features-block {
+    background: #FFF;
+    border: 2px solid #805C1F;
+    text-align: left;
+}
+
+.upgrade-card-head {
+    background: #F6EEDF;
+    padding: 12px 14px;
+}
+
+.upgrade-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #805C1F;
+    margin-bottom: 2px;
+}
+
+.upgrade-features {
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.upgrade-feat {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 7px 0;
+    border-bottom: 1px solid #DDD;
+}
+
+.upgrade-feat:last-child {
+    border-bottom: none;
+}
+
+.upgrade-feat-icon {
+    font-size: 14px;
+    color: #805C1F;
+    flex-shrink: 0;
+    margin-top: 1px;
+    line-height: 1.4;
+}
+
+.upgrade-feat.highlighted .upgrade-feat-text {
+    font-weight: 600;
+}
+
+.upgrade-feat-text {
+    font-size: 14px;
+    color: #232323;
+    line-height: 1.4;
+}
+
+.upgrade-feat-text span {
+    font-size: 12px;
+    color: #232323;
+    display: block;
+    margin-top: 1px;
+    font-weight: 500;
+}
+
+.upgrade-cta {
+    padding: 12px 14px;
+    border-top: 1px solid #DDD;
+}
+
+.upgrade-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    background: #F6EEDF;
+    color: #805C1F;
+    border: 1px solid #805C1F;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.upgrade-btn:hover {
+    background: #805C1F;
+    color: #F6EEDF;
+}
+
+.upgrade-meta {
+    font-size: 12px;
+    color: #212121;
+    text-align: center;
+    margin-top: 6px;
 }
 
 

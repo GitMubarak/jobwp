@@ -983,5 +983,40 @@ class JobWp_Admin
 		
 		die();
 	}
+
+	/**
+	 * Upgrade to pro section in the settings page
+	 */
+	function jobwp_upgrade_to_premium_section( $up_array ) {
+
+		if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+			?>
+			<tr class="upgrade-promotion">
+				<th scope="row">
+					<label><i class="fa fa-lock" aria-hidden="true"></i><?php _e( $up_array['label'], 'jobwp' ); ?></label>
+				</th>
+				<td>
+					<div class="pro-unlock">
+						<i class="<?php echo esc_attr( $up_array['icon'] ); ?>" style="font-size:18px;flex-shrink:0" aria-hidden="true"></i>
+						<div class="pro-unlock-text">
+							<?php _e( $up_array['message'], 'jobwp' ); ?>
+						</div>
+						<?php echo '<a href="' . job_fs()->get_upgrade_url() . '" class="pro-unlock-btn">' . __('Unlock', 'jobwp') . '</a>'; ?>
+					</div>
+				</td>
+			</tr>
+			<?php
+		}
+
+		return null;
+	}
+
+	/**
+	 * Load admin sidebar
+	 */
+	function jobwp_load_admin_sidebar( $pro_features_loc, $pro_features_global ) {
+
+		include_once('view/sidebar.php');
+	}
 }
 ?>
