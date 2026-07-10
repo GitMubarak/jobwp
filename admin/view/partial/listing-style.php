@@ -10,6 +10,11 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
     }
 }
 ?>
+<style type="text/css">
+table.hm-settings-table span {
+  margin-top: 0px;
+}
+</style>
 <form name="jobwp_listing_style_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-listing-style-form">
 <?php wp_nonce_field( 'jobwp_listing_styles_action', 'jobwp_listing_styles_nonce' ); ?>
     <table class="hm-settings-table jobwp-listing-style-settings-table" cellpadding="0" cellspacing="0">
@@ -70,67 +75,46 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
             <th scope="row">
                 <label><?php _e('Hover Font Color', 'jobwp'); ?>:</label>
             </th>
-            <td>
-                <?php
-				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-					?>
-					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-					<?php
-				}
-
-				if ( job_fs()->is_plan__premium_only('pro', true) ) {
-					?>
-                    <input class="jobwp-wp-color" type="text" name="jobwp_listing_title_font_color_hvr" id="jobwp_listing_title_font_color_hvr" value="<?php esc_attr_e( $jobwp_listing_title_font_color_hvr ); ?>">
-                    <div id="colorpicker"></div>
-					<?php
-				}
-				?>
+            <td colspan="5">
+                <input class="jobwp-wp-color" type="text" name="jobwp_listing_title_font_color_hvr" id="jobwp_listing_title_font_color_hvr" value="<?php esc_attr_e( $jobwp_listing_title_font_color_hvr ); ?>">
+                <div id="colorpicker"></div>
             </td>
         </tr>
         <!-- Company -->
         <tr>
             <td colspan="6" class="jobwp-settings-block-title"><?php _e('Company', 'jobwp'); ?></td>
         </tr>
-        <tr>
-            <th scope="row">
-                <label><?php _e('Font Color', 'jobwp'); ?>:</label>
-            </th>
-            <td>
-                <?php
-				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-					?>
-					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-					<?php
-				}
+        <?php
+        echo '<tr><td colspan="6" style="padding:0;"></td></tr>';
+        $jobwp_upgrade_arr = [
+            'label' => 'Font Color & Font Size',
+            'icon' => 'fa-solid fa-palette',
+            'message' => "Available in Professional",
+        ];
 
-				if ( job_fs()->is_plan__premium_only('pro', true) ) {
-					?>
+        $this->jobwp_upgrade_to_premium_section( $jobwp_upgrade_arr );
+
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+            ?>
+            <tr>
+                <th scope="row">
+                    <label><?php _e('Font Color', 'jobwp'); ?>:</label>
+                </th>
+                <td>
                     <input class="jobwp-wp-color" type="text" name="jobwp_list_com_font_color" id="jobwp_list_com_font_color" value="<?php esc_attr_e( $jobwp_list_com_font_color ); ?>">
                     <div id="colorpicker"></div>
-					<?php
-				}
-				?>
-            </td>
-            <th scope="row">
-                <label><?php _e('Font Size', 'jobwp'); ?>:</label>
-            </th>
-            <td colspan="3">
-                <?php
-				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-					?>
-					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-					<?php
-				}
-
-				if ( job_fs()->is_plan__premium_only('pro', true) ) {
-					?>
+                </td>
+                <th scope="row">
+                    <label><?php _e('Font Size', 'jobwp'); ?>:</label>
+                </th>
+                <td colspan="3">
                     <input type="number" class="small-text" min="11" max="50" name="jobwp_list_com_font_size" id="jobwp_list_com_font_size" value="<?php esc_attr_e( $jobwp_list_com_font_size ); ?>">
                     <code>px</code>
-					<?php
-				}
-				?>
-            </td>
-        </tr>
+                </td>
+            </tr>
+            <?php
+        }
+        ?>
         <!-- Overview -->
         <tr>
             <td colspan="6" class="jobwp-settings-block-title"><?php _e('Job Overview', 'jobwp'); ?></td>
@@ -155,46 +139,37 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
         <tr>
             <td colspan="6" class="jobwp-settings-block-title"><?php _e('Job Information Label', 'jobwp'); ?></td>
         </tr>
-        <tr>
-            <th scope="row">
-                <label><?php _e('Font Color', 'jobwp'); ?>:</label>
-            </th>
-            <td>
-                <?php
-				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-					?>
-					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-					<?php
-				}
+        <?php
+        echo '<tr><td colspan="6" style="padding:0;"></td></tr>';
+        $jobwp_upgrade_arr = [
+            'label' => 'Font Color & Font Size',
+            'icon' => 'fa-solid fa-palette',
+            'message' => "Available in Professional",
+        ];
 
-				if ( job_fs()->is_plan__premium_only('pro', true) ) {
-					?>
+        $this->jobwp_upgrade_to_premium_section( $jobwp_upgrade_arr );
+
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+            ?>
+            <tr>
+                <th scope="row">
+                    <label><?php _e('Font Color', 'jobwp'); ?>:</label>
+                </th>
+                <td>
                     <input class="jobwp-wp-color" type="text" name="jobwp_listing_info_font_color" id="jobwp_listing_info_font_color" value="<?php esc_attr_e( $jobwp_listing_info_font_color ); ?>">
                     <div id="colorpicker"></div>
-					<?php
-				}
-				?>
-            </td>
-            <th scope="row">
-                <label><?php _e('Font Size', 'jobwp'); ?>:</label>
-            </th>
-            <td colspan="3">
-                <?php
-				if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-					?>
-					<span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-					<?php
-				}
-
-				if ( job_fs()->is_plan__premium_only('pro', true) ) {
-					?>
+                </td>
+                <th scope="row">
+                    <label><?php _e('Font Size', 'jobwp'); ?>:</label>
+                </th>
+                <td colspan="3">
                     <input type="number" class="small-text" min="11" max="30" step="1" name="jobwp_listing_info_font_size" id="jobwp_listing_info_font_size" value="<?php esc_attr_e( $jobwp_listing_info_font_size ); ?>">
                     <code>px</code>
-					<?php
-				}
-				?>
-            </td>
-        </tr>
+                </td>
+            </tr>
+            <?php
+        }
+        ?>
         <!-- Read More Button -->
         <tr>
             <td colspan="6" class="jobwp-settings-block-title"><?php _e('Read More Button', 'jobwp'); ?></td>
