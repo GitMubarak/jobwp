@@ -112,7 +112,6 @@ if ( ! defined( 'ABSPATH' ) ) {
       color: <?php esc_html_e( $jobwp_list_com_font_color ); ?>;
       font-size: <?php esc_html_e( $jobwp_list_com_font_size ); ?>px;
     }
-    
     .jobwp-search-container .jobwp-search-item input[type="text"],
     .jobwp-search-container .jobwp-search-item select {
       border-radius: <?php esc_attr_e( $jobwp_search_item_border_radius ); ?>px;

@@ -34,12 +34,13 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                 <form name="jobwp_general_settings_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-general-settings-form">
                 <?php wp_nonce_field( 'jobwp_general_action_filed', 'jobwp_general_nonce_field' ); ?>
                     <table class="hm-settings-table jobwp-single-settings-table" cellpadding="0" cellspacing="0">
-                        <tr>
-                            <td colspan="2" class="jobwp-settings-block-title"><?php _e('Notifications', 'jobwp'); ?></td>
+                        <!-- Notifications -->
+                        <tr class="jobwp-settings-section">
+                            <td colspan="2" class="jobwp-settings-block-title"><i class="fa-regular fa-bell"></i>&nbsp;<?php _e('Notifications', 'jobwp'); ?></td>
                         </tr>
                         <tr class="jobwp_admin_noti_email">
                             <th scope="row">
-                                <label><?php _e('Admin notification email', 'jobwp'); ?></label>
+                                <label><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Admin notification email', 'jobwp'); ?></label>
                             </th>
                             <td>
                                 <input type="text" name="jobwp_admin_noti_email" id="jobwp_admin_noti_email" class="regular-text" value="<?php esc_attr_e( $jobwp_admin_noti_email ); ?>" />
@@ -59,7 +60,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                             ?>
                             <tr class="jobwp_admin_noti_email_users">
                                 <th scope="row">
-                                    <label for="jobwp_ext_apply_now_url"><?php _e('Notification email to user role', 'jobwp'); ?></label>
+                                    <label for="jobwp_ext_apply_now_url"><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Notification email to user role', 'jobwp'); ?></label>
                                 </th>
                                 <td>
                                     <select id="jobwp_admin_noti_email_users" name="jobwp_admin_noti_email_users">
@@ -80,12 +81,13 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                             <?php
                         }
                         ?>
-                        <tr>
-                            <td colspan="2" class="jobwp-settings-block-title"><?php _e('Layout', 'jobwp'); ?></td>
+                        <!-- Layout -->
+                        <tr class="jobwp-settings-section">
+                            <td colspan="2" class="jobwp-settings-block-title"><i class="fa-solid fa-table-cells-large"></i>&nbsp;<?php _e('Layout', 'jobwp'); ?></td>
                         </tr>
                         <tr class="jobwp_list_layout">
                             <th scope="row">
-                                <label><?php _e('Job listing page layout', 'jobwp'); ?></label>
+                                <label><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Job listing page layout', 'jobwp'); ?></label>
                             </th>
                             <td>
                                 <input type="radio" name="jobwp_list_layout" id="jobwp_list_layout_list" value="list" <?php echo ( 'list' === $jobwp_list_layout ) ? 'checked' : ''; ?> >
@@ -95,12 +97,13 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                                 <label for="jobwp_list_layout_grid"><?php _e('Grid', 'jobwp'); ?></label>
                             </td>
                         </tr>
-                        <tr>
-                            <td colspan="2" class="jobwp-settings-block-title"><?php _e('Application form', 'jobwp'); ?></td>
+                        <!-- Application form -->
+                        <tr class="jobwp-settings-section">
+                            <td colspan="2" class="jobwp-settings-block-title"><i class="fa-brands fa-wpforms"></i>&nbsp;<?php _e('Application form', 'jobwp'); ?></td>
                         </tr>
                         <tr class="jobwp_ext_application_form">
                             <th scope="row">
-                                <label><?php _e('Use external application form', 'jobwp'); ?>?</label>
+                                <label><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Use external application form', 'jobwp'); ?>?</label>
                             </th>
                             <td>
                                 <input type="checkbox" name="jobwp_ext_application_form" class="jobwp_ext_application_form" id="jobwp_ext_application_form"
@@ -124,7 +127,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                             ?>
                             <tr class="jobwp_ext_apply_now_url">
                                 <th scope="row">
-                                    <label><?php _e('Allow external application URL', 'jobwp'); ?>?</label>
+                                    <label><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Allow external application URL', 'jobwp'); ?>?</label>
                                 </th>
                                 <td>
                                     <input type="checkbox" name="jobwp_ext_apply_now_url" class="jobwp_ext_apply_now_url" id="jobwp_ext_apply_now_url" <?php echo $jobwp_ext_apply_now_url ? 'checked' : ''; ?>>    
@@ -146,7 +149,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                             ?>
                             <tr class="jobwp_allow_login_apply">
                                 <th scope="row">
-                                    <label><?php _e('Should candidate login before apply', 'jobwp'); ?>?</label>
+                                    <label><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Should candidate login before apply', 'jobwp'); ?>?</label>
                                 </th>
                                 <td>
                                     <input type="checkbox" name="jobwp_allow_login_apply" class="jobwp_allow_login_apply" id="jobwp_allow_login_apply" <?php echo $jobwp_allow_login_apply ? 'checked' : ''; ?>>
@@ -158,7 +161,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                         ?>
                         <tr class="jobwp_hide_jobs_deadline_over">
                             <th scope="row">
-                                <label><?php _e('Hide jobs when deadline is over', 'jobwp'); ?>?</label>
+                                <label><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Hide jobs when deadline is over', 'jobwp'); ?>?</label>
                             </th>
                             <td>
                                 <input type="checkbox" name="jobwp_hide_jobs_deadline_over" class="jobwp_hide_jobs_deadline_over" id="jobwp_hide_jobs_deadline_over" <?php echo $jobwp_hide_jobs_deadline_over ? 'checked' : ''; ?>>  
@@ -179,7 +182,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                             ?>
                             <tr>
                                 <th scope="row">
-                                    <label><?php _e('Redirect after application', 'jobwp'); ?>?</label>
+                                    <label><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Redirect after application', 'jobwp'); ?>?</label>
                                 </th>
                                 <td>
                                     <input type="checkbox" name="jobwp_allow_redirect_after_application" class="jobwp_allow_redirect_after_application" id="jobwp_allow_redirect_after_application" value="1" <?php checked( $jobwp_allow_redirect_after_application, 1 ); ?>>   
@@ -205,12 +208,12 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                         }
                         ?>
                         <!-- Captcha -->
-                        <tr>
-                            <td colspan="2" class="jobwp-settings-block-title"><?php _e('reCAPTCHA', 'jobwp'); ?></td>
+                        <tr class="jobwp-settings-section">
+                            <td colspan="2" class="jobwp-settings-block-title"><i class="fa-solid fa-robot"></i>&nbsp;<?php _e('reCAPTCHA', 'jobwp'); ?></td>
                         </tr>
                         <tr class="jobwp_recaptcha_site_key">
                             <th scope="row">
-                                <label><?php _e('Site key', 'jobwp'); ?></label>
+                                <label><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Site key', 'jobwp'); ?></label>
                             </th>
                             <td>
                                 <input type="text" name="jobwp_recaptcha_site_key" id="jobwp_recaptcha_site_key" class="regular-text" value="<?php esc_attr_e( stripslashes( $jobwp_recaptcha_site_key ) ); ?>" />
@@ -218,7 +221,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                         </tr>
                         <tr class="jobwp_recaptcha_secret_key">
                             <th scope="row">
-                                <label><?php _e('Secret key', 'jobwp'); ?></label>
+                                <label><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Secret key', 'jobwp'); ?></label>
                             </th>
                             <td>
                                 <input type="password" name="jobwp_recaptcha_secret_key" id="jobwp_recaptcha_secret_key" class="regular-text" value="<?php esc_attr_e( stripslashes( $jobwp_recaptcha_secret_key ) ); ?>" />
@@ -226,7 +229,7 @@ foreach ( $jobwpGeneralSettings as $option_name => $option_value ) {
                         </tr>
                         <tr class="jobwp_captcha_on_apply_form">
                             <th scope="row">
-                                <label><?php _e('Enable on apply form', 'jobwp'); ?>?</label>
+                                <label><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Enable on apply form', 'jobwp'); ?>?</label>
                             </th>
                             <td>
                                 <input type="checkbox" name="jobwp_captcha_on_apply_form" class="jobwp_captcha_on_apply_form" id="jobwp_captcha_on_apply_form" <?php echo $jobwp_captcha_on_apply_form ? 'checked' : ''; ?>>  

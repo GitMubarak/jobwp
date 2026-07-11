@@ -990,12 +990,14 @@ class JobWp_Admin
 	function jobwp_upgrade_to_premium_section( $up_array ) {
 
 		if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
+
+			$colspan = ! empty ( $up_array['colspan'] ) ? sanitize_text_field( $up_array['colspan'] ) : 1;
 			?>
 			<tr class="upgrade-promotion">
 				<th scope="row">
 					<label><i class="fa fa-lock" aria-hidden="true"></i><?php _e( $up_array['label'], 'jobwp' ); ?></label>
 				</th>
-				<td>
+				<td colspan="<?php echo esc_attr( $colspan ); ?>">
 					<div class="pro-unlock">
 						<i class="<?php echo esc_attr( $up_array['icon'] ); ?>" style="font-size:18px;flex-shrink:0" aria-hidden="true"></i>
 						<div class="pro-unlock-text">

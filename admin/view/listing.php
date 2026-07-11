@@ -35,34 +35,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         $jobwp_pro_features_local = [
                             [
-                                'icon' => 'fa-solid fa-arrow-up-right-from-square',
-                                'heading' => 'External application URL',
-                                'sub-heading' => 'Post jobs linking to LinkedIn, Indeed, or any platform'
+                                'icon' => 'fa-regular fa-rectangle-list',
+                                'heading' => 'Job Card Items',
+                                'sub-heading' => 'Background color & corder color'
                             ],
                             [
-                                'icon' => 'fa-solid fa-arrow-right',
-                                'heading' => 'Post-submission redirect',
-                                'sub-heading' => 'Send applicants to a branded thank-you page'
+                                'icon' => 'fa-solid fa-clipboard-list',
+                                'heading' => 'Company Info',
+                                'sub-heading' => 'Company font color & font Size'
                             ],
                             [
-                                'icon' => 'fa-regular fa-user',
-                                'heading' => 'Role-based notifications',
-                                'sub-heading' => 'Route applications to the right team member'
+                                'icon' => 'fa-solid fa-toggle-off',
+                                'heading' => 'Job Information Label',
+                                'sub-heading' => 'Job Information label font color & font Size'
                             ],
                             [
-                                'icon' => 'fa-solid fa-unlock-keyhole',
-                                'heading' => 'Login-required applications',
-                                'sub-heading' => 'Allow only logged-in users to apply for a job'
+                                'icon' => 'fa-solid fa-angles-right',
+                                'heading' => 'Read More Button',
+                                'sub-heading' => 'Full control over button colors, fonts, borders, hover states, and padding'
+                            ],
+                            [
+                                'icon' => 'fa-solid fa-ellipsis',
+                                'heading' => 'Pagination',
+                                'sub-heading' => 'Full control over pagination colors, fonts, borders, hover states etc.'
                             ]
                         ];
 
                         $jobwp_pro_features_global = [
-                            'CSV & Excel export',
-                            'Custom email templates',
-                            'Company profiles & logos',
                             'Featured jobs slider',
+                            'Company profiles & logos',
+                            'CSV & Excel export',
                             'DOC & DOCX resume uploads',
-                            'GDPR consent checkbox'
+                            'Display search panel on any page via shortcode',
+                            'Job level filtering by shortcode'
                         ];
 
                         include_once JOBWP_PATH . 'admin/view/partial/listing-style.php';
