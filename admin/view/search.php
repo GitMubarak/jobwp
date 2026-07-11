@@ -32,9 +32,50 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <?php 
                 switch ( $jobwpTab ) {
                     case 'styles':
+
+                        $jobwp_pro_features_local = [
+                            [
+                                'icon' => 'fa-solid fa-palette',
+                                'heading' => 'Search Items Styles Option Settings',
+                                'sub-heading' => 'Control border radius & font color over various search fiields'
+                            ]
+                        ];
+
+                        $jobwp_pro_features_global = [
+                            'Featured jobs slider',
+                            'Company profiles & logos',
+                            'CSV & Excel export',
+                            'DOC & DOCX resume uploads',
+                            'Embed search panel on any page via shortcode',
+                            'Job level filtering by shortcode'
+                        ];
+
                         include_once JOBWP_PATH . 'admin/view/partial/search-style.php';
                         break;
                     default:
+
+                        $jobwp_pro_features_local = [
+                            [
+                                'icon' => 'fa-solid fa-magnifying-glass-arrow-right',
+                                'heading' => 'Search Items Order',
+                                'sub-heading' => 'Control over search items order - place one item before another'
+                            ],
+                            [
+                                'icon' => 'fa-solid fa-sliders',
+                                'heading' => 'Control Job Level',
+                                'sub-heading' => 'Full control over job level control, placeholder text and placement order in the search panel'
+                            ]
+                        ];
+
+                        $jobwp_pro_features_global = [
+                            'Featured jobs slider',
+                            'Company profiles & logos',
+                            'CSV & Excel export',
+                            'DOC & DOCX resume uploads',
+                            'Embed search panel on any page via shortcode',
+                            'Job level filtering by shortcode'
+                        ];
+
                         include_once JOBWP_PATH . 'admin/view/partial/search-content.php';
                         break;
                 } 
@@ -43,7 +84,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         
         </div>
 
-        <?php include_once('partial/admin-sidebar.php'); ?>
+        <?php $this->jobwp_load_admin_sidebar( $jobwp_pro_features_local, $jobwp_pro_features_global ); ?>
     
     </div>
 

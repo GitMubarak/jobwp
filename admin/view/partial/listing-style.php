@@ -10,11 +10,6 @@ foreach ( $jobwpListingStyles as $option_name => $option_value ) {
     }
 }
 ?>
-<style type="text/css">
-table.hm-settings-table span {
-  margin-top: 0px;
-}
-</style>
 <form name="jobwp_listing_style_form" role="form" class="form-horizontal" method="post" action="" id="jobwp-listing-style-form">
 <?php wp_nonce_field( 'jobwp_listing_styles_action', 'jobwp_listing_styles_nonce' ); ?>
     <table class="hm-settings-table jobwp-listing-style-settings-table" cellpadding="0" cellspacing="0">

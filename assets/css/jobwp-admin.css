@@ -18,6 +18,11 @@ table.hm-settings-table tr.jobwp-settings-section td {
     border-left: 2px solid #135e9b;
 }
 
+table.hm-settings-table tr td,
+table.hm-settings-table tr td label {
+    color: #135e9b;
+}
+
 table.hm-settings-table tr.upgrade-promotion th,
 table.hm-settings-table tr.upgrade-promotion td {
     background: #F6EEDF;
@@ -37,6 +42,10 @@ table.hm-settings-table span {
     display: block;
     margin-top: 10px;
     color: #444;
+}
+
+table.hm-settings-table span.wp-color-result-text {
+    margin-top: 0;
 }
 
 table.hm-settings-table tr td input[type='checkbox'] {
@@ -110,7 +119,6 @@ table.jobwp-single-style-settings-table tr td {
     padding: 15px;
     text-align: left;
     vertical-align: middle;
-    color: #15803d;
     background-image: linear-gradient(to right, #f0fdf4, #fff);
 }
 
@@ -123,6 +131,7 @@ table.jobwp-single-style-settings-table tr th {
     vertical-align: top;
     background-color: #f0fdf4;
     background-image: linear-gradient(to right, #f0fdf4, #fff);
+    color: #15803d;
 }
 
 table.jobwp-settings-table tr th {

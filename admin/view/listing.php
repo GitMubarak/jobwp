@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                             'Company profiles & logos',
                             'CSV & Excel export',
                             'DOC & DOCX resume uploads',
-                            'Display search panel on any page via shortcode',
+                            'Embed search panel on any page via shortcode',
                             'Job level filtering by shortcode'
                         ];
 
