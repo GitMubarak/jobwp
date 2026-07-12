@@ -32,9 +32,45 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <?php 
                 switch ( $jobwpTab ) {
                     case 'styles':
+
+                        $jobwp_pro_features_local = [
+                            [
+                                'icon' => 'fa-solid fa-palette',
+                                'heading' => 'Search Items Styles Option Settings',
+                                'sub-heading' => 'Control border radius & font color over various search fiields'
+                            ]
+                        ];
+
+                        $jobwp_pro_features_global = [
+                            'Featured jobs slider',
+                            'Company profiles & logos',
+                            'CSV & Excel export',
+                            'DOC & DOCX resume uploads',
+                            'Embed search panel on any page via shortcode',
+                            'Job level filtering by shortcode'
+                        ];
+
                         include_once JOBWP_PATH . 'admin/view/partial/single-style.php';
                         break;
                     default:
+
+                        $jobwp_pro_features_local = [
+                            [
+                                'icon' => 'fa-regular fa-address-card',
+                                'heading' => 'Display company name & logo',
+                                'sub-heading' => "Show the hiring company's name and logo on the job details page"
+                            ]
+                        ];
+
+                        $jobwp_pro_features_global = [
+                            'Featured jobs slider',
+                            'Company profiles & logos',
+                            'CSV & Excel export',
+                            'DOC & DOCX resume uploads',
+                            'Embed search panel on any page via shortcode',
+                            'Job level filtering by shortcode'
+                        ];
+
                         include_once JOBWP_PATH . 'admin/view/partial/single-content.php';
                         break;
                 } 
@@ -43,7 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         
         </div>
 
-        <?php include_once('partial/admin-sidebar.php'); ?>
+        <?php $this->jobwp_load_admin_sidebar( $jobwp_pro_features_local, $jobwp_pro_features_global ); ?>
 
     </div>
 </div>
