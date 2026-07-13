@@ -876,46 +876,57 @@ class JobWp_Admin
             return;
         }
 
+		if ( ! isset( $_POST['jobwp_download_csv'] ) ) {
+			return;
+		}
+
+		check_admin_referer( 'jobwp_download_csv_action', 'jobwp_csv_nonce' );
+
 		if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
-			if ( isset( $_POST['jobwp_download_csv'] ) ) {
-				
-				$applications = $this->jobwp_get_all_applications();
+			$applications = $this->jobwp_get_all_applications();
 
-				$filename = 'applications-' . time() . '.csv';
-				$data_rows = [];
-				$row = [];
-				$asl = 1;
-				foreach ( $applications as $application ) {
-					$row[0] = $asl;
-					$row[1] = ( '' !== $application->applied_for ) ? sanitize_text_field( str_replace(",", ";", $application->applied_for) ) : '';
-					$row[2] = ( '' !== $application->applicant_name ) ? sanitize_text_field( $application->applicant_name ) : '';
-					$row[3] = ( '' !== $application->applicant_email ) ? sanitize_text_field( $application->applicant_email ) : '';
-					$row[4] = ( '' !== $application->applicant_message ) ? sanitize_text_field( str_replace(",", ";", $application->applicant_message) ) : '';
-					$row[5] = ( '' !== $application->applied_on ) ? date( 'D d M Y - h:i A', strtotime( sanitize_text_field( $application->applied_on ) ) ) : '';
-					$row[6] = ( '' !== $application->resume_name ) ? sanitize_text_field( $application->resume_name ) : '';
-					$row[7] = ( '' !== $application->user_consent ) ? sanitize_text_field( $application->user_consent ) : '';
-					$row[8] = ( '' !== $application->intl_tel ) ? sanitize_text_field( $application->intl_tel ) : '';
-					$data_rows[] = $row;
-					$asl++;
-				}
+			$filename = 'applications-' . time() . '.csv';
 
-				header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-				header('Content-Description: File Transfer');
-				header("Content-type: text/csv");
-				header("Content-Disposition: attachment; filename={$filename}");
-				header("Expires: 0");
-				header("Pragma: public");
-				printf( "%s,%s,%s,%s,%s,%s,%s,%s,%s", "SL", "Applied For", "Name", "Email", "Cover Letter", "Applied On", "Resume Link", "User Consent" , "Phone" );
-				echo "\n";
+			header( 'Content-Type: text/csv; charset=utf-8' );
+			header( 'Content-Disposition: attachment; filename="' . esc_attr( $filename ) . '"' );
+			header( 'Pragma: no-cache' );
+			header( 'Expires: 0' );
+
+			$output = fopen( 'php://output', 'w' );
+
+			// CSV Header
+			fputcsv(
+				$output,
+				array(
+					'Applied For',
+					'Name',
+					'Email',
+					'Cover Letter',
+					'Applied On',
+					'Resume Link',
+					'User Consent',
+					'Phone',
+				)
+			);
+
+			foreach ( $applications as $application ) {
+
+				$row = array();
+
+				$row[] = sanitize_text_field( $application->applied_for );
+				$row[] = sanitize_text_field( $application->applicant_name );
+				$row[] = sanitize_email( $application->applicant_email );
+				$row[] = sanitize_text_field( $application->applicant_message );
+				$row[] = ! empty( $application->applied_on ) ? gmdate( 'd-m-Y', strtotime( $application->applied_on ) ) : '';
+				$row[] = sanitize_text_field( $application->resume_name );
+				$row[] = ( 'on' === $application->user_consent ) ? 'Yes' : '';
+				$row[] = sanitize_text_field( $application->intl_tel );
 				
-				foreach ( $data_rows as $data ) {
-					printf( "%d,%s,%s,%s,%s,%s,%s,%s,%s", $data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6], $data[7], $data[8] );
-					echo "\n";
-				}
-				
-				exit;
+				fputcsv( $output, $row );
 			}
+			
+			exit;
 		}
 	}
 

@@ -89,6 +89,7 @@ if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
 if ( job_fs()->is_plan__premium_only('pro', true) ) {
     ?>
     <form method="post" id="jobwp-download-to-csv-form" action="">
+        <?php wp_nonce_field( 'jobwp_download_csv_action','jobwp_csv_nonce' ); ?>
         <input type="submit" name="jobwp_download_csv" class="button button-primary jobwp-button" value="<?php _e('EXPORT TO CSV', 'jobwp'); ?>">
     </form>
     <button type="button" class="button button-primary jobwp-button" id="btnExport" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end"><?php _e('Export To Excel', 'jobwp'); ?></button>
