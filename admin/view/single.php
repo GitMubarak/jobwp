@@ -35,15 +35,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         $jobwp_pro_features_local = [
                             [
-                                'icon' => 'fa-solid fa-palette',
-                                'heading' => 'Search Items Styles Option Settings',
-                                'sub-heading' => 'Control border radius & font color over various search fiields'
+                                'icon' => 'fa-solid fa-arrows-left-right-to-line',
+                                'heading' => 'Horizontal layout column width',
+                                'sub-heading' => "Control left side, right side column width in the job details page"
                             ]
                         ];
 
                         $jobwp_pro_features_global = [
                             'Featured jobs slider',
-                            'Company profiles & logos',
+                            'Post-submission redirect',
                             'CSV & Excel export',
                             'DOC & DOCX resume uploads',
                             'Embed search panel on any page via shortcode',
@@ -56,15 +56,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         $jobwp_pro_features_local = [
                             [
+                                'icon' => 'fa-solid fa-toggle-off',
+                                'heading' => 'Multiple detail page layout',
+                                'sub-heading' => "Choose among multiple details page which suits your website"
+                            ],
+                            [
                                 'icon' => 'fa-regular fa-address-card',
                                 'heading' => 'Display company name & logo',
                                 'sub-heading' => "Show the hiring company's name and logo on the job details page"
+                            ],
+                            [
+                                'icon' => 'fa-brands fa-facebook',
+                                'heading' => 'Control social sharing',
+                                'sub-heading' => "Control the ability to share your jobs in various social platforms"
                             ]
                         ];
 
                         $jobwp_pro_features_global = [
                             'Featured jobs slider',
-                            'Company profiles & logos',
+                            'Post-submission redirect',
                             'CSV & Excel export',
                             'DOC & DOCX resume uploads',
                             'Embed search panel on any page via shortcode',

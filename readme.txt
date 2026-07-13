@@ -2,7 +2,7 @@
 Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: Job Board, Job Listing, Career Page, Recruitment, Job Manager
-Stable tag: 2.4.9
+Stable tag: 2.5.0
 Tested up to: 7.0
 Requires at least: 5.8
 Requires PHP: 7.4
@@ -220,16 +220,19 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 
 == Changelog ==
 
-= 2.4.9 =
-[//]: # fs_premium_only_begin
-* Added - Pro
-[//]: # fs_premium_only_end
-* Base salary item added to Google structure data
-* Location Country Code added to Google structure data
-* Location Region Code added to Google structure data
-* Location Postal Code added to Google structure data
-* Identifier added to Google structure data
-* Pagination layout improved
+= 2.5.0 =
+* New: Google structured data (Schema.org JobPosting) moved to free version — 
+  every listing is now eligible to appear in Google Jobs automatically
+* New: Contextual Pro upgrade sidebar on every settings page — shows only 
+  relevant locked features per page with pricing and money-back guarantee
+* New: Visual free/Pro row distinction across all settings pages — green rows 
+  for free features, amber rows for locked Pro features
+* New: In-plugin review prompt added to all settings pages
+* Improved: Pro upgrade messaging rewritten with benefit-focused descriptions
+* Improved: Settings pages reorganised with clearer section groupings
+* Fix: Employment type structured data format corrected to underscore format
+* Improved: Pagination rebuilt with cleaner HTML structure and optimised 
+  CSS/JS for faster rendering and better theme compatibility
 * Improved stability and compatibility
 * Tested compatibility with WordPress 7.0
 * Freemius SDK upgraded to 2.13.4

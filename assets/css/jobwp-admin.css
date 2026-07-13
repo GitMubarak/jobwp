@@ -29,6 +29,7 @@ table.hm-settings-table tr.upgrade-promotion td {
     border-bottom: 0.5px solid #fcd34d;
     max-width: 250px;
     background-image: linear-gradient(to right, #F6EEDF, #fff);
+    vertical-align: top;
 }
 
 table.hm-settings-table tr.upgrade-promotion th {
@@ -118,7 +119,7 @@ table.jobwp-single-style-settings-table tr td {
     border-bottom: 0px solid #DDD;
     padding: 15px;
     text-align: left;
-    vertical-align: middle;
+    vertical-align: top;
     background-image: linear-gradient(to right, #f0fdf4, #fff);
 }
 
@@ -505,6 +506,8 @@ img.jobwp-admin-help-img {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    border: 1px solid #DDD;
+    box-shadow: 0.3em 0.3em 1em #DDD;
 }
 
 #jobwp-download-to-csv-form {

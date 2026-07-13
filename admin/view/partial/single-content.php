@@ -401,46 +401,37 @@ $single_items = $this->get_single_items_order();
             </td>
         </tr>
         <!-- Hide Share On -->
-        <tr>
-            <th scope="row">
-                <label><?php _e('Hide Share On', 'jobwp'); ?>?</label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
+        <?php
+        $jobwp_upgrade_arr = [
+            'label' => 'Hide Social Share',
+            'icon' => 'fa-brands fa-facebook',
+            'message' => "Control the ability to share your jobs in various social platforms.",
+            'colspan' => 3
+        ];
 
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
+        $this->jobwp_upgrade_to_premium_section( $jobwp_upgrade_arr );
+
+        if ( job_fs()->is_plan__premium_only('pro', true) ) {
+            ?>
+            <tr>
+                <th scope="row">
+                    <label><?php _e('Hide Social Share', 'jobwp'); ?>?</label>
+                </th>
+                <td>
                     <input type="checkbox" name="jobwp_hide_share_on" class="jobwp_hide_share_on" id="jobwp_hide_share_on" value="1"
                         <?php checked( $jobwp_hide_share_on, 1 ); ?> />
                     <label for="jobwp_hide_share_on"><?php _e('Enable', 'jobwp'); ?></label>
-                    <?php
-                }
-                ?>
-            </td>
-            <th scope="row">
-                <label for="jobwp_hide_share_on"><?php _e('Label Text', 'jobwp'); ?></label>
-            </th>
-            <td>
-                <?php
-                if ( ! job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
-                    <span><?php echo '<a href="' . job_fs()->get_upgrade_url() . '">' . __('Available in Professional', 'jobwp') . '</a>'; ?></span>
-                    <?php
-                }
-
-                if ( job_fs()->is_plan__premium_only('pro', true) ) {
-                    ?>
+                </td>
+                <th scope="row">
+                    <label for="jobwp_hide_share_on"><?php _e('Label Text', 'jobwp'); ?></label>
+                </th>
+                <td>
                     <input type="text" name="jobwp_share_on_text" id="jobwp_share_on_text" class="regular-text" value="<?php esc_attr_e( $jobwp_share_on_text ); ?>" />
-                    <?php
-                }
-                ?>
-            </td>
-        </tr>
+                </td>
+            </tr>
+            <?php
+        }
+        ?>
     </table>
     <hr>
     <p class="submit">

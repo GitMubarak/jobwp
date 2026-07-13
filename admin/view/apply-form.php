@@ -10,9 +10,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div>
 
     <?php 
-        if ( $jobwpApplyFormMessage ) {
-            $this->jobwp_display_notification('success', 'Your information updated successfully.');
-        }
+    if ( $jobwpApplyFormMessage ) {
+        $this->jobwp_display_notification('success', 'Your information updated successfully.');
+    }
     ?>
 
     <div class="jobwp-wrap">
@@ -32,9 +32,55 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <?php 
                 switch ( $jobwpTab ) {
                     case 'styles':
+
+                        $jobwp_pro_features_local = [
+                            [
+                                'icon' => 'fa-solid fa-palette',
+                                'heading' => 'Apply Form Styling',
+                                'sub-heading' => "Full visual control over your application form — colours, fonts, borders, button styles and hover states"
+                            ]
+                        ];
+
+                        $jobwp_pro_features_global = [
+                            'Featured jobs slider',
+                            'Company profiles & logos',
+                            'CSV & Excel export',
+                            'Post-submission redirect',
+                            'Embed search panel on any page via shortcode',
+                            'Job level filtering by shortcode'
+                        ];
+                        
                         include_once JOBWP_PATH . 'admin/view/partial/apply-form-style.php';
                         break;
                     default:
+
+                        $jobwp_pro_features_local = [
+                            [
+                                'icon' => 'fa-solid fa-phone',
+                                'heading' => 'Display phone field',
+                                'sub-heading' => "Let candidates include their phone number with country code in their application"
+                            ],
+                            [
+                                'icon' => 'fa-regular fa-square-check',
+                                'heading' => 'User consent checkbox',
+                                'sub-heading' => "GDPR-compliant consent checkbox with custom message — candidates agree terms before submitting"
+                            ],
+                            [
+                                'icon' => 'fa-regular fa-file-word',
+                                'heading' => 'DOC & DOCX resume uploads',
+                                'sub-heading' => "Accept Word document CVs alongside PDFs automatically on upgrade"
+                            ]
+                        ];
+
+                        $jobwp_pro_features_global = [
+                            'Featured jobs slider',
+                            'Post-submission redirect',
+                            'CSV & Excel export',
+                            'Role-based email notifications',
+                            'Embed search panel on any page via shortcode',
+                            'Job level filtering by shortcode'
+                        ];
+
                         include_once JOBWP_PATH . 'admin/view/partial/apply-form-content.php';
                         break;
                 } 
@@ -43,7 +89,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         
         </div>
 
-        <?php include_once('partial/admin-sidebar.php'); ?>
+        <?php $this->jobwp_load_admin_sidebar( $jobwp_pro_features_local, $jobwp_pro_features_global ); ?>
     
     </div>
 
