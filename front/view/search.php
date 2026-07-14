@@ -197,7 +197,7 @@ for ( $sia=1; $sia<6; $sia++ ) {
         </div>
 
         <div class="jobwp-search-item">
-            <a href="<?php echo get_permalink( $post->ID ); ?>" class="fa fa-refresh" id="jobwp-search-refresh"></a>
+            <a href="<?php echo get_permalink( $post->ID ); ?>" id="jobwp-search-refresh"><i class="fa fa-refresh"></i></a>
         </div>
     
     </div>

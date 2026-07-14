@@ -3,7 +3,7 @@ Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: Job Board, Job Listing, Career Page, Recruitment, Job Manager
 Stable tag: 2.5.0
-Tested up to: 7.0
+Tested up to: 7.0.1
 Requires at least: 5.8
 Requires PHP: 7.4
 License: GPLv2 or later

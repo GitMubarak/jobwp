@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
 
-.jobwp-listing-body-container {
+.jobwp-listing-parent-wrapper .jobwp-listing-body-container {
     margin: 20px auto;
     border: 0px solid #000;
     width: 100%;
@@ -24,7 +24,7 @@
     color: #555555;
 }
 
-.jobwp-listing-top {
+.jobwp-listing-parent-wrapper .jobwp-listing-top {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -73,7 +73,7 @@
 
 /* Listing Started */
 
-.jobwp-item {
+.jobwp-listing-parent-wrapper .jobwp-item {
     padding: 10px 20px;
     background: #FFF;
     border: 1px solid #ddd;
@@ -376,7 +376,7 @@ div.jobwp-pagination ul.page-numbers li span.current {
 
 /* Search Started */
 
-.jobwp-search-container {
+.jobwp-listing-parent-wrapper .jobwp-search-container {
     border: 1px solid #ddd;
     width: 100%;
     max-width: 1150px;
@@ -472,14 +472,14 @@ div.jobwp-pagination ul.page-numbers li span.current {
 
 /* Details Started */
 
-.jobwp-single-body-container {
+html .jobwp-single-body-container {
     border: 0px solid #000;
     width: 100%;
     max-width: 1150px;
     margin: 40px auto;
 }
 
-.jobwp-single-area {
+.jobwp-single-body-container .jobwp-single-area {
     width: 100%;
     display: block;
 }
@@ -490,21 +490,21 @@ div.jobwp-pagination ul.page-numbers li span.current {
     padding: 0 20px;
 }
 
-.left-cell {
+.jobwp-single-body-container .left-cell {
     float: left;
     text-align: right;
     width: 30%;
     padding: 20px 20px 20px 0;
 }
 
-.right-cell {
+.jobwp-single-body-container .right-cell {
     float: right;
     width: 70%;
     padding: 20px 0 20px 30px;
     border-left: 1px solid #999;
 }
 
-.circulr-details-top {
+.jobwp-single-body-container .circulr-details-top {
     background: #eee;
     width: 100%;
     display: grid;
@@ -513,14 +513,14 @@ div.jobwp-pagination ul.page-numbers li span.current {
     padding: 10px 0;
 }
 
-.single-top-left,
-.single-top-right {
+.jobwp-single-body-container .single-top-left,
+.jobwp-single-body-container .single-top-right {
     padding: 20px 0;
     text-align: center;
 }
 
-.circulr-details-top .jobwp-job-title,
-.circulr-details-top .jwb-single-comp-name {
+.jobwp-single-body-container .circulr-details-top .jobwp-job-title,
+.jobwp-single-body-container .circulr-details-top .jwb-single-comp-name {
     font-size: 32px;
     line-height: 46px;
     text-align: left;
@@ -564,7 +564,7 @@ div.jobwp-pagination ul.page-numbers li span.current {
     font-size: 36px;
 }
 
-.jobwp-primary-button {
+.jobwp-single-body-container .jobwp-primary-button {
     border-radius: 3px;
     font-size: 18px;
     text-transform: uppercase;
@@ -579,7 +579,7 @@ div.jobwp-pagination ul.page-numbers li span.current {
     background: none;
 }
 
-.circulr-details-bottom-email {
+.jobwp-single-body-container .circulr-details-bottom-email {
     background: #eeeeee;
     width: 100%;
     line-height: 10px;
@@ -588,7 +588,7 @@ div.jobwp-pagination ul.page-numbers li span.current {
     text-align: center;
 }
 
-h3.wpsd-read-before-apply {
+.jobwp-single-body-container h3.wpsd-read-before-apply {
     font-size: 24px;
     padding: 0px;
     margin: 0;
@@ -596,7 +596,7 @@ h3.wpsd-read-before-apply {
     text-align: center;
 }
 
-span.wpsd-read-before-apply-border {
+.jobwp-single-body-container span.wpsd-read-before-apply-border {
     border-bottom: 3px solid #CCC;
     display: block;
     line-height: 10px;
@@ -604,7 +604,7 @@ span.wpsd-read-before-apply-border {
     margin: 0 auto;
 }
 
-.circulr-details-bottom-email p.apply-to-email {
+.jobwp-single-body-container .circulr-details-bottom-email p.apply-to-email {
     margin: 20px 0;
     padding: 0;
     font-size: 13px;

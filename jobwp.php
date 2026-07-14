@@ -6,7 +6,7 @@
  * Version:             2.5.0
  * Author:		        HM Plugin
  * Author URI:	        https://hmplugin.com
- * Tested up to:        7.0
+ * Tested up to:        7.0.1
  * Requires at least:   5.8
  * Requires PHP:        7.4
  * Text Domain:         jobwp
