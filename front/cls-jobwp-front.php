@@ -182,6 +182,21 @@ class JobWp_Front
 		return $template;
 	}
 
+	function jobwp_single_template_only_content( $content ) {
+		
+		// Check if we are viewing a single 'my_item' post and inside the main loop
+		if (is_singular('jobs') && is_main_query()) {
+			
+			ob_start();
+			
+			include JOBWP_PATH . 'front/view/job-details-content.php';
+			
+			return ob_get_clean(); 
+		}
+		
+		return $content;
+	}
+
 	function jobwp_add_ld_json() {
 
 		global $post;

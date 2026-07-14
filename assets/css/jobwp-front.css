@@ -492,7 +492,7 @@ html .jobwp-single-body-container {
 
 .jobwp-single-body-container .left-cell {
     float: left;
-    text-align: right;
+    text-align: right !important;
     width: 30%;
     padding: 20px 20px 20px 0;
 }
@@ -516,7 +516,7 @@ html .jobwp-single-body-container {
 .jobwp-single-body-container .single-top-left,
 .jobwp-single-body-container .single-top-right {
     padding: 20px 0;
-    text-align: center;
+    text-align: center !important;
 }
 
 .jobwp-single-body-container .circulr-details-top .jobwp-job-title,
@@ -536,15 +536,17 @@ html .jobwp-single-body-container {
     line-height: 28px;
 }
 
-.single-top-right img {
+.jobwp-single-body-container .single-top-right img {
     max-height: 100px;
     width: auto;
+    text-align: center !important;
 }
 
-.jobwp-single-area .content-row .left-cell h5.label {
+.jobwp-single-body-container .jobwp-single-area .content-row .left-cell h5.label {
     margin: 0;
     padding: 0;
     font-size: 18px;
+    text-align: right;
 }
 
 .padding-50-0 {
@@ -583,9 +585,9 @@ html .jobwp-single-body-container {
     background: #eeeeee;
     width: 100%;
     line-height: 10px;
-    padding: 20px 0;
+    padding: 20px 10px;
     display: block;
-    text-align: center;
+    text-align: center !important;
 }
 
 .jobwp-single-body-container h3.wpsd-read-before-apply {
@@ -593,7 +595,7 @@ html .jobwp-single-body-container {
     padding: 0px;
     margin: 0;
     width: 100%;
-    text-align: center;
+    text-align: center !important;
 }
 
 .jobwp-single-body-container span.wpsd-read-before-apply-border {
@@ -609,6 +611,7 @@ html .jobwp-single-body-container {
     padding: 0;
     font-size: 13px;
     line-height: 20px;
+    text-align: center !important;
 }
 
 .circulr-details-bottom-email p.apply-to-email a,
