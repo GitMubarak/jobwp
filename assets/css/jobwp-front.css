@@ -530,7 +530,7 @@ html .jobwp-single-body-container {
     width: 80%;
 }
 
-.circulr-details-top .jwb-single-comp-name {
+.jobwp-single-body-container .circulr-details-top .jwb-single-comp-name {
     font-size: 18px;
     margin-top: 10px;
     line-height: 28px;

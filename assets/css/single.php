@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <style type="text/css">
-  html .jobwp-single-body-container {
+  .jobwp-single-body-container {
     background: <?php esc_html_e( $jobwp_single_container_bg_color ); ?>;
     margin-top: <?php esc_html_e( $jobwp_single_container_margin_top ); ?>px;
     margin-bottom: <?php esc_html_e( $jobwp_single_container_margin_btm ); ?>px !important;
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   .jobwp-single-body-container .circulr-details-top {
     background: <?php esc_html_e( $jobwp_single_title_bg_color ); ?>;
   }
-  .circulr-details-top .jobwp-job-title {
+  .jobwp-single-body-container .circulr-details-top .jobwp-job-title {
     color: <?php esc_html_e( $jobwp_single_title_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_single_title_font_size ); ?>px;
     line-height: <?php esc_html_e( $jobwp_single_title_font_size + 10 ); ?>px;

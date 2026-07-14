@@ -10,7 +10,8 @@ $jobwp_type_s       =  isset( $_GET['jobwp_type_s'] ) ? sanitize_text_field( $_G
 $jobwp_location_s   =  isset( $_GET['jobwp_location_s'] ) ? sanitize_text_field( $_GET['jobwp_location_s'] ) : '';
 
 if ( job_fs()->is_plan__premium_only('pro', true) ) {
-    $jobwp_level_s      =  isset( $_GET['jobwp_level_s'] ) ? sanitize_text_field( $_GET['jobwp_level_s'] ) : '';
+    $jobwp_level_s   =  isset( $_GET['jobwp_level_s'] ) ? sanitize_text_field( $_GET['jobwp_level_s'] ) : '';
+    $jobwp_company_s = isset( $_GET['company'] ) ? sanitize_text_field( wp_unslash( $_GET['company'] ) ) : '';
 }
 
 // Search Query Ttitle
@@ -55,7 +56,19 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
             'terms' => urldecode( $jobwp_level_s )
         );
     }
+
+    // Search by company
+    if ( '' !== $jobwp_company_s ) {
+
+        $jobwpQueryArrParams['tax_query'][] = array(
+            'taxonomy'  => 'job_company',
+            'field'     => 'slug',
+            'terms'     => $jobwp_company_s,
+        );
+    }
 }
+//echo '<pre>';
+//print_r($jobwpQueryArrParams);
 
 $jobwp_categories   = get_terms( array( 'taxonomy' => 'jobs_category', 'hide_empty' => true, 'order' => 'ASC',  'parent' => 0 ) );
 $jobwp_types        = get_terms( array( 'taxonomy' => 'jobs_nature', 'hide_empty' => true, 'order' => 'ASC',  'parent' => 0 ) );

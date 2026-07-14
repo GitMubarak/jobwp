@@ -62,7 +62,7 @@ $jobwp_order        = isset( $jobwpAttr['order'] ) ? $jobwpAttr['order'] : 'DESC
 // Shortcoded options for Pro users
 if ( job_fs()->is_plan__premium_only('pro', true) ) {
     
-    $jobwp_company  = isset( $jobwpAttr['company'] ) ? $jobwpAttr['company'] : '';
+    $jobwp_company  = isset( $jobwpAttr['company'] ) ? sanitize_text_field( $jobwpAttr['company'] ) : '';
     $jobwp_level    = isset( $jobwpAttr['level'] ) ? $jobwpAttr['level'] : '';
     $jobwp_location = isset( $jobwpAttr['location'] ) ? explode( ",", $jobwpAttr['location'] ) : [];
 }
@@ -79,16 +79,18 @@ $jobwpQueryArrParams = array(
     'posts_per_page'    => $jobwp_limit,
     'paged'             => $jobwp_paged,
     'meta_query'        => array(
-        'relation' => 'AND',
+        //'relation' => 'AND',
         array(
             'key'     => 'jobwp_status',
             'value'   => 'active',
             'compare' => '='
         ),
     ),
+    /*
     'tax_query'         => array(
         'relation' => 'AND',
     ),
+    */
 );
 
 // If Category params found in shortcode

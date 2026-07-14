@@ -139,6 +139,7 @@ class JobWp_Front
 			add_shortcode( 'jobwp_search', array( $this, 'jobwp_load_search_view' ) );
 			add_shortcode( 'jobwp_featured', array( $this, 'jobwp_load_featured_view' ) );
 			add_shortcode( 'jobwp_single_job', array( $this, 'jobwp_load_single_job_view' ) );
+			add_shortcode( 'jobwp_company_directory', array( $this, 'jobwp_company_directory_view' ) );
 		}
 	}
 
@@ -153,6 +154,15 @@ class JobWp_Front
 		include ( dirname( __FILE__ ) .  '/view/listing.php' );
 		$output .= ob_get_clean();
 		return $output;
+	}
+
+	function jobwp_company_directory_view( $attr ) {
+
+		ob_start();
+		
+		include ( dirname( __FILE__ ) .  '/view/company-directory.php' );
+		 
+		return ob_get_clean();
 	}
 
 	/**
