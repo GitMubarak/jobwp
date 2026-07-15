@@ -1,7 +1,7 @@
-=== JobWP - Job Board, Job Listing, Career Page and Recruitment Plugin ===
+=== JobWP - Job Board Plugin for WordPress | Job Listings, Career Page & Applications ===
 Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
-Tags: Job Board, Job Listing, Career Page, Recruitment, Job Manager
+Tags: Job Board, Job Listing, Career Page, job application, google jobs
 Stable tag: 2.5.0
 Tested up to: 7.0.1
 Requires at least: 5.8
@@ -9,73 +9,121 @@ Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Create a modern job board and career page on WordPress. Accept job listings, manage applications, and grow a recruitment platform.
+Build a job board in WordPress with Google Jobs support, built-in application management, and reCAPTCHA — free. No coding needed.
 
 == Description ==
 
-**JobWP is a powerful and easy-to-use WordPress job board plugin** that helps you build a professional **career page, job listings board, and online recruitment system** without coding. Whether you’re a business, agency, recruiter, or community site, JobWP makes posting and managing jobs fast and simple.
+**JobWP is a powerful, easy-to-use WordPress job board plugin** built for two types of sites that most plugins ignore: companies that want a professional career page for their own vacancies, and recruitment agencies that post jobs on behalf of multiple clients and need each listing to carry the right company name and logo. Both use cases are fully supported out of the box — no add-ons, no workarounds.
+
+Every listing automatically includes Google structured data, making your jobs eligible to appear in Google's dedicated job search results and reach candidates you'd never find otherwise — free, with zero configuration. Built-in reCAPTCHA keeps spam applications out. And the whole thing is live in under 10 minutes using a single shortcode.
 
 
-**📌 Key Benefits**
+**📌 Why teams choose JobWP**
 
-✔ Add job listings and job board functionality to any WordPress site
-✔ Display jobs with a shortcode anywhere on your site
-✔ Accept applications directly via built-in application form
-✔ Rich job listing features like search, filters, list/grid view
-✔ Translation-ready and responsive on mobile devices
-✔ Great for companies, recruiters, agencies, and job boards
+✔ Jobs show up in Google Search — every listing includes Schema.org JobPosting structured data so your roles are eligible for Google's dedicated job search panel, free, automatically, no setup needed
+✔ Three ways for candidates to apply — built-in application form, redirect to LinkedIn/Indeed/any external URL, or connect a third-party form (WPForms, CF7, and more)
+✔ Manage all applications in WordPress — a dedicated application panel lets you view, review, and action every submission without leaving your dashboard
+✔ Spam-free applications — optional reCAPTCHA keeps bots out of your applicant inbox
+✔ Works for single companies and recruitment agencies — post jobs for your own organisation or build a job board that serves multiple clients (full multi-company features available in Pro)
+✔ Live in under 10 minutes — add one shortcode to any page and your job board is ready
+✔ Works with every WordPress theme — fully responsive, no style conflicts
+✔ Translation-ready — ships with 9 languages including Spanish, French, German, Italian, and Portuguese
 
 
+**How It Works**
 
-**How It Works!**
+1. Install JobWP from the WordPress plugin directory
+2. Create a page and add the shortcode [jobwp_listing]
+3. Publish the page — your job board is live
+4. Add jobs from the WP Jobs menu in your dashboard
+5. Applications land in your application panel automatically
 
 [youtube https://youtu.be/ZtbjdFyas90]
 
 
+**🌟 Everything in the free version**
 
-**🌟 Main Features (Free Version)**
+✓ Publish unlimited job listings with title, description, 
+  experience, job type, deadline and location
+✓ Control job title word length — set how many words display 
+  in listing titles
+✓ Display jobs anywhere using the [jobwp_listing] shortcode
+✓ List/grid view toggle so candidates can browse the way 
+  they prefer
+✓ Basic styling control — customise job title font colour, font 
+  size, hover colour, and job overview font colour and size without 
+  touching CSS
+✓ Built-in search panel — filter by keyword, category, 
+  job type, and location
+✓ Show or hide job information fields — control which of the 
+  four core details appear on listings (experience, deadline, 
+  location, job type)
+✓ Customise field label text — rename any job information 
+  label to suit your own terminology
+✓ Reorder job information fields — control the display order 
+  of job details on listing cards
+✓ Show or hide pagination on your job board
+✓ Full job detail page control — show or hide any job information 
+  field, customise all label text, and set your job title HTML tag 
+  (h1–h6) for SEO
+✓ Apply procedure section — add custom application instructions 
+  with your own title and content
+✓ Apply button customisation — set your own apply button text
+✓ Apply form customisation — show or hide form fields, customise 
+  all label text including form title, name, email, cover letter, 
+  and resume upload labels
+✓ Detail page styling — customise container, job title, job info 
+  labels, apply procedure, and apply button colours and fonts
+✓ Candidates apply directly from the job detail page
+✓ Third-party form support — connect WPForms, Contact Form 7, 
+  or any shortcode-based form as your application form
+✓ Resume/CV upload (PDF) on the application form
+✓ Instant email notification to admin when a new application 
+  arrives
+✓ Application management panel — view, review, and delete 
+  submitted applications one by one from your WordPress dashboard
+✓ Google structured data on every listing — eligible to appear 
+  in Google Jobs, automatically, no configuration needed
+✓ reCAPTCHA spam protection on the application form
+✓ Deadline management — hide jobs automatically when the 
+  deadline passes
+✓ Fully responsive on all devices
+✓ Translation-ready with POT file included
 
-✓ Create and display job listings in a clean layout
 
-✓ Use the [jobwp_listing] shortcode to show jobs anywhere
+**🚀 Upgrade to JobWP Pro — built for growth and professional use**
 
-✓ List jobs in list or grid view
+The free version is built for getting started. Pro is built for sites where applications are coming in daily, where you need to run a polished, branded operation, or where you're managing job boards for multiple clients as a recruitment agency.
 
-✓ Built-in job search by title, category, type, location
+👤 Multi-company support — the feature that turns JobWP into a full recruitment agency platform:
+   → Assign any job to a client company with their own name and logo displayed on the listing
+   → Create dedicated company profile pages
+   → Filter and display jobs by company using a dedicated shortcode
+   → Post on behalf of unlimited clients from one WordPress dashboard
+   → Earn placement fees while your clients get a professional, branded job board experience
 
-✓ Responsive on all devices
+📥 Export all applicant data to CSV/Excel in one click — stop copying applications by hand into spreadsheets
+✉️ Full email control — customise every aspect of your candidate notification emails:
+   → Set the From name and From email so emails arrive from your brand, not a generic WordPress address
+   → Write your own subject line
+   → Fully customise the email body with your own wording and formatting
+   → Optionally disable candidate confirmation emails entirely
+🔀 Post-submission redirect — send applicants to a branded thank-you page, conversion tracking URL, or next-step page after they apply
+🔗 External application URLs — link any job to LinkedIn, Indeed, or any external platform
+🖥️ Two job detail page layouts — choose between a Vertical (single-column) or Horizontal (two-column with apply form alongside) layout. Switch instantly from your settings panel, no CSS needed
+🎨 Full styling control — customise colours and typography to match your brand without touching CSS
+🏆 Featured jobs slider — pin priority listings to the top of your board
+📊 Role-based email routing — route new applications to the right team member automatically, not just the admin
+📄 DOC & DOCX resume uploads — accept Word document CVs alongside PDFs
+🔒 GDPR consent checkbox with custom message — collect applicant consent with your own specific wording at point of application
+🔒 Login-required applications — restrict the apply button to registered users only
+📱 Display mobile number on the application form
+🔢 Job level option in the search panel — let candidates filter by seniority
+🖼️ Featured image on job cards — add a visual banner to each job card in grid view for a more engaging, professional-looking job board
+🏢 Company directory — a dedicated company grid page showing all your client companies with their logo, open job count, and latest 
+  listings. Display it anywhere using a shortcode
 
-✓ Applicants can apply directly from job details page
-
-✓ Instant email notification on new applications
-
-✓ Google structured data for job listings (SEO benefit)
-
-
-
-**🚀 Upgrade to Pro for More Features**
-
-📥 Export applications to CSV/Excel
-
-✉️ Customizable email notifications for Candidate
-
-🔗 External application URL support
-
-🎨 More styling options for job listing and job detail pages
-
-👤 Company profile support (logo, details)
-
-🏆 Featured jobs slider
-
-📊 Role based notifications
-
-📄 DOCX upload for applicant resumes
-
-🔒 Consent checkbox and improved UX for forms
-
-🗃️ Job search panel display controls
-
-👥 Optional login requirement to apply
+👉 See all Pro features, pricing, and a live demo at [wpjoblisting.com](https://wpjoblisting.com/)
 
 
 
