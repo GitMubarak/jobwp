@@ -224,6 +224,9 @@ Yes. JobWP is **translation-ready** and can be translated into any language usin
 [//]: # fs_premium_only_begin
 * Improved: CSV export code optimised for faster and more reliable 
   application data exports - Pro
+* New: Featured image support added for job listings in grid view - Pro
+* New: Company directory with logo, open job count, and job listings 
+  per company - Pro
 [//]: # fs_premium_only_end
 * New: Google structured data (Schema.org JobPosting) moved to free version — 
   every listing is now eligible to appear in Google Jobs automatically

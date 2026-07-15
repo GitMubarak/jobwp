@@ -128,6 +128,19 @@
 }
 */
 
+.jobwp-featured-image-container {
+    width: 100%;
+    height: auto;
+    margin: 5px 0 20px 0;
+    overflow: hidden;
+}
+
+.jobwp-featured-image-container img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+}
+
 .jobwp-item .jobwp-job-title {
     margin-bottom: 5px;
 }
