@@ -5,33 +5,33 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <style type="text/css">
   /* Search Panel Started */
-  .jobwp-search-container {
+  .jobwp-listing-parent-wrapper .jobwp-search-container {
     background-color: <?php esc_html_e( $jobwp_search_container_bg_color ); ?>;
     border-color: <?php esc_html_e( $jobwp_search_container_border_color ); ?>;
   }
-  .jobwp-search-container .jobwp-search-item input[type="text"],
-  .jobwp-search-container .jobwp-search-item select {
+  .jobwp-listing-parent-wrapper .jobwp-search-container .jobwp-search-item input[type="text"],
+  .jobwp-listing-parent-wrapper .jobwp-search-container .jobwp-search-item select {
     background-color: <?php esc_html_e( $jobwp_search_item_bg_color ); ?>;
     border-color: <?php esc_html_e( $jobwp_search_item_border_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_search_item_font_size ); ?>px;
   }
-  .jobwp-search-container .jobwp-search-item .button.submit-btn {
+  .jobwp-listing-parent-wrapper .jobwp-search-container .jobwp-search-item .button.submit-btn {
     background-color: <?php esc_html_e( $jobwp_search_btn_bg_color ); ?>;
     color: <?php esc_html_e( $jobwp_search_btn_font_color ); ?>;
     font-size: <?php esc_html_e( $jobwp_search_btn_font_size ); ?>px;
     border: 1px solid <?php esc_html_e( $jobwp_search_btn_border_color ); ?>;
   }
-  .jobwp-search-container .jobwp-search-item .button.submit-btn:hover {
+  .jobwp-listing-parent-wrapper .jobwp-search-container .jobwp-search-item .button.submit-btn:hover {
     background-color: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
     color: <?php esc_html_e( $jobwp_search_btn_font_color_hvr ); ?>;
     border-color: <?php esc_html_e( $jobwp_search_btn_border_color_hvr ); ?>;
   }
-  .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
+  .jobwp-listing-parent-wrapper .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
     background-color: <?php esc_html_e( $jobwp_reset_btn_bg_color ); ?>;
     color: <?php esc_html_e( $jobwp_reset_btn_font_color ); ?>;
     border-color: <?php esc_html_e( $jobwp_reset_btn_border_color ); ?>;
   }
-  .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh:hover {
+  .jobwp-listing-parent-wrapper .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh:hover {
     background-color: <?php esc_html_e( $jobwp_reset_btn_bg_color_hvr ); ?>;
     color: <?php esc_html_e( $jobwp_reset_btn_font_color_hvr ); ?>;
     border-color: <?php esc_html_e( $jobwp_reset_btn_border_color_hvr ); ?>;

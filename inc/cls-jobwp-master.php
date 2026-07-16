@@ -80,9 +80,7 @@ class JobWp_Master {
 		$this->jobwp_loader->add_action('wp_enqueue_scripts', $jobwp_front, JOBWP_PRFX . 'front_assets');
 		$this->jobwp_loader->add_filter('single_template', $jobwp_front, JOBWP_PRFX . 'single_template', 10);
 		//$this->jobwp_loader->add_filter('the_content', $jobwp_front, 'jobwp_single_template_only_content', 10);
-
 		//$this->jobwp_loader->add_filter('wp_head', $jobwp_front, 'jobwp_add_ld_json', -1);
-		
 		$jobwp_front->jobwp_load_shortcode();
 	}
 
