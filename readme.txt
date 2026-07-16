@@ -44,7 +44,8 @@ Every listing automatically includes Google structured data, making your jobs el
 **🌟 Everything in the free version**
 
 ✓ Publish unlimited job listings with title, description, experience, job type, deadline and location
-✓ Control job title word length — set how many words display in listing titles
+✓ Control listing card content — show or hide the job overview, set word length for both title and overview, 
+  keeping your listing cards neat and consistent
 ✓ Display jobs anywhere using the [jobwp_listing] shortcode
 ✓ List/grid view toggle so candidates can browse the way they prefer
 ✓ Basic styling control — customise job title font colour, font size, hover colour, and job overview font 
@@ -55,6 +56,10 @@ Every listing automatically includes Google structured data, making your jobs el
 ✓ Customise field label text — rename any job information label to suit your own terminology
 ✓ Reorder job information fields — control the display order of job details on listing cards
 ✓ Show or hide pagination on your job board
+✓ Search panel customisation — show or hide the entire search panel, control which search filters appear 
+  (keyword, category, job type, location), and customise all placeholder text and search button label
+✓ Search panel styling — customise search container, field colours, search button and reset button colours, fonts, 
+  and hover states
 ✓ Full job detail page control — show or hide any job information field, customise all label text, and 
   set your job title HTML tag (h1–h6) for SEO
 ✓ Apply procedure section — add custom application instructions with your own title and content
@@ -62,7 +67,7 @@ Every listing automatically includes Google structured data, making your jobs el
 ✓ Apply form customisation — show or hide form fields, customise all label text including form title, name, 
   email, cover letter, and resume upload labels
 ✓ Detail page styling — customise container, job title, job info labels, apply procedure, and apply button 
-  colours and fonts
+  colours and fonts, and hover states
 ✓ Candidates apply directly from the job detail page
 ✓ Third-party form support — connect WPForms, Contact Form 7, or any shortcode-based form as your 
   application form
