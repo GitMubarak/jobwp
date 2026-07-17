@@ -80,11 +80,14 @@
     margin-bottom: 30px;
     display: inline-block;
     width: 100%;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    transition: .25s;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .04);
+}
+
+.jobwp-listing-parent-wrapper .jobwp-item:hover {
+    transform: translateY(-5px);
+    border-color: #2271b1;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
 }
 
 .jobwp-item .jobwp-top {
@@ -130,15 +133,16 @@
 
 .jobwp-featured-image-container {
     width: 100%;
-    height: auto;
-    margin: 5px 0 20px 0;
+    height: 300px;
+    margin: 10px 0 20px 0;
     overflow: hidden;
 }
 
 .jobwp-featured-image-container img {
-    max-width: 95%;
-    max-height: 95%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .jobwp-item .jobwp-job-title {
@@ -221,6 +225,13 @@ div.jobwp-featured-meta i {
 
 .jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper .jobwp-list-info-item .jobwp-list-bottom-item {
     margin-bottom: 0;
+    transition: .2s;
+}
+
+.jobwp-listing-body-container .jobwp-item .jobwp-list-info-wrapper .jobwp-list-info-item .jobwp-list-bottom-item:hover {
+    margin-bottom: 0;
+    transition: .2s;
+    padding-left: 8px;
 }
 
 
@@ -237,13 +248,14 @@ div.jobwp-featured-meta i {
 }
 
 .jobwp-listing-body-container.grid .jobwp-item .jobwp-top .jobwp-top-img {
+    width: fit-content;
     height: 80px;
-    margin-bottom: 10px;
 }
 
 .jobwp-listing-body-container.grid .jobwp-item .jobwp-top .jobwp-top-img img {
     height: 100%;
     width: auto;
+    display: block;
 }
 
 .jobwp-listing-body-container.grid .jobwp-item .jobwp-top .jobwp-top-left {
@@ -485,7 +497,7 @@ div.jobwp-pagination ul.page-numbers li span.current {
 
 /* Details Started */
 
-html .jobwp-single-body-container {
+.jobwp-single-body-container {
     border: 0px solid #000;
     width: 100%;
     max-width: 1150px;
@@ -505,7 +517,7 @@ html .jobwp-single-body-container {
 
 .jobwp-single-body-container .left-cell {
     float: left;
-    text-align: right !important;
+    text-align: right;
     width: 30%;
     padding: 20px 20px 20px 0;
 }
@@ -559,7 +571,6 @@ html .jobwp-single-body-container {
     margin: 0;
     padding: 0;
     font-size: 18px;
-    text-align: right;
 }
 
 .padding-50-0 {

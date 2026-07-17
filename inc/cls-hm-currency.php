@@ -45,6 +45,11 @@ trait JobWP_Currency
               "symbol": "&#36;"
             },
             {
+              "currency": " Bangladeshi Taka",
+              "abbreviation": "BDT",
+              "symbol": "&#2547;"
+            },
+            {
               "currency": "Barbados Dollar",
               "abbreviation": "BBD",
               "symbol": "&#36;"

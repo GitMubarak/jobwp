@@ -71,7 +71,7 @@ trait Jobwp_Listing_Styles_Settings
             [
                 'name'      => 'jobwp_listing_item_border_color',
                 'type'      => 'text',
-                'default'   => '#DDD',
+                'default'   => '#e8edf3',
             ],
             [
                 'name'      => 'jobwp_pagination_font_color',

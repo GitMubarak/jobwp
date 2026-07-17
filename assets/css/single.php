@@ -25,11 +25,11 @@ if ( ! defined( 'ABSPATH' ) ) {
   .jobwp-single-area .content-row .right-cell {
     width: <?php esc_html_e( $jobwp_single_info_column_right_width ); ?>%;
   }
-  .jobwp-single-area .content-row .left-cell h5.label,
-  .jobwp-single-area .content-row .text {
+  .jobwp-single-body-container .jobwp-single-area .content-row .left-cell h5.label,
+  .jobwp-single-body-container .jobwp-single-area .content-row .text {
     margin: 0;
   }
-  .jobwp-single-area .content-row .left-cell h5.label {
+  .jobwp-single-body-container .jobwp-single-area .content-row .left-cell h5.label {
     font-size: <?php esc_html_e( $jobwp_single_info_lbl_font_size ); ?>px;
     color: <?php esc_html_e( $jobwp_single_info_lbl_font_color ); ?>;
   }

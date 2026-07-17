@@ -125,7 +125,7 @@ if ( $jobwpJobs->have_posts() ) {
                                 ?>
                                 <div class="jobwp-featured-image-container">
                                     <?php
-                                    the_post_thumbnail( 'medium', array( 'class' => 'jobwp-featured-img' ) ); 
+                                    the_post_thumbnail( 'medium_large', array( 'class' => 'jobwp-featured-img' ) ); 
                                     ?>
                                 </div>
                                 <?php

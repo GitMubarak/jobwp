@@ -40,7 +40,7 @@ trait Jobwp_Email_Settings
             ],
             [
                 'name'      => 'jobwp_candidate_email_body',
-                'type'      => 'kses_post',
+                'type'      => 'editor',
                 'default'   => '',
             ],
             [

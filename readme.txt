@@ -67,7 +67,7 @@ Every listing automatically includes Google structured data, making your jobs el
 ✓ Apply form customisation — show or hide form fields, customise all label text including form title, name, 
   email, cover letter, and resume upload labels
 ✓ Detail page styling — customise container, job title, job info labels, apply procedure, and apply button 
-  colours and fonts, and hover states
+  colours, fonts, and hover states
 ✓ Candidates apply directly from the job detail page
 ✓ Third-party form support — connect WPForms, Contact Form 7, or any shortcode-based form as your 
   application form
