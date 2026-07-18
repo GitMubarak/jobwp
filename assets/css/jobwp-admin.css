@@ -38,6 +38,10 @@ table.hm-settings-table tr.upgrade-promotion th {
     vertical-align: top;
 }
 
+table.hm-settings-table tr.upgrade-promotion th i {
+    margin-right: 5px;
+}
+
 table.hm-settings-table span {
     font-size: 12px;
     display: block;
