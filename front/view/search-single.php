@@ -50,28 +50,54 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
     ?>
     <style type="text/css">
         .jobwp-search-container {
+            width: 100%;
+            max-width: 1150px;
+            display: grid;
+            grid-gap: 10px;
+            padding: 10px;
+            margin: 10px auto;
             background-color: <?php esc_html_e( $jobwp_search_container_bg_color ); ?>;
-            border-color: <?php esc_html_e( $jobwp_search_container_border_color ); ?>;
+            border: 1px solid <?php esc_html_e( $jobwp_search_container_border_color ); ?>;
             grid-template-columns: <?php esc_attr_e( $grid_template_columns_css ); ?>;
         }
         .jobwp-search-container .jobwp-search-item input[type="text"],
         .jobwp-search-container .jobwp-search-item select {
             background-color: <?php esc_html_e( $jobwp_search_item_bg_color ); ?>;
-            border-color: <?php esc_html_e( $jobwp_search_item_border_color ); ?>;
+            border: 1px solid <?php esc_html_e( $jobwp_search_item_border_color ); ?>;
             font-size: <?php esc_html_e( $jobwp_search_item_font_size ); ?>px;
+            border-radius: <?php esc_attr_e( $jobwp_search_item_border_radius ); ?>px;
+            color: <?php esc_html_e( $jobwp_search_item_font_color ); ?>;
         }
-        .jobwp-search-container .jobwp-search-item .submit-btn {
+        .jobwp-search-container .jobwp-search-item .button.submit-btn {
             background-color: <?php esc_html_e( $jobwp_search_btn_bg_color ); ?>;
             color: <?php esc_html_e( $jobwp_search_btn_font_color ); ?>;
             font-size: <?php esc_html_e( $jobwp_search_btn_font_size ); ?>px;
             line-height: <?php esc_html_e( $jobwp_search_btn_font_size ); ?>px;
+            border: 1px solid <?php esc_html_e( $jobwp_search_btn_border_color ); ?>;
             max-width: 100%;
             width: 100%;
         }
-        .jobwp-search-container .jobwp-search-item .submit-btn:hover {
-            background-color: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
+        .jobwp-search-container .jobwp-search-item .button.submit-btn:hover {
+            background: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
             color: <?php esc_html_e( $jobwp_search_btn_font_color_hvr ); ?>;
-            border-color: <?php esc_html_e( $jobwp_search_btn_bg_color_hvr ); ?>;
+            border: 1px solid <?php esc_html_e( $jobwp_search_btn_border_color_hvr ); ?>;
+        }
+        @media only screen and (max-width: 980px) {
+            .jobwp-search-container {
+                grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .jobwp-search-container {
+                display: inline-block;
+                padding-bottom: 10px;
+            }
+            .jobwp-search-container .jobwp-search-item {
+                margin-bottom: 10px;
+            }
+            .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
+                margin: auto;
+            }
         }
     </style>
     <form method="GET" action="<?php echo esc_url( home_url( '/' . $jobwp_search_url ) ); ?>" id="jobwp-search-form">

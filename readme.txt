@@ -94,9 +94,14 @@ The free version is built for getting started. Pro is built for sites where appl
    → Post on behalf of unlimited clients from one WordPress dashboard
    → Earn placement fees while your clients get a professional, branded job board experience
 
+🏢 Company directory — a dedicated company grid page showing all your client companies with their logo, open job count, and latest 
+  listings. Display it anywhere using a shortcode
+🏆 Featured jobs slider — pin priority listings to the top of your board
+🖼️ Featured image on job cards — add a visual banner to each job card in grid view for a more engaging, professional-looking job board
 📥 Export all applicant data to CSV/Excel in one click — stop copying applications by hand into spreadsheets
 🗑️ Bulk application management — select and delete multiple applications at once, saving time when managing high 
   application volumes
+🔗 External application URLs — link any job to LinkedIn, Indeed, or any external platform
 ✉️ Full email control — customise every aspect of your candidate notification emails:
    → Set the From name and From email so emails arrive from your brand, not a generic WordPress address
    → Write your own subject line
@@ -104,13 +109,11 @@ The free version is built for getting started. Pro is built for sites where appl
    → Optionally disable candidate confirmation emails entirely
 🔀 Post-submission redirect — send applicants to a branded thank-you page, conversion tracking URL, or next-step page 
   after they apply
-🔗 External application URLs — link any job to LinkedIn, Indeed, or any external platform
 🖥️ Two job detail page layouts — choose between a Vertical (single-column) or Horizontal (two-column with apply form alongside) layout. 
   Switch instantly from your settings panel, no CSS needed
 ↕️ Drag and drop job detail ordering — reorder any job information field on the detail page by dragging it before or after another. 
   Changes reflect instantly on the frontend without saving it.
 🎨 Full styling control — customise colours and typography to match your brand without touching CSS
-🏆 Featured jobs slider — pin priority listings to the top of your board
 📊 Role-based email routing — route new applications to the right team member automatically, not just the admin
 👥 HR User role — assign a dedicated HR user who can create, edit, and manage all job listings from the dashboard without 
   needing full admin access
@@ -119,9 +122,8 @@ The free version is built for getting started. Pro is built for sites where appl
 🔒 Login-required applications — restrict the apply button to registered users only
 📱 Display mobile number on the application form
 🔢 Job level option in the search panel — let candidates filter by seniority
-🖼️ Featured image on job cards — add a visual banner to each job card in grid view for a more engaging, professional-looking job board
-🏢 Company directory — a dedicated company grid page showing all your client companies with their logo, open job count, and latest 
-  listings. Display it anywhere using a shortcode
+🔍 Display single job details by ID — embed the full job detail page for any specific job on any page using a shortcode with 
+  the job ID
 
 👉 See all Pro features, pricing, and a live demo at [wpjoblisting.com](https://wpjoblisting.com/)
 

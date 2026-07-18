@@ -865,14 +865,14 @@ ul.jobwp-share-on li a.jobwp-share-on-link:hover {
     .jobwp-single-area {
         display: block;
     }
-    .jobwp-search-container {
+    .jobwp-listing-parent-wrapper .jobwp-search-container {
         display: inline-block;
         padding-bottom: 10px;
     }
-    .jobwp-search-container .jobwp-search-item {
+    .jobwp-listing-parent-wrapper .jobwp-search-container .jobwp-search-item {
         margin-bottom: 10px;
     }
-    .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
+    .jobwp-listing-parent-wrapper .jobwp-search-container .jobwp-search-item a#jobwp-search-refresh {
         margin: auto;
     }
     .jobwp-listing-body-container.grid {
