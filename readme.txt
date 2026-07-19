@@ -99,8 +99,6 @@ The free version is built for getting started. Pro is built for sites where appl
 🏆 Featured jobs slider — pin priority listings to the top of your board
 🖼️ Featured image on job cards — add a visual banner to each job card in grid view for a more engaging, professional-looking job board
 📥 Export all applicant data to CSV/Excel in one click — stop copying applications by hand into spreadsheets
-🗑️ Bulk application management — select and delete multiple applications at once, saving time when managing high 
-  application volumes
 🔗 External application URLs — link any job to LinkedIn, Indeed, or any external platform
 ✉️ Full email control — customise every aspect of your candidate notification emails:
    → Set the From name and From email so emails arrive from your brand, not a generic WordPress address
