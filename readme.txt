@@ -267,6 +267,7 @@ Yes. JobWP Pro comes with a 14-day money-back guarantee. If you upgrade and deci
 * Added redirect option after application submit - Pro
 [//]: # fs_premium_only_end
 * Updated: Freemius SDK to the latest version
+* Updated: Apply form CV file mismatch message changed
 
 = 2.5.0 =
 [//]: # fs_premium_only_begin

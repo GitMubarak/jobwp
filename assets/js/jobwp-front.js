@@ -83,7 +83,7 @@
             fail('Please select a file.', fileElt);
             return false;
         } else if (!/\.(docx|pdf|doc)$/.test(fileName)) {
-            fail('Only Pdf file is permitted. (docx, doc only for Premium version)', fileElt);
+            fail('File mismatch, please check allowed file types.', fileElt);
             return false;
         } else {
             var file = fileElt.get(0).files[0];
