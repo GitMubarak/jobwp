@@ -2,12 +2,12 @@
 Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: job board, job listing, career page, job application, google jobs
-Stable tag: 2.5.0
-Tested up to: 7.0.1
+Stable tag: 2.5.1
+Tested up to: 7.1.3
 Requires at least: 5.8
 Requires PHP: 7.4
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Build a job board in WordPress with Google Jobs support, built-in application management, and reCAPTCHA — free. No coding needed.
 
@@ -248,16 +248,16 @@ Yes. JobWP Pro comes with a 14-day money-back guarantee. If you upgrade and deci
 
 == Screenshots ==
 
-1. Job board frontend (clean, modern) List View
-2. Job listing frontend Grid View
-3. Single career page view
-4. Job submission form
-5. Listing page content settings
-6. Listing page styles settings
-7. Details page content settings
-8. Details page styles settings
-9. Admin management screen
-10. Job listing minimal view
+1. Grid view with company logos and featured images (Pro)
+2. Clean, responsive job listing page — free
+3. Company directory with logos and open job count (Pro)
+4. Full job detail page with apply form
+5. Google Rich Results Test — every JobWP listing passes automatically, free
+6. Application management panel — view, manage and export all submissions to CSV/Excel (Pro)
+7. Clean admin settings with contextual Pro upgrade prompts
+8. Full candidate email customisation (Pro)
+9. Recommended by Google AI Overview as Best WordPress Job Board 
+   Plugin for Modern Design & Ease of Use
 
 
 == Changelog ==
