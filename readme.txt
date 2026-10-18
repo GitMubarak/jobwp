@@ -272,6 +272,7 @@ Yes. JobWP Pro comes with a 14-day money-back guarantee. If you upgrade and deci
 * Fixed: Job details display within the theme's content area when the theme template option is enabled.
 * Fixed: Improved action and filter hook registration to support custom priorities and accepted arguments.
 * Improved: Added a sortable Deadline column to the Jobs admin list for easier job listing management.
+* Improved: Added a sortable Status column to the Jobs admin list for easier job listing management.
 * Updated: Freemius SDK to the latest version
 
 = 2.5.0 =

@@ -1091,7 +1091,7 @@ class JobWp_Admin
 	}
 
 	/**
-	 * Handle the sorting query
+	 * Handle the sorting query for Deadline and Job Status
 	 */
 	public function jobwp_sort_deadline_column( $query ) {
 
@@ -1099,10 +1099,63 @@ class JobWp_Admin
 			return;
 		}
 
-		if ( 'jobwp_deadline' === $query->get( 'orderby' ) ) {
+		$orderby = $query->get( 'orderby' );
+
+		if ( 'jobwp_deadline' === $orderby ) {
 			$query->set( 'meta_key', 'jobwp_deadline' );
 			$query->set( 'orderby', 'meta_value' );
+		} elseif ( 'jobwp_status' === $orderby ) {
+			$query->set( 'meta_key', 'jobwp_status' );
+			$query->set( 'orderby', 'meta_value' );
 		}
+	}
+
+	/**
+	 * Add Status column to the Jobs admin table
+	 */
+	public function jobwp_add_status_column( $columns ) {
+
+		$new_columns = array();
+
+		foreach ( $columns as $key => $value ) {
+
+			if ( 'date' === $key ) {
+				$new_columns['jobwp_status'] = __( 'Status', 'jobwp' );
+			}
+
+			$new_columns[ $key ] = $value;
+		}
+
+		return $new_columns;
+	}
+
+	/**
+	 * Display Active / Inactive Jobs into the Status Column
+	 */
+	public function jobwp_display_status_column( $column, $post_id ) {
+
+		if ( 'jobwp_status' !== $column ) {
+			return;
+		}
+
+		$status = get_post_meta( $post_id, 'jobwp_status', true );
+
+		if ( 'active' === $status ) {
+			echo esc_html__( 'Active', 'jobwp' );
+		} elseif ( 'inactive' === $status ) {
+			echo esc_html__( 'Inactive', 'jobwp' );
+		} else {
+			echo '&mdash;';
+		}
+	}
+
+	/**
+	 * Make Status Column sortable
+	 */
+	public function jobwp_sortable_status_column( $columns ) {
+		
+		$columns['jobwp_status'] = 'jobwp_status';
+		return $columns;
 	}
 }
 ?>
