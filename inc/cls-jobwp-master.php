@@ -60,6 +60,15 @@ class JobWp_Master {
 		$this->jobwp_loader->add_action('save_post', $jobwp_admin, JOBWP_PRFX . 'save_meta_value', 1, 1);
 		$this->jobwp_loader->add_action('admin_init', $jobwp_admin, JOBWP_PRFX . 'flush_rewrite');
 
+		// Add Deadline into Jobs table
+		$this->jobwp_loader->add_filter( 'manage_jobs_posts_columns', $jobwp_admin, 'jobwp_add_deadline_column' );
+		$this->jobwp_loader->add_action( 'manage_jobs_posts_custom_column', $jobwp_admin, 'jobwp_display_deadline_column', 10, 2 );
+		
+		// Register the sortable column
+		$this->jobwp_loader->add_filter( 'manage_edit-jobs_sortable_columns', $jobwp_admin, 'jobwp_sortable_deadline_column' );
+		// Handle the sorting query
+		$this->jobwp_loader->add_action( 'pre_get_posts', $jobwp_admin, 'jobwp_sort_deadline_column' );
+
 		if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
 			$this->jobwp_loader->add_action('admin_init', $jobwp_admin, 'jobwp_export_applications_to_csv');

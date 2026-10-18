@@ -1031,5 +1031,78 @@ class JobWp_Admin
 
 		include_once('view/sidebar.php');
 	}
+
+	/**
+	 * Add Deadline column to the Jobs admin table.
+	 */
+	public function jobwp_add_deadline_column( $columns ) {
+
+		$new_columns = array();
+
+		foreach ( $columns as $key => $value ) {
+
+			if ( 'date' === $key ) {
+				$new_columns['jobwp_deadline'] = __( 'Deadline', 'jobwp' );
+			}
+
+			$new_columns[ $key ] = $value;
+		}
+
+		return $new_columns;
+	}
+
+	/**
+	 * Display the deadline in the Jobs admin table.
+	 */
+	public function jobwp_display_deadline_column( $column, $post_id ) {
+
+		if ( 'jobwp_deadline' !== $column ) {
+			return;
+		}
+
+		$deadline = get_post_meta( $post_id, 'jobwp_deadline', true );
+
+		if ( empty( $deadline ) ) {
+			echo '&mdash;';
+			return;
+		}
+
+		$date = DateTime::createFromFormat( '!Y-m-d', $deadline );
+
+		if ( $date ) {
+			echo esc_html(
+				wp_date(
+					get_option( 'date_format' ),
+					$date->getTimestamp()
+				)
+			);
+		} else {
+			echo esc_html( $deadline );
+		}
+	}
+
+	/**
+	 * Register the sortable column
+	 */
+	public function jobwp_sortable_deadline_column( $columns ) {
+		
+		$columns['jobwp_deadline'] = 'jobwp_deadline';
+		return $columns;
+	}
+
+	/**
+	 * Handle the sorting query
+	 */
+	public function jobwp_sort_deadline_column( $query ) {
+
+		if ( ! is_admin() || ! $query->is_main_query() ) {
+			return;
+		}
+
+		if ( 'jobwp_deadline' === $query->get( 'orderby' ) ) {
+			$query->set( 'meta_key', 'jobwp_deadline' );
+			$query->set( 'orderby', 'meta_value' );
+		}
+	}
 }
 ?>
