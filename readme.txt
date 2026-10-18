@@ -264,11 +264,13 @@ Yes. JobWP Pro comes with a 14-day money-back guarantee. If you upgrade and deci
 
 = 2.5.1 =
 [//]: # fs_premium_only_begin
-* Added redirect option after application submit - Pro
+* sds: - Pro
 [//]: # fs_premium_only_end
 * Updated: Freemius SDK to the latest version
 * Updated: Apply form CV file mismatch message changed
-* Fix: Admin select dropdown icon issue fixed
+* Fixed: Admin select dropdown icon issue fixed
+* Added: Option to use the theme's default single job template to improve theme compatibility.
+* Fixed: Job details display within the theme's content area when the theme template option is enabled.
 
 = 2.5.0 =
 [//]: # fs_premium_only_begin
