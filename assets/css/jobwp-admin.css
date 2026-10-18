@@ -168,7 +168,6 @@ table.jobwp-listing-style-settings-table tr td input[type='number'],
 table.jobwp-settings-table tr td input[type='number'],
 table.jobwp-single-style-settings-table tr td input[type='number'] {
     border-radius: 5px;
-    background-image: linear-gradient(to right, #F7F7F7, #FFF);
     border-color: #CCC;
 }
 

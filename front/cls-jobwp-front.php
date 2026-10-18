@@ -179,7 +179,7 @@ class JobWp_Front
 	}
 
 	/**
-	 * Function for loading Job Single Template
+	 * Loading single template from plugin
 	*/
 	function jobwp_single_template( $template ) {
 		
@@ -192,8 +192,11 @@ class JobWp_Front
 		return $template;
 	}
 
+	/*
+	* Loading single template from theme
+	*/
 	function jobwp_single_template_only_content( $content ) {
-		
+	
 		// Check if we are viewing a single 'my_item' post and inside the main loop
 		if (is_singular('jobs') && is_main_query()) {
 			

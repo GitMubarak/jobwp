@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <style type="text/css">
-  .jobwp-single-body-container {
+  body .jobwp-single-body-container {
     background: <?php esc_html_e( $jobwp_single_container_bg_color ); ?>;
     margin-top: <?php esc_html_e( $jobwp_single_container_margin_top ); ?>px;
     margin-bottom: <?php esc_html_e( $jobwp_single_container_margin_btm ); ?>px !important;

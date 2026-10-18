@@ -166,12 +166,12 @@ class JobWp_Admin
 
 		if ( isset( $_POST['updateGeneralSettings'] ) ) {
 			if ( ! isset( $_POST['jobwp_general_nonce_field'] ) 
-				|| ! wp_verify_nonce( $_POST['jobwp_general_nonce_field'], 'jobwp_general_action_filed' ) ) {
-				print 'Sorry, your nonce did not verify.';
-				exit;
-			} else {
-				$jobwpGeneralMessage = $this->jobwp_set_general_settings( $_POST );
+				|| ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['jobwp_general_nonce_field'] ) ), 'jobwp_general_action_filed' ) ) {
+				
+				wp_die( esc_html__( 'Sorry, your nonce did not verify.', 'jobwp' ) );
 			}
+			
+			$jobwpGeneralMessage = $this->jobwp_set_general_settings( $_POST );
 		}
 
 		require_once JOBWP_PATH . 'admin/view/general.php';

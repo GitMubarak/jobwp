@@ -181,13 +181,37 @@ if ( function_exists( 'job_fs' ) ) {
             }
         });
         
-        /*
-        * Loading text domain at end so that no init error
+        /**
+         * Loading single template from plugin
         */
-        function jobwp_load_plugin_textdomain_test() {
-            load_plugin_textdomain( 'jobwp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+        function jobwp_single_template( $template ) {
+            
+            global $post;
+            
+            if ( $post && 'jobs' === $post->post_type ) {
+                return JOBWP_PATH . 'front/view/single.php';
+            }
+
+            return $template;
         }
-        add_action( 'plugins_loaded', 'jobwp_load_plugin_textdomain_test' );
+        add_filter( 'single_template', 'jobwp_single_template', 10 );
+
+        /*
+        * Loading single template from theme
+        */
+        function jobwp_single_template_only_content( $content ) {
+		
+            if ( is_singular( 'jobs' ) && in_the_loop() && is_main_query() ) {
+
+                ob_start();
+
+                include JOBWP_PATH . 'front/view/job-details-content.php';
+
+                return ob_get_clean();
+            }
+
+            return $content;
+        }
 
     }
 }
