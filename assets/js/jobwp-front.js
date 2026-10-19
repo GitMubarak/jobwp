@@ -83,7 +83,7 @@
             fail('Please select a file.', fileElt);
             return false;
         } else if (!/\.(docx|pdf|doc)$/.test(fileName)) {
-            fail('File mismatch, please check allowed file types.', fileElt);
+            fail(jobwpFrontScriptObj.file_mismatch_msg, fileElt);
             return false;
         } else {
             var file = fileElt.get(0).files[0];

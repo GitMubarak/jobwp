@@ -125,6 +125,12 @@ class JobWp_Front
 			$this->jobwp_version,
 			TRUE 
 		);
+
+		$jobwpFrontScriptArr = array(
+			'file_mismatch_msg' => esc_html__( 'File mismatch, please check allowed file types.', 'jobwp' ),
+		);
+
+		wp_localize_script( 'jobwp-front', 'jobwpFrontScriptObj', $jobwpFrontScriptArr );
 	}
 
 	/**
