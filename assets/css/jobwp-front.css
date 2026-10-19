@@ -580,14 +580,25 @@ div.jobwp-pagination ul.page-numbers li span.current {
 }
 
 .jobwp-single-body-container .circulr-details-top .jobwp-job-title,
-.jobwp-single-body-container .circulr-details-top .jwb-single-comp-name {
-    font-size: 32px;
+.jobwp-single-body-container .circulr-details-top .jwb-single-comp-name,
+.jobwp-single-body-container .circulr-details-top .jobwp-single-category {
     line-height: 46px;
     text-align: left;
     margin: 0 auto;
     padding: 0;
-    font-weight: 600;
     width: 80%;
+}
+
+.jobwp-single-body-container .circulr-details-top .jobwp-single-category {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.jobwp-single-body-container .circulr-details-top .jobwp-job-title,
+.jobwp-single-body-container .circulr-details-top .jwb-single-comp-name {
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .jobwp-single-body-container .circulr-details-top .jwb-single-comp-name {

@@ -11,6 +11,11 @@ table.hm-settings-table {
     width: 100%;
 }
 
+table.hm-settings-table tr th {
+    width: 180px;
+    max-width: 180px;
+}
+
 table.hm-settings-table tr.jobwp-settings-section td {
     background: #F2F2F2;
     background-image: linear-gradient(to right, #FAFAFA, #fff);
@@ -45,7 +50,7 @@ table.hm-settings-table tr.upgrade-promotion th i {
 table.hm-settings-table span {
     font-size: 12px;
     display: block;
-    margin-top: 10px;
+    margin-top: 8px;
     color: #444;
 }
 
@@ -121,7 +126,7 @@ table.jobwp-single-style-settings-table tr td {
     border-right: 1px solid #DDD;
     border-left: 0px solid #DDD;
     border-bottom: 0px solid #DDD;
-    padding: 15px;
+    padding: 10px;
     text-align: left;
     vertical-align: top;
     background-image: linear-gradient(to right, #f0fdf4, #fff);
@@ -137,6 +142,7 @@ table.jobwp-single-style-settings-table tr th {
     background-color: #f0fdf4;
     background-image: linear-gradient(to right, #f0fdf4, #fff);
     color: #15803d;
+    text-align: right;
 }
 
 table.jobwp-settings-table tr th {

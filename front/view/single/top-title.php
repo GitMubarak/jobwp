@@ -8,6 +8,25 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="single-top-left">
         <<?php esc_attr_e( $jobwp_single_title_tag ); ?> class="jobwp-job-title"><?php esc_html_e( $job_title ); ?></<?php esc_attr_e( $jobwp_single_title_tag ); ?>>
         <?php
+        // Display Category
+        if ( $jobwp_single_display_category ) {
+
+            if ( ! empty( $jobs_category ) ) {
+                $jobs_category_arr = [];
+                ?>
+                <div class="jobwp-single-category">
+                    <?php
+                    foreach( $jobs_category as $cat ) {
+                        $jobs_category_arr[] = $cat->name;
+                    }
+
+                    echo esc_html( implode( ', ', $jobs_category_arr ) );
+                    ?>
+                </div>
+                <?php
+            }
+        }
+        
         if ( job_fs()->is_plan__premium_only('pro', true) ) {
             if ( $jobwp_single_display_company_name ) {
                 ?>

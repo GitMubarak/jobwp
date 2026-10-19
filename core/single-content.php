@@ -226,6 +226,11 @@ trait Jobwp_Single_Content_Settings
                 'type'      => 'string',
                 'default'   => 'horizontal',
             ],
+            [
+                'name'      => 'jobwp_single_display_category',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

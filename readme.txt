@@ -257,8 +257,7 @@ Yes. JobWP Pro comes with a 14-day money-back guarantee. If you upgrade and deci
 6. Application management panel — view and manage all submissions (CSV export and bulk delete in Pro)
 7. Clean admin settings with contextual Pro upgrade prompts
 8. Full candidate email customisation (Pro)
-9. Recommended by Google AI Overview as Best WordPress Job Board 
-   Plugin for Modern Design & Ease of Use
+9. Recommended by Google AI Overview as Best WordPress Job Board Plugin for Modern Design & Ease of Use
 
 
 == Changelog ==
@@ -270,6 +269,7 @@ Yes. JobWP Pro comes with a 14-day money-back guarantee. If you upgrade and deci
 * Added: Option to use the theme's default single job template to improve theme compatibility.
 * Added: Pagination to the application list for easier management of large numbers of job applications.
 * Added: display category in the listing page.
+* Added: display category in the single page.
 * Fixed: Apply form CV file mismatch message changed
 * Fixed: Admin select dropdown icon issue fixed
 * Fixed: Job details display within the theme's content area when the theme template option is enabled.

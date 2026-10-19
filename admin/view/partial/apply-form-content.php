@@ -77,7 +77,7 @@ foreach ( $jobwpApplyFormContent as $option_name => $option_value ) {
                 </th>
                 <td>
                     <input type="text" name="jobwp_default_country_code" id="jobwp_default_country_code" class="small-text" value="<?php esc_attr_e( $jobwp_default_country_code ); ?>"/>
-                    <code><?php _e('2 digit codes (ISO 3166-1)', 'jobwp'); ?></code>
+                    <span><?php _e('2 digit codes (ISO 3166-1)', 'jobwp'); ?></span>
                 </td>
             </tr>
             <?php

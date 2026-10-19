@@ -92,6 +92,16 @@ $single_items = $this->get_single_items_order();
             <?php
         }
         ?>
+        <tr class="jobwp_single_display_category">
+            <th scope="row">
+                <label><?php _e('Display Category', 'jobwp'); ?>?</label>
+            </th>
+            <td colspan="3">
+                <input type="checkbox" name="jobwp_single_display_category" class="jobwp_single_display_category" id="jobwp_single_display_category" value="1" 
+                    <?php checked( $jobwp_single_display_category, 1 ); ?>>
+                <label for="jobwp_single_display_category"><?php _e('Enable', 'jobwp'); ?></label>
+            </td>
+        </tr>
         <!-- Job Information -->
         <tr class="jobwp-settings-section">
             <td colspan="6" class="jobwp-settings-block-title"><i class="fa-regular fa-rectangle-list"></i>&nbsp;<?php _e('Job Information', 'jobwp'); ?></td>
