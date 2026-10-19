@@ -516,3 +516,111 @@ img.jobwp-admin-help-img {
 #jobwp-download-to-csv-form {
     display: inline-block;
 }
+
+
+/* Bulk deletion */
+
+.alignleft.actions.clbForm {
+    margin-bottom: 10px;
+}
+
+
+/* Give the Applied For column more space */
+
+#jobwp-wrap-all #wpc_data_table th:nth-child(2),
+#jobwp-wrap-all #wpc_data_table td:nth-child(2) {
+    width: 20%;
+    min-width: 180px;
+}
+
+#jobwp-wrap-all #wpc_data_table th:nth-child(3),
+#jobwp-wrap-all #wpc_data_table td:nth-child(3) {
+    width: 10%;
+    min-width: 100px;
+}
+
+#jobwp-wrap-all #wpc_data_table th:nth-child(4),
+#jobwp-wrap-all #wpc_data_table td:nth-child(4) {
+    width: 15%;
+}
+
+#jobwp-wrap-all #wpc_data_table th:nth-child(5),
+#jobwp-wrap-all #wpc_data_table td:nth-child(5) {
+    width: 15%;
+}
+
+#jobwp-wrap-all #wpc_data_table th:nth-child(6),
+#jobwp-wrap-all #wpc_data_table td:nth-child(6) {
+    width: 10%;
+}
+
+#jobwp-wrap-all #wpc_data_table th:nth-child(7),
+#jobwp-wrap-all #wpc_data_table td:nth-child(7) {
+    width: 10%;
+}
+
+#jobwp-wrap-all #wpc_data_table th:nth-child(8),
+#jobwp-wrap-all #wpc_data_table td:nth-child(8) {
+    width: 7%;
+}
+
+#jobwp-wrap-all #wpc_data_table th:nth-child(9),
+#jobwp-wrap-all #wpc_data_table td:nth-child(9) {
+    width: 8%;
+}
+
+#jobwp-wrap-all #wpc_data_table th:nth-child(10),
+#jobwp-wrap-all #wpc_data_table td:nth-child(10) {
+    width: 5%;
+}
+
+
+/* JobWP application list pagination */
+
+#jobwp-wrap-all .tablenav-pages {
+    margin: 12px 0;
+}
+
+#jobwp-wrap-all .tablenav-pages .page-numbers {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+    margin-left: 4px;
+    border: 1px solid #c3c4c7;
+    border-radius: 5px;
+    background: #fff;
+    color: #2271b1;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#jobwp-wrap-all .tablenav-pages a.page-numbers:hover {
+    background: #f0f6fc;
+    border-color: #2271b1;
+    color: #135e96;
+}
+
+#jobwp-wrap-all .tablenav-pages .page-numbers.current {
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+    font-weight: 600;
+}
+
+#jobwp-wrap-all .tablenav-pages .page-numbers.dots {
+    border-color: transparent;
+    background: transparent;
+    color: #646970;
+}
+
+#jobwp-wrap-all .tablenav-pages .prev,
+#jobwp-wrap-all .tablenav-pages .next {
+    padding: 0 14px;
+}

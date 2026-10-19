@@ -99,6 +99,7 @@ The free version is built for getting started. Pro is built for sites where appl
 🏆 Featured jobs slider — pin priority listings to the top of your board
 🖼️ Featured image on job cards — add a visual banner to each job card in grid view for a more engaging, professional-looking job board
 📥 Export all applicant data to CSV/Excel in one click — stop copying applications by hand into spreadsheets
+🗑️ Bulk application management — select and delete multiple applications at once, saving time when managing high application volumes
 🔗 External application URLs — link any job to LinkedIn, Indeed, or any external platform
 ✉️ Full email control — customise every aspect of your candidate notification emails:
    → Set the From name and From email so emails arrive from your brand, not a generic WordPress address
@@ -253,7 +254,7 @@ Yes. JobWP Pro comes with a 14-day money-back guarantee. If you upgrade and deci
 3. Company directory with logos and open job count (Pro)
 4. Full job detail page with apply form
 5. Google Rich Results Test — every JobWP listing passes automatically, free
-6. Application management panel — view, manage and export all submissions to CSV/Excel (Pro)
+6. Application management panel — view and manage all submissions (CSV export and bulk delete in Pro)
 7. Clean admin settings with contextual Pro upgrade prompts
 8. Full candidate email customisation (Pro)
 9. Recommended by Google AI Overview as Best WordPress Job Board 
@@ -267,6 +268,7 @@ Yes. JobWP Pro comes with a 14-day money-back guarantee. If you upgrade and deci
 * New: Enhanced bulk application deletion with better validation and confirmation to help prevent accidental deletions - Pro
 [//]: # fs_premium_only_end
 * Added: Option to use the theme's default single job template to improve theme compatibility.
+* Added: Pagination to the application list for easier management of large numbers of job applications.
 * Fixed: Apply form CV file mismatch message changed
 * Fixed: Admin select dropdown icon issue fixed
 * Fixed: Job details display within the theme's content area when the theme template option is enabled.

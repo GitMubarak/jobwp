@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
 * Trait: Job Application
 */
-trait Jobwp_Applicaiton 
+trait Jobwp_Applicaiton
 {
     function jobwp_upload_resume($post, $file, $admin_email) {
         

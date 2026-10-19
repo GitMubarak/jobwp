@@ -38,6 +38,21 @@ if ( job_fs()->is_plan__premium_only('pro', true) ) {
 
 $jobwpDir = wp_upload_dir();
 $jobwpDir = $jobwpDir['baseurl'] . '/jobwp-resume';
+
+$per_page = 11;
+
+$current_page = isset( $_GET['paged'] ) ? max( 1, absint( $_GET['paged'] ) ) : 1;
+
+$total_applications = $this->jobwp_get_applications_count();
+
+$total_pages = (int) ceil( $total_applications / $per_page );
+
+// Prevent requesting a page beyond the available results.
+$current_page = max( 1, min( $current_page, max( 1, $total_pages ) ) );
+
+$offset = ( $current_page - 1 ) * $per_page;
+
+$applications = $this->jobwp_get_all_applications( $per_page, $offset );
 ?>
 <div class="settings-banner">
     <h2><i class="fa-solid fa-list-check"></i>&nbsp;<?php _e('Application Lists', 'jobwp'); ?></h2>
@@ -64,7 +79,7 @@ if ( '' !== $showMessage ) {
         }
         ?>
 
-        <div class="jobwp-donation-list_tbl" style="width: 100%; height:700px; overflow:scroll; display: block; clear: both; margin: 10px 0;">
+        <div class="jobwp-donation-list_tbl" style="width: 100%; display: block; clear: both; margin: 10px 0;">
             <table class="wp-list-table widefat fixed striped posts" cellspacing="0" id="wpc_data_table">
             <thead>
                 <tr>
@@ -74,8 +89,9 @@ if ( '' !== $showMessage ) {
             <tbody id="the-list">
                 <?php
                 $jL = 1;
-                $applications = $this->jobwp_get_all_applications();
+                
                 if ( count( $applications ) > 0 ) {
+
                     foreach ( $applications as $application ) {
 
                         $jobwp_cv_file_name = basename( $application->resume_name );
@@ -83,7 +99,6 @@ if ( '' !== $showMessage ) {
                         ?>
                         <tr>
                             <td><input type="checkbox" class="jobwp_bulk_selection" name="jobwp_bulk_selection[]" value="<?php echo esc_attr( $application->job_id ); ?>"></td>
-                            <td style="font-weight:600;"><?php printf('%d', $jL); ?></td>
                             <td><?php echo esc_html( $application->applied_for ); ?></td>
                             <td><?php echo esc_html( $application->applicant_name ); ?></td>
                             <td><?php echo esc_html( $application->applicant_email ); ?></td>
@@ -115,6 +130,15 @@ if ( '' !== $showMessage ) {
                         <?php 
                         $jL++;
                     }
+                } 
+                else {
+                    ?>
+                    <tr>
+                        <td colspan="11">
+                            <?php esc_html_e( 'No applications found.', 'jobwp' ); ?>
+                        </td>
+                    </tr>
+                    <?php
                 }
                 ?>
             </tbody>
@@ -125,6 +149,31 @@ if ( '' !== $showMessage ) {
             </tfoot>
             </table>
         </div>
+
+        <?php 
+        if ( $total_pages > 1 ) {
+            ?>
+            <div class="tablenav bottom">
+                <div class="tablenav-pages">
+                    <?php
+                    echo wp_kses_post(
+                        paginate_links(
+                            array(
+                                'base'      => add_query_arg( 'paged', '%#%' ),
+                                'format'    => '',
+                                'current'   => $current_page,
+                                'total'     => $total_pages,
+                                'prev_text' => '&laquo;',
+                                'next_text' => '&raquo;',
+                            )
+                        )
+                    );
+                    ?>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
     </form>
 </div>
 <?php
