@@ -134,4 +134,24 @@
         });
     });
 
+    $(document).ready(function() {
+        $('#posts-filter').on('submit', function(e) {
+
+            if ($('select[name="jobwp_bulk_action"]').val() === 'del_all') {
+
+                var selected = $('input[name="jobwp_bulk_selection[]"]:checked').length;
+
+                if (selected === 0) {
+                    alert('Please select at least one application to delete.');
+                    e.preventDefault();
+                    return;
+                }
+
+                if (!confirm('Are you sure you want to delete the selected applications and their resume files? This action cannot be undone.')) {
+                    e.preventDefault();
+                }
+            }
+        });
+    });
+
 })(jQuery);

@@ -846,28 +846,112 @@ class JobWp_Admin
 		return $wpdb->get_results($wpdb->prepare("SELECT * FROM $table_name WHERE %d ORDER BY job_id DESC", 1));
 	}
 
+	/**
+	 * Delete single application
+	 */
 	protected function jobwp_delete_single_application( $id ) {
 
-		if ( ! current_user_can('edit_others_posts') ) {
-			exit;
+		if ( ! current_user_can( 'edit_others_posts' ) ) {
+			return __( 'You do not have permission to delete applications.', 'jobwp' );
+		}
+
+		$id = absint( $id );
+
+		if ( ! $id ) {
+			return __( 'Invalid application ID.', 'jobwp' );
 		}
 
 		global $wpdb;
+
 		$table_name = $wpdb->base_prefix . 'jobwp_applied';
-		
-		$resume = $wpdb->get_row( $wpdb->prepare("SELECT * FROM $table_name WHERE job_id = %d", $id), ARRAY_A);
 
-		$success = $wpdb->query( $wpdb->prepare("DELETE FROM $table_name WHERE job_id = %d", $id) );
+		$resume = $wpdb->get_row(
+			$wpdb->prepare(
+				"SELECT * FROM $table_name WHERE job_id = %d",
+				$id
+			),
+			ARRAY_A
+		);
 
-		if ( $success ) {
-			$jobwpDir = wp_upload_dir();
-			$jobwpDir = $jobwpDir['basedir'];
-			$fileName = $jobwpDir . '/jobwp-resume/' . $resume['resume_name'];
-			if ( file_exists( $fileName ) ) {
-				unlink( $fileName );
-			}
-        	return __("Application has been deleted.", 'jobwp');
+		if ( ! $resume ) {
+			return __( 'Application not found.', 'jobwp' );
 		}
+
+		$success = $wpdb->query(
+			$wpdb->prepare(
+				"DELETE FROM $table_name WHERE job_id = %d",
+				$id
+			)
+		);
+
+		if ( false === $success ) {
+			return __( 'Failed to delete application.', 'jobwp' );
+		}
+
+		if ( 0 === $success ) {
+			return __( 'Application not found.', 'jobwp' );
+		}
+
+		$upload_dir = wp_upload_dir();
+		$resume_dir = trailingslashit( $upload_dir['basedir'] ) . 'jobwp-resume/';
+		$resume_name = isset( $resume['resume_name'] ) ? basename( $resume['resume_name'] ) : '';
+
+		if ( '' !== $resume_name ) {
+			
+			$file_name = $resume_dir . $resume_name;
+
+			if ( is_file( $file_name ) ) {
+				wp_delete_file( $file_name );
+			}
+		}
+
+		return __( 'Application has been deleted.', 'jobwp' );
+	}
+
+	/**
+	 * Delete multiple applications
+	 */
+	protected function jobwp_delete_delete_bulk_applications( $action ) {
+
+		if ( ! current_user_can( 'edit_others_posts' ) ) {
+			return __( 'You do not have permission to delete applications.', 'jobwp' );
+		}
+
+		if ( 'del_all' !== $action ) {
+			return __( 'Please choose a valid bulk action.', 'jobwp' );
+		}
+
+		$req_array = isset( $_POST['jobwp_bulk_selection'] ) ? wp_unslash( $_POST['jobwp_bulk_selection'] ) : array();
+
+		if ( ! is_array( $req_array ) || empty( $req_array ) ) {
+			return __( 'Please select applications to delete.', 'jobwp' );
+		}
+
+		$deleted = 0;
+
+		foreach ( $req_array as $row_id ) {
+
+			$row_id = absint( $row_id );
+
+			if ( $row_id && $this->jobwp_delete_single_application( $row_id ) ) {
+				$deleted++;
+			}
+		}
+
+		if ( $deleted > 0 ) {
+			return sprintf(
+				/* translators: %d: Number of deleted applications. */
+				_n(
+					'%d application has been deleted.',
+					'%d applications have been deleted.',
+					$deleted,
+					'jobwp'
+				),
+				$deleted
+			);
+		}
+
+		return __( 'No applications were deleted.', 'jobwp' );
 	}
 
 	function jobwp_export_applications_to_csv() {

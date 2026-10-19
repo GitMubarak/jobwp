@@ -264,7 +264,7 @@ Yes. JobWP Pro comes with a 14-day money-back guarantee. If you upgrade and deci
 
 = 2.5.1 =
 [//]: # fs_premium_only_begin
-* sds: - Pro
+* New: Enhanced bulk application deletion with better validation and confirmation to help prevent accidental deletions - Pro
 [//]: # fs_premium_only_end
 * Added: Option to use the theme's default single job template to improve theme compatibility.
 * Fixed: Apply form CV file mismatch message changed
