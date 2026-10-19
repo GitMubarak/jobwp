@@ -269,6 +269,7 @@ Yes. JobWP Pro comes with a 14-day money-back guarantee. If you upgrade and deci
 [//]: # fs_premium_only_end
 * Added: Option to use the theme's default single job template to improve theme compatibility.
 * Added: Pagination to the application list for easier management of large numbers of job applications.
+* Added: display category in the listing page.
 * Fixed: Apply form CV file mismatch message changed
 * Fixed: Admin select dropdown icon issue fixed
 * Fixed: Job details display within the theme's content area when the theme template option is enabled.

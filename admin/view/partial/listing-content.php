@@ -53,6 +53,16 @@ foreach ( $jobwpListingContent as $option_name => $option_value ) {
             <?php
         }
         ?>
+        <tr class="jobwp_list_display_category">
+            <th scope="row">
+                <label><i class="fa-solid fa-check"></i>&nbsp;<?php _e('Display Category', 'jobwp'); ?>?</label>
+            </th>
+            <td colspan="3">
+                <input type="checkbox" name="jobwp_list_display_category" class="jobwp_list_display_category" id="jobwp_list_display_category" value="1" 
+                    <?php checked( $jobwp_list_display_category, 1 ); ?>>
+                <label for="jobwp_list_display_category"><?php _e('Enable', 'jobwp'); ?></label>
+            </td>
+        </tr>
         <!-- Hide Overview -->
         <tr class="jobwp_list_display_overview">
             <th scope="row">

@@ -208,6 +208,11 @@ trait Jobwp_Listing_Content_Settings
                 'type'      => 'number',
                 'default'   => 8,
             ],
+            [
+                'name'      => 'jobwp_list_display_category',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

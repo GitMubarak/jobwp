@@ -82,6 +82,7 @@ if ( $jobwpJobs->have_posts() ) {
             $bo_vacancies           = get_post_meta( $post->ID, 'jobwp_vacancies', true );
             $jobs_location          = wp_get_post_terms( $post->ID, 'jobs_location', array('fields' => 'all') );
             $jobs_nature            = wp_get_post_terms( $post->ID, 'jobs_nature', array('fields' => 'all') );
+            $jobs_category          = wp_get_post_terms( $post->ID, 'jobs_category', array('fields' => 'all') );
             $jobwpDateDiff          = date_diff( date_create( date('Y-m-d') ), date_create( $jobwp_deadline ) );
             $jobwpDateDiffNumber    = $jobwpDateDiff->format("%R%a");
 
@@ -134,12 +135,33 @@ if ( $jobwpJobs->have_posts() ) {
                     }
                     ?>
                     <div class="jobwp-top-left">
+                        
                         <h3 class="jobwp-job-title">
                             <a href="<?php the_permalink(); ?>" class="jobwp-job-title-a">
                                 <?php echo wp_trim_words( get_the_title(), $jobwp_list_title_length, '...' ); ?>
                             </a>
                         </h3>
+
                         <?php
+                        // Display Category
+                        if ( $jobwp_list_display_category ) {
+
+                            if ( ! empty( $jobs_category ) ) {
+                                $jobs_category_arr = [];
+                                ?>
+                                <div class="jobwp-list-category">
+                                    <?php
+                                    foreach( $jobs_category as $cat ) {
+                                        $jobs_category_arr[] = $cat->name;
+                                    }
+
+                                    echo esc_html( implode( ', ', $jobs_category_arr ) );
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                        }
+
                         if ( job_fs()->is_plan__premium_only('pro', true) ) {
                             if ( $jobwp_display_company_name ) {
                                 ?>
@@ -147,8 +169,8 @@ if ( $jobwpJobs->have_posts() ) {
                                 <?php
                             }
                         }
-                        
-                        // Over view
+
+                        // Overview
                         if ( ! $jobwp_list_display_overview ) {
                             echo force_balance_tags( html_entity_decode( wp_trim_words( htmlentities( wpautop( get_the_content() ) ), $jobwp_list_overview_length, '...' ) ) );
                         }
