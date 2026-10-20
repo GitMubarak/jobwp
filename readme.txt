@@ -619,11 +619,3 @@ Yes. JobWP Pro comes with a 14-day money-back guarantee. If you upgrade and deci
 
 = 1.0 =
 * Initial release
-
-
-== Upgrade Notice ==
-
-= 2.5.0 =
-Please back up your site before updating. This release includes 
-significant improvements to the plugin UI, structured data, and 
-pagination code.
